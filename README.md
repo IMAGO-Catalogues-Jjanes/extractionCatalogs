@@ -1,2 +1,14 @@
 # extractionCatalogs
-Pipeline Images to TEI files for exhibition catalogs
+Description Artl@s, travail fait, pipeline schéma
+
+## How to 
+
+## Repository
+
+## Thanks
+
+## Credits
+
+## Cite this repository
+
+## Contacts
