@@ -32,8 +32,8 @@ def extInfo_CatSimple(document):
         texte_entry = entry.xpath("alto:TextLine/alto:String/@CONTENT", namespaces=NS)
         dict_entries[n] = texte_entry
 
-    """relecture du texte contenu dans le dictionnaire entrée par entrée, extraction des données et 
-    intégration dans le xml"""
+    # relecture du texte contenu dans le dictionnaire entrée par entrée, extraction des données et 
+    # intégration dans le xml
     # instanciation des regex pour récupérer les auteurs et oeuvres (type de catalogue => Rouen 1850-1880)
     auteur = re.compile(r'(^(\S[A-Z]{2,}))(.*?)(\.$)')
     oeuvre = re.compile(r'^(\d{1,3}). \w')
