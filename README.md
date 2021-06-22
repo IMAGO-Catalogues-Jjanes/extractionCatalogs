@@ -1,5 +1,4 @@
 # extractionCatalogs
-Description Artl@s, travail fait, pipeline schéma
 
 ## Utilisation du dépot
 
