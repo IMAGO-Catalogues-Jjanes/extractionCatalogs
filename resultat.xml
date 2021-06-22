@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="tests/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tests/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="test">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title/>
+    <editor role="metadata"><persName/></editor>
+    <editor role="data"><persName/></editor>
+   </titleStmt>
+   <publicationStmt>
+    <publisher><name>VISUAL CONTAGIONS</name><persName type="director">Béatrice
+      Joyeux-Prunel</persName><orgName>UNIGE</orgName><address>
+      <addrLine>5 rue des Battoirs 7</addrLine>
+      <postCode>1205</postCode>
+      <settlement>Genève</settlement>
+     </address></publisher>
+    <date when="2021"/>
+    <availability>
+     <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+     <licence
+      target="https://gallica.bnf.fr/html/und/conditions-dutilisation-des-contenus-de-gallica"/>
+    </availability>
+   </publicationStmt>
+   <sourceDesc>
+    <bibl type="exhibition_catalog"/>
+   </sourceDesc>
+  </fileDesc>
+  <profileDesc/>
+  <encodingDesc>
+   <samplingDecl>
+    <p>This electronic version of the catalog only reproduces the entries that correspond to
+     exhibited works. All text preceding or succeeding the list of documents is not reproduced
+     below.</p>
+   </samplingDecl>
+  </encodingDesc>
+  <revisionDesc/>
+ </teiHeader>
+ <text>
+  <body>
+   <list>
+    <entry n="1" xml:id="teste1">
+     <desc><name>(BÉNARD (AueusrE-SÉDAsrIEN).</name><trait>
+       <p>(APares, rue de Dufartune, 8, deue de Ml, Granet *et Lafond.</p>
+      </trait></desc>
+     <item n="1" xml:id="teste1i1"><num>1</num><title> Le Tombereau¬</title></item>
+     <item n="2" xml:id="teste1i2"><num>2</num><title> Le Rétour de la ville.</title></item>
+    </entry>
+    <entry n="2" xml:id="teste2">
+     <desc><name>(BÉNARD (HupEnE-EGeÈNE).</name><trait>
+       <p>A Bouome-sur-Mer, poute de Calais, 5; dève de M. Claudin Jacquond.</p>
+      </trait></desc>
+     <item n="3" xml:id="teste2i3"><num>3</num><title> La Brise en rade de
+      Boulogne-sur-Mer¬</title></item>
+     <item n="4" xml:id="teste2i4"><num>4</num><title> Barque de Pécheurs du Portel, levant
+       l’ancr.</title><desc>2e1-222Dar N2Ds vemps (marine).</desc></item>
+    </entry>
+    <entry n="3" xml:id="teste3">
+     <desc><name>(BENNETTER (J.).</name><trait>
+       <p>(Deintre de marine à Paris, rue du Faubourg-Saint-Honoré, 217. élève de MM. L. Meuer
+        et 1. Gudin.</p>
+      </trait></desc>
+     <item n="5" xml:id="teste3i5"><num>5</num><title> Fffet de Lune.</title><desc>(Une escadre
+       venant en grande large; le prémier plan repré(sente un navire marchant (brick), louvovant
+       et virant de bord.pour éviter les autres, et apprétant le signal de nuit.</desc></item>
+     <item n="6" xml:id="teste3i6"><num>6</num><title> Matin d’Eté.</title><desc>(Mer du Nord; au
+       pemer pim, un (Hardenéerinet), ét.tain navire de cabotage, sur la côte de la Norwège, est
+       abordepar des pécheurs.</desc></item>
+     <item n="7" xml:id="teste3i7"><num>7</num><title> Calme : Estre Bagholmen
+       (Norvège).</title><desc>(Apparténant à M. 1. Deliquale, à Rouen¬</desc></item>
+     <item n="8" xml:id="teste3i8"><num>8</num><title> Pécheurs de Homards dans Bioornehiord,
+       près</title><desc>de Bergem (Noryége).</desc></item>
+    </entry>
+    <entry n="4" xml:id="teste4">
+     <desc><name>BEVTABOLE (Lopis).</name><trait>
+       <p>A Paris, rue Dielle, 2e.</p>
+      </trait></desc>
+     <item n="9" xml:id="teste4i9"><num>9</num><title> Vue de Calais.</title></item>
+    </entry>
+   </list>
+  </body>
+ </text>
+</TEI>
