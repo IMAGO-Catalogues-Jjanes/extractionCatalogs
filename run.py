@@ -10,8 +10,8 @@ Date: 11/06/21
 from lxml import etree as ET
 import os
 import subprocess
-from extractionCatSimple import extInfo_CatSimple
-from creationTEIheader import creation_header
+from fonctions.extractionCatSimple import extInfo_CatSimple
+from fonctions.creationTEIheader import creation_header
 
 
 
