@@ -10,7 +10,7 @@ Date: 11/06/21
 import re
 from lxml import etree as ET
 
-def extInfo_CatSimple(document):
+def extInfo_CatSimple(document, title, n_entree=0, n_oeuvre=0):
     """
     Fonction permettant, pour un catalogue dit de typologie simple, c'est-à-dire ayant des entrées
     où chaque ligne correspond à une information précise, d'extraire les différentes données contenues dans
@@ -18,17 +18,17 @@ def extInfo_CatSimple(document):
     :param document: fichier alto parsé par etree
     :type document: lxml.etree._ElementTree
     :return: entrees_page
-    :rtype: list
+    :rtype: list of lxml.etree._ElementTree
     """
 
     # instanciation du namespace et de la liste finale
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
     entrees_page = []
-    n = 0
+    n=0
     dict_entries = {}
     tagref_entree = document.xpath("//alto:OtherTag[@LABEL='Entry']/@ID", namespaces=NS)
     for entry in document.xpath("//alto:TextBlock[@TAGREFS='" + tagref_entree[0] + "']", namespaces=NS):
-        n += 1
+        n+=1
         texte_entry = entry.xpath("alto:TextLine/alto:String/@CONTENT", namespaces=NS)
         dict_entries[n] = texte_entry
 
@@ -38,7 +38,6 @@ def extInfo_CatSimple(document):
     auteur = re.compile(r'(^(\S[A-Z]{2,}))(.*?)(\.$)')
     oeuvre = re.compile(r'^(\d{1,3}). \w')
     # création de l'élément xml list
-    n_oeuvre = 0
 
     for entry in dict_entries:
         # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
@@ -46,6 +45,7 @@ def extInfo_CatSimple(document):
         text_list = dict_entries[num]
         n_line = 0
         n_line_oeuvre = 0
+        n_line_auteur = 0
         for ligne in text_list:
             n_line += 1
             if auteur.search(ligne):
@@ -58,10 +58,14 @@ def extInfo_CatSimple(document):
 
         if n_line_auteur != 0 and n_line_oeuvre != 0:
             # vérification que le textblock n'est pas vide et création des balises xml
-            root_entry_xml = ET.Element("entry")
+            n_entree+=1
+            root_entry_xml = ET.Element("entry", n=str(n_entree))
+            identifiant_entry = title+ "e"+ str(n_entree)
+            root_entry_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_entry
             desc_auteur_xml = ET.SubElement(root_entry_xml, "desc")
             auteur_xml = ET.SubElement(desc_auteur_xml, "name")
             trait_xml = ET.SubElement(desc_auteur_xml, "trait")
+            p_trait_xml = ET.SubElement(trait_xml, "p")
 
             # récupération de la ligne auteur et de ou des lignes trait et intégration dans les balises xml
             n = 0
@@ -74,16 +78,19 @@ def extInfo_CatSimple(document):
                 elif n < n_line_oeuvre:
                     liste_trait.append(ligne)
                 trait_str = "\n".join(liste_trait)
-                trait_xml.text = trait_str
+                p_trait_xml.text = trait_str
 
             # récupération des lignes oeuvres et potentielles lignes informations complémentaires sur l'oeuvre
             # et intégration du titre de l'oeuvre et de son numéro dans l'arbre xml
             for n in range(n_line_oeuvre - 1, len(text_list)):
                 if oeuvre.search(text_list[n]):
-                    item_xml = ET.SubElement(root_entry_xml, "item")
+                    n_oeuvre += 1
+                    item_xml = ET.SubElement(root_entry_xml, "item", n=str(n_oeuvre))
+                    identifiant_item = identifiant_entry+ "i"+ str(n_oeuvre)
+                    print(type(identifiant_item), identifiant_item)
+                    item_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_item
                     num_xml = ET.SubElement(item_xml, "num")
                     title_xml = ET.SubElement(item_xml, "title")
-                    n_oeuvre += 1
                     num_xml.text = str(n_oeuvre)
                     title_xml.text = re.sub(
                         r'^\d{1,3}.', '', text_list[n])
@@ -116,5 +123,5 @@ def extInfo_CatSimple(document):
 
         # ajout de l'entrée réalisée dans la balise list
         entrees_page.append(root_entry_xml)
-    return entrees_page
+    return [entrees_page, n_entree, n_oeuvre]
 
