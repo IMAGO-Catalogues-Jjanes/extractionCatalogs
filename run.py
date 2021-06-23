@@ -31,14 +31,14 @@ body_xml = ET.SubElement(text_xml, "body")
 list_xml = ET.SubElement(body_xml, "list")
 
 n_fichier = 0
-for fichier in os.listdir(dossier):
+for fichier in sorted(os.listdir(dossier)):
     n_fichier +=1
     print("Traitement de "+fichier)
     # on restructure l'alto afin d'avoir les textlines dans le bon ordre
-    #restructuration_automatique(dossier+fichier)
+    restructuration_automatique(dossier+fichier)
     print("Restructuration du fichier faite")
     # parsage du fichier
-    alto = ET.parse(dossier+fichier)
+    alto = ET.parse(dossier+fichier[:-4]+"_restructuration.xml")
     # ici ajouter des tests pour vérifier la qualité de l'alto (cf le test.py)
     # lancement de l'extraction des données du fichier
     if n_fichier == 1:

@@ -52,7 +52,9 @@ def extInfo_CatSimple(document, title, list_xml = 0, n_entree=0, n_oeuvre=0):
                     n_line_oeuvre = n_line
             else:
                 pass
-        if n_line_auteur != 0 and n_line_oeuvre != 0:
+        if n_line_auteur == 0 and n_line_oeuvre != 0:
+            pass
+        elif n_line_auteur != 0 and n_line_oeuvre != 0:
             # vérification que le textblock n'est pas vide et création des balises xml
             n_entree+=1
             root_entry_xml = ET.Element("entry", n=str(n_entree))
