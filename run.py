@@ -12,7 +12,7 @@ import os
 import subprocess
 from fonctions.extractionCatSimple import extInfo_CatSimple
 from fonctions.creationTEIheader import creation_header
-
+from fonctions.restructuration import restructuration_automatique
 
 
 # récupération du chemin
@@ -32,12 +32,16 @@ list_xml = ET.SubElement(body_xml, "list")
 
 n_fichier = 0
 for fichier in os.listdir(dossier):
+    n_fichier +=1
+    print("Traitement de "+fichier)
+    # on restructure l'alto afin d'avoir les textlines dans le bon ordre
+    #restructuration_automatique(dossier+fichier)
+    print("Restructuration du fichier faite")
     # parsage du fichier
     alto = ET.parse(dossier+fichier)
-    # création TEI header
     # ici ajouter des tests pour vérifier la qualité de l'alto (cf le test.py)
     # lancement de l'extraction des données du fichier
-    if n_fichier == 0:
+    if n_fichier == 1:
         resultat_extraction = extInfo_CatSimple(alto, titre_fichier)
         n_division_list = 0
         for el in resultat_extraction:
@@ -49,7 +53,8 @@ for fichier in os.listdir(dossier):
                 n_oeuvre = el
             n_division_list+=1
     else:
-        resultat_extraction = extInfo_CatSimple(alto, titre_fichier, n_entree, n_oeuvre)
+        print("Numéro entrée: "+str(n_entree) + " Numéro oeuvre: "+ str(n_oeuvre))
+        resultat_extraction = extInfo_CatSimple(alto, titre_fichier, list_xml, n_entree, n_oeuvre)
         n_division_list=0
         for el in resultat_extraction:
             if n_division_list==0:
@@ -62,6 +67,7 @@ for fichier in os.listdir(dossier):
     # ajout des nouvelles entrées dans la balise liste
     for el in list_entrees:
         list_xml.append(el)
+    print(fichier + "traité")
 
 # écriture du résultat dans un fichier xml
 ET.ElementTree(tei_xml).write(nom_fichier_tei,encoding="UTF-8",xml_declaration=True)

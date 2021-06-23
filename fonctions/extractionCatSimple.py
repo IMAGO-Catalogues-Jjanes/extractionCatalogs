@@ -1,7 +1,6 @@
 """
 Extraction des informations contenues dans les fichiers ALTO en sortie de l'OCR
 et insertion dans un fichier XML-TEI sur le modèle de l'ODD de Caroline Corbières
-
 Author: Juliette Janes
 Date: 11/06/21
 """
@@ -10,7 +9,7 @@ Date: 11/06/21
 import re
 from lxml import etree as ET
 
-def extInfo_CatSimple(document, title, n_entree=0, n_oeuvre=0):
+def extInfo_CatSimple(document, title, list_xml = 0, n_entree=0, n_oeuvre=0):
     """
     Fonction permettant, pour un catalogue dit de typologie simple, c'est-à-dire ayant des entrées
     où chaque ligne correspond à une information précise, d'extraire les différentes données contenues dans
@@ -27,17 +26,15 @@ def extInfo_CatSimple(document, title, n_entree=0, n_oeuvre=0):
     n=0
     dict_entries = {}
     tagref_entree = document.xpath("//alto:OtherTag[@LABEL='Entry']/@ID", namespaces=NS)
+    # récupération du contenu textuel par entrée
     for entry in document.xpath("//alto:TextBlock[@TAGREFS='" + tagref_entree[0] + "']", namespaces=NS):
         n+=1
         texte_entry = entry.xpath("alto:TextLine/alto:String/@CONTENT", namespaces=NS)
         dict_entries[n] = texte_entry
 
-    # relecture du texte contenu dans le dictionnaire entrée par entrée, extraction des données et 
-    # intégration dans le xml
     # instanciation des regex pour récupérer les auteurs et oeuvres (type de catalogue => Rouen 1850-1880)
-    auteur = re.compile(r'(^(\S[A-Z]{2,}))(.*?)(\.$)')
+    auteur = re.compile(r'(^\S[A-Z]{2,})')
     oeuvre = re.compile(r'^(\d{1,3}). \w')
-    # création de l'élément xml list
 
     for entry in dict_entries:
         # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
@@ -55,12 +52,11 @@ def extInfo_CatSimple(document, title, n_entree=0, n_oeuvre=0):
                     n_line_oeuvre = n_line
             else:
                 pass
-
         if n_line_auteur != 0 and n_line_oeuvre != 0:
             # vérification que le textblock n'est pas vide et création des balises xml
             n_entree+=1
             root_entry_xml = ET.Element("entry", n=str(n_entree))
-            identifiant_entry = title+ "e"+ str(n_entree)
+            identifiant_entry = title+ "_e"+ str(n_entree)
             root_entry_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_entry
             desc_auteur_xml = ET.SubElement(root_entry_xml, "desc")
             auteur_xml = ET.SubElement(desc_auteur_xml, "name")
@@ -86,7 +82,7 @@ def extInfo_CatSimple(document, title, n_entree=0, n_oeuvre=0):
                 if oeuvre.search(text_list[n]):
                     n_oeuvre += 1
                     item_xml = ET.SubElement(root_entry_xml, "item", n=str(n_oeuvre))
-                    identifiant_item = identifiant_entry+ "i"+ str(n_oeuvre)
+                    identifiant_item = identifiant_entry+ "_i"+ str(n_oeuvre)
                     print(type(identifiant_item), identifiant_item)
                     item_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_item
                     num_xml = ET.SubElement(item_xml, "num")
@@ -108,20 +104,21 @@ def extInfo_CatSimple(document, title, n_entree=0, n_oeuvre=0):
                     ('LIGNE NON RECONNUE: ', text_list[n])
 
         # si le dictionnaire d'informations complémentaires est rempli, on insère ses valeurs dans l'arbre xml
-        if dict_desc_item:
-            desc_xml = root_entry_xml.xpath(".//desc/ancestor::item")
-            for el in desc_xml:
-                num_entree = el.xpath(".//num/text()")
-                num_entree_int = int("".join(num_entree))
-                desc_entree = el.find(".//desc")
-                texte_item_entry = str(dict_desc_item[num_entree_int])
-                texte_item_entry = texte_item_entry.replace("[['", "")
-                texte_item_entry = texte_item_entry.replace("', '", "")
-                texte_item_entry = texte_item_entry.replace("'], '", "")
-                texte_item_entry = texte_item_entry.replace("']", "")
-                desc_entree.text = texte_item_entry
-
-        # ajout de l'entrée réalisée dans la balise list
-        entrees_page.append(root_entry_xml)
+            if dict_desc_item:
+                desc_xml = root_entry_xml.xpath(".//desc/ancestor::item")
+                for el in desc_xml:
+                    num_entree = el.xpath(".//num/text()")
+                    num_entree_int = int("".join(num_entree))
+                    desc_entree = el.find(".//desc")
+                    texte_item_entry = str(dict_desc_item[num_entree_int])
+                    texte_item_entry = texte_item_entry.replace("[['", "")
+                    texte_item_entry = texte_item_entry.replace("', '", "")
+                    texte_item_entry = texte_item_entry.replace("'], '", "")
+                    texte_item_entry = texte_item_entry.replace("']", "")
+                    desc_entree.text = texte_item_entry
+            try:
+                entrees_page.append(root_entry_xml)
+            except Exception:
+                print("entrée non ajoutée")
     return [entrees_page, n_entree, n_oeuvre]
 
