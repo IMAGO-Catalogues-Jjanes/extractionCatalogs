@@ -3,7 +3,7 @@
 Pour cette première version du programme d'extraction des catalogues d'exposition, j'ai travaillé sur les catalogues de type "simple". Il s'agit de catalogues dont les entrées sont structurées par ligne. Chaque ligne contient un élément bien distinct: auteur, informations biographiques, titre d'une oeuvre et potentielle informations supplémentaires sur l'oeuvre.
    <br/><br/>
 <p align="center">
-  <img src="./images/exempleEntreeSimple.png" width=400>
+  <img src="./images/exempleEntreeSimple.png" width=400/>
  </p>
  <i>Image: Catalogue de l'exposition du musée des beaux arts de Rouen, 1860, p.24</i>
  <br/><br/>
@@ -11,6 +11,11 @@ Pour cette première version du programme d'extraction des catalogues d'expositi
  Je me suis pour l'instant concentrée sur les catalogues dont les entrées ont été bien reconnues par le segmenteur. L'idée serait par la suite d'utiliser un test, test_entree.py, disponible dans le dossier tests afin de déterminer si le résultat de l'ocr permet de réaliser ce travail en s'appuyant sur ces zones. 
  Un second test testValidationXml.py permet de vérifier si le document xml produit correspond bien à l'ODD réalisé par Caroline Corbières.
  Le TeiHeader est produit automatiquement et nécessite l'élaboration de questions afin de le remplir.
+   
+   <p align="center">
+      <img src= "./images/pipeline_catalogue_extraction.png" width=400/>
+   </p>
+   <i>Image: Pipeline d'extraction des données des catalogues d'exposition</i>
  </div>
  
 ## How to use the repository
