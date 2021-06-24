@@ -33,8 +33,12 @@ def extInfo_CatSimple(document, title, list_xml = 0, n_entree=0, n_oeuvre=0):
         dict_entries[n] = texte_entry
 
     # instanciation des regex pour récupérer les auteurs et oeuvres (type de catalogue => Rouen 1850-1880)
-    auteur = re.compile(r'(^\S[A-Z]{2,})')
+    auteur = re.compile(r'^(\S|[A-Z])[A-ZÉ]{3,}')
     oeuvre = re.compile(r'^(\d{1,3}). \w')
+    info_complementaire_1 = re.compile(r'^(\S[A-Z]|[A-Z])[a-z]')
+    info_complementaire_2 = re.compile(r'\( \w*\)\.')
+    ligne_minuscule = re.compile(r'^(\([a-z]|[a-z])')
+
 
     for entry in dict_entries:
         # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
@@ -69,6 +73,7 @@ def extInfo_CatSimple(document, title, list_xml = 0, n_entree=0, n_oeuvre=0):
             n = 0
             liste_trait = []
             dict_desc_item = {}
+            dict_item = {}
             for ligne in text_list:
                 n += 1
                 if n == n_line_auteur:
@@ -85,27 +90,39 @@ def extInfo_CatSimple(document, title, list_xml = 0, n_entree=0, n_oeuvre=0):
                     n_oeuvre += 1
                     item_xml = ET.SubElement(root_entry_xml, "item", n=str(n_oeuvre))
                     identifiant_item = identifiant_entry+ "_i"+ str(n_oeuvre)
-                    print(type(identifiant_item), identifiant_item)
                     item_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_item
                     num_xml = ET.SubElement(item_xml, "num")
                     title_xml = ET.SubElement(item_xml, "title")
                     num_xml.text = str(n_oeuvre)
-                    title_xml.text = re.sub(
-                        r'^\d{1,3}.', '', text_list[n])
-                    n_ligne_oeuvre = n
-                # si les lignes suivantes ne correspondent pas à une oeuvre, on considère qu'il s'agit d'une info
-                # et on les stockent donc ensemble sous la forme d'un dictionnaire où chaque clé correspond au
-                # numéro de l'oeuvre et chaque valeur aux lignes d'informations
-                elif n_ligne_oeuvre < n:
-                    if n_oeuvre in dict_desc_item:
-                        dict_desc_item[n_oeuvre] = [dict_desc_item[n_oeuvre], text_list[n]]
-                    else:
-                        dict_desc_item[n_oeuvre] = text_list[n]
-                        desc_item_xml = ET.SubElement(item_xml, "desc")
+                    dict_item[n_oeuvre] = text_list[n]
+                    n_item = n
+                    print(n_item)
+                elif n-1 == n_item and ligne_minuscule.search(text_list[n]) :
+                    dict_item[n_oeuvre] = [dict_item[n_oeuvre], text_list[n]]
+                elif n_item < n and info_complementaire_1.search(text_list[n]):
+                    dict_desc_item[n_oeuvre] = text_list[n]
+                    desc_item_xml = ET.SubElement(item_xml, "desc")
+                elif n_oeuvre in dict_desc_item:
+                    dict_desc_item[n_oeuvre] = [dict_desc_item[n_oeuvre], text_list[n]]
                 else:
                     ('LIGNE NON RECONNUE: ', text_list[n])
 
-        # si le dictionnaire d'informations complémentaires est rempli, on insère ses valeurs dans l'arbre xml
+            entree = root_entry_xml.xpath(".//item")
+            print(entree)
+            for el in entree:
+                num_entree = el.xpath(".//num/text()")
+                num_entree_int = int("".join(num_entree))
+                name_entree = el.find(".//title")
+                texte_item_entry = str(dict_item[num_entree_int])
+                print(texte_item_entry)
+                texte_item_entry = texte_item_entry.replace("[", "")
+                texte_item_entry = texte_item_entry.replace("['", "")
+                texte_item_entry = texte_item_entry.replace("', '", "")
+                texte_item_entry = texte_item_entry.replace("'], '", "")
+                texte_item_entry = texte_item_entry.replace("']", "")
+                name_entree.text = re.sub(r'^(\S\d{1,3}|\d{1,3}).', '', texte_item_entry)
+
+            # si le dictionnaire d'informations complémentaires est rempli, on insère ses valeurs dans l'arbre xml
             if dict_desc_item:
                 desc_xml = root_entry_xml.xpath(".//desc/ancestor::item")
                 for el in desc_xml:
@@ -113,7 +130,9 @@ def extInfo_CatSimple(document, title, list_xml = 0, n_entree=0, n_oeuvre=0):
                     num_entree_int = int("".join(num_entree))
                     desc_entree = el.find(".//desc")
                     texte_item_entry = str(dict_desc_item[num_entree_int])
-                    texte_item_entry = texte_item_entry.replace("[['", "")
+                    print(texte_item_entry)
+                    texte_item_entry = texte_item_entry.replace("[", "")
+                    texte_item_entry = texte_item_entry.replace("['", "")
                     texte_item_entry = texte_item_entry.replace("', '", "")
                     texte_item_entry = texte_item_entry.replace("'], '", "")
                     texte_item_entry = texte_item_entry.replace("']", "")
@@ -122,5 +141,6 @@ def extInfo_CatSimple(document, title, list_xml = 0, n_entree=0, n_oeuvre=0):
                 entrees_page.append(root_entry_xml)
             except Exception:
                 print("entrée non ajoutée")
+        else:
+            print("Problème technique")
     return [entrees_page, n_entree, n_oeuvre]
-
