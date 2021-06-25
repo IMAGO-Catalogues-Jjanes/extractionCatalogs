@@ -42,24 +42,28 @@ for fichier in sorted(os.listdir(dossier)):
     # ici ajouter des tests pour vérifier la qualité de l'alto (cf le test.py)
     # lancement de l'extraction des données du fichier
     if n_fichier == 1:
-        resultat_extraction = extInfo_CatSimple(alto, titre_fichier)
+        resultat_extraction = extInfo_CatSimple(alto, titre_fichier, list_xml)
         n_division_list = 0
         for el in resultat_extraction:
-            if n_division_list==0:
+            if n_division_list == 0:
+                list_xml = el
+            elif n_division_list == 1:
                 list_entrees = el
-            elif n_division_list==1:
+            elif n_division_list == 2:
                 n_entree = el
             else:
                 n_oeuvre = el
-            n_division_list+=1
+            n_division_list += 1
     else:
         print("Numéro entrée: "+str(n_entree) + " Numéro oeuvre: "+ str(n_oeuvre))
         resultat_extraction = extInfo_CatSimple(alto, titre_fichier, list_xml, n_entree, n_oeuvre)
         n_division_list=0
         for el in resultat_extraction:
             if n_division_list==0:
-                list_entrees = el
+                list_xml = el
             elif n_division_list==1:
+                list_entrees = el
+            elif n_division_list==2:
                 n_entree = el
             else:
                 n_oeuvre = el
