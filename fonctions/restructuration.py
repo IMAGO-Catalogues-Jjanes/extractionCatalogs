@@ -20,5 +20,5 @@ def restructuration_automatique(fichier):
     transformation_xlst = ET.XSLT(ET.parse("./fonctions/Restructuration_alto.xsl"))
     propre = transformation_xlst(original)
     # on créé un nouveau fichier dans le dossier résultat
-    with open(fichier[:-3] + "_restructuration.xml", mode='wb') as f:
+    with open(fichier[:-4] + "_restructuration.xml", mode='wb') as f:
         f.write(propre)
