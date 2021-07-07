@@ -21,6 +21,7 @@ def test(texte, titre, n_oeuvre, n_entree, n_ligne_oeuvre):
     :rtype: list of elementtree
     """
 
+    # je créé les regex
     auteur = re.compile(r'^(\S|[A-Z])[A-ZÉ]{3,}')
     oeuvre = re.compile(r'^(\d{1,3}). \w')
     info_complementaire_1 = re.compile(r'^(\S[A-Z]|[A-Z])[a-z]')
@@ -30,8 +31,11 @@ def test(texte, titre, n_oeuvre, n_entree, n_ligne_oeuvre):
     list = []
     dict_item ={}
     dict_desc_item ={}
+    # pour chaque ligne de la 1er ligne oeuvre, à la fin de l'entrée
     for n in range(n_ligne_oeuvre - 1, len(texte)):
         if oeuvre.search(texte[n]):
+            # je créé une balise item pour chaque ligne correspondant à une oeuvre, j'insère directement le numéro de
+            # l'oeuvre à l'arbre xml et j'ajoute la ligne oeuvre à un dictionnaire oeuvre
             n_oeuvre += 1
             item_xml = ET.Element("item", n=str(n_oeuvre))
             list.append(item_xml)
@@ -43,17 +47,23 @@ def test(texte, titre, n_oeuvre, n_entree, n_ligne_oeuvre):
             dict_item[n_oeuvre] = texte[n]
             n_item = n
         elif n - 1 == n_item and ligne_minuscule.search(texte[n]):
+            # si la ligne suivante commence par une lettre minuscule, je l'ajoute au dictionnaire
             dict_item[n_oeuvre] = [dict_item[n_oeuvre], texte[n]]
         elif n_item < n and info_complementaire_1.search(texte[n]):
+            # si la ligne suivante correspond à une majuscule, il s'agit probablement d'info complémentaires, je l'ajou-
+            # à mon dictionnaire pour les informations complémentaires (en clé le numéro de l'oeuvre)
             dict_desc_item[n_oeuvre] = texte[n]
             desc_item_xml = ET.SubElement(item_xml, "desc")
         elif n_oeuvre in dict_desc_item:
+            # c'est probablement la sute des infos complémentaires, donc je l'ajoute au
+            # dictionnaire correspondant
             dict_desc_item[n_oeuvre] = [dict_desc_item[n_oeuvre], texte[n]]
         else:
             ('LIGNE NON RECONNUE: ', texte[n])
 
 
         for el in list:
+            # pour chaque item, je récupére le numéro de l'oeuvre et je lui ajoute son titre
             num_entree = el.xpath(".//num/text()")
             num_entree_int = int("".join(num_entree))
             name_entree = el.find(".//title")
@@ -65,7 +75,8 @@ def test(texte, titre, n_oeuvre, n_entree, n_ligne_oeuvre):
             texte_item_entry = texte_item_entry.replace("']", "")
             name_entree.text = re.sub(r'^(\S\d{1,3}|\d{1,3}).', '', texte_item_entry)
 
-        # si le dictionnaire d'informations complémentaires est rempli, on insère ses valeurs dans l'arbre xml
+        # si le dictionnaire d'informations complémentaires est rempli, on insère de la même façon ses valeurs dans
+        # l'arbre xml
         for el in list:
             if el.xpath(".//desc"):
                 num_entree = el.xpath(".//num/text()")
@@ -149,7 +160,8 @@ def extInfo_CatSimple(document, title, list_xml, n_entree=0, n_oeuvre=0):
 
 
         elif n_line_auteur != 0 and n_line_oeuvre != 0:
-            # vérification que le textblock n'est pas vide et création des balises xml
+            # il s'agit d'une entry normale
+            # je créé les balises xml nécessaires par la suite
             n_entree = n_entree + 1
             root_entry_xml = ET.Element("entry", n=str(n_entree))
             identifiant_entry = title + "_e" + str(n_entree)
@@ -167,6 +179,7 @@ def extInfo_CatSimple(document, title, list_xml, n_entree=0, n_oeuvre=0):
             for ligne in text_list:
                 n += 1
                 if n == n_line_auteur:
+                    # à modifier quand l'auteur et l'information biographique sont sur la même ligne
                     auteur_xml.text = ligne
                 elif n < n_line_oeuvre:
                     liste_trait.append(ligne)
@@ -174,7 +187,8 @@ def extInfo_CatSimple(document, title, list_xml, n_entree=0, n_oeuvre=0):
                 p_trait_xml.text = trait_str
 
             # récupération des lignes oeuvres et potentielles lignes informations complémentaires sur l'oeuvre
-            # et intégration du titre de l'oeuvre et de son numéro dans l'arbre xml
+            # et intégration du titre de l'oeuvre et de son numéro dans l'arbre xml (lancer directement la fonction plus
+            # haut)
             for n in range(n_line_oeuvre - 1, len(text_list)):
                 if oeuvre.search(text_list[n]):
                     n_oeuvre += 1
