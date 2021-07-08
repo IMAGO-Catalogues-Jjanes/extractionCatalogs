@@ -68,14 +68,18 @@
                  </xsl:attribute>
                  <xsl:attribute name="TAGREFS">
                      <xsl:value-of select="@TAGREFS"/>                    
-                 </xsl:attribute>
+                 </xsl:attribute>                 
                  <xsl:copy-of select="./a:Shape"/>
-                 <xsl:for-each select="./a:TextLine">
-                     <xsl:sort select="@VPOS"/>
-                     <xsl:copy-of select="."/>
-                 </xsl:for-each>
+                 <xsl:apply-templates select="./a:TextLine">
+                    <xsl:sort select="./a:String/@VPOS" data-type="number"/>
+                 </xsl:apply-templates>
              </xsl:element>
          </xsl:template>
-    
         
+         <xsl:template match="@*|node()">
+             <xsl:copy>
+                 <xsl:apply-templates select="@*|node()"/>
+             </xsl:copy>
+         </xsl:template>
+
 </xsl:stylesheet>
