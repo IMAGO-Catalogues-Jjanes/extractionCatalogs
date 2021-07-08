@@ -3,7 +3,7 @@
 Pour cette première version du programme d'extraction des catalogues d'exposition, j'ai travaillé sur les catalogues de type "simple". Il s'agit de catalogues dont les entrées sont structurées par ligne. Chaque ligne contient un élément bien distinct: auteur, informations biographiques, titre d'une oeuvre et potentielle informations supplémentaires sur l'oeuvre.
    <br/><br/>
 <p align="center">
-  <img src="./images/exempleEntreeSimple.png" width=400/>
+  <img src="./images/exemple_Entree_Simple.png" width=400/>
  </p>
  <i>Image: Catalogue de l'exposition du musée des beaux arts de Rouen, 1860, p.24</i>
  <br/><br/>
