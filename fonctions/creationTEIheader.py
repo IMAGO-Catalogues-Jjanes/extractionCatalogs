@@ -10,8 +10,7 @@ from lxml import etree as ET
 
 def creation_header():
     """
-    Fonction permettant, pour un catalogue, de créer les balises du teiheader et de récupérer et remplir les métadatas
-    correspondantes.
+    Fonction permettant, pour un catalogue, de créer les balises du teiheader.
     => lister les param nécessaires + questions
     :return: tei_header_xml
     :rtype: lxml.etree._ElementTree
@@ -53,7 +52,7 @@ def creation_header():
     """ sourceDesc => informations à récupérer"""
     sourceDesc_xml = ET.SubElement(fileDesc_xml, "sourceDesc")
     bibl_xml = ET.SubElement(sourceDesc_xml, "bibl", type="exhibition_catalog")
-    """title_source_xml = ET.SubElement(bibl_xml, "title")
+    title_source_xml = ET.SubElement(bibl_xml, "title")
     author_source_xml = ET.SubElement(bibl_xml, "author")
     publisher_source_xml = ET.SubElement(bibl_xml, "publisher")
     pubPlace_source_xml = ET.SubElement(bibl_xml, "pubPlace")
@@ -68,20 +67,31 @@ def creation_header():
     ref_xml = ET.SubElement(surrogates_xml, "ref")
     # ajout attribut facs avec lien vers version numérisée
     name_dig_xml = ET.SubElement(additional_xml, "name", role="digitisation")
-    extent_xml = ET.SubElement(sourceDesc_xml, "extent")"""
+    extent_xml = ET.SubElement(bibl_xml, "extent")
+
+    listEvent_xml = ET.SubElement(sourceDesc_xml, "listEvent")
+    event_xml = ET.SubElement(listEvent_xml, "event", type="", subtype="")
+    event_xml.attrib["from"] = ""
+    event_xml.attrib["to"] = ""
+    head_event_xml = ET.SubElement(event_xml, "head")
+    head_event_type_xml = ET.SubElement(event_xml, "head", type="")
+
 
     profileDesc_xml = ET.SubElement(tei_header_xml, "profileDesc")
     # langUsage_xml = ET.SubElement(profileDesc_xml, "langUsage")
     # attribut avec langue du document
     encodingDesc_xml = ET.SubElement(tei_header_xml, "encodingDesc")
+    # encodingDesc_xml.attrib["{http://www.w3.org/XML/1998/namespace}ns:tei"]="http://www.tei-c.org/ns/1.0"
+    # encodingDesc_xml.attrib["{http://www.w3.org/XML/1998/namespace}ns:s"]="http://purl.oclc.org/dsdl/schematron"
     samplingDesc_xml = ET.SubElement(encodingDesc_xml, "samplingDecl")
     p_samplingDesc_xml = ET.SubElement(samplingDesc_xml, "p")
     p_samplingDesc_xml.text = """This electronic version of the catalog only reproduces the entries that
                             correspond to exhibited works. All text preceding or succeeding the list
                             of documents is not reproduced below."""
 
-    """appInfo_xml = ET.SubElement(encodingDesc_xml, "appInfo")
-    ajout des applications utilisées (Transkribus, eScriptorium?)"""
+    appInfo_xml = ET.SubElement(encodingDesc_xml, "appInfo")
+    application_xml = ET.SubElement(appInfo_xml, "application")
+    # Kraken ou eScriptorium?
     revisionDesc_xml = ET.SubElement(tei_header_xml, "revisionDesc")
     """change_xml = ET.SubElement(revisionDesc_xml, "change", who="nom")"""
 

@@ -7,6 +7,7 @@ Date: 11/06/21
 
 import re
 from lxml import etree as ET
+from fonctions.instanciation_regex import *
 
 def nettoyer_liste_str(texte):
     """
@@ -89,6 +90,7 @@ def create_entry_xml(title, n_entree, infos_biographiques=0):
     entree_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_entree
     desc_auteur_xml = ET.SubElement(entree_xml, "desc")
     auteur_xml = ET.SubElement(desc_auteur_xml, "name")
+    p_trait_xml = None
     if infos_biographiques == 0:
         trait_xml = ET.SubElement(desc_auteur_xml, "trait")
         p_trait_xml = ET.SubElement(trait_xml, "p")
@@ -115,11 +117,6 @@ def get_oeuvres(texte_items_liste, titre, id_n_oeuvre, id_n_entree, n_line_oeuvr
     :return id_n_oeuvre: numéro employé pour la dernière oeuvre encodée dans la fonction
     :rtype id_n_oeuvre: int
     """
-
-    # je créé les regex
-    oeuvre_regex = re.compile(r'^\d{1,3}')
-    info_complementaire_regex = re.compile(r'^(\S[A-Z]|[A-Z])[a-z]')
-    ligne_minuscule_regex = re.compile(r'^(\([a-z]|[a-z])')
 
     list_item_ElementTree = []
     dict_item_texte ={}
@@ -161,13 +158,15 @@ def get_oeuvres(texte_items_liste, titre, id_n_oeuvre, id_n_entree, n_line_oeuvr
 
     return list_item_ElementTree, id_n_oeuvre
 
-def extInfo_CatNulle(document, title, list_xml, n_entree=0, n_oeuvre=0):
+
+def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
     """
-    Fonction permettant, pour un catalogue dit de typologie nulle, c'est-à-dire ayant des entrées uniquement composée du
-    nom de l'auteur et de ses différentes oeuvres, d'extraire les différentes données contenues dans le fichier alto et
-    de les insérer dans un fichier tei
+    Fonction qui permet, pour un catalogue, d'extraire les différentes données contenues dans le fichier alto et de les
+    insérer dans un fichier tei
     :param document: fichier alto parsé par etree
     :type document: lxml.etree._ElementTree
+    :param typeCat: type de Catalogue (Nulle: sans information biographique, Simple: avec une information biographique
+    sur la ligne en dessous du nom de l'artiste, Double: sur la même ligne que l'auteur)
     :param title: nom du catalogue à encoder
     :type title:str
     :param list_xml: ElementTree contenant la balise tei list et les potentielles précédentes entrées encodées
@@ -183,10 +182,6 @@ def extInfo_CatNulle(document, title, list_xml, n_entree=0, n_oeuvre=0):
     list_entrees_page = []
     dict_entrees_texte = get_texte_alto(document)
 
-    # instanciation des regex pour récupérer les auteurs et oeuvres (type de catalogue => Rouen 1850-1880)
-    auteur_regex = re.compile(r'^(\S|[A-Z])[A-ZÉ]{3,}')
-    oeuvre_regex = re.compile(r'^(\d{1,3}). \w')
-
     for num_entree in dict_entrees_texte:
         # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
         entree_texte = dict_entrees_texte[num_entree]
@@ -201,78 +196,41 @@ def extInfo_CatNulle(document, title, list_xml, n_entree=0, n_oeuvre=0):
             # il s'agit d'une entry normale
             # je créé les balises xml nécessaires par la suite
             n_entree = n_entree + 1
-            entree_xml, auteur_xml, p_trait_xml = create_entry_xml(title, n_entree)
-            # récupération de la ligne auteur et de ou des lignes trait et intégration dans les balises xml
+            if typeCat == "Nulle":
+                entree_xml, auteur_xml, p_trait_xml = create_entry_xml(title, n_entree, infos_biographiques=1)
+            else:
+                entree_xml, auteur_xml, p_trait_xml = create_entry_xml(title, n_entree)
             n = 0
             print("AUTEUR ", n_line_auteur, "1ER OEUVRE ", n_line_oeuvre)
-            auteur_xml.text = entree_texte[n_line_auteur]
-
-            list_item_entree, n_oeuvre = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre)
-            for item in list_item_entree:
-                entree_xml.append(item)
-
-            try:
-                list_entrees_page.append(entree_xml)
-            except Exception:
-                print("entrée non ajoutée")
-        else:
-            print("Problème technique : "+ str(entree_texte) + str(num_entree))
-    return list_xml, list_entrees_page, n_entree, n_oeuvre
-
-
-def extInfo_CatSimple(document, title, list_xml, n_entree=0, n_oeuvre=0):
-    """
-    Fonction permettant, pour un catalogue dit de typologie simple, c'est-à-dire ayant des entrées
-    où chaque ligne correspond à une information précise, d'extraire les différentes données contenues dans
-    le fichier alto et de les insérer dans un fichier tei
-    :param document: fichier alto parsé par etree
-    :type document: lxml.etree._ElementTree
-    :param title: nom du catalogue à encoder
-    :type title:str
-    :param list_xml: ElementTree contenant la balise tei list et les potentielles précédentes entrées encodées
-    :type list_xml: lxml.etree._ElementTree
-    :param n_oeuvre: numéro employé pour l'oeuvre précédente
-    :type n_oeuvre: int
-    :param n_entree: numéro employé pour l'entrée précédente
-    :type n_entree: int
-    :return: entrees_page
-    :rtype: list of lxml.etree._ElementTree
-    """
-
-    list_entrees_page = []
-    dict_entrees_texte = get_texte_alto(document)
-
-    # instanciation des regex pour récupérer les auteurs et oeuvres (type de catalogue => Rouen 1850-1880)
-    auteur_regex = re.compile(r'^(\S|[A-Z])[A-ZÉ]{3,}')
-    oeuvre_regex = re.compile(r'^(\d{1,3}). \w')
-
-    for num_entree in dict_entrees_texte:
-        # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
-        entree_texte = dict_entrees_texte[num_entree]
-        n_line_auteur, n_line_oeuvre = get_structure_entree(entree_texte, auteur_regex, oeuvre_regex)
-        if num_entree == 0 and n_line_auteur == 0:
-            # il s'agit d'une entryEnd
-            list_item_entryEnd_xml, n_oeuvre = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre)
-            entree_end_xml = list_xml.find(".//entry[@n='"+str(n_entree)+"']")
-            for item in list_item_entryEnd_xml:
-                entree_end_xml.append(item)
-        elif n_line_auteur != 0 and n_line_oeuvre != 0:
-            # il s'agit d'une entry normale
-            # je créé les balises xml nécessaires par la suite
-            n_entree = n_entree + 1
-            entree_xml, auteur_xml, p_trait_xml = create_entry_xml(title, n_entree)
-            # récupération de la ligne auteur et de ou des lignes trait et intégration dans les balises xml
-            n = 0
-            print("AUTEUR ", n_line_auteur, "1ER OEUVRE ", n_line_oeuvre)
-            liste_trait_texte = []
-            for ligne in entree_texte:
-                n += 1
+            if typeCat == "Nulle":
+                auteur_xml.text = entree_texte[n_line_auteur]
+            elif typeCat == "Simple":
+                liste_trait_texte = []
+                for ligne in entree_texte:
+                    n += 1
                 if n == n_line_auteur:
-                    # à modifier quand l'auteur et l'information biographique sont sur la même ligne
                     auteur_xml.text = ligne
                 elif n < n_line_oeuvre:
                     liste_trait_texte.append(ligne)
                 p_trait_xml.text = "\n".join(liste_trait_texte)
+            elif typeCat == "Double":
+                liste_trait_texte = []
+                for ligne in entree_texte:
+                    n += 1
+                    if n == n_line_auteur:
+                        auteur_texte = auteur_recuperation_regex.search(ligne)
+                        if auteur_texte == None:
+                            auteur_sans_prenom = auteur_sans_prenom_regex.search(ligne)
+                            auteur_xml.text = auteur_sans_prenom.group(0)
+                        else:
+                            auteur_xml.text = auteur_texte.group(0)
+                        info_bio = limitation_auteur_infobio_regex.search(ligne)
+                        if info_bio != None:
+                            liste_trait_texte.append(info_bio.group(0).replace('),', ''))
+
+                    elif n < n_line_oeuvre:
+                        liste_trait_texte.append(ligne)
+                    p_trait_xml.text = "\n".join(liste_trait_texte)
 
             list_item_entree, n_oeuvre = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre)
             for item in list_item_entree:
@@ -284,75 +242,4 @@ def extInfo_CatSimple(document, title, list_xml, n_entree=0, n_oeuvre=0):
                 print("entrée non ajoutée")
         else:
             print("Problème technique : "+ str(entree_texte) + str(num_entree))
-    return list_xml, list_entrees_page, n_entree, n_oeuvre
-
-
-def extInfo_CatDouble(document, title, list_xml, n_entree=0, n_oeuvre=0):
-    """
-    Fonction permettant, pour un catalogue dit de typologie double, c'est-à-dire ayant des entrées où les noms des arti-
-    stes et les informations biographiques sont sur la même ligne, d'extraire les différentes données contenues dans
-    le fichier alto et de les insérer dans un fichier tei
-    :param document: fichier alto parsé par etree
-    :type document: lxml.etree._ElementTree
-    :return: entrees_page
-    :rtype: list of lxml.etree._ElementTree
-    """
-    # instanciation du namespace et de la liste finale
-    list_entrees_page = []
-    dict_entrees_texte = get_texte_alto(document)
-    # instanciation des regex pour récupérer les auteurs et oeuvre
-    auteur_regex = re.compile(r'^(\S|[A-Z])[A-ZÉ]{3,}')
-    auteur_recuperation_regex = re.compile(r'^(\S|[A-Z])[A-ZÉ]{3,}(.*)\),')
-    auteur_sans_prenom_regex = re.compile(r'((^(\S|[A-Z])[A-ZÉ]{3,})|-(.*)(,))')
-    limitation_auteur_infobio_regex = re.compile(r'(\),).*')
-    oeuvre_regex = re.compile(r'^\d{1,3}')
-
-    for num_entree in dict_entrees_texte:
-        # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
-        entree_texte = dict_entrees_texte[num_entree]
-        n_line_auteur, n_line_oeuvre = get_structure_entree(entree_texte, auteur_regex, oeuvre_regex)
-        if num_entree == 0 and n_line_auteur == 0:
-            # il s'agit d'une entryEnd
-            list_item_entryEnd_xml, n_oeuvre = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre)
-            entree_end_xml = list_xml.find(".//entry[@n='" + str(n_entree) + "']")
-            for item in list_item_entryEnd_xml:
-                entree_end_xml.append(item)
-        elif n_line_auteur != 0 and n_line_oeuvre != 0:
-            # il s'agit d'une entry normale
-            # je créé les balises xml nécessaires par la suite
-            n_entree = n_entree + 1
-            entree_xml, auteur_xml, p_trait_xml = create_entry_xml(title, n_entree)
-
-            # récupération de la ligne auteur et de ou des lignes trait et intégration dans les balises xml
-            n = 0
-            print("AUTEUR ", n_line_auteur, "1ER OEUVRE ", n_line_oeuvre)
-            liste_trait_texte = []
-            for ligne in entree_texte:
-                n += 1
-                if n == n_line_auteur:
-                    # à modifier quand l'auteur et l'information biographique sont sur la même ligne
-                    auteur_texte = auteur_recuperation_regex.search(ligne)
-                    if auteur_texte == None:
-                        auteur_sans_prenom = auteur_sans_prenom_regex.search(ligne)
-                        auteur_xml.text = auteur_sans_prenom.group(0)
-                    else:
-                        auteur_xml.text = auteur_texte.group(0)
-                    info_bio = limitation_auteur_infobio_regex.search(ligne)
-                    if info_bio != None:
-                        liste_trait_texte.append(info_bio.group(0).replace('),',''))
-
-                elif n < n_line_oeuvre:
-                    liste_trait_texte.append(ligne)
-                p_trait_xml.text = "\n".join(liste_trait_texte)
-
-            list_item_entree_xml, n_oeuvre = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre)
-            for item in list_item_entree_xml:
-                entree_xml.append(item)
-
-            try:
-                entrees_page.append(entree_xml)
-            except Exception:
-                print("entrée non ajoutée")
-        else:
-            print("Problème technique : " + str(entree_texte) + str(num_entree))
     return list_xml, list_entrees_page, n_entree, n_oeuvre
