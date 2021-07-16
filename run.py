@@ -52,7 +52,7 @@ for fichier in sorted(os.listdir(dossier)):
     # on vérifie que le fichier alto est valide
     verification_alto(dossier+fichier)
     # on vérifie que les entrées sont bien formées
-    get_entries(dossier+fichier)
+    #get_entries(dossier+fichier)
     # on restructure l'alto afin d'avoir les textlines dans le bon ordre
     restructuration_automatique(dossier+fichier)
     print("Restructuration du fichier faite")
@@ -61,11 +61,12 @@ for fichier in sorted(os.listdir(dossier)):
     # lancement de l'extraction des données du fichier
     # les entrées sont simples, on lance directement la fonction correspondante
     if n_fichier == 1:
-        list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, type_catalogue, titre_catalogue, list_xml)
+        list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, type_catalogue, titre_catalogue,
+                                                                 list_xml)
     else:
         # print("Numéro entrée: "+str(n_entree) + " Numéro oeuvre: "+ str(n_oeuvre))
         list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, type_catalogue, titre_catalogue,
-                                                                       list_xml,n_entree,n_oeuvre)
+                                                                       list_xml, n_entree,n_oeuvre)
     # ajout des nouvelles entrées dans la balise liste
     for el in list_entrees:
         list_xml.append(el)
