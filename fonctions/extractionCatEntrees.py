@@ -26,7 +26,7 @@ def nettoyer_liste_str(texte):
 
 def get_texte_alto(alto):
     """
-    Fonction qui permet, pour un document alto, de récupérer tout son contenu textuel
+    Fonction qui permet, pour un document alto, de récupérer tout son contenu textuel dans les entrées
     :param alto: fichier alto parsé par etree
     :type alto: lxml.etree._ElementTree
     :return: dictionnaire ayant comme clé le numéro de l'entrée et comme valeur tout son contenu textuel
@@ -43,6 +43,20 @@ def get_texte_alto(alto):
         n += 1
     return dict_entrees_texte
 
+def get_EntryEnd_texte(alto):
+    """
+    Fonction qui permet, pour un document alto, de récupérer tout son contenu textuel dans les entryEnd
+    :param alto: fichier alto parsé par etree
+    :type alto: lxml.etree._ElementTree
+    :return: liste contenant le contenu textuel de l'entry end par ligne
+    :rtype: list of str
+    """
+    NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
+    tagref_entree_end = alto.xpath("//alto:OtherTag[@LABEL='EntryEnd']/@ID", namespaces=NS)[0]
+    # récupération du contenu textuel par entrée
+    texte_entree = alto.xpath("//alto:TextBlock[@TAGREFS='BT844']//alto:String/@CONTENT", namespaces=NS)
+    return texte_entree
+
 def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
     """
     Fonction qui, pour une entrée, récupère la ligne contenant son auteur et sa première oeuvre
@@ -56,24 +70,23 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
     :type oeuvre_regex: regex
     :return n_line_auteur: numéro de la ligne contenant le nom de l'auteur
     :rtype n_line_auteur: int
-    :return n_line_oeuvre: numéro de la ligne contenant la première oeuvre de l'entrée
-    :rtype n_line_oeuvre: int
+    :return n_line_oeuvre: liste de numéro contenant toutes les lignes des oeuvres
+    :rtype n_line_oeuvre: list of int
     """
     n_line = 0
-    n_line_oeuvre = 0
+    n_line_oeuvre = []
     n_line_auteur = 0
     for ligne in entree_texte:
         n_line += 1
         if auteur_regex.search(ligne):
             n_line_auteur = n_line
         elif oeuvre_regex.search(ligne):
-            if n_line_oeuvre == 0:
-                n_line_oeuvre = n_line
+                n_line_oeuvre.append(n_line)
         else:
             pass
     return n_line_auteur, n_line_oeuvre
 
-def create_entry_xml(title, n_entree, infos_biographiques=0):
+def create_entry_xml(document, title, n_entree, infos_biographiques=0):
     """
     Fonction qui permet de créer toutes les balises TEI nécessaires pour encoder une entrée
     :param title: nom du catalogue
@@ -85,9 +98,15 @@ def create_entry_xml(title, n_entree, infos_biographiques=0):
     :type infos_biographiques:int
     :return: balises vides pour l'encodage d'une entrée
     """
+    NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
     entree_xml = ET.Element("entry", n=str(n_entree))
     identifiant_entree = title + "_e" + str(n_entree)
     entree_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_entree
+    corresp_page= document.xpath("//alto:fileIdentifier/text()", namespaces=NS)
+    if corresp_page != None:
+        entree_xml.attrib["corresp"] = corresp_page[0]
+    else:
+        entree_xml.attrib["corresp"] = document.xpath("//alto:fileName", namespaces=NS)[0]
     desc_auteur_xml = ET.SubElement(entree_xml, "desc")
     auteur_xml = ET.SubElement(desc_auteur_xml, "name")
     p_trait_xml = None
@@ -98,7 +117,8 @@ def create_entry_xml(title, n_entree, infos_biographiques=0):
         pass
     return entree_xml, auteur_xml, p_trait_xml
 
-def get_oeuvres(texte_items_liste, titre, id_n_oeuvre, id_n_entree, n_line_oeuvre):
+
+def get_oeuvres(texte_items_liste, titre, id_n_oeuvre, id_n_entree, n_line_oeuvre=1):
     """
     Fonction qui pour une liste donnée, récupère tout les items (oeuvre) d'une entrée et les structure.
     :param texte_items_liste: liste de chaîne de caractères où chaque chaîne correspond à une ligne et la liste correspond
@@ -110,43 +130,46 @@ def get_oeuvres(texte_items_liste, titre, id_n_oeuvre, id_n_entree, n_line_oeuvr
     :type id_n_oeuvre: int
     :param id_n_entree: numéro employé pour l'entrée précédente
     :type id_n_entree: int
-    :param n_line_oeuvre: numéro du ligne indiquant l'emplacement de la première oeuvre dans l'entrée
-    :type n_line_oeuvre:int
+    :param n_line_oeuvre: liste de numéro indiquant la ligne de chaque oeuvre
+    :type n_line_oeuvre:list of int
     :return texte_items_liste: liste des oeuvres chacune encodée en tei
     :rtype texte_items_liste: list of elementtree
     :return id_n_oeuvre: numéro employé pour la dernière oeuvre encodée dans la fonction
     :rtype id_n_oeuvre: int
     """
-
     list_item_ElementTree = []
-    dict_item_texte ={}
-    dict_item_desc_texte ={}
+    dict_item_texte = {}
+    dict_item_desc_texte = {}
+    print(texte_items_liste, len(texte_items_liste))
     # pour chaque ligne de la 1er ligne oeuvre, à la fin de l'entrée
     for n in range(n_line_oeuvre - 1, len(texte_items_liste)):
+        print(n)
         current_line = texte_items_liste[n]
+        print(current_line)
         if oeuvre_regex.search(current_line):
-            id_n_oeuvre += 1
-            item_xml = ET.Element("item", n=str(id_n_oeuvre))
+            n_oeuvre =numero_regex.search(current_line).group(0)
+            item_xml = ET.Element("item", n=str(n_oeuvre))
             list_item_ElementTree.append(item_xml)
-            identifiant_item = titre+ "_e"+str(id_n_entree) + "_i" + str(id_n_oeuvre)
+            identifiant_item = titre + "_e" + str(id_n_entree) + "_i" + str(n_oeuvre)
             item_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_item
             num_xml = ET.SubElement(item_xml, "num")
             title_xml = ET.SubElement(item_xml, "title")
-            num_xml.text = str(id_n_oeuvre)
-            dict_item_texte[id_n_oeuvre] = current_line
+            num_xml.text = n_oeuvre
+            dict_item_texte[n_oeuvre] = current_line
             n_line_item = n
         elif n - 1 == n_line_item and ligne_minuscule_regex.search(current_line):
-            dict_item_texte[id_n_oeuvre] = [dict_item_texte[id_n_oeuvre], current_line]
-        elif n_line_item < n and info_complementaire_regex.search(current_line):
-            dict_item_desc_texte[id_n_oeuvre] = current_line
+            dict_item_texte[n_oeuvre] = [dict_item_texte[n_oeuvre], current_line]
+            n_line_item = n
+        elif n - 1 == n_line_item and info_complementaire_regex.search(current_line):
+            dict_item_desc_texte[n_oeuvre] = current_line
             desc_item_xml = ET.SubElement(item_xml, "desc")
-        elif id_n_oeuvre in dict_item_desc_texte:
-            dict_item_desc_texte[id_n_oeuvre] = [dict_item_desc_texte[id_n_oeuvre], current_line]
+        elif n_oeuvre in dict_item_desc_texte:
+            print(n_oeuvre)
+            dict_item_desc_texte[n_oeuvre] = [dict_item_desc_texte[n_oeuvre], current_line]
         else:
             ('LIGNE NON RECONNUE: ', current_line)
-
     for el in list_item_ElementTree:
-        num_item = int("".join(el.xpath(".//num/text()")))
+        num_item = "".join(el.xpath("@n"))
         name_item = el.find(".//title")
         texte_name_item = str(dict_item_texte[num_item])
         texte_name_item_propre = nettoyer_liste_str(texte_name_item)
@@ -181,65 +204,73 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
 
     list_entrees_page = []
     dict_entrees_texte = get_texte_alto(document)
-
+    list_entree_end_texte = get_EntryEnd_texte(document)
+    if list_entree_end_texte != []:
+        # il s'agit d'une entryEnd
+        n_line_auteur, n_line_oeuvre = get_structure_entree(list_entree_end_texte, auteur_regex, oeuvre_regex)
+        try:
+            list_item_entryEnd_xml, n_oeuvre = get_oeuvres(list_entree_end_texte, title, n_oeuvre, n_entree,
+                                                           n_line_oeuvre[0])
+            entree_end_xml = list_xml.find(".//entry[@n='" + str(n_entree) + "']")
+            for item in list_item_entryEnd_xml:
+                entree_end_xml.append(item)
+        except Exception:
+            a_ecrire = "\n" + str(n_entree) + " " + str(list_entree_end_texte)
+            with open("pb_techniques.txt", mode="a") as f:
+                f.write(a_ecrire)
     for num_entree in dict_entrees_texte:
         # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
         entree_texte = dict_entrees_texte[num_entree]
         n_line_auteur, n_line_oeuvre = get_structure_entree(entree_texte, auteur_regex, oeuvre_regex)
-        if num_entree == 0 and n_line_auteur == 0:
-            # il s'agit d'une entryEnd
-            list_item_entryEnd_xml, n_oeuvre = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre)
-            entree_end_xml = list_xml.find(".//entry[@n='"+str(n_entree)+"']")
-            for item in list_item_entryEnd_xml:
-                entree_end_xml.append(item)
-        elif n_line_auteur != 0 and n_line_oeuvre != 0:
-            # il s'agit d'une entry normale
-            # je créé les balises xml nécessaires par la suite
-            n_entree = n_entree + 1
-            if typeCat == "Nulle":
-                entree_xml, auteur_xml, p_trait_xml = create_entry_xml(title, n_entree, infos_biographiques=1)
-            else:
-                entree_xml, auteur_xml, p_trait_xml = create_entry_xml(title, n_entree)
-            n = 0
-            print("AUTEUR ", n_line_auteur, "1ER OEUVRE ", n_line_oeuvre)
-            if typeCat == "Nulle":
-                auteur_xml.text = entree_texte[n_line_auteur]
-            elif typeCat == "Simple":
-                liste_trait_texte = []
-                for ligne in entree_texte:
-                    n += 1
-                if n == n_line_auteur:
+        # en commentaire, les lignes condition à activer lorsque l'on s'occupe d'un catalogue entièrement numérisé
+        # à la main
+        # if num_entree == 0 and n_line_auteur == 0:
+        # il s'agit d'une entry normale
+        # je créé les balises xml nécessaires par la suite
+        n_entree = n_entree + 1
+        if typeCat == "Nulle":
+            entree_xml, auteur_xml, p_trait_xml = create_entry_xml(document, title, n_entree, infos_biographiques=1)
+        else:
+            entree_xml, auteur_xml, p_trait_xml = create_entry_xml(document, title, n_entree)
+        n = 0
+        print("AUTEUR ", n_line_auteur, "OEUVRES", n_line_oeuvre)
+        if typeCat == "Nulle":
+            auteur_xml.text = entree_texte[n_line_auteur]
+        elif typeCat == "Simple":
+            liste_trait_texte = []
+            for ligne in entree_texte:
+                n += 1
+                if n == 1:
                     auteur_xml.text = ligne
-                elif n < n_line_oeuvre:
+                elif n < n_line_oeuvre[0]:
+                    liste_trait_texte.append(ligne)
+            p_trait_xml.text = "\n".join(liste_trait_texte)
+        elif typeCat == "Double":
+            liste_trait_texte = []
+            for ligne in entree_texte:
+                n += 1
+                if n == 1:
+                    auteur_texte = auteur_recuperation_regex.search(ligne)
+                    if auteur_texte != None:
+                        auteur_xml.text = auteur_texte.group(0)
+                    info_bio = limitation_auteur_infobio_regex.search(ligne)
+                    if info_bio != None:
+                        liste_trait_texte.append(info_bio.group(0).replace('),', ''))
+
+                elif n < n_line_oeuvre[0]:
                     liste_trait_texte.append(ligne)
                 p_trait_xml.text = "\n".join(liste_trait_texte)
-            elif typeCat == "Double":
-                liste_trait_texte = []
-                for ligne in entree_texte:
-                    n += 1
-                    if n == n_line_auteur:
-                        auteur_texte = auteur_recuperation_regex.search(ligne)
-                        if auteur_texte == None:
-                            auteur_sans_prenom = auteur_sans_prenom_regex.search(ligne)
-                            auteur_xml.text = auteur_sans_prenom.group(0)
-                        else:
-                            auteur_xml.text = auteur_texte.group(0)
-                        info_bio = limitation_auteur_infobio_regex.search(ligne)
-                        if info_bio != None:
-                            liste_trait_texte.append(info_bio.group(0).replace('),', ''))
-
-                    elif n < n_line_oeuvre:
-                        liste_trait_texte.append(ligne)
-                    p_trait_xml.text = "\n".join(liste_trait_texte)
-
-            list_item_entree, n_oeuvre = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre)
+        try:
+            list_item_entree, n_oeuvre = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre[0])
             for item in list_item_entree:
                 entree_xml.append(item)
+        except Exception:
+            output_txt = "\n"+str(n_entree)+" ".join(entree_texte)
+            with open("pb_techniques.txt", mode="a") as f:
+                f.write(output_txt)
+        try:
+            list_entrees_page.append(entree_xml)
+        except Exception:
+            print("entrée non ajoutée")
 
-            try:
-                list_entrees_page.append(entree_xml)
-            except Exception:
-                print("entrée non ajoutée")
-        else:
-            print("Problème technique : "+ str(entree_texte) + str(num_entree))
     return list_xml, list_entrees_page, n_entree, n_oeuvre
