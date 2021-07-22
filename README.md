@@ -1,6 +1,7 @@
 # Python data extractor for exhibition catalogs
 
-Python script which transforms Alto4 transcription files into XML-TEI encoded catalogs.
+Python script which transforms Alto4 transcription files into XML-TEI encoded catalogs.</br>
+For an exemple of data produced using this script, see [here](https://github.com/Juliettejns/TEIcatalogs).
 
 ## How it works
 <div align="justify">
