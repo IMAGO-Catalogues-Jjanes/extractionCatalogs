@@ -5,7 +5,7 @@ Date: 26/03/2021
 """
 
 from lxml import etree as ET
-
+import sys
 
 def association_xml_rng(document_xml):
     """

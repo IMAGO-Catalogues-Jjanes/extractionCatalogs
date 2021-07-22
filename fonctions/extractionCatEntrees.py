@@ -118,12 +118,14 @@ def create_entry_xml(document, title, n_entree, infos_biographiques=0):
     return entree_xml, auteur_xml, p_trait_xml
 
 
-def get_oeuvres(texte_items_liste, titre, id_n_oeuvre, id_n_entree, n_line_oeuvre=1):
+def get_oeuvres(texte_items_liste, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_oeuvre=1):
     """
     Fonction qui pour une liste donnée, récupère tout les items (oeuvre) d'une entrée et les structure.
     :param texte_items_liste: liste de chaîne de caractères où chaque chaîne correspond à une ligne et la liste correspond
     à l'entrée
     :type texte: list of str
+    :param typeCat: type du catalogue à encoder
+    :type typeCat: str
     :param titre: nom du catalogue à encoder
     :type titre: str
     :param id_n_oeuvre: numéro employé pour l'oeuvre précédente
@@ -171,11 +173,16 @@ def get_oeuvres(texte_items_liste, titre, id_n_oeuvre, id_n_entree, n_line_oeuvr
         name_item = el.find(".//title")
         texte_name_item = str(dict_item_texte[num_item])
         texte_name_item_propre = nettoyer_liste_str(texte_name_item)
-        name_item.text = re.sub(r'^(\S\d{1,3}|\d{1,3}).', '', texte_name_item_propre)
         if el.xpath(".//desc"):
             desc_item = el.find(".//desc")
             texte_desc_item = str(dict_item_desc_texte[num_item])
             desc_item.text = nettoyer_liste_str(texte_desc_item)
+        if typeCat=="Triple" and info_comp_tiret_regex.search(texte_name_item_propre):
+            desc_el_xml = ET.SubElement(el, "desc")
+            desc_tiret = info_comp_tiret_regex.search(texte_name_item_propre).group(0)
+            desc_el_xml.text = desc_tiret
+            texte_name_item_propre = re.sub(r'— .*', '', texte_name_item_propre)
+        name_item.text = re.sub(r'^(\S\d{1,3}|\d{1,3}).', '', texte_name_item_propre)
 
     return list_item_ElementTree, id_n_oeuvre
 
@@ -243,7 +250,7 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
                 elif n < n_line_oeuvre[0]:
                     liste_trait_texte.append(ligne)
             p_trait_xml.text = "\n".join(liste_trait_texte)
-        elif typeCat == "Double":
+        elif typeCat == "Double" or typeCat == "Triple":
             liste_trait_texte = []
             for ligne in entree_texte:
                 n += 1
@@ -251,6 +258,8 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
                     auteur_texte = auteur_recuperation_regex.search(ligne)
                     if auteur_texte != None:
                         auteur_xml.text = auteur_texte.group(0)
+                    elif auteur_sans_prenom_regex.search(ligne) != None:
+                        auteur_xml.text = auteur_sans_prenom_regex.search(ligne).group(0)
                     info_bio = limitation_auteur_infobio_regex.search(ligne)
                     if info_bio != None:
                         liste_trait_texte.append(info_bio.group(0).replace('),', ''))
@@ -258,12 +267,13 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
                 elif n < n_line_oeuvre[0]:
                     liste_trait_texte.append(ligne)
                 p_trait_xml.text = "\n".join(liste_trait_texte)
+
         try:
-            list_item_entree, n_oeuvre = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre[0])
+            list_item_entree, n_oeuvre = get_oeuvres(entree_texte, typeCat, title, n_oeuvre, n_entree, n_line_oeuvre[0])
             for item in list_item_entree:
                 entree_xml.append(item)
         except Exception:
-            output_txt = "\n"+str(n_entree)+" ".join(entree_texte)
+            output_txt = "\n" + str(n_entree) + " ".join(entree_texte)
             with open("pb_techniques.txt", mode="a") as f:
                 f.write(output_txt)
         try:

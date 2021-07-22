@@ -26,9 +26,10 @@ while True:
             Nulle pour un catalogue aux entrées de type nulle
             Simple pour un catalogue aux entrées de type simple
             Double pour un catalogue aux entrées de type double
+            Triple pour un catalogue aux entrées de type Triple
             Rentrer le type correspondant aux entrées du catalogue en vous référant aux exemples présentés dans le github:"""
                            )
-    if type_catalogue not in ('Nulle', 'Simple', 'Double'):
+    if type_catalogue not in ('Nulle', 'Simple', 'Double', 'Triple'):
         print('Mauvais type de catalogue.')
     else:
         break
