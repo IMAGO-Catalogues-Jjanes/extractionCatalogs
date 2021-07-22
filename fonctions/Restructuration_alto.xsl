@@ -42,9 +42,11 @@
                             <xsl:attribute name="HEIGHT">
                                 <xsl:value-of select=".//a:PrintSpace/@HEIGHT"/>                    
                             </xsl:attribute>
-                            <xsl:apply-templates select=".//a:TextBlock"/>
+                            <xsl:apply-templates select=".//a:TextBlock">
+                                <xsl:sort select="@VPOS" data-type="number"/>
+                            </xsl:apply-templates>
                         </xsl:element>
-                    </xsl:element>
+                        </xsl:element>
                 </Layout>
             </alto>
         </xsl:template>

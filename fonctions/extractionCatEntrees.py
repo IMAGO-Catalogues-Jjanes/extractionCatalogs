@@ -54,7 +54,7 @@ def get_EntryEnd_texte(alto):
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
     tagref_entree_end = alto.xpath("//alto:OtherTag[@LABEL='EntryEnd']/@ID", namespaces=NS)[0]
     # récupération du contenu textuel par entrée
-    texte_entree = alto.xpath("//alto:TextBlock[@TAGREFS='BT844']//alto:String/@CONTENT", namespaces=NS)
+    texte_entree = alto.xpath("//alto:TextBlock[@TAGREFS='"+tagref_entree_end+"']//alto:String/@CONTENT", namespaces=NS)
     return texte_entree
 
 def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
@@ -103,10 +103,10 @@ def create_entry_xml(document, title, n_entree, infos_biographiques=0):
     identifiant_entree = title + "_e" + str(n_entree)
     entree_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_entree
     corresp_page= document.xpath("//alto:fileIdentifier/text()", namespaces=NS)
-    if corresp_page != None:
-        entree_xml.attrib["corresp"] = corresp_page[0]
+    if corresp_page != []:
+        entree_xml.attrib["source"] = corresp_page[0]
     else:
-        entree_xml.attrib["corresp"] = document.xpath("//alto:fileName", namespaces=NS)[0]
+        entree_xml.attrib["source"] = document.xpath("//alto:fileName/text()", namespaces=NS)[0]
     desc_auteur_xml = ET.SubElement(entree_xml, "desc")
     auteur_xml = ET.SubElement(desc_auteur_xml, "name")
     p_trait_xml = None
@@ -143,9 +143,7 @@ def get_oeuvres(texte_items_liste, titre, id_n_oeuvre, id_n_entree, n_line_oeuvr
     print(texte_items_liste, len(texte_items_liste))
     # pour chaque ligne de la 1er ligne oeuvre, à la fin de l'entrée
     for n in range(n_line_oeuvre - 1, len(texte_items_liste)):
-        print(n)
         current_line = texte_items_liste[n]
-        print(current_line)
         if oeuvre_regex.search(current_line):
             n_oeuvre =numero_regex.search(current_line).group(0)
             item_xml = ET.Element("item", n=str(n_oeuvre))
