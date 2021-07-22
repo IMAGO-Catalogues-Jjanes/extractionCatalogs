@@ -20,7 +20,7 @@ def association_xml_rng(document_xml):
     # on parse le document xml pour le récupérer
     try:
         fichier_xml = ET.parse(document_xml)
-    except etree.XMLSyntaxError:
+    except ET.XMLSyntaxError:
         # si il y a une erreur au niveau du xml du fichier, on le signale et on arrête le programme.
         print("Le fichier xml n'est pas bien formé.")
         sys.exit()

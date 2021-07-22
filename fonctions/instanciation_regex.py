@@ -10,24 +10,22 @@ import re
 
 " Regex pour lecture rapide, à ne pas supprimer "
 auteur_regex = re.compile(r'^(\S|[A-Z])[A-ZÉ]{3,}')
-oeuvre_regex = re.compile(r'^\d{1,3}(.* —|\.)(?!$)')
+oeuvre_regex = re.compile(r'^\d{1,4}')
 
 " Regex pour différents types d'auteurs en fonction du catalogue traité"
 # Regex récupérant les auteurs sous la forme NOM (Prénom), ou NOM (Initiale.),
-# auteur_recuperation_regex = re.compile(r'^(\S|[A-Z])[A-ZÉ]{3,}(.*)\),')
-# Identique mais si l'ocr pour les majuscules est vraiment mauvais
 auteur_recuperation_regex = re.compile(r'^.*\),')
+# Regex pour les formes se terminant par un cadratin
+#auteur_recuperation_regex = re.compile(r'^.*.(?= —)')
 # Regex récupérant les auteurs de la forme NOM, Prénom, ou NOM, Prénom. (changer la virgule finale dans la regex par \.)
 # auteur_recuperation_regex = re.compile(r'^(\S|[A-Z])[A-ZÉ]*, [A-Z][a-z]*,')
-# Regex récupérant les auteurs sous la forme NOM,
-auteur_sans_prenom_regex = re.compile(r'((^(\S|[A-Z])[A-ZÉ]{3,})|-(.*)(,))')
 # Regex récupérant les auteurs sous la forme M.NOM, Mlle NOM, (si la forme du catalogue a un point au lieu d'une
 # virgule, remplacer la , dans la regex par \.
 # auteur_sans_prenom_regex = re.compile(r'M(.|[a-z]{2,3}) [A-ZÉ]*,')
 
 " Regex pour récupérer les informations biographiques en fonction du catalogue traité"
 # Regex récupérant les informations des catalogues de type NOM (Prénom), Information biographique
-limitation_auteur_infobio_regex = re.compile(r'(\),).*')
+limitation_auteur_infobio_regex = re.compile(r'(?:\),).*')
 # Regex recupérant les informations des catalogues de type NOM Prénom — Information biographique
 # limitation_auteur_infobio_regex = re.compile(r'(— .*)')
 #Regex à ne pas supprimer
