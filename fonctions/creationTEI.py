@@ -97,19 +97,3 @@ def creation_header():
 
     return tei_header_xml
 
-
-def creation_balises(titleCat):
-    """
-    Fonction permettant, pour un catalogue, de créer toutes les balises nécessaires
-    :return: ElementTree contenant le squelette du fichier TEI
-    :rtype: lxml.etree._ElementTree
-    """
-    # création des balises tei, application du teiHeader et ajout, création des balises body-text-list
-    root_xml = ET.Element("TEI", xmlns="http://www.tei-c.org/ns/1.0")
-    root_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = titleCat
-    teiHeader_xml = creation_header()
-    root_xml.append(teiHeader_xml)
-    text_xml = ET.SubElement(root_xml, "text")
-    body_xml = ET.SubElement(text_xml, "body")
-    list_xml = ET.SubElement(body_xml, "list")
-    return root_xml
