@@ -162,7 +162,6 @@ def get_oeuvres(texte_items_liste, typeCat, titre, id_n_oeuvre, id_n_entree, n_l
             n_line_item = n
         elif n - 1 == n_line_item and info_complementaire_regex.search(current_line):
             dict_item_desc_texte[n_oeuvre] = current_line
-            desc_item_xml = ET.SubElement(item_xml, "desc")
         elif n_oeuvre in dict_item_desc_texte:
             print(n_oeuvre)
             dict_item_desc_texte[n_oeuvre] = [dict_item_desc_texte[n_oeuvre], current_line]
@@ -177,7 +176,7 @@ def get_oeuvres(texte_items_liste, typeCat, titre, id_n_oeuvre, id_n_entree, n_l
             desc_item = el.find(".//desc")
             texte_desc_item = str(dict_item_desc_texte[num_item])
             desc_item.text = nettoyer_liste_str(texte_desc_item)
-        if typeCat=="Triple" and info_comp_tiret_regex.search(texte_name_item_propre):
+        if typeCat == "Triple" and info_comp_tiret_regex.search(texte_name_item_propre):
             desc_el_xml = ET.SubElement(el, "desc")
             desc_tiret = info_comp_tiret_regex.search(texte_name_item_propre).group(0)
             desc_el_xml.text = desc_tiret
@@ -185,6 +184,7 @@ def get_oeuvres(texte_items_liste, typeCat, titre, id_n_oeuvre, id_n_entree, n_l
         name_item.text = re.sub(r'^(\S\d{1,3}|\d{1,3}).', '', texte_name_item_propre)
 
     return list_item_ElementTree, id_n_oeuvre
+
 
 
 def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
