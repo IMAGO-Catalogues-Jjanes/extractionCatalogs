@@ -16,14 +16,13 @@ For an exemple of data produced using this script, see [here](https://github.com
    1. Null: An entry is composed of the name of the author and the different items.<br/>
    2. Simple: Each line of the entry contains an precise element: author, biographic informations, item's title and other informations.<br/>
    3. Double: The author and his biographic informations are on the same line. Item's title and its other informations are on two separated lines.<br/>
-   4. Triple: The author and his biographic informations are on the same line. Same for the item's title and its other informations.<br/>
-  
-Images examples:
+
    <p class="float" align="center">
-      <img src="images/entree_nulle.png" height="300"/>
-      <img src="images/Exemple_Entree_Double.png" height="300"/>
-      <img src="images/Exemple_Entree_Simple.png" height="300"/>
+      <img src="images/entree_nulle.png" height="150"/>
+      <img src="images/Exemple_Entree_Double.png" height="150" width="400"/>
+      <img src="images/Exemple_Entree_Simple.png" height="150"/>
    </p>
+Left to right: Entry Null, Entry Simple and Entry Double 
    
 The regular expressions are instancied in the ```regex_instanciation.py``` file. Various regular expressions have been created in order to match with most of the exhibition catalogs. Therefore, it is needed, before using the python script, to check this file and verify that the activated regular expressions match the processed catalog.
    
