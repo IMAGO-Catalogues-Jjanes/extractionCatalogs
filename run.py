@@ -6,7 +6,8 @@ Caroline Corbières (https://github.com/carolinecorbieres/ArtlasCatalogues/blob/
 
 Author: Juliette Janes
 Date: 11/06/21
-"""
+""" 
+
 from lxml import etree as ET
 import os
 import subprocess
@@ -91,8 +92,6 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
     # écriture du résultat dans un fichier xml
     ET.ElementTree(root_xml).write(output, encoding="UTF-8", xml_declaration=True)
 
-    # lancement des tests (fichier tei valide et comparaison avec un fichier qui n'a pas utilisé l'alto)
-    association_xml_rng(output)
 
 if __name__ == "__main__":
     extraction()
