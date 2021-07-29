@@ -92,8 +92,6 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
     # écriture du résultat dans un fichier xml
     ET.ElementTree(root_xml).write(output, encoding="UTF-8", xml_declaration=True)
 
-    # lancement des tests (fichier tei bien formé et valide)
-    association_xml_rng(output)
 
 if __name__ == "__main__":
     extraction()
