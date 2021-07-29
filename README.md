@@ -23,6 +23,7 @@ For an exemple of data produced using this script, see [here](https://github.com
       <img src="images/Exemple_Entree_Simple.png" height="150"/>
    </p>
 Left to right: Entry Null, Entry Simple and Entry Double 
+   <br/>
    
 The regular expressions are instancied in the ```regex_instanciation.py``` file. Various regular expressions have been created in order to match with most of the exhibition catalogs. Therefore, it is needed, before using the python script, to check this file and verify that the activated regular expressions match the processed catalog.
    
