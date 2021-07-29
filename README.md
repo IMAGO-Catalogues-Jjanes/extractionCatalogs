@@ -20,9 +20,9 @@ For an exemple of data produced using this script, see [here](https://github.com
   
 Images examples:
    <p class="float" align="center">
-      <img src="images/entree_nulle.png"/>
-      <img src="images/Exemple_Entree_Double.png"/>
-      <img src="images/Exemple_Entree_Simple.png"/>
+      <img src="images/entree_nulle.png" height="300"/>
+      <img src="images/Exemple_Entree_Double.png" height="300"/>
+      <img src="images/Exemple_Entree_Simple.png" height="300"/>
    </p>
    
 The regular expressions are instancied in the ```regex_instanciation.py``` file. Various regular expressions have been created in order to match with most of the exhibition catalogs. Therefore, it is needed, before using the python script, to check this file and verify that the activated regular expressions match the processed catalog.
