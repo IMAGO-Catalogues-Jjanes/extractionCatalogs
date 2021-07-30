@@ -1,4 +1,4 @@
-# Python data extractor for exhibition catalogs
+# extractionCatalogs : Python data extractor for exhibition catalogs
 
 Python script which transforms Alto4 transcription files into XML-TEI encoded catalogs.</br>
 For an exemple of data produced using this script, see [here](https://github.com/Juliettejns/TEIcatalogs).
@@ -82,7 +82,7 @@ The code is CC-BY.</br>
 ![68747470733a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792f322e302f38387833312e706e67](https://user-images.githubusercontent.com/56683417/115525743-a78d2400-a28f-11eb-8e45-4b6e3265a527.png)
 
 ## Cite this repository
-Juliette Janes, Simon Gabay, Béatrice Joyeux-Prunel, _Python data extractor for exhibition catalogs_, 2021, Paris: ENS Paris https://github.com/Juliettejns/TEIcatalogs/
+Juliette Janes, Simon Gabay, Béatrice Joyeux-Prunel, _extractionCatalogs: Python data extractor for exhibition catalogs_, 2021, Paris: ENS Paris https://github.com/Juliettejns/TEIcatalogs/
 
 ## Contacts
 If you have any questions or remarks, please contact juliette.janes@chartes.psl.eu and simon.gabay@unige.ch.
