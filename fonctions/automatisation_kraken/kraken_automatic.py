@@ -1,6 +1,7 @@
 import subprocess
 import os
 
+
 def transcription(chemin):
     """
     Pour un dossier donné, on lance kraken sur toutes les images contenues.
@@ -14,4 +15,3 @@ def transcription(chemin):
         process = subprocess.Popen(bash_command.split(), stdout=subprocess.PIPE)
         output, error = process.communicate()
         print(fichier + 'done')
-

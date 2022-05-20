@@ -61,34 +61,38 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
     # et en fonction du résultat, on décide d'appliquer une récupération des éléments textuels via l'utilisation des entrées
     # ou non
     for fichier in sorted(os.listdir(directory)):
-        n_fichier += 1
-        print("Traitement de " + fichier)
-        if verifyalto:
-            # si l'option verify est activée, on lance sur le fichier alto les fonctions vérifiant que le fichier est bien
-        # formé et que la structure des entrées est respectée
-            print("Vérification de la formation du fichier alto: ")
-            check_strings(directory+fichier)
-            print("Vérification de la structure des entrées: ")
-            get_entries(directory+fichier)
-        else:
-            pass
-        # on restructure l'alto afin d'avoir les textlines dans le bon ordre
-        restructuration_automatique(directory + fichier)
-        print("Restructuration du fichier faite")
-        # parsage du fichier transformé
-        document_alto = ET.parse(directory + fichier[:-4] + "_restructuration.xml")
-        # lancement de l'extraction des données du fichier
-        # les entrées sont simples, on lance directement la fonction correspondante
-        if n_fichier == 1:
-            list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat,
-                                                                     list_xml)
-        else:
-            list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat,
-                                                                     list_xml, n_entree, n_oeuvre)
-        # ajout des nouvelles entrées dans la balise liste
-        for el in list_entrees:
-            list_xml.append(el)
-        print(fichier + "traité")
+        # ajout Esteban : enlever les fichiers commençant par "." permet de mettre de côté les fichiers cachés. Sur un mac, cela enlève le .DS_store
+        # et on permet que d'autres fichiers soient dans le dossier en ne parsant que les ".xml"
+        # pense à si ce serait mieux de mettre ceci directement dans la fonction
+        if not fichier.startswith(".") and fichier.__contains__(".xml"):
+            n_fichier += 1
+            print("Traitement de " + fichier)
+            if verifyalto:
+                # si l'option verify est activée, on lance sur le fichier alto les fonctions vérifiant que le fichier est bien
+            # formé et que la structure des entrées est respectée
+                print("Vérification de la formation du fichier alto: ")
+                check_strings(directory+fichier)
+                print("Vérification de la structure des entrées: ")
+                get_entries(directory+fichier)
+            else:
+                pass
+            # on restructure l'alto afin d'avoir les textlines dans le bon ordre
+            restructuration_automatique(directory + fichier)
+            print("Restructuration du fichier faite")
+            # parsage du fichier transformé
+            document_alto = ET.parse(directory + fichier[:-4] + "_restructuration.xml")
+            # lancement de l'extraction des données du fichier
+            # les entrées sont simples, on lance directement la fonction correspondante
+            if n_fichier == 1:
+                list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat,
+                                                                         list_xml)
+            else:
+                list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat,
+                                                                         list_xml, n_entree, n_oeuvre)
+            # ajout des nouvelles entrées dans la balise liste
+            for el in list_entrees:
+                list_xml.append(el)
+            print(fichier + "traité")
     # écriture du résultat dans un fichier xml
     ET.ElementTree(root_xml).write(output, encoding="UTF-8", xml_declaration=True)
 
