@@ -35,7 +35,7 @@ def get_texte_alto(alto):
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
     n=0
     dict_entrees_texte = {}
-    tagref_entree = alto.xpath("//alto:OtherTag[@LABEL='Entry']/@ID", namespaces=NS)[0]
+    tagref_entree = alto.xpath("//alto:OtherTag[@LABEL='CustomZone:entry']/@ID", namespaces=NS)[0]
     # récupération du contenu textuel par entrée
     for entree in alto.xpath("//alto:TextBlock[@TAGREFS='" + tagref_entree + "']", namespaces=NS):
         texte_entree = entree.xpath("alto:TextLine/alto:String/@CONTENT", namespaces=NS)
@@ -43,6 +43,7 @@ def get_texte_alto(alto):
         n += 1
     return dict_entrees_texte
 
+# TODO d'après Frédérine, il faut désactiver cette fonction si le catalogue n'a pas d'entryEnd. À vérifier
 def get_EntryEnd_texte(alto):
     """
     Fonction qui permet, pour un document alto, de récupérer tout son contenu textuel dans les entryEnd
@@ -52,10 +53,11 @@ def get_EntryEnd_texte(alto):
     :rtype: list of str
     """
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
-    tagref_entree_end = alto.xpath("//alto:OtherTag[@LABEL='EntryEnd']/@ID", namespaces=NS)[0]
+    tagref_entree_end = alto.xpath("//alto:OtherTag[@LABEL='CustomZone:entryEnd']/@ID", namespaces=NS)[0]
     # récupération du contenu textuel par entrée
     texte_entree = alto.xpath("//alto:TextBlock[@TAGREFS='"+tagref_entree_end+"']//alto:String/@CONTENT", namespaces=NS)
     return texte_entree
+
 
 def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
     """
@@ -85,6 +87,7 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
         else:
             pass
     return n_line_auteur, n_line_oeuvre
+
 
 def create_entry_xml(document, title, n_entree, infos_biographiques=0):
     """
@@ -147,7 +150,7 @@ def get_oeuvres(texte_items_liste, typeCat, titre, id_n_oeuvre, id_n_entree, n_l
     for n in range(n_line_oeuvre - 1, len(texte_items_liste)):
         current_line = texte_items_liste[n]
         if oeuvre_regex.search(current_line):
-            n_oeuvre =numero_regex.search(current_line).group(0)
+            n_oeuvre = numero_regex.search(current_line).group(0)
             item_xml = ET.Element("item", n=str(n_oeuvre))
             list_item_ElementTree.append(item_xml)
             identifiant_item = titre + "_e" + str(id_n_entree) + "_i" + str(n_oeuvre)
@@ -209,6 +212,9 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
 
     list_entrees_page = []
     dict_entrees_texte = get_texte_alto(document)
+
+    # TODO d'après Frédérine, il faut désactiver ce qui suit jusqu'à f.write(a_ecrire)
+    #  si le catalogue n'a pas d'entryEnd. À vérifier
     list_entree_end_texte = get_EntryEnd_texte(document)
     if list_entree_end_texte != []:
         # il s'agit d'une entryEnd
@@ -223,6 +229,7 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
             a_ecrire = "\n" + str(n_entree) + " " + str(list_entree_end_texte)
             with open("pb_techniques.txt", mode="a") as f:
                 f.write(a_ecrire)
+
     for num_entree in dict_entrees_texte:
         # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
         entree_texte = dict_entrees_texte[num_entree]
