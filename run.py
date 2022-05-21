@@ -23,28 +23,44 @@ from tests.test_Validations_xml import check_strings, get_entries, association_x
 from fonctions.automatisation_kraken.kraken_automatic import transcription
 
 
+# E: commandes obligatoires :
 @click.command()
 @click.argument("directory", type=str)
-@click.argument("titlecat", type=str)
-@click.argument("typecat", type=click.Choice(['Nulle', "Simple", "Double", "Triple"]), required=True)
 @click.argument("output", type=str, required=True)
-@click.option("-st", "--segtrans", "segmentationtranscription", is_flag=True, default=False)
-@click.option("-v", "--verify", "verifyalto", is_flag=True, default=False)
+@click.argument("typecat", type=click.Choice(['Nulle', "Simple", "Double", "Triple"]), required=True)
+# E : options
+@click.option("-n", "--name", "titlecat", type=str,
+              help="Select a custom name for the catalog id in the TEI output. By default, it takes the output name")
+@click.option("-st", "--segtrans", "segmentationtranscription", is_flag=True, default=False,
+              help="automatic segmentation and transcription via kraken. Input files must be images.")
+@click.option("-v", "--verify", "verifyalto", is_flag=True, default=False,
+              help="verify ALTO4 input files conformity and structure")
 def extraction(directory, titlecat, typecat, output, segmentationtranscription, verifyalto):
     """
     Python script taking a directory containing images or alto4 files of exhibition catalogs in input and giving back an
     XML-TEI encoded catalog
 
     directory: path to the directory containing images or alto4 files
-    titlecat: name of the processed catalog (in the form title_date)
-    typeCat: catalog's type according to the division done in the github of the project (Nulle, Simple, Double or Triple)
     output: name of the TEI file output
-    -st: if you have a group of images in input, in order to transcribe them in the program. Otherwise, you need Alto4 files
-    in input.
-    -v: if you want to verify your alto4 files.
+    typeCat: catalog's type according to the division done in the github of the project (Nulle, Simple, Double or Triple)
+    titlecat: name of the processed catalog. It takes the output name by default but can be customized with -n command
+    -st: take image files as an input instead of ALTO4. Automatic segmentation and transcription occurs via kraken.
+    -v: verify ALTO4 files.
     """
 
+    # E : si aucun nom n'a été donné au catalogue avec la commande -n, il prend pour nom la valeur de l'output choisi :
+    if not titlecat:
+        titlecat = output
+        # E : si le nom de l'output contient une extension ".xml", on l'enlève
+        if titlecat.__contains__(".xml"):
+            titlecat = titlecat[:-3]
+        else:
+            pass
+    else:
+        pass
+
     # E : si l'on souhaite segmenter et océrriser automatiquement (-st) :
+    # TODO : les commandes kraken ne semblent plus d'actualité ; vérifier fonction
     if segmentationtranscription:
         print("Segmentation et transcription automatiques en cours")
         # E : on appelle le module transcription (fichier kraken_automatic.py) :
