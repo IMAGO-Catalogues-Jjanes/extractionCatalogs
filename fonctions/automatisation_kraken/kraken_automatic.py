@@ -10,8 +10,10 @@ def transcription(chemin):
     :return:
     """
     for fichier in os.listdir(chemin):
-        bash_command = 'kraken -i ' + chemin + fichier + ' ' + "./temp_alto/" + fichier[:-3] + \
-                       'xml -a segment -bl -i segmentationv3.mlmodel ocr -m model_best_100.mlmodel'
-        process = subprocess.Popen(bash_command.split(), stdout=subprocess.PIPE)
-        output, error = process.communicate()
-        print(fichier + 'done')
+        # E : on exclue les éventuels fichiers XML du dossier ainsi que les fichiers/dossiers cachés (.DS_Store sur mac)
+        if not fichier.__contains__(".xml") and not fichier.startswith("."):
+            bash_command = 'kraken -i ' + chemin + fichier + ' ' + "./temp_alto/" + fichier[:-3] + \
+                           'xml -a segment -bl -i segmentationv3.mlmodel ocr -m model_best_100.mlmodel'
+            process = subprocess.Popen(bash_command.split(), stdout=subprocess.PIPE)
+            output, error = process.communicate()
+            print(fichier + 'done')

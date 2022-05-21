@@ -1,11 +1,15 @@
 """
 Initialisation du programme
 Programme permettant, à partir de catalogues d'expositions océrisés avec Kraken, d'extraire les données contenues
-dans le fichier de sortie de l'OCR, ALTO XML, et de construire un fichier TEI sur le modèle de l'ODD défini par
+dans le fichier de sortie de l'OCR (ALTO4 XML), et de construire un fichier TEI sur le modèle de l'ODD défini par
 Caroline Corbières (https://github.com/carolinecorbieres/ArtlasCatalogues/blob/master/5_ImproveGROBIDoutput/ODD/ODD_Transformation.xml)
+
+Le programme est particulièrement adapté à un traitement à partir d'eScriptorium, une interface pour kraken permettant de visualiser
+le processus de segmentation puis d'obtenir les fichier ALTO4 nécessaires à cette pipeline.
 
 Author: Juliette Janes
 Date: 11/06/21
+Continué par Esteban Sánchez Oeconomo 2022
 """ 
 
 from lxml import etree as ET
@@ -39,47 +43,54 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
     in input.
     -v: if you want to verify your alto4 files.
     """
+
+    # E : si l'on souhaite segmenter et océrriser automatiquement (-st) :
     if segmentationtranscription:
-        # si l'option segmentation et transcription automatique est activée, on transcrit les images et on réattribue
-        # à la variable directory une nouvelle valeur vers le dossier contenant les altos.
-        print("Transcription en cours")
+        print("Segmentation et transcription automatiques en cours")
+        # E : on appelle le module transcription (fichier kraken_automatic.py) :
         transcription(directory)
+        # E : on réactualise le chemin de traitement vers le dossier contenant les nouveaux ALTO4 :
         directory="./temp_alto/"
     else:
         pass
 
-    # création des balises du fichier TEI (Teiheader et body)
+    # E : création des balises TEI (teiHeader, body) avec le paquet lxml et le module creationTEI.py :
     root_xml = ET.Element("TEI", xmlns="http://www.tei-c.org/ns/1.0")
     root_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = titlecat
+    # E : on crée le teiHeader avec la fonction correspondante (module creationTEI.py) :
     teiHeader_xml = creation_header()
+    # E : on l'ajoute à l'arborescence :
     root_xml.append(teiHeader_xml)
+    # E : on créé les balises imbriquées text, body et list :
     text_xml = ET.SubElement(root_xml, "text")
     body_xml = ET.SubElement(text_xml, "body")
     list_xml = ET.SubElement(body_xml, "list")
+    # E : on créé une liste vide avec laquelle on comptera les fichiers traités :
     n_fichier = 0
-    # pour chaque fichier alto (page du catalogue) on applique des opérations visant à vérifier la qualité de l'ocr produit
-    # et en fonction du résultat, on décide d'appliquer une récupération des éléments textuels via l'utilisation des entrées
-    # ou non
+
+    # E : pour chaque fichier ALTO (page transcrite du catalogue), on contrôle sa qualité si la commande -v est
+    # activée, puis l'on récupère les éléments textuels des entrées :
     for fichier in sorted(os.listdir(directory)):
-        # ajout Esteban : enlever les fichiers commençant par "." permet de mettre de côté les fichiers cachés. Sur un mac, cela enlève le .DS_store
-        # et on permet que d'autres fichiers soient dans le dossier en ne parsant que les ".xml"
-        # pense à si ce serait mieux de mettre ceci directement dans la fonction
-        if not fichier.startswith(".") and fichier.__contains__(".xml"):
+        # E : exclusion des dossiers/fichiers cachés (".[...]"). Cela rend le script fonctionnel sur mac (.DS_Store)
+        # E : exclusion des fichiers "restructuration" pour pouvoir relancer le script en évitant des boucles.
+        # E : exclusion de fichiers autres que XML (permet la présence d'autres types de fichiers dans le dossier)
+        if not fichier.startswith(".") and not fichier.__contains__("restructuration") and fichier.__contains__(".xml"):
+            # E : on ajoute le ficher au comptage et on l'indique sur le terminal :
             n_fichier += 1
-            print("Traitement de " + fichier)
+            print(str(n_fichier) + " – Traitement de " + fichier)
             if verifyalto:
-                # si l'option verify est activée, on lance sur le fichier alto les fonctions vérifiant que le fichier est bien
-            # formé et que la structure des entrées est respectée
-                print("Vérification de la formation du fichier alto: ")
+                # E : si la commande verify (-v) est activée, on appelle les fonctions du module test_Validations_xml.py
+                # pour vérifier que le fichier ALTO est bien formé et que la structure des entrées est respectée :
+                print("\tVérification de la formation du fichier alto: ")
                 check_strings(directory+fichier)
-                print("Vérification de la structure des entrées: ")
+                print("\tVérification de la structure des entrées: ")
                 get_entries(directory+fichier)
             else:
                 pass
-            # on restructure l'alto afin d'avoir les textlines dans le bon ordre
+            # E : on appelle le module restructuration.py pour restructurer l'ALTO et avoir les textlines dans le bon ordre :
             restructuration_automatique(directory + fichier)
-            print("Restructuration du fichier faite")
-            # parsage du fichier transformé
+            print('\tRestructuration du fichier effectuée (fichier "_restructuration.xml" créé)')
+            # E : on indique le chemin vers le fichier restructuré et on le parse :
             document_alto = ET.parse(directory + fichier[:-4] + "_restructuration.xml")
             # lancement de l'extraction des données du fichier
             # les entrées sont simples, on lance directement la fonction correspondante
@@ -92,8 +103,8 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
             # ajout des nouvelles entrées dans la balise liste
             for el in list_entrees:
                 list_xml.append(el)
-            print(fichier + "traité")
-    # écriture du résultat dans un fichier xml
+            print("\t" + fichier + " traité")
+    # E : écriture du résultat dans un fichier xml
     ET.ElementTree(root_xml).write(output, encoding="UTF-8", xml_declaration=True)
 
 

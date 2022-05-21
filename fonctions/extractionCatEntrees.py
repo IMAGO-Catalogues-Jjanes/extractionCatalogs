@@ -145,7 +145,7 @@ def get_oeuvres(texte_items_liste, typeCat, titre, id_n_oeuvre, id_n_entree, n_l
     list_item_ElementTree = []
     dict_item_texte = {}
     dict_item_desc_texte = {}
-    print(texte_items_liste, len(texte_items_liste))
+    print("\t\t  ", texte_items_liste, len(texte_items_liste))
     # pour chaque ligne de la 1er ligne oeuvre, à la fin de l'entrée
     for n in range(n_line_oeuvre - 1, len(texte_items_liste)):
         current_line = texte_items_liste[n]
@@ -245,7 +245,7 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
         else:
             entree_xml, auteur_xml, p_trait_xml = create_entry_xml(document, title, n_entree)
         n = 0
-        print("AUTEUR ", n_line_auteur, "OEUVRES", n_line_oeuvre)
+        print("\t\tAUTEUR ", n_line_auteur, "OEUVRES", n_line_oeuvre)
         if typeCat == "Nulle":
             auteur_xml.text = entree_texte[n_line_auteur]
         elif typeCat == "Simple":
