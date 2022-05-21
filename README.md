@@ -1,9 +1,11 @@
-exp# extractionCatalogs : Python data extractor for exhibition catalogs
+# extractionCatalogs : Python data extractor for exhibition catalogs
 
-Python script which transforms Alto4 transcription files into XML-TEI encoded catalogs.</br>
-For an exemple of data produced using this script, see [here](https://github.com/Juliettejns/TEIcatalogs).
+This python script aims to create TEI encoded exhibition catalogs from XIXth and XXth centuries.
 
-## How it works
+It uses Alto4 files as an input (which contains the catalogs segmentation and transcriptions) and delivers XML-TEI files. 
+You can find in [here](https://github.com/Juliettejns/TEIcatalogs) examples of data produced with this script.
+
+## Using the pipeline
 <div align="justify">
    
    <p class="float" align="center">
@@ -19,10 +21,10 @@ For an exemple of data produced using this script, see [here](https://github.com
 
    <p class="float" align="center">
       <img src="images/entree_nulle.png" height="150"/>
-      <img src="images/Exemple_Entree_Double.png" height="150" width="400"/>
       <img src="images/Exemple_Entree_Simple.png" height="150"/>
+      <img src="images/Exemple_Entree_Double.png" height="150" width="400"/>
    </p>
-Left to right: Entry Null, Entry Simple and Entry Double 
+Left to right: Null entry, Simple entry and Double entry
    <br/>
    
 The regular expressions are instancied in the ```regex_instanciation.py``` file. Various regular expressions have been created in order to match with most of the exhibition catalogs. Therefore, it is needed, before using the python script, to check this file and verify that the activated regular expressions match the processed catalog.
@@ -32,7 +34,7 @@ The script output is a XML-TEI file which combines all the Alto4 transcriptions 
 
 </div>
  
-## How to use the repository
+## Installation
   - Clone the repository: ```git clone https://github.com/Juliettejns/extractionCatalogs```
   - Create virtual environment: ```virtualenv -p python3 env```
   - Run the virtual env: ```source env/bin/activate```
@@ -72,10 +74,13 @@ If you want to have your alto files verified (recommanded), you need to add the 
 ```
 
 ## Credits
-This repository is developed by Juliette Janes, intern of the [Artl@s](https://artlas.huma-num.fr/fr/) project, with the help of Simon Gabay under the supervision of Béatrice Joyeux-Prunel.
+This repository was first developed by Juliette Janes in 2021. The project was further augmented by Esteban Sánchez Oeconomo in 2022.
+
+Both former students in Digital Humanities at Paris Science-Lettres University and interns of the [Artl@s](https://artlas.huma-num.fr/fr/) 
+project worked under the direction of Simon Gabay and Béatrice Joyeux-Prunel.
 
 ## Thanks to
-Thanks to Simon Gabay and Claire Jahan for their help and work.
+This project greatly benefited from the active help Simon Gabay, Claire Jahan and Frédérine Pradier
 
 ## Licence
 The code is CC-BY.</br>
@@ -84,6 +89,9 @@ The code is CC-BY.</br>
 ## Cite this repository
 Juliette Janes, Simon Gabay, Béatrice Joyeux-Prunel, _extractionCatalogs: Python data extractor for exhibition catalogs_, 2021, Paris: ENS Paris https://github.com/Juliettejns/TEIcatalogs/
 
+Esteban Sánchez Oeconomo, Juliette Janès, Simon Gabay, Béatrice Joyeux-Prunel, _extractionCatalogs: Python data extractor for exhibition catalogs_, 2022, Paris: ENS Paris, IMAGO / Genova: Université de Genève
+
+
 ## Contacts
-If you have any questions or remarks, please contact juliette.janes@chartes.psl.eu and simon.gabay@unige.ch.
+If you have any questions or remarks, please contact juliette.janes@chartes.psl.eu, esteban.sanchez.oeconomo@chartes.psl.eu or simon.gabay@unige.ch.
 
