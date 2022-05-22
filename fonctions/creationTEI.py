@@ -8,6 +8,9 @@ Date: 18/06/21
 
 from lxml import etree as ET
 
+# TODO : rajouter commentaires <!-- --> pour expliquer les balises à customiser
+# TODO : mettre automatiquement les bonnes références de schéma
+
 def creation_header():
     """
     Fonction permettant, pour un catalogue, de créer les balises du teiheader.

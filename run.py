@@ -120,8 +120,24 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
             for el in list_entrees:
                 list_xml.append(el)
             print("\t" + fichier + " traité")
-    # E : écriture du résultat dans un fichier xml
-    ET.ElementTree(root_xml).write(output, encoding="UTF-8", xml_declaration=True)
+
+    # E : on créé une variable contenant l'arbre
+    xml_tree = ET.ElementTree(root_xml)
+    # E : on créé des variables avec les schémas souhaités
+    # (en ligne et pas en local pour faciliter la mobilité des documents) :
+    schema_1 = ET.ProcessingInstruction('xml-model', 'href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/tests/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"')
+    schema_2 = ET.ProcessingInstruction('xml-model', 'href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/tests/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"')
+    # Feuille de style pour présenter les catalogues sur un navigateur :
+    # TODO à refaire en totalité
+    # ne marche que en local, voici le lien souhaité : https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/TEIcatalogs/main/affichage_TEI.css
+    CSS = ET.ProcessingInstruction('xml-stylesheet', 'type="text/css" href="affichage_TEI.css"')
+    # E : on peut rajouter ces instructions au dessus de la racine – ils sont traités comme des noeuds :
+    xml_tree.getroot().addprevious(schema_1)
+    xml_tree.getroot().addprevious(schema_2)
+    xml_tree.getroot().addprevious(CSS)
+
+    # E : écriture du résultat de tout le processus de création TEI dans un fichier xml
+    xml_tree.write(output, encoding="UTF-8", xml_declaration=True)
 
 
 if __name__ == "__main__":
