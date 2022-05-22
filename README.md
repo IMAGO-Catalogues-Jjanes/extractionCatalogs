@@ -9,7 +9,7 @@ You can find in [here](https://github.com/Juliettejns/TEIcatalogs) examples of d
 <div align="justify">
    
    <p class="float" align="center">
-      <img src="images/pipeline_extraction.png"/>
+      <img src="extractionCatalogs/static/images/pipeline_extraction.png"/>
    </p>
    
    Since the transcription of the exhibition catalogs pages are done along to its layout analysis, entries are described in the alto4 file. Therefore, we are able, for each entry, to get, using regular expressions, the author, its biographic informations and each items created by the author. To do that, we need to divide exhibition catalogs according to their entries' typology: 
@@ -20,9 +20,9 @@ You can find in [here](https://github.com/Juliettejns/TEIcatalogs) examples of d
    3. Double: The author and his biographic informations are on the same line. Item's title and its other informations are on two separated lines.<br/>
 
    <p class="float" align="center">
-      <img src="images/entree_nulle.png" height="150"/>
-      <img src="images/Exemple_Entree_Simple.png" height="150"/>
-      <img src="images/Exemple_Entree_Double.png" height="150" width="400"/>
+      <img src="extractionCatalogs/static/images/entree_nulle.png" height="150"/>
+      <img src="extractionCatalogs/static/images/Exemple_Entree_Simple.png" height="150"/>
+      <img src="extractionCatalogs/static/images/Exemple_Entree_Double.png" height="150" width="400"/>
    </p>
 Left to right: Null entry, Simple entry and Double entry
    <br/>
@@ -41,7 +41,7 @@ The script output is a XML-TEI file which combines all the Alto4 transcriptions 
   - Install the requirements: ```pip install -r requirements.txt```
   - Check the regex used in the `fonctions/instanciation_regex.py` file
   - Run the program (previously): `python3 run.py ./path/to/directory_with_images_or_altos title_Catalogue_date type_of_catalog name_output`</br>
-  - Run the progam (now): `python3 run.py ./path/to/Alto_or_images output type -n name -v -st`</br>
+  - Run the progam (now): `python3 run.py ./path/to/Alto_or_images ./path/to/output type -n name -v -st`</br>
 
 If you want to have images as your input, you need to add the option `-st` at the end of the command. It segments and transcribes your data.</br>
 If you want to have your alto files verified (recommanded), you need to add the option `-v` at the end of the command.

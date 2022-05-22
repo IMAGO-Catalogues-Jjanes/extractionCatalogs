@@ -14,13 +14,13 @@ Continué par Esteban Sánchez Oeconomo 2022
 
 from lxml import etree as ET
 import os
-import subprocess
 import click
-from fonctions.extractionCatEntrees import extInfo_Cat
-from fonctions.creationTEI import creation_header
-from fonctions.restructuration import restructuration_automatique
-from tests.test_Validations_xml import check_strings, get_entries, association_xml_rng
-from fonctions.automatisation_kraken.kraken_automatic import transcription
+from extractionCatalogs.fonctions.extractionCatEntrees import extInfo_Cat
+from extractionCatalogs.fonctions.creationTEI import creation_header
+from extractionCatalogs.fonctions.restructuration import restructuration_automatique
+from extractionCatalogs.fonctions.validation_alto.test_Validations_xml import check_strings, get_entries
+from extractionCatalogs.fonctions.automatisation_kraken.kraken_automatic import transcription
+from extractionCatalogs.variables import contenu_TEI
 
 
 # E: commandes obligatoires :
@@ -123,21 +123,20 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
 
     # E : on créé une variable contenant l'arbre
     xml_tree = ET.ElementTree(root_xml)
-    # E : on créé des variables avec les schémas souhaités
-    # (en ligne et pas en local pour faciliter la mobilité des documents) :
-    schema_1 = ET.ProcessingInstruction('xml-model', 'href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/tests/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"')
-    schema_2 = ET.ProcessingInstruction('xml-model', 'href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/tests/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"')
-    # Feuille de style pour présenter les catalogues sur un navigateur :
-    # TODO à refaire en totalité
-    # ne marche que en local, voici le lien souhaité : https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/TEIcatalogs/main/affichage_TEI.css
-    CSS = ET.ProcessingInstruction('xml-stylesheet', 'type="text/css" href="affichage_TEI.css"')
-    # E : on peut rajouter ces instructions au dessus de la racine – ils sont traités comme des noeuds :
-    xml_tree.getroot().addprevious(schema_1)
-    xml_tree.getroot().addprevious(schema_2)
-    xml_tree.getroot().addprevious(CSS)
+    # E : on appelle le dictionnaire de schémas souhaités présente sur contenu_TEI.py, et on boucle pour ajouter
+    # leurs valeurs (des liens) en tant qu'instructions initiales de l'output :
+    for schema in contenu_TEI.schemas.values():
+        # l'instruction est traitée en tant que noeud :
+        modele = ET.ProcessingInstruction('xml-model', schema)
+        # le modèle est ajouté au dessus de la racine :
+        xml_tree.getroot().addprevious(modele)
+    # E : on appelle la feuille de style indiquée sur contenu_TEI.py et on la place dans une instruction initiale :
+    if contenu_TEI.CSS != "":
+        CSS = ET.ProcessingInstruction('xml-stylesheet', contenu_TEI.CSS)
+        xml_tree.getroot().addprevious(CSS)
 
     # E : écriture du résultat de tout le processus de création TEI dans un fichier xml
-    xml_tree.write(output, encoding="UTF-8", xml_declaration=True)
+    xml_tree.write(output, pretty_print=True, encoding="UTF-8", xml_declaration=True)
 
 
 if __name__ == "__main__":
