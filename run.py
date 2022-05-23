@@ -48,6 +48,7 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
     -v: verify ALTO4 files.
     """
 
+    # === 1. Options ====
     # E : si aucun nom n'a été donné au catalogue avec la commande -n, il prend pour nom la valeur de l'output choisi :
     if not titlecat:
         titlecat = output
@@ -70,6 +71,7 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
     else:
         pass
 
+    # === 2. Création d'un fichier TEI ====
     # E : création des balises TEI (teiHeader, body) avec le paquet lxml et le module creationTEI.py :
     root_xml = ET.Element("TEI", xmlns="http://www.tei-c.org/ns/1.0")
     root_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = titlecat
@@ -84,6 +86,7 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
     # E : on créé une liste vide avec laquelle on comptera les fichiers traités :
     n_fichier = 0
 
+    # === 3. Traitement des ALTO en input ====
     # E : pour chaque fichier ALTO (page transcrite du catalogue), on contrôle sa qualité si la commande -v est
     # activée, puis l'on récupère les éléments textuels des entrées :
     for fichier in sorted(os.listdir(directory)):
@@ -94,6 +97,7 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
             # E : on ajoute le ficher au comptage et on l'indique sur le terminal :
             n_fichier += 1
             print(str(n_fichier) + " – Traitement de " + fichier)
+            # TODO commande -v retourne des erreurs
             if verifyalto:
                 # E : si la commande verify (-v) est activée, on appelle les fonctions du module test_Validations_xml.py
                 # pour vérifier que le fichier ALTO est bien formé et que la structure des entrées est respectée :
@@ -103,20 +107,23 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
                 get_entries(directory+fichier)
             else:
                 pass
+
+        # === 4. Restructuration des ALTOS ====
             # E : on appelle le module restructuration.py pour restructurer l'ALTO et avoir les textlines dans le bon ordre :
             restructuration_automatique(directory + fichier)
             print('\tRestructuration du fichier effectuée (fichier "_restructuration.xml" créé)')
             # E : on indique le chemin vers le fichier restructuré et on le parse :
             document_alto = ET.parse(directory + fichier[:-4] + "_restructuration.xml")
-            # lancement de l'extraction des données du fichier
-            # les entrées sont simples, on lance directement la fonction correspondante
+
+        # === 5. Extraction des entrées ====
+            # E : on appelle le module extractionCatEntrees.py pour extraire les données textuelles des ALTO restructurés :
             if n_fichier == 1:
                 list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat,
                                                                          list_xml)
             else:
                 list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat,
                                                                          list_xml, n_entree, n_oeuvre)
-            # ajout des nouvelles entrées dans la balise liste
+            # ajout des nouvelles entrées dans la balise list du fichier TEI
             for el in list_entrees:
                 list_xml.append(el)
             print("\t" + fichier + " traité")
@@ -135,7 +142,7 @@ def extraction(directory, titlecat, typecat, output, segmentationtranscription, 
         CSS = ET.ProcessingInstruction('xml-stylesheet', contenu_TEI.CSS)
         xml_tree.getroot().addprevious(CSS)
 
-    # E : écriture du résultat de tout le processus de création TEI dans un fichier xml
+    # E : écriture du résultat de tout le processus de création TEI (arbre, entrées extraites) dans un fichier xml :
     xml_tree.write(output, pretty_print=True, encoding="UTF-8", xml_declaration=True)
 
 
