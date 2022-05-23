@@ -38,9 +38,12 @@ def get_texte_alto(alto):
     # récupération du contenu textuel par entrée
     for entree in alto.xpath("//alto:TextBlock[@TAGREFS='" + tagref_entree + "']", namespaces=NS):
         texte_entree = entree.xpath("alto:TextLine/alto:String/@CONTENT", namespaces=NS)
+        # E : iiif
+        iiif_region = entree.xpath("@ID", namespaces=NS)
+        print(str(iiif_region) + " ici")
         dict_entrees_texte[n] = texte_entree
         n += 1
-    return dict_entrees_texte
+    return dict_entrees_texte, iiif_region
 
 # TODO d'après Frédérine, il faut désactiver cette fonction si le catalogue n'a pas d'entryEnd. À vérifier
 def get_EntryEnd_texte(alto):
@@ -88,7 +91,7 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
     return n_line_auteur, n_line_oeuvre
 
 
-def create_entry_xml(document, title, n_entree, infos_biographiques=0):
+def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques=0):
     """
     Fonction qui permet de créer toutes les balises TEI nécessaires pour encoder une entrée
     :param title: nom du catalogue
@@ -107,22 +110,24 @@ def create_entry_xml(document, title, n_entree, infos_biographiques=0):
     corresp_page= document.xpath("//alto:fileIdentifier/text()", namespaces=NS)
     if corresp_page != []:
         entree_xml.attrib["source"] = corresp_page[0]
-        # TODO couper les zones !
+
         if entree_xml.attrib["source"].__contains__("/full/full/0/default."):
-            x = "11"
-            y = "11"
-            w = "11"
-            h = "11"
-            region = x + "," + y + "," + w + "," + h
+            # TODO les coupes se répètent sur le terminal, vérifier ce qui se passe
+            x = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region[0], "@HPOS"), namespaces=NS)
+            y = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region[0], "@VPOS"), namespaces=NS)
+            w = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region[0], "@WIDTH"), namespaces=NS)
+            h = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region[0], "@HEIGHT"), namespaces=NS)
+            coupe = str(x) + "," + str(y) + "," + str(w) + "," + str(h)
+            coupe = coupe.replace("'", "").replace("[", "").replace("]", "")
+
             iiif = entree_xml.attrib["source"].replace("/full/full/0/default.",
                                                         "/{region}/{size}/{rotation}/{quality}.").format(
-                region=region,
+                region=coupe,
                 size="full",
                 rotation="0",
                 quality="default"
             )
             print(iiif)
-
     else:
         entree_xml.attrib["source"] = document.xpath("//alto:fileName/text()", namespaces=NS)[0]
     desc_auteur_xml = ET.SubElement(entree_xml, "desc")
@@ -226,7 +231,8 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
     """
 
     list_entrees_page = []
-    dict_entrees_texte = get_texte_alto(document)
+    dict_entrees_texte, iiif_region = get_texte_alto(document)
+    print(iiif_region)
 
     # TODO d'après Frédérine, il faut désactiver ce qui suit jusqu'à f.write(a_ecrire)
     #  si le catalogue n'a pas d'entryEnd. À vérifier
@@ -256,9 +262,9 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
         # je créé les balises xml nécessaires par la suite
         n_entree = n_entree + 1
         if typeCat == "Nulle":
-            entree_xml, auteur_xml, p_trait_xml = create_entry_xml(document, title, n_entree, infos_biographiques=1)
+            entree_xml, auteur_xml, p_trait_xml = create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques=1)
         else:
-            entree_xml, auteur_xml, p_trait_xml = create_entry_xml(document, title, n_entree)
+            entree_xml, auteur_xml, p_trait_xml = create_entry_xml(document, title, n_entree, iiif_region)
         n = 0
         print("\t\tAUTEUR ", n_line_auteur, "OEUVRES", n_line_oeuvre)
         if typeCat == "Nulle":
