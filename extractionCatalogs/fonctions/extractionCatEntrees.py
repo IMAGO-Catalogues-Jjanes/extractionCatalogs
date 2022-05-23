@@ -107,6 +107,22 @@ def create_entry_xml(document, title, n_entree, infos_biographiques=0):
     corresp_page= document.xpath("//alto:fileIdentifier/text()", namespaces=NS)
     if corresp_page != []:
         entree_xml.attrib["source"] = corresp_page[0]
+        # TODO couper les zones !
+        if entree_xml.attrib["source"].__contains__("/full/full/0/default."):
+            x = "11"
+            y = "11"
+            w = "11"
+            h = "11"
+            region = x + "," + y + "," + w + "," + h
+            iiif = entree_xml.attrib["source"].replace("/full/full/0/default.",
+                                                        "/{region}/{size}/{rotation}/{quality}.").format(
+                region=region,
+                size="full",
+                rotation="0",
+                quality="default"
+            )
+            print(iiif)
+
     else:
         entree_xml.attrib["source"] = document.xpath("//alto:fileName/text()", namespaces=NS)[0]
     desc_auteur_xml = ET.SubElement(entree_xml, "desc")
