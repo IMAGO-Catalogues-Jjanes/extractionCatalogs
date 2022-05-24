@@ -141,11 +141,11 @@ def extraction(directory, output, typecat, titlecat, verifyalto, segmentationtra
                 fichier_output = chemin_restructuration
                 if open(fichier_input).read() == open(fichier_output).read():
                     print("\tATTENTION : ce fichier avait déjà été restructuré ; "
-                      "le nouveau fichier produit est exactement pareil")
+                      "le nouveau fichier produit est exactement pareil.")
                     # on demande sur le terminal si l'on souhaite le conserver
                     if input("Souhaitez vous le conserver ? [y/n]") == "n":
                         # si la réponse est non, on élimine le fichier restructuré en doublon :
-                        print("\tLe fichier original sera utilisé à sa place")
+                        print("--> Non. Le fichier original sera utilisé à sa place.")
                         os.remove(chemin_restructuration)
                         # si le dosser restructuration en résulte vide, on l'élimine :
                         if not os.listdir(directory + "restructuration"):
@@ -153,6 +153,7 @@ def extraction(directory, output, typecat, titlecat, verifyalto, segmentationtra
                         # le fichier original, déjà restructuré, est alors utilisé à la place du nouveau
                         chemin_restructuration = fichier_input
                     else:
+                        print("--> Oui")
                         pass
                 else:
                     pass
