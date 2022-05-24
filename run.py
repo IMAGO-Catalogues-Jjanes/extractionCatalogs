@@ -173,6 +173,9 @@ def extraction(directory, output, typecat, titlecat, verifyalto, segmentationtra
                 list_xml.append(entree)
             print("\t" + fichier + " traité")
 
+    # si la valeur de l'output souhaité ne termine pas par ".xml", on le rajoute
+    if not output.__contains__(".xml"):
+        output = output + ".xml"
     # E : écriture du résultat de tout le processus de création TEI (arbre, entrées extraites) dans un fichier xml :
     xml_tree.write(output, pretty_print=True, encoding="UTF-8", xml_declaration=True)
 

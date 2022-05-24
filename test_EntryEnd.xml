@@ -1,0 +1,1025 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/fonctions/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/fonctions/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="test_EntryEnd">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="test_EntryEnd_e1" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f12/full/full/0/default.jpg">
+          <desc>
+            <name>BENARD (Auguste-Sébastien),</name>
+            <trait>
+              <p>et Lafond, 63, rue de Dunkerque</p>
+            </trait>
+          </desc>
+          <item n="28" xml:id="test_EntryEnd_e1_i28">
+            <num>28</num>
+            <title> — Le bac de Cergy.</title>
+          </item>
+          <item n="29" xml:id="test_EntryEnd_e1_i29">
+            <num>29</num>
+            <title>— Départ pour les chamns.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="test_EntryEnd_e2" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f12/full/full/0/default.jpg">
+          <desc>
+            <name>(Brneen (Philippe),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="30" xml:id="test_EntryEnd_e2_i30">
+            <num>30</num>
+            <title> — Portrait de Mademoiselle Sophie R.</title>
+          </item>
+          <item n="31" xml:id="test_EntryEnd_e2_i31">
+            <num>31</num>
+            <title></title>
+          </item>
+          <item n="32" xml:id="test_EntryEnd_e2_i32">
+            <num>32</num>
+            <title> — Paysage, d’après Ruysdaël.</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="test_EntryEnd_e3" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f12/full/full/0/default.jpg">
+          <desc>
+            <name>BERNE-BELLECOUR (Etienne),</name>
+            <trait>
+              <p>Barrias, 5, rue de la Douane.</p>
+            </trait>
+          </desc>
+          <item n="33" xml:id="test_EntryEnd_e3_i33">
+            <num>33</num>
+            <title> — Les Plâtreries, près Fontainebleau.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="test_EntryEnd_e4" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f12/full/full/0/default.jpg">
+          <desc>
+            <name>BERNOT (Edmond),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="34" xml:id="test_EntryEnd_e4_i34">
+            <num>34</num>
+            <title> — Portrait de Mademoiselle L. de T.</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="test_EntryEnd_e5" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f12/full/full/0/default.jpg">
+          <desc>
+            <name>BERTAUX,</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="35" xml:id="test_EntryEnd_e5_i35">
+            <num>35</num>
+            <title> — Buste platre, portrait de M. R.</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="test_EntryEnd_e6" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f12/full/full/0/default.jpg">
+          <desc>
+            <name>BESNUS (Michel-Amédée),</name>
+            <trait>
+              <p>Léon Cogniet, 68, rue du Bac.</p>
+            </trait>
+          </desc>
+          <item n="36" xml:id="test_EntryEnd_e6_i36">
+            <num>36</num>
+            <title> — Plaine marécageuse des côtes d’Angleterre.</title>
+          </item>
+          <item n="37" xml:id="test_EntryEnd_e6_i37">
+            <num>37</num>
+            <title> — Bestiaux au pâturage.</title>
+          </item>
+          <item n="38" xml:id="test_EntryEnd_e6_i38">
+            <num>38</num>
+            <title>— Chevaux de halage.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="test_EntryEnd_e7" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f12/full/full/0/default.jpg">
+          <desc>
+            <name>BIROTHEAU (Ferdinand),</name>
+            <trait>
+              <p>Blanchet, 30, rue Bonaparte.</p>
+            </trait>
+          </desc>
+          <item n="39" xml:id="test_EntryEnd_e7_i39">
+            <num>39</num>
+            <title> — Portrait- de M. B. F.</title>
+          </item>
+          <item n="40" xml:id="test_EntryEnd_e7_i40">
+            <num>40</num>
+            <title> — Portrait de Madame B. M.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="test_EntryEnd_e8" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f13/full/full/0/default.jpg">
+          <desc>
+            <name>BISSON (Pierre-Joseph-Edouard),</name>
+            <trait>
+              <p>de G. Decamps.</p>
+            </trait>
+          </desc>
+          <item n="41" xml:id="test_EntryEnd_e8_i41">
+            <num>41</num>
+            <title> — Le récit du soldat.</title>
+          </item>
+          <item n="42" xml:id="test_EntryEnd_e8_i42">
+            <num>42</num>
+            <title> — Portrait de l’auteur.</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="test_EntryEnd_e9" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f13/full/full/0/default.jpg">
+          <desc>
+            <name>BIZOT (Victor-Gustave),</name>
+            <trait>
+              <p>et Barrias, né à Dijon, 55, faubourg Poissonnière.</p>
+            </trait>
+          </desc>
+          <item n="43" xml:id="test_EntryEnd_e9_i43">
+            <num>43</num>
+            <title>— Annonciation.</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="test_EntryEnd_e10" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f13/full/full/0/default.jpg">
+          <desc>
+            <name>BLU (Jules),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="44" xml:id="test_EntryEnd_e10_i44">
+            <num>44</num>
+            <title> — Portrait de M. C. B.</title>
+          </item>
+        </entry>
+        <entry n="11" xml:id="test_EntryEnd_e11" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f13/full/full/0/default.jpg">
+          <desc>
+            <name>BOQUET (Louis-Charles),</name>
+            <trait>
+              <p>de M. Picot.</p>
+            </trait>
+          </desc>
+          <item n="45" xml:id="test_EntryEnd_e11_i45">
+            <num>45</num>
+            <title> — Portrait de M. B.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="test_EntryEnd_e12" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f13/full/full/0/default.jpg">
+          <desc>
+            <name>BORT (Henri-Charles-Emmanuel),</name>
+            <trait>
+              <p>gon, 54, rue de Lisbonne.</p>
+            </trait>
+          </desc>
+          <item n="46" xml:id="test_EntryEnd_e12_i46">
+            <num>46</num>
+            <title> — Souvenir des montagnes du Faucigny.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="test_EntryEnd_e13" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f13/full/full/0/default.jpg">
+          <desc>
+            <name>BOUCHET (Auguste),</name>
+            <trait>
+              <p>levard Pigalle.</p>
+            </trait>
+          </desc>
+          <item n="47" xml:id="test_EntryEnd_e13_i47">
+            <num>47</num>
+            <title> — Paysage; chemin creux, forêt de Montmorency.</title>
+          </item>
+          <item n="48" xml:id="test_EntryEnd_e13_i48">
+            <num>48</num>
+            <title> — Portrait de Madame C.</title>
+          </item>
+        </entry>
+        <entry n="14" xml:id="test_EntryEnd_e14" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f13/full/full/0/default.jpg">
+          <desc>
+            <name>BOUHGRAVE (Edouard),</name>
+            <trait>
+              <p>vergne.</p>
+            </trait>
+          </desc>
+          <item n="49" xml:id="test_EntryEnd_e14_i49">
+            <num>49</num>
+            <title> — Saint Louis de Sicile et saint Bernardin de</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="test_EntryEnd_e15" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f13/full/full/0/default.jpg">
+          <desc>
+            <name>BOURGEOIS (Hortense),</name>
+            <trait>
+              <p>de M. Léon Cogniet, 73, boulevard Beaumarchais.</p>
+            </trait>
+          </desc>
+          <item n="50" xml:id="test_EntryEnd_e15_i50">
+            <num>50</num>
+            <title> — Portrait de S. M. l’Impératrice, d’après Win¬terhalter.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="test_EntryEnd_e16" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f14/full/full/0/default.jpg">
+          <desc>
+            <name>BOURGEON (Narcisse), né à Bourges (Cher),</name>
+            <trait>
+              <p>M. L. Cogniet, à Bourges, 23, rue Moyenne; à
+Paris, chez M. Ferrand, chimiste, 19, rue Mont
+galet.</p>
+            </trait>
+          </desc>
+          <item n="52" xml:id="test_EntryEnd_e16_i52">
+            <num>52</num>
+            <title> — Paysage, un brouillard d’automne, (Berri.).</title>
+          </item>
+          <item n="53" xml:id="test_EntryEnd_e16_i53">
+            <num>53</num>
+            <title> — Un ravin, (Auvergne.).</title>
+          </item>
+          <item n="54" xml:id="test_EntryEnd_e16_i54">
+            <num>54</num>
+            <title> — Un paysage près de Vasselay. (Berri.).</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="test_EntryEnd_e17" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f14/full/full/0/default.jpg">
+          <desc>
+            <name>BURDIN (Madame Amélie),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="55" xml:id="test_EntryEnd_e17_i55">
+            <num>55</num>
+            <title> — Intérieur de fonderie d’objets d’art, pendant lecoulage de la fonte.</title>
+          </item>
+          <item n="56" xml:id="test_EntryEnd_e17_i56">
+            <num>56</num>
+            <title> — Portrait de Madame Bichel.</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="test_EntryEnd_e18" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f14/full/full/0/default.jpg">
+          <desc>
+            <name>BRIVET (Vincent),</name>
+            <trait>
+              <p>not.</p>
+            </trait>
+          </desc>
+          <item n="57" xml:id="test_EntryEnd_e18_i57">
+            <num>57</num>
+            <title> — Etudes dé chevaux: dix types.</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="test_EntryEnd_e19" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f14/full/full/0/default.jpg">
+          <desc>
+            <name>CADOLLE (Alexandre-Joseph),</name>
+            <trait>
+              <p>[Adresse à traiter avec regex, crochets rajoutés Esteban]38, rue Richelieu.71, rue Saint-Etienne (Batignolles- Paris).</p>
+            </trait>
+          </desc>
+          <item n="58" xml:id="test_EntryEnd_e19_i58">
+            <num>58</num>
+            <title> — Avenue à Saint-Vigor-le-Grand (Calvados).</title>
+          </item>
+          <item n="59" xml:id="test_EntryEnd_e19_i59">
+            <num>59</num>
+            <title> — Vue prise à Saint-Vigor-le-Grand (Calvados).</title>
+          </item>
+          <item n="60" xml:id="test_EntryEnd_e19_i60">
+            <num>60</num>
+            <title> — Intérieur de cour (Calvados).</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="test_EntryEnd_e20" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f14/full/full/0/default.jpg">
+          <desc>
+            <name>CALS (Adolphe-Félix),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="61" xml:id="test_EntryEnd_e20_i61">
+            <num>61</num>
+            <title> — Le ménage du sabotier.</title>
+          </item>
+        </entry>
+        <entry n="21" xml:id="test_EntryEnd_e21" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f14/full/full/0/default.jpg">
+          <desc>
+            <name>CARTIER (Emile),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="62" xml:id="test_EntryEnd_e21_i62">
+            <num>62</num>
+            <title> — Vaches dans un verger (vallée de la Touque).</title>
+          </item>
+          <item n="63" xml:id="test_EntryEnd_e21_i63">
+            <num>63</num>
+            <title> — Moutons au pâturage (Sarthe).</title>
+          </item>
+        </entry>
+        <entry n="22" xml:id="test_EntryEnd_e22" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f15/full/full/0/default.jpg">
+          <desc>
+            <name>CAZIN (Jean-Charles),</name>
+            <trait>
+              <p>dran, à Boulogne.</p>
+            </trait>
+          </desc>
+          <item n="64" xml:id="test_EntryEnd_e22_i64">
+            <num>64</num>
+            <title> — Souvenir des dunes Wissant.</title>
+          </item>
+        </entry>
+        <entry n="23" xml:id="test_EntryEnd_e23" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f15/full/full/0/default.jpg">
+          <desc>
+            <name>CELS (Eugène),</name>
+            <trait>
+              <p>Brager, 34, avenue de Neuilly.</p>
+            </trait>
+          </desc>
+          <item n="65" xml:id="test_EntryEnd_e23_i65">
+            <num>65</num>
+            <title> — Vue de Fort de France.</title>
+          </item>
+          <item n="66" xml:id="test_EntryEnd_e23_i66">
+            <num>66</num>
+            <title>— Vue de Sainte-Marthe, (Nouvelle-Grenade.</title>
+          </item>
+          <item n="67" xml:id="test_EntryEnd_e23_i67">
+            <num>67</num>
+            <title> — Une marine.</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="test_EntryEnd_e24" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f15/full/full/0/default.jpg">
+          <desc>
+            <name>CHARPENTIER (Alfred),</name>
+            <trait>
+              <p>[Adresse à traiter avec regex, crochets rajoutés Esteban]38, rue Richelieu.</p>
+            </trait>
+          </desc>
+          <item n="68" xml:id="test_EntryEnd_e24_i68">
+            <num>68</num>
+            <title>— Le Gave, près de Luz (Hautes-Pyrènées).</title>
+          </item>
+          <item n="69" xml:id="test_EntryEnd_e24_i69">
+            <num>69</num>
+            <title> — Les moulins de Sassenage (Isère).</title>
+          </item>
+        </entry>
+        <entry n="25" xml:id="test_EntryEnd_e25" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f15/full/full/0/default.jpg">
+          <desc>
+            <name>CHAUVEL (Théophile),</name>
+            <trait>
+              <p>[Adresse à traiter avec regex, crochets rajoutés Esteban]10, place de l’Arc-de-Triomphe.</p>
+            </trait>
+          </desc>
+          <item n="70" xml:id="test_EntryEnd_e25_i70">
+            <num>70</num>
+            <title> — Dans la gorge aux Loups (Fontainebleau).</title>
+          </item>
+          <item n="71" xml:id="test_EntryEnd_e25_i71">
+            <num>71</num>
+            <title> — Passage du gué (environ d’Avranches).</title>
+          </item>
+        </entry>
+        <entry n="26" xml:id="test_EntryEnd_e26" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f15/full/full/0/default.jpg">
+          <desc>
+            <name>CHASSEVENT (Gustave-Adolphe),</name>
+            <trait>
+              <p>du Bac.</p>
+            </trait>
+          </desc>
+          <item n="72" xml:id="test_EntryEnd_e26_i72">
+            <num>72</num>
+            <title> — Paysage.</title>
+          </item>
+        </entry>
+        <entry n="27" xml:id="test_EntryEnd_e27" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f15/full/full/0/default.jpg">
+          <desc>
+            <name>CHAUSSAT (Emma),</name>
+            <trait>
+              <p>[Adresse à traiter avec regex, crochets rajoutés Esteban]28, rue Chevert.</p>
+            </trait>
+          </desc>
+          <item n="73" xml:id="test_EntryEnd_e27_i73">
+            <num>73</num>
+            <title> — Salon de Beaujon.</title>
+          </item>
+          <item n="74" xml:id="test_EntryEnd_e27_i74">
+            <num>74</num>
+            <title> — Atelier de M. Gudin.</title>
+          </item>
+        </entry>
+        <entry n="28" xml:id="test_EntryEnd_e28" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f15/full/full/0/default.jpg">
+          <desc>
+            <name>CHINTREUIL (Antoine),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="75" xml:id="test_EntryEnd_e28_i75">
+            <num>75</num>
+            <title> — Les Champs aux premières clartés; paysage.</title>
+          </item>
+          <item n="76" xml:id="test_EntryEnd_e28_i76">
+            <num>76</num>
+            <title> — Champs de sainfoin; paysage.</title>
+          </item>
+          <item n="77" xml:id="test_EntryEnd_e28_i77">
+            <num>77</num>
+            <title> — Novembre; paysage.</title>
+          </item>
+        </entry>
+        <entry n="29" xml:id="test_EntryEnd_e29" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f16/full/full/0/default.jpg">
+          <desc>
+            <name>CLAPAREDE (Paul),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="78" xml:id="test_EntryEnd_e29_i78">
+            <num>78</num>
+            <title>— Art et indépendance (grisaille). )</title>
+          </item>
+        </entry>
+        <entry n="30" xml:id="test_EntryEnd_e30" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f16/full/full/0/default.jpg">
+          <desc>
+            <name>CLAVEL (Georges),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="79" xml:id="test_EntryEnd_e30_i79">
+            <num>79</num>
+            <title> — Moulin et barrage à Cuguand, sur la Sèvre¬</title>
+          </item>
+          <item n="80" xml:id="test_EntryEnd_e30_i80">
+            <num>80</num>
+            <title> — Le vieux pont, embouchure de la Mourre, à</title>
+          </item>
+        </entry>
+        <entry n="31" xml:id="test_EntryEnd_e31" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f16/full/full/0/default.jpg">
+          <desc>
+            <name>CLÉMANS (Léon),</name>
+            <trait>
+              <p>Grange-aux-Belles.</p>
+            </trait>
+          </desc>
+          <item n="81" xml:id="test_EntryEnd_e31_i81">
+            <num>81</num>
+            <title> — Anciennes plâtrières aux buttes Saint-Chau¬</title>
+          </item>
+        </entry>
+        <entry n="32" xml:id="test_EntryEnd_e32" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f16/full/full/0/default.jpg">
+          <desc>
+            <name>CLÉRY (Edouard),</name>
+            <trait>
+              <p>vard des Invalides.</p>
+            </trait>
+          </desc>
+          <item n="82" xml:id="test_EntryEnd_e32_i82">
+            <num>82</num>
+            <title>— L’Echo des bois.</title>
+          </item>
+          <item n="83" xml:id="test_EntryEnd_e32_i83">
+            <num>83</num>
+            <title> — Portrait de mademoiselle E. L.</title>
+          </item>
+        </entry>
+        <entry n="33" xml:id="test_EntryEnd_e33" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f16/full/full/0/default.jpg">
+          <desc>
+            <name>COSSMANN (Maurice),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="84" xml:id="test_EntryEnd_e33_i84">
+            <num>84</num>
+            <title> — La Rentrée.</title>
+          </item>
+          <item n="85" xml:id="test_EntryEnd_e33_i85">
+            <num>85</num>
+            <title> — La Prière.</title>
+          </item>
+        </entry>
+        <entry n="34" xml:id="test_EntryEnd_e34" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f16/full/full/0/default.jpg">
+          <desc>
+            <name>COSTA (G.),</name>
+            <trait>
+              <p>martre.</p>
+            </trait>
+          </desc>
+          <item n="86" xml:id="test_EntryEnd_e34_i86">
+            <num>86</num>
+            <title> — Oliviers à l’Ariccia ; effet du soir.</title>
+          </item>
+        </entry>
+        <entry n="35" xml:id="test_EntryEnd_e35" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f16/full/full/0/default.jpg">
+          <desc>
+            <name>COTTINET (René),</name>
+            <trait>
+              <p>rue Faubourg-Saint-Martin.</p>
+            </trait>
+          </desc>
+          <item n="87" xml:id="test_EntryEnd_e35_i87">
+            <num>87</num>
+            <title> — Saül; porcelaine.</title>
+          </item>
+        </entry>
+        <entry n="36" xml:id="test_EntryEnd_e36" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f16/full/full/0/default.jpg">
+          <desc>
+            <name>COURTOIS (E.),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="88" xml:id="test_EntryEnd_e36_i88">
+            <num>88</num>
+            <title> — Derniers moments du général Hoche.</title>
+          </item>
+          <item n="89" xml:id="test_EntryEnd_e36_i89">
+            <num>89</num>
+            <title> — La Fin de la journée; épisode (1792).</title>
+          </item>
+        </entry>
+        <entry n="37" xml:id="test_EntryEnd_e37" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f17/full/full/0/default.jpg">
+          <desc>
+            <name>COUSIN (Charles),</name>
+            <trait>
+              <p>Cherche-Midi, élève de MM. Léon Cogniet et Jol¬
+livet.</p>
+            </trait>
+          </desc>
+          <item n="90" xml:id="test_EntryEnd_e37_i90">
+            <num>90</num>
+            <title> — La Chute d’eau.</title>
+          </item>
+        </entry>
+        <entry n="38" xml:id="test_EntryEnd_e38" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f17/full/full/0/default.jpg">
+          <desc>
+            <name>COUTY,</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="91" xml:id="test_EntryEnd_e38_i91">
+            <num>91</num>
+            <title> — La Consigne; chien d’après nature.</title>
+          </item>
+        </entry>
+        <entry n="39" xml:id="test_EntryEnd_e39" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f17/full/full/0/default.jpg">
+          <desc>
+            <name>CHAPELET (Louis-Amable),</name>
+            <trait>
+              <p>chan et Durand-Brager, 70, rue de l’Olivier.</p>
+            </trait>
+          </desc>
+          <item n="92" xml:id="test_EntryEnd_e39_i92">
+            <num>92</num>
+            <title> — Un soir sur le Nil (Haute-Egypte).</title>
+          </item>
+        </entry>
+        <entry n="40" xml:id="test_EntryEnd_e40" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f17/full/full/0/default.jpg">
+          <desc>
+            <name>CRESPELLE (Louis),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="93" xml:id="test_EntryEnd_e40_i93">
+            <num>93</num>
+            <title> — Le Christ en croix.</title>
+          </item>
+        </entry>
+        <entry n="41" xml:id="test_EntryEnd_e41" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f17/full/full/0/default.jpg">
+          <desc>
+            <name>CURTET (Joseph),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="94" xml:id="test_EntryEnd_e41_i94">
+            <num>94</num>
+            <title> — Groupe de fruit et d’enfant.</title>
+          </item>
+          <item n="95" xml:id="test_EntryEnd_e41_i95">
+            <num>95</num>
+            <title>— Couronne de fleur.</title>
+          </item>
+          <item n="96" xml:id="test_EntryEnd_e41_i96">
+            <num>96</num>
+            <title> — Bouquet dans un vase.</title>
+          </item>
+        </entry>
+        <entry n="42" xml:id="test_EntryEnd_e42" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f17/full/full/0/default.jpg">
+          <desc>
+            <name>CURTY (Edouard),</name>
+            <trait>
+              <p>M. Blanchet, 39, rue Bonaparte.</p>
+            </trait>
+          </desc>
+          <item n="97" xml:id="test_EntryEnd_e42_i97">
+            <num>97</num>
+            <title>— Le Jugement dernier.</title>
+          </item>
+        </entry>
+        <entry n="43" xml:id="test_EntryEnd_e43" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f17/full/full/0/default.jpg">
+          <desc>
+            <name>CYBOULLE (Aman),</name>
+            <trait>
+              <p>de Sèvres.</p>
+            </trait>
+          </desc>
+          <item n="98" xml:id="test_EntryEnd_e43_i98">
+            <num>98</num>
+            <title> — Vendanges, scène Louis XV.</title>
+          </item>
+        </entry>
+        <entry n="44" xml:id="test_EntryEnd_e44" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f18/full/full/0/default.jpg">
+          <desc>
+            <name>DANGUY (Célestin),</name>
+            <trait>
+              <p>Cogniet, 7, rue Sainte-Engénie, 14 arondisse.
+ment.</p>
+            </trait>
+          </desc>
+          <item n="99" xml:id="test_EntryEnd_e44_i99">
+            <num>99</num>
+            <title> — Terrassiers.</title>
+          </item>
+          <item n="100" xml:id="test_EntryEnd_e44_i100">
+            <num>100</num>
+            <title> — Mercure Psychopompe.</title>
+          </item>
+        </entry>
+        <entry n="45" xml:id="test_EntryEnd_e45" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f18/full/full/0/default.jpg">
+          <desc>
+            <name>DARJOU (Victor),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="101" xml:id="test_EntryEnd_e45_i101">
+            <num>101</num>
+            <title> — Marguerite. souvenir du gymnase : Les Gana¬ches.</title>
+          </item>
+          <item n="102" xml:id="test_EntryEnd_e45_i102">
+            <num>102</num>
+            <title> — Portrait de M. Dambry, inventeur de la cap¬sule dite tire-feu adoptée par l’artillerieen 1847, commandé pour le musée de Sois¬sons.</title>
+          </item>
+        </entry>
+        <entry n="46" xml:id="test_EntryEnd_e46" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f18/full/full/0/default.jpg">
+          <desc>
+            <name>DARRU (mademoiselle Louise),</name>
+            <trait>
+              <p>Armand Doré, 1, rue de Laval.</p>
+            </trait>
+          </desc>
+          <item n="103" xml:id="test_EntryEnd_e46_i103">
+            <num>103</num>
+            <title> — Fleurs des champs.</title>
+          </item>
+          <item n="104" xml:id="test_EntryEnd_e46_i104">
+            <num>104</num>
+            <title> — Nature morte.</title>
+          </item>
+          <item n="105" xml:id="test_EntryEnd_e46_i105">
+            <num>105</num>
+            <title> — Nature morte, citron.</title>
+          </item>
+        </entry>
+        <entry n="47" xml:id="test_EntryEnd_e47" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f18/full/full/0/default.jpg">
+          <desc>
+            <name>DAUSSE (Elise),</name>
+            <trait>
+              <p>Blancs-Manteaux.</p>
+            </trait>
+          </desc>
+          <item n="106" xml:id="test_EntryEnd_e47_i106">
+            <num>106</num>
+            <title> — Portrait de madame B.</title>
+          </item>
+          <item n="107" xml:id="test_EntryEnd_e47_i107">
+            <num>107</num>
+            <title> — 19. de l’abbé D.</title>
+          </item>
+          <item n="108" xml:id="test_EntryEnd_e47_i108">
+            <num>108</num>
+            <title>—Id. de M.D.</title>
+          </item>
+        </entry>
+        <entry n="48" xml:id="test_EntryEnd_e48" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f18/full/full/0/default.jpg">
+          <desc>
+            <name>DELABORDE (Elie),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="109" xml:id="test_EntryEnd_e48_i109">
+            <num>109</num>
+            <title> — Un paysage, vue de la Brossardière.</title>
+          </item>
+        </entry>
+        <entry n="49" xml:id="test_EntryEnd_e49" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f18/full/full/0/default.jpg">
+          <desc>
+            <name>DELALLEAU.</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="110" xml:id="test_EntryEnd_e49_i110">
+            <num>110</num>
+            <title> — Entrée de Therouanne.</title>
+          </item>
+        </entry>
+        <entry n="50" xml:id="test_EntryEnd_e50" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f19/full/full/0/default.jpg">
+          <desc>
+            <name>DELAUNAY dit DUVAL (Jules),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="111" xml:id="test_EntryEnd_e50_i111">
+            <num>111</num>
+            <title> — Lisière de Bois.</title>
+          </item>
+        </entry>
+        <entry n="51" xml:id="test_EntryEnd_e51" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f19/full/full/0/default.jpg">
+          <desc>
+            <name>DELTON (Charles),</name>
+            <trait>
+              <p>[Adresse à traiter avec regex, crochets rajoutés Esteban]70, rue d’Anjou Saint-Honoré.</p>
+            </trait>
+          </desc>
+          <item n="112" xml:id="test_EntryEnd_e51_i112">
+            <num>112</num>
+            <title> — Chevaux au paturage, effet d’Automne.</title>
+          </item>
+        </entry>
+        <entry n="52" xml:id="test_EntryEnd_e52" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f19/full/full/0/default.jpg">
+          <desc>
+            <name>DENTIGNY (Madame née Henriette Nolet),</name>
+            <trait>
+              <p>Dondeauville, 18e arrondissement.</p>
+            </trait>
+          </desc>
+          <item n="113" xml:id="test_EntryEnd_e52_i113">
+            <num>113</num>
+            <title> — Le Christ en prière au jardin des oliviers.</title>
+          </item>
+          <item n="114" xml:id="test_EntryEnd_e52_i114">
+            <num>114</num>
+            <title> — Agar chassée par Abraham.</title>
+          </item>
+        </entry>
+        <entry n="53" xml:id="test_EntryEnd_e53" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f19/full/full/0/default.jpg">
+          <desc>
+            <name>DEROY (Isidore Laurent),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="115" xml:id="test_EntryEnd_e53_i115">
+            <num>115</num>
+            <title> — Vue de Caudebec.</title>
+          </item>
+          <item n="116" xml:id="test_EntryEnd_e53_i116">
+            <num>116</num>
+            <title> — Vue de Folembray.</title>
+          </item>
+          <item n="117" xml:id="test_EntryEnd_e53_i117">
+            <num>117</num>
+            <title> — Un cadre contenant 4 vues des embellisse¬ments du Bois de Vincennes.</title>
+          </item>
+        </entry>
+        <entry n="54" xml:id="test_EntryEnd_e54" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f19/full/full/0/default.jpg">
+          <desc>
+            <name>DESBROSSES (Jean),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="118" xml:id="test_EntryEnd_e54_i118">
+            <num>118</num>
+            <title> — Les Embrasseux.</title>
+          </item>
+          <item n="119" xml:id="test_EntryEnd_e54_i119">
+            <num>119</num>
+            <title> — Le Berger, effet de soir.</title>
+          </item>
+        </entry>
+        <entry n="55" xml:id="test_EntryEnd_e55" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f19/full/full/0/default.jpg">
+          <desc>
+            <name>DESBROSSES (Léopold),</name>
+            <trait>
+              <p>M. Corot, 2, rue d’Amboise, Montrouge.</p>
+            </trait>
+          </desc>
+          <item n="120" xml:id="test_EntryEnd_e55_i120">
+            <num>120</num>
+            <title> — Paysage, soir d’automne.</title>
+          </item>
+        </entry>
+        <entry n="56" xml:id="test_EntryEnd_e56" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f19/full/full/0/default.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>[Adresse à traiter avec regex, crochets rajoutés Esteban]15, rue de l’Echaudé.</p>
+            </trait>
+          </desc>
+          <item n="121" xml:id="test_EntryEnd_e56_i121">
+            <num>121</num>
+            <title> — Intérieur.</title>
+          </item>
+        </entry>
+        <entry n="57" xml:id="test_EntryEnd_e57" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f19/full/full/0/default.jpg">
+          <desc>
+            <name>DÉRISÉ (Philippe),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="122" xml:id="test_EntryEnd_e57_i122">
+            <num>122</num>
+            <title> — Portrait de M. Charles Vincent, homme de.lettres.</title>
+          </item>
+        </entry>
+        <entry n="58" xml:id="test_EntryEnd_e58" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f20/full/full/0/default.jpg">
+          <desc>
+            <name>DESTIGNY (mademoiselle Lucie),</name>
+            <trait>
+              <p>de MM. Lazerges et Yvon, 37, rue de Fleurus.</p>
+            </trait>
+          </desc>
+          <item n="125" xml:id="test_EntryEnd_e58_i125">
+            <num>125</num>
+            <title> — Portrait de mademoiselle Marie D., étude.</title>
+          </item>
+        </entry>
+        <entry n="59" xml:id="test_EntryEnd_e59" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f20/full/full/0/default.jpg">
+          <desc>
+            <name>DIETSH,</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="126" xml:id="test_EntryEnd_e59_i126">
+            <num>126</num>
+            <title> — Portrait en pied de M. C.; non terminé.</title>
+          </item>
+        </entry>
+        <entry n="60" xml:id="test_EntryEnd_e60" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f20/full/full/0/default.jpg">
+          <desc>
+            <name>DONNER (Athon),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="127" xml:id="test_EntryEnd_e60_i127">
+            <num>127</num>
+            <title> — Une famille de Tritons.</title>
+          </item>
+        </entry>
+        <entry n="61" xml:id="test_EntryEnd_e61" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f20/full/full/0/default.jpg">
+          <desc>
+            <name>DONEAUD (Jean-Eugène),</name>
+            <trait>
+              <p>Auteuil (villa Montmorency).</p>
+            </trait>
+          </desc>
+          <item n="128" xml:id="test_EntryEnd_e61_i128">
+            <num>128</num>
+            <title> — Leçon de dessin.</title>
+          </item>
+          <item n="129" xml:id="test_EntryEnd_e61_i129">
+            <num>129</num>
+            <title> — Jézabel morte (IV Rois, chap. IX).</title>
+          </item>
+          <item n="130" xml:id="test_EntryEnd_e61_i130">
+            <num>130</num>
+            <title> — Suite de jeu.</title>
+          </item>
+        </entry>
+        <entry n="62" xml:id="test_EntryEnd_e62" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f20/full/full/0/default.jpg">
+          <desc>
+            <name>DOYEN (G.) né à Pestieux (Aisne),</name>
+            <trait>
+              <p>de Bonne-Nouvelle.</p>
+            </trait>
+          </desc>
+          <item n="131" xml:id="test_EntryEnd_e62_i131">
+            <num>131</num>
+            <title> — Le Berger et la mer, fable de la Fontaine.</title>
+          </item>
+        </entry>
+        <entry n="63" xml:id="test_EntryEnd_e63" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f20/full/full/0/default.jpg">
+          <desc>
+            <name>DUQUENNE (A.),</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="132" xml:id="test_EntryEnd_e63_i132">
+            <num>132</num>
+            <title> — Un dessin, Job et ses amis (traduction de</title>
+          </item>
+        </entry>
+        <entry n="64" xml:id="test_EntryEnd_e64" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f20/full/full/0/default.jpg">
+          <desc>
+            <name>DORÉ (Armand),</name>
+            <trait>
+              <p>d’Hauteville.</p>
+            </trait>
+          </desc>
+          <item n="133" xml:id="test_EntryEnd_e64_i133">
+            <num>133</num>
+            <title> — Rêverie maternelle.</title>
+          </item>
+          <item n="134" xml:id="test_EntryEnd_e64_i134">
+            <num>134</num>
+            <title> — Au printemps.</title>
+          </item>
+          <item n="135" xml:id="test_EntryEnd_e64_i135">
+            <num>135</num>
+            <title> — Une nouvelle connaissance.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

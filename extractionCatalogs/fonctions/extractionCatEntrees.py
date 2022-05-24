@@ -6,15 +6,13 @@ Date: 11/06/21
 Continué par Esteban Sánchez Oeconomo 2022
 """
 
-from lxml import etree as ET
-from extractionCatalogs.variables.instanciation_regex import *
 from .extractionCatEntrees_fonctions import *
 
 # E : Fonction principale, appelée dans run.py et utilisant les fonctions dans extractionCatEntrees_fonctions.py
 def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
     """
-    Fonction qui permet, pour un catalogue, d'extraire les différentes données contenues dans le fichier alto et de les
-    insérer dans un fichier tei
+    Fonction qui permet, pour un catalogue, d'extraire les différentes données contenues dans le fichier alto en entrée
+    et de les insérer dans un fichier TEI
     :param document: fichier alto parsé par etree
     :type document: lxml.etree._ElementTree
     :param typeCat: type de Catalogue (Nulle: sans information biographique, Simple: avec une information biographique
@@ -32,15 +30,15 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
     """
 
     list_entrees_page = []
+    # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
     dict_entrees_texte, iiif_regions = get_texte_alto(document)
-
-    # TODO d'après Frédérine, il faut désactiver ce qui suit jusqu'à f.write(a_ecrire)
-    #  si le catalogue n'a pas d'entryEnd. À vérifier
+    # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
     list_entree_end_texte = get_EntryEnd_texte(document)
     if list_entree_end_texte != []:
-        # il s'agit d'une entryEnd
+        # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
         n_line_auteur, n_line_oeuvre = get_structure_entree(list_entree_end_texte, auteur_regex, oeuvre_regex)
         try:
+            # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
             list_item_entryEnd_xml, n_oeuvre = get_oeuvres(list_entree_end_texte, title, n_oeuvre, n_entree,
                                                            n_line_oeuvre[0])
             entree_end_xml = list_xml.find(".//entry[@n='" + str(n_entree) + "']")
@@ -55,6 +53,7 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
     for num_entree in dict_entrees_texte:
         # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
         entree_texte = dict_entrees_texte[num_entree]
+        # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py ===
         n_line_auteur, n_line_oeuvre = get_structure_entree(entree_texte, auteur_regex, oeuvre_regex)
         # en commentaire, les lignes condition à activer lorsque l'on s'occupe d'un catalogue entièrement numérisé
         # à la main
@@ -64,8 +63,10 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
         n_entree = n_entree + 1
         iiif_region = iiif_regions[n_iiif]
         if typeCat == "Nulle":
+            # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
             entree_xml, auteur_xml, p_trait_xml, lien_iiif = create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques=1)
         else:
+            # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
             entree_xml, auteur_xml, p_trait_xml, lien_iiif = create_entry_xml(document, title, n_entree, iiif_region)
         n_iiif += 1
         n = 0
@@ -100,6 +101,7 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
                 p_trait_xml.text = "\n".join(liste_trait_texte)
 
         try:
+            # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
             list_item_entree, n_oeuvre = get_oeuvres(entree_texte, typeCat, title, n_oeuvre, n_entree, n_line_oeuvre[0])
             for item in list_item_entree:
                 entree_xml.append(item)
@@ -112,5 +114,7 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
         except Exception:
             print("entrée non ajoutée")
         print("\t\t   "+lien_iiif)
+    if not dict_entrees_texte:
+        print("\n\tCe fichier ne contient pas d'entrées\n")
 
     return list_xml, list_entrees_page, n_entree, n_oeuvre
