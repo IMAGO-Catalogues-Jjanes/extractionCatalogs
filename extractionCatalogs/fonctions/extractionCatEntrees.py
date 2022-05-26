@@ -5,11 +5,12 @@ Author: Juliette Janes
 Date: 11/06/21
 Continué par Esteban Sánchez Oeconomo 2022
 """
+import os.path
 
 from .extractionCatEntrees_fonctions import *
 
 # E : Fonction principale, appelée dans run.py et utilisant les fonctions dans extractionCatEntrees_fonctions.py
-def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
+def extInfo_Cat(document, typeCat, title, output, list_xml, n_entree=0, n_oeuvre=0):
     """
     Fonction qui permet, pour un catalogue, d'extraire les différentes données contenues dans le fichier alto en entrée
     et de les insérer dans un fichier TEI
@@ -19,6 +20,8 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
     sur la ligne en dessous du nom de l'artiste, Double: sur la même ligne que l'auteur)
     :param title: nom du catalogue à encoder
     :type title:str
+    :param output: chemin souhaité pour le TEI en output
+    :type output:str
     :param list_xml: ElementTree contenant la balise tei list et les potentielles précédentes entrées encodées
     :type list_xml: lxml.etree._ElementTree
     :param n_oeuvre: numéro employé pour l'oeuvre précédente
@@ -29,13 +32,21 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
     :rtype: list of lxml.etree._ElementTree
     """
 
+    # === 1. On établit les variables initiales ===
     list_entrees_page = []
+    n_iiif = 0
+    # On récupère un dictionnaire avec pour valeurs les entrées, une liste d'ID pour couper les images, et une liste
+    # d'entryEnd, c'est à dire des entrées coupées en début de page :
     # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
     dict_entrees_texte, iiif_regions = get_texte_alto(document)
+
+    # === 2. On traite les "EntryEnd", s'il y en a ===
     # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
     list_entree_end_texte = get_EntryEnd_texte(document)
+    # Si la liste d'entrées coupées n'est pas vide :
     if list_entree_end_texte != []:
         # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
+        # (les variables auteur_regex et oeuvre regex sont importées depuis instanciation_regex.py)
         n_line_auteur, n_line_oeuvre = get_structure_entree(list_entree_end_texte, auteur_regex, oeuvre_regex)
         try:
             # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
@@ -46,10 +57,11 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
                 entree_end_xml.append(item)
         except Exception:
             a_ecrire = "\n" + str(n_entree) + " " + str(list_entree_end_texte)
-            with open("pb_techniques.txt", mode="a") as f:
+            # 'test_manuel/extraction_test_picto_nouveau'
+            with open(os.path.dirname(output) + "/" + title + "_problems.txt", mode="a") as f:
                 f.write(a_ecrire)
 
-    n_iiif = 0
+    # === 3. On traite les entrées ===
     for num_entree in dict_entrees_texte:
         # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
         entree_texte = dict_entrees_texte[num_entree]
@@ -107,7 +119,7 @@ def extInfo_Cat(document, typeCat, title, list_xml, n_entree=0, n_oeuvre=0):
                 entree_xml.append(item)
         except Exception:
             output_txt = "\n" + str(n_entree) + " ".join(entree_texte)
-            with open("pb_techniques.txt", mode="a") as f:
+            with open(os.path.dirname(output) + "/" + title + "_problems.txt", mode="a") as f:
                 f.write(output_txt)
         try:
             list_entrees_page.append(entree_xml)

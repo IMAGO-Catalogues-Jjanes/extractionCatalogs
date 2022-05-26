@@ -4,7 +4,7 @@ import re
 from lxml import etree as ET
 import errno
 
-def restructuration_automatique(directory, fichier):
+def restructuration_automatique(directory, fichier, extraction_directory):
     """
     Fonction permettant, pour chaque fichier d'un dossier donné, de lui appliquer la feuille de transformation
     transformation_alto.xsl qui permet de restructurer dans le bon ordre les élémements de l'output alto de Kraken.
@@ -23,7 +23,7 @@ def restructuration_automatique(directory, fichier):
     transformation_xlst = ET.XSLT(ET.parse("./extractionCatalogs/fonctions/Restructuration_alto.xsl"))
     propre = transformation_xlst(original)
     # on créé un nouveau fichier dans le dossier résultat
-    chemin_restructuration = directory + "restructuration/" + fichier[:-4] + "_restructuration.xml"
+    chemin_restructuration = extraction_directory + "/restructuration ALTO/" + fichier[:-4] + "_restructuration.xml"
     os.makedirs(os.path.dirname(chemin_restructuration), exist_ok=True)
     with open(chemin_restructuration, mode='wb') as f:
         f.write(propre)
