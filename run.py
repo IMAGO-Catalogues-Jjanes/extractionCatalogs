@@ -52,24 +52,26 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
     -v: verify ALTO4 files.
     """
 
-    # === 1.3 Options activées/désactivées et création d'un dossier pour les output ====
+    # === 1.3 Création d'un dossier pour les output et traitement des options activées ====
 
-    # E : si le nom de l'output contient une extension ".xml", on l'enlève (cela est nécessaire pour créé l'ID TEI) :
+    # E : si le nom de l'output contient une extension ".xml", on l'enlève (cela est nécessaire pour creer l'ID TEI) :
     if titlecat.__contains__(".xml"):
         titlecat = titlecat[:-4]
     else:
         pass
 
     # E : On créé un dossier pour les output (TEI, fichier de problèmes, dossier restructuration) :
-    # E : Si l'output est un chemin, il doit être construit comme suit :
-    # on construit un chemin vers le dossier d'extraction avec en récupérant le chemin output :
+    # on construit un chemin vers le dossier d'extraction en récupérant le chemin output :
     extraction_directory = output + "/extraction_" + titlecat
     # E : Si le chemin n'existe pas, on créé le dossier (s'il existait, on aurait une erreur) :
     if not os.path.exists(extraction_directory):
-        # E :  la méthode makedirs permet de créér tous les dossiers du chemin (mkdir est limité à un seul dossier)
+        # E :  la méthode makedirs permet de créer tous les dossiers du chemin (mkdir est limité à un seul dossier)
         os.makedirs(extraction_directory)
-    output = extraction_directory + "/" + titlecat
+    # on assigne à une variable le chemin vers le fichier
+    output_file = extraction_directory + "/" + titlecat
 
+    # On vérifie si un fichier correspondant "_problems.txt" existe déjà. Cela voudrait dire que la commande à déjà été
+    # lancée auparavant, et on élimine ce fichier pour qu'un nouveau soit creé sans accumuler les infos en boucle
     if os.path.exists(os.path.dirname(output) + "/" + titlecat + "_problems.txt"):
         os.remove(os.path.dirname(output) + "/" + titlecat + "_problems.txt")
 
@@ -138,7 +140,7 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
                 pass
             # === 3.2 Restructuration des ALTO en input ====
             # E : on appelle le module restructuration.py pour appliquer la feuille de transformation
-            # Restructuration_alto.xsl aux fichiers en input et récupérer des fichiers avec les textlines en ordre :
+            # Restructuration_alto.xsl aux fichiers en input et récupérer des fichiers avec les textLines en ordre :
             # (la fonction restructuration_automatique applique la feuille et retourne le chemin vers le fichier créé)
             chemin_restructuration = restructuration_automatique(directory, fichier, extraction_directory)
             print('\tRestructuration du fichier effectuée (fichier "_restructuration.xml" créé)')
@@ -170,26 +172,40 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
             document_alto = ET.parse(chemin_restructuration)
             # E : on appelle le module extractionCatEntrees.py pour extraire les données textuelles des ALTO restructurés :
             if n_fichier == 1:
-                list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat, output,
+                list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat, output_file,
                                                                          list_xml)
             else:
-                list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat, output,
+                list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat, output_file,
                                                                          list_xml, n_entree, n_oeuvre)
             # ajout des nouvelles entrées dans la balise list du fichier TEI :
             for entree in list_entrees:
                 list_xml.append(entree)
             print("\t" + fichier + " traité")
 
-    # on ajoute ou on redonne au nom de catalogue la terminaison en ".xml"
-    if not output.__contains__(".xml"):
-        output = output + ".xml"
+    # on ajoute ou on redonne au nom du catalogue la terminaison en ".xml"
+    if not output_file.__contains__(".xml"):
+        output_file = output_file + ".xml"
     # E : écriture du résultat de tout le processus de création TEI (arbre, entrées extraites) dans un fichier xml :
-    xml_tree.write(output, pretty_print=True, encoding="UTF-8", xml_declaration=True)
-    print("Chemin du dossier d'extraction : {}".format(os.path.abspath(extraction_directory)))
+    xml_tree.write(output_file, pretty_print=True, encoding="UTF-8", xml_declaration=True)
 
-    print(extraction_directory)
-    print(output)
-    print(titlecat)
+    # nous indiquons dans le terminal le nombre total d'entrée extraites dans les fichiers ALTO restructurés :
+    entrees = xml_tree.find(".//list")
+    n_entrees = 0
+    for entree in entrees:
+        n_entrees +=1
+    if n_entrees > 1:
+        print("\n{} entrées ont été extraites de l'ensemble des fichiers restructurés".format(n_entrees))
+    elif n_entrees == 1:
+        print("\n{} entrée a été extraite de l'ensemble des fichiers restructurés".format(n_entrees))
+    # Si aucune entrée n'est extraite dans l'ensemble de fichiers, possible erreur d'instanciation regex :
+
+    elif n_entrees == 0:
+                print("\nATTENTION : Aucune entrée n'a été extraite des fichiers restructurés ; veuillez vérifier vos instanciations"
+              " d'extraction regex")
+
+    # le terminal indique à la fin le chemin absolu vers le dossier d'extraction
+    print("\nChemin du dossier d'extraction : {}".format(os.path.abspath(extraction_directory)))
+
 
 # E : on lance la longue fonction définie précédemment et laquelle constitue ce script
 # E : on vérifie que ce fichier est couramment exécuté (et non pas appelé sur un autre module)

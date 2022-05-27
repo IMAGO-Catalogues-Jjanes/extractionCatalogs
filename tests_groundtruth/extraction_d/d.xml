@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/carolinecorbieres/Memoire_TNAH/master/2_Workflow/5_ImproveGROBIDoutput/ODD/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/carolinecorbieres/Memoire_TNAH/master/2_Workflow/5_ImproveGROBIDoutput/ODD/ODD_VisualContagions.rng" type="application/xml"="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="d">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>Picto Catalogs</name>
+          <persName type="director">Frédérine Pradier</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2022">2022</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Metropolitan Museum of Art (New-York, N.Y.)</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1896-05-12" to="1896-05-31">
+            <head type="society"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="0.10.3b" ident="FoNDUE-eScriptorium">
+          <label>FoNDUE-eScriptorium</label>
+          <ptr target="https://test2.fondue.unige.ch"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list/>
+    </body>
+  </text>
+</TEI>

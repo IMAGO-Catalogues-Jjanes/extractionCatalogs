@@ -43,5 +43,5 @@ repository = "Metropolitan Museum of Art (New-York, N.Y.)"
 
 # logiciel utilisé pour la transcription (OBLIGATOIRE)
 application_version = "0.10.3b"
-application_ident = "FoNDUE - eScriptorium"
+application_ident = "FoNDUE-eScriptorium"
 application_pointer = "https://test2.fondue.unige.ch"

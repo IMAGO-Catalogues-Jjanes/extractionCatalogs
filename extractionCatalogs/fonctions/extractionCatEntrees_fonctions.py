@@ -11,7 +11,7 @@ from extractionCatalogs.variables.instanciation_regex import *
 
 def nettoyer_liste_str(texte):
     """
-    Fonction qui permet de nettoyer une chaîne de caractère issue d'une liste
+    Fonction pour nettoyer une chaîne de caractères qui était auparavant une liste
     :param texte: ancienne liste de listes (parfois de listes) transformée en chaîne de caractères
     :type texte: str
     :return: chaîne de caractères nettoyée
@@ -34,22 +34,24 @@ def get_texte_alto(alto):
     :rtype: dict{int:list of str}
     """
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
-    n = 0
-    dict_entrees_texte = {}
-    # E : liste des ID TextBlock, qui sera utilisée après pour récupérer les régions de l'image indiquées au même niveau :
-    iiif_regions = []
+
     # E : On vérifie que la dénomination des entrées est conforme à l'ontologie Segmonto ('CustomZone')
     if alto.xpath("//alto:OtherTag[@LABEL='CustomZone:entry']", namespaces=NS):
-        # E: Si c'est le cas, on créé une variable qui sélectionne l'ID faisant référence aux régions de type 'CustomZone' :
+        # E: Si c'est le cas, on créé une variable qui récupère l'ID faisant référence aux régions de type 'CustomZone' :
         tagref_entree = alto.xpath("//alto:OtherTag[@LABEL='CustomZone:entry']/@ID", namespaces=NS)[0]
     else:
-        # E : Si non, la valeur de la variable sera None et écartée, et on affiche un avertissement :
+        # E : Si non, la valeur de la variable sera None puis écartée, et on affiche un avertissement :
         tagref_entree = None
         print("\n\tATTENTION : Ce fichier ALTO a été restructuré, mais il n'est pas conforme à l'ontologie Segmonto.\n"
               "\t\tLes entrées doivent être indiquées comme des 'CustomZone:entry' lors de la segmentation.\n"
-              "\t\tVous pouvez changer manuellement le nom de l'entrée correspondante dans la balise <OtherTag LABEL=''>\n"
+              "\t\tVous pouvez changer manuellement, dans le fichier ALTO original, le nom du type de zone correspondant (balise <OtherTag LABEL=''>)\n"
               "\t\tPour plus d'informations : https://github.com/SegmOnto\n")
 
+    # dictionnaire et variable utilisées pour récupérer le texte :
+    dict_entrees_texte = {}
+    n = 0
+    # liste des ID TextBlock, qui sera utilisée après pour récupérer les régions de l'image indiquées au même niveau :
+    iiif_regions = []
     # Si les entrées sont conformes à Segmonto :
     if tagref_entree != None:
         # E : récupération du contenu de chaque entrée, si elle contient du texte
@@ -77,7 +79,7 @@ def get_EntryEnd_texte(alto):
     """
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
     # E : on vérifie que la zone entryEnd a été référencée dans une balise <OtherTag> du fichier :
-    # (ça peut ne pas être le cas pour des catalogues sans ce type d'entrée ; dans ces cas, le script ne pourrait pas
+    # (ça peut ne pas être le cas pour des catalogues sans ce type d'entrée ; dans ces cas, le script ne peut pas
     # tourner sans cette condition)
     if alto.xpath("//alto:OtherTag[@LABEL='CustomZone:entryEnd']", namespaces=NS):
         tagref_entree_end = alto.xpath("//alto:OtherTag[@LABEL='CustomZone:entryEnd']/@ID", namespaces=NS)[0]
@@ -117,58 +119,6 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
             else:
                 pass
     return n_line_auteur, n_line_oeuvre
-
-
-def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques=0):
-    """
-    Fonction qui permet de créer toutes les balises TEI nécessaires pour encoder une entrée
-    :param title: nom du catalogue
-    :type title: str
-    :param n_entree: numéro de l'entrée
-    :type n_entree: str
-    :param infos_biographiques: Existence (ou non) d'une partie information biographique sur l'artiste dans les entrées
-    du catalogue (par défaut elle existe)
-    :type infos_biographiques:int
-    :return: balises vides pour l'encodage d'une entrée
-    """
-    NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
-    entree_xml = ET.Element("entry", n=str(n_entree))
-    identifiant_entree = title + "_e" + str(n_entree)
-    entree_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_entree
-    corresp_page = document.xpath("//alto:fileIdentifier/text()", namespaces=NS)
-    if corresp_page != []:
-        entree_xml.attrib["source"] = corresp_page[0]
-
-        if entree_xml.attrib["source"].__contains__("/full/full/0/default."):
-            # TODO chaque entrée prend toujours la premiere coupe de la feuille...
-            n = 0
-            x = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@HPOS"), namespaces=NS)
-            y = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@VPOS"), namespaces=NS)
-            w = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@WIDTH"), namespaces=NS)
-            h = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@HEIGHT"), namespaces=NS)
-            coupe = str(x) + "," + str(y) + "," + str(w) + "," + str(h)
-            coupe = coupe.replace("'", "").replace("[", "").replace("]", "")
-
-            lien_iiif = entree_xml.attrib["source"].replace("/full/full/0/default.",
-                                                            "/{region}/{size}/{rotation}/{quality}.").format(
-                region=coupe,
-                size="full",
-                rotation="0",
-                quality="default"
-            )
-            entree_xml.attrib["source"] = lien_iiif
-            n += 1
-    else:
-        entree_xml.attrib["source"] = document.xpath("//alto:fileName/text()", namespaces=NS)[0]
-    desc_auteur_xml = ET.SubElement(entree_xml, "desc")
-    auteur_xml = ET.SubElement(desc_auteur_xml, "name")
-    p_trait_xml = None
-    if infos_biographiques == 0:
-        trait_xml = ET.SubElement(desc_auteur_xml, "trait")
-        p_trait_xml = ET.SubElement(trait_xml, "p")
-    else:
-        pass
-    return entree_xml, auteur_xml, p_trait_xml, lien_iiif
 
 
 def get_oeuvres(texte_items_liste, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_oeuvre=1):
@@ -237,3 +187,55 @@ def get_oeuvres(texte_items_liste, typeCat, titre, id_n_oeuvre, id_n_entree, n_l
         name_item.text = re.sub(r'^(\S\d{1,3}|\d{1,3}).', '', texte_name_item_propre)
 
     return list_item_ElementTree, id_n_oeuvre
+
+
+def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques=0):
+    """
+    Fonction qui permet de créer toutes les balises TEI nécessaires pour encoder une entrée
+    :param title: nom du catalogue
+    :type title: str
+    :param n_entree: numéro de l'entrée
+    :type n_entree: str
+    :param infos_biographiques: Existence (ou non) d'une partie information biographique sur l'artiste dans les entrées
+    du catalogue (par défaut elle existe)
+    :type infos_biographiques:int
+    :return: balises vides pour l'encodage d'une entrée
+    """
+    NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
+    entree_xml = ET.Element("entry", n=str(n_entree))
+    identifiant_entree = title + "_e" + str(n_entree)
+    entree_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_entree
+    corresp_page = document.xpath("//alto:fileIdentifier/text()", namespaces=NS)
+    if corresp_page != []:
+        entree_xml.attrib["source"] = corresp_page[0]
+
+        if entree_xml.attrib["source"].__contains__("/full/full/0/default."):
+            # TODO chaque entrée prend toujours la premiere coupe de la feuille...
+            n = 0
+            x = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@HPOS"), namespaces=NS)
+            y = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@VPOS"), namespaces=NS)
+            w = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@WIDTH"), namespaces=NS)
+            h = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@HEIGHT"), namespaces=NS)
+            coupe = str(x) + "," + str(y) + "," + str(w) + "," + str(h)
+            coupe = coupe.replace("'", "").replace("[", "").replace("]", "")
+
+            lien_iiif = entree_xml.attrib["source"].replace("/full/full/0/default.",
+                                                            "/{region}/{size}/{rotation}/{quality}.").format(
+                region=coupe,
+                size="full",
+                rotation="0",
+                quality="default"
+            )
+            entree_xml.attrib["source"] = lien_iiif
+            n += 1
+    else:
+        entree_xml.attrib["source"] = document.xpath("//alto:fileName/text()", namespaces=NS)[0]
+    desc_auteur_xml = ET.SubElement(entree_xml, "desc")
+    auteur_xml = ET.SubElement(desc_auteur_xml, "name")
+    p_trait_xml = None
+    if infos_biographiques == 0:
+        trait_xml = ET.SubElement(desc_auteur_xml, "trait")
+        p_trait_xml = ET.SubElement(trait_xml, "p")
+    else:
+        pass
+    return entree_xml, auteur_xml, p_trait_xml, lien_iiif

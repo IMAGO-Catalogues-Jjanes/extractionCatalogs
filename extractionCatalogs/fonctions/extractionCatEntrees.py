@@ -9,18 +9,18 @@ import os.path
 
 from .extractionCatEntrees_fonctions import *
 
-# E : Fonction principale, appelée dans run.py et utilisant les fonctions dans extractionCatEntrees_fonctions.py
-def extInfo_Cat(document, typeCat, title, output, list_xml, n_entree=0, n_oeuvre=0):
+# E : Fonction principale, appelée dans run.py et utilisant les fonctions inclues dans extractionCatEntrees_fonctions.py
+def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree=0, n_oeuvre=0):
     """
     Fonction qui permet, pour un catalogue, d'extraire les différentes données contenues dans le fichier alto en entrée
-    et de les insérer dans un fichier TEI
+    et de les insérer dans une arborescence TEI
     :param document: fichier alto parsé par etree
     :type document: lxml.etree._ElementTree
     :param typeCat: type de Catalogue (Nulle: sans information biographique, Simple: avec une information biographique
     sur la ligne en dessous du nom de l'artiste, Double: sur la même ligne que l'auteur)
     :param title: nom du catalogue à encoder
     :type title:str
-    :param output: chemin souhaité pour le TEI en output
+    :param output: chemin du fichier TEI en output
     :type output:str
     :param list_xml: ElementTree contenant la balise tei list et les potentielles précédentes entrées encodées
     :type list_xml: lxml.etree._ElementTree
@@ -34,13 +34,15 @@ def extInfo_Cat(document, typeCat, title, output, list_xml, n_entree=0, n_oeuvre
 
     # === 1. On établit les variables initiales ===
     list_entrees_page = []
+    # un compteur pour la liste d'ID qui nous permettra de récupérer les informations des images iiif
     n_iiif = 0
-    # On récupère un dictionnaire avec pour valeurs les entrées, une liste d'ID pour couper les images, et une liste
-    # d'entryEnd, c'est à dire des entrées coupées en début de page :
-    # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
+
+    # === 2. On extrait le texte des ALTO ===
+    # On récupère un dictionnaire avec pour valeurs les entrées, et un liste d'ID pour couper les images :
+    # ( === fonction secondaire appelée dans extractionCatEntrees_fonctions.py === )
     dict_entrees_texte, iiif_regions = get_texte_alto(document)
 
-    # === 2. On traite les "EntryEnd", s'il y en a ===
+    # === 3. On traite les "EntryEnd", s'il y en a ===
     # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
     list_entree_end_texte = get_EntryEnd_texte(document)
     # Si la liste d'entrées coupées n'est pas vide :
@@ -57,8 +59,7 @@ def extInfo_Cat(document, typeCat, title, output, list_xml, n_entree=0, n_oeuvre
                 entree_end_xml.append(item)
         except Exception:
             a_ecrire = "\n" + str(n_entree) + " " + str(list_entree_end_texte)
-            # 'test_manuel/extraction_test_picto_nouveau'
-            with open(os.path.dirname(output) + "/" + title + "_problems.txt", mode="a") as f:
+            with open(os.path.dirname(output_file) + "/" + title + "_problems.txt", mode="a") as f:
                 f.write(a_ecrire)
 
     # === 3. On traite les entrées ===
@@ -119,7 +120,7 @@ def extInfo_Cat(document, typeCat, title, output, list_xml, n_entree=0, n_oeuvre
                 entree_xml.append(item)
         except Exception:
             output_txt = "\n" + str(n_entree) + " ".join(entree_texte)
-            with open(os.path.dirname(output) + "/" + title + "_problems.txt", mode="a") as f:
+            with open(os.path.dirname(output_file) + "/" + title + "_problems.txt", mode="a") as f:
                 f.write(output_txt)
         try:
             list_entrees_page.append(entree_xml)
@@ -127,6 +128,6 @@ def extInfo_Cat(document, typeCat, title, output, list_xml, n_entree=0, n_oeuvre
             print("entrée non ajoutée")
         print("\t\t   "+lien_iiif)
     if not dict_entrees_texte:
-        print("\n\tCe fichier ne contient pas d'entrées\n")
+        print("\n\t\tCe fichier ne contient pas d'entrées\n")
 
     return list_xml, list_entrees_page, n_entree, n_oeuvre
