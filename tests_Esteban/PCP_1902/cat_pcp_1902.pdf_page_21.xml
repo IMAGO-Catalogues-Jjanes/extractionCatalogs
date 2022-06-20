@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>cat_pcp_1902.pdf_page_21.png</fileName>
+      
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT288" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT289" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT290" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT291" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT292" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT293" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT294" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT295" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT296" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/>
+    <OtherTag ID="LT106" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT107" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="1154"
+          HEIGHT="2088"
+          PHYSICAL_IMG_NR="20"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="1154"
+                  HEIGHT="2088">
+        
+        <TextBlock HPOS="129"
+                   VPOS="1512"
+                   WIDTH="853"
+                   HEIGHT="157"
+                   ID="eSc_textblock_b9c3108d"
+                   TAGREFS="BT294">
+          <Shape><Polygon POINTS="129 1512 129 1669 982 1669 982 1512"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_b220f0aa"
+                    TAGREFS="LT106"
+                    BASELINE="140 1555 339 1552" 
+                    HPOS="135"
+                    VPOS="1510"
+                    WIDTH="204"
+                    HEIGHT="78">
+            <Shape><Polygon POINTS="140 1555 135 1513 334 1510 339 1552 334 1586 283 1572 254 1583 240 1588 240 1588 238 1588 238 1588 236 1588 236 1588 139 1578"/></Shape>
+	    <String CONTENT="H. STOIBER"
+                    HPOS="135"
+                    VPOS="1510"
+                    WIDTH="204"
+                    HEIGHT="78"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_6898bbd5"
+                    TAGREFS="LT106"
+                    BASELINE="530 1611 791 1607 851 1604 960 1604" 
+                    HPOS="525"
+                    VPOS="1566"
+                    WIDTH="434"
+                    HEIGHT="93">
+            <Shape><Polygon POINTS="529 1609 525 1569 955 1566 959 1602 955 1653 924 1644 901 1654 899 1654 899 1654 898 1654 898 1654 898 1654 896 1654 896 1654 894 1654 894 1654 892 1654 865 1644 840 1654 840 1654 840 1654 838 1654 838 1654 838 1654 837 1654 830 1654 659 1646 621 1658 619 1658 617 1658 617 1658 617 1659 529 1659"/></Shape>
+	    <String CONTENT="ARC DE TITE — ROME"
+                    HPOS="525"
+                    VPOS="1566"
+                    WIDTH="434"
+                    HEIGHT="93"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="123"
+                   VPOS="326"
+                   WIDTH="848"
+                   HEIGHT="1172"
+                   ID="eSc_textblock_ae1b688d"
+                   TAGREFS="BT291">
+          <Shape><Polygon POINTS="123 326 123 1498 971 1498 971 326"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

@@ -24,6 +24,7 @@ from extractionCatalogs.fonctions.restructuration import restructuration_automat
 from extractionCatalogs.fonctions.validation_alto.test_Validations_xml import check_strings, get_entries
 from extractionCatalogs.fonctions.automatisation_kraken.kraken_automatic import transcription
 from extractionCatalogs.variables import contenu_TEI
+from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner_altos
 
 
 # === 1.2 Création des commandes pour lancer le script sur le Terminal ====
@@ -121,10 +122,16 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
         xml_tree.getroot().addprevious(CSS)
 
     # === 3.1 Traitement préalable des ALTO en input ====
+    # la méthode os.listdir() renvoie une liste des fichiers contenus dans un dossier donné :
+    liste_en_desordre = os.listdir(directory)
+    # nous appelons la fonction ordonner_altos() dans extractionCatEntrees_fonctions.py, qui retourne une liste des
+    # fichiers à traiter en ordre. Nous utilisons pas directement la méthode sorted() car celle-ci ordonne les fichiers
+    # en tant que chaînes de caractères, ce qui brouille les numérotations si celles-ci n'utilisent pas de
+    # "zéros non significatifs" (ex : "9" sera considéré plus grand que "10" s'il n'est pas nommé "09").
+    liste_en_ordre = ordonner_altos(liste_en_desordre)
+
     # on traite chaque fichier ALTO (page transcrite du catalogue), en bouclant sur le dossier indiqué :
-    # (la méthode os.listdir() renvoie une liste des fichiers contenus dans un dossier donné)
-    for fichier in sorted(os.listdir(directory)):
-        # TODO c'est peut être ici que les problèmes avec chiffres sans 0 ont lieu !
+    for fichier in liste_en_ordre:
         # exclusion des fichiers cachés (".[...]"). Cela rend le script fonctionnel sur mac (.DS_Store)
         # exclusion de fichiers autres que XML (permet la présence d'autres types de fichiers dans le dossier)
         if not fichier.startswith(".") and fichier.__contains__(".xml"):

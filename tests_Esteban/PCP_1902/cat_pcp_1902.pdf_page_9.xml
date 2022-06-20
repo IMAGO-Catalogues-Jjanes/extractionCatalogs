@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>cat_pcp_1902.pdf_page_9.png</fileName>
+      
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT288" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT289" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT290" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT291" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT292" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT293" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT294" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT295" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT296" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/>
+    <OtherTag ID="LT106" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT107" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="1142"
+          HEIGHT="2100"
+          PHYSICAL_IMG_NR="8"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="1142"
+                  HEIGHT="2100">
+        
+        <TextBlock HPOS="215"
+                   VPOS="1754"
+                   WIDTH="680"
+                   HEIGHT="156"
+                   ID="eSc_textblock_4ae7bc4e"
+                   TAGREFS="BT294">
+          <Shape><Polygon POINTS="215 1754 215 1910 895 1910 895 1754"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_f9232418"
+                    TAGREFS="LT106"
+                    BASELINE="222 1795 387 1795" 
+                    HPOS="220"
+                    VPOS="1755"
+                    WIDTH="167"
+                    HEIGHT="58">
+            <Shape><Polygon POINTS="222 1795 220 1760 385 1755 387 1795 387 1806 222 1813"/></Shape>
+	    <String CONTENT="A. BEGOZ"
+                    HPOS="220"
+                    VPOS="1755"
+                    WIDTH="167"
+                    HEIGHT="58"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_095d4578"
+                    TAGREFS="LT106"
+                    BASELINE="553 1851 884 1848" 
+                    HPOS="548"
+                    VPOS="1799"
+                    WIDTH="336"
+                    HEIGHT="94">
+            <Shape><Polygon POINTS="553 1851 548 1809 879 1799 884 1848 882 1886 723 1877 711 1883 693 1891 693 1891 693 1891 691 1891 691 1891 691 1893 628 1893 627 1891 627 1891 625 1891 625 1891 625 1891 623 1891 623 1891 623 1890 613 1881 611 1879 606 1881 572 1888 572 1888 572 1888 571 1888 571 1888 571 1888 569 1888 569 1888 549 1879"/></Shape>
+	    <String CONTENT="DANS LE VERGER"
+                    HPOS="548"
+                    VPOS="1799"
+                    WIDTH="336"
+                    HEIGHT="94"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="210"
+                   VPOS="170"
+                   WIDTH="691"
+                   HEIGHT="1567"
+                   ID="eSc_textblock_0e36867f"
+                   TAGREFS="BT291">
+          <Shape><Polygon POINTS="210 170 210 1735 901 1737 901 170"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

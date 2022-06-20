@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>cat_pcp_1902.pdf_page_35.png</fileName>
+      
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT288" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT289" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT290" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT291" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT292" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT293" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT294" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT295" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT296" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/>
+    <OtherTag ID="LT106" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT107" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="1142"
+          HEIGHT="2079"
+          PHYSICAL_IMG_NR="34"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="1142"
+                  HEIGHT="2079">
+        
+        <TextBlock HPOS="113"
+                   VPOS="1565"
+                   WIDTH="847"
+                   HEIGHT="223"
+                   ID="eSc_textblock_a2c43797"
+                   TAGREFS="BT294">
+          <Shape><Polygon POINTS="113 1565 113 1788 960 1788 960 1565"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_ab491a44"
+                    TAGREFS="LT106"
+                    BASELINE="123 1607 339 1602" 
+                    HPOS="119"
+                    VPOS="1562"
+                    WIDTH="224"
+                    HEIGHT="80">
+            <Shape><Polygon POINTS="123 1607 119 1562 336 1566 339 1602 343 1614 299 1640 298 1640 298 1640 296 1640 296 1640 296 1640 265 1642 263 1642 263 1642 263 1642 192 1626 181 1633 180 1633 180 1633 180 1633 178 1633 178 1633 176 1633 176 1633 176 1633 175 1633 175 1633 175 1633 173 1633 173 1633 173 1632 164 1623 161 1621 123 1625"/></Shape>
+	    <String CONTENT="M. BUCQUET"
+                    HPOS="119"
+                    VPOS="1562"
+                    WIDTH="224"
+                    HEIGHT="80"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_2314f93b"
+                    TAGREFS="LT106"
+                    BASELINE="670 1666 942 1663" 
+                    HPOS="665"
+                    VPOS="1618"
+                    WIDTH="277"
+                    HEIGHT="60">
+            <Shape><Polygon POINTS="670 1666 665 1623 937 1618 942 1663 942 1677 670 1678"/></Shape>
+	    <String CONTENT="DANS LA CITÉ"
+                    HPOS="665"
+                    VPOS="1618"
+                    WIDTH="277"
+                    HEIGHT="60"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_9cabd763"
+                    TAGREFS="LT106"
+                    BASELINE="675 1704 940 1701" 
+                    HPOS="672"
+                    VPOS="1666"
+                    WIDTH="268"
+                    HEIGHT="43">
+            <Shape><Polygon POINTS="675 1704 672 1668 935 1666 940 1701 940 1708 675 1709"/></Shape>
+	    <String CONTENT="CARCASSONNE"
+                    HPOS="672"
+                    VPOS="1666"
+                    WIDTH="268"
+                    HEIGHT="43"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="113"
+                   VPOS="332"
+                   WIDTH="853"
+                   HEIGHT="1218"
+                   ID="eSc_textblock_0c810118"
+                   TAGREFS="BT291">
+          <Shape><Polygon POINTS="113 332 113 1550 966 1550 966 332"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

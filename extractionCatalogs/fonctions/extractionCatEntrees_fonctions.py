@@ -25,6 +25,43 @@ def nettoyer_liste_str(texte):
     return texte
 
 
+def ordonner_altos(liste_en_desordre):
+    """
+    Ordonne la liste des fichiers en input. Cette fonction permet que la numérotation dans les noms des fichiers en
+    input aient ou n'aient pas de "zéros non significatifs" (ex: "9" ou "09"). La liste est ordonnée par nombre de
+    caractères dans le nom, puis alpha-numériquement. En effet, une variation dans le nombre de caractères implique deux
+    possibilités : soit l'absence de "zéros non significatifs", soit l'appartenance à un ensemble différent de documents
+    ALTO.
+    :param liste_en_desordre: liste des fichiers obtenus avec os.listdir()
+    :type liste_en_desordre: list
+    :return: liste_en_ordre
+    :rtype: lsit
+    """
+    # on créé un dictionnaire qui contiendra autant de clés que de longueurs de chaînes de caractères constituant les
+    # noms des fichiers :
+    dic_lists = {}
+    for item in liste_en_desordre:
+        # si un clé correspondant à la longueur de la chaîne existe déjà :
+        if len(item) in dic_lists.keys():
+            # sa valeur est une liste et on y ajoute la chaîne :
+            dic_lists[len(item)].append(item)
+        else:
+            # ou bien on créé cette liste, puis on ajoute la chaîne :
+            dic_lists[len(item)] = []
+            dic_lists[len(item)].append(item)
+    # on ordonne les items du dictionnaire par ordre croissant (en les mettant en ordre dans un nouveau dictionnaire) :
+    dic_lists_ordered = dict(sorted(dic_lists.items()))
+    for key in dic_lists_ordered:
+        # on met en ordre chaque liste constituant notre dictionnaire :
+        ordered_list = sorted(dic_lists[key])
+        dic_lists_ordered[key] = ordered_list
+
+    # on créé une seule liste de noms de fichiers en concaténant les listes qui constituent le dictionnaire :
+    liste_en_ordre = []
+    for list in dic_lists_ordered:
+        liste_en_ordre += dic_lists_ordered[list]
+    return liste_en_ordre
+
 def get_texte_alto(alto):
     """
     Fonction qui permet, pour un document alto, de récupérer tout son contenu textuel dans les entrées

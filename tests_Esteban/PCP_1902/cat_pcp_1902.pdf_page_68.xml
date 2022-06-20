@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>cat_pcp_1902.pdf_page_68.png</fileName>
+      
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT288" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT289" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT290" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT291" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT292" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT293" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT294" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT295" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT296" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/>
+    <OtherTag ID="LT106" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT107" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="1179"
+          HEIGHT="2058"
+          PHYSICAL_IMG_NR="67"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="1179"
+                  HEIGHT="2058">
+        
+        <TextBlock HPOS="237"
+                   VPOS="1255"
+                   WIDTH="687"
+                   HEIGHT="170"
+                   ID="eSc_textblock_2142c6c6"
+                   TAGREFS="BT294">
+          <Shape><Polygon POINTS="237 1255 237 1425 924 1425 924 1255"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_6fe696bb"
+                    TAGREFS="LT106"
+                    BASELINE="247 1296 415 1293" 
+                    HPOS="241"
+                    VPOS="1246"
+                    WIDTH="174"
+                    HEIGHT="88">
+            <Shape><Polygon POINTS="247 1296 241 1250 410 1246 415 1293 415 1332 334 1334 332 1334 332 1334 331 1334 331 1334 331 1334 329 1334 315 1325 298 1315 247 1318"/></Shape>
+	    <String CONTENT="A. DARNIS"
+                    HPOS="241"
+                    VPOS="1246"
+                    WIDTH="174"
+                    HEIGHT="88"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_5ad65a28"
+                    TAGREFS="LT106"
+                    BASELINE="701 1346 914 1347" 
+                    HPOS="698"
+                    VPOS="1293"
+                    WIDTH="216"
+                    HEIGHT="65">
+            <Shape><Polygon POINTS="701 1346 701 1298 734 1303 756 1299 792 1293 794 1293 796 1293 830 1301 837 1303 842 1301 863 1293 864 1293 866 1293 868 1293 914 1305 914 1347 911 1358 698 1356"/></Shape>
+	    <String CONTENT="PAYSANNE"
+                    HPOS="698"
+                    VPOS="1293"
+                    WIDTH="216"
+                    HEIGHT="65"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_429a53cb"
+                    TAGREFS="LT106"
+                    BASELINE="707 1382 921 1381" 
+                    HPOS="704"
+                    VPOS="1346"
+                    WIDTH="215"
+                    HEIGHT="48">
+            <Shape><Polygon POINTS="704 1378 705 1346 919 1347 919 1380 916 1392 890 1391 876 1390 867 1389 858 1390 793 1394 789 1392 778 1393 767 1393 762 1392 756 1389 707 1388"/></Shape>
+	    <String CONTENT="DU POITOU"
+                    HPOS="704"
+                    VPOS="1346"
+                    WIDTH="215"
+                    HEIGHT="48"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="240"
+                   VPOS="453"
+                   WIDTH="702"
+                   HEIGHT="790"
+                   ID="eSc_textblock_e5fa9714"
+                   TAGREFS="BT291">
+          <Shape><Polygon POINTS="240 453 240 1243 942 1243 942 453"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
