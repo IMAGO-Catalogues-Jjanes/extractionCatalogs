@@ -1,15 +1,15 @@
 """
 Extraction des informations contenues dans les fichiers ALTO en sortie de l'OCR
 et insertion dans un fichier XML-TEI sur le modèle de l'ODD de Caroline Corbières
-Author: Juliette Janes
-Date: 11/06/21
-Continué par Esteban Sánchez Oeconomo 2022
+Author:
+Juliette Janès, 2021
+Esteban Sánchez Oeconomo, 2022
 """
 import os.path
 
 from .extractionCatEntrees_fonctions import *
 
-# E : Fonction principale, appelée dans run.py et utilisant les fonctions inclues dans extractionCatEntrees_fonctions.py
+# Fonction principale, appelée dans run.py et utilisant les fonctions inclues dans extractionCatEntrees_fonctions.py
 def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree=0, n_oeuvre=0):
     """
     Fonction qui permet, pour un catalogue, d'extraire les différentes données contenues dans le fichier alto en entrée
@@ -34,21 +34,22 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree=0, n_o
 
     # === 1. On établit les variables initiales ===
     list_entrees_page = []
-    # un compteur pour la liste d'ID qui nous permettra de récupérer les informations des images iiif
+    # un compteur pour la liste d'ID qui nous permettra de récupérer les régions des images iiif
     n_iiif = 0
 
-    # === 2. On extrait le texte des ALTO ===
-    # On récupère un dictionnaire avec pour valeurs les entrées, et un liste d'ID pour couper les images :
+    # === 2.1. On extrait le texte des ALTO ===
+    # On récupère un dictionnaire avec pour valeurs les entrées, et une liste d'ID pour couper les images :
     # ( === fonction secondaire appelée dans extractionCatEntrees_fonctions.py === )
     dict_entrees_texte, iiif_regions = get_texte_alto(document)
 
-    # === 3. On traite les "EntryEnd", s'il y en a ===
+    # === 2.2. On traite les "EntryEnd", s'il y en a ===
+    # on note qu'un document ALTO ne peut avoir qu'un entryEnd, et donc produire qu'un élément pour la liste suivante
     # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
     list_entree_end_texte = get_EntryEnd_texte(document)
     # Si la liste d'entrées coupées n'est pas vide :
     if list_entree_end_texte != []:
         # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
-        # (les variables auteur_regex et oeuvre regex sont importées depuis instanciation_regex.py)
+        # (les variables auteur_regex et oeuvre_regex sont importées depuis instanciation_regex.py)
         n_line_auteur, n_line_oeuvre = get_structure_entree(list_entree_end_texte, auteur_regex, oeuvre_regex)
         try:
             # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===

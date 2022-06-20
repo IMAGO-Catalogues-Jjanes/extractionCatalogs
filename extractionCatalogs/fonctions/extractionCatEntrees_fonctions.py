@@ -1,8 +1,8 @@
 """
 Fonctions secondaires pour extractionCatEntrees.py
-Author: Juliette Janes 2021
-Date: 11/06/21
-Continué par Esteban Sánchez Oeconomo 2022
+Author:
+Juliette Janès, 2021
+Esteban Sánchez Oeconomo, 2022
 """
 
 from lxml import etree as ET
@@ -35,12 +35,12 @@ def get_texte_alto(alto):
     """
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
 
-    # E : On vérifie que la dénomination des entrées est conforme à l'ontologie Segmonto ('CustomZone')
+    # On vérifie que la dénomination des entrées est conforme à l'ontologie Segmonto ('CustomZone')
     if alto.xpath("//alto:OtherTag[@LABEL='CustomZone:entry']", namespaces=NS):
-        # E: Si c'est le cas, on créé une variable qui récupère l'ID faisant référence aux régions de type 'CustomZone' :
+        # Si c'est le cas, on créé une variable qui récupère l'ID faisant référence aux régions de type 'CustomZone' :
         tagref_entree = alto.xpath("//alto:OtherTag[@LABEL='CustomZone:entry']/@ID", namespaces=NS)[0]
     else:
-        # E : Si non, la valeur de la variable sera None puis écartée, et on affiche un avertissement :
+        # Si non, la valeur de la variable sera None puis écartée, et on affiche un avertissement :
         tagref_entree = None
         print("\n\tATTENTION : Ce fichier ALTO a été restructuré, mais il n'est pas conforme à l'ontologie Segmonto.\n"
               "\t\tLes entrées doivent être indiquées comme des 'CustomZone:entry' lors de la segmentation.\n"
@@ -54,7 +54,7 @@ def get_texte_alto(alto):
     iiif_regions = []
     # Si les entrées sont conformes à Segmonto :
     if tagref_entree != None:
-        # E : récupération du contenu de chaque entrée, si elle contient du texte
+        # récupération du contenu de chaque entrée, si elle contient du texte
         # (cela permet de ne pas générer des entrées vides qui nuisent à la conformité et aux numérotations de l'output TEI)
         for entree in alto.xpath("//alto:TextBlock[@TAGREFS='" + tagref_entree + "']", namespaces=NS):
             if entree.xpath("alto:TextLine/alto:String/@CONTENT", namespaces=NS):
@@ -62,7 +62,7 @@ def get_texte_alto(alto):
                 texte_entree = entree.xpath("alto:TextLine/alto:String/@CONTENT", namespaces=NS)
                 # on utilise cette variable pour creer un item dans un dictionnaire d'entrées :
                 dict_entrees_texte[n] = texte_entree
-                # E : on ajoute aussi l'ID du TextBlock a iiif_regions, qui nous servira à récupérer des informations sur le cadre de l'image
+                # on ajoute aussi l'ID du TextBlock a iiif_regions, qui nous servira à récupérer des informations sur le cadre de l'image
                 iiif_regions += entree.xpath("@ID", namespaces=NS)
                 # on augmente l'index n, pour que la clé du dictionnaire change à l'itération suivante :
                 n += 1
@@ -78,14 +78,15 @@ def get_EntryEnd_texte(alto):
     :rtype: list of str
     """
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
-    # E : on vérifie que la zone entryEnd a été référencée dans une balise <OtherTag> du fichier :
-    # (ça peut ne pas être le cas pour des catalogues sans ce type d'entrée ; dans ces cas, le script ne peut pas
+    # on vérifie que la zone entryEnd a été référencée dans une balise <OtherTag> du fichier :
+    # (ça peut ne pas être le cas pour des catalogues sans ce type d'entrée ; dans ces cas, le script ne pourrait pas
     # tourner sans cette condition)
     if alto.xpath("//alto:OtherTag[@LABEL='CustomZone:entryEnd']", namespaces=NS):
         tagref_entree_end = alto.xpath("//alto:OtherTag[@LABEL='CustomZone:entryEnd']/@ID", namespaces=NS)[0]
-        # E : récupération du contenu textuel par entrée
+        # récupération du contenu textuel par entrée
         list_entree_end_texte = alto.xpath("//alto:TextBlock[@TAGREFS='" + tagref_entree_end + "']//alto:String/@CONTENT",
                                   namespaces=NS)
+        # notons qu'une page ALTO ne peut avoir qu'un entryEnd, nous n'avons donc pas besoin de boucler la liste
         return list_entree_end_texte
 
 
@@ -108,7 +109,7 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
     n_line = 0
     n_line_oeuvre = []
     n_line_auteur = 0
-    # E : si entree_texte n'est pas None (d'ailleurs objet None n'est pas itérable)
+    # si entree_texte n'est pas None (d'ailleurs objet None n'est pas itérable)
     if entree_texte:
         for ligne in entree_texte:
             n_line += 1
@@ -230,6 +231,8 @@ def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques
             n += 1
     else:
         entree_xml.attrib["source"] = document.xpath("//alto:fileName/text()", namespaces=NS)[0]
+        # il n'y aura pas de référence iiif, mais la variable doit être référencée :
+        lien_iiif = ""
     desc_auteur_xml = ET.SubElement(entree_xml, "desc")
     auteur_xml = ET.SubElement(desc_auteur_xml, "name")
     p_trait_xml = None

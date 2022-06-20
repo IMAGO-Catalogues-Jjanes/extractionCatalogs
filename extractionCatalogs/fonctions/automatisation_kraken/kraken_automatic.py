@@ -10,7 +10,7 @@ def transcription(chemin):
     :return:
     """
     for fichier in os.listdir(chemin):
-        # E : on exclue les éventuels fichiers XML du dossier ainsi que les fichiers/dossiers cachés (.DS_Store sur mac)
+        # on exclue les éventuels fichiers XML du dossier ainsi que les fichiers/dossiers cachés (.DS_Store sur mac)
         if not fichier.__contains__(".xml") and not fichier.startswith("."):
             bash_command = 'kraken -i ' + chemin + fichier + ' ' + "./temp_alto/" + fichier[:-3] + \
                            'xml -a segment -bl -i segmentationv3.mlmodel ocr -m model_best_100.mlmodel'

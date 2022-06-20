@@ -1,9 +1,9 @@
 """
 Création du TEIheader pour le catalogue d'exposition
 D'après un programme récupérant ces mêmes types d'informations réalisées par Claire Jahan.
-Author: Juliette Janes
-Date: 18/06/21
-Continué par Esteban Sánchez Oeconomo 2022
+Author:
+Juliette Janès, 2021
+Esteban Sánchez Oeconomo, 2022
 """
 
 from lxml import etree as ET
@@ -12,7 +12,7 @@ from ..variables import contenu_TEI
 
 def creation_header():
     """
-    E : Fonction permettant, pour un catalogue, de créer les balises du teiHeader. Elle récupère des valeurs textuelles
+    Fonction permettant, pour un catalogue, de créer les balises du teiHeader. Elle récupère des valeurs textuelles
     signalées dans les gabarits du dossier variables
     :return: tei_header
     :rtype: lxml.etree._ElementTree
