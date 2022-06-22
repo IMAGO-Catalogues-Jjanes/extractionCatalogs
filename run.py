@@ -27,6 +27,7 @@ from extractionCatalogs.variables import contenu_TEI
 from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner_altos
 
 
+
 # === 1.2 Création des commandes pour lancer le script sur le Terminal ====
 # commandes obligatoires :
 @click.command()
@@ -131,6 +132,8 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
     liste_en_ordre = ordonner_altos(liste_en_desordre)
 
     # on traite chaque fichier ALTO (page transcrite du catalogue), en bouclant sur le dossier indiqué :
+    n_entree = 0
+    n_oeuvre = 0
     for fichier in liste_en_ordre:
         # exclusion des fichiers cachés (".[...]"). Cela rend le script fonctionnel sur mac (.DS_Store)
         # exclusion de fichiers autres que XML (permet la présence d'autres types de fichiers dans le dossier)
@@ -183,11 +186,7 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
             # on indique le chemin vers le nouveau fichier restructuré et on le parse :
             document_alto = ET.parse(chemin_restructuration)
             # on appelle le module extractionCatEntrees.py pour extraire les données textuelles des ALTO restructurés :
-            if n_fichier == 1:
-                list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat, output_file,
-                                                                         list_xml)
-            else:
-                list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat, output_file,
+            list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat, output_file,
                                                                          list_xml, n_entree, n_oeuvre)
             # ajout des nouvelles entrées dans la balise list du fichier TEI :
             for entree in list_entrees:

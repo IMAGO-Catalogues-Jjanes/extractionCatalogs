@@ -129,11 +129,12 @@ def get_EntryEnd_texte(alto):
 
 def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
     """
-    Fonction qui, pour une entrée, récupère la ligne contenant son auteur et sa première oeuvre
+    Fonction qui, pour une liste contenant les lignes d'une entrée, récupère la ligne contenant son auteur
+    et sa première oeuvre
     :param entree_texte: liste contenant toutes les lignes d'une entrée
     :type entree_texte: list of str
     :param auteur_regex: regex permettant de déterminer qu'une line commençant par plusieurs lettres majuscules est
-    possiblement une ligne contenant le nom de l'artiste
+    possiblement une ligne contenant le nom de l'auteur
     :type auteur_regex: regex
     :param oeuvre_regex: regex permettant de déterminer qu'une line commençant par plusieurs chiffres est
     possiblement une ligne contenant une oeuvre
@@ -146,8 +147,9 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
     n_line = 0
     n_line_oeuvre = []
     n_line_auteur = 0
-    # si entree_texte n'est pas None (d'ailleurs objet None n'est pas itérable)
+    # si entree_texte n'est pas None (un objet None n'est pas itérable)
     if entree_texte:
+        # pour chaque chaine de la liste :
         for ligne in entree_texte:
             n_line += 1
             if auteur_regex.search(ligne):
@@ -159,10 +161,10 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
     return n_line_auteur, n_line_oeuvre
 
 
-def get_oeuvres(texte_items_liste, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_oeuvre=1):
+def get_oeuvres(entree_texte, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_oeuvre=1):
     """
     Fonction qui pour une liste donnée, récupère tout les items (oeuvre) d'une entrée et les structure.
-    :param texte_items_liste: liste de chaîne de caractères où chaque chaîne correspond à une ligne et la liste correspond
+    :param entree_texte: liste de chaîne de caractères où chaque chaîne correspond à une ligne et la liste correspond
     à l'entrée
     :type texte: list of str
     :param typeCat: type du catalogue à encoder
@@ -175,18 +177,18 @@ def get_oeuvres(texte_items_liste, typeCat, titre, id_n_oeuvre, id_n_entree, n_l
     :type id_n_entree: int
     :param n_line_oeuvre: liste de numéro indiquant la ligne de chaque oeuvre
     :type n_line_oeuvre:list of int
-    :return texte_items_liste: liste des oeuvres chacune encodée en tei
-    :rtype texte_items_liste: list of elementtree
+    :return list_item_ElementTree: liste des oeuvres chacune encodée en tei
+    :rtype list_item_ElementTree: list of elementtree
     :return id_n_oeuvre: numéro employé pour la dernière oeuvre encodée dans la fonction
     :rtype id_n_oeuvre: int
     """
     list_item_ElementTree = []
     dict_item_texte = {}
     dict_item_desc_texte = {}
-    print("\t\t  ", texte_items_liste, len(texte_items_liste))
+    #print("\t\t  ", entree_texte, len(entree_texte))
     # pour chaque ligne de la 1er ligne oeuvre, à la fin de l'entrée
-    for n in range(n_line_oeuvre - 1, len(texte_items_liste)):
-        current_line = texte_items_liste[n]
+    for n in range(n_line_oeuvre - 1, len(entree_texte)):
+        current_line = entree_texte[n]
         if oeuvre_regex.search(current_line):
             n_oeuvre = numero_regex.search(current_line).group(0)
             item_xml = ET.Element("item", n=str(n_oeuvre))

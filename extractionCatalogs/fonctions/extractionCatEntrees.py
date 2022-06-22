@@ -10,7 +10,7 @@ import os.path
 from .extractionCatEntrees_fonctions import *
 
 # Fonction principale, appelée dans run.py et utilisant les fonctions inclues dans extractionCatEntrees_fonctions.py
-def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree=0, n_oeuvre=0):
+def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeuvre):
     """
     Fonction qui permet, pour un catalogue, d'extraire les différentes données contenues dans le fichier alto en entrée
     et de les insérer dans une arborescence TEI
@@ -24,10 +24,10 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree=0, n_o
     :type output:str
     :param list_xml: ElementTree contenant la balise tei list et les potentielles précédentes entrées encodées
     :type list_xml: lxml.etree._ElementTree
-    :param n_oeuvre: numéro employé pour l'oeuvre précédente
-    :type n_oeuvre: int
     :param n_entree: numéro employé pour l'entrée précédente
     :type n_entree: int
+    :param n_oeuvre: numéro employé pour l'oeuvre précédente
+    :type n_oeuvre: int
     :return: entrees_page
     :rtype: list of lxml.etree._ElementTree
     """
@@ -64,17 +64,26 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree=0, n_o
                 f.write(a_ecrire)
 
     # === 3. On traite les entrées ===
+    # pour chaque item du dictionnaire d'entrées du document ALTO :
+    # print(dict_entrees_texte)
+    # print(list_entree_end_texte)
+
     for num_entree in dict_entrees_texte:
-        # Dans un premier temps on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
+        # on assigne la valeur de la clé à une variable (c'est une liste des lignes constituant une entrée) :
         entree_texte = dict_entrees_texte[num_entree]
+        # on récupère l'emplacement de l'auteur et de la première oeuvre dans l'entrée
         # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py ===
         n_line_auteur, n_line_oeuvre = get_structure_entree(entree_texte, auteur_regex, oeuvre_regex)
+        # TODO Comprendre à quoi servent ces variables :
+        #print(n_line_auteur)
+        #print(n_line_oeuvre)
+        # TODO Comprendre cette partie du code de Juliette :
         # en commentaire, les lignes condition à activer lorsque l'on s'occupe d'un catalogue entièrement numérisé
         # à la main
         # if num_entree == 0 and n_line_auteur == 0:
         # il s'agit d'une entry normale
         # je créé les balises xml nécessaires par la suite
-        n_entree = n_entree + 1
+        n_entree += 1
         iiif_region = iiif_regions[n_iiif]
         if typeCat == "Nulle":
             # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
@@ -84,7 +93,7 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree=0, n_o
             entree_xml, auteur_xml, p_trait_xml, lien_iiif = create_entry_xml(document, title, n_entree, iiif_region)
         n_iiif += 1
         n = 0
-        print("\t\tAUTEUR ", n_line_auteur, "OEUVRES", n_line_oeuvre)
+        # print("\t\tAUTEUR ", n_line_auteur, "OEUVRES", n_line_oeuvre)
         if typeCat == "Nulle":
             auteur_xml.text = entree_texte[n_line_auteur]
         elif typeCat == "Simple":
@@ -127,6 +136,16 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree=0, n_o
             list_entrees_page.append(entree_xml)
         except Exception:
             print("entrée non ajoutée")
+
+        # auteur + oeuvres (liste, version normale)
+        #print("\t\t  ", entree_texte)
+
+        # TODO : faire en sorte que nous ayons le nom de l'auteur (le récupérer dans une variable), puis les oeuvres
+        auteur = entree_texte[n_line_auteur-1]
+        print("\t\t", auteur)
+        print("\t\t   Oeuvres : ", entree_texte)
+
+
         print("\t\t   "+lien_iiif)
     if not dict_entrees_texte:
         print("\n\t\tCe fichier ne contient pas d'entrées\n")
