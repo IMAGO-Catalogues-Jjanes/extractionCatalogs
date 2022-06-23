@@ -185,7 +185,6 @@ def get_oeuvres(entree_texte, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_o
     list_item_ElementTree = []
     dict_item_texte = {}
     dict_item_desc_texte = {}
-    #print("\t\t  ", entree_texte, len(entree_texte))
     # pour chaque ligne de la 1er ligne oeuvre, à la fin de l'entrée
     for n in range(n_line_oeuvre - 1, len(entree_texte)):
         current_line = entree_texte[n]
@@ -229,53 +228,62 @@ def get_oeuvres(entree_texte, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_o
     return list_item_ElementTree, id_n_oeuvre
 
 
-def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques=0):
+def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques=True):
     """
     Fonction qui permet de créer toutes les balises TEI nécessaires pour encoder une entrée
+    :param document: ALTO restructuré parsé
+    :type document: XML object
     :param title: nom du catalogue
     :type title: str
     :param n_entree: numéro de l'entrée
-    :type n_entree: str
+    :type n_entree: int
     :param infos_biographiques: Existence (ou non) d'une partie information biographique sur l'artiste dans les entrées
     du catalogue (par défaut elle existe)
-    :type infos_biographiques:int
+    :type infos_biographiques: bool
     :return: balises vides pour l'encodage d'une entrée
     """
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
     entree_xml = ET.Element("entry", n=str(n_entree))
     identifiant_entree = title + "_e" + str(n_entree)
     entree_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_entree
-    corresp_page = document.xpath("//alto:fileIdentifier/text()", namespaces=NS)
-    if corresp_page != []:
-        entree_xml.attrib["source"] = corresp_page[0]
-
+    # on récupère le lien ou le chemin vers l'image de la page, qui sera souvent un lien iiif :
+    image = document.xpath("//alto:fileIdentifier/text()", namespaces=NS)
+    # s'il y en a un, on le met comme valeur de l'attribut "source" :
+    if image != []:
+        entree_xml.attrib["source"] = image[0]
+        # on vérifie s'il s'agit d'un lien iiif en testant sa conformité :
         if entree_xml.attrib["source"].__contains__("/full/full/0/default."):
-            # TODO chaque entrée prend toujours la premiere coupe de la feuille...
-            n = 0
+            # si c'est le cas, on récupère la découpe des entrées grâce aux ID contenus dans la variable iiif_region :
             x = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@HPOS"), namespaces=NS)
             y = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@VPOS"), namespaces=NS)
             w = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@WIDTH"), namespaces=NS)
             h = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@HEIGHT"), namespaces=NS)
-            coupe = str(x) + "," + str(y) + "," + str(w) + "," + str(h)
-            coupe = coupe.replace("'", "").replace("[", "").replace("]", "")
-
+            # on créé une chaîne avec ces données sur les régions :
+            decoupe = str(x) + "," + str(y) + "," + str(w) + "," + str(h)
+            # on nettoie la chaîne, qui provient de listes :
+            decoupe = decoupe.replace("'", "").replace("[", "").replace("]", "")
+            # on créée un lien iiif vers un découpage adapté pour chaque entrée :
             lien_iiif = entree_xml.attrib["source"].replace("/full/full/0/default.",
                                                             "/{region}/{size}/{rotation}/{quality}.").format(
-                region=coupe,
+                region=decoupe,
                 size="full",
                 rotation="0",
                 quality="default"
             )
+            # on insère ce nouveau lien dans l'attribut "source"
             entree_xml.attrib["source"] = lien_iiif
-            n += 1
     else:
+        # s'il n'y a pas de lien vers une image, on donne à la balise source la valeur de filename
+        # TODO c'est ici que je pourrai eventuellement utiliser paquet img pour découper jpg
         entree_xml.attrib["source"] = document.xpath("//alto:fileName/text()", namespaces=NS)[0]
-        # il n'y aura pas de référence iiif, mais la variable doit être référencée :
+        # il n'y aura pas de référence iiif, mais la variable doit exister car elle est en return  :
         lien_iiif = ""
+    # on créé les balises relatives à l'auteur
     desc_auteur_xml = ET.SubElement(entree_xml, "desc")
     auteur_xml = ET.SubElement(desc_auteur_xml, "name")
     p_trait_xml = None
-    if infos_biographiques == 0:
+    # s'il y a des informations biographiques, on créé les balises correspondantes
+    if infos_biographiques == True:
         trait_xml = ET.SubElement(desc_auteur_xml, "trait")
         p_trait_xml = ET.SubElement(trait_xml, "p")
     else:
