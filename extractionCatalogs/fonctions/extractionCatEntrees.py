@@ -17,7 +17,7 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
     :param document: fichier alto parsé par etree
     :type document: lxml.etree._ElementTree
     :param typeCat: type de Catalogue (Nulle: sans information biographique, Simple: avec une information biographique
-    sur la ligne en dessous du nom de l'artiste, Double: sur la même ligne que l'auteur)
+    sur la ligne en dessous du nom de l'artiste, Double: sur la même ligne que l'auteur et/ou sur d'autres lignes)
     :param title: nom du catalogue à encoder
     :type title:str
     :param output: chemin du fichier TEI en output

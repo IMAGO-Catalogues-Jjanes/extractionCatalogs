@@ -67,6 +67,7 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
 
     # On créé un dossier pour les output (TEI, fichier de problèmes, dossier restructuration) :
     # on construit un chemin vers le dossier d'extraction en récupérant le chemin output :
+    # TODO output required="false" donc faire que varialbe soit l'input dans ce cas
     extraction_directory = output + "extraction_" + titlecat
     # Si le chemin n'existe pas, on créé le dossier (s'il existait, on aurait une erreur) :
     if not os.path.exists(extraction_directory):
@@ -209,7 +210,6 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
     elif n_entrees == 1:
         print("\n{} entrée a été extraite de l'ensemble des fichiers restructurés".format(n_entrees))
     # Si aucune entrée n'est extraite dans l'ensemble de fichiers, possible erreur d'instanciation regex :
-
     elif n_entrees == 0:
                 print("\nATTENTION : Aucune entrée n'a été extraite des fichiers restructurés ; veuillez vérifier vos instanciations"
               " d'extraction regex")
@@ -218,7 +218,7 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
     print("\nChemin du dossier d'extraction : {}".format(os.path.abspath(extraction_directory)))
 
 
-# on lance la longue fonction définie précédemment et laquelle constitue ce script
+# on lance la fonction définie précédemment et qui constitue la totalité du fichier
 # on vérifie que ce fichier est couramment exécuté (et non pas appelé sur un autre module)
 # (quand on execute un script avec la commande "python3 run.py", sa valeur __name__ à la valeur de __main__)
 if __name__ == "__main__":
