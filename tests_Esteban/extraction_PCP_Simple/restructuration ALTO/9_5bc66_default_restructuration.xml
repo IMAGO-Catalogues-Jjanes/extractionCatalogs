@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>9_5bc66_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2987/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT166" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT167" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT168" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT169" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT170" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT171" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT172" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT173" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT174" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT175" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT176" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT177" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT178" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT179" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT213" LABEL="CustomZone:advert" DESCRIPTION="block type CustomZone:advert"/>
+    <OtherTag ID="LT57" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT58" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT59" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT60" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/><OtherTag ID="LT61" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="906" HEIGHT="1502" PHYSICAL_IMG_NR="9" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="906" HEIGHT="1502">
+        <TextBlock HPOS="67" VPOS="118" WIDTH="681" HEIGHT="79" ID="eSc_textblock_4b36b452" TAGREFS="BT171">
+          <Shape>
+            <Polygon POINTS="67 118 67 197 748 197 748 118"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="39" VPOS="301" WIDTH="782" HEIGHT="1011" ID="eSc_textblock_560c3e09" TAGREFS="BT166">
+          <Shape>
+            <Polygon POINTS="39 301 39 1312 821 1312 821 301"/>
+          </Shape>
+          <TextLine ID="eSc_line_a641505a" TAGREFS="LT61" BASELINE="241 391 562 389" HPOS="238" VPOS="349" WIDTH="324" HEIGHT="56">
+            <Shape><Polygon POINTS="241 391 238 351 558 349 562 389 561 396 400 405 399 405 398 405 382 399 349 405 348 405 347 405 345 405 337 399 335 399 293 399 286 404 286 405 285 405 284 405 283 405 240 399"/></Shape>
+	    <String CONTENT="JURY D’ADMISSION" HPOS="238" VPOS="349" WIDTH="324" HEIGHT="56"/>
+          </TextLine>
+          <TextLine ID="eSc_line_6bf9e853" TAGREFS="LT58" BASELINE="60 592 744 588" HPOS="55" VPOS="555" WIDTH="689" HEIGHT="50">
+            <Shape><Polygon POINTS="60 592 55 565 72 555 73 555 75 555 157 555 159 555 160 555 169 561 337 555 338 555 339 555 357 561 363 563 740 556 744 588 744 594 690 603 689 603 597 597 591 597 585 597 515 604 513 604 512 604 492 598 491 598 424 598 423 599 418 603 418 604 417 604 416 604 414 604 374 599 359 598 340 600 308 604 307 604 305 604 295 600 288 598 284 600 279 605 278 605 276 605 275 605 254 600 244 599 231 602 211 605 210 605 209 605 208 605 203 602 197 599 60 603"/></Shape>
+	    <String CONTENT="MM. E. AUDRA ✺, photographe amateur, membre du Comité" HPOS="55" VPOS="555" WIDTH="689" HEIGHT="50"/>
+          </TextLine>
+          <TextLine ID="eSc_line_843a3f81" TAGREFS="LT58" BASELINE="184 622 607 619" HPOS="179" VPOS="590" WIDTH="428" HEIGHT="43">
+            <Shape><Polygon POINTS="184 622 179 600 186 593 186 592 187 592 189 592 190 592 385 598 431 590 432 590 433 590 447 597 452 592 452 590 453 590 454 590 456 590 605 598 607 619 606 628 184 633"/></Shape>
+	    <String CONTENT="de la Société française de Photographie." HPOS="179" VPOS="590" WIDTH="428" HEIGHT="43"/>
+          </TextLine>
+          <TextLine ID="eSc_line_57bbe663" TAGREFS="LT58" BASELINE="121 662 531 659" HPOS="120" VPOS="628" WIDTH="411" HEIGHT="41">
+            <Shape><Polygon POINTS="121 662 120 632 157 637 192 632 216 629 218 629 219 629 231 633 244 635 271 633 323 628 324 628 369 634 380 635 383 634 393 628 394 628 395 628 397 628 398 628 423 635 427 635 432 635 467 629 468 629 528 637 531 659 530 667 121 669"/></Shape>
+	    <String CONTENT="RENÉ BILLOTTE ✻, artiste peintre." HPOS="120" VPOS="628" WIDTH="411" HEIGHT="41"/>
+          </TextLine>
+          <TextLine ID="eSc_line_d8ffcf15" TAGREFS="LT58" BASELINE="121 699 656 695" HPOS="116" VPOS="668" WIDTH="540" HEIGHT="41">
+            <Shape><Polygon POINTS="121 699 116 677 126 669 127 669 129 669 130 669 211 674 296 668 298 668 654 673 656 695 654 709 120 707"/></Shape>
+	    <String CONTENT="ARMAND DAYOT ✻, inspecteur des Beaux-Arts." HPOS="116" VPOS="668" WIDTH="540" HEIGHT="41"/>
+          </TextLine>
+          <TextLine ID="eSc_line_f7de6f84" TAGREFS="LT58" BASELINE="120 737 568 734" HPOS="117" VPOS="703" WIDTH="451" HEIGHT="41">
+            <Shape><Polygon POINTS="120 737 117 714 342 703 343 703 379 710 422 703 423 703 461 710 513 704 515 704 566 712 568 734 567 742 120 744"/></Shape>
+	    <String CONTENT="GUILLAUME DUBUFE ✻, artiste peintre." HPOS="117" VPOS="703" WIDTH="451" HEIGHT="41"/>
+          </TextLine>
+          <TextLine ID="eSc_line_ad85c8ec" TAGREFS="LT58" BASELINE="121 776 528 772" HPOS="119" VPOS="740" WIDTH="409" HEIGHT="44">
+            <Shape><Polygon POINTS="121 776 119 762 189 761 190 759 220 743 221 743 274 742 275 742 320 742 322 742 323 742 347 757 349 758 353 757 397 740 398 740 399 740 400 740 433 756 434 756 436 756 472 745 473 745 474 745 526 754 528 772 526 784 120 782"/></Shape>
+	    <String CONTENT="JULES JACOUET ✻, artiste graveur." HPOS="119" VPOS="740" WIDTH="409" HEIGHT="44"/>
+          </TextLine>
+          <TextLine ID="eSc_line_7cbf402c" TAGREFS="LT58" BASELINE="122 813 604 811" HPOS="120" VPOS="778" WIDTH="484" HEIGHT="41">
+            <Shape><Polygon POINTS="122 813 120 786 389 779 390 779 448 786 449 786 451 786 482 778 483 778 484 778 486 778 518 786 557 778 558 778 601 787 604 811 602 817 122 819"/></Shape>
+	    <String CONTENT="FRÉDÉRIC MONTENARD ✻, artiste peintre." HPOS="120" VPOS="778" WIDTH="484" HEIGHT="41"/>
+          </TextLine>
+          <TextLine ID="eSc_line_c2fb9b30" TAGREFS="LT58" BASELINE="122 851 637 848" HPOS="120" VPOS="816" WIDTH="517" HEIGHT="45">
+            <Shape><Polygon POINTS="122 851 120 823 439 816 441 816 442 816 454 822 494 816 496 816 635 823 637 848 635 861 121 859"/></Shape>
+	    <String CONTENT="ÉDOUARD ROSSET-GRANGER, artiste peintre." HPOS="120" VPOS="816" WIDTH="517" HEIGHT="45"/>
+          </TextLine>
+          <TextLine ID="eSc_line_50ff5d1c" TAGREFS="LT58" BASELINE="124 889 657 886" HPOS="122" VPOS="852" WIDTH="535" HEIGHT="49">
+            <Shape><Polygon POINTS="124 889 122 856 194 862 214 856 219 854 220 854 429 853 431 853 457 858 468 861 471 858 474 853 476 853 476 852 477 852 478 852 479 852 481 852 482 852 491 858 493 861 655 861 657 886 656 894 124 901"/></Shape>
+	    <String CONTENT="RENÉ DE SAINT-MARCEAUX, O. ✻, statuaire." HPOS="122" VPOS="852" WIDTH="535" HEIGHT="49"/>
+          </TextLine>
+          <TextLine ID="eSc_line_ad309662" TAGREFS="LT58" BASELINE="124 926 743 923" HPOS="119" VPOS="892" WIDTH="624" HEIGHT="44">
+            <Shape><Polygon POINTS="124 926 119 903 127 894 127 893 129 893 130 893 131 893 132 893 156 902 218 902 228 893 229 893 230 893 231 893 322 898 431 892 432 892 471 901 506 901 516 892 517 892 518 892 520 892 660 899 701 892 702 892 740 901 743 923 741 936 124 936"/></Shape>
+	    <String CONTENT="H. DE SAINT-SENOCH ✠, photographe amateur," HPOS="119" VPOS="892" WIDTH="624" HEIGHT="44"/>
+          </TextLine>
+          <TextLine ID="eSc_line_6b279918" TAGREFS="LT58" BASELINE="185 956 744 952" HPOS="182" VPOS="928" WIDTH="562" HEIGHT="40">
+            <Shape><Polygon POINTS="185 956 182 929 740 928 744 952 743 966 185 968"/></Shape>
+	    <String CONTENT="membre du Comité de la Societe française de" HPOS="182" VPOS="928" WIDTH="562" HEIGHT="40"/>
+          </TextLine>
+          <TextLine ID="eSc_line_16019317" TAGREFS="LT58" BASELINE="185 987 343 987" HPOS="184" VPOS="960" WIDTH="159" HEIGHT="38">
+            <Shape><Polygon POINTS="185 987 185 960 343 965 343 987 342 998 184 995"/></Shape>
+	    <String CONTENT="Photographie." HPOS="184" VPOS="960" WIDTH="159" HEIGHT="38"/>
+          </TextLine>
+          <TextLine ID="eSc_line_98c8ae1b" TAGREFS="LT58" BASELINE="125 1025 541 1022" HPOS="122" VPOS="990" WIDTH="419" HEIGHT="48">
+            <Shape><Polygon POINTS="125 1025 122 993 241 992 243 992 244 992 245 992 248 995 255 998 293 995 344 990 345 990 347 990 368 996 374 998 538 998 541 1022 540 1038 124 1036"/></Shape>
+	    <String CONTENT="THIÉBAULT-SISSON, critique d'art." HPOS="122" VPOS="990" WIDTH="419" HEIGHT="48"/>
+          </TextLine>
+          <TextLine ID="eSc_line_cc5c313b" TAGREFS="LT58" BASELINE="104 1161 745 1159" HPOS="101" VPOS="1125" WIDTH="644" HEIGHT="56">
+            <Shape><Polygon POINTS="104 1161 101 1127 399 1134 419 1126 421 1126 422 1126 423 1126 438 1132 458 1126 459 1126 461 1126 462 1126 481 1134 577 1134 591 1126 592 1126 593 1126 720 1132 740 1125 745 1159 744 1174 590 1180 588 1180 587 1180 586 1180 586 1179 581 1174 575 1169 560 1174 556 1175 555 1175 553 1175 552 1175 551 1175 550 1174 543 1169 533 1174 523 1179 522 1179 521 1179 474 1174 459 1172 457 1174 447 1180 446 1180 444 1180 389 1181 388 1181 387 1181 385 1181 373 1174 365 1170 104 1172"/></Shape>
+	    <String CONTENT="Chaque exposant recevra une plaquette commémorative en bronze," HPOS="101" VPOS="1125" WIDTH="644" HEIGHT="56"/>
+          </TextLine>
+          <TextLine ID="eSc_line_9857e72a" TAGREFS="LT58" BASELINE="65 1187 374 1187" HPOS="65" VPOS="1166" WIDTH="309" HEIGHT="60">
+            <Shape><Polygon POINTS="65 1187 65 1166 374 1167 374 1187 374 1205 325 1211 324 1211 305 1210 234 1204 203 1216 182 1225 181 1225 180 1225 179 1225 162 1219 145 1212 119 1222 110 1225 109 1225 109 1226 65 1226"/></Shape>
+	    <String CONTENT="dessinée et gravée par M. G. Huot." HPOS="65" VPOS="1166" WIDTH="309" HEIGHT="60"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

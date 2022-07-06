@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>5_57a8e_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2983/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT166" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT167" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT168" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT169" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT170" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT171" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT172" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT173" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT174" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT175" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT176" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT177" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT178" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT179" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT213" LABEL="CustomZone:advert" DESCRIPTION="block type CustomZone:advert"/>
+    <OtherTag ID="LT57" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT58" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT59" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT60" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/><OtherTag ID="LT61" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="864" HEIGHT="1481" PHYSICAL_IMG_NR="5" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="864" HEIGHT="1481">
+        <TextBlock HPOS="459" VPOS="127" WIDTH="84" HEIGHT="31" ID="eSc_textblock_ce861d1e" TAGREFS="BT174">
+          <Shape>
+            <Polygon POINTS="459 158 459 143 460 127 542 128 543 156"/>
+          </Shape>
+          <TextLine ID="eSc_line_e7c8cc2d" TAGREFS="LT58" BASELINE="466 153 536 150" HPOS="464" VPOS="133" WIDTH="74" HEIGHT="27">
+            <Shape><Polygon POINTS="466 153 464 134 537 133 536 150 538 158 466 160"/></Shape>
+	    <String CONTENT="— IV —" HPOS="464" VPOS="133" WIDTH="74" HEIGHT="27"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="218" VPOS="167" WIDTH="569" HEIGHT="1143" ID="eSc_textblock_aa2de980" TAGREFS="BT166">
+          <Shape>
+            <Polygon POINTS="218 1307 221 167 780 168 787 1310"/>
+          </Shape>
+          <TextLine ID="eSc_line_764f1140" TAGREFS="LT58" BASELINE="228 188 776 186" HPOS="227" VPOS="149" WIDTH="549" HEIGHT="49">
+            <Shape><Polygon POINTS="228 188 227 151 255 156 283 151 294 150 296 150 307 151 339 159 369 153 385 150 386 150 401 153 424 159 451 154 473 150 475 150 476 150 485 154 493 159 567 155 656 151 657 151 659 151 671 156 672 157 672 156 678 151 678 150 680 150 681 150 731 149 733 149 773 159 776 186 773 198 227 196"/></Shape>
+	    <String CONTENT="Ils restent aussi inséparables de la science que la théorie" HPOS="227" VPOS="149" WIDTH="549" HEIGHT="49"/>
+          </TextLine>
+          <TextLine ID="eSc_line_6fddfe6e" TAGREFS="LT58" BASELINE="228 213 775 213" HPOS="227" VPOS="193" WIDTH="548" HEIGHT="27">
+            <Shape><Polygon POINTS="228 213 227 197 773 193 775 213 775 219 228 220"/></Shape>
+	    <String CONTENT="reste inséparable de la pratique. Mais alors l’art se montres" HPOS="227" VPOS="193" WIDTH="548" HEIGHT="27"/>
+          </TextLine>
+          <TextLine ID="eSc_line_5b30ccba" TAGREFS="LT58" BASELINE="228 239 775 239" HPOS="227" VPOS="217" WIDTH="548" HEIGHT="29">
+            <Shape><Polygon POINTS="228 239 228 217 775 217 775 239 773 246 227 245"/></Shape>
+	    <String CONTENT="à nous différant de la science comme la théorie diffère de la" HPOS="227" VPOS="217" WIDTH="548" HEIGHT="29"/>
+          </TextLine>
+          <TextLine ID="eSc_line_450c0a78" TAGREFS="LT58" BASELINE="228 262 776 262" HPOS="227" VPOS="240" WIDTH="549" HEIGHT="33">
+            <Shape><Polygon POINTS="228 262 228 240 776 240 776 262 775 273 227 272"/></Shape>
+	    <String CONTENT="pratique. Par conséquent, du moment où des procedés quels" HPOS="227" VPOS="240" WIDTH="549" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_041871c7" TAGREFS="LT58" BASELINE="228 288 776 288" HPOS="227" VPOS="265" WIDTH="549" HEIGHT="33">
+            <Shape><Polygon POINTS="228 288 228 265 776 266 776 288 775 298 227 296"/></Shape>
+	    <String CONTENT="qu’ils soient réalisent l’imitation, celle-ci crée l’œuvre et la" HPOS="227" VPOS="265" WIDTH="549" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e32ee822" TAGREFS="LT58" BASELINE="228 312 772 311" HPOS="227" VPOS="291" WIDTH="545" HEIGHT="33">
+            <Shape><Polygon POINTS="228 312 227 291 770 292 772 311 770 324 227 319"/></Shape>
+	    <String CONTENT="rend capable d'agir sur notre imagination, sur notre âme." HPOS="227" VPOS="291" WIDTH="545" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_80a486c1" TAGREFS="LT58" BASELINE="229 334 776 336" HPOS="228" VPOS="313" WIDTH="548" HEIGHT="32">
+            <Shape><Polygon POINTS="229 334 229 313 775 317 776 336 775 345 228 345"/></Shape>
+	    <String CONTENT="L’expression en est d’autant plus complète que la matière" HPOS="228" VPOS="313" WIDTH="548" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_af430549" TAGREFS="LT58" BASELINE="228 362 761 362" HPOS="227" VPOS="341" WIDTH="534" HEIGHT="31">
+            <Shape><Polygon POINTS="228 362 228 341 761 341 761 362 760 372 227 369"/></Shape>
+	    <String CONTENT="employée se montre moins rebelle à la volonté de l’artiste." HPOS="227" VPOS="341" WIDTH="534" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_137e5dc1" TAGREFS="LT58" BASELINE="246 386 775 382" HPOS="244" VPOS="364" WIDTH="531" HEIGHT="29">
+            <Shape><Polygon POINTS="246 386 244 365 771 364 775 382 773 391 246 393"/></Shape>
+	    <String CONTENT="Des instruments ont été inventés pour détruire la résis¬" HPOS="244" VPOS="364" WIDTH="531" HEIGHT="29"/>
+          </TextLine>
+          <TextLine ID="eSc_line_4ddaeefd" TAGREFS="LT58" BASELINE="229 409 776 409" HPOS="228" VPOS="386" WIDTH="548" HEIGHT="34">
+            <Shape><Polygon POINTS="229 409 229 386 776 391 776 409 775 420 228 417"/></Shape>
+	    <String CONTENT="tance de cette matière, l’assouplir, la préparer à changer sa" HPOS="228" VPOS="386" WIDTH="548" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_84d12462" TAGREFS="LT58" BASELINE="227 433 775 435" HPOS="224" VPOS="412" WIDTH="551" HEIGHT="29">
+            <Shape><Polygon POINTS="227 433 225 413 772 412 775 435 772 441 224 439"/></Shape>
+	    <String CONTENT="forme et sa nature suivant le sens et le but que l’artiste se" HPOS="224" VPOS="412" WIDTH="551" HEIGHT="29"/>
+          </TextLine>
+          <TextLine ID="eSc_line_01341186" TAGREFS="LT58" BASELINE="227 460 776 460" HPOS="225" VPOS="435" WIDTH="551" HEIGHT="35">
+            <Shape><Polygon POINTS="227 460 227 435 776 439 776 460 775 470 225 467"/></Shape>
+	    <String CONTENT="propose. Que leur action soit lente ou difficile, il importe" HPOS="225" VPOS="435" WIDTH="551" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_02fb2ad9" TAGREFS="LT58" BASELINE="228 485 775 482" HPOS="225" VPOS="462" WIDTH="550" HEIGHT="31">
+            <Shape><Polygon POINTS="228 485 225 465 771 462 775 482 772 493 227 492"/></Shape>
+	    <String CONTENT="peu. Le principal consiste à les tenir en perpétuelle commu¬" HPOS="225" VPOS="462" WIDTH="550" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_28daaa72" TAGREFS="LT58" BASELINE="229 506 775 508" HPOS="227" VPOS="483" WIDTH="548" HEIGHT="34">
+            <Shape><Polygon POINTS="229 506 229 483 773 483 775 508 772 517 227 513"/></Shape>
+	    <String CONTENT="nication avec la pensée de l’être qui les manie. Certes, le rêve" HPOS="227" VPOS="483" WIDTH="548" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_28d023c8" TAGREFS="LT58" BASELINE="229 529 775 533" HPOS="227" VPOS="504" WIDTH="548" HEIGHT="35">
+            <Shape><Polygon POINTS="229 529 229 504 773 510 775 533 772 539 227 535"/></Shape>
+	    <String CONTENT="serait de n’avoir besoin d'autre instrument que la main. A" HPOS="227" VPOS="504" WIDTH="548" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_a4add702" TAGREFS="LT58" BASELINE="229 555 773 557" HPOS="227" VPOS="533" WIDTH="546" HEIGHT="34">
+            <Shape><Polygon POINTS="229 555 229 533 772 533 773 557 771 567 227 564"/></Shape>
+	    <String CONTENT="part quelques matières spéciales, comme la cire et l’argile," HPOS="227" VPOS="533" WIDTH="546" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_2c757473" TAGREFS="LT58" BASELINE="229 581 773 582" HPOS="227" VPOS="555" WIDTH="546" HEIGHT="34">
+            <Shape><Polygon POINTS="229 581 229 555 772 561 773 582 771 589 227 584"/></Shape>
+	    <String CONTENT="la main à besoin d’un secours. Compas, ciseau, pinceau," HPOS="227" VPOS="555" WIDTH="546" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e7191f2c" TAGREFS="LT58" BASELINE="229 603 775 605" HPOS="228" VPOS="578" WIDTH="547" HEIGHT="35">
+            <Shape><Polygon POINTS="229 603 229 578 773 584 775 605 773 613 228 613"/></Shape>
+	    <String CONTENT="burin, plume et piano sont ces secours nécessaires à l’archi¬" HPOS="228" VPOS="578" WIDTH="547" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_193cf7b1" TAGREFS="LT58" BASELINE="229 626 776 630" HPOS="227" VPOS="605" WIDTH="549" HEIGHT="35">
+            <Shape><Polygon POINTS="229 626 229 605 776 609 776 630 773 640 227 634"/></Shape>
+	    <String CONTENT="tecte, au sculpteur, au peintre, au graveur, au poète et au" HPOS="227" VPOS="605" WIDTH="549" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0b8a903e" TAGREFS="LT58" BASELINE="229 652 775 655" HPOS="228" VPOS="631" WIDTH="547" HEIGHT="31">
+            <Shape><Polygon POINTS="229 652 229 631 773 634 775 655 773 661 228 662"/></Shape>
+	    <String CONTENT="musicien. Chambre noire, obiectif, plaques et produits chi¬" HPOS="228" VPOS="631" WIDTH="547" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_b28b8660" TAGREFS="LT58" BASELINE="230 676 775 681" HPOS="228" VPOS="654" WIDTH="547" HEIGHT="32">
+            <Shape><Polygon POINTS="230 676 230 654 773 655 775 681 772 686 228 684"/></Shape>
+	    <String CONTENT="miques sont ceux imposés au photographe. Plus nombreux" HPOS="228" VPOS="654" WIDTH="547" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_93965b7c" TAGREFS="LT58" BASELINE="229 702 776 704" HPOS="227" VPOS="681" WIDTH="549" HEIGHT="28">
+            <Shape><Polygon POINTS="229 702 229 681 775 683 776 704 773 709 227 707"/></Shape>
+	    <String CONTENT="que les premiers, ils constituent, comme eux, des obstacles à" HPOS="227" VPOS="681" WIDTH="549" HEIGHT="28"/>
+          </TextLine>
+          <TextLine ID="eSc_line_c49305e4" TAGREFS="LT58" BASELINE="229 725 773 729" HPOS="227" VPOS="699" WIDTH="546" HEIGHT="36">
+            <Shape><Polygon POINTS="229 725 229 699 772 708 773 729 771 735 227 733"/></Shape>
+	    <String CONTENT="Ia libre manifestation. Pourtant architecte, sculpteur, pein¬" HPOS="227" VPOS="699" WIDTH="546" HEIGHT="36"/>
+          </TextLine>
+          <TextLine ID="eSc_line_81858574" TAGREFS="LT58" BASELINE="229 751 776 754" HPOS="225" VPOS="728" WIDTH="551" HEIGHT="38">
+            <Shape><Polygon POINTS="229 751 229 728 775 729 776 754 773 766 430 760 393 761 255 765 254 765 253 765 225 757"/></Shape>
+	    <String CONTENT="tre, graveur, poète et musicien créent leurs œuvres en dépit" HPOS="225" VPOS="728" WIDTH="551" HEIGHT="38"/>
+          </TextLine>
+          <TextLine ID="eSc_line_c112362f" TAGREFS="LT58" BASELINE="228 776 383 776" HPOS="228" VPOS="751" WIDTH="155" HEIGHT="33">
+            <Shape><Polygon POINTS="228 776 228 751 383 757 383 776 383 784 228 784"/></Shape>
+	    <String CONTENT="de ces obstacles." HPOS="228" VPOS="751" WIDTH="155" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_b673798a" TAGREFS="LT58" BASELINE="246 802 749 802" HPOS="245" VPOS="775" WIDTH="504" HEIGHT="34">
+            <Shape><Polygon POINTS="246 802 245 778 747 775 749 802 749 809 246 809"/></Shape>
+	    <String CONTENT="Pourquoi n’en serait-il pas de même du photographe ?" HPOS="245" VPOS="775" WIDTH="504" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e15b0fd6" TAGREFS="LT58" BASELINE="246 824 776 826" HPOS="244" VPOS="799" WIDTH="532" HEIGHT="36">
+            <Shape><Polygon POINTS="246 824 246 799 775 805 776 826 773 835 244 830"/></Shape>
+	    <String CONTENT="Si nous recherchons quels sont les attributs esthétiques" HPOS="244" VPOS="799" WIDTH="532" HEIGHT="36"/>
+          </TextLine>
+          <TextLine ID="eSc_line_333e852b" TAGREFS="LT58" BASELINE="228 847 773 852" HPOS="225" VPOS="828" WIDTH="548" HEIGHT="32">
+            <Shape><Polygon POINTS="228 847 228 828 772 830 773 852 771 860 225 854"/></Shape>
+	    <String CONTENT="susceptibles d’engendrer la beauté d’une œuvre d’art, pour" HPOS="225" VPOS="828" WIDTH="548" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e198dc1c" TAGREFS="LT58" BASELINE="229 873 775 876" HPOS="227" VPOS="851" WIDTH="548" HEIGHT="32">
+            <Shape><Polygon POINTS="229 873 228 852 772 851 775 876 772 883 227 882"/></Shape>
+	    <String CONTENT="si nombreux qu’ils soient, nous remarquerons qu’ils se" HPOS="227" VPOS="851" WIDTH="548" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_ae640b51" TAGREFS="LT58" BASELINE="229 899 775 899" HPOS="229" VPOS="877" WIDTH="546" HEIGHT="30">
+            <Shape><Polygon POINTS="229 899 229 877 775 877 775 899 775 907 229 907"/></Shape>
+	    <String CONTENT="résument en deux, que je nommerai primordiaux. Ce sont :" HPOS="229" VPOS="877" WIDTH="546" HEIGHT="30"/>
+          </TextLine>
+          <TextLine ID="eSc_line_9e2db64e" TAGREFS="LT58" BASELINE="228 921 775 924" HPOS="225" VPOS="899" WIDTH="550" HEIGHT="32">
+            <Shape><Polygon POINTS="228 921 228 899 773 902 775 924 772 931 225 928"/></Shape>
+	    <String CONTENT="l’ordonnance et l'expression. A leur côté se dressent d’autres" HPOS="225" VPOS="899" WIDTH="550" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_7d4df787" TAGREFS="LT58" BASELINE="228 946 775 949" HPOS="227" VPOS="925" WIDTH="548" HEIGHT="31">
+            <Shape><Polygon POINTS="228 946 228 925 773 928 775 949 773 955 227 956"/></Shape>
+	    <String CONTENT="attributs, propres à nous procurer la sensation du beau, mais" HPOS="227" VPOS="925" WIDTH="548" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_c724cb31" TAGREFS="LT58" BASELINE="229 970 775 974" HPOS="227" VPOS="949" WIDTH="548" HEIGHT="32">
+            <Shape><Polygon POINTS="229 970 229 949 773 949 775 974 772 981 227 976"/></Shape>
+	    <String CONTENT="restant, pour ainsi dire, purement psychologiques. Ce sont :" HPOS="227" VPOS="949" WIDTH="548" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_ddfa1a2f" TAGREFS="LT58" BASELINE="229 994 482 997" HPOS="227" VPOS="972" WIDTH="255" HEIGHT="31">
+            <Shape><Polygon POINTS="229 994 229 972 481 976 482 997 480 1003 227 1000"/></Shape>
+	    <String CONTENT="la simultanéité et la liberté." HPOS="227" VPOS="972" WIDTH="255" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_f4d2d819" TAGREFS="LT58" BASELINE="249 1018 776 1021" HPOS="246" VPOS="994" WIDTH="530" HEIGHT="36">
+            <Shape><Polygon POINTS="249 1018 248 997 775 994 776 1021 773 1030 246 1026"/></Shape>
+	    <String CONTENT="« Pour peindre un paysage, disait le bon vieux Corot, il" HPOS="246" VPOS="994" WIDTH="530" HEIGHT="36"/>
+          </TextLine>
+          <TextLine ID="eSc_line_b5e77b1d" TAGREFS="LT58" BASELINE="229 1045 776 1049" HPOS="227" VPOS="1019" WIDTH="549" HEIGHT="37">
+            <Shape><Polygon POINTS="229 1045 229 1019 775 1026 776 1049 773 1056 227 1055"/></Shape>
+	    <String CONTENT="faut que devant un motif je sois spontanément empoigné et" HPOS="227" VPOS="1019" WIDTH="549" HEIGHT="37"/>
+          </TextLine>
+          <TextLine ID="eSc_line_8639ec41" TAGREFS="LT58" BASELINE="228 1071 633 1071" HPOS="228" VPOS="1050" WIDTH="405" HEIGHT="28">
+            <Shape><Polygon POINTS="228 1071 228 1050 633 1050 633 1071 633 1078 228 1078"/></Shape>
+	    <String CONTENT="que je puisse m’écrier : Arrêtons-nous ici ! »" HPOS="228" VPOS="1050" WIDTH="405" HEIGHT="28"/>
+          </TextLine>
+          <TextLine ID="eSc_line_89ab7acf" TAGREFS="LT58" BASELINE="250 1092 776 1097" HPOS="248" VPOS="1068" WIDTH="528" HEIGHT="40">
+            <Shape><Polygon POINTS="250 1092 250 1068 775 1076 776 1097 773 1108 248 1098"/></Shape>
+	    <String CONTENT="Dans son langage bonbomme, il exprimait ainsi l’acte" HPOS="248" VPOS="1068" WIDTH="528" HEIGHT="40"/>
+          </TextLine>
+          <TextLine ID="eSc_line_93ce2cf3" TAGREFS="LT58" BASELINE="229 1119 776 1121" HPOS="227" VPOS="1097" WIDTH="549" HEIGHT="34">
+            <Shape><Polygon POINTS="229 1119 229 1097 775 1099 776 1121 773 1131 227 1129"/></Shape>
+	    <String CONTENT="psychologique connu sous le nom de simultaneité et en" HPOS="227" VPOS="1097" WIDTH="549" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_5b87916f" TAGREFS="LT58" BASELINE="230 1142 772 1145" HPOS="228" VPOS="1123" WIDTH="544" HEIGHT="32">
+            <Shape><Polygon POINTS="230 1142 230 1123 771 1125 772 1145 770 1155 228 1149"/></Shape>
+	    <String CONTENT="vertu duquel le tableau à faire apparaît à première vue," HPOS="228" VPOS="1123" WIDTH="544" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_f5e8e0cb" TAGREFS="LT58" BASELINE="229 1167 773 1171" HPOS="227" VPOS="1142" WIDTH="546" HEIGHT="35">
+            <Shape><Polygon POINTS="229 1167 229 1142 772 1151 773 1171 771 1177 227 1173"/></Shape>
+	    <String CONTENT="simultanément, d’un seul coup et non morceau par morceau." HPOS="227" VPOS="1142" WIDTH="546" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_9d664557" TAGREFS="LT58" BASELINE="229 1192 775 1195" HPOS="227" VPOS="1168" WIDTH="548" HEIGHT="41">
+            <Shape><Polygon POINTS="229 1192 229 1168 773 1176 775 1195 773 1203 699 1209 698 1209 227 1202"/></Shape>
+	    <String CONTENT="Le photographe, avouons-le, en est maître autant que qui¬" HPOS="227" VPOS="1168" WIDTH="548" HEIGHT="41"/>
+          </TextLine>
+          <TextLine ID="eSc_line_7d313fc0" TAGREFS="LT58" BASELINE="228 1219 306 1216" HPOS="225" VPOS="1197" WIDTH="81" HEIGHT="27">
+            <Shape><Polygon POINTS="228 1219 225 1197 303 1197 306 1216 304 1223 228 1224"/></Shape>
+	    <String CONTENT="conque." HPOS="225" VPOS="1197" WIDTH="81" HEIGHT="27"/>
+          </TextLine>
+          <TextLine ID="eSc_line_96e45ca0" TAGREFS="LT58" BASELINE="250 1240 776 1245" HPOS="248" VPOS="1218" WIDTH="528" HEIGHT="33">
+            <Shape><Polygon POINTS="250 1240 250 1218 776 1223 776 1245 773 1251 248 1246"/></Shape>
+	    <String CONTENT="Quant à la Iiberté, c’est l’acte psychologique qui permet à" HPOS="248" VPOS="1218" WIDTH="528" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_f9fc938b" TAGREFS="LT58" BASELINE="228 1265 775 1268" HPOS="225" VPOS="1240" WIDTH="550" HEIGHT="34">
+            <Shape><Polygon POINTS="228 1265 228 1240 773 1247 775 1268 772 1274 225 1271"/></Shape>
+	    <String CONTENT="l’artiste de modifier l’ampleur du motit choisi, en le complé¬" HPOS="225" VPOS="1240" WIDTH="550" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_52a7c03c" TAGREFS="LT58" BASELINE="229 1289 775 1293" HPOS="227" VPOS="1267" WIDTH="548" HEIGHT="48">
+            <Shape><Polygon POINTS="229 1289 229 1267 773 1272 775 1293 773 1308 706 1308 697 1315 696 1315 694 1315 693 1315 623 1308 618 1308 617 1308 594 1315 593 1315 592 1315 562 1308 554 1306 539 1308 503 1313 502 1313 472 1309 457 1306 451 1309 439 1314 438 1314 436 1314 332 1313 330 1313 329 1313 325 1309 322 1305 312 1309 303 1313 302 1313 301 1313 227 1309"/></Shape>
+	    <String CONTENT="tant ou en l'atténuant, en l'enrichissant ou en l'appauvris¬" HPOS="227" VPOS="1267" WIDTH="548" HEIGHT="48"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

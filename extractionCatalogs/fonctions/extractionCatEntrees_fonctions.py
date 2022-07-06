@@ -130,7 +130,7 @@ def get_EntryEnd_texte(alto):
 def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
     """
     Fonction qui, pour une liste contenant les lignes d'une entrée, récupère la ligne contenant son auteur
-    et sa première oeuvre
+    et une liste des lignes contenant des oeuvres
     :param entree_texte: liste contenant toutes les lignes d'une entrée
     :type entree_texte: list of str
     :param auteur_regex: regex permettant de déterminer qu'une line commençant par plusieurs lettres majuscules est
@@ -152,11 +152,16 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
         # pour chaque chaine de la liste :
         for ligne in entree_texte:
             n_line += 1
+            # Si la regex auteur correspond à la ligne courante :
             if auteur_regex.search(ligne):
+                # la valeur de n_ligne devient la ligne courante :
                 n_line_auteur = n_line
+            # mais si la ligne courante correspond à une oeuvre :
             elif oeuvre_regex.search(ligne):
+                # on ajoute la ligne courante à la liste de lignes des oeuvres
                 n_line_oeuvre.append(n_line)
             else:
+                # les lignes d'informations biographiques ne seront pas traitées
                 pass
     return n_line_auteur, n_line_oeuvre
 
@@ -182,22 +187,37 @@ def get_oeuvres(entree_texte, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_o
     :return id_n_oeuvre: numéro employé pour la dernière oeuvre encodée dans la fonction
     :rtype id_n_oeuvre: int
     """
+    # on établie la liste qu'on aura en return :
     list_item_ElementTree = []
     dict_item_texte = {}
     dict_item_desc_texte = {}
-    # pour chaque ligne de la 1er ligne oeuvre, à la fin de l'entrée
-    for n in range(n_line_oeuvre - 1, len(entree_texte)):
+    # range renvoie une séquence de numéros, qui équivaut aux index d'une liste. Ici, on obtient une liste des
+    # lignes entre la première oeuvre et la dernière :
+    lignes_oeuvres = range(n_line_oeuvre - 1, len(entree_texte))
+    # on boucle sur chaque ligne oeuvre :
+    for n in lignes_oeuvres:
+        # on sélectionne la ligne référée par le numéro courant dans la liste :
         current_line = entree_texte[n]
+        # si la chaîne correspond à notre regex oeuvre :
         if oeuvre_regex.search(current_line):
+            # on extrait le numéro de l'oeuvre avec la regex correspondante :
             n_oeuvre = numero_regex.search(current_line).group(0)
+            # on crée un élément "item" avec pour attribut le numéro de l'oeuvre :
             item_xml = ET.Element("item", n=str(n_oeuvre))
+            # on ajoute cet objet à la liste d'items :
             list_item_ElementTree.append(item_xml)
+            # on crée un identifiant pour l'item (titre du catalogue, numéro d'entrée, numéro d'item) :
             identifiant_item = titre + "_e" + str(id_n_entree) + "_i" + str(n_oeuvre)
+            # on ajoute cet identifiant comme attribut de l'item
             item_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_item
+            # on créé un élément pour insérer le numéro de l'oeuvre :
             num_xml = ET.SubElement(item_xml, "num")
+            # on créé un élément pour insérer le titre de l'oeuvre :
             title_xml = ET.SubElement(item_xml, "title")
             num_xml.text = n_oeuvre
+            # on ajoute au dictionnaire une entrée avec le numéro comme clé et la ligne entière comme valeur :
             dict_item_texte[n_oeuvre] = current_line
+            # TODO : à quoi sert cette variable ? :
             n_line_item = n
         elif n - 1 == n_line_item and ligne_minuscule_regex.search(current_line):
             dict_item_texte[n_oeuvre] = [dict_item_texte[n_oeuvre], current_line]
@@ -237,7 +257,7 @@ def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques
     :type title: str
     :param n_entree: numéro de l'entrée
     :type n_entree: int
-    :param infos_biographiques: Existence (ou non) d'une partie information biographique sur l'artiste dans les entrées
+    :param infos_biographiques: Existence (ou pas) d'une partie information biographique sur l'artiste dans les entrées
     du catalogue (par défaut elle existe)
     :type infos_biographiques: bool
     :return: balises vides pour l'encodage d'une entrée
@@ -276,15 +296,20 @@ def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques
         # s'il n'y a pas de lien vers une image, on donne à la balise source la valeur de filename
         # TODO c'est ici que je pourrai eventuellement utiliser paquet img pour découper jpg
         entree_xml.attrib["source"] = document.xpath("//alto:fileName/text()", namespaces=NS)[0]
-        # il n'y aura pas de référence iiif, mais la variable doit exister car elle est en return  :
+        # dans ce cas il n'y aura pas de référence iiif, mais la variable doit exister car elle est en return  :
         lien_iiif = ""
-    # on créé les balises relatives à l'auteur
+
+    # on créé la balise fille de entry :
     desc_auteur_xml = ET.SubElement(entree_xml, "desc")
+    # on créé la balise nom de l'auteur :
     auteur_xml = ET.SubElement(desc_auteur_xml, "name")
+    # si pas d'informations biographiques :
     p_trait_xml = None
     # s'il y a des informations biographiques, on créé les balises correspondantes
     if infos_biographiques == True:
+        # on crée une balise "trait"
         trait_xml = ET.SubElement(desc_auteur_xml, "trait")
+        # avec une sous balise "p" :
         p_trait_xml = ET.SubElement(trait_xml, "p")
     else:
         pass
