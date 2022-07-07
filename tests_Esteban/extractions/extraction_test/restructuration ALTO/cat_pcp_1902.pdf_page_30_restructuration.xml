@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>cat_pcp_1902.pdf_page_30.png</fileName>
+      
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT288" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT289" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT290" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT291" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT292" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT293" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT294" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT295" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT296" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/>
+    <OtherTag ID="LT106" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT107" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="1100" HEIGHT="2029" PHYSICAL_IMG_NR="29" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="1100" HEIGHT="2029">
+        <TextBlock HPOS="112" VPOS="317" WIDTH="797" HEIGHT="1105" ID="eSc_textblock_f99b7c49" TAGREFS="BT291">
+          <Shape>
+            <Polygon POINTS="112 317 112 1422 909 1422 909 317"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="112" VPOS="1430" WIDTH="802" HEIGHT="153" ID="eSc_textblock_dd1bdd4a" TAGREFS="BT294">
+          <Shape>
+            <Polygon POINTS="112 1430 112 1583 914 1583 914 1430"/>
+          </Shape>
+          <TextLine ID="eSc_line_ba911ff7" TAGREFS="LT106" BASELINE="123 1474 406 1474" HPOS="123" VPOS="1421" WIDTH="283" HEIGHT="75">
+            <Shape><Polygon POINTS="123 1474 123 1427 228 1433 236 1425 240 1423 240 1421 240 1421 242 1421 242 1421 242 1421 243 1421 243 1421 245 1421 282 1421 282 1421 282 1421 284 1421 284 1421 284 1421 286 1421 286 1421 286 1423 289 1425 297 1435 355 1435 365 1425 367 1423 367 1421 367 1421 368 1421 368 1421 368 1421 370 1421 370 1421 372 1421 372 1421 406 1425 406 1474 406 1491 123 1496"/></Shape>
+	    <String CONTENT="P. CHARPENTIER" HPOS="123" VPOS="1421" WIDTH="283" HEIGHT="75"/>
+          </TextLine>
+          <TextLine ID="eSc_line_6991251f" TAGREFS="LT106" BASELINE="608 1534 895 1531" HPOS="604" VPOS="1487" WIDTH="289" HEIGHT="61">
+            <Shape><Polygon POINTS="607 1533 604 1487 890 1489 893 1530 884 1541 864 1544 819 1541 800 1544 784 1543 768 1545 759 1545 751 1548 737 1545 718 1546 691 1544 607 1545"/></Shape>
+	    <String CONTENT="SUR LE LÉMAN" HPOS="604" VPOS="1487" WIDTH="289" HEIGHT="61"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

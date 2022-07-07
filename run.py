@@ -24,7 +24,7 @@ from extractionCatalogs.fonctions.restructuration import restructuration_automat
 from extractionCatalogs.fonctions.validation_alto.test_Validations_xml import check_strings, get_entries
 from extractionCatalogs.fonctions.automatisation_kraken.kraken_automatic import transcription
 from extractionCatalogs.variables import contenu_TEI
-from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner_altos
+from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner_altos, nettoyer_liste_str
 
 
 
@@ -34,7 +34,7 @@ from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner
 @click.argument("directory", type=str)
 @click.argument("output", type=str, required=False)
 @click.argument("titlecat", type=str)
-@click.argument("typecat", type=click.Choice(['Nulle', "Simple", "Double", "Triple"]), required=True)
+@click.argument("typecat", type=click.Choice(['Nulle', "Simple", "Double", "Triple", "mixed", "separated"]), required=False)
 # options
 @click.option("-st", "--segtrans", "segmentationtranscription", is_flag=True, default=False,
               help="Automatic segmentation and transcription via kraken. Input files must be images.")
@@ -105,9 +105,6 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
     text_xml = ET.SubElement(root_xml, "text")
     body_xml = ET.SubElement(text_xml, "body")
     list_xml = ET.SubElement(body_xml, "list")
-    # on créé une liste vide avec laquelle on comptera les fichiers traités :
-    n_fichier = 0
-
     # on créé une variable contenant l'arbre (elle sera utilisée à la fin pour écrire le teiHeader dans un fichier)
     xml_tree = ET.ElementTree(root_xml)
 
@@ -132,9 +129,13 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
     # "zéros non significatifs" (ex : "9" sera considéré plus grand que "10" s'il n'est pas nommé "09").
     liste_en_ordre = ordonner_altos(liste_en_desordre)
 
-    # on traite chaque fichier ALTO (page transcrite du catalogue), en bouclant sur le dossier indiqué :
+    # on créé une variable avec laquelle on comptera les fichiers traités :
+    n_fichier = 0
+    # on établit des variables qui nous permettront de faire des boucles :
     n_entree = 0
+    # TODO : il me semble que n_oeuvre ne sert à rien et que sa valeur sera toujours 0
     n_oeuvre = 0
+    # on traite chaque fichier ALTO (page transcrite du catalogue), en bouclant sur le dossier indiqué :
     for fichier in liste_en_ordre:
         # exclusion des fichiers cachés (".[...]"). Cela rend le script fonctionnel sur mac (.DS_Store)
         # exclusion de fichiers autres que XML (permet la présence d'autres types de fichiers dans le dossier)
@@ -200,23 +201,80 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
     # écriture du résultat de tout le processus de création TEI (arbre, entrées extraites) dans un fichier xml :
     xml_tree.write(output_file, pretty_print=True, encoding="UTF-8", xml_declaration=True)
 
-    # nous indiquons dans le terminal le nombre total d'entrée extraites dans les fichiers ALTO restructurés :
+    # === 5. Informations à afficher sur le terminal ====
+    print("\nRésumé :")
+
+    # nombre de fichiers :
+    if n_fichier == 1:
+        print ("\t{} fichier traité".format(n_fichier))
+    else:
+        print ("\t{} fichiers traités".format(n_fichier))
+
+    # nombre total d'entrées extraites dans les fichiers ALTO :
     entrees = xml_tree.find(".//list")
     n_entrees = 0
     for entree in entrees:
         n_entrees +=1
-    if n_entrees > 1:
-        print("\n{} entrées ont été extraites de l'ensemble des fichiers restructurés".format(n_entrees))
-    elif n_entrees == 1:
-        print("\n{} entrée a été extraite de l'ensemble des fichiers restructurés".format(n_entrees))
-    # Si aucune entrée n'est extraite dans l'ensemble de fichiers, possible erreur d'instanciation regex :
-    elif n_entrees == 0:
-                print("\nATTENTION : Aucune entrée n'a été extraite des fichiers restructurés ; veuillez vérifier vos instanciations"
-              " d'extraction regex")
+    if n_entrees == 1:
+        print("\t{} entrée extraite".format(n_entrees))
+    else:
+        print("\t{} entrées extraites".format(n_entrees))
+
+    # balises name vides (auteurs non signalés)
+    auteur_vide = xml_tree.xpath(".//list//name[not(node())]")
+    vides = 0
+    liste_vides = []
+    for vide in auteur_vide:
+        vides += 1
+        # on indique dans une liste les entrées concernées
+        liste_vides.append(vide.xpath("./../../@n"))
+    # on nettoie le résultat :
+    str_vides = str(liste_vides)
+    str_vides = str_vides.replace("[", "").replace("]", "")
+
+    # nombre d'auteurs signalés et non signalés
+    auteurs = xml_tree.xpath(".//list//name/text()")
+    n_auteurs = 0
+    for auteur in auteurs:
+        n_auteurs += 1
+    # si le nombre d'auteurs correspond aux entrées, il n'y a pas d'auteurs non signalés :
+    if n_auteurs == n_entrees:
+        if n_auteurs == 1:
+            print ("\t{} auteur signalé".format(n_auteurs))
+        else:
+            print ("\t{} auteurs signalés".format(n_auteurs))
+    # autrement, on signale combien d'auteurs n'ont pas été signalés et quelles sont les entrées concernées :
+    else:
+        # nous accordons la phrase au singulier ou au pluriel selon les cas possibles :
+        if n_auteurs == 1 and vides == 1:
+            print ("\t{} auteur signalé, {} auteur non signalé"
+                   " (entrée nº : {}) ".format(n_auteurs, vides, str_vides))
+        elif n_auteurs == 1:
+            print ("\t{} auteur signalé, {} auteurs non signalés"
+                   " (entrées nº : {}) ".format(n_auteurs, vides, str_vides))
+        else:
+            print ("\t{} auteurs signalés, {} auteurs non signalés"
+                   " (entrées nº : {}) ".format(n_auteurs, vides, str_vides))
+
+    # nombre d'oeuvres
+    oeuvres = xml_tree.findall(".//item")
+    n_items = 0
+    for oeuvre in oeuvres:
+        n_items += 1
+    if n_oeuvre == 1:
+        print("\t{} oeuvre extraite".format(n_items))
+    else:
+        print("\t{} oeuvres extraites".format(n_items))
+
+    # avertissement si aucune entrée n'a été extraite
+    if n_entrees == 0:
+        print("\nATTENTION : Aucune entrée n'a été extraite des fichiers restructurés ; veuillez vérifier vos "
+              "instanciations d'extraction regex")
+    else:
+        pass
 
     # le terminal indique à la fin le chemin absolu vers le dossier d'extraction
     print("\nChemin du dossier d'extraction : {}".format(os.path.abspath(extraction_directory)))
-
 
 # on lance la fonction définie précédemment et qui constitue la totalité du fichier
 # on vérifie que ce fichier est couramment exécuté (et non pas appelé sur un autre module)

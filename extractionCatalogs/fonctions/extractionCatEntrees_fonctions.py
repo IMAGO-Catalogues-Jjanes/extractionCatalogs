@@ -201,6 +201,7 @@ def get_oeuvres(entree_texte, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_o
         # si la chaîne correspond à notre regex oeuvre :
         if oeuvre_regex.search(current_line):
             # on extrait le numéro de l'oeuvre avec la regex correspondante :
+            # TODO : ATTENTION : dans cette fonction n_oeuvre s'appelle id_n_oeuvre, vérifier s'il faut changer la variable
             n_oeuvre = numero_regex.search(current_line).group(0)
             # on crée un élément "item" avec pour attribut le numéro de l'oeuvre :
             item_xml = ET.Element("item", n=str(n_oeuvre))
@@ -214,37 +215,51 @@ def get_oeuvres(entree_texte, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_o
             num_xml = ET.SubElement(item_xml, "num")
             # on créé un élément pour insérer le titre de l'oeuvre :
             title_xml = ET.SubElement(item_xml, "title")
+            # TODO : ATTENTION : dans cette fonction n_oeuvre s'appelle id_n_oeuvre, vérifier s'il faut changer la variable
             num_xml.text = n_oeuvre
             # on ajoute au dictionnaire une entrée avec le numéro comme clé et la ligne entière comme valeur :
             dict_item_texte[n_oeuvre] = current_line
-            # TODO : à quoi sert cette variable ? :
+            # cette variable nous permettra de faire référence à la ligne courante lors de l'itération suivante :
             n_line_item = n
+        # si la regex oeuvre ne marche pas, on vérifie si la ligne antérieur a été traité en tant qu'oeuvre
+        # et on vérifie si la ligne courante diffère par des minuscules :
+        # TODO : l'extraction ne sort pas les deuxièmes lignes...
         elif n - 1 == n_line_item and ligne_minuscule_regex.search(current_line):
+            # TODO ce serait pas plutot [dict_item_texte[n_line_item] ? en plus, n_oeuvre n'est pas une variable valable je crois
             dict_item_texte[n_oeuvre] = [dict_item_texte[n_oeuvre], current_line]
             n_line_item = n
+        # ou bien on vérifie si l'information est à mettre à part avec un deuxième dictionnaire :
         elif n - 1 == n_line_item and info_complementaire_regex.search(current_line):
+            # TODO : ATTENTION : dans cette fonction n_oeuvre s'appelle id_n_oeuvre, vérifier s'il faut changer la variable
             dict_item_desc_texte[n_oeuvre] = current_line
+        # TODO : ATTENTION : dans cette fonction n_oeuvre s'appelle id_n_oeuvre, vérifier s'il faut changer la variable
         elif n_oeuvre in dict_item_desc_texte:
             print(n_oeuvre)
             dict_item_desc_texte[n_oeuvre] = [dict_item_desc_texte[n_oeuvre], current_line]
         else:
             ('LIGNE NON RECONNUE: ', current_line)
     for el in list_item_ElementTree:
+        # on récupère le numéro de l'oeuvre :
         num_item = "".join(el.xpath("@n"))
         name_item = el.find(".//title")
+        # avec ce numéro, on récupère le nom de l'oeuvre dans le dictionnaire d'oeuvres puis on le nettoie :
         texte_name_item = str(dict_item_texte[num_item])
         texte_name_item_propre = nettoyer_liste_str(texte_name_item)
+        # si l'item a lui même une description ou des lignes complémentaires :
         if el.xpath(".//desc"):
             desc_item = el.find(".//desc")
+            # on récupère la ligne et on la nettoie :
             texte_desc_item = str(dict_item_desc_texte[num_item])
             desc_item.text = nettoyer_liste_str(texte_desc_item)
         if typeCat == "Triple" and info_comp_tiret_regex.search(texte_name_item_propre):
             desc_el_xml = ET.SubElement(el, "desc")
             desc_tiret = info_comp_tiret_regex.search(texte_name_item_propre).group(0)
             desc_el_xml.text = desc_tiret
+            # on enlève tout ce qui vient après le tiret pour garder le titre de l'oeuvre :
             texte_name_item_propre = re.sub(r'— .*', '', texte_name_item_propre)
         name_item.text = re.sub(r'^(\S\d{1,3}|\d{1,3}).', '', texte_name_item_propre)
 
+    #TODO : à quoi a servi le id_n_oeuvre ?
     return list_item_ElementTree, id_n_oeuvre
 
 

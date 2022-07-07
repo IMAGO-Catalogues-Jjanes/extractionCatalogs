@@ -161,7 +161,7 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
             for item in list_item_entree:
                 entree_xml.append(item)
         except Exception:
-            output_txt = "\n" + str(n_entree) + " " + entree_texte + " (entrée)"
+            output_txt = "\n" + str(n_entree) + " " + str(entree_texte) + " (entrée)"
             with open(os.path.dirname(output_file) + "/" + title + "_problems.txt", mode="a") as f:
                 f.write(output_txt)
         try:

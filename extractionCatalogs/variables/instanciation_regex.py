@@ -2,50 +2,68 @@
 Intanciation des regex utilisées pour l'extraction des données.
 Supprimer ou ajouter un dièse (#) aux lignes en fonction du type de catalogue
 
-Auteur: Juliette Janes
-Date: 09/07/21
+La majeur partie des variables contenant des regex ci dessous sont appelées dans la fonction get_oeuvres()
+du fichier extractionCatEntrees_fonctions.py
+
+Juliette Janès, 2021
+Esteban Sánchez Oeconomo, 2022
 """
 
 import re
 
-# " Regex pour lecture rapide, à ne pas supprimer "
+#  === 1. REGEX LECTURE RAPIDE (ne pas supprimer) ===
 auteur_regex = re.compile(r'^(\S|[A-Z])[A-ZÉ]{3,}')
 oeuvre_regex = re.compile(r'^\d{1,4}')
 
-# " Regex pour différents types d'auteurs en fonction du catalogue traité"
-# test pour catalogues expos universelles, ou auteur est numéroté
-auteur_recuperation_regex = re.compile(r'^.*\),')
 
+#  === 2. REGEX AUTEURS (en fonction du catalogue traité)  ===
 
-# Regex récupérant les auteurs sous la forme NOM (Prénom), ou NOM (Initiale.),
-#auteur_recuperation_regex = re.compile(r'^.*\),')
+# Regex : test pour catalogues expos universelles (auteur numéroté)
+# auteur_recuperation_regex = re.compile(r'^.*\),')
 
-# Regex pour les formes se terminant par un cadratin
+# Regex : "NOM (Prénom)," ou "NOM (Initiale.),", ou "NOM (Prénom)", ou "NOM (Initiale.)."
+# TODO Pour exclure la virgule, utiliser '^.*\)(?=,'
+auteur_recuperation_regex = re.compile(r'^.*\)[,.]')
+
+# Regex : auteurs délimités par un cadratin "—" final
 #auteur_recuperation_regex = re.compile(r'^.*.(?= —)')
 
-# Regex récupérant les auteurs de la forme NOM, Prénom, ou NOM, Prénom. (changer la virgule finale dans la regex par \.)
+# Regex : "NOM, Prénom," ou "NOM, Prénom.", ou "NOM, Prénom "  (changer la virgule finale dans la regex par \.)
 # auteur_recuperation_regex = re.compile(r'^(\S|[A-Z])[A-ZÉ]*, [A-Z][a-z]*,')
+# TODO : marche mieux ^(\S|[A-Z])[A-ZÉ]*, [A-Z][a-zé]*[,. ]
 
-# Regex récupérant les auteurs sous la forme M.NOM, Mlle NOM, (si la forme du catalogue a un point au lieu d'une
-# virgule, remplacer la , dans la regex par \.
+# Regex : "M. NOM," "Mlle NOM," (pour remplacer la "," finale par "." remplacer "," par "\." dans la regex
 # auteur_sans_prenom_regex = re.compile(r'M(.|[a-z]{2,3}) [A-ZÉ]*,')
+
+# Regex : "NOM," ou "NOM."
+# TODO : mieux : ^([A-ZÉ]|-| )*(\.|,| )
 auteur_sans_prenom_regex = re.compile(r'^([A-ZÉ]|-)*(\.|,)')
 
-# " Regex pour récupérer les informations biographiques en fonction du catalogue traité"
-# Regex récupérant les informations des catalogues de type NOM (Prénom), Information biographique
-# limitation_auteur_infobio_regex = re.compile(r'(?:\),).*')
 
-# Regex recupérant les informations des catalogues de type NOM Prénom — Information biographique
+#  === 3. REGEX : SEPARATION AUTEUR/INFORMATIONS BIOGRAPHIQUES (en fonction du catalogue traité)  ===
+
+# TODO regex pour rues
+# options : repérer mot "rue", "av." etc.
+# - vérifier si la numérotation est conforme (+ 1 ou égal à l'item antérieur)
+
+# Regex : "NOM (Prénom), Information biographique"
+# limitation_auteur_infobio_regex = re.compile(r'(?:\),).*')
+# TODO : celle ci capture aussi les points : (?:\),|\)\.).*
+
+# Regex : "NOM Prénom — Information biographique"
 limitation_auteur_infobio_regex = re.compile(r'(— .*)')
 
 # Regex à ne pas supprimer
 info_complementaire_regex = re.compile(r'^(\S[A-Z]|[A-Z])[a-z]')
 ligne_minuscule_regex = re.compile(r'^(\([a-z]|[a-z])')
 
-# " Regex pour récupérer les informations concernant l'oeuvre"
-# numero de l'oeuvre
+
+
+#  === 4. REGEX OEUVRE (en fonction du catalogue traité)  ===
+
+# Regex : numero de l'oeuvre
 numero_regex = re.compile(r'^(\S\d{1,4}|\d{1,4})')
 
-# informations complementaires
+# Regex : informations complementaires
 info_comp_parentheses_regex = re.compile(r'\(.*\)')
 info_comp_tiret_regex = re.compile(r'— .*')

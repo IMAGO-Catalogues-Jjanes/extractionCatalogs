@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>cat_pcp_1902.pdf_page_12.png</fileName>
+      
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT288" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT289" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT290" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT291" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT292" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT293" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT294" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT295" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT296" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/>
+    <OtherTag ID="LT106" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT107" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="1175" HEIGHT="2100" PHYSICAL_IMG_NR="11" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="1175" HEIGHT="2100">
+        <TextBlock HPOS="41" VPOS="286" WIDTH="915" HEIGHT="1431" ID="eSc_textblock_5f70c697" TAGREFS="BT291">
+          <Shape>
+            <Polygon POINTS="41 286 41 1717 956 1717 956 286"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="968" VPOS="294" WIDTH="143" HEIGHT="1423" ID="eSc_textblock_09cf1360" TAGREFS="BT294">
+          <Shape>
+            <Polygon POINTS="968 294 968 1717 1108 1717 1111 294"/>
+          </Shape>
+          <TextLine ID="eSc_line_22abe3ef" TAGREFS="LT106" BASELINE="1075 845 1075 300" HPOS="1027" VPOS="299" WIDTH="63" HEIGHT="544">
+            <Shape><Polygon POINTS="1073 843 1036 841 1027 299 1073 299 1090 299 1090 843"/></Shape>
+	    <String CONTENT="EFFET DE SOIR — INVERNESS" HPOS="1027" VPOS="299" WIDTH="63" HEIGHT="544"/>
+          </TextLine>
+          <TextLine ID="eSc_line_c2bc23f0" TAGREFS="LT106" BASELINE="1016 1708 1017 1482" HPOS="975" VPOS="1478" WIDTH="70" HEIGHT="230">
+            <Shape><Polygon POINTS="1015 1708 980 1708 975 1480 1015 1480 1033 1478 1045 1617 1045 1618 1045 1618 1045 1618 1045 1620 1045 1620 1045 1620 1045 1622 1034 1639 1034 1708"/></Shape>
+	    <String CONTENT="P. BOURGEOIS" HPOS="975" VPOS="1478" WIDTH="70" HEIGHT="230"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
