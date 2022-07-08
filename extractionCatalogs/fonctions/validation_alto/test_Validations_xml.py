@@ -1,17 +1,22 @@
 """
 Script de test permettant de vérifier l'adéquation du fichier XML_TEI au schéma RNG du projet
-Author:Juliette Janes
-Date: 26/03/2021
+Author:
+Juliette Janès, 2021
+Esteban Sánchez Oeconomo, 2022
 """
 
 from lxml import etree as ET
 import sys
 import re
+from urllib.request import urlopen
+from ...variables.contenu_TEI import lien_schema
+
 
 def association_xml_rng(document_xml):
     """
-    Fonction qui ajoute le schéma rng au document xml tei afin de vérifier leur adéquation.
-    :param schema_rng: schéma RelaxNG comprenant la structure définie dans l'ODD du projet (NDF_ODD.xml)
+    Fonction qui vérifie la conformité du XML-TEI produit au schéma rng du projet en cours. Ce schéma doit être indiqué
+    dans le dossier variables, dans le gabarit du projet en cours.
+    :param schema_rng: schéma RelaxNG comprenant la structure définie dans l'ODD du projet
     :type schema_rng: str
     :param document_xml: fichier xml tei de travail parsé par etree
     :type document_xml: str
@@ -21,24 +26,31 @@ def association_xml_rng(document_xml):
     # on parse le document xml pour le récupérer
     try:
         fichier_xml = ET.parse(document_xml)
+    # on vérifie dans un premier temps s'il est conforme xml :
     except ET.XMLSyntaxError:
-        # si il y a une erreur au niveau du xml du fichier, on le signale et on arrête le programme.
-        print("Le fichier xml n'est pas bien formé.")
+        # si il y a une erreur au niveau du xml du fichier, on le signale et on arrête le programme :
+        print("\tLe fichier xml n'est pas bien formé.")
         sys.exit()
 
-    # récupération et parsage en tant que relaxng du fichier rng
-    relaxng_fichier = ET.parse('./validation_alto/ODD_VisualContagions.rng')
+    # récupération et parsage du fichier rng du projet :
+    # pour utiliser le document en local :
+    # relaxng_fichier = ET.parse("extractionCatalogs/fonctions/validation_alto/out/ODD_VisualContagions.rng")
+    url = urlopen(lien_schema)
+    relaxng_fichier = ET.parse(url)
+    # Si l'on préfère utiliser le document en local :
+    # relaxng_fichier = ET.parse("extractionCatalogs/fonctions/validation_alto/out/ODD_VisualContagions.rng")
     relaxng = ET.RelaxNG(relaxng_fichier)
-
     # association du relaxng et du fichier tei
     if relaxng(fichier_xml):
-        # si le document est valide on stocke dans la variable resultat une chaîne de caractère validant le document
+        # s'il est conforme, la terminal l'indique. Cela n'arrivera que dans les cas où les ALTO en input ont été
+        # parfaitement encodés et corrigés préalablement
         resultat= "tei valide"
-        print("Le document XML est conforme au schéma TEI et à l'ODD du projet.")
+        print("\tLe document XML produit est conforme au schéma TEI et à l'ODD du projet.")
     else:
-        # sinon on signale que le document n'est pas valide et on ajoute les messages d'erreurs
-        print("Le document XML n'est pas conforme au schéma TEI et à l'ODD du projet." + relaxng.assertValid(fichier_xml))
-
+        # on signale que le document n'est pas valide. Ce sera le cas dans la très grande majorité des cas,
+        # et il est normal de devoir faire des corrections manuelles pour compléter l'extraction automatique
+        print("\tLe document XML produit n'est pas conforme au schéma TEI et à l'ODD du projet ; il nécessite des corrections manuelles ")
+        resultat= "tei non valide"
     return resultat
 
 def get_entries(chemin_document):
@@ -49,7 +61,7 @@ def get_entries(chemin_document):
     """
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
     document = ET.parse(chemin_document)
-    tagref_entree = document.xpath("//alto:OtherTag[@LABEL='Entry']/@ID", namespaces=NS)[0]
+    tagref_entree = document.xpath("//alto:OtherTag[@LABEL='CustomZone:entry']/@ID", namespaces=NS)[0]
     tagrefs_list = document.xpath("//alto:OtherTag/@ID", namespaces=NS)
     textline_list = document.xpath("//alto:TextLine", namespaces=NS)
     for textline in textline_list:
@@ -61,25 +73,22 @@ def get_entries(chemin_document):
                 if tagrefs_textblock in tagrefs_list:
                     n_zone_non_entree +=1
                 else:
-                    print("L'entrée " + str(parent_textblock.attrib['ID']) + " n'est pas bien formée.")
-                    action = input("""Voulez-vous revoir votre alto (1) ou
-                                            passer outre (2). Attention le résultat risque d'oublier des entrées.""")
+                    print("\tL'entrée " + str(parent_textblock.attrib['ID']) + " n'est pas bien formée.")
+                    action = input("Voulez-vous annuler le programme (1) ou passer outre (2) ? (Attention : des résultats peuvent être mis de coté)")
                     if action == "1":
                         sys.exit()
                     elif action == "2":
                         pass
         except Exception:
-            print("L'entrée " + str(parent_textblock.attrib['ID']) + " n'est pas bien formée.")
-            action = input("""Voulez-vous revoir votre alto (1) ou
-                                    passer outre (2). Attention le résultat risque d'oublier des entrées.""")
+            print("\tL'entrée " + str(parent_textblock.attrib['ID']) + " n'est pas bien formée.")
+            action = input("Voulez-vous annuler le programme (1) ou passer outre (2) ? (Attention : des résultats peuvent être mis de coté)")
             if action == "1":
                 sys.exit()
             elif action == "2":
                 pass
     if n_zone_non_entree > 3:
-        print("Il y a plus de 3 zones qui ne sont pas des zones entrées.")
-        action = input("""Voulez-vous vérifier la structure de votre page(1) ou
-                                                    passer outre (2). Attention le résultat risque d'oublier des entrées.""")
+        print("\tIl y a plus de 3 zones qui ne sont pas des zones entrées.")
+        action = input("Voulez-vous annuler le programme (1) ou passer outre (2) ? (Attention : des résultats peuvent être mis de coté)")
         if action == "1":
             sys.exit()
         elif action == "2":
@@ -90,48 +99,62 @@ def check_strings(fichier):
     Fonction qui permet, pour un alto donné, de vérifier sa bonne formation et de la corriger si elle est mauvaise.
     Légèrement adapté d'un script produit par Claire Jahan.
     :param fichier: chemin du fichier à vérifier
-    :return:
+    :return problemes:
+    :type problemes: list
     """
 
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
     file = ET.parse(fichier)
     root = file.getroot()
-    strings = ET.tostring(root, encoding='unicode')
-    strings = strings.split("\n")
+    # on selectionne le troisième ensemble de balises du fichier, appelé "layout", et on va boucler sur chaque niveau
     layout = root[2]
-    final = ""
-    tagref_default = file.xpath("//alto:OtherTag[@LABEL='Default']/@ID", namespaces=NS)[0]
+    # on récupère l'identifiant des DefaultLine, qui correspondent aux balises TextLine
+    tagref_default = file.xpath("//alto:OtherTag[@LABEL='DefaultLine']/@ID", namespaces=NS)[0]
+    # TODO pourquoi la méthode append() ne marche pas ici dans les itérations qui suivent pour la liste problemes ?
+    problemes = [""]
+    # pour chaque balise page
     for page in layout:
+        # pour chaque balise printspace contenue dans les page
         for printspace in page:
+            # pour chaque balise textblock contenue dans les printspace
             for textblock in printspace:
-                if textblock.get("TAGREFS") == None:
-                    print("Le block " + textblock.get("ID") + " du fichier " + fichier + " n'a pas de "
-                                                                                           "type. Ce block"
-                                                                                           " est à complét"
-                                                                                           "er (ajouter "
-                                                                                           "un TAGREFS) "
-                                                                                           "ou à supprimer.")
+                # on vérifie si des textblock sont mal ou pas référencées
+                # (le script les mets de côté, il est donc important de vérifier s'ils contiennent des informations à extraire)
+                if textblock.get("ID") == "eSc_dummyblock_":
+                    probleme1 = "\tLe fichier contient une balise TextBlock '" + textblock.get("ID") + \
+                                " ; celle ci n'est pas conforme à l'ontologie du projet. " + \
+                                "\n\tSi elle contient des informations à extraire, il faut la supprimer et mettre le contenu dans un TextBlock conforme."
+                    problemes.append(probleme1)
+                    print(probleme1)
+                elif textblock.get("TAGREFS") == None:
+                    probleme2 = "\tLe fichier contient une balise TextBlock '" + textblock.get("ID") + \
+                                "' sans TAGREF, donc non associé à l'ontologie du projet."
+                    problemes.append(probleme2)
+                    print(probleme2)
                 elif textblock.get("TAGREFS") == "BT":
-                    print("Le block " + textblock.get("ID") + " du fichier " + fichier + " a un attribut "
-                                                                                           "TAGREFS incomplet. "
-                                                                                           "Il faut le compléter.")
-                elif textblock.get("ID") == "eSc_dummyblock_":
-                    print("Le block " + textblock.get("ID") + " du fichier " + fichier + " n'est pas un block "
-                                                                                           "correct. Il faut le "
-                                                                                           "supprimer et ajouter "
-                                                                                           "ce qu'il contient dans"
-                                                                                           "le bon block.")
+                    probleme3 = "\tLe fichier contient une balise TextBlock '" + textblock.get("ID") + \
+                                "' dont l'attribut TAGREF est incomplet. " + \
+                                "\n\tS'il contient des informations à extraire, il faut le compléter pour l'associer à l'ontologie du projet."
+                    problemes.append(probleme3)
+                    print(probleme3)
+                return problemes
+    for page in layout:
+        # pour chaque balise printspace contenue dans les page
+        for printspace in page:
+            # pour chaque balise textblock contenue dans les printspace
+            for textblock in printspace:
+                # pour chaque balise textline contenue dans les textblock
                 for textline in textblock:
                     if textline.tag == "{http://www.loc.gov/standards/alto/ns-v4#}TextLine":
-                        if textline.get("TAGREFS"):
+                        # si la balise contient un attribut TAGREFS conforme, tout va bien
+                        if textline.get("TAGREFS") == tagref_default:
                             pass
+                        # autrement, on le signale dans le terminal
                         else:
-                            for string in textline:
-                                if string.tag == "{http://www.loc.gov/standards/alto/ns-v4#}String":
-                                    for i in strings:
-                                        if textline.get("ID") in i:
-                                            propre = re.sub('" BASELINE', '" TAGREFS="' + tagref_default + '" BASELINE',
-                                                                i)
-                                            final += propre
-                                        else:
-                                            final += i
+                            probleme4 = "\tle fichier contient une balise TextLine '" + textline.get("ID") + \
+                                        "' sans TAGREF correspondant à l'ontologie du projet."
+                            problemes.append(probleme4)
+                            print(probleme4)
+                        return problemes
+    print(problemes)
+    return problemes

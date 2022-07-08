@@ -5,6 +5,8 @@ Supprimer ou ajouter un dièse (#) aux lignes en fonction du type de catalogue
 La majeur partie des variables contenant des regex ci dessous sont appelées dans la fonction get_oeuvres()
 du fichier extractionCatEntrees_fonctions.py
 
+Pour tester, construire ou obtenir des explications détaillées pour une regex, consulter regex101.com
+
 Juliette Janès, 2021
 Esteban Sánchez Oeconomo, 2022
 """
@@ -53,7 +55,7 @@ auteur_sans_prenom_regex = re.compile(r'^([A-ZÉ]|-)*(\.|,)')
 # Regex : "NOM Prénom — Information biographique"
 limitation_auteur_infobio_regex = re.compile(r'(— .*)')
 
-# Regex à ne pas supprimer
+# Regex à ne pas supprimer (ces regex sélectionnent uniquement les premiers caractères d'une ligne entière à identifier)
 info_complementaire_regex = re.compile(r'^(\S[A-Z]|[A-Z])[a-z]')
 ligne_minuscule_regex = re.compile(r'^(\([a-z]|[a-z])')
 

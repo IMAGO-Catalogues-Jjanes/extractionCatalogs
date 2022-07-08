@@ -8,6 +8,8 @@ Ces variables correspondent au contenu du document TEI en output de la pipeline
 # Schémas (mettre l'instruction complète en une seule chaîne de caractères ; elle sera parsée par xml)
 schemas = { "schema_1": "indiquez ici un lien vers votre schéma"
 }
+# lien du schema en ligne, utilisé pour tester la conformité du document TEI produit
+lien_schema = ""
 
 # feuille de style :
 CSS = ''
