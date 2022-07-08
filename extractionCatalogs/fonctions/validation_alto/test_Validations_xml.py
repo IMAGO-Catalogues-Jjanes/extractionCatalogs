@@ -56,13 +56,17 @@ def association_xml_rng(document_xml):
 def get_entries(chemin_document):
     """
     Fonction qui permet pour un document précis, de vérifier que l'alto est construit de façon à ce que les TextBlocks
-    entrées contiennent les TextLines correspondantes et que celles-ci ne sont pas contenues dans le TextBlock main.
+    entrées contiennent les TextLines correspondantes et que celles-ci ne sont pas directement contenues dans le
+    TextBlock main. Cela impossibilite en effet l'extraction.
     :param document: fichier XML ALTO 4 parsé produit par l'OCR et contenant la transcription d'une page de catalogue
     """
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
     document = ET.parse(chemin_document)
+    # On récupère l'ID du type de balise CustomZone:entry
     tagref_entree = document.xpath("//alto:OtherTag[@LABEL='CustomZone:entry']/@ID", namespaces=NS)[0]
+    # liste de toutes les TAGREFS :
     tagrefs_list = document.xpath("//alto:OtherTag/@ID", namespaces=NS)
+    # liste de éléments TextLine :
     textline_list = document.xpath("//alto:TextLine", namespaces=NS)
     for textline in textline_list:
         parent_textblock = textline.getparent()
@@ -127,9 +131,8 @@ def check_strings(fichier):
                     probleme1 = "\tLe fichier contient une balise TextBlock '" + textblock.get("ID") + \
                                 " ; celle ci n'est pas conforme à l'ontologie du projet. " + \
                                 "\n\tSi elle contient des informations à extraire, il faut la supprimer et mettre le contenu dans un TextBlock conforme."
-                    problemes.appeend(probleme1)
+                    problemes.append(probleme1)
                     problemes_dic[textblock.get("ID")] = probleme1
-                    print(problemes_dic)
                     print(probleme1)
                 elif textblock.get("TAGREFS") == None:
                     probleme2 = "\tLe fichier contient une balise TextBlock '" + textblock.get("ID") + \
@@ -142,7 +145,6 @@ def check_strings(fichier):
                                 "\n\tS'il contient des informations à extraire, il faut le compléter pour l'associer à l'ontologie du projet."
                     problemes.append(probleme3)
                     print(probleme3)
-    print(problemes_dic)
     for page in layout:
         # pour chaque balise printspace contenue dans les page
         for printspace in page:
