@@ -21,11 +21,10 @@ import click
 from extractionCatalogs.fonctions.extractionCatEntrees import extInfo_Cat
 from extractionCatalogs.fonctions.creationTEI import creation_header
 from extractionCatalogs.fonctions.restructuration import restructuration_automatique
-from extractionCatalogs.fonctions.validation_alto.test_Validations_xml import check_strings, get_entries, association_xml_rng
+from extractionCatalogs.fonctions.Validations_xml import formation_alto, structure_alto, association_xml_rng
 from extractionCatalogs.fonctions.automatisation_kraken.kraken_automatic import transcription
 from extractionCatalogs.variables import contenu_TEI
-from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner_altos, nettoyer_liste_str
-
+from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner_altos
 
 
 # === 1.2 Création des commandes pour lancer le script sur le Terminal ====
@@ -38,12 +37,12 @@ from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner
 # options
 @click.option("-st", "--segtrans", "segmentationtranscription", is_flag=True, default=False,
               help="Automatic segmentation and transcription via kraken. Input files must be images.")
-@click.option("-v", "--verify", "verifyalto", is_flag=True, default=False,
-              help="Verify ALTO4 input files conformity and structure")
+#@click.option("-v", "--verify", "verifyalto", is_flag=True, default=False,
+#              help="Verify ALTO4 input files conformity and structure")
 # === 1.3 Création de la fonction principale du script ====
 # la commande "python3 run.py" lance la fonction suivante, qui reprend les variables indiquées sur le terminal ;
 # elle va elle-même faire appelle aux fonctions situées dans le dossier "fonctions"
-def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtranscription):
+def extraction(directory, output, titlecat, typecat, segmentationtranscription):
     """
     This python script takes a directory containing images or ALTO4 files of exhibition catalogs as an input. It's
     output is a directory containing an XML-TEI encoded version of the catalog, ALTO4 restructured files and a .txt file
@@ -134,6 +133,9 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
     n_entree = 0
     # TODO : il me semble que n_oeuvre ne sert à rien et que sa valeur sera toujours 0
     n_oeuvre = 0
+    # compteurs pour commande -v : nombre de textlines mal situées dans le document en entrée
+    textline_dans_main_total = 0
+    textline_dans_autres_total = 0
     # on traite chaque fichier ALTO (page transcrite du catalogue), en bouclant sur le dossier indiqué :
     for fichier in liste_en_ordre:
         etape = 0
@@ -143,20 +145,22 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
             # on ajoute le ficher au comptage et on l'indique sur le terminal :
             n_fichier += 1
             print(str(n_fichier) + " – Traitement de " + fichier)
-            # TODO commande -v retourne des erreurs
-            # on contrôle la qualité du fichier ALTO si la commande -v est activée :
-            if verifyalto:
-                # on appelle les fonctions du module test_Validations_xml.py pour vérifier que le fichier ALTO est
-                # bien formé et que la structure des entrées est respectée :
-                # (le chemin est construit en associant le chemin vers le dossier + le nom du fichier actuel)
-                etape += 1
-                print("\t" + str(etape) + " – Vérification de la formation du fichier alto")
-                problemes_alto = check_strings(directory + fichier)
-                etape += 1
-                print("\t" + str(etape) + " – Vérification de la structure des entrées")
-                get_entries(directory + fichier)
-            else:
-                pass
+
+            # === 3.2 On analyse la conformité et la structure des fichiers ALTO ====
+            # on appelle les fonctions du module Validations_xml.py
+            # (le chemin est construit en associant le chemin vers le dossier + le nom du fichier actuel)
+            etape += 1
+            print("\t" + str(etape) + " – Vérification de la conformité du fichier alto")
+            problemes_alto = formation_alto(directory + fichier)
+            etape += 1
+            print("\t" + str(etape) + " – Vérification de la structure du fichier alto")
+            # on récupère des chiffres relatifs aux problèmes :
+            textline_dans_main, textline_dans_autres = structure_alto(directory + fichier)
+            # on rajoute ces chiffres produites à chaque itération à des listes définies préalablement :
+            textline_dans_main_total += textline_dans_main
+            textline_dans_autres_total += textline_dans_autres
+            # ces listes seront appelées à la fin du script pour montrer des messages sur le terminal
+
             # === 3.2 Restructuration des ALTO en input ====
             # on appelle le module restructuration.py pour appliquer la feuille de transformation
             # Restructuration_alto.xsl aux fichiers en input et récupérer des fichiers avec les textLines en ordre :
@@ -274,20 +278,35 @@ def extraction(directory, output, titlecat, typecat, verifyalto, segmentationtra
     # avertissement si aucune entrée n'a été extraite
     if n_entrees == 0:
         print("\nATTENTION : Aucune entrée n'a été extraite des fichiers restructurés ; veuillez vérifier vos "
-              "instanciations d'extraction regex")
+              "instanciations d'extraction regex ou la structure des ALTO en input")
     else:
         pass
 
-    chemin_absolu = os.path.abspath(extraction_directory)
-
-    print("\nAnalyse XML/TEI/ALTO :")
-    association_xml_rng(output_file)
+    # message pour la commande -v :
+    if textline_dans_main_total or textline_dans_autres_total >= 1:
+        print("\nAnalyse input ALTO (commande -v) :")
+    if textline_dans_main_total >= 1:
+        if textline_dans_main_total == 1 :
+            print("\t– {} élément <TextLine> directement située sur <MainZone>".format(textline_dans_main_total))
+        else:
+            print("\t– {} éléments <TextLine> directement situées sur <MainZone>".format(textline_dans_main_total))
+    if textline_dans_autres_total >= 1:
+        if textline_dans_autres_total == 1:
+            print("\t– {} élément non conforme à l'ontologie Segmonto".format(textline_dans_autres_total))
+        else:
+            print("\t– {} éléments non conformes à l'ontologie Segmonto".format(textline_dans_autres_total))
+    """
     for probleme in problemes_alto:
-        print("\t" + probleme)
+        print("\t– probleme")
+    """
 
+    # messages pour le TEI produit
+    print("Analyse output TEI :")
+    association_xml_rng(output_file)
+
+    chemin_absolu = os.path.abspath(extraction_directory)
     # le terminal indique à la fin le chemin absolu vers le dossier d'extraction
-    print("Chemin du dossier d'extraction : {}".format(chemin_absolu))
-
+    print("\nChemin du dossier d'extraction : {}".format(chemin_absolu))
 
 
 # on lance la fonction définie précédemment et qui constitue la totalité du fichier
