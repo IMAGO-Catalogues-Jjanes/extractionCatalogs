@@ -292,9 +292,9 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
             print("\t– {} éléments <TextLine> directement situées sur <MainZone>".format(textline_dans_main_total))
     if textline_dans_autres_total >= 1:
         if textline_dans_autres_total == 1:
-            print("\t– {} élément non conforme à l'ontologie Segmonto".format(textline_dans_autres_total))
+            print("\t– {} TextLine dans des TextBlocks non conformes à l'ontologie Segmonto".format(textline_dans_autres_total))
         else:
-            print("\t– {} éléments non conformes à l'ontologie Segmonto".format(textline_dans_autres_total))
+            print("\t– {} TextLines dans des TextBlocks non conformes à l'ontologie Segmonto".format(textline_dans_autres_total))
     else :
         print("\t- La segmentation est conforme à l'ontologie Segmonto")
     """

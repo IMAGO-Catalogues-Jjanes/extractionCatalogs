@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>CAT_000432.pdf_page_2.png</fileName>
+      
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT3716" LABEL="CustomZone:EntryEnd" DESCRIPTION="block type CustomZone:EntryEnd"/><OtherTag ID="BT3715" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT3714" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT3711" LABEL="RunningTitleZone" DESCRIPTION="block type RunningTitleZone"/><OtherTag ID="BT3710" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT3709" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT3713" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT3712" LABEL="CustomZone:Entry" DESCRIPTION="block type CustomZone:Entry"/>
+    <OtherTag ID="LT1268" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT1267" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="1917"
+          HEIGHT="2912"
+          PHYSICAL_IMG_NR="1"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="1917"
+                  HEIGHT="2912">
+        
+        <TextBlock HPOS="425"
+                   VPOS="399"
+                   WIDTH="1274"
+                   HEIGHT="2129"
+                   ID="eSc_textblock_5f1e429b"
+                   TAGREFS="BT3715">
+          <Shape><Polygon POINTS="451 399 425 2512 1666 2528 1699 404"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_bc6dcd95"
+                    TAGREFS="LT1268"
+                    BASELINE="979 490 1139 490" 
+                    HPOS="979"
+                    VPOS="429"
+                    WIDTH="160"
+                    HEIGHT="80">
+            <Shape><Polygon POINTS="1100 446 1076 446 1052 446 1027 446 1003 446 1001 429 979 429 979 490 979 504 1137 509 1139 490 1137 487 1124 487"/></Shape>
+	    <String CONTENT="AVIS"
+                    HPOS="979"
+                    VPOS="429"
+                    WIDTH="160"
+                    HEIGHT="80"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_8e23fdca"
+                    TAGREFS="LT1267"
+                    BASELINE="549 579 1647 575" 
+                    HPOS="546"
+                    VPOS="543"
+                    WIDTH="1101"
+                    HEIGHT="56">
+            <Shape><Polygon POINTS="1615 550 1591 550 1567 550 1542 550 1518 550 1494 550 1469 550 1445 550 1421 550 1397 550 1372 548 1348 548 1324 548 1299 548 1275 548 1251 548 1226 548 1202 548 1178 548 1154 548 1129 548 1105 548 1081 546 1056 546 1032 546 1008 546 984 546 959 546 935 546 911 546 886 546 862 546 838 546 823 543 568 543 546 570 549 579 549 599 1644 596 1647 575 1640 550"/></Shape>
+	    <String CONTENT="Il y aura, le 16 janvier 1890, exposition publique des pièces,"
+                    HPOS="546"
+                    VPOS="543"
+                    WIDTH="1101"
+                    HEIGHT="56"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_110793f9"
+                    TAGREFS="LT1267"
+                    BASELINE="468 626 1644 626" 
+                    HPOS="468"
+                    VPOS="587"
+                    WIDTH="1176"
+                    HEIGHT="60">
+            <Shape><Polygon POINTS="541 589 517 594 493 596 468 599 468 626 468 643 1642 647 1644 626 1644 587 546 587 541 589"/></Shape>
+	    <String CONTENT="de deux à quatre heures du soir, Hôtel des Commissaires-Priseurs,"
+                    HPOS="468"
+                    VPOS="587"
+                    WIDTH="1176"
+                    HEIGHT="60"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_0c6d50a1"
+                    TAGREFS="LT1267"
+                    BASELINE="466 667 643 672" 
+                    HPOS="464"
+                    VPOS="628"
+                    WIDTH="179"
+                    HEIGHT="70">
+            <Shape><Polygon POINTS="636 628 612 628 587 628 563 628 539 628 529 628 488 628 466 667 464 686 639 698 643 672 639 628 636 628"/></Shape>
+	    <String CONTENT="Salle n° 4."
+                    HPOS="464"
+                    VPOS="628"
+                    WIDTH="179"
+                    HEIGHT="70"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_2500074d"
+                    TAGREFS="LT1267"
+                    BASELINE="551 723 1601 718" 
+                    HPOS="549"
+                    VPOS="660"
+                    WIDTH="1052"
+                    HEIGHT="84">
+            <Shape><Polygon POINTS="1593 696 1581 674 1073 660 1071 660 549 679 551 723 551 744 1598 740 1601 718 1596 698 1593 696"/></Shape>
+	    <String CONTENT="Les pièces seront visibles chez l’expert huit jours à l’avance."
+                    HPOS="549"
+                    VPOS="660"
+                    WIDTH="1052"
+                    HEIGHT="84"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_4a2a3b8d"
+                    TAGREFS="LT1267"
+                    BASELINE="551 766 1302 766" 
+                    HPOS="551"
+                    VPOS="730"
+                    WIDTH="751"
+                    HEIGHT="51">
+            <Shape><Polygon POINTS="551 766 551 778 1299 781 1302 766 1302 730 551 730 551 766"/></Shape>
+	    <String CONTENT="L’authenticité des autographes est garantie."
+                    HPOS="551"
+                    VPOS="730"
+                    WIDTH="751"
+                    HEIGHT="51"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_2619c7c3"
+                    TAGREFS="LT1267"
+                    BASELINE="551 812 1649 805" 
+                    HPOS="549"
+                    VPOS="742"
+                    WIDTH="1100"
+                    HEIGHT="85">
+            <Shape><Polygon POINTS="1302 766 1278 769 1253 769 1229 769 1209 769 1154 771 549 769 551 812 551 827 1649 825 1649 805 1640 754 1613 769 1591 754 1574 742 1571 742 1569 742 1358 742 1355 742 1353 742 1350 742 1329 759 1321 764 1302 764 1302 766"/></Shape>
+	    <String CONTENT="Huit jours sont accordés pour la vérification des pièces; passé"
+                    HPOS="549"
+                    VPOS="742"
+                    WIDTH="1100"
+                    HEIGHT="85"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_e576fae2"
+                    TAGREFS="LT1267"
+                    BASELINE="471 856 1251 854" 
+                    HPOS="471"
+                    VPOS="817"
+                    WIDTH="780"
+                    HEIGHT="54">
+            <Shape><Polygon POINTS="493 829 478 839 471 856 471 871 1248 868 1251 854 1246 817 522 817 517 820"/></Shape>
+	    <String CONTENT="ce délai, aucune réclamation ne sera admise."
+                    HPOS="471"
+                    VPOS="817"
+                    WIDTH="780"
+                    HEIGHT="54"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_aaafb665"
+                    TAGREFS="LT1267"
+                    BASELINE="551 902 1647 897" 
+                    HPOS="549"
+                    VPOS="859"
+                    WIDTH="1098"
+                    HEIGHT="63">
+            <Shape><Polygon POINTS="551 902 551 917 1642 922 1647 897 1640 859 549 863 551 902"/></Shape>
+	    <String CONTENT="Les acquéreurs payeront cinq pour cent en sus du prix d’adjudi¬"
+                    HPOS="549"
+                    VPOS="859"
+                    WIDTH="1098"
+                    HEIGHT="63"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_8cdd7304"
+                    TAGREFS="LT1267"
+                    BASELINE="464 948 595 948" 
+                    HPOS="464"
+                    VPOS="895"
+                    WIDTH="131"
+                    HEIGHT="68">
+            <Shape><Polygon POINTS="561 902 558 900 515 895 512 902 488 907 464 941 464 948 464 963 595 960 595 948 595 905 573 902 561 902"/></Shape>
+	    <String CONTENT="cation."
+                    HPOS="464"
+                    VPOS="895"
+                    WIDTH="131"
+                    HEIGHT="68"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_13dad140"
+                    TAGREFS="LT1267"
+                    BASELINE="551 1002 1647 994" 
+                    HPOS="549"
+                    VPOS="939"
+                    WIDTH="1098"
+                    HEIGHT="85">
+            <Shape><Polygon POINTS="551 1002 551 1024 1644 1007 1647 994 1642 956 1562 941 1559 941 1557 941 1554 941 1554 943 1542 956 1394 956 1309 939 1307 939 1304 939 1239 956 1236 956 1217 941 1214 941 1212 941 1209 941 1207 941 1151 956 1146 956 1144 956 1078 941 1076 941 1073 941 1071 941 1049 956 1047 956 1039 956 860 943 857 943 855 943 852 943 835 956 830 958 813 956 726 946 724 946 721 946 682 956 680 958 677 958 665 946 665 943 663 943 660 943 604 943 602 943 600 943 549 956 551 1002"/></Shape>
+	    <String CONTENT="M. ÉTIENNE CHARAVAY, archiviste paléographe, chargé de la"
+                    HPOS="549"
+                    VPOS="939"
+                    WIDTH="1098"
+                    HEIGHT="85"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_e715a9f5"
+                    TAGREFS="LT1267"
+                    BASELINE="468 1045 1518 1038" 
+                    HPOS="466"
+                    VPOS="1004"
+                    WIDTH="1052"
+                    HEIGHT="78">
+            <Shape><Polygon POINTS="466 1028 468 1045 468 1065 813 1082 816 1082 894 1079 896 1079 898 1079 898 1077 911 1067 918 1075 918 1077 920 1077 923 1077 1161 1079 1163 1079 1236 1062 1270 1077 1273 1077 1275 1079 1397 1079 1397 1077 1399 1077 1401 1077 1401 1075 1416 1060 1518 1058 1518 1038 1511 1004 478 1009 466 1028"/></Shape>
+	    <String CONTENT="vente, remplira les commissions qu’on voudra bien lui confier."
+                    HPOS="466"
+                    VPOS="1004"
+                    WIDTH="1052"
+                    HEIGHT="78"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_74c7982d"
+                    TAGREFS="LT1268"
+                    BASELINE="784 1201 1326 1196" 
+                    HPOS="784"
+                    VPOS="1155"
+                    WIDTH="542"
+                    HEIGHT="68">
+            <Shape><Polygon POINTS="1292 1172 1268 1155 1243 1155 1219 1155 1195 1155 1171 1155 1146 1155 1122 1155 1098 1155 1073 1155 1049 1155 1025 1155 1001 1155 976 1155 952 1155 928 1155 903 1155 879 1155 855 1155 830 1155 806 1155 787 1186 784 1201 784 1223 1324 1215 1326 1196 1321 1191 1316 1191"/></Shape>
+	    <String CONTENT="EN DISTRIBUTION :"
+                    HPOS="784"
+                    VPOS="1155"
+                    WIDTH="542"
+                    HEIGHT="68"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_e41c9f15"
+                    TAGREFS="LT1267"
+                    BASELINE="541 1271 1637 1266" 
+                    HPOS="539"
+                    VPOS="1227"
+                    WIDTH="1098"
+                    HEIGHT="66">
+            <Shape><Polygon POINTS="1632 1264 1608 1230 1584 1230 1559 1230 1535 1230 1511 1230 1486 1230 1467 1227 539 1230 539 1232 541 1271 541 1286 1635 1293 1637 1266 1632 1259 1632 1264"/></Shape>
+	    <String CONTENT="Catalogue d’une précieuse collection de lettres autographes,"
+                    HPOS="539"
+                    VPOS="1227"
+                    WIDTH="1098"
+                    HEIGHT="66"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_c06d083f"
+                    TAGREFS="LT1267"
+                    BASELINE="464 1317 1180 1310" 
+                    HPOS="461"
+                    VPOS="1271"
+                    WIDTH="719"
+                    HEIGHT="58">
+            <Shape><Polygon POINTS="485 1298 483 1274 461 1274 464 1317 464 1327 1178 1329 1180 1310 1173 1271 502 1274 485 1298"/></Shape>
+	    <String CONTENT="dont la vente aura lieu le 20 janvier 1890."
+                    HPOS="461"
+                    VPOS="1271"
+                    WIDTH="719"
+                    HEIGHT="58"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_5cc3fe2e"
+                    TAGREFS="LT1268"
+                    BASELINE="787 1468 1314 1468" 
+                    HPOS="787"
+                    VPOS="1426"
+                    WIDTH="527"
+                    HEIGHT="71">
+            <Shape><Polygon POINTS="1273 1426 1248 1426 1224 1426 1200 1426 1175 1426 1151 1426 1127 1426 1103 1426 1078 1426 1054 1426 1030 1426 1005 1426 981 1426 957 1426 932 1426 908 1426 884 1426 860 1426 835 1426 811 1426 789 1456 787 1468 787 1497 1314 1497 1314 1468 1307 1441 1297 1426"/></Shape>
+	    <String CONTENT="EN PRÉPARATION :"
+                    HPOS="787"
+                    VPOS="1426"
+                    WIDTH="527"
+                    HEIGHT="71"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_208f5de5"
+                    TAGREFS="LT1267"
+                    BASELINE="544 1540 1355 1536" 
+                    HPOS="544"
+                    VPOS="1497"
+                    WIDTH="811"
+                    HEIGHT="70">
+            <Shape><Polygon POINTS="1343 1514 1333 1497 711 1497 687 1497 663 1497 639 1499 614 1499 590 1502 566 1502 544 1540 544 1553 743 1567 745 1567 748 1567 772 1555 782 1555 889 1567 891 1567 1355 1557 1355 1536 1353 1533 1343 1514"/></Shape>
+	    <String CONTENT="Catalogues des Collections DUBRUNFAUT, etc."
+                    HPOS="544"
+                    VPOS="1497"
+                    WIDTH="811"
+                    HEIGHT="70"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_24e0149b"
+                    TAGREFS="LT1268"
+                    BASELINE="855 1710 1236 1715" 
+                    HPOS="852"
+                    VPOS="1659"
+                    WIDTH="384"
+                    HEIGHT="73">
+            <Shape><Polygon POINTS="1192 1713 1171 1710 1146 1691 1122 1686 1098 1684 1073 1679 1049 1676 1025 1671 1001 1669 976 1669 952 1671 928 1671 903 1674 879 1676 874 1659 855 1659 855 1710 852 1722 1231 1732 1236 1715 1234 1705 1219 1708"/></Shape>
+	    <String CONTENT="EN VENTE :"
+                    HPOS="852"
+                    VPOS="1659"
+                    WIDTH="384"
+                    HEIGHT="73"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_07ac1ccf"
+                    TAGREFS="LT1267"
+                    BASELINE="466 1788 1637 1781" 
+                    HPOS="466"
+                    VPOS="1747"
+                    WIDTH="1171"
+                    HEIGHT="56">
+            <Shape><Polygon POINTS="1630 1754 1606 1754 1581 1754 1557 1754 1533 1754 1508 1754 1484 1754 1460 1752 1435 1752 1411 1752 1387 1752 1363 1752 1338 1752 1314 1752 1290 1749 1265 1749 1241 1749 1217 1749 1192 1749 1168 1749 1144 1749 1120 1747 1095 1747 1071 1747 1052 1747 767 1747 755 1749 731 1749 707 1749 682 1749 658 1752 634 1752 609 1752 585 1752 561 1754 536 1754 512 1754 488 1754 468 1766 466 1788 466 1803 1635 1798 1637 1781 1630 1754 1630 1754"/></Shape>
+	    <String CONTENT="TRAITÉ PRATIQUE DE GRAPHOLOGIE, étude du caractère de l’homme"
+                    HPOS="466"
+                    VPOS="1747"
+                    WIDTH="1171"
+                    HEIGHT="56"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_d633f84c"
+                    TAGREFS="LT1267"
+                    BASELINE="500 1827 1635 1822" 
+                    HPOS="498"
+                    VPOS="1786"
+                    WIDTH="1137"
+                    HEIGHT="55">
+            <Shape><Polygon POINTS="500 1827 500 1841 1632 1839 1635 1822 1627 1786 498 1788 500 1827"/></Shape>
+	    <String CONTENT="d’après son écriture, par J. CRÉPIEUX-JAMIN. 1 vol. in-18 de"
+                    HPOS="498"
+                    VPOS="1786"
+                    WIDTH="1137"
+                    HEIGHT="55"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_cd2f40ab"
+                    TAGREFS="LT1267"
+                    BASELINE="502 1870 1637 1866" 
+                    HPOS="500"
+                    VPOS="1829"
+                    WIDTH="1137"
+                    HEIGHT="56">
+            <Shape><Polygon POINTS="502 1870 502 1885 1635 1885 1637 1866 1630 1829 500 1832 502 1870"/></Shape>
+	    <String CONTENT="268 pages........................ 3 fr. 50"
+                    HPOS="500"
+                    VPOS="1829"
+                    WIDTH="1137"
+                    HEIGHT="56"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_16d3c962"
+                    TAGREFS="LT1267"
+                    BASELINE="539 1917 1637 1917" 
+                    HPOS="539"
+                    VPOS="1870"
+                    WIDTH="1098"
+                    HEIGHT="61">
+            <Shape><Polygon POINTS="1025 1870 1001 1870 976 1870 952 1870 928 1870 903 1870 879 1870 855 1870 830 1870 806 1870 782 1870 758 1870 733 1870 709 1870 685 1870 660 1870 636 1870 612 1870 587 1870 563 1870 539 1870 539 1917 539 1931 1637 1929 1637 1917 1637 1870 1049 1870 1025 1870"/></Shape>
+	    <String CONTENT="Ce volume, orné de 179 figures, doit faire partie de la biblio¬"
+                    HPOS="539"
+                    VPOS="1870"
+                    WIDTH="1098"
+                    HEIGHT="61"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_4febf5ed"
+                    TAGREFS="LT1267"
+                    BASELINE="459 1960 1076 1960" 
+                    HPOS="459"
+                    VPOS="1919"
+                    WIDTH="617"
+                    HEIGHT="61">
+            <Shape><Polygon POINTS="1066 1919 1042 1919 1018 1919 993 1919 969 1919 945 1919 920 1919 896 1919 872 1919 847 1919 823 1919 799 1919 775 1919 767 1919 478 1919 459 1941 459 1960 459 1977 1073 1980 1076 1960 1073 1919 1066 1919"/></Shape>
+	    <String CONTENT="thèque des amateurs d’autographes."
+                    HPOS="459"
+                    VPOS="1919"
+                    WIDTH="617"
+                    HEIGHT="61"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_fab9666c"
+                    TAGREFS="LT1267"
+                    BASELINE="464 2014 1635 2009" 
+                    HPOS="461"
+                    VPOS="1965"
+                    WIDTH="1174"
+                    HEIGHT="61">
+            <Shape><Polygon POINTS="461 1977 464 2014 464 2026 1635 2026 1635 2009 1630 1968 481 1965 461 1977"/></Shape>
+	    <String CONTENT="LETTRES AUTOGRAPHES COMPOSANT LA COLLECTION DE M. ALFRED"
+                    HPOS="461"
+                    VPOS="1965"
+                    WIDTH="1174"
+                    HEIGHT="61"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_9b1a0e69"
+                    TAGREFS="LT1267"
+                    BASELINE="505 2055 1632 2048" 
+                    HPOS="502"
+                    VPOS="2011"
+                    WIDTH="1130"
+                    HEIGHT="58">
+            <Shape><Polygon POINTS="1620 2011 1596 2011 1571 2011 1547 2011 1523 2011 1499 2011 1474 2011 1450 2011 1426 2011 1401 2011 1377 2011 1353 2011 1329 2011 1304 2011 1280 2011 1256 2011 1231 2011 1207 2011 1183 2011 1158 2011 1134 2011 1110 2011 1086 2011 1061 2011 1059 2011 1037 2014 1013 2014 988 2014 964 2014 940 2014 915 2014 891 2014 867 2014 843 2014 818 2014 794 2014 770 2014 745 2014 721 2014 697 2014 673 2014 648 2014 624 2014 600 2014 575 2014 551 2014 527 2014 502 2014 505 2055 505 2069 1630 2069 1632 2048 1625 2011 1620 2011"/></Shape>
+	    <String CONTENT="BOVET, décrites par Érienne CHARAVAY, ouvrage imprimé sous"
+                    HPOS="502"
+                    VPOS="2011"
+                    WIDTH="1130"
+                    HEIGHT="58"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_b5664670"
+                    TAGREFS="LT1267"
+                    BASELINE="502 2096 1630 2089" 
+                    HPOS="500"
+                    VPOS="2050"
+                    WIDTH="1130"
+                    HEIGHT="63">
+            <Shape><Polygon POINTS="1253 2052 1229 2052 1205 2052 1180 2052 1156 2052 1132 2052 1107 2052 1083 2052 1059 2052 1035 2052 1010 2052 986 2052 962 2052 937 2052 913 2052 889 2052 864 2055 840 2055 816 2055 792 2055 767 2055 743 2055 719 2055 694 2055 670 2055 646 2055 621 2055 597 2055 573 2055 549 2055 524 2055 519 2050 500 2050 502 2096 502 2113 1627 2106 1630 2089 1625 2052 1260 2050 1253 2052"/></Shape>
+	    <String CONTENT="la direction de FERNAND CALMETTES. 1 vol. grand in-4°, de"
+                    HPOS="500"
+                    VPOS="2050"
+                    WIDTH="1130"
+                    HEIGHT="63"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_63ce4836"
+                    TAGREFS="LT1267"
+                    BASELINE="502 2135 1630 2128" 
+                    HPOS="500"
+                    VPOS="2094"
+                    WIDTH="1130"
+                    HEIGHT="58">
+            <Shape><Polygon POINTS="502 2135 502 2152 1627 2152 1630 2128 1623 2094 500 2099 502 2135"/></Shape>
+	    <String CONTENT="1,000 pages, imprimé sur papier de luxe, avec encadrement rouge"
+                    HPOS="500"
+                    VPOS="2094"
+                    WIDTH="1130"
+                    HEIGHT="58"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_d5af2694"
+                    TAGREFS="LT1267"
+                    BASELINE="495 2179 1627 2171" 
+                    HPOS="493"
+                    VPOS="2137"
+                    WIDTH="1134"
+                    HEIGHT="63">
+            <Shape><Polygon POINTS="495 2179 495 2200 561 2188 1623 2191 1627 2171 1620 2137 493 2137 495 2179"/></Shape>
+	    <String CONTENT="à chaque page.............................. 150 fr."
+                    HPOS="493"
+                    VPOS="2137"
+                    WIDTH="1134"
+                    HEIGHT="63"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_0cfa2c58"
+                    TAGREFS="LT1267"
+                    BASELINE="541 2227 1627 2217" 
+                    HPOS="539"
+                    VPOS="2184"
+                    WIDTH="1088"
+                    HEIGHT="58">
+            <Shape><Polygon POINTS="541 2227 541 2242 1625 2239 1627 2217 1623 2184 539 2184 541 2227"/></Shape>
+	    <String CONTENT="Ce volume exceptionnel est à la fois un précieux ouvrage histo¬"
+                    HPOS="539"
+                    VPOS="2184"
+                    WIDTH="1088"
+                    HEIGHT="58"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_49b47344"
+                    TAGREFS="LT1267"
+                    BASELINE="459 2268 1630 2261" 
+                    HPOS="456"
+                    VPOS="2227"
+                    WIDTH="1174"
+                    HEIGHT="58">
+            <Shape><Polygon POINTS="456 2239 459 2268 459 2285 1627 2278 1630 2261 1623 2227 471 2227 456 2239"/></Shape>
+	    <String CONTENT="rique et un chef-d’œuvre de la typographie française. La collection"
+                    HPOS="456"
+                    VPOS="2227"
+                    WIDTH="1174"
+                    HEIGHT="58"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_fcbd73b1"
+                    TAGREFS="LT1267"
+                    BASELINE="461 2310 1627 2302" 
+                    HPOS="459"
+                    VPOS="2268"
+                    WIDTH="1168"
+                    HEIGHT="54">
+            <Shape><Polygon POINTS="461 2310 461 2322 1625 2319 1627 2302 1620 2268 459 2273 461 2310"/></Shape>
+	    <String CONTENT="de M. Alfred Bovet est justement célèbre, et son inventaire est un"
+                    HPOS="459"
+                    VPOS="2268"
+                    WIDTH="1168"
+                    HEIGHT="54"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_f5f83445"
+                    TAGREFS="LT1267"
+                    BASELINE="464 2351 1627 2341" 
+                    HPOS="461"
+                    VPOS="2305"
+                    WIDTH="1166"
+                    HEIGHT="58">
+            <Shape><Polygon POINTS="1603 2305 1579 2305 1554 2305 1530 2305 1506 2305 1482 2305 1457 2305 1433 2305 1409 2305 1384 2305 1360 2305 1336 2305 1329 2305 1229 2305 1214 2307 1190 2307 1166 2307 1141 2307 1117 2307 1093 2307 1069 2307 1044 2307 1039 2307 830 2307 826 2310 801 2310 777 2310 753 2310 748 2310 461 2310 464 2351 464 2363 1625 2363 1627 2341 1620 2305 1603 2305"/></Shape>
+	    <String CONTENT="véritable modèle du genre. Ce livre est orné de 49 héliogravures"
+                    HPOS="461"
+                    VPOS="2305"
+                    WIDTH="1166"
+                    HEIGHT="58"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_ce2c511b"
+                    TAGREFS="LT1267"
+                    BASELINE="459 2390 1627 2382" 
+                    HPOS="456"
+                    VPOS="2346"
+                    WIDTH="1171"
+                    HEIGHT="58">
+            <Shape><Polygon POINTS="1039 2349 1015 2349 991 2349 967 2349 942 2349 918 2349 894 2349 869 2349 845 2349 821 2349 796 2349 772 2349 748 2351 724 2351 699 2351 675 2351 651 2351 626 2351 602 2351 578 2351 553 2351 529 2351 505 2351 481 2351 478 2346 456 2346 459 2390 459 2404 1625 2404 1627 2382 1623 2349 1049 2346 1039 2349"/></Shape>
+	    <String CONTENT="hors texte et de 2,000 fac-similés dans le texte. C’est un guide"
+                    HPOS="456"
+                    VPOS="2346"
+                    WIDTH="1171"
+                    HEIGHT="58"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_abafd035"
+                    TAGREFS="LT1267"
+                    BASELINE="459 2429 1630 2429" 
+                    HPOS="459"
+                    VPOS="2387"
+                    WIDTH="1171"
+                    HEIGHT="59">
+            <Shape><Polygon POINTS="847 2390 823 2390 799 2390 775 2390 750 2390 726 2390 702 2390 677 2390 653 2390 629 2390 604 2390 580 2390 556 2390 532 2390 507 2390 483 2390 459 2390 459 2429 459 2443 1627 2446 1630 2429 1630 2392 869 2387 847 2390"/></Shape>
+	    <String CONTENT="indispensable à tout amateur d’autographes et un album des plus"
+                    HPOS="459"
+                    VPOS="2387"
+                    WIDTH="1171"
+                    HEIGHT="59"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_dd192cca"
+                    TAGREFS="LT1267"
+                    BASELINE="458 2459 1582 2462" 
+                    HPOS="454"
+                    VPOS="2429"
+                    WIDTH="1127"
+                    HEIGHT="77">
+            <Shape><Polygon POINTS="1550 2429 1525 2429 1501 2429 1477 2429 1452 2429 1428 2429 1404 2429 1380 2429 1355 2429 1331 2429 1307 2429 1282 2429 1258 2429 1234 2429 1209 2429 1185 2429 1161 2429 1137 2429 1112 2429 1088 2429 1064 2429 1039 2429 1015 2429 991 2429 967 2429 942 2429 918 2429 894 2429 869 2429 845 2429 821 2429 796 2429 772 2429 748 2429 724 2429 699 2429 675 2429 651 2429 626 2429 602 2429 578 2429 553 2429 529 2429 505 2429 481 2429 456 2458 454 2492 665 2504 668 2504 670 2504 692 2492 704 2487 721 2492 745 2499 748 2499 750 2499 792 2492 821 2487 830 2492 845 2501 847 2501 850 2501 852 2501 940 2492 979 2487 986 2492 998 2501 998 2504 1001 2504 1003 2504 1005 2506 1090 2506 1090 2504 1224 2489 1268 2487 1299 2489 1404 2504 1406 2504 1409 2504 1411 2504 1411 2501 1423 2489 1426 2487 1489 2487 1501 2489 1547 2504 1550 2504 1552 2504 1554 2504 1579 2489 1581 2460 1576 2429 1574 2429"/></Shape>
+	    <String CONTENT="curieux que tout bibliophile voudra avoir sur la table de son salon."
+                    HPOS="454"
+                    VPOS="2429"
+                    WIDTH="1127"
+                    HEIGHT="77"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
