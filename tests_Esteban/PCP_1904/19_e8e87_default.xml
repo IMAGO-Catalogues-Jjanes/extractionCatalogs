@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>19_e8e87_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:5154/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT270" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT271" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT272" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT273" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT274" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT275" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT276" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT277" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT278" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/>
+    <OtherTag ID="LT96" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT97" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT98" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT99" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="554"
+          HEIGHT="960"
+          PHYSICAL_IMG_NR="19"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="554"
+                  HEIGHT="960">
+        
+        <TextBlock HPOS="296"
+                   VPOS="643"
+                   WIDTH="243"
+                   HEIGHT="73"
+                   ID="eSc_textblock_0ef4b250"
+                   TAGREFS="BT274">
+          <Shape><Polygon POINTS="296 643 296 716 539 716 539 643"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_1371b357"
+                    TAGREFS="LT97"
+                    BASELINE="306 672 536 668" 
+                    HPOS="304"
+                    VPOS="648"
+                    WIDTH="231"
+                    HEIGHT="40">
+            <Shape><Polygon POINTS="305 672 304 648 533 648 535 668 534 680 514 684 513 684 509 681 497 675 487 682 487 683 486 683 485 683 484 683 482 683 464 676 370 676 353 686 305 688"/></Shape>
+	    <String CONTENT="PETITE FILLE AUX ORANGES"
+                    HPOS="304"
+                    VPOS="648"
+                    WIDTH="231"
+                    HEIGHT="40"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_c9366726"
+                    TAGREFS="LT97"
+                    BASELINE="346 696 490 693" 
+                    HPOS="344"
+                    VPOS="672"
+                    WIDTH="145"
+                    HEIGHT="35">
+            <Shape><Polygon POINTS="345 696 344 679 420 672 421 672 488 676 489 692 488 703 417 700 345 707"/></Shape>
+	    <String CONTENT="par H. CHARPENTIER."
+                    HPOS="344"
+                    VPOS="672"
+                    WIDTH="145"
+                    HEIGHT="35"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="32"
+                   VPOS="77"
+                   WIDTH="484"
+                   HEIGHT="540"
+                   ID="eSc_textblock_81c094b2"
+                   TAGREFS="BT275">
+          <Shape><Polygon POINTS="32 77 32 617 516 617 516 77"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

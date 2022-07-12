@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>73_de380_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3623/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT180" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT181" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT182" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT183" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT184" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT185" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT186" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT187" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT188" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT189" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/>
+    <OtherTag ID="LT62" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT63" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT64" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="577"
+          HEIGHT="991"
+          PHYSICAL_IMG_NR="73"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="577"
+                  HEIGHT="991">
+        
+        <TextBlock HPOS="230"
+                   VPOS="843"
+                   WIDTH="154"
+                   HEIGHT="35"
+                   ID="eSc_textblock_065bd3d0"
+                   TAGREFS="BT188">
+          <Shape><Polygon POINTS="384 846 383 878 335 877 230 876 231 843 344 845"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_f935a4b6"
+                    TAGREFS="LT62"
+                    BASELINE="241 865 375 867" 
+                    HPOS="239"
+                    VPOS="836"
+                    WIDTH="136"
+                    HEIGHT="50">
+            <Shape><Polygon POINTS="241 865 241 836 292 844 316 838 319 838 320 838 346 839 347 839 348 839 354 844 374 840 375 867 371 886 361 880 343 886 342 886 341 886 340 886 339 886 338 886 323 877 293 877 282 886 281 886 280 886 279 886 278 886 267 879 256 886 255 886 254 886 253 886 239 885"/></Shape>
+	    <String CONTENT="W. D. Welford"
+                    HPOS="239"
+                    VPOS="836"
+                    WIDTH="136"
+                    HEIGHT="50"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="80"
+                   VPOS="93"
+                   WIDTH="455"
+                   HEIGHT="745"
+                   ID="eSc_textblock_4293c96e"
+                   TAGREFS="BT186">
+          <Shape><Polygon POINTS="80 93 80 838 535 838 535 93"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

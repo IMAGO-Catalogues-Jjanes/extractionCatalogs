@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>47_93784_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:5182/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT270" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT271" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT272" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT273" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT274" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT275" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT276" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT277" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT278" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/>
+    <OtherTag ID="LT96" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT97" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT98" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT99" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="543"
+          HEIGHT="995"
+          PHYSICAL_IMG_NR="47"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="543"
+                  HEIGHT="995">
+        
+        <TextBlock HPOS="337"
+                   VPOS="675"
+                   WIDTH="174"
+                   HEIGHT="69"
+                   ID="eSc_textblock_474e39f5"
+                   TAGREFS="BT274">
+          <Shape><Polygon POINTS="337 675 337 744 511 744 511 675"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_3f9b5dd4"
+                    TAGREFS="LT97"
+                    BASELINE="347 701 502 698" 
+                    HPOS="346"
+                    VPOS="671"
+                    WIDTH="156"
+                    HEIGHT="41">
+            <Shape><Polygon POINTS="347 701 346 681 375 681 376 680 386 673 387 673 388 673 389 673 402 679 439 679 440 679 452 671 453 671 454 671 500 678 502 698 502 707 386 707 347 712"/></Shape>
+	    <String CONTENT="BRUME ET SOLEIL"
+                    HPOS="346"
+                    VPOS="671"
+                    WIDTH="156"
+                    HEIGHT="41"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_f9785b72"
+                    TAGREFS="LT97"
+                    BASELINE="373 724 484 721" 
+                    HPOS="371"
+                    VPOS="703"
+                    WIDTH="113"
+                    HEIGHT="41">
+            <Shape><Polygon POINTS="372 723 371 703 481 704 483 720 484 733 469 742 468 742 446 742 445 742 444 742 436 737 435 735 425 737 391 744 371 740"/></Shape>
+	    <String CONTENT="par A. GILIBERT."
+                    HPOS="371"
+                    VPOS="703"
+                    WIDTH="113"
+                    HEIGHT="41"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="32"
+                   VPOS="57"
+                   WIDTH="440"
+                   HEIGHT="588"
+                   ID="eSc_textblock_46605432"
+                   TAGREFS="BT275">
+          <Shape><Polygon POINTS="32 62 32 645 472 645 465 57"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

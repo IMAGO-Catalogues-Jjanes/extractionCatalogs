@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>71_c0dae_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/digital/iiif/p15324coll19/7021/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT131" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT132" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT133" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT134" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT135" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT136" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT137" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT138" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT139" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT140" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT141" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT162" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT163" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT164" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/>
+    <OtherTag ID="LT49" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT50" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT51" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT52" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT53" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="1300" HEIGHT="2202" PHYSICAL_IMG_NR="71" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="1300" HEIGHT="2202">
+        <TextBlock HPOS="494" VPOS="197" WIDTH="141" HEIGHT="68" ID="eSc_textblock_395ecc4a" TAGREFS="BT134">
+          <Shape>
+            <Polygon POINTS="494 197 494 265 635 265 635 197"/>
+          </Shape>
+          <TextLine ID="eSc_line_87a7fe81" TAGREFS="LT49" BASELINE="506 236 620 234" HPOS="501" VPOS="192" WIDTH="119" HEIGHT="57">
+            <Shape><Polygon POINTS="506 236 501 203 615 192 620 234 620 244 506 249"/></Shape>
+	    <String CONTENT="— 63 —" HPOS="501" VPOS="192" WIDTH="119" HEIGHT="57"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="116" VPOS="277" WIDTH="903" HEIGHT="1562" ID="eSc_textblock_d892d192" TAGREFS="BT131">
+          <Shape>
+            <Polygon POINTS="142 277 116 1835 1019 1839 1019 277"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="155" VPOS="290" WIDTH="842" HEIGHT="204" ID="eSc_textblock_72dcd1de" TAGREFS="BT162">
+          <Shape>
+            <Polygon POINTS="155 290 155 494 997 494 997 290"/>
+          </Shape>
+          <TextLine ID="eSc_line_8e97c464" TAGREFS="LT49" BASELINE="275 321 936 324" HPOS="273" VPOS="269" WIDTH="663" HEIGHT="66">
+            <Shape><Polygon POINTS="275 321 275 273 387 278 425 275 482 269 484 269 486 269 488 269 497 277 503 280 655 282 666 280 697 271 699 271 701 271 703 271 721 280 730 286 862 286 864 284 872 277 872 275 874 275 875 275 877 275 936 286 936 324 934 332 273 335"/></Shape>
+	    <String CONTENT="SERVAËS (GUSTAVE). A. B. DE PH." HPOS="273" VPOS="269" WIDTH="663" HEIGHT="66"/>
+          </TextLine>
+          <TextLine ID="eSc_line_1a55e184" TAGREFS="LT49" BASELINE="391 376 976 370" HPOS="383" VPOS="332" WIDTH="593" HEIGHT="57">
+            <Shape><Polygon POINTS="391 376 383 344 398 333 400 333 402 333 403 333 571 341 589 332 591 332 593 332 973 339 976 370 975 389 389 387"/></Shape>
+	    <String CONTENT="5, place du Sablon, Gand (Belgique)." HPOS="383" VPOS="332" WIDTH="593" HEIGHT="57"/>
+          </TextLine>
+          <TextLine ID="eSc_line_6e5edab1" TAGREFS="LT49" BASELINE="156 460 650 460" HPOS="154" VPOS="412" WIDTH="497" HEIGHT="63">
+            <Shape><Polygon POINTS="156 460 157 412 181 423 218 414 220 414 222 414 238 414 418 423 424 420 431 412 433 412 435 412 437 412 497 422 519 423 536 422 600 412 602 412 604 412 651 425 650 460 648 475 154 469"/></Shape>
+	    <String CONTENT="597 Du bois pour Mère. A. Br." HPOS="154" VPOS="412" WIDTH="497" HEIGHT="63"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="139" VPOS="626" WIDTH="855" HEIGHT="297" ID="eSc_textblock_c5f8bca8" TAGREFS="BT162">
+          <Shape>
+            <Polygon POINTS="139 626 139 919 994 923 994 626"/>
+          </Shape>
+          <TextLine ID="eSc_line_d48ff45f" TAGREFS="LT49" BASELINE="275 675 574 680" HPOS="269" VPOS="629" WIDTH="305" HEIGHT="66">
+            <Shape><Polygon POINTS="275 675 275 629 574 629 574 680 571 693 466 686 438 688 376 695 374 695 372 695 334 684 313 693 312 693 310 693 308 693 269 680"/></Shape>
+	    <String CONTENT="SERVAIS (J.)." HPOS="269" VPOS="629" WIDTH="305" HEIGHT="66"/>
+          </TextLine>
+          <TextLine ID="eSc_line_20cc675a" TAGREFS="LT49" BASELINE="501 730 978 734" HPOS="495" VPOS="691" WIDTH="483" HEIGHT="63">
+            <Shape><Polygon POINTS="501 730 501 691 978 695 978 734 975 745 918 739 864 743 741 754 739 754 738 754 699 739 694 739 672 739 532 746 530 746 528 746 495 735"/></Shape>
+	    <String CONTENT="34, rue du Saint-Esprit, Liège" HPOS="495" VPOS="691" WIDTH="483" HEIGHT="63"/>
+          </TextLine>
+          <TextLine ID="eSc_line_55406a74" TAGREFS="LT49" BASELINE="530 768 716 768" HPOS="528" VPOS="746" WIDTH="188" HEIGHT="43">
+            <Shape><Polygon POINTS="530 768 530 746 716 748 716 768 716 778 670 789 668 789 528 779"/></Shape>
+	    <String CONTENT="(Belgique)." HPOS="528" VPOS="746" WIDTH="188" HEIGHT="43"/>
+          </TextLine>
+          <TextLine ID="eSc_line_489893f6" TAGREFS="LT49" BASELINE="154 838 490 842" HPOS="152" VPOS="798" WIDTH="338" HEIGHT="53">
+            <Shape><Polygon POINTS="154 838 154 798 488 803 490 842 488 849 152 851"/></Shape>
+	    <String CONTENT="598 Étude. A. Pl. V." HPOS="152" VPOS="798" WIDTH="338" HEIGHT="53"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0f4b068a" TAGREFS="LT49" BASELINE="154 882 596 882" HPOS="150" VPOS="840" WIDTH="446" HEIGHT="64">
+            <Shape><Polygon POINTS="154 882 154 840 328 849 341 844 350 840 352 840 354 840 356 840 358 840 363 844 370 849 396 845 433 840 435 840 515 847 528 849 530 849 543 840 545 840 547 840 549 840 596 851 596 882 594 899 321 893 315 895 304 902 302 902 301 902 301 904 183 904 181 902 179 902 150 891"/></Shape>
+	    <String CONTENT="599 Entrée de Bois. A. Br." HPOS="150" VPOS="840" WIDTH="446" HEIGHT="64"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="135" VPOS="1055" WIDTH="865" HEIGHT="258" ID="eSc_textblock_ef947184" TAGREFS="BT162">
+          <Shape>
+            <Polygon POINTS="135 1055 135 1307 997 1313 1000 1061"/>
+          </Shape>
+          <TextLine ID="eSc_line_5b60e978" TAGREFS="LT49" BASELINE="279 1097 796 1101" HPOS="275" VPOS="1044" WIDTH="521" HEIGHT="71">
+            <Shape><Polygon POINTS="279 1097 279 1044 374 1053 530 1045 532 1045 534 1045 536 1045 536 1047 545 1055 793 1047 796 1101 793 1115 275 1108"/></Shape>
+	    <String CONTENT="SILVANSKY (Mlle M. de)." HPOS="275" VPOS="1044" WIDTH="521" HEIGHT="71"/>
+          </TextLine>
+          <TextLine ID="eSc_line_d1d322b8" TAGREFS="LT49" BASELINE="396 1146 978 1150" HPOS="392" VPOS="1102" WIDTH="586" HEIGHT="63">
+            <Shape><Polygon POINTS="396 1146 394 1112 563 1102 565 1102 567 1102 569 1102 574 1108 580 1112 690 1106 763 1104 765 1104 767 1104 769 1104 771 1106 780 1115 855 1115 976 1104 978 1150 975 1165 392 1159"/></Shape>
+	    <String CONTENT="Château de Juan-les-Pins, près Antibes" HPOS="392" VPOS="1102" WIDTH="586" HEIGHT="63"/>
+          </TextLine>
+          <TextLine ID="eSc_line_1f3dc19f" TAGREFS="LT49" BASELINE="453 1189 750 1189" HPOS="451" VPOS="1154" WIDTH="299" HEIGHT="51">
+            <Shape><Polygon POINTS="453 1189 453 1154 750 1157 750 1189 749 1205 451 1198"/></Shape>
+	    <String CONTENT="(Alpes-Maritimes)." HPOS="451" VPOS="1154" WIDTH="299" HEIGHT="51"/>
+          </TextLine>
+          <TextLine ID="eSc_line_56293358" TAGREFS="LT49" BASELINE="154 1267 686 1271" HPOS="146" VPOS="1231" WIDTH="540" HEIGHT="59">
+            <Shape><Polygon POINTS="154 1267 154 1231 684 1234 686 1271 684 1290 167 1290 165 1288 163 1288 161 1288 146 1277"/></Shape>
+	    <String CONTENT="600 Ombres et Lumières. A. Br." HPOS="146" VPOS="1231" WIDTH="540" HEIGHT="59"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="132" VPOS="1448" WIDTH="868" HEIGHT="371" ID="eSc_textblock_f16044e2" TAGREFS="BT162">
+          <Shape>
+            <Polygon POINTS="132 1448 132 1819 1000 1819 1000 1448"/>
+          </Shape>
+          <TextLine ID="eSc_line_ecc9cf23" TAGREFS="LT49" BASELINE="275 1484 673 1490" HPOS="273" VPOS="1455" WIDTH="400" HEIGHT="46">
+            <Shape><Polygon POINTS="275 1484 275 1455 673 1468 673 1490 672 1501 273 1501"/></Shape>
+	    <String CONTENT="SIMPSON (Edgar)." HPOS="273" VPOS="1455" WIDTH="400" HEIGHT="46"/>
+          </TextLine>
+          <TextLine ID="eSc_line_59eb2f6d" TAGREFS="LT49" BASELINE="453 1541 975 1546" HPOS="449" VPOS="1502" WIDTH="526" HEIGHT="61">
+            <Shape><Polygon POINTS="453 1541 453 1502 973 1508 975 1546 971 1563 449 1557"/></Shape>
+	    <String CONTENT="Maison Neuve, La Tour de Peilz," HPOS="449" VPOS="1502" WIDTH="526" HEIGHT="61"/>
+          </TextLine>
+          <TextLine ID="eSc_line_a3a4f08f" TAGREFS="LT49" BASELINE="492 1578 725 1581" HPOS="488" VPOS="1541" WIDTH="237" HEIGHT="66">
+            <Shape><Polygon POINTS="492 1578 492 1541 723 1546 725 1581 723 1594 657 1594 655 1594 629 1607 627 1607 626 1607 488 1596"/></Shape>
+	    <String CONTENT="Vaud (Suisse)." HPOS="488" VPOS="1541" WIDTH="237" HEIGHT="66"/>
+          </TextLine>
+          <TextLine ID="eSc_line_5e64606f" TAGREFS="LT49" BASELINE="152 1660 611 1664" HPOS="148" VPOS="1618" WIDTH="463" HEIGHT="61">
+            <Shape><Polygon POINTS="152 1660 152 1618 611 1631 611 1664 607 1679 148 1675"/></Shape>
+	    <String CONTENT="601 Étude de fumée. A. Br." HPOS="148" VPOS="1618" WIDTH="463" HEIGHT="61"/>
+          </TextLine>
+          <TextLine ID="eSc_line_29756282" TAGREFS="LT49" BASELINE="152 1701 664 1706" HPOS="148" VPOS="1662" WIDTH="516" HEIGHT="59">
+            <Shape><Polygon POINTS="152 1701 152 1662 664 1668 664 1706 661 1721 148 1715"/></Shape>
+	    <String CONTENT="602 Le Matin au Village. D. G." HPOS="148" VPOS="1662" WIDTH="516" HEIGHT="59"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e831611e" TAGREFS="LT49" BASELINE="152 1741 526 1745" HPOS="148" VPOS="1699" WIDTH="378" HEIGHT="58">
+            <Shape><Polygon POINTS="152 1741 150 1706 337 1699 339 1699 341 1699 343 1699 354 1708 358 1710 525 1710 526 1745 523 1757 148 1754"/></Shape>
+	    <String CONTENT="603 Tête d’Enfant. Br." HPOS="148" VPOS="1699" WIDTH="378" HEIGHT="58"/>
+          </TextLine>
+          <TextLine ID="eSc_line_2daf8c4d" TAGREFS="LT49" BASELINE="152 1783 631 1787" HPOS="150" VPOS="1745" WIDTH="481" HEIGHT="58">
+            <Shape><Polygon POINTS="152 1783 152 1745 629 1754 631 1787 629 1801 150 1803"/></Shape>
+	    <String CONTENT="904 Mme Burnat-Provins. Gb." HPOS="150" VPOS="1745" WIDTH="481" HEIGHT="58"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

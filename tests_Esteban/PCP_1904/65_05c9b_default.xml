@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>65_05c9b_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:5200/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT270" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT271" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT272" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT273" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT274" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT275" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT276" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT277" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT278" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/>
+    <OtherTag ID="LT96" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT97" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT98" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT99" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="577"
+          HEIGHT="999"
+          PHYSICAL_IMG_NR="65"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="577"
+                  HEIGHT="999">
+        
+        <TextBlock HPOS="421"
+                   VPOS="842"
+                   WIDTH="142"
+                   HEIGHT="64"
+                   ID="eSc_textblock_200cfa44"
+                   TAGREFS="BT274">
+          <Shape><Polygon POINTS="421 842 421 906 563 906 563 842"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_3731c8dc"
+                    TAGREFS="LT97"
+                    BASELINE="448 860 534 858" 
+                    HPOS="447"
+                    VPOS="836"
+                    WIDTH="87"
+                    HEIGHT="31">
+            <Shape><Polygon POINTS="448 860 447 836 532 839 534 858 534 867 448 867"/></Shape>
+	    <String CONTENT="PORTRAIT"
+                    HPOS="447"
+                    VPOS="836"
+                    WIDTH="87"
+                    HEIGHT="31"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_bf8e7078"
+                    TAGREFS="LT97"
+                    BASELINE="431 885 552 882" 
+                    HPOS="428"
+                    VPOS="856"
+                    WIDTH="124"
+                    HEIGHT="46">
+            <Shape><Polygon POINTS="431 885 429 856 446 856 446 856 446 856 446 856 447 856 447 856 447 856 447 856 447 856 447 857 457 865 473 860 474 860 474 860 474 860 475 860 536 864 548 856 552 882 552 899 522 894 497 894 495 898 492 900 492 901 492 901 491 901 491 901 491 901 490 901 490 901 489 901 489 901 450 898 441 902 441 902 441 902 440 902 440 902 439 902 439 902 438 902 438 902 438 902 437 902 428 896"/></Shape>
+	    <String CONTENT="par J. MAQUAIRE."
+                    HPOS="428"
+                    VPOS="856"
+                    WIDTH="124"
+                    HEIGHT="46"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="97"
+                   VPOS="106"
+                   WIDTH="398"
+                   HEIGHT="706"
+                   ID="eSc_textblock_1431d546"
+                   TAGREFS="BT275">
+          <Shape><Polygon POINTS="97 106 97 812 495 812 495 106"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>5_9d259_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/digital/iiif/p15324coll19/6955/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT131" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT132" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT133" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT134" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT135" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT136" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT137" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT138" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT139" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT140" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT141" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT162" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT163" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT164" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/>
+          <OtherTag ID="LT49" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT50" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT51" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT52" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT53" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="1299"
+          HEIGHT="2202"
+          PHYSICAL_IMG_NR="5"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="1299"
+                  HEIGHT="2202">
+        
+        <TextBlock HPOS="271"
+                   VPOS="278"
+                   WIDTH="914"
+                   HEIGHT="928"
+                   ID="eSc_textblock_e7ac9a6f"
+                   TAGREFS="BT131">
+          <Shape><Polygon POINTS="274 278 271 1206 1182 1206 1185 279"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_edf042f9"
+                    TAGREFS="LT49"
+                    BASELINE="356 313 1157 310" 
+                    HPOS="354"
+                    VPOS="266"
+                    WIDTH="803"
+                    HEIGHT="56">
+            <Shape><Polygon POINTS="356 313 354 273 400 278 437 273 470 267 472 267 474 267 494 273 508 277 521 273 545 267 547 267 549 267 551 267 573 273 591 278 619 275 659 267 661 267 663 267 665 267 672 275 677 278 694 275 718 269 720 269 722 269 740 275 753 278 769 275 813 266 815 266 874 275 883 277 885 277 900 266 902 266 903 266 905 266 957 277 962 277 971 277 1056 267 1058 267 1153 278 1157 310 1155 321 356 322"/></Shape>
+	    <String CONTENT="ART. 9. — Les envois devront parvenir, au plus tard, au Photo-Club"
+                    HPOS="354"
+                    VPOS="266"
+                    WIDTH="803"
+                    HEIGHT="56"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_3538b1a3"
+                    TAGREFS="LT49"
+                    BASELINE="330 344 1012 341" 
+                    HPOS="327"
+                    VPOS="310"
+                    WIDTH="685"
+                    HEIGHT="45">
+            <Shape><Polygon POINTS="330 344 327 310 1008 311 1012 341 1010 355 330 355"/></Shape>
+	    <String CONTENT="de Paris, le 15 mai, délai de rigueur, port payé à domicile."
+                    HPOS="327"
+                    VPOS="310"
+                    WIDTH="685"
+                    HEIGHT="45"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_5a15ab5c"
+                    TAGREFS="LT49"
+                    BASELINE="360 374 1155 374" 
+                    HPOS="360"
+                    VPOS="343"
+                    WIDTH="795"
+                    HEIGHT="46">
+            <Shape><Polygon POINTS="360 374 360 343 1155 344 1155 374 1155 383 360 389"/></Shape>
+	    <String CONTENT="Passé ce délai, aucun envoi ne sera admis pour quelque motif que ce soit."
+                    HPOS="360"
+                    VPOS="343"
+                    WIDTH="795"
+                    HEIGHT="46"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_5e947100"
+                    TAGREFS="LT49"
+                    BASELINE="360 405 1155 405" 
+                    HPOS="360"
+                    VPOS="376"
+                    WIDTH="795"
+                    HEIGHT="40">
+            <Shape><Polygon POINTS="360 405 360 376 1155 379 1155 405 1155 416 360 416"/></Shape>
+	    <String CONTENT="La réexpédition des œuvres admises ou non sera faite, au plus"
+                    HPOS="360"
+                    VPOS="376"
+                    WIDTH="795"
+                    HEIGHT="40"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_e64019d7"
+                    TAGREFS="LT49"
+                    BASELINE="336 438 1152 434" 
+                    HPOS="332"
+                    VPOS="409"
+                    WIDTH="820"
+                    HEIGHT="42">
+            <Shape><Polygon POINTS="336 438 332 412 1146 409 1152 434 1148 451 334 447"/></Shape>
+	    <String CONTENT="tard, dans les quinze jours qui suivront la clotûre de l&#39;Exposition,"
+                    HPOS="332"
+                    VPOS="409"
+                    WIDTH="820"
+                    HEIGHT="42"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_9e9879b4"
+                    TAGREFS="LT49"
+                    BASELINE="332 466 1157 469" 
+                    HPOS="328"
+                    VPOS="438"
+                    WIDTH="829"
+                    HEIGHT="42">
+            <Shape><Polygon POINTS="332 466 332 438 1155 440 1157 469 1153 480 328 475"/></Shape>
+	    <String CONTENT="en port dû et contre remboursement des frais qui auraient été payés"
+                    HPOS="328"
+                    VPOS="438"
+                    WIDTH="829"
+                    HEIGHT="42"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_cabd8c63"
+                    TAGREFS="LT49"
+                    BASELINE="332 502 472 502" 
+                    HPOS="332"
+                    VPOS="467"
+                    WIDTH="140"
+                    HEIGHT="44">
+            <Shape><Polygon POINTS="332 502 332 467 472 475 472 502 472 510 332 511"/></Shape>
+	    <String CONTENT="à l&#39;arrivée."
+                    HPOS="332"
+                    VPOS="467"
+                    WIDTH="140"
+                    HEIGHT="44"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_4fd86810"
+                    TAGREFS="LT49"
+                    BASELINE="360 544 1155 541" 
+                    HPOS="358"
+                    VPOS="513"
+                    WIDTH="797"
+                    HEIGHT="44">
+            <Shape><Polygon POINTS="360 544 358 513 1152 517 1155 541 1153 550 360 557"/></Shape>
+	    <String CONTENT="ART. 10. — Un jury d&#39;admission, composé de personnalités appar¬"
+                    HPOS="358"
+                    VPOS="513"
+                    WIDTH="797"
+                    HEIGHT="44"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_d724a1e3"
+                    TAGREFS="LT49"
+                    BASELINE="338 576 1157 576" 
+                    HPOS="338"
+                    VPOS="548"
+                    WIDTH="819"
+                    HEIGHT="39">
+            <Shape><Polygon POINTS="338 576 338 548 1157 548 1157 576 1157 587 338 587"/></Shape>
+	    <String CONTENT="tenant aux diverses branches de l&#39;Art, examinera les envois et choi¬"
+                    HPOS="338"
+                    VPOS="548"
+                    WIDTH="819"
+                    HEIGHT="39"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_764353ed"
+                    TAGREFS="LT49"
+                    BASELINE="336 609 1076 609" 
+                    HPOS="336"
+                    VPOS="579"
+                    WIDTH="740"
+                    HEIGHT="44">
+            <Shape><Polygon POINTS="336 609 336 579 1076 579 1076 609 1076 620 336 623"/></Shape>
+	    <String CONTENT="sira ceux qui lui sembleront dignes de figurer à l&#39;Exposition."
+                    HPOS="336"
+                    VPOS="579"
+                    WIDTH="740"
+                    HEIGHT="44"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_63a6c791"
+                    TAGREFS="LT49"
+                    BASELINE="361 638 744 642" 
+                    HPOS="358"
+                    VPOS="603"
+                    WIDTH="386"
+                    HEIGHT="53">
+            <Shape><Polygon POINTS="361 638 361 603 742 605 744 642 740 656 358 645"/></Shape>
+	    <String CONTENT="Ses décisions seront sans appel."
+                    HPOS="358"
+                    VPOS="603"
+                    WIDTH="386"
+                    HEIGHT="53"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_69d4aa7c"
+                    TAGREFS="LT49"
+                    BASELINE="360 684 1159 680" 
+                    HPOS="358"
+                    VPOS="647"
+                    WIDTH="801"
+                    HEIGHT="48">
+            <Shape><Polygon POINTS="360 684 358 647 1155 655 1159 680 1155 695 358 691"/></Shape>
+	    <String CONTENT="ART. 11. — Le Photo-Club de Paris n&#39;entend assumer aucune"
+                    HPOS="358"
+                    VPOS="647"
+                    WIDTH="801"
+                    HEIGHT="48"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_7c32ae48"
+                    TAGREFS="LT49"
+                    BASELINE="338 711 1155 717" 
+                    HPOS="334"
+                    VPOS="684"
+                    WIDTH="821"
+                    HEIGHT="42">
+            <Shape><Polygon POINTS="338 711 338 684 1153 686 1155 717 1152 726 334 722"/></Shape>
+	    <String CONTENT="responsabilité en cas d&#39;incendie des œuvres exposées, mais il pren¬"
+                    HPOS="334"
+                    VPOS="684"
+                    WIDTH="821"
+                    HEIGHT="42"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_bf06be97"
+                    TAGREFS="LT49"
+                    BASELINE="339 741 999 745" 
+                    HPOS="336"
+                    VPOS="711"
+                    WIDTH="663"
+                    HEIGHT="50">
+            <Shape><Polygon POINTS="339 741 339 711 997 715 999 745 995 761 336 752"/></Shape>
+	    <String CONTENT="dra les mesures nécessaires pour éviter les risques."
+                    HPOS="336"
+                    VPOS="711"
+                    WIDTH="663"
+                    HEIGHT="50"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_59b5b898"
+                    TAGREFS="LT49"
+                    BASELINE="360 790 1163 790" 
+                    HPOS="356"
+                    VPOS="752"
+                    WIDTH="807"
+                    HEIGHT="53">
+            <Shape><Polygon POINTS="360 790 356 763 376 752 378 752 380 752 450 761 518 752 519 752 521 752 547 761 560 752 562 752 564 752 565 752 567 752 593 763 779 763 799 752 801 752 802 752 1163 763 1163 790 1161 805 358 801"/></Shape>
+	    <String CONTENT="ART. 12. — Il n&#39;y aura ni récompense, ni médaille commémorative."
+                    HPOS="356"
+                    VPOS="752"
+                    WIDTH="807"
+                    HEIGHT="53"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_d996bfb0"
+                    TAGREFS="LT49"
+                    BASELINE="361 836 1161 836" 
+                    HPOS="360"
+                    VPOS="809"
+                    WIDTH="801"
+                    HEIGHT="36">
+            <Shape><Polygon POINTS="361 836 361 809 1161 809 1161 836 1159 845 360 844"/></Shape>
+	    <String CONTENT="ART. 13. — Les caisses porteront en grands caractères le nom"
+                    HPOS="360"
+                    VPOS="809"
+                    WIDTH="801"
+                    HEIGHT="36"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_9b10a58f"
+                    TAGREFS="LT49"
+                    BASELINE="338 866 1161 869" 
+                    HPOS="336"
+                    VPOS="836"
+                    WIDTH="825"
+                    HEIGHT="57">
+            <Shape><Polygon POINTS="338 866 338 836 1159 836 1161 869 1159 880 926 891 924 891 922 891 920 891 920 889 911 882 804 882 802 882 780 893 779 893 777 893 624 891 622 891 621 891 609 882 606 880 598 882 573 891 571 891 569 891 567 891 534 882 525 880 519 882 501 891 499 891 497 891 496 891 475 882 474 882 336 882"/></Shape>
+	    <String CONTENT="et l&#39;adresse de l&#39;expéditeur, ainsi que le nombre de cadres qu&#39;elles"
+                    HPOS="336"
+                    VPOS="836"
+                    WIDTH="825"
+                    HEIGHT="57"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_a8332407"
+                    TAGREFS="LT49"
+                    BASELINE="338 899 492 902" 
+                    HPOS="336"
+                    VPOS="869"
+                    WIDTH="156"
+                    HEIGHT="54">
+            <Shape><Polygon POINTS="338 899 338 869 490 873 492 902 488 923 402 913 336 921"/></Shape>
+	    <String CONTENT="contiennent."
+                    HPOS="336"
+                    VPOS="869"
+                    WIDTH="156"
+                    HEIGHT="54"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_8d32629f"
+                    TAGREFS="LT49"
+                    BASELINE="431 968 679 965" 
+                    HPOS="428"
+                    VPOS="934"
+                    WIDTH="249"
+                    HEIGHT="51">
+            <Shape><Polygon POINTS="429 967 428 934 674 935 677 963 676 985 428 979"/></Shape>
+	    <String CONTENT="Le Secrétaire général,"
+                    HPOS="428"
+                    VPOS="934"
+                    WIDTH="249"
+                    HEIGHT="51"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_7782ad1f"
+                    TAGREFS="LT49"
+                    BASELINE="859 968 1014 968" 
+                    HPOS="858"
+                    VPOS="919"
+                    WIDTH="156"
+                    HEIGHT="60">
+            <Shape><Polygon POINTS="859 968 858 926 909 919 911 919 1014 934 1014 968 1014 979 859 979"/></Shape>
+	    <String CONTENT="Le Président,"
+                    HPOS="858"
+                    VPOS="919"
+                    WIDTH="156"
+                    HEIGHT="60"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_6fa03d8a"
+                    TAGREFS="LT49"
+                    BASELINE="485 1014 703 1011" 
+                    HPOS="483"
+                    VPOS="979"
+                    WIDTH="220"
+                    HEIGHT="54">
+            <Shape><Polygon POINTS="485 1014 483 979 700 983 703 1011 701 1033 483 1029"/></Shape>
+	    <String CONTENT="PAUL BOURGEOIS."
+                    HPOS="483"
+                    VPOS="979"
+                    WIDTH="220"
+                    HEIGHT="54"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_3284ffd2"
+                    TAGREFS="LT49"
+                    BASELINE="804 1014 1041 1014" 
+                    HPOS="802"
+                    VPOS="974"
+                    WIDTH="241"
+                    HEIGHT="66">
+            <Shape><Polygon POINTS="804 1014 804 974 1041 985 1041 1014 1043 1027 1010 1040 1008 1040 1006 1040 802 1033"/></Shape>
+	    <String CONTENT="MAURICE BUCQUET."
+                    HPOS="802"
+                    VPOS="974"
+                    WIDTH="241"
+                    HEIGHT="66"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="664"
+                   VPOS="196"
+                   WIDTH="139"
+                   HEIGHT="55"
+                   ID="eSc_textblock_253fcfc9"
+                   TAGREFS="BT134">
+          <Shape><Polygon POINTS="665 196 664 251 801 248 803 197"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_449172e5"
+                    TAGREFS="LT49"
+                    BASELINE="674 229 790 229" 
+                    HPOS="672"
+                    VPOS="189"
+                    WIDTH="118"
+                    HEIGHT="56">
+            <Shape><Polygon POINTS="674 229 672 192 788 189 790 229 788 245 672 238"/></Shape>
+	    <String CONTENT="— IV —"
+                    HPOS="672"
+                    VPOS="189"
+                    WIDTH="118"
+                    HEIGHT="56"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="645"
+                   VPOS="1270"
+                   WIDTH="222"
+                   HEIGHT="82"
+                   ID="eSc_textblock_5ecc3116"
+                   TAGREFS="BT163">
+          <Shape><Polygon POINTS="645 1270 645 1352 867 1352 867 1270"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

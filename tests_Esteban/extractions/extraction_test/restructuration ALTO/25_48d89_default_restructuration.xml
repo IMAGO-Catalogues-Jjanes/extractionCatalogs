@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>25_48d89_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/digital/iiif/p15324coll19/6975/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT131" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT132" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT133" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT134" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT135" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT136" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT137" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT138" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT139" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT140" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT141" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT162" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT163" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT164" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/>
+    <OtherTag ID="LT49" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT50" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT51" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT52" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT53" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="1300" HEIGHT="2206" PHYSICAL_IMG_NR="25" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="1300" HEIGHT="2206">
+        <TextBlock HPOS="229" VPOS="284" WIDTH="826" HEIGHT="1516" ID="eSc_textblock_26559a26" TAGREFS="BT164">
+          <Shape>
+            <Polygon POINTS="229 284 229 1800 1055 1800 1055 284"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="617" VPOS="1853" WIDTH="410" HEIGHT="86" ID="eSc_textblock_dd9484fe" TAGREFS="BT138">
+          <Shape>
+            <Polygon POINTS="1020 1860 1027 1895 1020 1939 706 1939 704 1895 617 1887 625 1853"/>
+          </Shape>
+          <TextLine ID="eSc_line_71ecf912" TAGREFS="LT49" BASELINE="623 1882 1016 1886" HPOS="619" VPOS="1834" WIDTH="399" HEIGHT="66">
+            <Shape><Polygon POINTS="623 1882 621 1845 702 1834 704 1834 706 1834 741 1845 742 1845 746 1845 840 1838 842 1838 935 1847 939 1847 972 1836 974 1836 976 1836 978 1836 1018 1849 1016 1886 1013 1900 619 1895"/></Shape>
+	    <String CONTENT="NOTRE VIEUX RELIEUR" HPOS="619" VPOS="1834" WIDTH="399" HEIGHT="66"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0b650dbc" TAGREFS="LT49" BASELINE="709 1933 1016 1933" HPOS="707" VPOS="1887" WIDTH="309" HEIGHT="70">
+            <Shape><Polygon POINTS="709 1933 707 1889 768 1887 770 1887 772 1887 783 1891 805 1900 871 1895 946 1889 948 1889 950 1889 952 1889 963 1898 965 1902 1016 1902 1016 1933 1014 1955 766 1944 755 1954 755 1955 753 1955 752 1955 752 1957 709 1957"/></Shape>
+	    <String CONTENT="Par AB. GOUSSEAU." HPOS="707" VPOS="1887" WIDTH="309" HEIGHT="70"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

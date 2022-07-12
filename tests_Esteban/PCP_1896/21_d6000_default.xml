@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>21_d6000_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3306/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT190" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT191" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT192" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT193" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT194" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT195" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT196" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT197" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT198" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/>
+    <OtherTag ID="LT65" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT66" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT67" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT68" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="947"
+          HEIGHT="1502"
+          PHYSICAL_IMG_NR="21"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="947"
+                  HEIGHT="1502">
+        
+        <TextBlock HPOS="127"
+                   VPOS="1196"
+                   WIDTH="731"
+                   HEIGHT="183"
+                   ID="eSc_textblock_4f469771"
+                   TAGREFS="BT194">
+          <Shape><Polygon POINTS="127 1208 127 1379 855 1379 858 1196"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_328518d3"
+                    TAGREFS="LT66"
+                    BASELINE="129 1225 281 1225" 
+                    HPOS="129"
+                    VPOS="1204"
+                    WIDTH="152"
+                    HEIGHT="42">
+            <Shape><Polygon POINTS="129 1225 129 1204 281 1207 281 1225 281 1245 129 1246"/></Shape>
+	    <String CONTENT="Phototype P. Bourgeois"
+                    HPOS="129"
+                    VPOS="1204"
+                    WIDTH="152"
+                    HEIGHT="42"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_37421af0"
+                    TAGREFS="LT66"
+                    BASELINE="716 1214 854 1214" 
+                    HPOS="716"
+                    VPOS="1196"
+                    WIDTH="139"
+                    HEIGHT="53">
+            <Shape><Polygon POINTS="716 1214 716 1196 854 1196 854 1214 855 1234 829 1246 829 1246 827 1246 827 1246 827 1246 826 1246 826 1246 825 1246 825 1246 825 1246 824 1246 824 1246 815 1239 800 1247 800 1247 800 1247 799 1247 799 1247 799 1249 764 1249 762 1247 762 1247 761 1247 761 1247 761 1247 760 1247 760 1247 760 1246 747 1235 716 1235"/></Shape>
+	    <String CONTENT="Héliog. Fillon &amp; Heuse"
+                    HPOS="716"
+                    VPOS="1196"
+                    WIDTH="139"
+                    HEIGHT="53"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_c325fe44"
+                    TAGREFS="LT66"
+                    BASELINE="330 1274 643 1267" 
+                    HPOS="324"
+                    VPOS="1230"
+                    WIDTH="319"
+                    HEIGHT="60">
+            <Shape><Polygon POINTS="330 1274 324 1249 345 1234 346 1234 346 1234 346 1234 348 1234 348 1234 348 1234 378 1232 379 1232 379 1232 379 1232 380 1232 417 1245 418 1246 455 1246 459 1244 468 1236 468 1236 469 1236 469 1236 470 1236 470 1236 470 1236 472 1236 472 1236 472 1236 473 1236 489 1242 498 1245 506 1241 529 1230 529 1230 529 1230 531 1230 531 1230 532 1230 558 1230 558 1230 558 1230 559 1230 559 1230 559 1230 561 1230 561 1230 561 1231 569 1239 574 1242 640 1236 643 1267 643 1280 561 1290 561 1290 559 1290 559 1290 558 1290 558 1290 558 1290 557 1290 548 1284 537 1277 469 1277 453 1286 450 1289 449 1289 449 1289 449 1289 448 1289 448 1289 447 1289 447 1289 447 1289 445 1289 445 1289 440 1287 420 1279 382 1287 382 1287 382 1287 380 1287 380 1287 379 1287 355 1281 331 1290"/></Shape>
+	    <String CONTENT="Retour des Champs"
+                    HPOS="324"
+                    VPOS="1230"
+                    WIDTH="319"
+                    HEIGHT="60"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_706e2739"
+                    TAGREFS="LT66"
+                    BASELINE="440 1353 544 1350" 
+                    HPOS="437"
+                    VPOS="1320"
+                    WIDTH="107"
+                    HEIGHT="45">
+            <Shape><Polygon POINTS="440 1353 437 1326 541 1320 544 1350 543 1365 439 1361"/></Shape>
+	    <String CONTENT="Imp. Ch. Wittmann."
+                    HPOS="437"
+                    VPOS="1320"
+                    WIDTH="107"
+                    HEIGHT="45"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="110"
+                   VPOS="153"
+                   WIDTH="753"
+                   HEIGHT="1052"
+                   ID="eSc_textblock_2fc220ce"
+                   TAGREFS="BT191">
+          <Shape><Polygon POINTS="110 153 119 1205 858 1196 863 156"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

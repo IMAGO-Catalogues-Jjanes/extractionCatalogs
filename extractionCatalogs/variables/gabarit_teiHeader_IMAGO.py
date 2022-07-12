@@ -7,11 +7,11 @@ Ces variables correspondent au contenu du document TEI en output de la pipeline
 
 # Schémas (mettre l'instruction complète en une seule chaîne de caractères ; elle sera parsée par lxml)
 schemas = {
-    'schema_1': 'href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/fonctions/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"',
+    'schema_1': 'href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"',
     'schema_2': 'href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/fonctions/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"'
 }
 # lien du schema en ligne, utilisé pour tester la conformité du document TEI produit
-lien_schema = "https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/fonctions/validation_alto/out/ODD_VisualContagions.rng"
+lien_schema = "https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng"
 
 # feuille de style :
 CSS = 'type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"'

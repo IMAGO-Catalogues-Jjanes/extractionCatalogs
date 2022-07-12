@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>2_9c47c_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/digital/iiif/p15324coll19/6952/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT131" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT132" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT133" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT134" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT135" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT136" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT137" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT138" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT139" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT140" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT141" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT162" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT163" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT164" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/>
+    <OtherTag ID="LT49" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT50" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT51" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT52" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT53" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="1299"
+          HEIGHT="2206"
+          PHYSICAL_IMG_NR="2"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="1299"
+                  HEIGHT="2206">
+        
+        <TextBlock HPOS="163"
+                   VPOS="641"
+                   WIDTH="912"
+                   HEIGHT="1226"
+                   ID="eSc_textblock_d8740cc1"
+                   TAGREFS="BT131">
+          <Shape><Polygon POINTS="166 641 163 1867 1075 1867 1075 641"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_73cce211"
+                    TAGREFS="LT52"
+                    BASELINE="305 746 873 751" 
+                    HPOS="303"
+                    VPOS="678"
+                    WIDTH="570"
+                    HEIGHT="95">
+            <Shape><Polygon POINTS="305 683 373 689 384 682 390 678 391 678 393 678 395 678 397 678 399 678 402 682 412 691 469 691 483 682 489 678 491 678 493 678 494 678 496 678 513 682 546 691 566 682 572 680 574 680 575 680 675 680 677 680 682 682 713 694 829 694 870 682 873 751 870 773 805 762 781 773 780 773 778 773 776 773 774 773 772 773 758 764 702 773 693 773 691 773 689 773 688 773 688 772 669 761 579 772 572 772 570 772 564 772 493 759 303 768 305 746"/></Shape>
+	    <String CONTENT="JURY D&#39;ADMISSION"
+                    HPOS="303"
+                    VPOS="678"
+                    WIDTH="570"
+                    HEIGHT="95"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_62545494"
+                    TAGREFS="LT49"
+                    BASELINE="185 1036 859 1040" 
+                    HPOS="182"
+                    VPOS="992"
+                    WIDTH="677"
+                    HEIGHT="70">
+            <Shape><Polygon POINTS="183 996 857 992 859 1040 857 1051 759 1062 758 1062 756 1062 726 1051 723 1051 590 1051 583 1051 542 1062 540 1062 539 1062 537 1062 517 1051 515 1051 502 1051 430 1060 428 1060 182 1051 185 1036"/></Shape>
+	    <String CONTENT="MM. A. P. AGACHE, ✻, artiste peintre."
+                    HPOS="182"
+                    VPOS="992"
+                    WIDTH="677"
+                    HEIGHT="70"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_e0001658"
+                    TAGREFS="LT49"
+                    BASELINE="277 1099 912 1103" 
+                    HPOS="274"
+                    VPOS="1053"
+                    WIDTH="638"
+                    HEIGHT="59">
+            <Shape><Polygon POINTS="279 1053 303 1062 498 1057 592 1055 594 1055 910 1066 912 1103 908 1112 274 1108 277 1099"/></Shape>
+	    <String CONTENT="RENÉ BILLOTTE, O. ✻, artiste peintre."
+                    HPOS="274"
+                    VPOS="1053"
+                    WIDTH="638"
+                    HEIGHT="59"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_c7b1e054"
+                    TAGREFS="LT49"
+                    BASELINE="277 1165 855 1165" 
+                    HPOS="275"
+                    VPOS="1121"
+                    WIDTH="580"
+                    HEIGHT="59">
+            <Shape><Polygon POINTS="277 1123 754 1130 759 1130 794 1121 796 1121 798 1121 855 1132 855 1165 853 1180 275 1174 277 1165"/></Shape>
+	    <String CONTENT="H. COLARD, photographe amateur."
+                    HPOS="275"
+                    VPOS="1121"
+                    WIDTH="580"
+                    HEIGHT="59"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_82c4b5fd"
+                    TAGREFS="LT49"
+                    BASELINE="275 1224 861 1228" 
+                    HPOS="274"
+                    VPOS="1178"
+                    WIDTH="587"
+                    HEIGHT="62">
+            <Shape><Polygon POINTS="275 1178 340 1187 386 1180 388 1180 390 1180 859 1189 861 1228 859 1239 274 1240 275 1224"/></Shape>
+	    <String CONTENT="G. DESVALLIERES, artiste peintre."
+                    HPOS="274"
+                    VPOS="1178"
+                    WIDTH="587"
+                    HEIGHT="62"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_eff7a21e"
+                    TAGREFS="LT49"
+                    BASELINE="279 1286 1000 1290" 
+                    HPOS="277"
+                    VPOS="1251"
+                    WIDTH="723"
+                    HEIGHT="54">
+            <Shape><Polygon POINTS="279 1251 997 1264 1000 1290 999 1301 277 1305 279 1286"/></Shape>
+	    <String CONTENT="ARMAND DAYOT, O. ✻, Inspecteur des Beaux-"
+                    HPOS="277"
+                    VPOS="1251"
+                    WIDTH="723"
+                    HEIGHT="54"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_24d37653"
+                    TAGREFS="LT49"
+                    BASELINE="325 1334 415 1334" 
+                    HPOS="320"
+                    VPOS="1294"
+                    WIDTH="95"
+                    HEIGHT="49">
+            <Shape><Polygon POINTS="320 1305 334 1294 336 1294 338 1294 340 1294 415 1305 415 1334 415 1343 325 1343 325 1334"/></Shape>
+	    <String CONTENT="Arts."
+                    HPOS="320"
+                    VPOS="1294"
+                    WIDTH="95"
+                    HEIGHT="49"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_86e9c6b4"
+                    TAGREFS="LT49"
+                    BASELINE="277 1393 885 1397" 
+                    HPOS="275"
+                    VPOS="1351"
+                    WIDTH="610"
+                    HEIGHT="59">
+            <Shape><Polygon POINTS="277 1353 338 1362 379 1354 401 1351 402 1351 566 1351 568 1351 570 1351 583 1360 590 1364 627 1360 712 1353 713 1353 791 1365 885 1397 883 1410 275 1410 277 1393"/></Shape>
+	    <String CONTENT="EUGÈNE DAUPHIN, ✻, artiste peintre."
+                    HPOS="275"
+                    VPOS="1351"
+                    WIDTH="610"
+                    HEIGHT="59"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_aba70855"
+                    TAGREFS="LT49"
+                    BASELINE="279 1455 973 1459" 
+                    HPOS="277"
+                    VPOS="1411"
+                    WIDTH="696"
+                    HEIGHT="57">
+            <Shape><Polygon POINTS="281 1411 310 1421 517 1415 607 1413 609 1413 610 1413 612 1413 618 1417 629 1424 971 1424 973 1459 971 1465 277 1468 279 1455"/></Shape>
+	    <String CONTENT="GUILLAUME DUBUFE, O. ✻, artiste peintre."
+                    HPOS="277"
+                    VPOS="1411"
+                    WIDTH="696"
+                    HEIGHT="57"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_5ed88384"
+                    TAGREFS="LT49"
+                    BASELINE="279 1522 965 1518" 
+                    HPOS="270"
+                    VPOS="1476"
+                    WIDTH="695"
+                    HEIGHT="60">
+            <Shape><Polygon POINTS="270 1489 277 1478 279 1478 279 1476 281 1476 283 1476 285 1476 287 1476 316 1485 358 1476 360 1476 362 1476 380 1485 410 1476 412 1476 413 1476 962 1485 965 1518 964 1529 279 1536 279 1522"/></Shape>
+	    <String CONTENT="FRANÇOIS FLAMENG, O. ✻, artiste peintre."
+                    HPOS="270"
+                    VPOS="1476"
+                    WIDTH="695"
+                    HEIGHT="60"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_7da6a135"
+                    TAGREFS="LT49"
+                    BASELINE="277 1586 921 1582" 
+                    HPOS="274"
+                    VPOS="1538"
+                    WIDTH="647"
+                    HEIGHT="59">
+            <Shape><Polygon POINTS="274 1547 631 1538 632 1538 634 1538 671 1549 673 1549 677 1549 702 1538 704 1538 706 1538 708 1538 730 1549 732 1551 918 1551 921 1582 918 1597 275 1593 277 1586"/></Shape>
+	    <String CONTENT="JULES JACQUET, O. ✻, artiste graveur."
+                    HPOS="274"
+                    VPOS="1538"
+                    WIDTH="647"
+                    HEIGHT="59"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_795716a0"
+                    TAGREFS="LT49"
+                    BASELINE="279 1645 973 1648" 
+                    HPOS="275"
+                    VPOS="1608"
+                    WIDTH="698"
+                    HEIGHT="52">
+            <Shape><Polygon POINTS="279 1608 971 1612 973 1648 969 1660 275 1656 279 1645"/></Shape>
+	    <String CONTENT="FRÉDÉRIC MONTENARD, ✻, artiste peintre."
+                    HPOS="275"
+                    VPOS="1608"
+                    WIDTH="698"
+                    HEIGHT="52"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_242cf055"
+                    TAGREFS="LT49"
+                    BASELINE="279 1713 1006 1709" 
+                    HPOS="275"
+                    VPOS="1661"
+                    WIDTH="731"
+                    HEIGHT="61">
+            <Shape><Polygon POINTS="275 1665 344 1663 345 1663 347 1663 349 1663 349 1665 351 1665 360 1676 382 1667 384 1667 386 1667 388 1667 412 1676 566 1667 669 1661 671 1661 780 1663 781 1663 783 1663 791 1669 798 1674 1000 1672 1006 1709 1004 1722 279 1722 279 1713"/></Shape>
+	    <String CONTENT="ÉDOUARD ROSSET-GRANGER, ✻, artiste"
+                    HPOS="275"
+                    VPOS="1661"
+                    WIDTH="731"
+                    HEIGHT="61"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_852d5892"
+                    TAGREFS="LT49"
+                    BASELINE="329 1759 463 1755" 
+                    HPOS="325"
+                    VPOS="1724"
+                    WIDTH="138"
+                    HEIGHT="46">
+            <Shape><Polygon POINTS="325 1728 458 1724 463 1755 463 1770 329 1770 329 1759"/></Shape>
+	    <String CONTENT="peintre."
+                    HPOS="325"
+                    VPOS="1724"
+                    WIDTH="138"
+                    HEIGHT="46"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_dfb20294"
+                    TAGREFS="LT49"
+                    BASELINE="281 1821 1006 1821" 
+                    HPOS="279"
+                    VPOS="1772"
+                    WIDTH="727"
+                    HEIGHT="77">
+            <Shape><Polygon POINTS="281 1785 448 1785 454 1781 469 1772 471 1772 472 1772 474 1772 520 1781 537 1783 557 1779 597 1772 599 1772 642 1779 671 1783 686 1777 701 1772 702 1772 704 1772 730 1777 756 1783 770 1775 781 1772 783 1772 785 1772 787 1772 800 1775 824 1783 1004 1773 1006 1821 1004 1836 857 1836 844 1838 796 1849 794 1849 747 1840 730 1836 614 1836 596 1840 561 1849 559 1849 557 1849 279 1842 281 1821"/></Shape>
+	    <String CONTENT="RENÉ DE SAINT-MARCEAUX, O. ✻, statuaire."
+                    HPOS="279"
+                    VPOS="1772"
+                    WIDTH="727"
+                    HEIGHT="77"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="183"
+                   VPOS="227"
+                   WIDTH="828"
+                   HEIGHT="116"
+                   ID="eSc_textblock_55435be3"
+                   TAGREFS="BT163">
+          <Shape><Polygon POINTS="183 343 191 227 967 227 1011 242 1011 336"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

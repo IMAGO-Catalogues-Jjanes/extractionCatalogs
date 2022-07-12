@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>6_a985a_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/digital/iiif/p15324coll19/6956/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT131" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT132" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT133" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT134" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT135" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT136" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT137" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT138" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT139" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT140" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT141" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT162" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT163" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT164" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/>
+    <OtherTag ID="LT49" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT50" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT51" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT52" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT53" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="1299"
+          HEIGHT="2206"
+          PHYSICAL_IMG_NR="6"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="1299"
+                  HEIGHT="2206">
+        
+        <TextBlock HPOS="734"
+                   VPOS="1786"
+                   WIDTH="373"
+                   HEIGHT="87"
+                   ID="eSc_textblock_45f0483b"
+                   TAGREFS="BT138">
+          <Shape><Polygon POINTS="1107 1794 1107 1873 763 1873 763 1830 734 1829 741 1794 991 1786"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_2f22e704"
+                    TAGREFS="LT49"
+                    BASELINE="737 1819 1102 1816" 
+                    HPOS="732"
+                    VPOS="1775"
+                    WIDTH="370"
+                    HEIGHT="61">
+            <Shape><Polygon POINTS="737 1819 732 1777 1096 1775 1102 1816 1098 1836 735 1832"/></Shape>
+	    <String CONTENT="CONTRE-JOUR.  ÈTUDE"
+                    HPOS="732"
+                    VPOS="1775"
+                    WIDTH="370"
+                    HEIGHT="61"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_33f5e170"
+                    TAGREFS="LT49"
+                    BASELINE="763 1869 1103 1869" 
+                    HPOS="761"
+                    VPOS="1830"
+                    WIDTH="342"
+                    HEIGHT="68">
+            <Shape><Polygon POINTS="763 1869 763 1830 1103 1830 1103 1869 1100 1895 1052 1882 1039 1893 1035 1897 1034 1897 1032 1897 1032 1898 958 1898 956 1897 954 1897 953 1897 953 1895 945 1889 936 1882 894 1887 851 1891 850 1891 761 1880"/></Shape>
+	    <String CONTENT="Par CHERI-ROUSSEAU."
+                    HPOS="761"
+                    VPOS="1830"
+                    WIDTH="342"
+                    HEIGHT="68"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="143"
+                   VPOS="353"
+                   WIDTH="1004"
+                   HEIGHT="1373"
+                   ID="eSc_textblock_49ea5f71"
+                   TAGREFS="BT164">
+          <Shape><Polygon POINTS="143 353 143 1726 1147 1726 1147 353"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

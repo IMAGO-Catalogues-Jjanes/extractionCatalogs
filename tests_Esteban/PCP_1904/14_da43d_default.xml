@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>14_da43d_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:5149/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT270" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT271" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT272" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT273" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT274" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT275" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT276" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT277" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT278" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/>
+    <OtherTag ID="LT96" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT97" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT98" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT99" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="554"
+          HEIGHT="960"
+          PHYSICAL_IMG_NR="14"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="554"
+                  HEIGHT="960">
+        
+        <TextBlock HPOS="380"
+                   VPOS="692"
+                   WIDTH="151"
+                   HEIGHT="61"
+                   ID="eSc_textblock_1bd7838b"
+                   TAGREFS="BT274">
+          <Shape><Polygon POINTS="380 692 380 753 531 753 531 692"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_49e28b46"
+                    TAGREFS="LT97"
+                    BASELINE="393 711 516 707" 
+                    HPOS="389"
+                    VPOS="680"
+                    WIDTH="127"
+                    HEIGHT="36">
+            <Shape><Polygon POINTS="393 711 389 688 404 683 405 683 429 688 433 688 437 688 461 684 462 684 491 687 501 680 502 680 503 680 504 680 505 680 516 687 516 707 516 716 393 716"/></Shape>
+	    <String CONTENT="LA CRINOLINE"
+                    HPOS="389"
+                    VPOS="680"
+                    WIDTH="127"
+                    HEIGHT="36"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_764656a3"
+                    TAGREFS="LT97"
+                    BASELINE="386 734 525 731" 
+                    HPOS="384"
+                    VPOS="711"
+                    WIDTH="141"
+                    HEIGHT="41">
+            <Shape><Polygon POINTS="386 734 384 716 411 711 412 711 524 712 525 731 525 744 509 741 493 746 479 750 478 750 477 750 476 750 476 749 473 748 468 742 456 742 434 749 433 749 386 752"/></Shape>
+	    <String CONTENT="par DAVID BLOUNT."
+                    HPOS="384"
+                    VPOS="711"
+                    WIDTH="141"
+                    HEIGHT="41"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="14"
+                   VPOS="56"
+                   WIDTH="493"
+                   HEIGHT="601"
+                   ID="eSc_textblock_33fc2d11"
+                   TAGREFS="BT275">
+          <Shape><Polygon POINTS="14 67 14 657 507 657 501 56"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

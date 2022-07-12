@@ -32,10 +32,13 @@ def association_xml_rng(document_xml):
         print("\t– Le fichier xml n'est pas bien formé.")
         return
     # récupération et parsage du fichier rng du projet (lien_schema est une variable importée) :
-    # pour utiliser le document en local :
-    # relaxng_fichier = ET.parse("extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng")
-    url = urlopen(lien_schema)
-    relaxng_fichier = ET.parse(url)
+    # si le lien a été indiqué dans le gabarit du projet :
+    if lien_schema:
+        schema = urlopen(lien_schema)
+    # si non, on utilise le schéma intégré en local (schema du projet IMAGO, il peut être remplacé par un autre) :
+    else:
+        schema = "extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng"
+    relaxng_fichier = ET.parse(schema)
     # Si l'on préfère utiliser le document en local :
     # relaxng_fichier = ET.parse("extractionCatalogs/fonctions/validation_alto/out/ODD_VisualContagions.rng")
     relaxng = ET.RelaxNG(relaxng_fichier)
@@ -67,14 +70,91 @@ def structure_alto(chemin_document):
     # liste de éléments TextLine :
     textline_list = document.xpath("//alto:TextLine", namespaces=NS)
 
+    # === On récupère les éléments de l'ontologie segmonto, s'ils existent ===
+    # Note : ce script devra être adapté à l'évolution de l'ontologie, qui se trouve en phase de développement.
+    # Il faudra notamment l'adapter à la complexification des noms des balises qui comportent maintenant des options des précision.
+    # Si le terminal signal un élément de l'ontologie comme n'en faisant pas partie, il faut l'ajouter ici.
+
     # On récupère l'ID du type de balise CustomZone:entry :
-    tagref_entree = document.xpath("//alto:OtherTag[@LABEL='CustomZone:entry']/@ID", namespaces=NS)[0]
+    if document.xpath("//alto:OtherTag[@LABEL='CustomZone:entry']/@ID", namespaces=NS):
+        tagref_entree = document.xpath("//alto:OtherTag[@LABEL='CustomZone:entry']/@ID", namespaces=NS)[0]
+    else:
+        tagref_entree = None
     # On récupère l'ID du type de balise MainZone :
-    MainZone = document.xpath("//alto:OtherTag[@LABEL='MainZone']/@ID", namespaces=NS)[0]
+    if document.xpath("//alto:OtherTag[@LABEL='MainZone']/@ID", namespaces=NS):
+        MainZone = document.xpath("//alto:OtherTag[@LABEL='MainZone']/@ID", namespaces=NS)[0]
+    else:
+        MainZone = None
     # On récupère l'ID du type de balise EntryEnd :
-    EntryEnd = document.xpath("//alto:OtherTag[@LABEL='CustomZone:entryEnd']/@ID", namespaces=NS)[0]
+    if document.xpath("//alto:OtherTag[@LABEL='CustomZone:entryEnd']/@ID", namespaces=NS):
+        EntryEnd = document.xpath("//alto:OtherTag[@LABEL='CustomZone:entryEnd']/@ID", namespaces=NS)[0]
+    else:
+        EntryEnd = None
     # On récupère l'ID du type de balise "NumberingZone" :
-    NumberingZone = document.xpath("//alto:OtherTag[@LABEL='NumberingZone']/@ID", namespaces=NS)[0]
+    if document.xpath("//alto:OtherTag[@LABEL='NumberingZone']/@ID", namespaces=NS):
+        NumberingZone = document.xpath("//alto:OtherTag[@LABEL='NumberingZone']/@ID", namespaces=NS)[0]
+    else:
+        NumberingZone = None
+    # On récupère l'ID du type de balise "GraphicZone: illustration" :
+    if document.xpath("//alto:OtherTag[@LABEL='GraphicZone:illustration']/@ID", namespaces=NS):
+        GraphicZone_illustration = document.xpath("//alto:OtherTag[@LABEL='GraphicZone:illustration']/@ID", namespaces=NS)[0]
+    else:
+        GraphicZone_illustration = None
+    # On récupère l'ID du type de balise "GraphicZone:ornamentation" :
+    if document.xpath("//alto:OtherTag[@LABEL='GraphicZone:ornamentation']/@ID", namespaces=NS):
+        GraphicZone_ornamentation = document.xpath("//alto:OtherTag[@LABEL='GraphicZone:ornamentation']/@ID", namespaces=NS)[0]
+    else:
+        GraphicZone_ornamentation = None
+    # On récupère l'ID du type de balise "StampZone" :
+    if document.xpath("//alto:OtherTag[@LABEL='StampZone']/@ID", namespaces=NS):
+        StampZone = document.xpath("//alto:OtherTag[@LABEL='StampZone']/@ID", namespaces=NS)[0]
+    else:
+        StampZone = None
+    # On récupère l'ID du type de balise "QuireMarksZone" :
+    if document.xpath("//alto:OtherTag[@LABEL='QuireMarksZone']/@ID", namespaces=NS):
+        QuireMarksZone = document.xpath("//alto:OtherTag[@LABEL='QuireMarksZone']/@ID", namespaces=NS)[0]
+    else:
+        QuireMarksZone = None
+    # On récupère l'ID du type de balise "MarginTextZone" :
+    if document.xpath("//alto:OtherTag[@LABEL='MarginTextZone']/@ID", namespaces=NS):
+        MarginTextZone = document.xpath("//alto:OtherTag[@LABEL='MarginTextZone']/@ID", namespaces=NS)[0]
+    else:
+        MarginTextZone = None
+    # On récupère l'ID du type de balise "TitlePageZone" :
+    if document.xpath("//alto:OtherTag[@LABEL='TitlePageZone']/@ID", namespaces=NS):
+        TitlePageZone = document.xpath("//alto:OtherTag[@LABEL='TitlePageZone']/@ID", namespaces=NS)[0]
+    else:
+        TitlePageZone = None
+    # On récupère l'ID du type de balise "DropCapitalZone" :
+    if document.xpath("//alto:OtherTag[@LABEL='DropCapitalZone']/@ID", namespaces=NS):
+        DropCapitalZone = document.xpath("//alto:OtherTag[@LABEL='DropCapitalZone']/@ID", namespaces=NS)[0]
+    else:
+        DropCapitalZone = None
+    # On récupère l'ID du type de balise "DamageZone" :
+    if document.xpath("//alto:OtherTag[@LABEL='DamageZone']/@ID", namespaces=NS):
+        DamageZone = document.xpath("//alto:OtherTag[@LABEL='DamageZone']/@ID", namespaces=NS)[0]
+    else:
+        DamageZone = None
+    # On récupère l'ID du type de balise "DigitizationArtefactZone" :
+    if document.xpath("//alto:OtherTag[@LABEL='DigitizationArtefactZone']/@ID", namespaces=NS):
+        DigitizationArtefactZone = document.xpath("//alto:OtherTag[@LABEL='DigitizationArtefactZone']/@ID", namespaces=NS)[0]
+    else:
+        DigitizationArtefactZone = None
+    # On récupère l'ID du type de balise "GraphicZone" :
+    if document.xpath("//alto:OtherTag[@LABEL='GraphicZone']/@ID", namespaces=NS):
+        GraphicZone = document.xpath("//alto:OtherTag[@LABEL='GraphicZone']/@ID", namespaces=NS)[0]
+    else:
+        GraphicZone = None
+    # On récupère l'ID du type de balise "MusicZone" :
+    if document.xpath("//alto:OtherTag[@LABEL='MusicZone']/@ID", namespaces=NS):
+        MusicZone = document.xpath("//alto:OtherTag[@LABEL='MusicZone']/@ID", namespaces=NS)[0]
+    else:
+        MusicZone = None
+    # On récupère l'ID du type de balise "TableZone" :
+    if document.xpath("//alto:OtherTag[@LABEL='TableZone']/@ID", namespaces=NS):
+        TableZone = document.xpath("//alto:OtherTag[@LABEL='TableZone']/@ID", namespaces=NS)[0]
+    else:
+        TableZone = None
 
     # pour chaque objet dans cette liste :
     textline_dans_MainZone = 0
@@ -89,26 +169,52 @@ def structure_alto(chemin_document):
             tagrefs_textblock = parent_textblock.attrib['TAGREFS']
             # Dans les cas ou l'ID du TextBLock correspond à un autre type d'entrée qu'une "CustomZone:entry"  :
             if tagrefs_textblock != tagref_entree:
-                # Si le TAGREF du TextBlock se trouve dans la liste de tous les TAGREF du document
+                # Si le TAGREF du TextBlock est une MainZone, cela veut dire que l'imbrication est fautive :
                 if tagrefs_textblock == MainZone:
+                    # on augmente un compteur qu'on utilisera après pour énumérer ce type de problème :
                     textline_dans_MainZone += 1
+                # Si le tagref est associé à un autre élément de l'ontologie Segmonto, on estime qu'il n'y a pas de problème :
+                # (dernière vérification de conformité à l'ontologie effectuée en aout 2022)
                 elif tagrefs_textblock == EntryEnd:
                     pass
                 elif tagrefs_textblock == NumberingZone:
                     pass
+                elif tagrefs_textblock == GraphicZone_illustration:
+                    pass
+                elif tagrefs_textblock == GraphicZone_ornamentation:
+                    pass
+                elif tagrefs_textblock == StampZone:
+                    pass
+                elif tagrefs_textblock == QuireMarksZone:
+                    pass
+                elif tagrefs_textblock == MarginTextZone:
+                    pass
+                elif tagrefs_textblock == TitlePageZone:
+                    pass
+                elif tagrefs_textblock == DropCapitalZone:
+                    pass
+                elif tagrefs_textblock == DamageZone:
+                    pass
+                elif tagrefs_textblock == DigitizationArtefactZone:
+                    pass
+                elif tagrefs_textblock == GraphicZone:
+                    pass
+                elif tagrefs_textblock == MusicZone:
+                    pass
+                elif tagrefs_textblock == TableZone:
+                    pass
+                # Si le TAGREF se trouve dans la liste de tous les TAGREFS, est n'est pas associé à l'ontologie segmonto
+                # (puisqu'on à filtré préalablement les éléments Segmonto)
                 elif tagrefs_textblock in tagrefs_list:
                     textline_dans_autre += 1
                     n_zone_non_entree += 1
-                else:
-                    pass
         except:
-            print("\t  L'entrée " + str(parent_textblock.attrib['ID']) + " n'a pas d'attribut TAGREF le reliant à un élément de l'ontologie du projet")
+            print("\t  L'entrée " + str(parent_textblock.attrib['ID']) + " n'a pas d'attribut TAGREF défini")
 
     if textline_dans_MainZone >= 1:
         print("\t  Les <TextLine> de l'objet " + str(parent_textblock.attrib['ID']) + " se trouvent directement dans une 'MainZone'")
     if textline_dans_autre >= 1:
-        print("\t  L'élément " + str(parent_textblock.attrib['ID']) + " n'est pas une 'CustomZone:entry', une 'CustomZone:entryEnd, une 'NumberingZone' ni une 'MainZone'")
-
+        print("\t  L'élément " + str(parent_textblock.attrib['ID']) + " n'est pas associé à l'ontologie Segmonto")
     return textline_dans_MainZone, textline_dans_autre
 
 
@@ -137,6 +243,19 @@ def formation_alto(fichier):
         CustomLine = file.xpath("//alto:OtherTag[@LABEL='CustomLine']/@ID", namespaces=NS)[0]
     else:
         CustomLine = None
+    # On récupère l'ID du type de balise "DropCapitalLine", qui peut aussi être présent dans le projet :
+    if file.xpath("//alto:OtherTag[@LABEL='DropCapitalLine']/@ID", namespaces=NS):
+        DropCapitalLine = file.xpath("//alto:OtherTag[@LABEL='DropCapitalLine']/@ID", namespaces=NS)[0]
+    else:
+        DropCapitalLine = None
+    if file.xpath("//alto:OtherTag[@LABEL='InterlinearLine']/@ID", namespaces=NS):
+        InterlinearLine = file.xpath("//alto:OtherTag[@LABEL='InterlinearLine']/@ID", namespaces=NS)[0]
+    else:
+        InterlinearLine = None
+    if file.xpath("//alto:OtherTag[@LABEL='MusicLine']/@ID", namespaces=NS):
+        MusicLine = file.xpath("//alto:OtherTag[@LABEL='MusicLine']/@ID", namespaces=NS)[0]
+    else:
+        MusicLine = None
 
     # TODO pourquoi la méthode append() ne marche pas ici dans les itérations qui suivent pour la liste problemes ?
     # TODO c'est les objets etree qui posent problème pour cela ? les variables probleme* sont imprimées comme attendu
@@ -186,6 +305,12 @@ def formation_alto(fichier):
                         elif textline.get("TAGREFS") == HeadingLine:
                             pass
                         elif textline.get("TAGREFS") == CustomLine:
+                            pass
+                        elif textline.get("TAGREFS") == DropCapitalLine:
+                            pass
+                        elif textline.get("TAGREFS") == InterlinearLine:
+                            pass
+                        elif textline.get("TAGREFS") == MusicLine:
                             pass
                         # autrement, on le signale dans le terminal
                         else:

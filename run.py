@@ -295,6 +295,8 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
             print("\t– {} élément non conforme à l'ontologie Segmonto".format(textline_dans_autres_total))
         else:
             print("\t– {} éléments non conformes à l'ontologie Segmonto".format(textline_dans_autres_total))
+    else :
+        print("\t- La segmentation est conforme à l'ontologie Segmonto")
     """
     for probleme in problemes_alto:
         print("\t– probleme")

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>70_0f2f5_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:5205/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT270" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT271" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT272" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT273" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT274" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT275" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT276" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT277" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT278" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/>
+    <OtherTag ID="LT96" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT97" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT98" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT99" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="577"
+          HEIGHT="999"
+          PHYSICAL_IMG_NR="70"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="577"
+                  HEIGHT="999">
+        
+        <TextBlock HPOS="490"
+                   VPOS="54"
+                   WIDTH="63"
+                   HEIGHT="155"
+                   ID="eSc_textblock_54545f8f"
+                   TAGREFS="BT274">
+          <Shape><Polygon POINTS="490 54 490 209 553 209 553 54"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_38ed72fa"
+                    TAGREFS="LT97"
+                    BASELINE="534 185 535 89 535 80" 
+                    HPOS="511"
+                    VPOS="79"
+                    WIDTH="34"
+                    HEIGHT="105">
+            <Shape><Polygon POINTS="533 184 513 183 511 79 534 79 542 79 545 183"/></Shape>
+	    <String CONTENT="par E. WALLON."
+                    HPOS="511"
+                    VPOS="79"
+                    WIDTH="34"
+                    HEIGHT="105"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_92b4ad79"
+                    TAGREFS="LT97"
+                    BASELINE="509 192 508 73" 
+                    HPOS="487"
+                    VPOS="71"
+                    WIDTH="28"
+                    HEIGHT="120">
+            <Shape><Polygon POINTS="508 191 489 191 487 72 507 72 515 71 514 190"/></Shape>
+	    <String CONTENT="LA VANNEUSE"
+                    HPOS="487"
+                    VPOS="71"
+                    WIDTH="28"
+                    HEIGHT="120"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="17"
+                   VPOS="109"
+                   WIDTH="454"
+                   HEIGHT="736"
+                   ID="eSc_textblock_c3befe79"
+                   TAGREFS="BT275">
+          <Shape><Polygon POINTS="17 120 17 845 471 845 462 109"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

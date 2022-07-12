@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>2_3b13d_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3287/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT190" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT191" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT192" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT193" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT194" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT195" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT196" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT197" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT198" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/>
+    <OtherTag ID="LT65" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT66" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT67" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT68" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="924"
+          HEIGHT="1585"
+          PHYSICAL_IMG_NR="2"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="924"
+                  HEIGHT="1585">
+        
+        <TextBlock HPOS="147"
+                   VPOS="738"
+                   WIDTH="121"
+                   HEIGHT="113"
+                   ID="eSc_textblock_2b1c6822"
+                   TAGREFS="BT198">
+          <Shape><Polygon POINTS="147 738 147 851 268 851 268 738"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_e694335e"
+                    TAGREFS="LT68"
+                    BASELINE="176 834 245 833" 
+                    HPOS="170"
+                    VPOS="730"
+                    WIDTH="74"
+                    HEIGHT="121">
+            <Shape><Polygon POINTS="175 833 170 733 239 730 244 832 243 851 174 850"/></Shape>
+	    <String CONTENT="V"
+                    HPOS="170"
+                    VPOS="730"
+                    WIDTH="74"
+                    HEIGHT="121"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="135"
+                   VPOS="527"
+                   WIDTH="624"
+                   HEIGHT="807"
+                   ID="eSc_textblock_b0e5e463"
+                   TAGREFS="BT193">
+          <Shape><Polygon POINTS="135 527 135 1334 759 1334 759 527"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_53c7f555"
+                    TAGREFS="LT67"
+                    BASELINE="268 593 590 585" 
+                    HPOS="263"
+                    VPOS="548"
+                    WIDTH="326"
+                    HEIGHT="63">
+            <Shape><Polygon POINTS="267 591 263 558 426 548 428 548 428 548 428 548 460 553 466 554 585 552 589 583 588 604 552 598 532 606 532 606 532 606 531 606 531 606 531 606 530 606 527 606 379 600 267 611"/></Shape>
+	    <String CONTENT="Avant-Propos"
+                    HPOS="263"
+                    VPOS="548"
+                    WIDTH="326"
+                    HEIGHT="63"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_66bb0b9c"
+                    TAGREFS="LT66"
+                    BASELINE="264 768 715 762" 
+                    HPOS="259"
+                    VPOS="731"
+                    WIDTH="454"
+                    HEIGHT="48">
+            <Shape><Polygon POINTS="263 767 259 738 709 731 713 760 712 768 263 779"/></Shape>
+	    <String CONTENT="oici la troisième année que, sur l’in¬"
+                    HPOS="259"
+                    VPOS="731"
+                    WIDTH="454"
+                    HEIGHT="48"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_bd6dce5c"
+                    TAGREFS="LT66"
+                    BASELINE="270 801 715 795" 
+                    HPOS="267"
+                    VPOS="766"
+                    WIDTH="448"
+                    HEIGHT="46">
+            <Shape><Polygon POINTS="270 801 267 777 288 770 289 770 290 770 356 775 534 766 535 766 712 771 715 795 715 801 270 812"/></Shape>
+	    <String CONTENT="vitation du Photo-Club de Paris, les"
+                    HPOS="267"
+                    VPOS="766"
+                    WIDTH="448"
+                    HEIGHT="46"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_32b1a798"
+                    TAGREFS="LT66"
+                    BASELINE="272 837 713 829" 
+                    HPOS="270"
+                    VPOS="797"
+                    WIDTH="443"
+                    HEIGHT="54">
+            <Shape><Polygon POINTS="272 837 270 805 489 808 499 805 512 800 514 800 515 800 565 805 577 805 589 805 660 797 662 797 711 805 713 829 712 842 499 841 490 847 489 847 487 847 486 847 474 847 326 845 272 851"/></Shape>
+	    <String CONTENT="photographes amateurs et profession¬"
+                    HPOS="270"
+                    VPOS="797"
+                    WIDTH="443"
+                    HEIGHT="54"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_4e982cfb"
+                    TAGREFS="LT66"
+                    BASELINE="158 873 716 866" 
+                    HPOS="154"
+                    VPOS="840"
+                    WIDTH="562"
+                    HEIGHT="38">
+            <Shape><Polygon POINTS="158 873 154 846 712 840 716 866 716 873 158 878"/></Shape>
+	    <String CONTENT="nels de toutes les nationalités présentent au public"
+                    HPOS="154"
+                    VPOS="840"
+                    WIDTH="562"
+                    HEIGHT="38"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_7dc153a2"
+                    TAGREFS="LT66"
+                    BASELINE="158 908 713 899" 
+                    HPOS="155"
+                    VPOS="875"
+                    WIDTH="558"
+                    HEIGHT="44">
+            <Shape><Polygon POINTS="158 908 155 879 709 875 713 899 713 908 158 919"/></Shape>
+	    <String CONTENT="parisien le résultat de leurs tentatives nouvelles."
+                    HPOS="155"
+                    VPOS="875"
+                    WIDTH="558"
+                    HEIGHT="44"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_6a8eb8e2"
+                    TAGREFS="LT66"
+                    BASELINE="183 939 716 935" 
+                    HPOS="181"
+                    VPOS="904"
+                    WIDTH="535"
+                    HEIGHT="48">
+            <Shape><Polygon POINTS="183 939 181 912 590 904 592 904 713 911 716 935 715 945 183 952"/></Shape>
+	    <String CONTENT="Ils ont voulu dégager la photographie de son"
+                    HPOS="181"
+                    VPOS="904"
+                    WIDTH="535"
+                    HEIGHT="48"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_93426716"
+                    TAGREFS="LT66"
+                    BASELINE="158 976 716 968" 
+                    HPOS="155"
+                    VPOS="936"
+                    WIDTH="561"
+                    HEIGHT="46">
+            <Shape><Polygon POINTS="158 976 155 947 712 936 716 968 715 980 158 982"/></Shape>
+	    <String CONTENT="côté purement mécanique et la plier, autant qu’il"
+                    HPOS="155"
+                    VPOS="936"
+                    WIDTH="561"
+                    HEIGHT="46"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_f0d0dbe7"
+                    TAGREFS="LT66"
+                    BASELINE="159 1011 717 1002" 
+                    HPOS="157"
+                    VPOS="972"
+                    WIDTH="560"
+                    HEIGHT="49">
+            <Shape><Polygon POINTS="159 1011 157 987 227 985 249 974 251 974 252 974 278 974 280 974 281 974 281 976 290 984 327 973 329 973 408 972 409 972 411 972 412 972 412 973 421 981 453 972 454 972 456 972 457 972 458 972 471 981 473 981 478 981 568 972 569 972 571 972 584 978 713 977 717 1002 715 1015 651 1010 597 1017 596 1017 594 1017 593 1017 576 1010 524 1018 519 1018 518 1018 512 1018 469 1013 450 1018 448 1019 446 1019 445 1019 423 1019 318 1014 159 1021"/></Shape>
+	    <String CONTENT="est possible de le faire, à la représentation artis¬"
+                    HPOS="157"
+                    VPOS="972"
+                    WIDTH="560"
+                    HEIGHT="49"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_2126d240"
+                    TAGREFS="LT66"
+                    BASELINE="158 1044 717 1039" 
+                    HPOS="155"
+                    VPOS="1009"
+                    WIDTH="562"
+                    HEIGHT="46">
+            <Shape><Polygon POINTS="158 1044 155 1018 296 1009 297 1009 715 1011 717 1039 717 1050 158 1055"/></Shape>
+	    <String CONTENT="tique et personnelle de la nature. En somme, ils"
+                    HPOS="155"
+                    VPOS="1009"
+                    WIDTH="562"
+                    HEIGHT="46"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_3401fea8"
+                    TAGREFS="LT66"
+                    BASELINE="161 1081 719 1075" 
+                    HPOS="157"
+                    VPOS="1042"
+                    WIDTH="562"
+                    HEIGHT="51">
+            <Shape><Polygon POINTS="161 1081 157 1055 192 1046 194 1046 195 1046 261 1052 267 1052 268 1052 278 1044 280 1044 281 1044 282 1044 345 1051 355 1051 366 1050 412 1043 413 1043 452 1048 465 1050 478 1047 507 1042 508 1042 532 1046 543 1048 553 1046 569 1042 571 1042 572 1042 573 1042 585 1046 598 1048 715 1043 719 1075 717 1084 161 1093"/></Shape>
+	    <String CONTENT="ne demandent à la photographie que ce qu’on"
+                    HPOS="157"
+                    VPOS="1042"
+                    WIDTH="562"
+                    HEIGHT="51"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_8023aa20"
+                    TAGREFS="LT66"
+                    BASELINE="159 1116 719 1108" 
+                    HPOS="158"
+                    VPOS="1077"
+                    WIDTH="561"
+                    HEIGHT="45">
+            <Shape><Polygon POINTS="159 1116 158 1085 239 1091 391 1084 519 1079 520 1079 522 1079 541 1084 548 1085 553 1084 572 1077 573 1077 575 1077 716 1084 719 1108 717 1117 159 1122"/></Shape>
+	    <String CONTENT="est en droit de demander à tout procédé de repro¬"
+                    HPOS="158"
+                    VPOS="1077"
+                    WIDTH="561"
+                    HEIGHT="45"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_18b61d07"
+                    TAGREFS="LT66"
+                    BASELINE="159 1149 721 1143" 
+                    HPOS="157"
+                    VPOS="1113"
+                    WIDTH="564"
+                    HEIGHT="45">
+            <Shape><Polygon POINTS="159 1149 157 1121 578 1113 580 1113 719 1120 721 1143 721 1157 159 1158"/></Shape>
+	    <String CONTENT="duction monochrome, quel qu&#39;il soit, quand le"
+                    HPOS="157"
+                    VPOS="1113"
+                    WIDTH="564"
+                    HEIGHT="45"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_2a832615"
+                    TAGREFS="LT66"
+                    BASELINE="161 1184 720 1180" 
+                    HPOS="154"
+                    VPOS="1150"
+                    WIDTH="566"
+                    HEIGHT="44">
+            <Shape><Polygon POINTS="161 1184 154 1162 161 1154 162 1154 162 1153 163 1153 165 1153 166 1153 342 1158 351 1151 352 1151 354 1151 355 1151 489 1157 531 1150 532 1150 717 1157 720 1180 719 1192 161 1194"/></Shape>
+	    <String CONTENT="cerveau qui le dirige est doué de ce qu&#39;on est"
+                    HPOS="154"
+                    VPOS="1150"
+                    WIDTH="566"
+                    HEIGHT="44"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_cb8d9f86"
+                    TAGREFS="LT66"
+                    BASELINE="161 1220 589 1217" 
+                    HPOS="159"
+                    VPOS="1190"
+                    WIDTH="430"
+                    HEIGHT="38">
+            <Shape><Polygon POINTS="161 1220 159 1190 586 1192 589 1217 588 1225 161 1228"/></Shape>
+	    <String CONTENT="convenu d’appeler le sens artistique."
+                    HPOS="159"
+                    VPOS="1190"
+                    WIDTH="430"
+                    HEIGHT="38"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_0c8ca77f"
+                    TAGREFS="LT66"
+                    BASELINE="186 1254 723 1254" 
+                    HPOS="186"
+                    VPOS="1221"
+                    WIDTH="538"
+                    HEIGHT="40">
+            <Shape><Polygon POINTS="186 1254 186 1223 561 1228 565 1227 580 1221 581 1221 582 1221 584 1221 606 1228 610 1228 616 1228 670 1221 671 1221 672 1221 674 1221 684 1228 704 1221 705 1221 707 1221 708 1221 724 1229 723 1254 723 1260 186 1261"/></Shape>
+	    <String CONTENT="Nous voudrions donc nous servir de notre"
+                    HPOS="186"
+                    VPOS="1221"
+                    WIDTH="538"
+                    HEIGHT="40"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_2193dd24"
+                    TAGREFS="LT66"
+                    BASELINE="162 1289 723 1286" 
+                    HPOS="159"
+                    VPOS="1254"
+                    WIDTH="564"
+                    HEIGHT="61">
+            <Shape><Polygon POINTS="162 1289 159 1257 196 1256 198 1256 199 1256 200 1256 200 1257 210 1264 228 1257 232 1256 233 1256 235 1256 236 1256 240 1257 265 1265 318 1265 327 1257 329 1256 330 1256 331 1256 333 1256 334 1256 341 1257 366 1264 379 1257 383 1256 384 1256 385 1256 387 1256 393 1257 413 1264 510 1264 522 1258 531 1254 532 1254 534 1254 556 1258 581 1262 719 1260 723 1286 721 1314 662 1307 633 1314 631 1314 630 1314 629 1314 627 1314 610 1303 548 1303 536 1312 536 1314 535 1314 534 1314 534 1315 489 1315 487 1314 486 1314 457 1303 432 1310 430 1310 429 1310 428 1310 407 1304 389 1314 387 1315 385 1315 384 1315 372 1314 317 1304 285 1314 282 1314 281 1314 280 1314 161 1312"/></Shape>
+	    <String CONTENT="objectif pour les mêmes fins que les artistes se"
+                    HPOS="159"
+                    VPOS="1254"
+                    WIDTH="564"
+                    HEIGHT="61"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="138"
+                   VPOS="186"
+                   WIDTH="573"
+                   HEIGHT="151"
+                   ID="eSc_textblock_bf76f786"
+                   TAGREFS="BT192">
+          <Shape><Polygon POINTS="138 186 138 337 711 337 711 186"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

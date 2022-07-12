@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>1_f090a_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/digital/iiif/p15324coll19/6951/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT131" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT132" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT133" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT134" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT135" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT136" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT137" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT138" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT139" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT140" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT141" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT162" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT163" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT164" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/>
+    <OtherTag ID="LT49" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT50" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT51" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT52" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT53" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="1299"
+          HEIGHT="2206"
+          PHYSICAL_IMG_NR="1"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="1299"
+                  HEIGHT="2206">
+        
+        <TextBlock HPOS="123"
+                   VPOS="211"
+                   WIDTH="868"
+                   HEIGHT="1671"
+                   ID="eSc_textblock_83e3b761"
+                   TAGREFS="BT135">
+          <Shape><Polygon POINTS="123 211 123 1882 991 1882 991 211"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_4682f09d"
+                    TAGREFS="LT52"
+                    BASELINE="149 400 947 406" 
+                    HPOS="143"
+                    VPOS="292"
+                    WIDTH="802"
+                    HEIGHT="127">
+            <Shape><Polygon POINTS="147 398 143 305 178 292 180 292 182 292 264 303 281 305 288 303 320 292 321 292 323 292 393 292 395 292 397 292 408 301 415 308 485 308 498 301 511 294 513 294 515 294 517 294 531 301 544 307 590 299 636 294 638 294 640 294 655 299 680 308 723 299 739 295 741 295 761 297 824 308 855 297 861 295 862 295 864 295 945 297 945 404 942 419 143 406"/></Shape>
+	    <String CONTENT="CATALOGVE"
+                    HPOS="143"
+                    VPOS="292"
+                    WIDTH="802"
+                    HEIGHT="127"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_d756d196"
+                    TAGREFS="LT52"
+                    BASELINE="163 553 936 560" 
+                    HPOS="158"
+                    VPOS="494"
+                    WIDTH="776"
+                    HEIGHT="81">
+            <Shape><Polygon POINTS="161 551 161 505 244 505 244 503 259 494 261 494 263 494 264 494 266 494 288 503 298 507 320 503 371 496 373 496 544 496 546 496 561 503 577 511 649 503 701 498 702 498 728 503 765 511 805 503 824 500 826 500 934 503 934 558 932 566 776 575 774 575 158 562"/></Shape>
+	    <String CONTENT="DES  ·  ŒVVRES  ·  EXPOSÉES"
+                    HPOS="158"
+                    VPOS="494"
+                    WIDTH="776"
+                    HEIGHT="81"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_bd1006be"
+                    TAGREFS="LT52"
+                    BASELINE="165 641 931 641" 
+                    HPOS="158"
+                    VPOS="582"
+                    WIDTH="771"
+                    HEIGHT="74">
+            <Shape><Polygon POINTS="163 639 158 595 176 582 178 582 180 582 182 582 241 582 242 582 244 582 244 584 259 595 263 601 309 601 320 595 355 582 356 582 358 582 517 582 629 595 656 599 662 595 688 582 689 582 691 582 752 595 765 599 776 595 807 586 809 586 811 586 813 586 842 595 853 599 927 597 929 639 927 656 161 647"/></Shape>
+	    <String CONTENT="AV  ·  ONZIÈME  ·  SALON  ▽"
+                    HPOS="158"
+                    VPOS="582"
+                    WIDTH="771"
+                    HEIGHT="74"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_3aa27322"
+                    TAGREFS="LT52"
+                    BASELINE="169 722 936 729" 
+                    HPOS="161"
+                    VPOS="663"
+                    WIDTH="773"
+                    HEIGHT="76">
+            <Shape><Polygon POINTS="167 720 167 678 323 678 329 676 358 663 360 663 362 663 511 676 572 680 588 674 618 665 620 665 621 665 664 674 673 676 688 674 739 667 741 667 743 667 761 674 787 683 932 674 934 727 932 739 191 739 189 737 187 737 161 726"/></Shape>
+	    <String CONTENT="▽  ▽  INTERNATIONAL  ·  DE"
+                    HPOS="161"
+                    VPOS="663"
+                    WIDTH="773"
+                    HEIGHT="76"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_ead7422f"
+                    TAGREFS="LT52"
+                    BASELINE="165 808 927 807" 
+                    HPOS="161"
+                    VPOS="755"
+                    WIDTH="764"
+                    HEIGHT="63">
+            <Shape><Polygon POINTS="163 807 161 755 921 762 925 805 923 818 163 818"/></Shape>
+	    <String CONTENT="PHOTOGRAPHIE  ·  DU  ▽  ▽"
+                    HPOS="161"
+                    VPOS="755"
+                    WIDTH="764"
+                    HEIGHT="63"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_a0bac409"
+                    TAGREFS="LT52"
+                    BASELINE="165 889 936 898" 
+                    HPOS="160"
+                    VPOS="832"
+                    WIDTH="774"
+                    HEIGHT="77">
+            <Shape><Polygon POINTS="163 887 161 843 207 832 209 832 211 832 246 843 250 843 261 834 263 834 264 834 266 834 336 834 338 834 340 834 353 843 356 845 377 843 448 834 450 834 452 834 454 834 469 843 472 845 489 843 533 838 535 838 537 838 539 838 544 843 550 847 601 843 684 838 686 838 688 838 702 843 715 849 932 845 934 897 931 909 160 895"/></Shape>
+	    <String CONTENT="PHOTO-CLVB  ·  DE  ·  PARIS"
+                    HPOS="160"
+                    VPOS="832"
+                    WIDTH="774"
+                    HEIGHT="77"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_9cceb1cc"
+                    TAGREFS="LT52"
+                    BASELINE="165 974 936 985" 
+                    HPOS="160"
+                    VPOS="919"
+                    WIDTH="774"
+                    HEIGHT="79">
+            <Shape><Polygon POINTS="163 972 161 932 222 919 224 919 288 932 303 933 305 932 321 919 323 919 325 919 327 919 402 919 404 919 406 919 425 932 428 933 437 932 478 921 480 921 482 921 483 921 526 932 548 937 568 932 597 922 599 922 601 922 666 922 667 922 689 932 706 941 743 941 756 932 767 924 769 924 770 924 772 924 934 933 934 983 931 998 160 985"/></Shape>
+	    <String CONTENT="AV  · PALAIS  ·  DE  ·  GLACE"
+                    HPOS="160"
+                    VPOS="919"
+                    WIDTH="774"
+                    HEIGHT="79"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_a387491b"
+                    TAGREFS="LT52"
+                    BASELINE="174 1058 936 1069" 
+                    HPOS="169"
+                    VPOS="998"
+                    WIDTH="765"
+                    HEIGHT="79">
+            <Shape><Polygon POINTS="172 1057 172 1014 237 1014 253 1001 253 1000 255 1000 257 1000 298 998 299 998 301 998 364 1016 366 1016 375 1016 504 1009 505 1009 564 1018 588 1009 590 1009 592 1009 675 1020 695 1005 697 1005 699 1005 701 1005 781 1005 934 1025 934 1068 931 1077 169 1073"/></Shape>
+	    <String CONTENT="▽  DES  ·  CHAMPS-ÉLYSÉES"
+                    HPOS="169"
+                    VPOS="998"
+                    WIDTH="765"
+                    HEIGHT="79"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_7d75f23d"
+                    TAGREFS="LT52"
+                    BASELINE="137 1766 956 1766" 
+                    HPOS="134"
+                    VPOS="1707"
+                    WIDTH="822"
+                    HEIGHT="85">
+            <Shape><Polygon POINTS="137 1766 134 1720 176 1707 178 1707 180 1707 182 1707 204 1718 209 1718 314 1707 316 1707 318 1707 347 1717 355 1718 366 1717 412 1707 413 1707 415 1707 447 1715 461 1718 482 1715 520 1707 522 1707 524 1707 544 1715 557 1718 572 1713 590 1707 592 1707 594 1707 684 1713 802 1718 954 1709 956 1766 956 1777 877 1790 877 1792 842 1792 840 1790 839 1790 837 1790 837 1788 826 1779 822 1777 813 1779 772 1790 770 1790 769 1790 702 1781 671 1777 601 1777 592 1783 585 1788 583 1788 581 1788 579 1788 526 1783 471 1777 428 1785 391 1790 391 1792 272 1792 270 1790 268 1790 266 1790 263 1786 250 1777 137 1786"/></Shape>
+	    <String CONTENT="16 · JVIN · AV · 15 · JVILLET · 1906"
+                    HPOS="134"
+                    VPOS="1707"
+                    WIDTH="822"
+                    HEIGHT="85"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="188"
+                   VPOS="1199"
+                   WIDTH="715"
+                   HEIGHT="407"
+                   ID="eSc_textblock_e2108e2c"
+                   TAGREFS="BT163">
+          <Shape><Polygon POINTS="188 1199 188 1606 903 1606 903 1199"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
