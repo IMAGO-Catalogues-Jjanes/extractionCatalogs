@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="entryend">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="entryend_e1" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2991/197,219,575,147/full/0/default.jpg">
+          <desc>
+            <name>BERT (Auguste), 18, rue Raymond IV, Tou¬</name>
+            <trait>
+              <p>louse (Haute-Garonne).</p>
+            </trait>
+          </desc>
+          <item n="46" xml:id="entryend_e1_i46">
+            <num>46</num>
+            <title>— Souvenir de Tanger. Étude.</title>
+          </item>
+          <item n="47" xml:id="entryend_e1_i47">
+            <num>47</num>
+            <title>— Souvenir de Tanger. Étude.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="entryend_e2" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2991/206,389,566,174/full/0/default.jpg">
+          <desc>
+            <name>BERTEAUX (Georges), 75, avenue du</name>
+            <trait>
+              <p>Roule, Neuilly-sur-Seine.</p>
+            </trait>
+          </desc>
+          <item n="48" xml:id="entryend_e2_i48">
+            <num>48</num>
+            <title>— Pelotons, demi-à-gauche ! Halte !</title>
+          </item>
+          <item n="49" xml:id="entryend_e2_i49">
+            <num>49</num>
+            <title>— Château de Chillon.</title>
+          </item>
+          <item n="50" xml:id="entryend_e2_i50">
+            <num>50</num>
+            <title>— Portrait de M. Lassalle.</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="entryend_e3" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2991/208,584,564,152/full/0/default.jpg">
+          <desc>
+            <name>BINDER (Maurice), 102 avenue des Champs-</name>
+            <trait>
+              <p>Élysées, Paris.</p>
+            </trait>
+          </desc>
+          <item n="51" xml:id="entryend_e3_i51">
+            <num>51</num>
+            <title>— Sur la Jetée.</title>
+          </item>
+          <item n="52" xml:id="entryend_e3_i52">
+            <num>52</num>
+            <title>— Portrait.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="entryend_e4" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2991/216,753,559,115/full/0/default.jpg">
+          <desc>
+            <name>BISPINCK (Ignace), Rokin, 90, Amsterdam.</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="53" xml:id="entryend_e4_i53">
+            <num>53</num>
+            <title>— Sous Bois.</title>
+          </item>
+          <item n="54" xml:id="entryend_e4_i54">
+            <num>54</num>
+            <title>— La Rivière.</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="entryend_e5" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2991/216,889,561,305/full/0/default.jpg">
+          <desc>
+            <name>BOISSONNAS, 4, quai de la Porte, Genève.</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="55" xml:id="entryend_e5_i55">
+            <num>55</num>
+            <title>— Les Troglodytes (Scène de l'Age de pierre).</title>
+          </item>
+          <item n="56" xml:id="entryend_e5_i56">
+            <num>56</num>
+            <title>— Après la pêche.</title>
+          </item>
+          <item n="57" xml:id="entryend_e5_i57">
+            <num>57</num>
+            <title>— Étude près de Ponchée.</title>
+          </item>
+          <item n="58" xml:id="entryend_e5_i58">
+            <num>58</num>
+            <title>— La Jonction.</title>
+          </item>
+          <item n="59" xml:id="entryend_e5_i59">
+            <num>59</num>
+            <title>— Soir d'orage.</title>
+          </item>
+          <item n="60" xml:id="entryend_e5_i60">
+            <num>60</num>
+            <title>— Crépuscule.</title>
+          </item>
+          <item n="61" xml:id="entryend_e5_i61">
+            <num>61</num>
+            <title>— Étude par un beau jour d'été.</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="entryend_e6" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2991/223,1212,554,117/full/0/default.jpg">
+          <desc>
+            <name>BOIVIN (André), 64, rue de Lisbonne,</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="62" xml:id="entryend_e6_i62">
+            <num>62</num>
+            <title>— Rivière de la Selle, près de Rochefort.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="entryend_e7" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2992/117,360,578,142/full/0/default.jpg">
+          <desc>
+            <name>BOUCHARD (Dr Georges), 19, rue d’Alsace,</name>
+            <trait>
+              <p>Saumur (Maine-et-Loire).</p>
+            </trait>
+          </desc>
+          <item n="66" xml:id="entryend_e7_i66">
+            <num>66</num>
+            <title>— Cabanes de Tramesaïgues.</title>
+          </item>
+          <item n="67" xml:id="entryend_e7_i67">
+            <num>67</num>
+            <title>— Après la pêche.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="entryend_e8" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2992/119,539,576,291/full/0/default.jpg">
+          <desc>
+            <name>BOURGEOIS (Paul), 67, rue du Rocher,</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="68" xml:id="entryend_e8_i68">
+            <num>68</num>
+            <title>— Le Père Bernard.</title>
+          </item>
+          <item n="69" xml:id="entryend_e8_i69">
+            <num>69</num>
+            <title>— Au Coin du feu.</title>
+          </item>
+          <item n="70" xml:id="entryend_e8_i70">
+            <num>70</num>
+            <title>— Saules.</title>
+          </item>
+          <item n="71" xml:id="entryend_e8_i71">
+            <num>71</num>
+            <title>— Paysage des bords de la Marne.</title>
+          </item>
+          <item n="72" xml:id="entryend_e8_i72">
+            <num>72</num>
+            <title>— Départ pour le marché.</title>
+          </item>
+          <item n="73" xml:id="entryend_e8_i73">
+            <num>73</num>
+            <title>— Paysanne corrézienne.</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="entryend_e9" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2992/119,860,583,190/full/0/default.jpg">
+          <desc>
+            <name>BOUTIQUE (A), 24, rue Saint-Thomas,</name>
+            <trait>
+              <p>Douai (Nord).</p>
+            </trait>
+          </desc>
+          <item n="74" xml:id="entryend_e9_i74">
+            <num>74</num>
+            <title>— Effet de givre.</title>
+          </item>
+          <item n="75" xml:id="entryend_e9_i75">
+            <num>75</num>
+            <title>— Les Peupliers.</title>
+          </item>
+          <item n="76" xml:id="entryend_e9_i76">
+            <num>76</num>
+            <title>— Un Coin de l'étang.</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="entryend_e10" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2992/119,1084,583,234/full/0/default.jpg">
+          <desc>
+            <name>BOVI (Michel), via Chiaja, 123, Naples.</name>
+            <trait>
+              <p></p>
+            </trait>
+          </desc>
+          <item n="77" xml:id="entryend_e10_i77">
+            <num>77</num>
+            <title>— Amour maternel.</title>
+          </item>
+          <item n="78" xml:id="entryend_e10_i78">
+            <num>78</num>
+            <title>— La Mère et l'enfant.</title>
+          </item>
+          <item n="79" xml:id="entryend_e10_i79">
+            <num>79</num>
+            <title>— Sourire d'enfant.</title>
+          </item>
+          <item n="80" xml:id="entryend_e10_i80">
+            <num>80</num>
+            <title>— Etude d'enfant.</title>
+          </item>
+          <item n="81" xml:id="entryend_e10_i81">
+            <num>81</num>
+            <title>— Vierge à l'Enfant.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

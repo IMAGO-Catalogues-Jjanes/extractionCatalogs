@@ -14,7 +14,9 @@ Esteban Sánchez Oeconomo, 2022
 import re
 
 #  === 1. REGEX LECTURE RAPIDE (ne pas supprimer) ===
+# regex permettant de déterminer qu'une line commençant par plusieurs lettres majuscules est possiblement une ligne contenant le nom de l'auteur
 auteur_regex = re.compile(r'^(\S|[A-Z])[A-ZÉ]{3,}')
+# regex permettant de déterminer qu'une line commençant par plusieurs chiffres est possiblement une ligne contenant une oeuvre
 oeuvre_regex = re.compile(r'^\d{1,4}')
 
 
@@ -44,7 +46,7 @@ auteur_sans_prenom_regex = re.compile(r'^([A-ZÉ]|-)*(\.|,)')
 
 #  === 3. REGEX : SEPARATION AUTEUR/INFORMATIONS BIOGRAPHIQUES (en fonction du catalogue traité)  ===
 
-# TODO regex pour rues
+# TODO regex pour adresses
 # options : repérer mot "rue", "av." etc.
 # - vérifier si la numérotation est conforme (+ 1 ou égal à l'item antérieur)
 
@@ -57,8 +59,7 @@ limitation_auteur_infobio_regex = re.compile(r'(— .*)')
 
 # Regex à ne pas supprimer (ces regex sélectionnent uniquement les premiers caractères d'une ligne entière à identifier)
 info_complementaire_regex = re.compile(r'^(\S[A-Z]|[A-Z])[a-z]')
-ligne_minuscule_regex = re.compile(r'^(\([a-z]|[a-z])')
-
+ligne_secondaire_regex = re.compile(r'^([A-Z]|[a-z])')
 
 
 #  === 4. REGEX OEUVRE (en fonction du catalogue traité)  ===

@@ -81,7 +81,7 @@ def get_texte_alto(alto):
         tagref_entree = None
         print("\n\tATTENTION : Ce fichier ALTO a été restructuré, mais il n'est pas conforme à l'ontologie Segmonto.\n"
               "\t\tLes entrées doivent être indiquées comme des 'CustomZone:entry' lors de la segmentation.\n"
-              "\t\tVous pouvez changer manuellement, dans le fichier ALTO original, le nom du type de zone correspondant (balise <OtherTag LABEL=''>)\n"
+              "\t\tVous pouvez changer manuellement dans les fichier ALTO le nom du type de zone correspondant (balise <OtherTag LABEL=''>)\n"
               "\t\tPour plus d'informations : https://github.com/SegmOnto\n")
 
     # dictionnaire et variable utilisées pour récupérer le texte :
@@ -91,9 +91,10 @@ def get_texte_alto(alto):
     iiif_regions = []
     # Si les entrées sont conformes à Segmonto :
     if tagref_entree != None:
-        # récupération du contenu de chaque entrée, si elle contient du texte
-        # (cela permet de ne pas générer des entrées vides qui nuisent à la conformité et aux numérotations de l'output TEI)
+        # Pour chaque entrée dans le document :
         for entree in alto.xpath("//alto:TextBlock[@TAGREFS='" + tagref_entree + "']", namespaces=NS):
+            # Si l'entrée contient du texte :
+            # (cela permet de ne pas générer des entrées vides, issues d'erreurs de saisie sur eScriptorium, qui nuisent à la conformité et aux numérotations de l'output TEI)
             if entree.xpath("alto:TextLine/alto:String/@CONTENT", namespaces=NS):
                 # on asigne le texte à une variable :
                 texte_entree = entree.xpath("alto:TextLine/alto:String/@CONTENT", namespaces=NS)
@@ -108,7 +109,7 @@ def get_texte_alto(alto):
 
 def get_EntryEnd_texte(alto):
     """
-    Fonction qui permet, pour un document alto, de récupérer tout son contenu textuel dans les entryEnd
+    Récupère le contenu textuel des entryEnd d'un fichier ALTO
     :param alto: fichier alto parsé par etree
     :type alto: lxml.etree._ElementTree
     :return: liste contenant le contenu textuel de l'entry end par ligne
@@ -123,7 +124,7 @@ def get_EntryEnd_texte(alto):
         # récupération du contenu textuel par entrée
         list_entree_end_texte = alto.xpath("//alto:TextBlock[@TAGREFS='" + tagref_entree_end + "']//alto:String/@CONTENT",
                                   namespaces=NS)
-        # notons qu'une page ALTO ne peut avoir qu'un entryEnd, nous n'avons donc pas besoin de boucler la liste
+        # notons qu'une page ALTO ne peut avoir qu'un entryEnd
         return list_entree_end_texte
 
 
@@ -166,26 +167,26 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex):
     return n_line_auteur, n_line_oeuvre
 
 
-def get_oeuvres(entree_texte, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_oeuvre=1):
+def get_oeuvres(entree_texte, typeCat, titre, n_oeuvre, n_entree, n_line_oeuvre=1):
     """
     Fonction qui pour une liste donnée, récupère tout les items (oeuvre) d'une entrée et les structure.
     :param entree_texte: liste de chaîne de caractères où chaque chaîne correspond à une ligne et la liste correspond
     à l'entrée
-    :type texte: list of str
+    :type entree_texte: list of str
     :param typeCat: type du catalogue à encoder
     :type typeCat: str
     :param titre: nom du catalogue à encoder
     :type titre: str
-    :param id_n_oeuvre: numéro employé pour l'oeuvre précédente
-    :type id_n_oeuvre: int
-    :param id_n_entree: numéro employé pour l'entrée précédente
-    :type id_n_entree: int
-    :param n_line_oeuvre: liste de numéro indiquant la ligne de chaque oeuvre
+    :param n_oeuvre: numéro employé pour l'oeuvre précédente
+    :type n_oeuvre: int
+    :param n_entree: numéro employé pour l'entrée précédente
+    :type n_entree: int
+    :param n_line_oeuvre: premiere ligne oeuvre indiquée dans une liste d'oeuvres
     :type n_line_oeuvre:list of int
     :return list_item_ElementTree: liste des oeuvres chacune encodée en tei
     :rtype list_item_ElementTree: list of elementtree
-    :return id_n_oeuvre: numéro employé pour la dernière oeuvre encodée dans la fonction
-    :rtype id_n_oeuvre: int
+    :return n_oeuvre: numéro employé pour la dernière oeuvre encodée dans la fonction
+    :rtype n_oeuvre: int
     """
     # on établie la liste qu'on aura en return :
     list_item_ElementTree = []
@@ -201,43 +202,40 @@ def get_oeuvres(entree_texte, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_o
         # si la chaîne correspond à notre regex oeuvre :
         if oeuvre_regex.search(current_line):
             # on extrait le numéro de l'oeuvre avec la regex correspondante :
-            # TODO : ATTENTION : dans cette fonction n_oeuvre s'appelle id_n_oeuvre, vérifier s'il faut changer la variable
-            n_oeuvre = numero_regex.search(current_line).group(0)
+            n_oeuvre_courante = numero_regex.search(current_line).group(0)
             # on crée un élément "item" avec pour attribut le numéro de l'oeuvre :
-            item_xml = ET.Element("item", n=str(n_oeuvre))
+            item_xml = ET.Element("item", n=str(n_oeuvre_courante))
             # on ajoute cet objet à la liste d'items :
             list_item_ElementTree.append(item_xml)
             # on crée un identifiant pour l'item (titre du catalogue, numéro d'entrée, numéro d'item) :
-            identifiant_item = titre + "_e" + str(id_n_entree) + "_i" + str(n_oeuvre)
+            identifiant_item = titre + "_e" + str(n_entree) + "_i" + str(n_oeuvre_courante)
             # on ajoute cet identifiant comme attribut de l'item
             item_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_item
             # on créé un élément pour insérer le numéro de l'oeuvre :
             num_xml = ET.SubElement(item_xml, "num")
             # on créé un élément pour insérer le titre de l'oeuvre :
             title_xml = ET.SubElement(item_xml, "title")
-            # TODO : ATTENTION : dans cette fonction n_oeuvre s'appelle id_n_oeuvre, vérifier s'il faut changer la variable
-            num_xml.text = n_oeuvre
+            num_xml.text = n_oeuvre_courante
             # on ajoute au dictionnaire une entrée avec le numéro comme clé et la ligne entière comme valeur :
-            dict_item_texte[n_oeuvre] = current_line
-            # cette variable nous permettra de faire référence à la ligne courante lors de l'itération suivante :
-            n_line_item = n
-        # si la regex oeuvre ne marche pas, on vérifie si la ligne antérieur a été traité en tant qu'oeuvre
-        # et on vérifie si la ligne courante diffère par des minuscules :
-        # TODO : l'extraction ne sort pas les deuxièmes lignes...
-        elif n - 1 == n_line_item and ligne_minuscule_regex.search(current_line):
-            # TODO ce serait pas plutot [dict_item_texte[n_line_item] ? en plus, n_oeuvre n'est pas une variable valable je crois
-            dict_item_texte[n_oeuvre] = [dict_item_texte[n_oeuvre], current_line]
-            n_line_item = n
+            # (nous avons créé les balises item, mais pas encore ajouté le texte, cela sera fait postérieurement)
+            dict_item_texte[n_oeuvre_courante] = current_line
+        # si la regex oeuvre ne marche pas on vérifie si la ligne courante ne commence pas par des chiffres
+        # (Dans ce cas c'est nécessairement une deuxième ligne )
+        elif ligne_secondaire_regex.search(current_line):
+            # on ajoute à la chaîne de caractères la deuxième ligne de l'item :
+            # (la valeur de n_oeuvre_courante est celle de la ligne antérieure dès lors qu'on a sauté l'étape antérieure)
+            dict_item_texte[n_oeuvre_courante] = dict_item_texte[n_oeuvre_courante] + " " + current_line
         # ou bien on vérifie si l'information est à mettre à part avec un deuxième dictionnaire :
-        elif n - 1 == n_line_item and info_complementaire_regex.search(current_line):
-            # TODO : ATTENTION : dans cette fonction n_oeuvre s'appelle id_n_oeuvre, vérifier s'il faut changer la variable
-            dict_item_desc_texte[n_oeuvre] = current_line
-        # TODO : ATTENTION : dans cette fonction n_oeuvre s'appelle id_n_oeuvre, vérifier s'il faut changer la variable
-        elif n_oeuvre in dict_item_desc_texte:
-            print(n_oeuvre)
-            dict_item_desc_texte[n_oeuvre] = [dict_item_desc_texte[n_oeuvre], current_line]
+        # TODO cette condition n'est toujours pas satisfaisante :
+        elif info_complementaire_regex.search(current_line):
+            # TODO : ATTENTION : n_oeuvre réfère à l'oeuvre précédente, pourquoi on l'utilise ?
+            if not dict_item_desc_texte[n_oeuvre]:
+                dict_item_desc_texte[n_oeuvre] = current_line
+            else:
+                dict_item_desc_texte[n_oeuvre] = dict_item_desc_texte[n_oeuvre] + " " + current_line
         else:
             ('LIGNE NON RECONNUE: ', current_line)
+
     for el in list_item_ElementTree:
         # on récupère le numéro de l'oeuvre :
         num_item = "".join(el.xpath("@n"))
@@ -260,7 +258,7 @@ def get_oeuvres(entree_texte, typeCat, titre, id_n_oeuvre, id_n_entree, n_line_o
         name_item.text = re.sub(r'^(\S\d{1,3}|\d{1,3}).', '', texte_name_item_propre)
 
     #TODO : à quoi a servi le id_n_oeuvre ?
-    return list_item_ElementTree, id_n_oeuvre
+    return list_item_ElementTree, n_oeuvre
 
 
 def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques=True):

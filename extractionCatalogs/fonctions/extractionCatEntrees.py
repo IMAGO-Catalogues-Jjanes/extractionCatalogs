@@ -24,9 +24,9 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
     :type output:str
     :param list_xml: ElementTree contenant la balise tei list et les entrées précédemment encodées
     :type list_xml: lxml.etree._ElementTree
-    :param n_entree: numéro employé pour l'entrée précédente
+    :param n_entree: numéro employé pour l'entrée précédente / fonctionne dès lors comme index pour l'entrée courante
     :type n_entree: int
-    :param n_oeuvre: numéro employé pour l'oeuvre précédente
+    :param n_oeuvre: numéro employé pour l'oeuvre précédente / fonctionne dès lors comme index pour l'oeuvre courante
     :type n_oeuvre: int
     :return: list_entrees_page
     :rtype: list of lxml.etree._ElementTree
@@ -34,24 +34,28 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
 
     # === 1. On établit les variables initiales ===
     list_entrees_page = []
-    # un compteur pour la liste d'ID qui nous permettra de récupérer les régions des images iiif
+    # un compteur relatif aux index de la liste d'ID qui nous permettra de récupérer les régions des images iiif
     n_iiif = 0
 
-    # === 2.1. On extrait le texte des ALTO ===
+    # === 2.1. On extrait le texte de Entry des ALTO ===
     # On récupère un dictionnaire avec pour valeurs les entrées, et une liste d'ID pour couper les images :
     # ( === fonction secondaire appelée dans extractionCatEntrees_fonctions.py === )
     dict_entrees_texte, iiif_regions = get_texte_alto(document)
 
-    # === 2.2. On traite les "EntryEnd", s'il y en a ===
-    # on note qu'un document ALTO ne peut avoir qu'un entryEnd, et donc produire qu'un élément pour la liste suivante
+    # === 2.2. On extrait le texte de entryEnd des ALTO, s'il y en a ===
+    # on note qu'un document ALTO ne peut avoir qu'un entryEnd (au tout début)
     # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
     entree_end_texte = get_EntryEnd_texte(document)
-    # Si la liste d'entrées coupées n'est pas vide :
+    # on établit une variable utilisée postérieurement pour indiquer sur le terminal combien d'entryEnd non pas été correctement traitées
+    entryend_non_integree = False
+    # Si la liste n'est pas vide :
     if entree_end_texte != []:
         # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
         # (les variables auteur_regex et oeuvre_regex sont importées depuis instanciation_regex.py)
-        # TODO Fréderine dit que les entry end ne sont pas intégrées ; vérifier si auteur_regex sert à qqchose ici
+        # TODO C'est peut être ici qu'il faut préciser les regex par rapport aux adresses et même auteurs
         n_line_auteur, n_line_oeuvre = get_structure_entree(entree_end_texte, auteur_regex, oeuvre_regex)
+        print(entree_end_texte)
+        print("entry end : " + str(n_line_auteur) + str(n_line_oeuvre))
         try:
             # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
             # TODO c'est ici que ça ne marche pas : pourquoi l'item n'est pas appendé ? on dirait que get_oeuvres ne marche pas
@@ -61,11 +65,12 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
             for item in list_item_entryEnd_xml:
                 entree_end_xml.append(item)
         except Exception:
-            a_ecrire = "\n" + str(n_entree) + " " + str(entree_end_texte) + "(entryEnd)"
+            a_ecrire = "\n" + str(entree_end_texte) + "(entryEnd)"
             with open(os.path.dirname(output_file) + "/" + title + "_problems.txt", mode="a") as f:
                 f.write(a_ecrire)
+            entryend_non_integree = True
 
-    # === 3.1 On traite les entrées ===
+    # === 3.1 On traite les "Entry" ===
     # pour chaque item du dictionnaire d'entrées du document ALTO :
     for num_entree in dict_entrees_texte:
         # on assigne la valeur de la clé à une variable (c'est une liste avec les lignes constituant une entrée) :
@@ -161,7 +166,7 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
             for item in list_item_entree:
                 entree_xml.append(item)
         except Exception:
-            output_txt = "\n" + str(n_entree) + " " + str(entree_texte) + " (entrée)"
+            output_txt = "\n" + str(entree_texte) + " (entrée {})".format(str(n_entree))
             with open(os.path.dirname(output_file) + "/" + title + "_problems.txt", mode="a") as f:
                 f.write(output_txt)
         try:
@@ -182,4 +187,4 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
     if not dict_entrees_texte:
         print("\n\t\tCe fichier ne contient pas d'entrées\n")
 
-    return list_xml, list_entrees_page, n_entree, n_oeuvre
+    return list_xml, list_entrees_page, n_entree, n_oeuvre, entryend_non_integree

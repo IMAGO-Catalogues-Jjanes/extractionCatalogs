@@ -133,11 +133,14 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
     n_entree = 0
     # TODO : il me semble que n_oeuvre ne sert à rien et que sa valeur sera toujours 0
     n_oeuvre = 0
-    # compteurs pour commande -v : nombre de textlines mal situées dans le document en entrée
+    # compteurs pour vérification ALTO : nombre de textlines mal situées dans le document en entrée
     textline_dans_main_total = 0
     textline_dans_autres_total = 0
+    # compteur de problèmes d'ajout d'entryEnd :
+    entry_end_non_integrees = 0
     # on traite chaque fichier ALTO (page transcrite du catalogue), en bouclant sur le dossier indiqué :
     for fichier in liste_en_ordre:
+        # on établit un compteur pour afficher sur le terminal le numéro d'étape dans le traitement du fichier :
         etape = 0
         # exclusion des fichiers cachés (".[...]"). Cela rend le script fonctionnel sur mac (.DS_Store)
         # exclusion de fichiers autres que XML (permet la présence d'autres types de fichiers dans le dossier)
@@ -151,12 +154,14 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
             # (le chemin est construit en associant le chemin vers le dossier + le nom du fichier actuel)
             etape += 1
             print("\t" + str(etape) + " – Vérification de la conformité du fichier alto")
+            # on appelle la fonction formation_alto() dans Validations_xml.py, qui retourne une liste de problèmes
+            # et affiche des messages sur le terminal
             problemes_alto = formation_alto(directory + fichier)
             etape += 1
             print("\t" + str(etape) + " – Vérification de la structure du fichier alto")
-            # on récupère des chiffres relatifs aux problèmes :
+            # on récupère des compteurs relatifs aux problèmes avec une autre fonction dans Validations_xml.py :
             textline_dans_main, textline_dans_autres = structure_alto(directory + fichier)
-            # on rajoute ces chiffres produites à chaque itération à des listes définies préalablement :
+            # on rajoute ces chiffres produits à chaque itération à des listes définies préalablement :
             textline_dans_main_total += textline_dans_main
             textline_dans_autres_total += textline_dans_autres
             # ces listes seront appelées à la fin du script pour montrer des messages sur le terminal
@@ -197,8 +202,10 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
             # on indique le chemin vers le nouveau fichier restructuré et on le parse :
             document_alto = ET.parse(chemin_restructuration)
             # on appelle le module extractionCatEntrees.py pour extraire les données textuelles des ALTO restructurés :
-            list_xml, list_entrees, n_entree, n_oeuvre = extInfo_Cat(document_alto, typecat, titlecat, output_file,
+            list_xml, list_entrees, n_entree, n_oeuvre, entryend_non_integree = extInfo_Cat(document_alto, typecat, titlecat, output_file,
                                                                          list_xml, n_entree, n_oeuvre)
+            if entryend_non_integree == 1:
+                entry_end_non_integrees += 1
             # ajout des nouvelles entrées dans la balise list du fichier TEI :
             for entree in list_entrees:
                 list_xml.append(entree)
@@ -215,9 +222,9 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
 
     # nombre de fichiers :
     if n_fichier == 1:
-        print ("\t{} fichier traité".format(n_fichier))
+        print("\t{} fichier traité".format(n_fichier))
     else:
-        print ("\t{} fichiers traités".format(n_fichier))
+        print("\t{} fichiers traités".format(n_fichier))
 
     # nombre total d'entrées extraites dans les fichiers ALTO :
     entrees = xml_tree.find(".//list")
@@ -249,20 +256,20 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
     # si le nombre d'auteurs correspond aux entrées, il n'y a pas d'auteurs non signalés :
     if n_auteurs == n_entrees:
         if n_auteurs == 1:
-            print ("\t{} auteur signalé".format(n_auteurs))
+            print("\t{} auteur signalé".format(n_auteurs))
         else:
-            print ("\t{} auteurs signalés".format(n_auteurs))
+            print("\t{} auteurs signalés".format(n_auteurs))
     # autrement, on signale combien d'auteurs n'ont pas été signalés et quelles sont les entrées concernées :
     else:
         # nous accordons la phrase au singulier ou au pluriel selon les cas possibles :
         if n_auteurs == 1 and vides == 1:
-            print ("\t{} auteur signalé, {} auteur non signalé"
+            print("\t{} auteur signalé, {} auteur non signalé"
                    " (entrée nº : {}) ".format(n_auteurs, vides, str_vides))
         elif n_auteurs == 1:
-            print ("\t{} auteur signalé, {} auteurs non signalés"
+            print("\t{} auteur signalé, {} auteurs non signalés"
                    " (entrées nº : {}) ".format(n_auteurs, vides, str_vides))
         else:
-            print ("\t{} auteurs signalés, {} auteurs non signalés"
+            print("\t{} auteurs signalés, {} auteurs non signalés"
                    " (entrées nº : {}) ".format(n_auteurs, vides, str_vides))
 
     # nombre d'oeuvres
@@ -282,14 +289,16 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
     else:
         pass
 
-    # message pour la commande -v :
-    if textline_dans_main_total or textline_dans_autres_total >= 1:
-        print("\nAnalyse input ALTO (commande -v) :")
+    # messages relatif à la la vérification ALTO :
+    # s'il y a des chiffres à signaler :
+    print("\nAnalyse input ALTO :")
+
     if textline_dans_main_total >= 1:
         if textline_dans_main_total == 1 :
             print("\t– {} élément <TextLine> directement située sur <MainZone>".format(textline_dans_main_total))
         else:
             print("\t– {} éléments <TextLine> directement situées sur <MainZone>".format(textline_dans_main_total))
+
     if textline_dans_autres_total >= 1:
         if textline_dans_autres_total == 1:
             print("\t– {} TextLine dans des TextBlocks non conformes à l'ontologie Segmonto".format(textline_dans_autres_total))
@@ -297,15 +306,22 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
             print("\t– {} TextLines dans des TextBlocks non conformes à l'ontologie Segmonto".format(textline_dans_autres_total))
     else :
         print("\t- La segmentation est conforme à l'ontologie Segmonto")
-    """
+
     for probleme in problemes_alto:
-        print("\t– probleme")
-    """
+        print("\t– " + probleme)
 
     # messages pour le TEI produit
     print("Analyse output TEI :")
     association_xml_rng(output_file)
-
+    if entry_end_non_integrees >= 1:
+        if entry_end_non_integrees == 1:
+            print("\t– {} entryEnd n'a pas été intégrée au fichier TEI. Elle a été ajoutée au fichier {}_problems.txt".format(
+                entry_end_non_integrees, titlecat)
+            )
+        else:
+            print("\t– {} entryEnd n'ont pas été intégrées au fichier TEI. Elle ont été ajoutées au fichier {}_problems.txt".format(
+                entry_end_non_integrees, titlecat)
+            )
     chemin_absolu = os.path.abspath(extraction_directory)
     # le terminal indique à la fin le chemin absolu vers le dossier d'extraction
     print("\nChemin du dossier d'extraction : {}".format(chemin_absolu))
