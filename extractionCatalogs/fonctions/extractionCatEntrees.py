@@ -50,25 +50,22 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
     entryend_non_integree = False
     # Si la liste n'est pas vide :
     if entree_end_texte != []:
-        # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
-        # (les variables auteur_regex et oeuvre_regex sont importées depuis instanciation_regex.py)
-        # TODO C'est peut être ici qu'il faut préciser les regex par rapport aux adresses et même auteurs
-        n_line_auteur, n_line_oeuvre = get_structure_entree(entree_end_texte, auteur_regex, oeuvre_regex)
-        print(entree_end_texte)
-        print("entry end : " + str(n_line_auteur) + str(n_line_oeuvre))
-        try:
+        if entree_end_texte != None:
             # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
-            # TODO c'est ici que ça ne marche pas : pourquoi l'item n'est pas appendé ? on dirait que get_oeuvres ne marche pas
-            list_item_entryEnd_xml, n_oeuvre = get_oeuvres(entree_end_texte, title, n_oeuvre, n_entree,
-                                                           n_line_oeuvre[0])
-            entree_end_xml = list_xml.find(".//entry[@n='" + str(n_entree) + "']")
-            for item in list_item_entryEnd_xml:
-                entree_end_xml.append(item)
-        except Exception:
-            a_ecrire = "\n" + str(entree_end_texte) + "(entryEnd)"
-            with open(os.path.dirname(output_file) + "/" + title + "_problems.txt", mode="a") as f:
-                f.write(a_ecrire)
-            entryend_non_integree = True
+            # (les variables auteur_regex et oeuvre_regex sont importées depuis instanciation_regex.py)
+            n_line_auteur, n_line_oeuvre = get_structure_entree(entree_end_texte, auteur_regex, oeuvre_regex, oeuvre_recuperation_regex)
+            try:
+                # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
+                list_item_entryEnd_xml, n_oeuvre, text_name_item_propre, liste_oeuvres_terminal = get_oeuvres(entree_end_texte, typeCat, title, n_oeuvre, n_entree,
+                                                               n_line_oeuvre[0])
+                entree_end_xml = list_xml.find(".//entry[@n='" + str(n_entree) + "']")
+                for item in list_item_entryEnd_xml:
+                    entree_end_xml.append(item)
+            except Exception:
+                a_ecrire = "\n" + str(entree_end_texte) + "(entryEnd)"
+                with open(os.path.dirname(output_file) + "/" + title + "_problems.txt", mode="a") as f:
+                    f.write(a_ecrire)
+                entryend_non_integree = True
 
     # === 3.1 On traite les "Entry" ===
     # pour chaque item du dictionnaire d'entrées du document ALTO :
@@ -77,7 +74,7 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
         entree_texte = dict_entrees_texte[num_entree]
         # on récupère les numéros de ligne de l'auteur (int) et des oeuvres (list) dans l'entrée :
         # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py ===
-        n_line_auteur, n_line_oeuvre = get_structure_entree(entree_texte, auteur_regex, oeuvre_regex)
+        n_line_auteur, n_line_oeuvre = get_structure_entree(entree_texte, auteur_regex, oeuvre_regex, oeuvre_recuperation_regex)
         # TODO Comprendre cette partie du code de Juliette :
         # en commentaire, les lignes condition à activer lorsque l'on s'occupe d'un catalogue entièrement numérisé
         # à la main
@@ -161,7 +158,7 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
         try:
             # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
             # on appelle une fonction qui structure en xml les items :
-            list_item_entree, n_oeuvre = get_oeuvres(entree_texte, typeCat, title, n_oeuvre, n_entree, n_line_oeuvre[0])
+            list_item_entree, n_oeuvre, text_name_item_propre, liste_oeuvres_terminal = get_oeuvres(entree_texte, typeCat, title, n_oeuvre, n_entree, n_line_oeuvre[0])
             # on ajoute ces items à la structure xml :
             for item in list_item_entree:
                 entree_xml.append(item)
@@ -174,16 +171,12 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
         except Exception:
             print("entrée non ajoutée")
 
-        # TODO : faire en sorte que nous ayons le nom de l'auteur (le récupérer dans une variable), puis les oeuvres
         auteur = entree_texte[n_line_auteur-1]
+        print("\t      " + auteur + " :")
+        for oeuvre in liste_oeuvres_terminal:
+            print("\t\t  " + oeuvre)
+        print("\t\t  " + "Image : " + lien_iiif)
 
-        # TODO : ceci ne marche pas à tous les coups mais devrait être en principe plus correct :
-        # auteur = auteur_xml.xpath("./text()")
-
-        print("\t\t", auteur)
-        print("\t\t   auteur : " + str(n_line_auteur) + " ; oeuvres : " + str(n_line_oeuvre))
-        print("\t\t   Oeuvres : ", entree_texte)
-        print("\t\t   "+lien_iiif)
     if not dict_entrees_texte:
         print("\n\t\tCe fichier ne contient pas d'entrées\n")
 

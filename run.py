@@ -204,7 +204,7 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
             # on appelle le module extractionCatEntrees.py pour extraire les données textuelles des ALTO restructurés :
             list_xml, list_entrees, n_entree, n_oeuvre, entryend_non_integree = extInfo_Cat(document_alto, typecat, titlecat, output_file,
                                                                          list_xml, n_entree, n_oeuvre)
-            if entryend_non_integree == 1:
+            if entryend_non_integree == True:
                 entry_end_non_integrees += 1
             # ajout des nouvelles entrées dans la balise list du fichier TEI :
             for entree in list_entrees:
@@ -319,7 +319,7 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
                 entry_end_non_integrees, titlecat)
             )
         else:
-            print("\t– {} entryEnd n'ont pas été intégrées au fichier TEI. Elle ont été ajoutées au fichier {}_problems.txt".format(
+            print("\t– {} entryEnd n'ont pas été intégrées au fichier TEI. Elles ont été ajoutées au fichier {}_problems.txt".format(
                 entry_end_non_integrees, titlecat)
             )
     chemin_absolu = os.path.abspath(extraction_directory)
