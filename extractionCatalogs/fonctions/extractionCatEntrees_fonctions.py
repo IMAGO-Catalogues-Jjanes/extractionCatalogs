@@ -168,6 +168,7 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex, oeuvre_regex_
     :rtype n_line_oeuvre: list of int
     """
     n_line = 0
+    n_line_simplifiee = 0
     n_line_oeuvre = []
     n_line_auteur = 0
     # si entree_texte n'est pas None (un objet None n'est pas itérable)
@@ -185,11 +186,16 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex, oeuvre_regex_
             else:
                 # les lignes d'informations biographiques ne seront pas traitées
                 pass
-    # Si la liste relative aux oeuvres est vide, on utilise une regex moins rigoureuse susceptible de ne pas différencier des adresses :
-    if not n_line_oeuvre:
-        if oeuvre_regex.search(ligne):
-            n_line_oeuvre.append(n_line)
-    return n_line_auteur, n_line_oeuvre
+        # Si la liste relative aux oeuvres est vide, on utilise une regex moins rigoureuse susceptible de ne pas différencier des adresses :
+        regex_adresse = re.compile(r'^[*]*\d{1,4},')
+        if not n_line_oeuvre:
+            for ligne in entree_texte:
+                n_line_simplifiee += 1
+                if regex_adresse.search(ligne):
+                    pass
+                elif oeuvre_regex.search(ligne):
+                    n_line_oeuvre.append(n_line_simplifiee)
+        return n_line_auteur, n_line_oeuvre
 
 
 def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre=1):
@@ -238,8 +244,12 @@ def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre=1):
                 # on créé une deuxième balise title pour cet item bis
                 title_xml = ET.SubElement(item_xml, "title")
                 title_xml.text = current_line
+                # on met le texte dans un chaîne, on l'utilisera après pour le faire apparaître dans le terminal
+                item_bis = current_line
             # Si le numéro n'existe pas déjà (item non bis), on créé l'entrée :
             else:
+                # la valeur de la variable item_bis sera None pour la mettre facilement de côté le moment venu :
+                item_bis = None
                 # noter que l'élément le numéro avec des items bis ne sera pas en doublon dans la liste
                 list_item_numero.append(n_oeuvre_courante)
                 # on crée un élément "item" avec pour attribut le numéro de l'oeuvre :
@@ -287,6 +297,9 @@ def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre=1):
         texte_name_item_propre = nettoyer_liste_str(texte_name_item)
         # on ajoute l'oeuvre à la liste qui servira à l'afficher sur le terminal (avant la commande suivante afin de garder les numéros !):
         liste_oeuvres_terminal.append(texte_name_item_propre)
+        # on ajoute l'eventuel item bis précédement extrait, afin qu'il apparaisse après la première apparition du numéro
+        if item_bis:
+            liste_oeuvres_terminal.append(item_bis)
         # on enlève les numéros et autres signes propre à l'item :
         texte_name_item_propre = re.sub(r'^(\S\d{1,3}|\d{1,3})[.]*[ ]*[—]*[ ]*', '', texte_name_item_propre)
         # si l'item a déjà des balises de description :

@@ -38,6 +38,7 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
     # on établit deux variables utilisées postérieurement pour indiquer sur le terminal combien d'entry et d'entryEnd non pas été correctement traitées
     entry_non_integree = False
     entryend_non_integree = False
+    liste_oeuvres_terminal = []
 
     # === 2.1. On extrait le texte de Entry des ALTO ===
     # On récupère un dictionnaire avec pour valeurs les entrées, et une liste d'ID pour couper les images :
@@ -105,22 +106,27 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
                     print("\t      " + auteur_texte)
                 # on utilise la même regex pour isoler tout le texte restant, s'il y en a
                 # ATTENTION : la regex suivante doit correspondre à la variable "auteur_recuperation_regex", qui ne peut pas être indiquée en tant que variable
-                info_bio = re.sub(r'^.*\)[.]*|^[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-Z][A-ZÉ]*[,]*[ ]*[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-Z][a-zé]*[.]*|^[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.,]*[ ]*[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-Z]*[a-zé]*[.]*|^[A-ZÉ]*[a-zé][.]*', '', ligne)
+                info_bio = re.sub(r'^.*\)[.]*|^[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]+[,]*[ ]*[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ][a-zé]*[.]*|^[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.,]*[ ]*[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.]*|^[A-ZÉ]*[a-zé][.]*', '', ligne)
                 # texte_name_item_propre = re.sub(r'^(\S\d{1,3}|\d{1,3})[.]*[ ]*[—]*[ ]*', '', texte_name_item_propre)
                 if info_bio != None:
-                    liste_trait_texte.append(info_bio.replace('),', ''))
+                    if info_bio != "":
+                        liste_trait_texte.append(info_bio)
             # le reste des lignes avant la première oeuvre seront des informations biographiques
-            elif 1 < n < n_line_oeuvre[0]:
-                liste_trait_texte.append(ligne)
+            elif n > 1:
+                if n_line_oeuvre:
+                    if n < n_line_oeuvre[0]:
+                        liste_trait_texte.append(ligne)
         # si la liste d'informations complémentaires contient quelque chose :
         if liste_trait_texte:
-            # des fois, au lieu de none, la valeur sera une chaîne vide, on met cela de côté également :
-            if liste_trait_texte[0] != '':
-                trait_xml = ET.SubElement(desc_auteur_xml, "trait")
-                p_trait_xml = ET.SubElement(trait_xml, "p")
-                liste_trait_texte_propre = " ".join(liste_trait_texte)
-                p_trait_xml.text = liste_trait_texte_propre
-                print("\t      " + liste_trait_texte_propre)
+            # on créé les balises pour la description :
+            trait_xml = ET.SubElement(desc_auteur_xml, "trait")
+            p_trait_xml = ET.SubElement(trait_xml, "p")
+            # on unit toutes les chaînes de la liste :
+            liste_trait_texte_propre = " ".join(liste_trait_texte)
+            # on met la nouvelle chaîne dans la balise "p" :
+            p_trait_xml.text = liste_trait_texte_propre
+            # on affiche les informations complémentaires sur le terminal :
+            print("\t      " + liste_trait_texte_propre)
 
         # === 3.2 On traite les OEUVRES et leurs éventuelles informations complémentaires  ===
         try:
@@ -142,9 +148,11 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
             print("entrée non ajoutée")
 
         # on indique sur le terminal les oeuvres et un lien vers l'image iiif :
-        for oeuvre in liste_oeuvres_terminal:
-            print("\t\t  " + oeuvre)
-        print("\t\t  " + "Image : " + lien_iiif)
+        if liste_oeuvres_terminal:
+            for oeuvre in liste_oeuvres_terminal:
+                print("\t\t  " + oeuvre)
+        if lien_iiif:
+            print("\t\t  " + "Image : " + lien_iiif)
 
     # si le dictionnaire d'entrées est vide, on indique sur le terminal que le fichier ne contient pas d'entrées
     if not dict_entrees_texte:

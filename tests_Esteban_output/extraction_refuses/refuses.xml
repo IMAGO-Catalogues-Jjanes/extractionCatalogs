@@ -1188,6 +1188,9 @@
         <entry n="76" xml:id="refuses_e76" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f19/195,1777,1301,203/full/0/default.jpg">
           <desc>
             <name>DESSIENNE (Charles , élève de M. Martinet (Alphonse).</name>
+            <trait>
+              <p>15, rue de l’Echaudé.</p>
+            </trait>
           </desc>
           <item n="121" xml:id="refuses_e76_i121">
             <num>121</num>
@@ -1533,6 +1536,9 @@
         <entry n="98" xml:id="refuses_e98" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f23/192,642,1355,486/full/0/default.jpg">
           <desc>
             <name>FAVERGEON (Jean-Marie), né à Saint-Etienne (Loire).</name>
+            <trait>
+              <p>élève de M. Flandrin.</p>
+            </trait>
           </desc>
           <item n="162" xml:id="refuses_e98_i162">
             <num>162</num>
@@ -1547,6 +1553,9 @@
         <entry n="99" xml:id="refuses_e99" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f23/198,1138,1322,421/full/0/default.jpg">
           <desc>
             <name>FAVRE (Mademoiselle Jeanne), née à Challex (Ain).</name>
+            <trait>
+              <p>123, avenue des Champs-Elysées, Paris,</p>
+            </trait>
           </desc>
           <item n="164" xml:id="refuses_e99_i164">
             <num>164</num>
@@ -1710,6 +1719,18 @@
             <num>185</num>
             <title>Portrait de M. J. T. Vilar. GraphicZone:illustrations décoratives exécutées en 1861 dans le salon de s. M. l’impératrice au palais de l’Elysée Napoléon :</title>
             <desc>GraphicZone:illustrations décoratives exécutées en 1861 dans le salon de M. l’impératrice au palais de l’Elysée Napoléon :</desc>
+          </item>
+          <item n="1" xml:id="refuses_e108_i1">
+            <num>1</num>
+            <title>° Le Printemps;</title>
+          </item>
+          <item n="2" xml:id="refuses_e108_i2">
+            <num>2</num>
+            <title>° L’Automne;</title>
+          </item>
+          <item n="3" xml:id="refuses_e108_i3">
+            <num>3</num>
+            <title>° L’Été;</title>
           </item>
           <item n="4" xml:id="refuses_e108_i4">
             <num>4</num>
@@ -2188,9 +2209,9 @@
         </entry>
         <entry n="139" xml:id="refuses_e139" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f31/219,431,1348,289/full/0/default.jpg">
           <desc>
-            <name>JEANNENEY</name>
+            <name>JEANNENEY, éle</name>
             <trait>
-              <p>, élève de Lancrenon, et Glèyre, chez. M. Binant, 8, rue de Cléry.</p>
+              <p>̀ve de Lancrenon, et Glèyre, chez. M. Binant, 8, rue de Cléry.</p>
             </trait>
           </desc>
           <item n="241" xml:id="refuses_e139_i241">
@@ -4149,6 +4170,9 @@
         <entry n="260" xml:id="refuses_e260" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f52/215,1034,1292,345/full/0/default.jpg">
           <desc>
             <name>RENAULT (Thomas-Casimir), élève de Juine et Davi)</name>
+            <trait>
+              <p>d’Angers, 2, rue de Louvois.</p>
+            </trait>
           </desc>
           <item n="483" xml:id="refuses_e260_i483">
             <num>483</num>
@@ -4221,9 +4245,9 @@
         </entry>
         <entry n="265" xml:id="refuses_e265" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f53/252,616,1363,449/full/0/default.jpg">
           <desc>
-            <name>ROND</name>
+            <name>RONDÉ, médaille</name>
             <trait>
-              <p>É, médaille de 32 classe en 1838, 31, rue, du Champs-de-Mars.</p>
+              <p> de 32 classe en 1838, 31, rue, du Champs-de-Mars.</p>
             </trait>
           </desc>
           <item n="492" xml:id="refuses_e265_i492">
@@ -4706,9 +4730,9 @@
         </entry>
         <entry n="295" xml:id="refuses_e295" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f58/266,438,1284,214/full/0/default.jpg">
           <desc>
-            <name>TELLER</name>
+            <name>TELLER, éle</name>
             <trait>
-              <p>, élève de MM. Lequien père et de Telleer 95, rue du Faubourg Saint-Martin.</p>
+              <p>̀ve de MM. Lequien père et de Telleer 95, rue du Faubourg Saint-Martin.</p>
             </trait>
           </desc>
           <item n="553" xml:id="refuses_e295_i553">
@@ -5177,6 +5201,9 @@
         <entry n="326" xml:id="refuses_e326" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f65/181,1297,1327,495/full/0/default.jpg">
           <desc>
             <name>CHARDON (Jean), né à Andard (Maine-et-Loire)</name>
+            <trait>
+              <p>élève de M. E. Simonis ; mention honorable en 1855; premier prix de l’Ecole des beaux-arts de Bruxelles, 1853; première médaille à l’exposition de Laval, 1887; 223, faubourg Saint-Honoré.</p>
+            </trait>
           </desc>
           <item n="607" xml:id="refuses_e326_i607">
             <num>607</num>

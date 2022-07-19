@@ -17,7 +17,7 @@ import re
 #  === 1. REGEX LECTURE RAPIDE (ne pas supprimer) ===
 # Regex déterminant que des lettres majuscules correspondent à un auteur
 auteur_regex = re.compile(r'^[☙]*(\S|[A-Z])[A-ZÉ]{3,}')
-# regex déterminant que des chiffres correspondent à une oeuvre
+# regex déterminant que des chiffres correspondent à une oeuvr
 oeuvre_regex = re.compile(r'^[*]*\d{1,4}')
 # Regex : extrait le numero de l'oeuvre
 numero_regex = re.compile(r'^(\S\d{1,4}|\d{1,4})')
@@ -34,7 +34,7 @@ info_complementaire_regex = re.compile(r'^(\S[A-Z]|[A-Z])[a-z]')
 #  === 2. REGEX AUTEUR (sélectionner ou créer une nouvelle regex)  ===
 # Regex : Nom en majuscules : "NOM (Prénom)," ou "NOM (Initiale.),", ou "NOM (Prénom) ",
 # ou "NOM (Initiale.).", ou "NOM, Prénom," ou "NOM, Prénom.", ou "NOM, Prénom ", ou "Nom prénom"
-auteur_recuperation_regex = re.compile(r'^.*\)[.]*|^[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-Z][A-ZÉ]*[,]*[ ]*[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-Z][a-zé]*[.]*|^[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.,]*[ ]*[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-Z]*[a-zé]*[.]*|^[A-ZÉ]*[a-zé][.]*')
+auteur_recuperation_regex = re.compile(r'^.*\)[.]*|^[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]+[,]*[ ]*[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ][a-zé]*[.]*|^[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.,]*[ ]*[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.]*|^[A-ZÉ]*[a-zé][.]*')
 
 # Regex : auteurs délimités par un cadratin "—" final
 #auteur_recuperation_regex = re.compile(r'^.*.(?= —)')

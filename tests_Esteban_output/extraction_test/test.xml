@@ -83,94 +83,108 @@
   <text>
     <body>
       <list>
-        <entry n="1" xml:id="test_e1" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/211,351,548,114/full/0/default.jpg">
+        <entry n="1" xml:id="test_e1" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3574/57,127,410,179/full/0/default.jpg">
           <desc>
-            <name>THEVOZ et Cie</name>
+            <name>☙ COSTE (Ferdinand)</name>
             <trait>
-              <p>, 3, rue du Mont-Blanc, Genève.</p>
+              <p> P. C. P. Lacanche, par Arnay-le-Duc (Côte- d’Or).</p>
             </trait>
           </desc>
-          <item n="492" xml:id="test_e1_i492">
-            <num>492</num>
-            <title>Tête d'homme.</title>
+          <item n="166" xml:id="test_e1_i166">
+            <num>166</num>
+            <title>L’Heure au Passage au Marais. D. Ch. V.</title>
+            <desc>D. CV.</desc>
+          </item>
+          <item n="167" xml:id="test_e1_i167">
+            <num>167</num>
+            <title>Le Miroir aux Alouettes. D. Ch. V.</title>
+            <desc>D. CV.</desc>
+          </item>
+          <item n="168" xml:id="test_e1_i168">
+            <num>168</num>
+            <title>Au Déclin du jour. D. Ch. V.</title>
+            <desc>D. CV.</desc>
+          </item>
+          <item n="169" xml:id="test_e1_i169">
+            <num>169</num>
+            <title>Limier au Trait. D. Ch. V.</title>
+            <desc>D. CV.</desc>
           </item>
         </entry>
-        <entry n="2" xml:id="test_e2" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/213,488,546,110/full/0/default.jpg">
+        <entry n="2" xml:id="test_e2" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3574/47,326,340,126/full/0/default.jpg">
           <desc>
-            <name>TOUTAIN (André)</name>
+            <name>☙ CREVAUX (Em.).</name>
             <trait>
-              <p>, 20, place Vendôme, Paris.</p>
+              <p>5, rue Vavin, Paris.</p>
             </trait>
           </desc>
-          <item n="493" xml:id="test_e2_i493">
-            <num>493</num>
-            <title>Mendiants tziganes</title>
-            <desc>(Hongrie)</desc>
+          <item n="170" xml:id="test_e2_i170">
+            <num>170</num>
+            <title>Fleurs de Printemps. A. G.</title>
+            <title>170 bis Lueurs et Lumières. A. G.</title>
+            <desc>A. G.</desc>
           </item>
         </entry>
-        <entry n="3" xml:id="test_e3" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/206,617,560,108/full/0/default.jpg">
+        <entry n="3" xml:id="test_e3" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3574/40,475,418,142/full/0/default.jpg">
           <desc>
-            <name>TRÉHERVÉ (Marcel de)</name>
+            <name>☙ CROALL (W.-J.).</name>
             <trait>
-              <p>, 68, rue Blanche, Paris.</p>
+              <p>18, St Albans Road, Edimbourg (Écosse).</p>
             </trait>
           </desc>
-          <item n="494" xml:id="test_e3_i494">
-            <num>494</num>
-            <title>Portrait.</title>
+          <item n="171" xml:id="test_e3_i171">
+            <num>171</num>
+            <title>Soir d’orage. A. Ch.</title>
+            <title>171 bis Chiens de chasse en action. A. Ch.</title>
+            <desc>A. Ch.</desc>
           </item>
         </entry>
-        <entry n="4" xml:id="test_e4" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/206,754,558,108/full/0/default.jpg">
+        <entry n="4" xml:id="test_e4" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3574/40,639,411,266/full/0/default.jpg">
           <desc>
-            <name>TRÉMANT (Paul)</name>
+            <name>☙ CROFT (J. Page).</name>
             <trait>
-              <p>, 13, rue d'Alger, Nantes (Loire-Inférieure).</p>
+              <p>23, Quadrants Chambers, New Street, Birmingham (Angleterre).</p>
             </trait>
           </desc>
-          <item n="495" xml:id="test_e4_i495">
-            <num>495</num>
-            <title>Effet de soleil sur la mer à Pen-Ian</title>
-            <desc>(Morbihan)</desc>
+          <item n="172" xml:id="test_e4_i172">
+            <num>172</num>
+            <title>Misère. Br. Vu.</title>
+            <desc>BVu.</desc>
           </item>
-        </entry>
-        <entry n="5" xml:id="test_e5" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/206,883,558,146/full/0/default.jpg">
-          <desc>
-            <name>VAUQUELIN (Juien)</name>
-            <trait>
-              <p>, château de Saint- Maclou (Eure).</p>
-            </trait>
-          </desc>
-          <item n="496" xml:id="test_e5_i496">
-            <num>496</num>
-            <title>Abbaye de Jumièges.</title>
+          <item n="173" xml:id="test_e4_i173">
+            <num>173</num>
+            <title>Le Voile du Brouillard. Br.</title>
+            <desc>Br.</desc>
           </item>
-          <item n="497" xml:id="test_e5_i497">
-            <num>497</num>
-            <title>La Napoule, près Cannes.</title>
+          <item n="174" xml:id="test_e4_i174">
+            <num>174</num>
+            <title>Soleil et Brouillard. Br.</title>
+            <desc>Br.</desc>
           </item>
-        </entry>
-        <entry n="6" xml:id="test_e6" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/213,1041,553,117/full/0/default.jpg">
-          <desc>
-            <name>VEER (Georges de)</name>
-            <trait>
-              <p>, villa Henriette. Vel¬ perweg, 94, Arnheim (Pays-Bas).</p>
-            </trait>
-          </desc>
-          <item n="498" xml:id="test_e6_i498">
-            <num>498</num>
-            <title>Vue des environs d'Arnheim.</title>
+          <item n="175" xml:id="test_e4_i175">
+            <num>175</num>
+            <title>Approche de l'Orage. Br.</title>
+            <desc>Br.</desc>
           </item>
-        </entry>
-        <entry n="7" xml:id="test_e7" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/218,1179,546,107/full/0/default.jpg">
-          <desc>
-            <name>VILLALBA (Ricardo)</name>
-            <trait>
-              <p>, 52, avenue du Mesnil, La Varenne-Saint-Hilaire (Seine).</p>
-            </trait>
-          </desc>
-          <item n="499" xml:id="test_e7_i499">
-            <num>499</num>
-            <title>La Lessive.</title>
+          <item n="176" xml:id="test_e4_i176">
+            <num>176</num>
+            <title>Solitude. Ch.</title>
+            <desc>Ch.</desc>
+          </item>
+          <item n="177" xml:id="test_e4_i177">
+            <num>177</num>
+            <title>La Fin du jour. Ch.</title>
+            <desc>Ch.</desc>
+          </item>
+          <item n="178" xml:id="test_e4_i178">
+            <num>178</num>
+            <title>Prairie Fleurie. Ch.</title>
+            <desc>Ch.</desc>
+          </item>
+          <item n="179" xml:id="test_e4_i179">
+            <num>179</num>
+            <title>La Lettre bienvenue. Ch.</title>
+            <desc>Ch.</desc>
           </item>
         </entry>
       </list>
