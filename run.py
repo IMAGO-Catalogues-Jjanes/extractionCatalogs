@@ -24,7 +24,7 @@ from extractionCatalogs.fonctions.restructuration import restructuration_automat
 from extractionCatalogs.fonctions.Validations_xml import formation_alto, structure_alto, association_xml_rng
 from extractionCatalogs.fonctions.automatisation_kraken.kraken_automatic import transcription
 from extractionCatalogs.variables import contenu_TEI
-from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner_altos
+from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner_altos, nettoyer_liste_str_problemes
 
 
 # === 1.2 Création des commandes pour lancer le script sur le Terminal ====
@@ -136,8 +136,12 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
     # compteurs pour vérification ALTO : nombre de textlines mal situées dans le document en entrée
     textline_dans_main_total = 0
     textline_dans_autres_total = 0
-    # compteur de problèmes d'ajout d'entryEnd :
+    # compteur de problèmes d'ajout d'entryEnd et entry :
     entry_end_non_integrees = 0
+    entry_non_integrees = 0
+    # listes pour les problèmes à afficher dans problemes.txt :
+    entryends_non_integrees_liste = []
+    entries_non_integrees_liste = []
     # on traite chaque fichier ALTO (page transcrite du catalogue), en bouclant sur le dossier indiqué :
     for fichier in liste_en_ordre:
         # on établit un compteur pour afficher sur le terminal le numéro d'étape dans le traitement du fichier :
@@ -202,10 +206,18 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
             # on indique le chemin vers le nouveau fichier restructuré et on le parse :
             document_alto = ET.parse(chemin_restructuration)
             # on appelle le module extractionCatEntrees.py pour extraire les données textuelles des ALTO restructurés :
-            list_xml, list_entrees, n_entree, n_oeuvre, entryend_non_integree = extInfo_Cat(document_alto, typecat, titlecat, output_file,
+            list_xml, list_entrees, n_entree, n_oeuvre, entryend_non_integree, entry_non_integree, entryend_non_integree_liste, entry_non_integree_liste = \
+                extInfo_Cat(document_alto, typecat, titlecat, output_file,
                                                                          list_xml, n_entree, n_oeuvre)
+            if entryend_non_integree_liste:
+                entryends_non_integrees_liste.append(entryend_non_integree_liste)
+            if entry_non_integree_liste:
+                entries_non_integrees_liste.append(entry_non_integree_liste)
+            # si le return indique que lors de l'itération courante une entryend n'a pas été ingégrée, on augmente un compteur dédié :
             if entryend_non_integree == True:
                 entry_end_non_integrees += 1
+            if entry_non_integree == True:
+                entry_non_integrees += 1
             # ajout des nouvelles entrées dans la balise list du fichier TEI :
             for entree in list_entrees:
                 list_xml.append(entree)
@@ -313,18 +325,59 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
     # messages pour le TEI produit
     print("Analyse output TEI :")
     association_xml_rng(output_file)
+    # message si des entry n'ont pas été intégrées :
+    if entry_non_integrees >= 1:
+        if entry_non_integrees == 1:
+            print("\t– {} 'entry' n'a pas été intégrée au fichier TEI. Elle a été ajoutée au fichier {}_problems.txt".format(
+                entry_non_integrees, titlecat)
+            )
+        else:
+            print("\t– {} 'entry' n'ont pas été intégrées au fichier TEI. Elles ont été ajoutées au fichier {}_problems.txt".format(
+                entry_non_integrees, titlecat)
+            )
+    # message si des entryend n'ont pas été intégrées :
     if entry_end_non_integrees >= 1:
         if entry_end_non_integrees == 1:
-            print("\t– {} entryEnd n'a pas été intégrée au fichier TEI. Elle a été ajoutée au fichier {}_problems.txt".format(
+            print("\t– {} 'entryEnd' n'a pas été intégrée au fichier TEI. Elle a été ajoutée au fichier {}_problems.txt".format(
                 entry_end_non_integrees, titlecat)
             )
         else:
-            print("\t– {} entryEnd n'ont pas été intégrées au fichier TEI. Elles ont été ajoutées au fichier {}_problems.txt".format(
+            print("\t– {} 'entryEnd' n'ont pas été intégrées au fichier TEI. Elles ont été ajoutées au fichier {}_problems.txt".format(
                 entry_end_non_integrees, titlecat)
             )
-    chemin_absolu = os.path.abspath(extraction_directory)
+
     # le terminal indique à la fin le chemin absolu vers le dossier d'extraction
+    chemin_absolu = os.path.abspath(extraction_directory)
     print("\nChemin du dossier d'extraction : {}".format(chemin_absolu))
+
+    # === 5. Informations à mettre sur le fichier problemes.txt ====
+    print(str_vides)
+    if str_vides:
+        with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
+            f.write("\n")
+            f.write("––––––––––––––––––––––––––––––––––––––––––––")
+            f.write("\nAuteurs non signalés : ")
+            for auteur in liste_vides:
+                f.write("\n – entrée " + nettoyer_liste_str_problemes(str(auteur).replace("'", "").replace('"', '')))
+            f.write("\n")
+
+    if entries_non_integrees_liste:
+        with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
+            f.write("\n")
+            f.write("––––––––––––––––––––––––––––––––––––––––––––")
+            f.write("\nObjets 'entry' avec items non ajoutés au fichier TEI : ")
+            for chaine in entries_non_integrees_liste:
+                f.write("\n – " + nettoyer_liste_str_problemes(str(chaine)))
+            f.write("\n")
+
+    if entryends_non_integrees_liste:
+        with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
+            f.write("\n")
+            f.write("––––––––––––––––––––––––––––––––––––––––––––––")
+            f.write("\nObjets 'entryEnd' non ajoutés au fichier TEI : ")
+            for chaine in entryends_non_integrees_liste:
+                f.write("\n – " + nettoyer_liste_str_problemes(str(chaine)))
+            f.write("\n")
 
 
 # on lance la fonction définie précédemment et qui constitue la totalité du fichier

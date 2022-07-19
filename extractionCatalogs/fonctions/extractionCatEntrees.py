@@ -34,8 +34,14 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
 
     # === 1. On établit les variables initiales ===
     list_entrees_page = []
+    # on établit des listes pour récupérer des entry et entryEnd non intégrées et les ajouter au fichier problemes.txt
+    entry_non_integree_liste = []
+    entryend_non_integree_liste = []
     # un compteur relatif aux index de la liste d'ID qui nous permettra de récupérer les régions des images iiif
     n_iiif = 0
+    # on établit deux variables utilisées postérieurement pour indiquer sur le terminal combien d'entry et d'entryEnd non pas été correctement traitées
+    entry_non_integree = False
+    entryend_non_integree = False
 
     # === 2.1. On extrait le texte de Entry des ALTO ===
     # On récupère un dictionnaire avec pour valeurs les entrées, et une liste d'ID pour couper les images :
@@ -46,25 +52,24 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
     # on note qu'un document ALTO ne peut avoir qu'un entryEnd (au tout début)
     # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
     entree_end_texte = get_EntryEnd_texte(document)
-    # on établit une variable utilisée postérieurement pour indiquer sur le terminal combien d'entryEnd non pas été correctement traitées
-    entryend_non_integree = False
-    # Si la liste n'est pas vide :
+
+    # Si la liste n'est pas vide ou qu'elle n'est pas indiquée comme None :
     if entree_end_texte != []:
         if entree_end_texte != None:
             # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
-            # (les variables auteur_regex et oeuvre_regex sont importées depuis instanciation_regex.py)
+            # (les variables auteur_regex, oeuvre_regex et oeuvre_recuperation_regex sont importées depuis instanciation_regex.py)
             n_line_auteur, n_line_oeuvre = get_structure_entree(entree_end_texte, auteur_regex, oeuvre_regex, oeuvre_recuperation_regex)
             try:
                 # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
-                list_item_entryEnd_xml, n_oeuvre, text_name_item_propre, liste_oeuvres_terminal = get_oeuvres(entree_end_texte, typeCat, title, n_oeuvre, n_entree,
+                list_lignes_entryEnd_xml, n_oeuvre, text_name_item_propre, liste_oeuvres_terminal = get_oeuvres(entree_end_texte, title, n_oeuvre, n_entree,
                                                                n_line_oeuvre[0])
+                # on récupère le numéro d'entrée, qui correspond à l'antérieure car il n'a pas encore été augmenté, pour ajouter les items manquants :
                 entree_end_xml = list_xml.find(".//entry[@n='" + str(n_entree) + "']")
-                for item in list_item_entryEnd_xml:
-                    entree_end_xml.append(item)
+                for ligne in list_lignes_entryEnd_xml:
+                    entree_end_xml.append(ligne)
             except Exception:
-                a_ecrire = "\n" + str(entree_end_texte) + "(entryEnd)"
-                with open(os.path.dirname(output_file) + "/" + title + "_problems.txt", mode="a") as f:
-                    f.write(a_ecrire)
+                a_ecrire = str(entree_end_texte) + "[(entrée {}])".format(n_entree)
+                entryend_non_integree_liste.append(a_ecrire)
                 entryend_non_integree = True
 
     # === 3.1 On traite les "Entry" ===
@@ -152,20 +157,21 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
                 p_trait_xml.text = "\n".join(liste_trait_texte)
         # TODO si la regex extrait un auteur, et qu'il reste du texte après, ça veut dire que c'est mixé et non separate
         #  peut-être qu'on pourrait ainsi envisager d'enlever complètement les commandes de type de catalogue ?
+        # on a a ce stade la balise auteur (name) et les informations biographiques (trait/p) complétées
 
-        # on a a ce stade la balise auteur (name) et informations biographiques (trait/p) complétées
         # on traite les items (oeuvres) :
         try:
             # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
             # on appelle une fonction qui structure en xml les items :
-            list_item_entree, n_oeuvre, text_name_item_propre, liste_oeuvres_terminal = get_oeuvres(entree_texte, typeCat, title, n_oeuvre, n_entree, n_line_oeuvre[0])
+            list_item_entree, n_oeuvre, text_name_item_propre, liste_oeuvres_terminal = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre[0])
             # on ajoute ces items à la structure xml :
             for item in list_item_entree:
                 entree_xml.append(item)
         except Exception:
-            output_txt = "\n" + str(entree_texte) + " (entrée {})".format(str(n_entree))
-            with open(os.path.dirname(output_file) + "/" + title + "_problems.txt", mode="a") as f:
-                f.write(output_txt)
+            output_txt = str(entree_texte) + " [(entrée {})]".format(str(n_entree))
+            entry_non_integree_liste.append(output_txt)
+            entry_non_integree = True
+
         try:
             list_entrees_page.append(entree_xml)
         except Exception:
@@ -180,4 +186,4 @@ def extInfo_Cat(document, typeCat, title, output_file, list_xml, n_entree, n_oeu
     if not dict_entrees_texte:
         print("\n\t\tCe fichier ne contient pas d'entrées\n")
 
-    return list_xml, list_entrees_page, n_entree, n_oeuvre, entryend_non_integree
+    return list_xml, list_entrees_page, n_entree, n_oeuvre, entryend_non_integree, entry_non_integree, entryend_non_integree_liste, entry_non_integree_liste

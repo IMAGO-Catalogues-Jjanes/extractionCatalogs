@@ -17,15 +17,36 @@ def nettoyer_liste_str(texte):
     :return: chaîne de caractères nettoyée
     :rtype: str
     """
-    texte = texte.replace("[", "")
-    texte = texte.replace("['", "")
-    texte = texte.replace("', '", "")
     texte = texte.replace("'], '", "")
+    texte = texte.replace("['", "")
+    texte = texte.replace('["', '')
     texte = texte.replace("']", "")
+    texte = texte.replace("]", "")
+    texte = texte.replace("[", "")
     texte = texte.replace("{", "")
     texte = texte.replace("}", "")
+    texte = texte.replace('", ', '')
     return texte
 
+def nettoyer_liste_str_problemes(texte):
+    """
+    Fonction pour nettoyer une chaîne de caractères qui était auparavant une liste
+    :param texte: ancienne liste de listes (parfois de listes) transformée en chaîne de caractères
+    :type texte: str
+    :return: chaîne de caractères nettoyée
+    :rtype: str
+    """
+    texte = texte.replace(')]"', ')')
+    texte = texte.replace(")]'", ")")
+    texte = texte.replace("['[", "")
+    texte = texte.replace('["[', "")
+    texte = texte.replace("]", "")
+    texte = texte.replace("[", "")
+    texte = texte.replace("\\'", "'")
+    return texte
+
+
+    return texte
 
 def ordonner_altos(liste_en_desordre):
     """
@@ -114,7 +135,7 @@ def get_EntryEnd_texte(alto):
     Récupère le contenu textuel des entryEnd d'un fichier ALTO
     :param alto: fichier alto parsé par etree
     :type alto: lxml.etree._ElementTree
-    :return: liste contenant le contenu textuel de l'entry end par ligne
+    :return: liste contenant le contenu textuel de l'entryEnd par ligne
     :rtype: list of str
     """
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
@@ -168,14 +189,12 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex, oeuvre_regex_
     return n_line_auteur, n_line_oeuvre
 
 
-def get_oeuvres(entree_texte, typeCat, titre, n_oeuvre, n_entree, n_line_oeuvre=1):
+def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre=1):
     """
     Fonction qui pour une liste donnée, récupère tout les items (oeuvre) d'une entrée et les structure.
     :param entree_texte: liste de chaîne de caractères où chaque chaîne correspond à une ligne et la liste correspond
     à l'entrée
     :type entree_texte: list of str
-    :param typeCat: type du catalogue à encoder
-    :type typeCat: str
     :param titre: nom du catalogue à encoder
     :type titre: str
     :param n_oeuvre: numéro employé pour l'oeuvre précédente
@@ -268,7 +287,8 @@ def get_oeuvres(entree_texte, typeCat, titre, n_oeuvre, n_entree, n_line_oeuvre=
         # on enlève les numéros et autres signes propre à l'item :
         texte_name_item_propre = re.sub(r'^(\S\d{1,3}|\d{1,3})[.]*[ ]*[—]*[ ]*', '', texte_name_item_propre)
         # si l'item a déjà des balises de description :
-        # TODO : ce if ne marche pas car en réalité une deuxième ligne ne commencera pas par un tiret ou une parenthèse. Mais le else marche correctement
+        # TODO : ce if est susceptible de mettre de coté des "lignes secondaires" qui seront traitées comme des "informations complémentaires"
+        #  mais il faudrait que l'item ait en même temps les deux, ce qui est très exceptionnel
         if el.xpath(".//desc"):
             # on récupère la balise "description" :
             desc_item = el.find(".//desc")
@@ -278,8 +298,6 @@ def get_oeuvres(entree_texte, typeCat, titre, n_oeuvre, n_entree, n_line_oeuvre=
             desc_item.text = desc_item.text + " " + desc_tiret_parenthese
         # on vérifie s'il y a des tirets/parenthèses ailleurs qu'au début, ou des points avant la fin de l'item, pour repérer des informations complémentaires :
         if info_comp_tiret_parenthese_regex.search(texte_name_item_propre):
-            print(texte_name_item_propre)
-
             desc_el_xml = ET.SubElement(el, "desc")
             desc_tiret_parenthese = info_comp_tiret_parenthese_regex.search(texte_name_item_propre).group(0)
             # on enlève les tirets ou points qui nous avaient permis de localiser la chaîne :
