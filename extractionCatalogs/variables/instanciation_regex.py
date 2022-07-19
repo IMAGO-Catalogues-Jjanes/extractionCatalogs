@@ -21,8 +21,6 @@ auteur_regex = re.compile(r'^[☙]*(\S|[A-Z])[A-ZÉ]{3,}')
 oeuvre_regex = re.compile(r'^[*]*\d{1,4}')
 # Regex : extrait le numero de l'oeuvre
 numero_regex = re.compile(r'^(\S\d{1,4}|\d{1,4})')
-# Regex : auteurs sans prénom ("M. NOM," ou "Mlle NOM," ou "NOM," ou "NOM.")
-auteur_sans_prenom_regex = re.compile(r'M(.|[a-z]{2,3}) [A-ZÉa-zé]*|^([A-ZÉ]|-| )*(\.|,| )')
 # Regex : premiers caractères d'une ligne entière à identifier
 ligne_secondaire_regex = re.compile(r'^([A-ZÉ]|[a-zé])')
 # Regex : informations complementaires
@@ -36,10 +34,7 @@ info_complementaire_regex = re.compile(r'^(\S[A-Z]|[A-Z])[a-z]')
 #  === 2. REGEX AUTEUR (sélectionner ou créer une nouvelle regex)  ===
 # Regex : Nom en majuscules : "NOM (Prénom)," ou "NOM (Initiale.),", ou "NOM (Prénom) ",
 # ou "NOM (Initiale.).", ou "NOM, Prénom," ou "NOM, Prénom.", ou "NOM, Prénom ", ou "Nom prénom"
-auteur_recuperation_regex = re.compile(r'^.*\)(?=,|\.| |)|^(\S|[A-Z])[A-ZÉ]*[,]* [A-Z][a-zé]*')
-
-# Regex : Nom et prénom avec initiale en majuscule : "Nom Prénom", "Nom", "Prénom"
-# auteur_recuperation_regex = re.compile(r'^(\S|[A-ZÉ])[a-z]* [A-Z][a-zé]*|^[A-Z][a-zé]+')
+auteur_recuperation_regex = re.compile(r'^.*\)[.]*|^[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-Z][A-ZÉ]*[,]*[ ]*[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-Z][a-zé]*[.]*|^[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.,]*[ ]*[a-z]{0,2}[ ]*[a-z]{0,2}[ ]*[A-Z]*[a-zé]*[.]*|^[A-ZÉ]*[a-zé][.]*')
 
 # Regex : auteurs délimités par un cadratin "—" final
 #auteur_recuperation_regex = re.compile(r'^.*.(?= —)')

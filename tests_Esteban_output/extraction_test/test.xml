@@ -83,81 +83,95 @@
   <text>
     <body>
       <list>
-        <entry n="1" xml:id="test_e1" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f23/196,267,1324,348/full/0/default.jpg">
+        <entry n="1" xml:id="test_e1" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/211,351,548,114/full/0/default.jpg">
           <desc>
-            <name>FAURON (Emile-César), né à Lormes (Nièvre), élève</name>
+            <name>THEVOZ et Cie</name>
             <trait>
-              <p>de Paul Delaroche, 66, rue Pigalle.</p>
+              <p>, 3, rue du Mont-Blanc, Genève.</p>
             </trait>
           </desc>
-          <item n="160" xml:id="test_e1_i160">
-            <num>160</num>
-            <title>La Savonneuse.</title>
-          </item>
-          <item n="161" xml:id="test_e1_i161">
-            <num>161</num>
-            <title>Bœufs et vaches au pâturage de la ferme</title>
-            <desc>(Mor van)</desc>
+          <item n="492" xml:id="test_e1_i492">
+            <num>492</num>
+            <title>Tête d'homme.</title>
           </item>
         </entry>
-        <entry n="2" xml:id="test_e2" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f23/192,642,1355,486/full/0/default.jpg">
+        <entry n="2" xml:id="test_e2" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/213,488,546,110/full/0/default.jpg">
           <desc>
-            <name>FAVERGEON (Jean-Marie), né à Saint-Etienne (Loire).</name>
+            <name>TOUTAIN (André)</name>
             <trait>
-              <p>élève de M. Flandrin.</p>
+              <p>, 20, place Vendôme, Paris.</p>
             </trait>
           </desc>
-          <item n="162" xml:id="test_e2_i162">
-            <num>162</num>
-            <title>Intérieur.</title>
-          </item>
-          <item n="163" xml:id="test_e2_i163">
-            <num>163</num>
-            <title>Violette</title>
-            <desc>(tête)</desc>
+          <item n="493" xml:id="test_e2_i493">
+            <num>493</num>
+            <title>Mendiants tziganes</title>
+            <desc>(Hongrie)</desc>
           </item>
         </entry>
-        <entry n="3" xml:id="test_e3" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f23/198,1138,1322,421/full/0/default.jpg">
+        <entry n="3" xml:id="test_e3" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/206,617,560,108/full/0/default.jpg">
           <desc>
-            <name>FAVRE (Mademoiselle Jeanne), née à Challex (Ain).</name>
+            <name>TRÉHERVÉ (Marcel de)</name>
             <trait>
-              <p>123, avenue des Champs-Elysées, Paris,</p>
+              <p>, 68, rue Blanche, Paris.</p>
             </trait>
           </desc>
-          <item n="164" xml:id="test_e3_i164">
-            <num>164</num>
-            <title>Portrait de madame Marie Garcia.</title>
-          </item>
-          <item n="168" xml:id="test_e3_i168">
-            <num>168</num>
-            <title>Portrait de madame Doche</title>
-            <desc>(Vaudeville)</desc>
-          </item>
-          <item n="166" xml:id="test_e3_i166">
-            <num>166</num>
-            <title>Portrait de madame Judith (Comédie-Fran</title>
+          <item n="494" xml:id="test_e3_i494">
+            <num>494</num>
+            <title>Portrait.</title>
           </item>
         </entry>
-        <entry n="4" xml:id="test_e4" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f23/201,1577,1315,425/full/0/default.jpg">
+        <entry n="4" xml:id="test_e4" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/206,754,558,108/full/0/default.jpg">
           <desc>
-            <name>FAYOLLE (Mademoiselle Amélie-Léonie), élève de</name>
+            <name>TRÉMANT (Paul)</name>
             <trait>
-              <p>M. Léon Cogniet, 29, rue de Dunkerque.</p>
+              <p>, 13, rue d'Alger, Nantes (Loire-Inférieure).</p>
             </trait>
           </desc>
-          <item n="167" xml:id="test_e4_i167">
-            <num>167</num>
-            <title>Souci et inquieétude. De la bonté céleste un rayon éternel Semble se réfléchir dans le cœur maternel.</title>
-            <desc>De la bonté céleste un rayon éternel Semble se réfléchir dans le cœur maternel.</desc>
+          <item n="495" xml:id="test_e4_i495">
+            <num>495</num>
+            <title>Effet de soleil sur la mer à Pen-Ian</title>
+            <desc>(Morbihan)</desc>
           </item>
         </entry>
-        <entry n="5" xml:id="test_e5" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k114147v/f23/210,2003,1311,223/full/0/default.jpg">
+        <entry n="5" xml:id="test_e5" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/206,883,558,146/full/0/default.jpg">
           <desc>
-            <name>FESSER (madame), élève de M. Jongkind, 23, rue</name>
+            <name>VAUQUELIN (Juien)</name>
             <trait>
-              <p></p>
+              <p>, château de Saint- Maclou (Eure).</p>
             </trait>
           </desc>
+          <item n="496" xml:id="test_e5_i496">
+            <num>496</num>
+            <title>Abbaye de Jumièges.</title>
+          </item>
+          <item n="497" xml:id="test_e5_i497">
+            <num>497</num>
+            <title>La Napoule, près Cannes.</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="test_e6" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/213,1041,553,117/full/0/default.jpg">
+          <desc>
+            <name>VEER (Georges de)</name>
+            <trait>
+              <p>, villa Henriette. Vel¬ perweg, 94, Arnheim (Pays-Bas).</p>
+            </trait>
+          </desc>
+          <item n="498" xml:id="test_e6_i498">
+            <num>498</num>
+            <title>Vue des environs d'Arnheim.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="test_e7" source="https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3017/218,1179,546,107/full/0/default.jpg">
+          <desc>
+            <name>VILLALBA (Ricardo)</name>
+            <trait>
+              <p>, 52, avenue du Mesnil, La Varenne-Saint-Hilaire (Seine).</p>
+            </trait>
+          </desc>
+          <item n="499" xml:id="test_e7_i499">
+            <num>499</num>
+            <title>La Lessive.</title>
+          </item>
         </entry>
       </list>
     </body>

@@ -28,6 +28,7 @@ def nettoyer_liste_str(texte):
     texte = texte.replace('", ', '')
     return texte
 
+
 def nettoyer_liste_str_problemes(texte):
     """
     Fonction pour nettoyer une chaîne de caractères qui était auparavant une liste
@@ -45,8 +46,6 @@ def nettoyer_liste_str_problemes(texte):
     texte = texte.replace("\\'", "'")
     return texte
 
-
-    return texte
 
 def ordonner_altos(liste_en_desordre):
     """
@@ -186,6 +185,10 @@ def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex, oeuvre_regex_
             else:
                 # les lignes d'informations biographiques ne seront pas traitées
                 pass
+    # Si la liste relative aux oeuvres est vide, on utilise une regex moins rigoureuse susceptible de ne pas différencier des adresses :
+    if not n_line_oeuvre:
+        if oeuvre_regex.search(ligne):
+            n_line_oeuvre.append(n_line)
     return n_line_auteur, n_line_oeuvre
 
 
@@ -311,7 +314,7 @@ def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre=1):
     return list_item_ElementTree, n_oeuvre, texte_name_item_propre, liste_oeuvres_terminal
 
 
-def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques=True):
+def create_entry_xml(document, title, n_entree, iiif_region):
     """
     Fonction qui permet de créer toutes les balises TEI nécessaires pour encoder une entrée
     :param document: ALTO restructuré parsé
@@ -325,10 +328,12 @@ def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques
     :type infos_biographiques: bool
     :return: balises vides pour l'encodage d'une entrée
     """
+    # === 1. On créé la balise entrée et le lien iiif qui lui sera associé ===
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
     entree_xml = ET.Element("entry", n=str(n_entree))
     identifiant_entree = title + "_e" + str(n_entree)
     entree_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_entree
+
     # on récupère le lien ou le chemin vers l'image de la page, qui sera souvent un lien iiif :
     image = document.xpath("//alto:fileIdentifier/text()", namespaces=NS)
     # s'il y en a un, on le met comme valeur de l'attribut "source" :
@@ -357,23 +362,13 @@ def create_entry_xml(document, title, n_entree, iiif_region, infos_biographiques
             entree_xml.attrib["source"] = lien_iiif
     else:
         # s'il n'y a pas de lien vers une image, on donne à la balise source la valeur de filename
-        # TODO c'est ici que je pourrai eventuellement utiliser paquet img pour découper jpg
         entree_xml.attrib["source"] = document.xpath("//alto:fileName/text()", namespaces=NS)[0]
         # dans ce cas il n'y aura pas de référence iiif, mais la variable doit exister car elle est en return  :
         lien_iiif = ""
 
+    # === 2. On créé les autres balises de l'entrée ===
     # on créé la balise fille de entry :
     desc_auteur_xml = ET.SubElement(entree_xml, "desc")
     # on créé la balise nom de l'auteur :
     auteur_xml = ET.SubElement(desc_auteur_xml, "name")
-    # si pas d'informations biographiques :
-    p_trait_xml = None
-    # s'il y a des informations biographiques, on créé les balises correspondantes
-    if infos_biographiques == True:
-        # on crée une balise "trait"
-        trait_xml = ET.SubElement(desc_auteur_xml, "trait")
-        # avec une sous balise "p" :
-        p_trait_xml = ET.SubElement(trait_xml, "p")
-    else:
-        pass
-    return entree_xml, auteur_xml, p_trait_xml, lien_iiif
+    return entree_xml, desc_auteur_xml, auteur_xml, lien_iiif

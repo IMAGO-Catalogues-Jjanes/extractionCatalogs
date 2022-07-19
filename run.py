@@ -33,7 +33,6 @@ from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner
 @click.argument("directory", type=str)
 @click.argument("output", type=str, required=False)
 @click.argument("titlecat", type=str)
-@click.argument("typecat", type=click.Choice(['Nulle', "Simple", "Double", "Triple", "mixed", "separated"]), required=False)
 # options
 @click.option("-st", "--segtrans", "segmentationtranscription", is_flag=True, default=False,
               help="Automatic segmentation and transcription via kraken. Input files must be images.")
@@ -42,7 +41,7 @@ from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner
 # === 1.3 Création de la fonction principale du script ====
 # la commande "python3 run.py" lance la fonction suivante, qui reprend les variables indiquées sur le terminal ;
 # elle va elle-même faire appelle aux fonctions situées dans le dossier "fonctions"
-def extraction(directory, output, titlecat, typecat, segmentationtranscription):
+def extraction(directory, output, titlecat, segmentationtranscription):
     """
     This python script takes a directory containing images or ALTO4 files of exhibition catalogs as an input. It's
     output is a directory containing an XML-TEI encoded version of the catalog, ALTO4 restructured files and a .txt file
@@ -51,7 +50,6 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
     directory: path to the directory containing images or ALTO4 files
     output: path to the directory where the extraction directory will be created
     titlecat: name for the processed catalog's TEI and ID ; ".xml" can be included but will be automatically generated.
-    typeCat: catalog's type according to the division presented in the github of the project (Nulle, Simple, Double or Triple)
     -st: take image files as an input instead of ALTO4. Automatic segmentation and transcription occurs via kraken.
     -v: verify ALTO4 files.
     """
@@ -207,8 +205,9 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
             document_alto = ET.parse(chemin_restructuration)
             # on appelle le module extractionCatEntrees.py pour extraire les données textuelles des ALTO restructurés :
             list_xml, list_entrees, n_entree, n_oeuvre, entryend_non_integree, entry_non_integree, entryend_non_integree_liste, entry_non_integree_liste = \
-                extInfo_Cat(document_alto, typecat, titlecat, output_file,
-                                                                         list_xml, n_entree, n_oeuvre)
+                extInfo_Cat(document_alto, titlecat, list_xml, n_entree, n_oeuvre)
+
+            # si l'entrée courante n'est pas aoutée au TEI, on l'ajoute à la liste d'objets non intégrées
             if entryend_non_integree_liste:
                 entryends_non_integrees_liste.append(entryend_non_integree_liste)
             if entry_non_integree_liste:
@@ -345,13 +344,21 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
             print("\t– {} 'entryEnd' n'ont pas été intégrées au fichier TEI. Elles ont été ajoutées au fichier {}_problems.txt".format(
                 entry_end_non_integrees, titlecat)
             )
+    # on vérifie qu'il n'y ai pas de balises de description sans texte (le script est censé ne pas les créer)
+    p_texte = xml_tree.xpath(".//list//p/text()")
+    np = 0
+    for p in p_texte:
+        if not p:
+            # TODO : quelle méthode pour remove ?
+            np +=1
+    if np >= 1:
+        print("\t– " + str(np) + " balises 'p' vides")
 
     # le terminal indique à la fin le chemin absolu vers le dossier d'extraction
     chemin_absolu = os.path.abspath(extraction_directory)
     print("\nChemin du dossier d'extraction : {}".format(chemin_absolu))
 
     # === 5. Informations à mettre sur le fichier problemes.txt ====
-    print(str_vides)
     if str_vides:
         with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
             f.write("\n")
@@ -378,6 +385,7 @@ def extraction(directory, output, titlecat, typecat, segmentationtranscription):
             for chaine in entryends_non_integrees_liste:
                 f.write("\n – " + nettoyer_liste_str_problemes(str(chaine)))
             f.write("\n")
+    # on récupère les descriptions vides pour enlever les balises :
 
 
 # on lance la fonction définie précédemment et qui constitue la totalité du fichier
