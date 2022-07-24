@@ -40,12 +40,9 @@ The script output is a XML-TEI file which combines all the Alto4 transcriptions 
   - Run the virtual env: ```source env/bin/activate```
   - Install the requirements: ```pip install -r requirements.txt```
   - Check the regex used in the `fonctions/instanciation_regex.py` file
-  - Run the program (previously): `python3 run.py ./path/to/directory_with_images_or_altos title_Catalogue_date type_of_catalog name_output`</br>
-  - Run the progam (now): `python3 run.py ./path/to/Alto_or_images ./path/to/output type -n name -v -st`</br>
+  - Run the program (previously): `python3 run.py input_dir output_dir catalogue_title -st`
 
 If you want to have images as your input, you need to add the option `-st` at the end of the command. It segments and transcribes your data.</br>
-If you want to have your alto files verified (recommanded), you need to add the option `-v` at the end of the command.
-  - Choose the type of catalog you are processing
   - Stop the virtual env: ```source env/bin/deactivate```
 
 ## Repository
@@ -82,7 +79,7 @@ Both former students in Digital Humanities at Paris Science-Lettres University a
 project worked under the direction of Simon Gabay and Béatrice Joyeux-Prunel.
 
 ## Thanks to
-This project greatly benefited from the active help Simon Gabay, Claire Jahan and Frédérine Pradier
+This project greatly benefited from the active help of Simon Gabay, Claire Jahan and Frédérine Pradier
 
 ## Licence
 The code is CC-BY.</br>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>64_eb7be_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/digital/iiif/p15324coll19/7014/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT131" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT132" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT133" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT134" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT135" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT136" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT137" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT138" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT139" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT140" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT141" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT162" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT163" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT164" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/>
+    <OtherTag ID="LT49" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT50" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT51" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT52" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT53" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="1299" HEIGHT="2203" PHYSICAL_IMG_NR="64" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="1299" HEIGHT="2203">
+        <TextBlock HPOS="616" VPOS="200" WIDTH="141" HEIGHT="71" ID="eSc_textblock_a63df141" TAGREFS="BT134">
+          <Shape>
+            <Polygon POINTS="616 200 616 271 757 271 757 200"/>
+          </Shape>
+          <TextLine ID="eSc_line_376ec9e9" TAGREFS="LT49" BASELINE="629 242 733 244" HPOS="626" VPOS="209" WIDTH="105" HEIGHT="46">
+            <Shape><Polygon POINTS="628 240 626 211 727 209 731 242 729 249 626 255"/></Shape>
+	    <String CONTENT="— 58 —" HPOS="626" VPOS="209" WIDTH="105" HEIGHT="46"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="226" VPOS="274" WIDTH="905" HEIGHT="1563" ID="eSc_textblock_28aa60d7" TAGREFS="BT131">
+          <Shape>
+            <Polygon POINTS="245 274 226 1837 1131 1837 1131 274"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="261" VPOS="284" WIDTH="851" HEIGHT="245" ID="eSc_textblock_d3774094" TAGREFS="BT162">
+          <Shape>
+            <Polygon POINTS="261 284 264 529 1112 526 1112 284 772 285"/>
+          </Shape>
+          <TextLine ID="eSc_line_b6ab3b53" TAGREFS="LT49" BASELINE="395 326 751 332" HPOS="391" VPOS="279" WIDTH="360" HEIGHT="69">
+            <Shape><Polygon POINTS="395 326 395 279 751 288 751 332 747 348 391 335"/></Shape>
+	    <String CONTENT="REYNAUD (H.)." HPOS="391" VPOS="279" WIDTH="360" HEIGHT="69"/>
+          </TextLine>
+          <TextLine ID="eSc_line_2dbe25f3" TAGREFS="LT49" BASELINE="694 380 1098 385" HPOS="692" VPOS="341" WIDTH="406" HEIGHT="55">
+            <Shape><Polygon POINTS="694 380 692 343 1096 341 1098 385 1096 394 692 396"/></Shape>
+	    <String CONTENT="Cuisery (Saône-et-Loire)." HPOS="692" VPOS="341" WIDTH="406" HEIGHT="55"/>
+          </TextLine>
+          <TextLine ID="eSc_line_906385ca" TAGREFS="LT49" BASELINE="273 453 865 458" HPOS="270" VPOS="405" WIDTH="595" HEIGHT="64">
+            <Shape><Polygon POINTS="273 453 273 405 371 418 398 409 400 409 402 409 404 409 468 420 486 411 492 409 494 409 496 409 632 409 633 409 654 416 670 424 863 424 865 458 861 469 270 462"/></Shape>
+	    <String CONTENT="548 Portrait de M. J. A. D. Ch. Fr." HPOS="270" VPOS="405" WIDTH="595" HEIGHT="64"/>
+          </TextLine>
+          <TextLine ID="eSc_line_5c02525e" TAGREFS="LT49" BASELINE="277 493 971 501" HPOS="273" VPOS="451" WIDTH="698" HEIGHT="64">
+            <Shape><Polygon POINTS="277 493 277 451 971 460 971 501 968 515 273 506"/></Shape>
+	    <String CONTENT="548bis Portrait de Mme E. de L. D. Ch. Fr." HPOS="273" VPOS="451" WIDTH="698" HEIGHT="64"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="251" VPOS="635" WIDTH="867" HEIGHT="245" ID="eSc_textblock_e0fba8b7" TAGREFS="BT162">
+          <Shape>
+            <Polygon POINTS="251 635 251 880 1118 880 1118 635"/>
+          </Shape>
+          <TextLine ID="eSc_line_09d9ab15" TAGREFS="LT49" BASELINE="395 673 813 679" HPOS="391" VPOS="627" WIDTH="422" HEIGHT="59">
+            <Shape><Polygon POINTS="395 673 395 627 812 637 813 679 810 686 391 681"/></Shape>
+	    <String CONTENT="ROBERT (Docteur)." HPOS="391" VPOS="627" WIDTH="422" HEIGHT="59"/>
+          </TextLine>
+          <TextLine ID="eSc_line_7b966842" TAGREFS="LT49" BASELINE="477 726 1100 732" HPOS="474" VPOS="681" WIDTH="626" HEIGHT="71">
+            <Shape><Polygon POINTS="477 726 474 693 497 684 499 684 501 684 503 684 505 684 519 693 521 695 633 695 666 695 694 681 696 681 698 681 762 681 764 681 815 695 845 684 847 684 848 684 887 692 960 682 962 682 964 682 992 697 994 697 1056 688 1058 688 1060 688 1100 699 1100 732 1098 739 894 752 892 752 835 741 731 750 729 750 727 750 677 738 586 747 584 747 474 734"/></Shape>
+	    <String CONTENT="52, avenue de la République, Vincennes" HPOS="474" VPOS="681" WIDTH="626" HEIGHT="71"/>
+          </TextLine>
+          <TextLine ID="eSc_line_f8f9812c" TAGREFS="LT49" BASELINE="507 765 641 765" HPOS="505" VPOS="725" WIDTH="136" HEIGHT="62">
+            <Shape><Polygon POINTS="507 765 505 732 639 725 641 765 641 776 507 787"/></Shape>
+	    <String CONTENT="(Seine)." HPOS="505" VPOS="725" WIDTH="136" HEIGHT="62"/>
+          </TextLine>
+          <TextLine ID="eSc_line_18fd87d8" TAGREFS="LT49" BASELINE="271 840 591 840" HPOS="271" VPOS="789" WIDTH="320" HEIGHT="66">
+            <Shape><Polygon POINTS="271 840 271 789 591 805 591 840 591 851 271 855"/></Shape>
+	    <String CONTENT="549 En Manœuvres." HPOS="271" VPOS="789" WIDTH="320" HEIGHT="66"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="251" VPOS="993" WIDTH="858" HEIGHT="303" ID="eSc_textblock_f88bf665" TAGREFS="BT162">
+          <Shape>
+            <Polygon POINTS="251 993 251 1296 1109 1296 1109 993"/>
+          </Shape>
+          <TextLine ID="eSc_line_0285a6f0" TAGREFS="LT49" BASELINE="391 1022 843 1028" HPOS="387" VPOS="974" WIDTH="456" HEIGHT="65">
+            <Shape><Polygon POINTS="391 1022 391 974 696 985 841 978 843 1028 839 1039 387 1037"/></Shape>
+	    <String CONTENT="ROBICHE (Fernand)." HPOS="387" VPOS="974" WIDTH="456" HEIGHT="65"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e73c4e7b" TAGREFS="LT49" BASELINE="556 1079 1096 1075" HPOS="553" VPOS="1035" WIDTH="543" HEIGHT="66">
+            <Shape><Polygon POINTS="556 1079 553 1046 848 1035 850 1035 1093 1046 1096 1075 1095 1090 1014 1097 1012 1097 959 1090 938 1088 927 1090 898 1097 896 1097 894 1097 850 1090 835 1088 832 1090 813 1099 812 1099 812 1101 749 1101 747 1099 745 1099 720 1090 714 1088 556 1088"/></Shape>
+	    <String CONTENT="13, place Saint-Nicolas, Le Mans" HPOS="553" VPOS="1035" WIDTH="543" HEIGHT="66"/>
+          </TextLine>
+          <TextLine ID="eSc_line_fe50e832" TAGREFS="LT49" BASELINE="582 1116 738 1112" HPOS="578" VPOS="1077" WIDTH="160" HEIGHT="46">
+            <Shape><Polygon POINTS="582 1116 578 1081 733 1077 738 1112 736 1119 582 1123"/></Shape>
+	    <String CONTENT="(Sarthe)." HPOS="578" VPOS="1077" WIDTH="160" HEIGHT="46"/>
+          </TextLine>
+          <TextLine ID="eSc_line_d09a0257" TAGREFS="LT49" BASELINE="268 1187 586 1187" HPOS="262" VPOS="1140" WIDTH="324" HEIGHT="58">
+            <Shape><Polygon POINTS="268 1187 262 1151 277 1140 279 1140 281 1140 282 1140 284 1140 319 1149 584 1147 586 1187 586 1196 268 1198"/></Shape>
+	    <String CONTENT="550 Brouillard. Pl." HPOS="262" VPOS="1140" WIDTH="324" HEIGHT="58"/>
+          </TextLine>
+          <TextLine ID="eSc_line_13c54a55" TAGREFS="LT49" BASELINE="268 1226 817 1230" HPOS="264" VPOS="1184" WIDTH="553" HEIGHT="53">
+            <Shape><Polygon POINTS="268 1226 268 1184 545 1195 562 1189 575 1185 576 1185 578 1185 580 1185 597 1191 609 1195 661 1193 786 1185 788 1185 790 1185 817 1196 817 1230 813 1237 264 1233"/></Shape>
+	    <String CONTENT="551 Étude de Brouillard. Ch. Fr." HPOS="264" VPOS="1184" WIDTH="553" HEIGHT="53"/>
+          </TextLine>
+          <TextLine ID="eSc_line_89716f26" TAGREFS="LT49" BASELINE="270 1264 773 1270" HPOS="266" VPOS="1228" WIDTH="507" HEIGHT="62">
+            <Shape><Polygon POINTS="270 1264 268 1231 769 1228 773 1270 769 1290 701 1281 556 1285 424 1286 422 1286 420 1286 406 1279 402 1277 387 1279 319 1286 317 1286 266 1274"/></Shape>
+	    <String CONTENT="552 Étude de Paysage. Ch. Fr." HPOS="266" VPOS="1228" WIDTH="507" HEIGHT="62"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="242" VPOS="1405" WIDTH="880" HEIGHT="410" ID="eSc_textblock_5e697057" TAGREFS="BT162">
+          <Shape>
+            <Polygon POINTS="242 1405 242 1815 1122 1815 1122 1405"/>
+          </Shape>
+          <TextLine ID="eSc_line_563d8cdd" TAGREFS="LT49" BASELINE="389 1453 1091 1461" HPOS="385" VPOS="1400" WIDTH="706" HEIGHT="70">
+            <Shape><Polygon POINTS="389 1453 391 1404 422 1411 448 1404 466 1400 468 1400 470 1400 683 1402 685 1402 716 1411 731 1415 742 1411 764 1404 766 1404 768 1404 769 1404 788 1413 797 1419 918 1419 937 1417 981 1408 982 1408 1091 1420 1091 1461 1087 1470 385 1466"/></Shape>
+	    <String CONTENT="ROBLOT (Henry), PRÉS. DE LA S." HPOS="385" VPOS="1400" WIDTH="706" HEIGHT="70"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0261eddf" TAGREFS="LT49" BASELINE="468 1498 1091 1503" HPOS="464" VPOS="1464" WIDTH="627" HEIGHT="56">
+            <Shape><Polygon POINTS="468 1498 468 1464 1076 1470 1091 1503 1089 1514 889 1520 887 1520 885 1520 883 1520 874 1510 872 1510 867 1510 819 1518 817 1518 815 1518 790 1510 784 1509 773 1509 714 1518 712 1518 464 1503"/></Shape>
+	    <String CONTENT="PHOT. DE LA SOC. DES SCIENCES DE" HPOS="464" VPOS="1464" WIDTH="627" HEIGHT="56"/>
+          </TextLine>
+          <TextLine ID="eSc_line_5eab44de" TAGREFS="LT49" BASELINE="470 1543 600 1543" HPOS="468" VPOS="1492" WIDTH="132" HEIGHT="64">
+            <Shape><Polygon POINTS="470 1543 470 1492 600 1510 600 1543 598 1556 468 1553"/></Shape>
+	    <String CONTENT="SEMUR." HPOS="468" VPOS="1492" WIDTH="132" HEIGHT="64"/>
+          </TextLine>
+          <TextLine ID="eSc_line_6fff789f" TAGREFS="LT49" BASELINE="486 1599 1089 1604" HPOS="483" VPOS="1564" WIDTH="606" HEIGHT="55">
+            <Shape><Polygon POINTS="486 1599 486 1564 1087 1565 1089 1604 1087 1615 689 1619 687 1619 685 1619 683 1619 683 1617 674 1610 648 1617 646 1617 644 1617 483 1606"/></Shape>
+	    <String CONTENT="Place Notre-Dame, Semur (Côte-d'Or)." HPOS="483" VPOS="1564" WIDTH="606" HEIGHT="55"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0e342fa0" TAGREFS="LT49" BASELINE="260 1672 1087 1681" HPOS="259" VPOS="1635" WIDTH="828" HEIGHT="55">
+            <Shape><Polygon POINTS="260 1672 259 1641 745 1635 747 1635 749 1635 751 1635 762 1644 887 1637 889 1637 891 1637 916 1646 1030 1639 1032 1639 1085 1650 1087 1681 1085 1690 259 1690"/></Shape>
+	    <String CONTENT="553 Chemin de la Chaume-aux-Aulnes, en hiver." HPOS="259" VPOS="1635" WIDTH="828" HEIGHT="55"/>
+          </TextLine>
+          <TextLine ID="eSc_line_8de1e755" TAGREFS="LT49" BASELINE="391 1709 503 1712" HPOS="387" VPOS="1674" WIDTH="116" HEIGHT="53">
+            <Shape><Polygon POINTS="391 1709 391 1674 501 1683 503 1712 499 1727 387 1716"/></Shape>
+	    <String CONTENT="A. Ch." HPOS="387" VPOS="1674" WIDTH="116" HEIGHT="53"/>
+          </TextLine>
+          <TextLine ID="eSc_line_3920e224" TAGREFS="LT49" BASELINE="262 1745 848 1753" HPOS="259" VPOS="1703" WIDTH="589" HEIGHT="68">
+            <Shape><Polygon POINTS="262 1745 262 1703 847 1720 848 1753 847 1762 703 1771 701 1771 700 1771 679 1762 602 1769 600 1769 259 1756"/></Shape>
+	    <String CONTENT="554 Bords de la Loire (Jura). A. Ch." HPOS="259" VPOS="1703" WIDTH="589" HEIGHT="68"/>
+          </TextLine>
+          <TextLine ID="eSc_line_9b279229" TAGREFS="LT49" BASELINE="262 1788 630 1793" HPOS="260" VPOS="1745" WIDTH="370" HEIGHT="70">
+            <Shape><Polygon POINTS="262 1788 262 1745 363 1747 365 1747 371 1749 402 1760 426 1751 431 1749 433 1749 435 1749 455 1753 508 1764 556 1764 565 1756 573 1751 575 1751 576 1751 578 1751 628 1760 630 1793 626 1815 507 1804 457 1813 448 1813 446 1813 444 1813 440 1811 422 1804 398 1811 391 1813 389 1813 387 1813 385 1813 380 1811 367 1804 260 1808"/></Shape>
+	    <String CONTENT="555 Décembre. A. Ch." HPOS="260" VPOS="1745" WIDTH="370" HEIGHT="70"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

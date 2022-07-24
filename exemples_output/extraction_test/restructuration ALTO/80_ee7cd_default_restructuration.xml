@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>80_ee7cd_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/digital/iiif/p15324coll19/7030/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT131" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT132" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT133" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT134" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT135" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT136" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT137" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT138" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT139" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT140" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT141" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT162" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT163" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT164" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/>
+    <OtherTag ID="LT49" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT50" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT51" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT52" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT53" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="1300" HEIGHT="2202" PHYSICAL_IMG_NR="80" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="1300" HEIGHT="2202">
+        <TextBlock HPOS="52" VPOS="361" WIDTH="1187" HEIGHT="858" ID="eSc_textblock_66e0f06b" TAGREFS="BT164">
+          <Shape>
+            <Polygon POINTS="52 361 52 1219 1235 1219 1239 361"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="859" VPOS="1277" WIDTH="315" HEIGHT="102" ID="eSc_textblock_29b7125b" TAGREFS="BT138">
+          <Shape>
+            <Polygon POINTS="1158 1284 1174 1379 874 1373 859 1277"/>
+          </Shape>
+          <TextLine ID="eSc_line_9e853b64" TAGREFS="LT49" BASELINE="883 1312 1151 1312" HPOS="883" VPOS="1262" WIDTH="268" HEIGHT="70">
+            <Shape><Polygon POINTS="883 1312 883 1275 1066 1275 1087 1262 1088 1262 1088 1262 1090 1262 1090 1262 1090 1262 1092 1262 1092 1262 1092 1262 1151 1275 1151 1312 1151 1326 883 1332"/></Shape>
+	    <String CONTENT="AVANT L'ORAGE" HPOS="883" VPOS="1262" WIDTH="268" HEIGHT="70"/>
+          </TextLine>
+          <TextLine ID="eSc_line_b4c96042" TAGREFS="LT49" BASELINE="905 1357 1154 1361" HPOS="903" VPOS="1317" WIDTH="251" HEIGHT="59">
+            <Shape><Polygon POINTS="905 1357 905 1317 1154 1328 1154 1361 1153 1370 903 1376"/></Shape>
+	    <String CONTENT="Par R. SEROUT." HPOS="903" VPOS="1317" WIDTH="251" HEIGHT="59"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

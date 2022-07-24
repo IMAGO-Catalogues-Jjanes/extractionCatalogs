@@ -60,7 +60,10 @@ def structure_alto(chemin_document):
     Fonction qui permet pour un document précis, de vérifier que l'alto est construit de façon à ce que les TextBlocks
     entrées contiennent les TextLines correspondantes et que celles-ci ne sont pas directement contenues dans le
     TextBlock main. Cela impossibilite en effet l'extraction. La structure attendue est :
-    Layout > Page > PrintSpace > TextBlock > TextLine > String
+    Layout > Page > PrintSpace > TextBlock (entry) > TextLine > String
+    et non pas
+    Layout > Page > PrintSpace > TextBlock (MainZone) > TextLine > String
+
     :param document: fichier XML ALTO 4 parsé produit par l'OCR et contenant la transcription d'une page de catalogue
     """
     NS = {'alto': 'http://www.loc.gov/standards/alto/ns-v4#'}
@@ -209,8 +212,8 @@ def structure_alto(chemin_document):
                     textline_dans_autre += 1
                     n_zone_non_entree += 1
         except:
-            print("\t  L'entrée " + str(parent_textblock.attrib['ID']) + " n'a pas d'attribut TAGREF défini")
-
+            #print("\t  L'entrée " + str(parent_textblock.attrib['ID']) + " n'a pas d'attribut TAGREF défini")
+            pass
     if textline_dans_MainZone >= 1:
         print("\t  Les <TextLine> de l'objet " + str(parent_textblock.attrib['ID']) + " se trouvent directement dans une 'MainZone'")
     if textline_dans_autre >= 1:

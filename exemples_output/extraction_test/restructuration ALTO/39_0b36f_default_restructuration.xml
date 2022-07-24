@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>39_0b36f_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/digital/iiif/p15324coll19/6989/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT131" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT132" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT133" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT134" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT135" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT136" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT137" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT138" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT139" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT140" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT141" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT162" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT163" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT164" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/>
+    <OtherTag ID="LT49" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT50" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT51" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT52" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT53" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="1299" HEIGHT="2207" PHYSICAL_IMG_NR="39" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="1299" HEIGHT="2207">
+        <TextBlock HPOS="155" VPOS="274" WIDTH="931" HEIGHT="1299" ID="eSc_textblock_cbb648f4" TAGREFS="BT164">
+          <Shape>
+            <Polygon POINTS="155 274 155 1573 1086 1573 1086 274"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="551" VPOS="1640" WIDTH="527" HEIGHT="86" ID="eSc_textblock_c8dad728" TAGREFS="BT138">
+          <Shape>
+            <Polygon POINTS="1019 1640 1078 1647 1078 1675 1070 1726 815 1726 805 1682 551 1675 551 1640"/>
+          </Shape>
+          <TextLine ID="eSc_line_4e157152" TAGREFS="LT49" BASELINE="551 1668 1074 1671" HPOS="548" VPOS="1633" WIDTH="526" HEIGHT="53">
+            <Shape><Polygon POINTS="551 1668 551 1633 1072 1636 1074 1671 1070 1686 548 1684"/></Shape>
+	    <String CONTENT="LA MARCHANDE DE JOURNAUX" HPOS="548" VPOS="1633" WIDTH="526" HEIGHT="53"/>
+          </TextLine>
+          <TextLine ID="eSc_line_7b71315b" TAGREFS="LT49" BASELINE="816 1721 1069 1717" HPOS="807" VPOS="1679" WIDTH="262" HEIGHT="68">
+            <Shape><Polygon POINTS="816 1721 807 1692 816 1680 818 1680 818 1679 820 1679 822 1679 824 1679 1065 1686 1069 1717 1067 1741 969 1734 929 1745 921 1747 919 1747 918 1747 916 1747 912 1745 890 1736 816 1747"/></Shape>
+	    <String CONTENT="Par E. MAHIET." HPOS="807" VPOS="1679" WIDTH="262" HEIGHT="68"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

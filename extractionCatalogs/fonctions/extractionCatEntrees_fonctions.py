@@ -355,14 +355,12 @@ def create_entry_xml(document, title, n_entree, iiif_region):
         # on vérifie s'il s'agit d'un lien iiif en testant sa conformité :
         if entree_xml.attrib["source"].__contains__("/full/full/0/default."):
             # si c'est le cas, on récupère la découpe des entrées grâce aux ID contenus dans la variable iiif_region :
-            x = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@HPOS"), namespaces=NS)
-            y = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@VPOS"), namespaces=NS)
-            w = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@WIDTH"), namespaces=NS)
-            h = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@HEIGHT"), namespaces=NS)
+            x = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@HPOS"), namespaces=NS)[0]
+            y = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@VPOS"), namespaces=NS)[0]
+            w = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@WIDTH"), namespaces=NS)[0]
+            h = document.xpath("//alto:TextBlock[@ID='{}']/{}".format(iiif_region, "@HEIGHT"), namespaces=NS)[0]
             # on créé une chaîne avec ces données sur les régions :
             decoupe = str(x) + "," + str(y) + "," + str(w) + "," + str(h)
-            # on nettoie la chaîne, qui provient de listes :
-            decoupe = decoupe.replace("'", "").replace("[", "").replace("]", "")
             # on créée un lien iiif vers un découpage adapté pour chaque entrée :
             lien_iiif = entree_xml.attrib["source"].replace("/full/full/0/default.",
                                                             "/{region}/{size}/{rotation}/{quality}.").format(

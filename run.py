@@ -20,7 +20,7 @@ import click
 # modules du script
 from extractionCatalogs.fonctions.extractionCatEntrees import extInfo_Cat
 from extractionCatalogs.fonctions.creationTEI import creation_header
-from extractionCatalogs.fonctions.restructuration import restructuration_automatique
+from extractionCatalogs.fonctions.restructuration import restructuration_automatique, correction_imbrication_segmentation
 from extractionCatalogs.fonctions.Validations_xml import formation_alto, structure_alto, association_xml_rng
 from extractionCatalogs.fonctions.automatisation_kraken.kraken_automatic import transcription
 from extractionCatalogs.variables import contenu_TEI
@@ -140,6 +140,8 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     # listes pour les problèmes à afficher dans problemes.txt :
     entryends_non_integrees_liste = []
     entries_non_integrees_liste = []
+    # Liste pour ajouter des lignes mises de côté lors de la correction de l'imbrication des TextBlock mal saisis sur eScriptorium
+    TextLine_dans_Mainzone_liste_total = []
     # on traite chaque fichier ALTO (page transcrite du catalogue), en bouclant sur le dossier indiqué :
     for fichier in liste_en_ordre:
         # on établit un compteur pour afficher sur le terminal le numéro d'étape dans le traitement du fichier :
@@ -197,6 +199,18 @@ def extraction(directory, output, titlecat, segmentationtranscription):
                         chemin_restructuration = fichier_input
                 else:
                     pass
+
+            # === 3.3 restructuration eventuelle de la segmentation des ALTO en input ====
+            # On appelle une fonction qui vérifie que l'imbrication des éléments du fichier ALTO est correcte.
+            # Si ce n'est pas le cas, la fonction corrige les problèmes
+            etape += 1
+            print("\t" + str(etape) + " – Vérification de l'imbrication des régions saisies sur eScriptorium ")
+            chemin_resegmentation, TextLine_dans_Mainzone_liste = correction_imbrication_segmentation(chemin_restructuration)
+            # S'il y a eu une correction, on actualise le chemin de traitement vers un nouveau fichier produit :
+            if chemin_resegmentation:
+                chemin_restructuration = chemin_resegmentation
+            if TextLine_dans_Mainzone_liste:
+                TextLine_dans_Mainzone_liste_total.append(TextLine_dans_Mainzone_liste)
 
             # === 4. Extraction des entrées ====
             etape += 1
@@ -304,6 +318,17 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     # s'il y a des chiffres à signaler :
     print("\nAnalyse input ALTO :")
 
+    if TextLine_dans_Mainzone_liste_total :
+        lignes_chiffre = 0
+        for lines in TextLine_dans_Mainzone_liste_total:
+            for line in lines:
+                lignes_chiffre +=1
+        if lignes_chiffre == 1:
+            print("\t– {} ligne non traitée fait potentiellement partie des entrées du catalogue. Elle a été ajoutée au fichier {}_problems.txt".format(lignes_chiffre, titlecat))
+        else:
+            print("\t– {} lignes non traitées font potentiellement partie des entrées du catalogue. Elles ont été ajoutées au fichier {}_problems.txt".format(lignes_chiffre, titlecat))
+
+
     if textline_dans_main_total >= 1:
         if textline_dans_main_total == 1 :
             print("\t– {} élément <TextLine> directement située sur <MainZone>".format(textline_dans_main_total))
@@ -384,6 +409,17 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             f.write("\nObjets 'entryEnd' non ajoutés au fichier TEI : ")
             for chaine in entryends_non_integrees_liste:
                 f.write("\n – " + nettoyer_liste_str_problemes(str(chaine)))
+            f.write("\n")
+
+    if TextLine_dans_Mainzone_liste:
+        with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
+            f.write("\n")
+            f.write("––––––––––––––––––––––––––––––––––––––––––––––")
+            f.write("\nObjets 'TextLine' pouvant constituer des lignes de catalogue non ajoutées au fichier TEI ")
+            for lines in TextLine_dans_Mainzone_liste_total:
+                for line in lines:
+                    line = "\n – " + line
+                    f.write(line)
             f.write("\n")
     # on récupère les descriptions vides pour enlever les balises :
 
