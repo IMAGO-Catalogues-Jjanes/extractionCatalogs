@@ -1,3 +1,8 @@
+"""
+Cette fonction est appelée avec la commande optionnelle "-st"
+Elle n'est pas fonctionnelle en l'État ; il faudrait l'adapter aux évolutions de kraken
+"""
+
 import subprocess
 import os
 

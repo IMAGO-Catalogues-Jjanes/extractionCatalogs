@@ -218,18 +218,18 @@
           <Shape>
                                                 <Polygon POINTS="589 4112 669 4112 669 4173 589 4173"/>
                                         </Shape>
-        <TextLine ID="tl_34" TAGREFS="LT1" BASELINE="590 4172 668 4170" HPOS="590.0" VPOS="4113.0" WIDTH="78.0" HEIGHT="59.0">
+        </TextBlock>
+        <TextBlock HPOS="618.0" VPOS="4166.0" WIDTH="25.0" HEIGHT="17.0" ID="eSc_textblock_e5b7f2ab" TAGREFS="BT8">
+          <Shape>
+                                                <Polygon POINTS="618 4183 618 4166 643 4166 643 4183"/>
+                                        </Shape>
+          <TextLine ID="tl_34" TAGREFS="LT1" BASELINE="590 4172 668 4170" HPOS="590.0" VPOS="4113.0" WIDTH="78.0" HEIGHT="59.0">
             <Shape>
                                                   <Polygon POINTS="590 4113 668 4113 668 4172 590 4172"/>
                                                 </Shape>
             <String CONTENT="56" HPOS="590.0" VPOS="4113.0" WIDTH="78.0" HEIGHT="59.0"/>
           </TextLine>
         </TextBlock>
-        <TextBlock HPOS="618.0" VPOS="4166.0" WIDTH="25.0" HEIGHT="17.0" ID="eSc_textblock_e5b7f2ab" TAGREFS="BT8">
-          <Shape>
-                                                <Polygon POINTS="618 4183 618 4166 643 4166 643 4183"/>
-                                        </Shape>
-          </TextBlock>
       </PrintSpace>
     </Page>
   </Layout>

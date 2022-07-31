@@ -21,7 +21,8 @@ import click
 from extractionCatalogs.fonctions.extractionCatEntrees import extInfo_Cat
 from extractionCatalogs.fonctions.creationTEI import creation_header
 from extractionCatalogs.fonctions.restructuration import restructuration_automatique, correction_imbrication_segmentation
-from extractionCatalogs.fonctions.Validations_xml import formation_alto, structure_alto, association_xml_rng
+from extractionCatalogs.fonctions.Validations_xml import conformite_Segmonto, association_xml_rng
+from extractionCatalogs.fonctions.XMLtoCSV import XML_to_CSV
 from extractionCatalogs.fonctions.automatisation_kraken.kraken_automatic import transcription
 from extractionCatalogs.variables import contenu_TEI
 from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner_altos, nettoyer_liste_str_problemes
@@ -54,6 +55,13 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     -v: verify ALTO4 files.
     """
     # === 1.4 Création d'un dossier pour les output et traitement des options activées ====
+
+    # si les chemins input ou output ne terminent pas par "/", le script ne tourne pas.
+    # si ces "/" ne sont pas indiqués par l'utilisateur, on les ajoute pour éviter tout problème :
+    if directory[-1] != "/":
+        directory = directory + "/"
+    if output[-1] != "/":
+        output = output + "/"
 
     # si le nom de l'output contient l'extension ".xml", on l'enlève (cela est nécessaire pour creer l'ID TEI) :
     if titlecat.__contains__(".xml"):
@@ -140,6 +148,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     # listes pour les problèmes à afficher dans problemes.txt :
     entryends_non_integrees_liste = []
     entries_non_integrees_liste = []
+    problemes_Segmonto_total = []
     # Liste pour ajouter des lignes mises de côté lors de la correction de l'imbrication des TextBlock mal saisis sur eScriptorium
     TextLine_dans_Mainzone_liste_total = []
     # on traite chaque fichier ALTO (page transcrite du catalogue), en bouclant sur le dossier indiqué :
@@ -151,46 +160,57 @@ def extraction(directory, output, titlecat, segmentationtranscription):
         if not fichier.startswith(".") and fichier.__contains__(".xml"):
             # on ajoute le ficher au comptage et on l'indique sur le terminal :
             n_fichier += 1
-            print(str(n_fichier) + " – Traitement de " + fichier)
+            # on construit pour chaque fichier un message précédé par une barre de signes "=" afin que le message sur le terminal soit visuellement clair
+            message = str(n_fichier) + " – Traitement de " + fichier
+            barre = ""
+            # on boucle sur le nombre de caracteres du message, afin que la barre soit adaptée à sa taille
+            for caractere in message:
+                barre += "="
+            print("\n")
+            print(barre)
+            print(message)
 
             # === 3.2 On analyse la conformité et la structure des fichiers ALTO ====
             # on appelle les fonctions du module Validations_xml.py
             # (le chemin est construit en associant le chemin vers le dossier + le nom du fichier actuel)
             etape += 1
-            print("\t" + str(etape) + " – Vérification de la conformité du fichier alto")
-            # on appelle la fonction formation_alto() dans Validations_xml.py, qui retourne une liste de problèmes
-            # et affiche des messages sur le terminal
-            problemes_alto = formation_alto(directory + fichier)
-            etape += 1
-            print("\t" + str(etape) + " – Vérification de la structure du fichier alto")
-            # on récupère des compteurs relatifs aux problèmes avec une autre fonction dans Validations_xml.py :
-            textline_dans_main, textline_dans_autres = structure_alto(directory + fichier)
+            print("\t" + str(etape) + " – Vérification de la conformité à l'ontologie Segmonto")
+
+            # on récupère des compteurs et une liste relatifs aux problèmes de conformité avec l'ontologie Segmonto dans Validations_xml.py
+            textline_dans_main, textline_dans_autres, problemes_Segmonto = conformite_Segmonto(directory + fichier)#
+
+            # on ajoute la liste à une liste contenant les problèmes de tous les fichiers :
+            if problemes_Segmonto:
+                problemes_Segmonto_total.append(problemes_Segmonto)
+            else:
+                print("\t   ✓ le fichier issu d'eScriptorium est conforme à l'ontologie Segmonto")
+
             # on rajoute ces chiffres produits à chaque itération à des listes définies préalablement :
             textline_dans_main_total += textline_dans_main
             textline_dans_autres_total += textline_dans_autres
             # ces listes seront appelées à la fin du script pour montrer des messages sur le terminal
 
-            # === 3.2 Restructuration des ALTO en input ====
+            # === 3.3 Restructuration des ALTO en input ====
+            etape += 1
+            print('\t{} – Restructuration du fichier'.format(etape))
             # on appelle le module restructuration.py pour appliquer la feuille de transformation
             # Restructuration_alto.xsl aux fichiers en input et récupérer des fichiers avec les textLines en ordre :
             # (la fonction restructuration_automatique applique la feuille et retourne le chemin vers le fichier créé)
             chemin_restructuration = restructuration_automatique(directory, fichier, extraction_directory)
-            etape += 1
-            print("\t" + str(etape) + ' – Restructuration du fichier effectuée (fichier "_restructuration.xml" créé)')
             # si le fichier en input contient "restructuration" dans son nom, on le compare a son output pour
             # détérminer s'il s'agit d'un fichier qui avait déjà été restructuré. Si c'est le cas, deux options :
             if fichier.__contains__("restructuration"):
                 fichier_input = directory + fichier
                 fichier_output = chemin_restructuration
                 if open(fichier_input).read() == open(fichier_output).read():
-                    print("\tATTENTION : ce fichier avait déjà été restructuré ; "
+                    print("\n\t[!] ATTENTION : ce fichier avait déjà été restructuré ; "
                           "le nouveau fichier produit est identique.")
                     # on demande sur le terminal si l'on souhaite l'éliminer :
-                    if input("Souhaitez vous l'éliminer et utiliser l'original à la place ? [y/n]") == "n":
-                        print("--> Non. Le nouveau fichier restructuré sera utilisé.")
+                    if input("\tSouhaitez vous l'éliminer et utiliser l'original à la place ? [y/n]") == "n":
+                        print("\t--> Non. Le nouveau fichier restructuré sera utilisé.")
                     else:
                         # si la réponse est oui, on élimine le fichier restructuré en doublon :
-                        print("--> Oui. Le fichier original sera utilisé à la place.")
+                        print("\t--> Oui. Le fichier original sera utilisé à la place.\n")
                         os.remove(chemin_restructuration)
                         # si le dosser restructuration en résulte vide, on l'élimine :
                         if not os.listdir(os.path.dirname(chemin_restructuration)):
@@ -199,12 +219,14 @@ def extraction(directory, output, titlecat, segmentationtranscription):
                         chemin_restructuration = fichier_input
                 else:
                     pass
+            if chemin_restructuration:
+                print("\t   ✓ fichier '{}_restructuration.xml' créé".format(fichier))
 
-            # === 3.3 restructuration eventuelle de la segmentation des ALTO en input ====
+            # === 3.4 restructuration eventuelle de la segmentation des ALTO en input ====
             # On appelle une fonction qui vérifie que l'imbrication des éléments du fichier ALTO est correcte.
             # Si ce n'est pas le cas, la fonction corrige les problèmes
             etape += 1
-            print("\t" + str(etape) + " – Vérification de l'imbrication des régions saisies sur eScriptorium ")
+            print("\t" + str(etape) + " – Vérification de l'imbrication des zones saisies sur eScriptorium ")
             chemin_resegmentation, TextLine_dans_Mainzone_liste = correction_imbrication_segmentation(chemin_restructuration)
             # S'il y a eu une correction, on actualise le chemin de traitement vers un nouveau fichier produit :
             if chemin_resegmentation:
@@ -215,6 +237,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             # === 4. Extraction des entrées ====
             etape += 1
             print("\t" + str(etape) + " – Extraction :")
+            print("\n")
             # on indique le chemin vers le nouveau fichier restructuré et on le parse :
             document_alto = ET.parse(chemin_restructuration)
             # on appelle le module extractionCatEntrees.py pour extraire les données textuelles des ALTO restructurés :
@@ -234,22 +257,30 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             # ajout des nouvelles entrées dans la balise list du fichier TEI :
             for entree in list_entrees:
                 list_xml.append(entree)
-            print("\t" + fichier + " traité")
+
+    # === 5. Outputs : TEI et CSV ====
 
     # on ajoute ou on redonne au nom du catalogue la terminaison en ".xml"
     if not output_file.__contains__(".xml"):
         output_file = output_file + ".xml"
     # écriture du résultat de tout le processus de création TEI (arbre, entrées extraites) dans un fichier xml :
     xml_tree.write(output_file, pretty_print=True, encoding="UTF-8", xml_declaration=True)
+    # on créé le fichier CSV
+    chemin_csv = XML_to_CSV(output_file, extraction_directory, titlecat)
+
+
+
 
     # === 5. Informations à afficher sur le terminal ====
-    print("\nRésumé :")
+    print("\n")
+    print(barre)
+    print("    Résumé :")
 
     # nombre de fichiers :
     if n_fichier == 1:
-        print("\t{} fichier traité".format(n_fichier))
+        print("\t{} page de catalogue traitée [fichier ALTO]".format(n_fichier))
     else:
-        print("\t{} fichiers traités".format(n_fichier))
+        print("\t{} pages de catalogue traitées [fichiers ALTO]".format(n_fichier))
 
     # nombre total d'entrées extraites dans les fichiers ALTO :
     entrees = xml_tree.find(".//list")
@@ -257,15 +288,15 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     for entree in entrees:
         n_entrees +=1
     if n_entrees == 1:
-        print("\t{} entrée extraite".format(n_entrees))
+        print("\t{} entrée de catalogue extraite [TextBlock 'CustomZone:entry']".format(n_entrees))
     else:
-        print("\t{} entrées extraites".format(n_entrees))
+        print("\t{} entrées de catalogue extraites [TextBlocks 'CustomZone:entry']".format(n_entrees))
 
-    # balises name vides (auteurs non signalés)
-    auteur_vide = xml_tree.xpath(".//list//name[not(node())]")
+    # balises name vides (exposants non signalés)
+    exposant_vide = xml_tree.xpath(".//list//name[not(node())]")
     vides = 0
     liste_vides = []
-    for vide in auteur_vide:
+    for vide in exposant_vide:
         vides += 1
         # on indique dans une liste les entrées concernées
         liste_vides.append(vide.xpath("./../../@n"))
@@ -273,29 +304,32 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     str_vides = str(liste_vides)
     str_vides = str_vides.replace("[", "").replace("]", "")
 
-    # nombre d'auteurs signalés et non signalés
-    auteurs = xml_tree.xpath(".//list//name/text()")
-    n_auteurs = 0
-    for auteur in auteurs:
-        n_auteurs += 1
-    # si le nombre d'auteurs correspond aux entrées, il n'y a pas d'auteurs non signalés :
-    if n_auteurs == n_entrees:
-        if n_auteurs == 1:
-            print("\t{} auteur signalé".format(n_auteurs))
+    # nombre d'exposants signalés et non signalés exposant
+    exposants = xml_tree.xpath(".//list//name/text()")
+    n_exposants = 0
+    for exposant in exposants:
+        n_exposants += 1
+    # si le nombre d'exposants correspond aux entrées, il n'y a pas d'exposants non signalés :
+    if n_exposants == n_entrees:
+        if n_exposants == 1:
+            print("\t{} exposant signalé".format(n_exposants))
         else:
-            print("\t{} auteurs signalés".format(n_auteurs))
-    # autrement, on signale combien d'auteurs n'ont pas été signalés et quelles sont les entrées concernées :
+            print("\t{} exposants signalés".format(n_exposants))
+    # autrement, on signale combien d'exposants n'ont pas été signalés et quelles sont les entrées concernées :
     else:
         # nous accordons la phrase au singulier ou au pluriel selon les cas possibles :
-        if n_auteurs == 1 and vides == 1:
-            print("\t{} auteur signalé, {} auteur non signalé"
-                   " (entrée nº : {}) ".format(n_auteurs, vides, str_vides))
-        elif n_auteurs == 1:
-            print("\t{} auteur signalé, {} auteurs non signalés"
-                   " (entrées nº : {}) ".format(n_auteurs, vides, str_vides))
-        else:
-            print("\t{} auteurs signalés, {} auteurs non signalés"
-                   " (entrées nº : {}) ".format(n_auteurs, vides, str_vides))
+        if n_exposants == 1 and vides == 1:
+            print("\t{} exposant signalé, {} exposant non signalé"
+                   " (entrée nº : {}) ".format(n_exposants, vides, str_vides))
+        elif n_exposants == 1 and vides > 1:
+            print("\t{} exposant signalé, {} exposants non signalés"
+                  " (entrée nº : {}) ".format(n_exposants, vides, str_vides))
+        elif n_exposants > 1 and vides == 1:
+            print("\t{} exposants signalés, {} exposant non signalé"
+                   " (entrée nº : {}) ".format(n_exposants, vides, str_vides))
+        elif n_exposants > 1 and vides > 1:
+            print("\t{} exposants signalés, {} exposants non signalés"
+                  " (entrées nº : {}) ".format(n_exposants, vides, str_vides))
 
     # nombre d'oeuvres
     oeuvres = xml_tree.findall(".//item")
@@ -309,14 +343,14 @@ def extraction(directory, output, titlecat, segmentationtranscription):
 
     # avertissement si aucune entrée n'a été extraite
     if n_entrees == 0:
-        print("\nATTENTION : Aucune entrée n'a été extraite des fichiers restructurés ; veuillez vérifier vos "
-              "instanciations d'extraction regex ou la structure des ALTO en input")
+        print("\n[!] ATTENTION : Aucune entrée n'a été extraite des fichiers restructurés ; veuillez vérifier les "
+              "regex utilisées pour l'extraction ou la structure des fichiers ALTO en input")
     else:
         pass
 
     # messages relatif à la la vérification ALTO :
     # s'il y a des chiffres à signaler :
-    print("\nAnalyse input ALTO :")
+    print("\n    Analyse des fichiers en input [ALTO] :")
 
     if TextLine_dans_Mainzone_liste_total :
         lignes_chiffre = 0
@@ -324,73 +358,58 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             for line in lines:
                 lignes_chiffre +=1
         if lignes_chiffre == 1:
-            print("\t– {} ligne non traitée fait potentiellement partie des entrées du catalogue. Elle a été ajoutée au fichier {}_problems.txt".format(lignes_chiffre, titlecat))
+            print("\t[!] {} ligne non traitée fait potentiellement partie des entrées du catalogue. Elle a été ajoutée au fichier {}_problems.txt".format(lignes_chiffre, titlecat))
         else:
-            print("\t– {} lignes non traitées font potentiellement partie des entrées du catalogue. Elles ont été ajoutées au fichier {}_problems.txt".format(lignes_chiffre, titlecat))
+            print("\t[!] {} lignes non traitées font potentiellement partie des entrées du catalogue. Elles ont été ajoutées au fichier {}_problems.txt".format(lignes_chiffre, titlecat))
 
-
-    if textline_dans_main_total >= 1:
-        if textline_dans_main_total == 1 :
-            print("\t– {} élément <TextLine> directement située sur <MainZone>".format(textline_dans_main_total))
-        else:
-            print("\t– {} éléments <TextLine> directement situées sur <MainZone>".format(textline_dans_main_total))
-
-    if textline_dans_autres_total >= 1:
-        if textline_dans_autres_total == 1:
-            print("\t– {} TextLine dans des TextBlocks non conformes à l'ontologie Segmonto".format(textline_dans_autres_total))
-        else:
-            print("\t– {} TextLines dans des TextBlocks non conformes à l'ontologie Segmonto".format(textline_dans_autres_total))
-    else :
-        print("\t- La segmentation est conforme à l'ontologie Segmonto")
-
-    for probleme in problemes_alto:
-        print("\t– " + probleme)
+    n_fichiers_problemes_alto = 0
+    for fichier in problemes_Segmonto_total:
+        n_fichiers_problemes_alto +=1
+    if n_fichiers_problemes_alto == 0 :
+        print("\t✓ La segmentation des pages est conforme à l'ontologie Segmonto")
+    elif n_fichiers_problemes_alto == 1:
+        print("\t[!] {} fichier non conforme à l'ontologie Segmonto. Consulter le fichier {}_problemes.text.".format(
+                len(problemes_Segmonto_total), titlecat))
+    else:
+        print("\t[!] {} fichiers non conformes à l'ontologie Segmonto. Consulter le fichier {}_problemes.text.".format(
+            len(problemes_Segmonto_total), titlecat))
 
     # messages pour le TEI produit
-    print("Analyse output TEI :")
+    print("    Analyse du fichier en output [TEI] :")
     association_xml_rng(output_file)
     # message si des entry n'ont pas été intégrées :
     if entry_non_integrees >= 1:
         if entry_non_integrees == 1:
-            print("\t– {} 'entry' n'a pas été intégrée au fichier TEI. Elle a été ajoutée au fichier {}_problems.txt".format(
+            print("\t[!] {} entrée de catalogue [TextBlock 'CustomZone:entry'] n'a pas été intégrée au fichier TEI. Elle a été ajoutée au fichier {}_problems.txt".format(
                 entry_non_integrees, titlecat)
             )
         else:
-            print("\t– {} 'entry' n'ont pas été intégrées au fichier TEI. Elles ont été ajoutées au fichier {}_problems.txt".format(
+            print("\t[!] {} entrées de catalogue [TextBlock 'CustomZone:entry'] n'ont pas été intégrées au fichier TEI. Elles ont été ajoutées au fichier {}_problems.txt".format(
                 entry_non_integrees, titlecat)
             )
     # message si des entryend n'ont pas été intégrées :
     if entry_end_non_integrees >= 1:
         if entry_end_non_integrees == 1:
-            print("\t– {} 'entryEnd' n'a pas été intégrée au fichier TEI. Elle a été ajoutée au fichier {}_problems.txt".format(
+            print("\t[!] {} fin d'entrée de catalogue [TextBlock 'CustomZone:entryEnd'] n'a pas été intégrée au fichier TEI. Elle a été ajoutée au fichier {}_problems.txt".format(
                 entry_end_non_integrees, titlecat)
             )
         else:
-            print("\t– {} 'entryEnd' n'ont pas été intégrées au fichier TEI. Elles ont été ajoutées au fichier {}_problems.txt".format(
+            print("\t[!] {} fins d'entrée de catalogue [TextBlock 'CustomZone:entryEnd'] n'ont pas été intégrées au fichier TEI. Elles ont été ajoutées au fichier {}_problems.txt".format(
                 entry_end_non_integrees, titlecat)
             )
-    # on vérifie qu'il n'y ai pas de balises de description sans texte (le script est censé ne pas les créer)
-    p_texte = xml_tree.xpath(".//list//p/text()")
-    np = 0
-    for p in p_texte:
-        if not p:
-            # TODO : quelle méthode pour remove ?
-            np +=1
-    if np >= 1:
-        print("\t– " + str(np) + " balises 'p' vides")
 
     # le terminal indique à la fin le chemin absolu vers le dossier d'extraction
     chemin_absolu = os.path.abspath(extraction_directory)
-    print("\nChemin du dossier d'extraction : {}".format(chemin_absolu))
+    print("\n    Chemin du dossier d'extraction : {}\n".format(chemin_absolu))
 
     # === 5. Informations à mettre sur le fichier problemes.txt ====
     if str_vides:
         with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
             f.write("\n")
             f.write("––––––––––––––––––––––––––––––––––––––––––––")
-            f.write("\nAuteurs non signalés : ")
-            for auteur in liste_vides:
-                f.write("\n – entrée " + nettoyer_liste_str_problemes(str(auteur).replace("'", "").replace('"', '')))
+            f.write("\nexposants non signalés : ")
+            for exposant in liste_vides:
+                f.write("\n – entrée " + nettoyer_liste_str_problemes(str(exposant).replace("'", "").replace('"', '')))
             f.write("\n")
 
     if entries_non_integrees_liste:
@@ -411,7 +430,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
                 f.write("\n – " + nettoyer_liste_str_problemes(str(chaine)))
             f.write("\n")
 
-    if TextLine_dans_Mainzone_liste:
+    if TextLine_dans_Mainzone_liste_total:
         with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
             f.write("\n")
             f.write("––––––––––––––––––––––––––––––––––––––––––––––")
@@ -421,8 +440,18 @@ def extraction(directory, output, titlecat, segmentationtranscription):
                     line = "\n – " + line
                     f.write(line)
             f.write("\n")
-    # on récupère les descriptions vides pour enlever les balises :
 
+    if problemes_Segmonto_total:
+        with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
+            f.write("\n")
+            f.write("––––––––––––––––––––––––––––––––––––––––––––––")
+            f.write("\nFichiers ALTO en input :")
+            for problemes in problemes_Segmonto_total:
+                for probleme in problemes:
+                    line = "\n– " + probleme.replace("[!]", "").replace("\t   ", "").replace("\n", "")
+                    f.write(line)
+            f.write("\n")
+    # on récupère les descriptions vides pour enlever les balises :
 
 # on lance la fonction définie précédemment et qui constitue la totalité du fichier
 # on vérifie que ce fichier est couramment exécuté (et non pas appelé sur un autre module)

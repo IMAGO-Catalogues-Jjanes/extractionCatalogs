@@ -4,6 +4,7 @@ Author:
 Juliette Janès, 2021
 Esteban Sánchez Oeconomo, 2022
 """
+import re
 
 from lxml import etree as ET
 from extractionCatalogs.variables.instanciation_regex import *
@@ -150,57 +151,81 @@ def get_EntryEnd_texte(alto):
         return list_entree_end_texte
 
 
-def get_structure_entree(entree_texte, auteur_regex, oeuvre_regex, oeuvre_regex_precise):
+def get_structure_entree(entree_texte, exposant_regex, oeuvre_regex, oeuvre_recuperation_regex):
     """
-    Fonction qui, pour une liste contenant les lignes d'une entrée, récupère la ligne contenant son auteur
+    Fonction qui, pour une liste contenant les lignes d'une entrée, récupère la ligne contenant son exposant
     et une liste des lignes contenant des oeuvres
     :param entree_texte: liste contenant toutes les lignes d'une entrée
     :type entree_texte: list of str
-    :param auteur_regex: regex permettant de déterminer qu'une line commençant par plusieurs lettres majuscules est
-    possiblement une ligne contenant le nom de l'auteur
-    :type auteur_regex: regex
+    :param exposant_regex: regex permettant de déterminer qu'une line commençant par plusieurs lettres majuscules est
+    possiblement une ligne contenant le nom de l'exposant
+    :type exposant_regex: regex
     :param oeuvre_regex: regex permettant de déterminer qu'une line commençant par plusieurs chiffres est
     possiblement une ligne contenant une oeuvre
     :type oeuvre_regex: regex
-    :return n_line_auteur: numéro de la ligne contenant le nom de l'auteur
-    :rtype n_line_auteur: int
+    :return n_line_exposant: numéro de la ligne contenant le nom de l'exposant
+    :rtype n_line_exposant: int
     :return n_line_oeuvre: liste de numéro contenant toutes les lignes des oeuvres
     :rtype n_line_oeuvre: list of int
+    :return pas_de_numerotation: switch pour indiquer s'il y a ou pas de numéros au début des items
+    :rtype n_line_oeuvre: bool
     """
+    # des compteurs à utiliser selon le type de ligne traité :
     n_line = 0
     n_line_simplifiee = 0
+    n_line_sans_numerotation = 0
     n_line_oeuvre = []
-    n_line_auteur = 0
+    n_line_exposant = 0
+    # un switch nous permettra de dire postérieurement à la fonction get_oeuvres que les items ne sont pasn numérotés (cas extrêmement rares)
+    pas_de_numerotation = False
     # si entree_texte n'est pas None (un objet None n'est pas itérable)
     if entree_texte:
         # pour chaque chaine de la liste :
         for ligne in entree_texte:
             n_line += 1
-            # Si la regex auteur correspond à la ligne courante :
-            if auteur_regex.search(ligne):
+            # Si la regex exposant correspond à la ligne courante :
+            if exposant_regex.search(ligne):
                 # la valeur de n_ligne devient la ligne courante :
-                n_line_auteur = n_line
+                n_line_exposant = n_line
             # si une regex précise a été choisie pour les oeuvres et qu'elle correspond à la ligne courante :
             elif oeuvre_recuperation_regex.search(ligne):
                 n_line_oeuvre.append(n_line)
             else:
-                # les lignes d'informations biographiques ne seront pas traitées
+                # les lignes d'informations biographiques ne seront pas inclues dans la liste
                 pass
+
         # Si la liste relative aux oeuvres est vide, on utilise une regex moins rigoureuse susceptible de ne pas différencier des adresses :
+        # d'abord une regex qui cherche lignes avec des numéros suivis d'une virgule, on les mettra de côté puisque ce sont très problablement des adresses :
         regex_adresse = re.compile(r'^[*]*\d{1,4},')
+        regex_mesures = re.compile(r'^[*]*\d{1,4}[ ]*x')
         if not n_line_oeuvre:
             for ligne in entree_texte:
                 n_line_simplifiee += 1
                 if regex_adresse.search(ligne):
                     pass
+                if regex_mesures.search(ligne):
+                    pass
+                # on utilise une regex qui ne recherche que des numéros en début de ligne :
                 elif oeuvre_regex.search(ligne):
                     n_line_oeuvre.append(n_line_simplifiee)
-        return n_line_auteur, n_line_oeuvre
+
+        # Si on a toujours pas d'oeuvres, on se retrouve probablement face à un cas extrêmement rare, ou les lignes
+        # d'oeuvres ne commencent pas par des numéros (elles sont probablement même pas numérotées...)
+        # exemple : Cat_SaoPaulo_1972 et Cat_Paris_1965
+        # On va tout simplement ajouter toutes les lignes qui ne sont pas la première ligne (on estime que la première correspond à l'auteur)
+        if not n_line_oeuvre:
+            pas_de_numerotation = True
+            for ligne in entree_texte:
+                n_line_sans_numerotation += 1
+                if n_line_sans_numerotation > 1:
+                    n_line_oeuvre.append(n_line_sans_numerotation)
+
+        return n_line_exposant, n_line_oeuvre, pas_de_numerotation
 
 
-def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre=1):
-    """
-    Fonction qui pour une liste donnée, récupère tout les items (oeuvre) d'une entrée et les structure.
+def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre, pas_de_numérotation):
+    """ récupère tout les items/oeuvres (liste de lignes) d'une entrée et les structure en XML-TEI
+
     :param entree_texte: liste de chaîne de caractères où chaque chaîne correspond à une ligne et la liste correspond
     à l'entrée
     :type entree_texte: list of str
@@ -210,84 +235,111 @@ def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre=1):
     :type n_oeuvre: int
     :param n_entree: numéro employé pour l'entrée précédente
     :type n_entree: int
-    :param n_line_oeuvre: premiere ligne oeuvre indiquée dans une liste d'oeuvres
+    :param n_line_oeuvre: liste des lignes de oeuvres, produites par get_structure_entree()
     :type n_line_oeuvre:list of int
+    :param pas_de_numérotation: switch pour indiquer si les items sont ou pas nunmérotés
+    :type pas_de_numérotation: bool
     :return list_item_ElementTree: liste des oeuvres chacune encodée en tei
     :rtype list_item_ElementTree: list of elementtree
     :return n_oeuvre: numéro employé pour la dernière oeuvre encodée dans la fonction
     :rtype n_oeuvre: int
     """
+    # === 1. On établie les variables initiales ===
     # on établie la liste d'objets etree "item" qu'on aura en return :
     list_item_ElementTree = []
     # dictionnaire pour les oeuvres :
     dict_item_texte = {}
-    dict_item_texte_multiligne = {}
-    # dictionnaire pour les description éventuelles des oeuvres :
-    dict_item_desc_texte = {}
     # liste de numéros d'items pour détecter des répétition (item bis):
     list_item_numero = []
     # liste d'oeuvres à récupérer pour afficher sur le terminal :
-    liste_oeuvres_terminal = []
+    dict_oeuvres_terminal = {}
+    # on choisi la première oeuvre dans la liste de lignes d'oeuvres :
+
+    # === 2.1 On extrait les oeuvres numérotées ===
+    n_line_oeuvre = n_line_oeuvre[0]
     # range renvoie une séquence de numéros, qui équivaut aux index d'une liste. Ici, on obtient une liste des
     # lignes entre la première oeuvre et la dernière :
     lignes_oeuvres = range(n_line_oeuvre - 1, len(entree_texte))
-    # on boucle sur chaque ligne oeuvre :
-    for n in lignes_oeuvres:
-        # on sélectionne la ligne référée par le numéro courant dans la liste :
-        current_line = entree_texte[n]
-        # si la chaîne correspond à notre regex oeuvre basique (détécte simplement des chiffres en début de ligne) :
-        if oeuvre_regex.search(current_line):
-            # on extrait le numéro de l'oeuvre avec la regex correspondante :
-            n_oeuvre_courante = numero_regex.search(current_line).group(0)
-            # si le numéro est déjà dans la liste, on a à faire à un item bis, et on va l'ajouter à l'item antérieur
-            if n_oeuvre_courante in list_item_numero:
-                # on créé une deuxième balise title pour cet item bis
-                title_xml = ET.SubElement(item_xml, "title")
-                title_xml.text = current_line
-                # on met le texte dans un chaîne, on l'utilisera après pour le faire apparaître dans le terminal
-                item_bis = current_line
-            # Si le numéro n'existe pas déjà (item non bis), on créé l'entrée :
+    # si le switch indiquant que les items ne sont pas numérotés est désactivé (quasi totalité des cas)
+    if pas_de_numérotation == False:
+        # on boucle sur chaque ligne oeuvre :
+        for n in lignes_oeuvres:
+            # on sélectionne la ligne référée par le numéro courant dans la liste :
+            current_line = entree_texte[n]
+            # si la chaîne correspond à notre regex oeuvre basique (détécte simplement des chiffres en début de ligne) :
+            if oeuvre_regex.search(current_line):
+                # on extrait le numéro de l'oeuvre avec la regex correspondante :
+                n_oeuvre_courante = numero_regex.search(current_line).group(0)
+                # si le numéro est déjà dans la liste, on a à faire à un item bis, et on va l'ajouter à l'item antérieur
+                if n_oeuvre_courante in list_item_numero:
+                    # on créé une deuxième balise title pour cet item bis
+                    title_xml = ET.SubElement(item_xml, "title")
+                    title_xml.text = current_line
+                    # on met le texte dans un chaîne, on l'utilisera après pour le faire apparaître dans le terminal
+                    item_bis = current_line
+                # Si le numéro n'existe pas déjà (item non bis), on créé l'entrée :
+                else:
+                    # la valeur de la variable item_bis sera None pour la mettre facilement de côté le moment venu :
+                    item_bis = None
+                    # noter que l'élément avec des items bis ne sera pas en doublon dans la liste
+                    list_item_numero.append(n_oeuvre_courante)
+                    # on crée un élément "item" avec pour attribut le numéro de l'oeuvre :
+                    item_xml = ET.Element("item", n=str(n_oeuvre_courante))
+                    # on ajoute cet objet à la liste d'items :
+                    list_item_ElementTree.append(item_xml)
+                    # on crée un identifiant pour l'item (titre du catalogue, numéro d'entrée, numéro d'item) :
+                    identifiant_item = titre + "_e" + str(n_entree) + "_i" + str(n_oeuvre_courante)
+                    # on ajoute cet identifiant comme attribut de l'item
+                    item_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_item
+                    # on créé un élément pour insérer le numéro de l'oeuvre :
+                    num_xml = ET.SubElement(item_xml, "num")
+                    # on créé un élément pour insérer le titre de l'oeuvre :
+                    title_xml = ET.SubElement(item_xml, "title")
+                    num_xml.text = n_oeuvre_courante
+                    # on ajoute au dictionnaire une entrée avec le numéro comme clé et la ligne entière comme valeur :
+                    # (nous avons créé les balises item, mais pas encore ajouté le texte, cela sera fait postérieurement)
+                    dict_item_texte[n_oeuvre_courante] = current_line
+            # si la regex oeuvre ne marche pas on vérifie si la ligne courante ne commence pas par des chiffres ou des minuscules
+            # (Dans ce cas c'est nécessairement une une description)
+            if ligne_description_regex.search(current_line):
+                # on ajoute à la chaîne de caractères la deuxième ligne de l'item :
+                # (la valeur de n_oeuvre_courante est celle de la ligne antérieure dès lors qu'on a sauté l'étape antérieure)
+                dict_item_texte[n_oeuvre_courante] = dict_item_texte[n_oeuvre_courante] + " " + current_line
             else:
-                # la valeur de la variable item_bis sera None pour la mettre facilement de côté le moment venu :
-                item_bis = None
-                # noter que l'élément le numéro avec des items bis ne sera pas en doublon dans la liste
-                list_item_numero.append(n_oeuvre_courante)
-                # on crée un élément "item" avec pour attribut le numéro de l'oeuvre :
-                item_xml = ET.Element("item", n=str(n_oeuvre_courante))
-                # on ajoute cet objet à la liste d'items :
-                list_item_ElementTree.append(item_xml)
-                # on crée un identifiant pour l'item (titre du catalogue, numéro d'entrée, numéro d'item) :
-                identifiant_item = titre + "_e" + str(n_entree) + "_i" + str(n_oeuvre_courante)
-                # on ajoute cet identifiant comme attribut de l'item
-                item_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_item
-                # on créé un élément pour insérer le numéro de l'oeuvre :
-                num_xml = ET.SubElement(item_xml, "num")
-                # on créé un élément pour insérer le titre de l'oeuvre :
-                title_xml = ET.SubElement(item_xml, "title")
-                num_xml.text = n_oeuvre_courante
-                # on ajoute au dictionnaire une entrée avec le numéro comme clé et la ligne entière comme valeur :
-                # (nous avons créé les balises item, mais pas encore ajouté le texte, cela sera fait postérieurement)
-                dict_item_texte[n_oeuvre_courante] = current_line
-        # si la regex oeuvre ne marche pas on vérifie si la ligne courante ne commence pas par des chiffres
-        # (Dans ce cas c'est nécessairement une deuxième ligne )
-        if ligne_secondaire_regex.search(current_line):
-            # on ajoute à la chaîne de caractères la deuxième ligne de l'item :
-            # (la valeur de n_oeuvre_courante est celle de la ligne antérieure dès lors qu'on a sauté l'étape antérieure)
-            dict_item_texte[n_oeuvre_courante] = dict_item_texte[n_oeuvre_courante] + " " + current_line
-        # ou bien on vérifie si l'information est à mettre à part en tant que description avec un deuxième dictionnaire :
-        #TODO : pas satisfaisant : pas de différence claire entre deuxième ligne et info complémentaire
-        """
-               elif info_complementaire_regex.search(current_line):
-            if not dict_item_desc_texte[n_oeuvre_courante]:
-                dict_item_desc_texte[n_oeuvre_courante] = current_line
-            else:
-                dict_item_desc_texte[n_oeuvre_courante] = dict_item_desc_texte[n_oeuvre] + " " + current_line
-        else:
-            ('LIGNE NON RECONNUE: ', current_line)
-        """
+                ('LIGNE NON RECONNUE: ', current_line)
+
+    # === 2.2 On extrait les oeuvres non numérotées ===
+    # si le switch indiquant que les items ne sont pas numérotés est activé (cas extrêmement rares)
+    elif pas_de_numérotation == True :
+        n_item = 0
+        item_bis = None
+        for n in lignes_oeuvres:
+            # on sélectionne la ligne référée par le numéro courant dans la liste :
+            current_line = entree_texte[n]
+            # puisque qu'il n'y a pas de numérotation, on va en faire une car l'ODD du projet exige que chaque item soit numéroté
+            # ce numéro fera partie des attributs de l'élément "item", mais on ne va pas créer de sous-élément "num" et
+            # aucun numéro ne sera indiqué en tant que texte, afin de respecter le catalogue
+            n_item += 1
+            n_oeuvre_courante = str(n_item)
+            # on crée un élément "item" avec pour attribut le numéro de l'oeuvre :
+            item_xml = ET.Element("item", n=str(n_oeuvre_courante))
+            # on ajoute cet objet à la liste d'items :
+            list_item_ElementTree.append(item_xml)
+            # on crée un identifiant pour l'item (titre du catalogue, numéro d'entrée, numéro d'item) :
+            identifiant_item = titre + "_e" + str(n_entree) + "_i" + str(n_oeuvre_courante)
+            # on ajoute cet identifiant comme attribut de l'item
+            item_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = identifiant_item
+            # on créé un élément pour insérer le numéro de l'oeuvre :
+            title_xml = ET.SubElement(item_xml, "title")
+            # on ajoute au dictionnaire une entrée avec le numéro comme clé et la ligne entière comme valeur :
+            # (nous avons créé les balises item, mais pas encore ajouté le texte, cela sera fait postérieurement)
+            dict_item_texte[n_oeuvre_courante] = current_line
+
+    # === 3.1 On traite les éléments créés et on sépare les titres des informations complémentaires ===
     # pour chaque élément dans la liste d'objets "item_xml"
     for el in list_item_ElementTree:
         # on récupère le numéro de l'oeuvre :
+        # la méthode .join permet de récupérer un "int" ; sinon on aurait un type d'objet spécifique à lxml non exploitable en tant que chiffre
         num_item = "".join(el.xpath("@n"))
         # on récupère la balise titre, on la remplira plus tard :
         name_item = el.find(".//title")
@@ -295,36 +347,54 @@ def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre=1):
         texte_name_item = str(dict_item_texte[num_item])
         # on nettoie la chaîne :
         texte_name_item_propre = nettoyer_liste_str(texte_name_item)
-        # on ajoute l'oeuvre à la liste qui servira à l'afficher sur le terminal (avant la commande suivante afin de garder les numéros !):
-        liste_oeuvres_terminal.append(texte_name_item_propre)
         # on ajoute l'eventuel item bis précédement extrait, afin qu'il apparaisse après la première apparition du numéro
         if item_bis:
-            liste_oeuvres_terminal.append(item_bis)
-        # on enlève les numéros et autres signes propre à l'item :
-        texte_name_item_propre = re.sub(r'^(\S\d{1,3}|\d{1,3})[.]*[ ]*[—]*[ ]*', '', texte_name_item_propre)
-        # si l'item a déjà des balises de description :
-        # TODO : ce if est susceptible de mettre de coté des "lignes secondaires" qui seront traitées comme des "informations complémentaires"
-        #  mais il faudrait que l'item ait en même temps les deux, ce qui est très exceptionnel
+            dict_oeuvres_terminal[texte_name_item_propre] = item_bis
+
+        # On va maintenant s'occuper de séparer les descriptions des titres des entrées.
+        # ATTENTION : ce if serait susceptible de mettre de coté des "lignes secondaires" d'un titre,
+        # qui seront traitées comme des "informations complémentaires", mais il faudrait que l'item ait en même temps
+        # les deux, ce qui est très exceptionnel. Une ligne secondaire dans un titre est déjà en soi extrêmement rare.
+        # si l'item a déjà des balises de description (créés lors d'une itération antérieure)
         if el.xpath(".//desc"):
             # on récupère la balise "description" :
             desc_item = el.find(".//desc")
-            # une deuxième ligne de description ne commencera pas par "–" ou "(" ; on cherche donc une minuscule ou une majuscule :
-            desc_tiret_parenthese = ligne_secondaire_regex.search(texte_name_item_propre).group(0)
+            # une deuxième ligne de description peut commencer par n'importe quel caractère qui ne soit pas un chiffre
+            # Noter que cela inclue des majuscules, des parenthèses, tirets, etc.
+            description = ligne_description_regex.search(texte_name_item_propre).group(0)
             # on ajoute la ligne à la balise description :
-            desc_item.text = desc_item.text + " " + desc_tiret_parenthese
-        # on vérifie s'il y a des tirets/parenthèses ailleurs qu'au début, ou des points avant la fin de l'item, pour repérer des informations complémentaires :
-        if info_comp_tiret_parenthese_regex.search(texte_name_item_propre):
+            description = desc_item.text + " " + description
+            description = description.replace("¬ ", "")
+            desc_item.text = description
+        # on vérifie s'il y a des parenthèses pour repérer de possibles informations complémentaires
+        # il est impossible de chercher d'autres types de description, cela devra être fait manuellement
+        if info_comp_regex.search(texte_name_item_propre):
             desc_el_xml = ET.SubElement(el, "desc")
-            desc_tiret_parenthese = info_comp_tiret_parenthese_regex.search(texte_name_item_propre).group(0)
-            # on enlève les tirets ou points qui nous avaient permis de localiser la chaîne :
-            desc_tiret_parenthese = re.sub(r'—[ ]*|[a-z]\. ', '', desc_tiret_parenthese)
-            desc_el_xml.text = desc_tiret_parenthese
-            # on enlève tout ce qui vient après le tiret ou la parenthèse pour garder le titre de l'oeuvre :
-            texte_name_item_propre = re.sub(r'[ ]*—[ ]*.*|[ ]*\(.*', '', texte_name_item_propre)
+            description = info_comp_regex.search(texte_name_item_propre).group(0)
+            # la regex donne toujours au moins deux caractère initiaux de trop, on les enlève (sauf quand ça commence par des parenthèse !)
+            regex_parenthese = re.compile(r'^\(.*')
+            if regex_parenthese.search(description):
+                pass
+            else:
+                description = re.sub(r'^..', "", description)
+            description = description.replace("¬ ", "")
+            desc_el_xml.text = description
+            # Pour le titre, par contre, on sera extrêmement rigoureux : on exclue uniquement les parenthèses ouvrantes
+            # on aura des titres dont le contenue s'enchvêtre avec celui des descriptions, cela devra être corrigé manuellement.
+            texte_name_item_propre = re.sub(r'\(.*', '', texte_name_item_propre)
+        # s'il n'y a pas de description, on ajoute une chaîne vide comme description
+        # s'il n'y a pas de description, on ajoute un booléen vide
+        else:
+            description = None
 
+        dict_oeuvres_terminal[texte_name_item_propre] = description
+        # on enlève les numéros et autres signes propre à l'item :
+        texte_name_item_propre = re.sub(r'^(\S\d{1,3}|\d{1,3})[.]*[ ]*[—]*[ ]*', '', texte_name_item_propre)
         # On met enfin le titre dans la balise title
         name_item.text = texte_name_item_propre
-    return list_item_ElementTree, n_oeuvre, texte_name_item_propre, liste_oeuvres_terminal
+
+
+    return list_item_ElementTree, n_oeuvre, texte_name_item_propre, dict_oeuvres_terminal
 
 
 def create_entry_xml(document, title, n_entree, iiif_region):
@@ -379,7 +449,7 @@ def create_entry_xml(document, title, n_entree, iiif_region):
 
     # === 2. On créé les autres balises de l'entrée ===
     # on créé la balise fille de entry :
-    desc_auteur_xml = ET.SubElement(entree_xml, "desc")
-    # on créé la balise nom de l'auteur :
-    auteur_xml = ET.SubElement(desc_auteur_xml, "name")
-    return entree_xml, desc_auteur_xml, auteur_xml, lien_iiif
+    desc_exposant_xml = ET.SubElement(entree_xml, "desc")
+    # on créé la balise nom de l'exposant :
+    exposant_xml = ET.SubElement(desc_exposant_xml, "name")
+    return entree_xml, desc_exposant_xml, exposant_xml, lien_iiif

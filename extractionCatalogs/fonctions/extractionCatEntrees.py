@@ -6,6 +6,7 @@ Juliette Janès, 2021
 Esteban Sánchez Oeconomo, 2022
 """
 import os.path
+import re
 
 from .extractionCatEntrees_fonctions import *
 
@@ -38,7 +39,8 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
     # on établit deux variables utilisées postérieurement pour indiquer sur le terminal combien d'entry et d'entryEnd non pas été correctement traitées
     entry_non_integree = False
     entryend_non_integree = False
-    liste_oeuvres_terminal = []
+    # un dictionnaire en return pour signaler des oeuvres
+    dict_oeuvres_terminal = {}
 
     # === 2.1. On extrait le texte de Entry des ALTO ===
     # On récupère un dictionnaire avec pour valeurs les entrées, et une liste d'ID pour couper les images :
@@ -50,26 +52,65 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
     # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
     entree_end_texte = get_EntryEnd_texte(document)
 
+    # === 3.1 On traite les "EntryEnd" ===
     # Si la liste n'est pas vide ou qu'elle n'est pas indiquée comme None :
     if entree_end_texte != []:
         if entree_end_texte != None:
             # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
-            # (les variables auteur_regex, oeuvre_regex et oeuvre_recuperation_regex sont importées depuis instanciation_regex.py)
-            n_line_auteur, n_line_oeuvre = get_structure_entree(entree_end_texte, auteur_regex, oeuvre_regex, oeuvre_recuperation_regex)
+            # (les variables exposant_regex, oeuvre_regex et oeuvre_recuperation_regex sont importées depuis instanciation_regex.py)
+            n_line_exposant, n_line_oeuvre, pas_de_numerotation = get_structure_entree(entree_end_texte, exposant_regex, oeuvre_regex, oeuvre_recuperation_regex)
             try:
                 # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
-                list_lignes_entryEnd_xml, n_oeuvre, text_name_item_propre, liste_oeuvres_terminal = get_oeuvres(entree_end_texte, title, n_oeuvre, n_entree,
-                                                               n_line_oeuvre[0])
+                list_lignes_entryEnd_xml, n_oeuvre, text_name_item_propre, dict_oeuvres_terminal = get_oeuvres(entree_end_texte, title, n_oeuvre, n_entree,
+                                                               n_line_oeuvre, pas_de_numerotation)
                 # on récupère le numéro d'entrée, qui correspond à l'antérieure car il n'a pas encore été augmenté, pour ajouter les items manquants :
-                entree_end_xml = list_xml.find(".//entry[@n='" + str(n_entree) + "']")
-                for ligne in list_lignes_entryEnd_xml:
-                    entree_end_xml.append(ligne)
+                entree_end_xml = list_xml.find(".//entry[@n='{}']".format(str(n_entree)))
+                # si les items ont une numérotation (très grande majorité des cas), on l'ajoute tel qu'il a été produit
+                if pas_de_numerotation == False:
+                    for ligne in list_lignes_entryEnd_xml:
+                        entree_end_xml.append(ligne)
+                # si ce n'est pas le cas, cette numérotation sera artificielle ; on reprend l'attribut "@n" de l'item précédent :
+                elif pas_de_numerotation == True:
+                    for ligne in list_lignes_entryEnd_xml:
+                        numero_anterieur = list_xml.xpath("//entry[@n='{}']/item[last()]/@n".format(str(n_entree)))
+                        # on récupère une liste qu'on va transformer en chaine et nettoyer pour ne garder que le numéro :
+                        numero_anterieur = str(numero_anterieur)
+                        numero_anterieur = nettoyer_liste_str(numero_anterieur)
+                        # on actualise le numéro :
+                        numero_nouveau = int(numero_anterieur) + 1
+                        # on retransforme en chaine, puisque cela est nécessaire pour faire la méthode .attrib
+                        numero_nouveau = str(numero_nouveau)
+                        ligne.attrib["n"] = numero_nouveau
+
+                        # on va aussi changer la terminaison de l'ID pour l'actualiser :
+                        terminaison_id_ancienne = ligne.attrib["{http://www.w3.org/XML/1998/namespace}id"][-3:]
+                        id = ligne.attrib["{http://www.w3.org/XML/1998/namespace}id"]
+                        terminaison_id_nouvelle = id.replace(terminaison_id_ancienne, "_i{}".format(numero_nouveau))
+                        ligne.attrib["{http://www.w3.org/XML/1998/namespace}id"] = terminaison_id_nouvelle
+
+                        entree_end_xml.append(ligne)
             except Exception:
                 a_ecrire = str(entree_end_texte) + "[(entrée {}])".format(n_entree)
                 entryend_non_integree_liste.append(a_ecrire)
                 entryend_non_integree = True
+                print("\t    [!] L'entryEnd suivante n'a pas été extraite :")
+                for ligne in entree_end_texte:
+                    print("\t    " + nettoyer_liste_str(str(ligne)))
+                    # On rajoute un saut de ligne pour la dernière ligne de l'entryEnd, afin de la différencier clairement de l'extraction sur le terminal
+                    if ligne == entree_end_texte[-1]:
+                        barre = "\t    "
+                        for caractere in ligne:
+                            barre += "-"
+                        print(barre + "\n")
+        # on indique sur le terminal les oeuvres de cette entryEnd :
+        if dict_oeuvres_terminal:
+            for oeuvre in dict_oeuvres_terminal:
+                print("\t\t  " + oeuvre)
+                if dict_oeuvres_terminal[oeuvre] :
+                    print("\t\t      " + str(dict_oeuvres_terminal[oeuvre]))
 
-    # === 3.1 On traite les "Entry" ===
+
+    # === 3.2 On traite les "Entry" ===
     # pour chaque item du dictionnaire d'entrées du document ALTO :
     for num_entree in dict_entrees_texte:
         # on assigne la valeur de la clé à une variable (c'est une liste avec les lignes constituant une entrée) :
@@ -79,37 +120,72 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
         # n_iiif est un compteur qu'on utilise pour selectionner des ID indexés dans la liste iiif_regions
         iiif_region = iiif_regions[n_iiif]
 
-        # on récupère le numéro de ligne de l'auteur (int) et ceux des oeuvres (list) dans l'entrée :
+        # on récupère le numéro de ligne de l'exposant (int) et ceux des oeuvres (list) dans l'entrée :
         # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py ===
-        n_line_auteur, n_line_oeuvre = get_structure_entree(entree_texte, auteur_regex, oeuvre_regex, oeuvre_recuperation_regex)
-
+        n_line_exposant, n_line_oeuvre, pas_de_numerotation = get_structure_entree(entree_texte, exposant_regex, oeuvre_regex, oeuvre_recuperation_regex)
         # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
-        entree_xml, desc_auteur_xml, auteur_xml, lien_iiif = create_entry_xml(document, title, n_entree, iiif_region)
+        entree_xml, desc_exposant_xml, exposant_xml, lien_iiif = create_entry_xml(document, title, n_entree, iiif_region)
         n_iiif += 1
 
-        # === 3.2 On traite les AUTEURS et leurs éventuelles informations complémentaires ===
+        # === 3.2 On traite les exposantS et leurs éventuelles informations complémentaires ===
         # on établit un compteur de lignes
         n = 0
         liste_trait_texte = []
+        # on assigne la regex de récupération d'auteur à une variable nouvelle, puisqu'il sera question de détérminer s'il faut la garder ou pas
+        exposant_recuperation_regex_courante = exposant_recuperation_regex
         for ligne in entree_texte:
             n += 1
-            # la ligne 1 est celle de l'auteur
+            # la ligne 1 est celle de l'exposant
             if n == 1:
-                # on utilise les regex pour séparer l'auteur des éventuelles informations biographiques
-                auteur_texte = auteur_recuperation_regex.search(ligne)
+                # on va d'abord regarder s'il y a des chiffres entre parenthese ; dans ce cas, il est certain
+                # que les parenthèse ne contiennent pas de non/prenom, mais des informations complémentaires, et il faut adapter la regex
+                verification_parentheses = verification_parentheses_regex.search(ligne)
+                # s'il y a des parenthèses
+                if verification_parentheses:
+                    verification_parentheses_text = verification_parentheses.group(0)
+                    # on créé une petite regex qui vérifie s'il y a un ou plusieurs chiffres dans le texte
+                    chiffres_regex = re.compile(r'[0-9]+')
+                    chifres_presents = chiffres_regex.search(verification_parentheses_text)
+                    # s'il y a des chiffres avant la fermeture des parenthèses :
+                    if chifres_presents:
+                        # on assigne à la variable de récupération de l'exposant une nouvelle regex, qui met de côté les informatiosn entre parenthèses
+                        # Cette nouvelle regex est tout simplement la même, sur laquelle on enleverra toutes les occurences de "\(" (parenthèse ouvrante échappée)
+                        # la méthode .pattern permet de récupérer une regex qui avait été compilée
+                        exposant_recuperation_regex_string = exposant_recuperation_regex.pattern
+                        exposant_recuperation_regex_parentheses_enlevees = exposant_recuperation_regex_string.replace("\(", "")
+                        exposant_recuperation_regex_courante = re.compile(exposant_recuperation_regex_parentheses_enlevees)
+
+                    # si les parenthèses n'ont pas de chiffres, il est presque certain qu'on aura un nom/prénom. Dans ce cas, la regex
+                    # dans le cas ou il y a plusieurs parenthèses dans la ligne, on utilisera la regex normale
+                    else :
+                        nombre_parentheses_fermantes = 0
+                        for caractere in verification_parentheses_text:
+                            if caractere == ")":
+                                nombre_parentheses_fermantes += 1
+                        if nombre_parentheses_fermantes == 1:
+                            # Mais s'il y a seulement un groupe de parenthèse, la regex dont on a besoin pour l'extraction
+                            # devient extrêmement simple : tout ce qu'il y a avant la parenthèse fermante
+                            # avec des virgules et points en option
+                            exposant_recuperation_regex_courante = re.compile(r'^.*\)[,.]*')
+                        else:
+                            pass
+                # on utilise les regex pour séparer l'exposant des éventuelles informations biographiques
+                exposant_texte = exposant_recuperation_regex_courante.search(ligne)
                 # si on obtient un résultat :
-                if auteur_texte != None:
+                if exposant_texte != None:
                     # "group() method returns a tuple containing all the subgroups of the match, therefore,
                     # it can return any number of groups that are in a pattern"
-                    auteur_texte = auteur_texte.group(0)
-                    auteur_xml.text = auteur_texte
-                    print("\t      " + auteur_texte)
+                    exposant_texte = exposant_texte.group(0)
+                    exposant_xml.text = exposant_texte
+                    print("\t      " + exposant_texte)
                 # on utilise la même regex pour isoler tout le texte restant, s'il y en a
-                # ATTENTION : la regex suivante doit correspondre à la variable "auteur_recuperation_regex", qui ne peut pas être indiquée en tant que variable
-                info_bio = re.sub(r'^.*\)[.]*|^[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]+[,]*[ ]*[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ][a-zé]*[.]*|^[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.,]*[ ]*[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.]*|^[A-ZÉ]*[a-zé][.]*', '', ligne)
-                # texte_name_item_propre = re.sub(r'^(\S\d{1,3}|\d{1,3})[.]*[ ]*[—]*[ ]*', '', texte_name_item_propre)
+                # mais la variable est une regex compilée ; on peut heureusement récupèrer la regex originale avec la méthode .pattern
+                exposant_recuperation_regex_originale = exposant_recuperation_regex_courante.pattern
+                info_bio = re.sub(r"{}".format(exposant_recuperation_regex_originale), '', ligne)
                 if info_bio != None:
                     if info_bio != "":
+                        # on enlève les espaces de début, puisqu'il y en a souvent :
+                        re.sub(r'^[ ]*[ ]*', '', info_bio )
                         liste_trait_texte.append(info_bio)
             # le reste des lignes avant la première oeuvre seront des informations biographiques
             elif n > 1:
@@ -119,10 +195,11 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
         # si la liste d'informations complémentaires contient quelque chose :
         if liste_trait_texte:
             # on créé les balises pour la description :
-            trait_xml = ET.SubElement(desc_auteur_xml, "trait")
+            trait_xml = ET.SubElement(desc_exposant_xml, "trait")
             p_trait_xml = ET.SubElement(trait_xml, "p")
             # on unit toutes les chaînes de la liste :
             liste_trait_texte_propre = " ".join(liste_trait_texte)
+            liste_trait_texte_propre = liste_trait_texte_propre.replace("¬ ", "")
             # on met la nouvelle chaîne dans la balise "p" :
             p_trait_xml.text = liste_trait_texte_propre
             # on affiche les informations complémentaires sur le terminal :
@@ -132,7 +209,7 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
         try:
             # === fonction secondaire appelée dans extractionCatEntrees_fonctions.py : ===
             # on appelle une fonction qui structure en xml les items :
-            list_item_entree, n_oeuvre, text_name_item_propre, liste_oeuvres_terminal = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre[0])
+            list_item_entree, n_oeuvre, text_name_item_propre, dict_oeuvres_terminal = get_oeuvres(entree_texte, title, n_oeuvre, n_entree, n_line_oeuvre, pas_de_numerotation)
             # on ajoute ces items à la structure xml :
             for item in list_item_entree:
                 entree_xml.append(item)
@@ -147,10 +224,15 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
         except Exception:
             print("entrée non ajoutée")
 
-        # on indique sur le terminal les oeuvres et un lien vers l'image iiif :
-        if liste_oeuvres_terminal:
-            for oeuvre in liste_oeuvres_terminal:
+        # on indique sur le terminal les oeuvres
+        if dict_oeuvres_terminal:
+            for oeuvre in dict_oeuvres_terminal:
                 print("\t\t  " + oeuvre)
+                # si l'oeuvre a une description, on l'indique sur le terminal (si la valeur n'est pas None)
+                if dict_oeuvres_terminal[oeuvre]:
+                    print("\t\t      " + str(dict_oeuvres_terminal[oeuvre]))
+
+        # on indique un lien vers l'image iiif si elle existe:
         if lien_iiif:
             print("\t\t  " + "Image : " + lien_iiif)
 

@@ -15,18 +15,21 @@ import re
 
 #####################################################
 #  === 1. REGEX LECTURE RAPIDE (ne pas supprimer) ===
-# Regex déterminant que des lettres majuscules correspondent à un auteur
-auteur_regex = re.compile(r'^[☙]*(\S|[A-Z])[A-ZÉ]{3,}')
-# regex déterminant que des chiffres correspondent à une oeuvr
-oeuvre_regex = re.compile(r'^[*]*\d{1,4}')
+# Regex déterminant que des lettres majuscules correspondent à un exposant
+exposant_regex = re.compile(r'^[☙]*(\S|[A-Z])[A-ZÀ-Ǘ]{3,}')
+# regex déterminant que des chiffres correspondent à une oeuvre
+oeuvre_regex = re.compile(r'^[*]*\d{1,4}[^,]')
 # Regex : extrait le numero de l'oeuvre
 numero_regex = re.compile(r'^(\S\d{1,4}|\d{1,4})')
-# Regex : premiers caractères d'une ligne entière à identifier
-ligne_secondaire_regex = re.compile(r'^([A-ZÉ]|[a-zé])')
-# Regex : informations complementaires
-info_comp_tiret_parenthese_regex = re.compile(r'—[ ]*.*|\(.*\)|[a-z]\. .*')
-# TODO : pas satisfaisant : pas de différence claire entre deuxième ligne et info complémentaire
-info_complementaire_regex = re.compile(r'^(\S[A-Z]|[A-Z])[a-z]')
+# Regex : une ligne de description, avec la possibilité de commencer par des majuscules
+ligne_description_regex = re.compile(r'^[A-ZÀ-Üa-zà-ü-–"&\[{]')
+# Regex : informations complémentaires – tout ce qui vienne après une parenthèse ouvrante.
+# il existe de nombreuses autres types de délimitations (tirets, points, virgules), mais ces caractères peuvent faire partie des titres des oeuvres
+# on préfère donc faire une extraction minimale, les descriptions d'oeuvres étant de manière générale rare, elles devront être extraites manuellement
+info_comp_regex = re.compile(r'\(.*|,.*|[^0-9.] —.*')
+
+# Regex : utilisée par le script pour voir si entre parenthèses un trouve un chiffre, dans ce cas on sait que c'est des informations complémentaires
+verification_parentheses_regex = re.compile(r'^.*\)')
 ####################################################
 
 
@@ -34,10 +37,7 @@ info_complementaire_regex = re.compile(r'^(\S[A-Z]|[A-Z])[a-z]')
 #  === 2. REGEX AUTEUR (sélectionner ou créer une nouvelle regex)  ===
 # Regex : Nom en majuscules : "NOM (Prénom)," ou "NOM (Initiale.),", ou "NOM (Prénom) ",
 # ou "NOM (Initiale.).", ou "NOM, Prénom," ou "NOM, Prénom.", ou "NOM, Prénom ", ou "Nom prénom"
-auteur_recuperation_regex = re.compile(r'^.*\)[.]*|^[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]+[,]*[ ]*[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ][a-zé]*[.]*|^[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.,]*[ ]*[a-zé]{0,2}[ ]*[a-zé]{0,2}[ ]*[A-ZÉ]*[a-zé]*[.]*|^[A-ZÉ]*[a-zé][.]*')
-
-# Regex : auteurs délimités par un cadratin "—" final
-#auteur_recuperation_regex = re.compile(r'^.*.(?= —)')
+exposant_recuperation_regex = re.compile(r'^[MLE .]*[☙]*[a-zà-ü]{0,2}[ ]*[a-zà-ü]{0,2}[ ]*[A-ZÀ-Ü\(][,]*[ ]*[A-ZÀ-Üa-zà-ü’`´.\(\)-]+[, ]*[A-ZÀ-Üa-zà-ü]{0,2}[ ]*[VAON ]*[A-ZÀ-Ǘ̧̀\(\)-][A-ZÀ-Ǘ̧̀a-zà-ǘ̧̀’`´\(\)-]*[ ]*[A-ZÀ-Ǘ̧̀]*[A-ZÀ-Ǘ̧̀a-zà-ǘ̧̀’`´.\(\)-]*[.]*[,]*|^[A-ZÀ-Ǘ̀a-zà-ǘ̧̀]{0,2}[ ]*[A-ZÀ-Ǘ̧̀a-zà-ǘ̧̀]{0,2}[ ]*[A-ZÀ-Ǘ̧̀][A-ZÀ-Ǘ̧̀a-zà-ǘ̧̀]*[.,]*[ ]*[A-ZÀ-Ǘ̧̀a-zà-ǘ̧̀]{0,2}[ ]*[A-ZÀ-Ǘ̧̀a-zà-ǘ̧̀]{0,2}[ ]*[A-ZÀ-Ǘ̧̀]+[a-zà-ǘ̀]*[.]*[,]*|^[A-ZÀ-Ǘ̧̀]+[a-zà-ǘ̧̀]*[.]*[,]*', re.UNICODE)
 ###############################################################
 
 
@@ -46,23 +46,7 @@ auteur_recuperation_regex = re.compile(r'^.*\)[.]*|^[a-zé]{0,2}[ ]*[a-zé]{0,2}
 
 # Regex : oeuvre avec délimitation concrète (".", "–", ". –"=)
 # exemples :  "24. Orphée perdant Eurydice", "82. — Paysage", "189 — Lion."
-oeuvre_recuperation_regex = re.compile(r'^[*]*\d{1,4}[\.][ ](Bis|bis)*[ ]*[—]|^[*]*\d{1,4}[ ]*(Bis|bis)*[ ]*[\.]|^[*]*\d{1,4}[ ]*(Bis|bis)*[ ]*[—]|[*]*\d{1,4}[ ]*[-]|[*]*\d{1,4}[ ]*(Bis|bis)*[ ]*[–]')
-
-# Regex : oeuvre sans délimitation concrète (cas rares et problématiques : les adresses seront traitées comme des oeuvres et il faudra faire les corrections manuellement)
-# exemple : "200 Buttes Chaumont"
-# oeuvre_recuperation_regex = re.compile(r'^[*]*\d{1,4}[ ]')
-# Cas : cat_inde_1892, 1913, 1923, 1935
+oeuvre_recuperation_regex = re.compile(r'^[*]*\d{1,4}[\.][ ](Bis|bis|ter|Ter|BIS|TER)*[ ]*[—]|^[*]*\d{1,4}[ ]*(Bis|bis|ter|Ter|BIS|TER)*[ ]*[\.]|^[*]*\d{1,4}[ ]*(Bis|bis|ter|Ter|BIS|TER)*[ ]*[—]|[*]*\d{1,4}[ ]*[-]|[*]*\d{1,4}[ ]*(Bis|bis|ter|Ter|BIS|TER)*[ ]*[–]')
 #############################################################
 
-
-#####################################################################################################
-#  === 4. REGEX : SEPARATION AUTEUR/INFORMATIONS BIOGRAPHIQUES (sélectionner ou créer une nouvelle regex)  ===
-
-# Regex : "NOM (Prénom), Information biographique"
-# limitation_auteur_infobio_regex = re.compile(r'(?:\),).*')
-# TODO : celle ci capture aussi les points : (?:\),|\)\.).*
-
-# Regex : "NOM Prénom — Information biographique"
-limitation_auteur_infobio_regex = re.compile(r'(— .*)')
-#####################################################################################################
 
