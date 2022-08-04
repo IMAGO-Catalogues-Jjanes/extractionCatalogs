@@ -193,22 +193,20 @@ def get_structure_entree(entree_texte, exposant_regex, oeuvre_regex, oeuvre_recu
             else:
                 # les lignes d'informations biographiques ne seront pas inclues dans la liste
                 pass
-
         # Si la liste relative aux oeuvres est vide, on utilise une regex moins rigoureuse susceptible de ne pas différencier des adresses :
         # d'abord une regex qui cherche lignes avec des numéros suivis d'une virgule, on les mettra de côté puisque ce sont très problablement des adresses :
-        regex_adresse = re.compile(r'^[*]*\d{1,4},')
-        regex_mesures = re.compile(r'^[*]*\d{1,4}[ ]*x')
         if not n_line_oeuvre:
             for ligne in entree_texte:
                 n_line_simplifiee += 1
-                if regex_adresse.search(ligne):
-                    pass
-                if regex_mesures.search(ligne):
-                    pass
                 # on utilise une regex qui ne recherche que des numéros en début de ligne :
-                elif oeuvre_regex.search(ligne):
+                if oeuvre_regex.search(ligne):
                     n_line_oeuvre.append(n_line_simplifiee)
-
+                if regex_adresse.search(ligne):
+                    n_line_oeuvre.remove(n_line_simplifiee)
+                if regex_mesures.search(ligne):
+                    n_line_oeuvre.remove(n_line_simplifiee)
+                if regex_prix.search(ligne):
+                    n_line_oeuvre.remove(n_line_simplifiee)
         # Si on a toujours pas d'oeuvres, on se retrouve probablement face à un cas extrêmement rare, ou les lignes
         # d'oeuvres ne commencent pas par des numéros (elles sont probablement même pas numérotées...)
         # exemple : Cat_SaoPaulo_1972 et Cat_Paris_1965
@@ -254,7 +252,6 @@ def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre, pas_de_n
     # liste d'oeuvres à récupérer pour afficher sur le terminal :
     dict_oeuvres_terminal = {}
     # on choisi la première oeuvre dans la liste de lignes d'oeuvres :
-
     # === 2.1 On extrait les oeuvres numérotées ===
     n_line_oeuvre = n_line_oeuvre[0]
     # range renvoie une séquence de numéros, qui équivaut aux index d'une liste. Ici, on obtient une liste des
@@ -266,8 +263,19 @@ def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre, pas_de_n
         for n in lignes_oeuvres:
             # on sélectionne la ligne référée par le numéro courant dans la liste :
             current_line = entree_texte[n]
+            # avant d'utiliser notre regex oeuvre_regex pour attraper des items, on va utiliser des regex pour mettre de
+            # côté certaines lignes commençant par des chiffres qui ne sont pas des oeuvres :
+            # des adresses :
+            if regex_adresse.search(current_line):
+                pass
+            # des mesures :
+            elif regex_mesures.search(current_line):
+                pass
+            # des prix
+            elif regex_prix.search(current_line):
+                pass
             # si la chaîne correspond à notre regex oeuvre basique (détécte simplement des chiffres en début de ligne) :
-            if oeuvre_regex.search(current_line):
+            elif oeuvre_regex.search(current_line):
                 # on extrait le numéro de l'oeuvre avec la regex correspondante :
                 n_oeuvre_courante = numero_regex.search(current_line).group(0)
                 # si le numéro est déjà dans la liste, on a à faire à un item bis, et on va l'ajouter à l'item antérieur
@@ -283,6 +291,8 @@ def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre, pas_de_n
                     item_bis = None
                     # noter que l'élément avec des items bis ne sera pas en doublon dans la liste
                     list_item_numero.append(n_oeuvre_courante)
+                    # Après afficher le numéro comme il apparaît dans le catalogue, on le néttoe d'éléments qui puissent ne pas être conformes à l'ODD pour créér l'id
+                    n_oeuvre_courante = n_oeuvre_courante.replace("*", "")
                     # on crée un élément "item" avec pour attribut le numéro de l'oeuvre :
                     item_xml = ET.Element("item", n=str(n_oeuvre_courante))
                     # on ajoute cet objet à la liste d'items :
@@ -301,10 +311,11 @@ def get_oeuvres(entree_texte, titre, n_oeuvre, n_entree, n_line_oeuvre, pas_de_n
                     dict_item_texte[n_oeuvre_courante] = current_line
             # si la regex oeuvre ne marche pas on vérifie si la ligne courante ne commence pas par des chiffres ou des minuscules
             # (Dans ce cas c'est nécessairement une une description)
-            if ligne_description_regex.search(current_line):
+            elif ligne_description_regex.search(current_line):
                 # on ajoute à la chaîne de caractères la deuxième ligne de l'item :
                 # (la valeur de n_oeuvre_courante est celle de la ligne antérieure dès lors qu'on a sauté l'étape antérieure)
                 dict_item_texte[n_oeuvre_courante] = dict_item_texte[n_oeuvre_courante] + " " + current_line
+
             else:
                 ('LIGNE NON RECONNUE: ', current_line)
 

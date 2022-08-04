@@ -22,7 +22,7 @@ from extractionCatalogs.fonctions.extractionCatEntrees import extInfo_Cat
 from extractionCatalogs.fonctions.creationTEI import creation_header
 from extractionCatalogs.fonctions.restructuration import restructuration_automatique, correction_imbrication_segmentation
 from extractionCatalogs.fonctions.Validations_xml import conformite_Segmonto, association_xml_rng
-from extractionCatalogs.fonctions.XMLtoCSV import XML_to_CSV
+from extractionCatalogs.fonctions.XMLtoCSV import XML_to_CSV, csv_immediat
 from extractionCatalogs.fonctions.automatisation_kraken.kraken_automatic import transcription
 from extractionCatalogs.variables import contenu_TEI
 from extractionCatalogs.fonctions.extractionCatEntrees_fonctions import ordonner_altos, nettoyer_liste_str_problemes
@@ -54,7 +54,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     -st: take image files as an input instead of ALTO4. Automatic segmentation and transcription occurs via kraken.
     -v: verify ALTO4 files.
     """
-    # === 1.4 Création d'un dossier pour les output et traitement des options activées ====
+    # === 1.1 Création d'un dossier pour les output   ====
 
     # si les chemins input ou output ne terminent pas par "/", le script ne tourne pas.
     # si ces "/" ne sont pas indiqués par l'utilisateur, on les ajoute pour éviter tout problème :
@@ -63,9 +63,16 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     if output[-1] != "/":
         output = output + "/"
 
-    # si le nom de l'output contient l'extension ".xml", on l'enlève (cela est nécessaire pour creer l'ID TEI) :
+    # on créé un switch pour vérifier si l'utilisateur souhaite uniquement produire un csv, sa valeur est "False" car normalement ce n'est pas le cas
+    csv_direct = False
+    # si le nom de l'output contient l'extension ".xml", on l'enlève (cela est nécessaire pour creer l'ID TEI ainsi que les dossiers d'extraction) :
     if titlecat.__contains__(".xml"):
         titlecat = titlecat[:-4]
+    # si le nom de l'output contient l'extension ".csv", on l'enlève (cela est nécessaire pour creer les dossiers d'extraction) :
+    elif titlecat.__contains__(".csv"):
+        titlecat = titlecat[:-4]
+        # mais on va aussi activer le switch csv_direct, afin d'indiquer à la pipeline qu'elle produise directement un fichier csv puis qu'elle s'arrêtte immédiatement
+        csv_direct = True
     else:
         pass
 
@@ -80,6 +87,21 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     # on assigne à une variable le chemin vers le fichier
     output_file = extraction_directory + "/" + titlecat
 
+    # === 1.2 Création directe d'un fichier csv, si la chaine "csv" est contenue dans le titre du catalogue  ====
+    # si le titre du catalogue contient "csv", cela veut dire que l'utilisateur souhaite uniquement produire un fichier
+    # csv à partir d'un fichier TEI déjà existant. Dans ce cas, la pipeline sera très courte, et consistera uniquement
+    # dans la fonction "csv_immediat", qui appelle elle même la fonction XMLtoCSV
+    if csv_direct == True:
+        # on appelle la fonction :
+        csv_immediat(titlecat, output_file, extraction_directory)
+        # ON TERMINE LA PIPELINE :
+        return
+    # autrement : on continue avec toute la pipeline normale :
+    else:
+        pass
+    # autrement : on continue avec toute la pipeline normale :
+
+    # === 1.3 création du fichier problèmes et traitement de l'option -st  ====
     # On vérifie si un fichier correspondant "_problems.txt" existe déjà. Cela voudrait dire que la commande a déjà été
     # lancée auparavant, et on élimine ce fichier pour qu'un nouveau soit creé sans accumuler les informations en boucle
     problems = extraction_directory + "/" + titlecat + "_problems.txt"
@@ -96,6 +118,8 @@ def extraction(directory, output, titlecat, segmentationtranscription):
         directory = "./temp_alto/"
     else:
         pass
+
+
 
     # === 2. Création d'un fichier TEI ====
     # création des balises TEI (teiHeader, body) avec le paquet externe lxml et le module creationTEI.py :
@@ -263,13 +287,55 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     # on ajoute ou on redonne au nom du catalogue la terminaison en ".xml"
     if not output_file.__contains__(".xml"):
         output_file = output_file + ".xml"
+    # afin que notre fichier csv soit conforme, on va remplacer les ";" dans le texte par des "," : ainsi, le séparateur ";" traitera correctement le fichier:
+    texte = xml_tree.xpath('//text()')
+    for node in texte:
+        if ";" in node:
+            print(node)
+            balise = node.getparent()
+            node = node.replace(";", ",")
+            balise.text = node
+    # afin que notre fichier csv soit conforme, on va remplacer les '"' dans le texte par des "'" : ainsi, le séparateur ";" traitera correctement le fichier:
+
+    for node in texte:
+        if '"' in node:
+            balise = node.getparent()
+            node = node.replace('"', "'")
+            balise.text = node
+
+    # Avant d'écrire le résultat dans un fichier TEI, on va vérifier s'il n'y a pas déjà un fichier avec le même nom :
+    if os.path.exists(output_file):
+        # s'il y en a un, on va écrire un fichier avec le résultat de la pipeline juste pour le comparer à ce fichier
+        # antérieur. Le fichier de vérification sera ensuite éliminé :
+        verification_file = output_file.replace(".xml", "_verification.xml")
+        xml_tree.write(verification_file, pretty_print=True, encoding="UTF-8", xml_declaration=True)
+        fichier_anterieur = output_file
+        # si les deux fichiers ont le même contenu :
+        if open(fichier_anterieur).read() == open(verification_file).read():
+            os.remove(verification_file)
+            # cela veut dire qu'il n'y a pas danger de perte de données, on continue la pipeline :
+            pass
+        # s'ils différent, il est possible que l'utilisateur perdent des données corrigées !
+        # soit le fichier TEI Ancien avait été corrigé manuellement
+        # soit ce sont les fichiers en input qui ont été corrigés et qui produisent donc un fichier TEI différent de l'ancien
+        # c'est à l'utilisateur de choisir lequel des deux fichiers il veut conserver :
+        else:
+            print("\n========================================================================================================================="
+                  "\n[!] ATTENTION : un fichier TEI avec le même nom de catalogue a déjà été produit et diffère dans son contenu; "
+                  "\nSoit ce fichier a été MODIFIÉ/CORRIGÉ MANUELLEMENT, soit les fichiers ALTO en input ont été MODIFIÉS/CORRIGÉS MANUELLEMENT.")
+            # on demande sur le terminal si l'on souhaite l'éliminer :
+            if input("\tSouhaitez vous que le fichier TEI ancien soit remplacé ? [y/n]\n") == "n":
+                os.remove(verification_file)
+                print("\t--> Le dossier d'extraction n'a pas été modifié. Aucun résultat de la pipeline n'a été enregistré.")
+                return
+            else:
+                os.remove(verification_file)
+                print("\t--> Oui. Le fichier antérieur sera remplacé.\n")
+
     # écriture du résultat de tout le processus de création TEI (arbre, entrées extraites) dans un fichier xml :
     xml_tree.write(output_file, pretty_print=True, encoding="UTF-8", xml_declaration=True)
     # on créé le fichier CSV
-    chemin_csv = XML_to_CSV(output_file, extraction_directory, titlecat)
-
-
-
+    csv_produit = XML_to_CSV(output_file, extraction_directory, titlecat)
 
     # === 5. Informations à afficher sur le terminal ====
     print("\n")
@@ -397,6 +463,12 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             print("\t[!] {} fins d'entrée de catalogue [TextBlock 'CustomZone:entryEnd'] n'ont pas été intégrées au fichier TEI. Elles ont été ajoutées au fichier {}_problems.txt".format(
                 entry_end_non_integrees, titlecat)
             )
+
+    print("    Création d'un tableur csv :")
+    if csv_produit == True:
+        print("\t ✓ Le fichier csv a été produit")
+    elif csv_produit == False:
+        print("\t[!] Le fichier csv n'a pas été produit. Vérifiez la conformité du fichier TEI.")
 
     # le terminal indique à la fin le chemin absolu vers le dossier d'extraction
     chemin_absolu = os.path.abspath(extraction_directory)

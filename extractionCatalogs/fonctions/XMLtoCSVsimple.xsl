@@ -4,13 +4,12 @@
     exclude-result-prefixes="xs" xpath-default-namespace="http://www.tei-c.org/ns/1.0"
     xmlns="http://www.tei-c.org/ns/1.0">
     <xsl:output method="text"/>
-
+    
     <xsl:variable name="delimiter" select="';'"/>
-
+    
     <!-- column's names -->
     <xsl:variable name="fieldArray">
         <field>Last name of the artist</field>
-        
         <field>Biographical elements</field>
         
         <field>Number</field>
@@ -18,11 +17,11 @@
         <field>Subtitle</field>
         
     </xsl:variable>
-
+    
     <xsl:param name="fields" select="document('')/*/xsl:variable[@name = 'fieldArray']/*"/>
-
+    
     <xsl:template match="/">
-
+        
         <!-- output the header row -->
         <xsl:for-each select="$fields">
             <xsl:if test="position() != 1">
@@ -30,26 +29,26 @@
             </xsl:if>
             <xsl:value-of select="."/>
         </xsl:for-each>
-
+        
         <!-- output newline -->
         <xsl:text>&#xa;</xsl:text>
-
-        <xsl:apply-templates select="//item"/>
+       
+        <xsl:apply-templates select="//tei:item"/>
     </xsl:template>
-
-    <xsl:template match="item">
-        <xsl:value-of select="preceding-sibling::desc/name/text()"/>
-        <xsl:text>; ; ; ; </xsl:text>
-        <xsl:value-of select="preceding-sibling::desc/trait/p/text()"/>
-        <xsl:text>; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;</xsl:text>
-        <xsl:value-of select="num/text()"/>
+    
+    <xsl:template match="tei:item">
+        <xsl:value-of select="preceding-sibling::tei:desc/tei:name/text()"/>
         <xsl:value-of select="$delimiter"/>
-        <xsl:value-of select="title/text()"/>
+        <xsl:value-of select="preceding-sibling::tei:desc/tei:trait/tei:p/text()"/>
+        <xsl:value-of select="$delimiter"/>        
+        <xsl:value-of select="tei:num/text()"/>
         <xsl:value-of select="$delimiter"/>
-        <xsl:value-of select="desc/text()"/>
-        <xsl:text>; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;</xsl:text>
+        <xsl:value-of select="tei:title/text()"/>
+        <xsl:value-of select="$delimiter"/>
+        <xsl:value-of select="tei:desc/text()"/>
+        <xsl:value-of select="$delimiter"/>
         <!-- output newline -->
         <xsl:text>&#xa;</xsl:text>
     </xsl:template>
-
+    
 </xsl:stylesheet>

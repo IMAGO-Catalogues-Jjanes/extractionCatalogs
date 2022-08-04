@@ -137,6 +137,8 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
             n += 1
             # la ligne 1 est celle de l'exposant
             if n == 1:
+                if "☙" in ligne:
+                    ligne.replace("☙", "")
                 # on va d'abord regarder s'il y a des chiffres entre parenthese ; dans ce cas, il est certain
                 # que les parenthèse ne contiennent pas de non/prenom, mais des informations complémentaires, et il faut adapter la regex
                 verification_parentheses = verification_parentheses_regex.search(ligne)
@@ -155,38 +157,37 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
                         exposant_recuperation_regex_parentheses_enlevees = exposant_recuperation_regex_string.replace("\(", "")
                         exposant_recuperation_regex_courante = re.compile(exposant_recuperation_regex_parentheses_enlevees)
 
-                    # si les parenthèses n'ont pas de chiffres, il est presque certain qu'on aura un nom/prénom. Dans ce cas, la regex
-                    # dans le cas ou il y a plusieurs parenthèses dans la ligne, on utilisera la regex normale
-                    else :
-                        nombre_parentheses_fermantes = 0
-                        for caractere in verification_parentheses_text:
-                            if caractere == ")":
-                                nombre_parentheses_fermantes += 1
-                        if nombre_parentheses_fermantes == 1:
-                            # Mais s'il y a seulement un groupe de parenthèse, la regex dont on a besoin pour l'extraction
-                            # devient extrêmement simple : tout ce qu'il y a avant la parenthèse fermante
-                            # avec des virgules et points en option
-                            exposant_recuperation_regex_courante = re.compile(r'^.*\)[,.]*')
-                        else:
-                            pass
+                # si on détecte la mention ", né[e] à ", on va faire adapter le traitement pour que les résultats soient meilleurs
+                regex_naissance = re.compile(r', [Nn]+é[e]* à .*|, [Nn]+é[e]* à .*|, [Nn]+é[e]* à .*')
                 # on utilise les regex pour séparer l'exposant des éventuelles informations biographiques
-                exposant_texte = exposant_recuperation_regex_courante.search(ligne)
+                if regex_naissance.search(ligne):
+                    exposant_texte = re.sub(regex_naissance, "", ligne)
+                # si non, on fait le traitement normal :
+                else:
+                    exposant_texte = exposant_recuperation_regex_courante.search(ligne)
+                    if exposant_texte != None:
+                        exposant_texte = exposant_texte.group(0)
                 # si on obtient un résultat :
                 if exposant_texte != None:
                     # "group() method returns a tuple containing all the subgroups of the match, therefore,
                     # it can return any number of groups that are in a pattern"
-                    exposant_texte = exposant_texte.group(0)
                     exposant_xml.text = exposant_texte
                     print("\t      " + exposant_texte)
                 # on utilise la même regex pour isoler tout le texte restant, s'il y en a
-                # mais la variable est une regex compilée ; on peut heureusement récupèrer la regex originale avec la méthode .pattern
-                exposant_recuperation_regex_originale = exposant_recuperation_regex_courante.pattern
-                info_bio = re.sub(r"{}".format(exposant_recuperation_regex_originale), '', ligne)
-                if info_bio != None:
-                    if info_bio != "":
-                        # on enlève les espaces de début, puisqu'il y en a souvent :
-                        re.sub(r'^[ ]*[ ]*', '', info_bio )
-                        liste_trait_texte.append(info_bio)
+                # d'abord, s'il y a la mention la mention ", né[e] à " :
+                if regex_naissance.search(ligne):
+                    info_bio = regex_naissance.search(ligne).group(0)
+                    liste_trait_texte.append(info_bio)
+                # si non, on fait le traitement normal :
+                else:
+                    # mais la variable est une regex compilée ; on peut heureusement récupèrer la regex originale avec la méthode .pattern
+                    exposant_recuperation_regex_originale = exposant_recuperation_regex_courante.pattern
+                    info_bio = re.sub(r"{}".format(exposant_recuperation_regex_originale), '', ligne)
+                    if info_bio != None:
+                        if info_bio != "":
+                            # on enlève les espaces de début, puisqu'il y en a souvent :
+                            re.sub(r'^[ ]*[ ]*', '', info_bio )
+                            liste_trait_texte.append(info_bio)
             # le reste des lignes avant la première oeuvre seront des informations biographiques
             elif n > 1:
                 if n_line_oeuvre:
