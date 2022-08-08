@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>54_fdda2_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3604/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT180" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT181" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT182" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT183" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT184" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT185" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT186" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT187" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT188" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT189" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/>
+    <OtherTag ID="LT62" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT63" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT64" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="577" HEIGHT="991" PHYSICAL_IMG_NR="54" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="577" HEIGHT="991">
+        <TextBlock HPOS="82" VPOS="109" WIDTH="426" HEIGHT="746" ID="eSc_textblock_9cce34f7" TAGREFS="BT186">
+          <Shape>
+            <Polygon POINTS="82 109 82 855 508 855 508 109"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="233" VPOS="862" WIDTH="141" HEIGHT="32" ID="eSc_textblock_2f8825bf" TAGREFS="BT188">
+          <Shape>
+            <Polygon POINTS="366 862 374 894 317 891 234 887 233 864 323 863"/>
+          </Shape>
+          <TextLine ID="eSc_line_26cbc1e0" TAGREFS="LT62" BASELINE="234 881 362 884" HPOS="233" VPOS="854" WIDTH="129" HEIGHT="47">
+            <Shape><Polygon POINTS="234 881 235 855 256 860 281 856 282 856 283 856 289 862 316 862 321 856 323 855 323 854 324 854 325 854 362 857 362 884 362 896 333 901 332 901 314 896 304 893 289 896 261 900 260 900 233 894"/></Shape>
+	    <String CONTENT="H. Henneberg" HPOS="233" VPOS="854" WIDTH="129" HEIGHT="47"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
