@@ -9,12 +9,12 @@
     
     <!-- column's names -->
     <xsl:variable name="fieldArray">
-        <field>Last name of the artist</field>
-        <field>Biographical elements</field>
+        <field>Nam et prénom de l'exposant</field>
+        <field>Informations complémentaire</field>
         
-        <field>Number</field>
-        <field>Title of artwork</field>
-        <field>Subtitle</field>
+        <field>Numéro</field>
+        <field>Titre</field>
+        <field>Informations complémentaires</field>
         
     </xsl:variable>
     
