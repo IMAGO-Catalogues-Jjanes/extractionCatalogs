@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>38_13b99_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3323/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT190" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT191" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT192" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT193" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT194" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT195" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT196" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT197" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT198" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/>
+    <OtherTag ID="LT65" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT66" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT67" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT68" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="947" HEIGHT="1502" PHYSICAL_IMG_NR="38" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="947" HEIGHT="1502">
+        <TextBlock HPOS="117" VPOS="197" WIDTH="611" HEIGHT="969" ID="eSc_textblock_8afe230e" TAGREFS="BT191">
+          <Shape>
+            <Polygon POINTS="117 197 129 1166 727 1166 728 197"/>
+          </Shape>
+          <TextLine ID="eSc_line_4e02aae7" TAGREFS="LT66" BASELINE="144 1187 275 1187" HPOS="142" VPOS="1144" WIDTH="134" HEIGHT="62">
+            <Shape><Polygon POINTS="144 1187 142 1147 179 1144 180 1144 181 1144 191 1147 211 1155 274 1149 275 1187 276 1199 260 1206 259 1206 258 1206 256 1206 255 1206 255 1205 249 1200 205 1206 204 1206 142 1200"/></Shape>
+	    <String CONTENT="Phototype A. Darnis" HPOS="142" VPOS="1144" WIDTH="134" HEIGHT="62"/>
+          </TextLine>
+          <TextLine ID="eSc_line_7dc01c3c" TAGREFS="LT66" BASELINE="572 1185 712 1185" HPOS="571" VPOS="1149" WIDTH="141" HEIGHT="66">
+            <Shape><Polygon POINTS="572 1185 571 1150 711 1149 712 1185 712 1196 653 1197 638 1206 621 1215 620 1215 618 1215 571 1214"/></Shape>
+	    <String CONTENT="Héliog Fillon &amp; Heuse" HPOS="571" VPOS="1149" WIDTH="141" HEIGHT="66"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0b8f5496" TAGREFS="LT66" BASELINE="339 1245 527 1240" HPOS="334" VPOS="1197" WIDTH="193" HEIGHT="65">
+            <Shape><Polygon POINTS="339 1245 334 1214 365 1200 367 1200 368 1200 387 1200 388 1200 389 1200 403 1211 408 1210 443 1204 444 1204 445 1204 459 1209 460 1209 476 1197 477 1197 478 1197 479 1197 524 1206 527 1240 526 1254 424 1261 423 1261 397 1256 385 1254 383 1256 375 1262 374 1262 373 1262 372 1262 338 1256"/></Shape>
+	    <String CONTENT="Calme plat" HPOS="334" VPOS="1197" WIDTH="193" HEIGHT="65"/>
+          </TextLine>
+          <TextLine ID="eSc_line_6a41277b" TAGREFS="LT66" BASELINE="382 1315 481 1314" HPOS="380" VPOS="1291" WIDTH="101" HEIGHT="49">
+            <Shape><Polygon POINTS="382 1315 380 1291 478 1294 481 1314 481 1339 382 1340"/></Shape>
+	    <String CONTENT="Imp. Ch. Wittmann." HPOS="380" VPOS="1291" WIDTH="101" HEIGHT="49"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="134" VPOS="1173" WIDTH="580" HEIGHT="166" ID="eSc_textblock_b67b1305" TAGREFS="BT194">
+          <Shape>
+            <Polygon POINTS="134 1173 134 1339 714 1339 714 1173"/>
+          </Shape>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

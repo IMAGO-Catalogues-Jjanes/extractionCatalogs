@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>49_dd78d_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3334/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT190" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT191" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT192" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT193" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT194" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT195" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT196" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT197" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT198" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/>
+    <OtherTag ID="LT65" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT66" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT67" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT68" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  
+  <Layout>
+    <Page WIDTH="943"
+          HEIGHT="1502"
+          PHYSICAL_IMG_NR="49"
+          ID="eSc_dummypage_">
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="943"
+                  HEIGHT="1502">
+        
+        <TextBlock HPOS="117"
+                   VPOS="287"
+                   WIDTH="656"
+                   HEIGHT="817"
+                   ID="eSc_textblock_5f924ca7"
+                   TAGREFS="BT191">
+          <Shape><Polygon POINTS="117 290 122 1104 773 1097 773 287"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_7fc43ff4"
+                    TAGREFS="LT66"
+                    BASELINE="131 276 467 276" 
+                    HPOS="127"
+                    VPOS="240"
+                    WIDTH="341"
+                    HEIGHT="45">
+            <Shape><Polygon POINTS="131 276 127 251 142 241 144 241 145 241 146 241 147 241 149 241 161 251 251 251 269 240 270 240 271 240 273 240 274 240 304 250 323 242 324 242 325 242 364 250 390 240 391 240 393 240 445 240 447 240 468 251 467 276 465 285 130 284"/></Shape>
+	    <String CONTENT="Album de l&#39;Exposition d&#39;Art Photographique"
+                    HPOS="127"
+                    VPOS="240"
+                    WIDTH="341"
+                    HEIGHT="45"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_70dc62c5"
+                    TAGREFS="LT66"
+                    BASELINE="634 274 749 274" 
+                    HPOS="632"
+                    VPOS="242"
+                    WIDTH="116"
+                    HEIGHT="43">
+            <Shape><Polygon POINTS="633 272 632 249 747 242 748 272 747 285 632 281"/></Shape>
+	    <String CONTENT="2e Année 1895"
+                    HPOS="632"
+                    VPOS="242"
+                    WIDTH="116"
+                    HEIGHT="43"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_737024d5"
+                    TAGREFS="LT66"
+                    BASELINE="389 1146 482 1146" 
+                    HPOS="389"
+                    VPOS="1106"
+                    WIDTH="93"
+                    HEIGHT="51">
+            <Shape><Polygon POINTS="389 1146 389 1106 482 1115 482 1146 482 1156 389 1157"/></Shape>
+	    <String CONTENT="Etude"
+                    HPOS="389"
+                    VPOS="1106"
+                    WIDTH="93"
+                    HEIGHT="51"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_fa3c2bfd"
+                    TAGREFS="LT66"
+                    BASELINE="366 1175 503 1174" 
+                    HPOS="363"
+                    VPOS="1146"
+                    WIDTH="140"
+                    HEIGHT="38">
+            <Shape><Polygon POINTS="366 1175 363 1151 499 1146 503 1174 500 1184 365 1181"/></Shape>
+	    <String CONTENT="(Mce Bremard)"
+                    HPOS="363"
+                    VPOS="1146"
+                    WIDTH="140"
+                    HEIGHT="38"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_b81a92a0"
+                    TAGREFS="LT66"
+                    BASELINE="361 1196 518 1194" 
+                    HPOS="359"
+                    VPOS="1172"
+                    WIDTH="159"
+                    HEIGHT="50">
+            <Shape><Polygon POINTS="361 1196 359 1172 515 1174 518 1194 517 1220 444 1207 361 1222"/></Shape>
+	    <String CONTENT="Spécimen des Planches"
+                    HPOS="359"
+                    VPOS="1172"
+                    WIDTH="159"
+                    HEIGHT="50"></String>
+          </TextLine>
+
+          
+          
+          <TextLine ID="eSc_line_eb4e8108"
+                    TAGREFS="LT66"
+                    BASELINE="642 1227 747 1224" 
+                    HPOS="637"
+                    VPOS="1191"
+                    WIDTH="110"
+                    HEIGHT="56">
+            <Shape><Polygon POINTS="642 1227 637 1200 651 1192 652 1192 653 1192 654 1192 680 1199 685 1200 690 1199 710 1191 711 1191 712 1191 745 1197 747 1224 746 1247 682 1240 642 1245"/></Shape>
+	    <String CONTENT="Imp. Ch. Wittmann"
+                    HPOS="637"
+                    VPOS="1191"
+                    WIDTH="110"
+                    HEIGHT="56"></String>
+          </TextLine>
+
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="124"
+                   VPOS="243"
+                   WIDTH="629"
+                   HEIGHT="40"
+                   ID="eSc_textblock_059a97eb"
+                   TAGREFS="BT194">
+          <Shape><Polygon POINTS="124 243 124 283 753 283 753 243"/></Shape>
+          
+        </TextBlock>
+        
+        <TextBlock HPOS="356"
+                   VPOS="1111"
+                   WIDTH="414"
+                   HEIGHT="141"
+                   ID="eSc_textblock_830ffd78"
+                   TAGREFS="BT194">
+          <Shape><Polygon POINTS="356 1111 356 1252 770 1252 770 1111"/></Shape>
+          
+        </TextBlock>
+        
+
+        
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
