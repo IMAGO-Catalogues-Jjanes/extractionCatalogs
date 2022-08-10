@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>44_2dd71_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3329/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT190" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT191" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT192" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT193" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT194" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT195" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT196" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT197" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT198" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/>
+    <OtherTag ID="LT65" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT66" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT67" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT68" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="918" HEIGHT="1479" PHYSICAL_IMG_NR="44" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="918" HEIGHT="1479">
+        <TextBlock HPOS="453" VPOS="153" WIDTH="66" HEIGHT="25" ID="eSc_textblock_fa581f3a" TAGREFS="BT195">
+          <Shape>
+            <Polygon POINTS="453 153 453 178 519 178 519 153"/>
+          </Shape>
+          <TextLine ID="eSc_line_e76832f2" TAGREFS="LT66" BASELINE="456 168 516 168" HPOS="455" VPOS="136" WIDTH="61" HEIGHT="41">
+            <Shape><Polygon POINTS="456 168 455 142 515 136 516 168 516 176 456 177"/></Shape>
+	    <String CONTENT="— 46 —" HPOS="455" VPOS="136" WIDTH="61" HEIGHT="41"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="196" VPOS="189" WIDTH="588" HEIGHT="1064" ID="eSc_textblock_28b8b88d" TAGREFS="BT193">
+          <Shape>
+            <Polygon POINTS="196 189 196 558 196 1253 784 1253 784 189 558 189 469 189"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="212" VPOS="196" WIDTH="437" HEIGHT="125" ID="eSc_textblock_9e2b551a" TAGREFS="BT190">
+          <Shape>
+            <Polygon POINTS="212 196 212 321 649 321 649 198"/>
+          </Shape>
+          <TextLine ID="eSc_line_8a77aba0" TAGREFS="LT66" BASELINE="214 215 478 214" HPOS="213" VPOS="172" WIDTH="265" HEIGHT="53">
+            <Shape><Polygon POINTS="214 215 213 182 245 182 246 181 255 173 255 172 256 172 257 172 259 172 334 175 335 175 336 175 343 179 346 182 354 179 376 172 377 172 378 172 380 172 396 178 404 182 475 178 478 214 477 225 213 224"/></Shape>
+	    <String CONTENT="☙ SELBY (Harry)" HPOS="213" VPOS="172" WIDTH="265" HEIGHT="53"/>
+          </TextLine>
+          <TextLine ID="eSc_line_8b4527ea" TAGREFS="LT66" BASELINE="398 241 642 244" HPOS="396" VPOS="223" WIDTH="246" HEIGHT="35">
+            <Shape><Polygon POINTS="398 241 397 223 502 223 566 223 591 224 592 224 593 224 642 228 642 244 640 258 591 251 552 256 529 258 528 258 526 258 518 255 507 250 486 253 465 257 463 257 396 250"/></Shape>
+	    <String CONTENT="8, Minford Gardens, Londres." HPOS="396" VPOS="223" WIDTH="246" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_f2cf92b7" TAGREFS="LT66" BASELINE="273 281 583 278" HPOS="272" VPOS="247" WIDTH="311" HEIGHT="40">
+            <Shape><Polygon POINTS="273 281 272 252 423 255 439 253 481 247 482 247 518 253 519 253 535 247 536 247 537 247 581 255 583 278 581 287 272 285"/></Shape>
+	    <String CONTENT="546. Dans la baie de Dublin. A. Br." HPOS="272" VPOS="247" WIDTH="311" HEIGHT="40"/>
+          </TextLine>
+          <TextLine ID="eSc_line_790cc5f4" TAGREFS="LT66" BASELINE="273 299 588 301" HPOS="271" VPOS="276" WIDTH="317" HEIGHT="33">
+            <Shape><Polygon POINTS="273 299 273 276 587 281 588 301 586 309 271 306"/></Shape>
+	    <String CONTENT="547. Une Moisson pluvieuse. A. Br." HPOS="271" VPOS="276" WIDTH="317" HEIGHT="33"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="210" VPOS="360" WIDTH="426" HEIGHT="100" ID="eSc_textblock_24e71f64" TAGREFS="BT190">
+          <Shape>
+            <Polygon POINTS="210 360 210 460 636 460 636 360"/>
+          </Shape>
+          <TextLine ID="eSc_line_8d906e15" TAGREFS="LT66" BASELINE="212 382 581 382" HPOS="210" VPOS="347" WIDTH="371" HEIGHT="43">
+            <Shape><Polygon POINTS="212 382 212 347 581 351 581 382 579 390 210 389"/></Shape>
+	    <String CONTENT="☙ SELIGMAN (G.) P. C. P." HPOS="210" VPOS="347" WIDTH="371" HEIGHT="43"/>
+          </TextLine>
+          <TextLine ID="eSc_line_94b03b5a" TAGREFS="LT66" BASELINE="398 409 634 409" HPOS="396" VPOS="378" WIDTH="238" HEIGHT="58">
+            <Shape><Polygon POINTS="398 409 396 388 419 380 420 380 421 380 423 380 424 380 424 382 430 387 431 389 498 389 505 384 515 379 516 379 518 379 519 379 536 384 552 388 566 383 578 378 579 378 581 378 634 382 634 409 632 436 589 428 583 435 582 435 582 436 581 436 579 436 578 436 509 433 508 433 507 433 507 432 505 432 498 425 398 427"/></Shape>
+	    <String CONTENT="26, avenue de Villiers, Paris." HPOS="396" VPOS="378" WIDTH="238" HEIGHT="58"/>
+          </TextLine>
+          <TextLine ID="eSc_line_3d264609" TAGREFS="LT66" BASELINE="271 446 499 443" HPOS="268" VPOS="428" WIDTH="231" HEIGHT="29">
+            <Shape><Polygon POINTS="271 446 268 431 496 428 499 443 499 452 271 457"/></Shape>
+	    <String CONTENT="548. Une Mare en forêt." HPOS="268" VPOS="428" WIDTH="231" HEIGHT="29"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="207" VPOS="503" WIDTH="520" HEIGHT="142" ID="eSc_textblock_6e228948" TAGREFS="BT190">
+          <Shape>
+            <Polygon POINTS="207 503 207 645 727 645 727 503"/>
+          </Shape>
+          <TextLine ID="eSc_line_41957caa" TAGREFS="LT66" BASELINE="214 525 369 526 626 528" HPOS="212" VPOS="489" WIDTH="413" HEIGHT="54">
+            <Shape><Polygon POINTS="213 523 212 496 338 489 339 489 625 499 625 527 623 543 592 537 461 542 455 542 454 542 452 542 451 542 442 536 368 542 356 542 355 542 354 542 350 541 325 534 318 541 317 541 315 541 314 541 313 541 292 534 212 539"/></Shape>
+	    <String CONTENT="☙ SERSTEVENS (Gaston T'.)" HPOS="212" VPOS="489" WIDTH="413" HEIGHT="54"/>
+          </TextLine>
+          <TextLine ID="eSc_line_282e0891" TAGREFS="LT66" BASELINE="399 553 721 555" HPOS="397" VPOS="528" WIDTH="324" HEIGHT="52">
+            <Shape><Polygon POINTS="399 553 399 528 720 536 721 555 721 565 689 579 688 579 688 580 600 580 599 579 598 579 597 579 586 569 581 565 560 570 556 570 555 570 554 570 552 570 541 564 436 564 425 574 420 578 419 578 418 578 417 578 397 574"/></Shape>
+	    <String CONTENT="Baudemont Ittre, par Virginal (Belgique)." HPOS="397" VPOS="528" WIDTH="324" HEIGHT="52"/>
+          </TextLine>
+          <TextLine ID="eSc_line_b8f156da" TAGREFS="LT66" BASELINE="271 589 526 592" HPOS="268" VPOS="568" WIDTH="258" HEIGHT="33">
+            <Shape><Polygon POINTS="271 589 271 568 526 568 526 592 524 601 268 598"/></Shape>
+	    <String CONTENT="549. L’Hiver à Baudenont." HPOS="268" VPOS="568" WIDTH="258" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_8252c670" TAGREFS="LT66" BASELINE="273 611 429 611" HPOS="272" VPOS="589" WIDTH="157" HEIGHT="30">
+            <Shape><Polygon POINTS="273 611 273 589 429 594 429 611 428 619 272 615"/></Shape>
+	    <String CONTENT="550. Un Cygne." HPOS="272" VPOS="589" WIDTH="157" HEIGHT="30"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e04dbe34" TAGREFS="LT66" BASELINE="272 631 433 631" HPOS="270" VPOS="616" WIDTH="163" HEIGHT="28">
+            <Shape><Polygon POINTS="272 631 272 616 433 616 433 631 431 644 310 637 307 638 291 644 289 644 288 644 287 644 270 635"/></Shape>
+	    <String CONTENT="551. Printemps." HPOS="270" VPOS="616" WIDTH="163" HEIGHT="28"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="205" VPOS="683" WIDTH="472" HEIGHT="123" ID="eSc_textblock_77652de1" TAGREFS="BT190">
+          <Shape>
+            <Polygon POINTS="205 683 205 806 677 806 677 683"/>
+          </Shape>
+          <TextLine ID="eSc_line_b36c1b64" TAGREFS="LT66" BASELINE="214 708 478 711 669 713" HPOS="210" VPOS="669" WIDTH="458" HEIGHT="56">
+            <Shape><Polygon POINTS="213 707 210 677 243 669 244 669 245 669 246 669 273 676 275 676 278 676 330 670 331 670 333 670 334 670 341 675 345 679 409 679 418 675 431 670 433 670 434 670 435 670 436 670 436 671 440 675 445 680 463 680 468 674 473 670 473 669 475 669 476 669 477 669 530 669 531 669 541 674 556 680 577 672 583 671 584 671 586 671 587 671 592 672 603 677 613 672 618 670 619 670 620 670 668 672 668 712 666 725 528 719 463 724 460 724 459 724 456 724 426 718 334 723 330 723 329 723 328 723 326 723 317 717 212 722"/></Shape>
+	    <String CONTENT="☙ SEVERINSKI (Rudolf) C. C. V." HPOS="210" VPOS="669" WIDTH="458" HEIGHT="56"/>
+          </TextLine>
+          <TextLine ID="eSc_line_601cd788" TAGREFS="LT66" BASELINE="397 738 628 738" HPOS="397" VPOS="716" WIDTH="231" HEIGHT="33">
+            <Shape><Polygon POINTS="397 738 397 716 628 718 628 738 628 749 397 749"/></Shape>
+	    <String CONTENT="1, Bauernmarkt, 13, Vienne." HPOS="397" VPOS="716" WIDTH="231" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0fbaabbc" TAGREFS="LT66" BASELINE="272 772 530 775" HPOS="270" VPOS="749" WIDTH="260" HEIGHT="33">
+            <Shape><Polygon POINTS="272 772 272 749 529 751 530 775 528 782 270 780"/></Shape>
+	    <String CONTENT="552. Étude au Prater. D. Pl." HPOS="270" VPOS="749" WIDTH="260" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_df8c4923" TAGREFS="LT66" BASELINE="272 793 533 796" HPOS="270" VPOS="771" WIDTH="263" HEIGHT="33">
+            <Shape><Polygon POINTS="272 793 272 771 531 775 533 796 530 804 270 803"/></Shape>
+	    <String CONTENT="553. Étude au Prater. D. Pl." HPOS="270" VPOS="771" WIDTH="263" HEIGHT="33"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="216" VPOS="850" WIDTH="454" HEIGHT="120" ID="eSc_textblock_5ba2a54f" TAGREFS="BT190">
+          <Shape>
+            <Polygon POINTS="216 850 216 970 670 970 670 850"/>
+          </Shape>
+          <TextLine ID="eSc_line_0e48d045" TAGREFS="LT66" BASELINE="224 873 565 878" HPOS="220" VPOS="845" WIDTH="343" HEIGHT="41">
+            <Shape><Polygon POINTS="223 872 223 845 562 850 563 877 561 886 220 882"/></Shape>
+	    <String CONTENT="☙ SINCLAIR (James A.)." HPOS="220" VPOS="845" WIDTH="343" HEIGHT="41"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0110faed" TAGREFS="LT66" BASELINE="399 902 668 905" HPOS="397" VPOS="875" WIDTH="271" HEIGHT="50">
+            <Shape><Polygon POINTS="399 902 398 881 473 875 475 875 476 875 477 875 482 878 491 884 544 884 562 877 571 875 572 875 573 875 593 877 630 881 667 876 668 905 667 916 624 925 623 925 520 918 489 924 488 924 397 913"/></Shape>
+	    <String CONTENT="26, Charing Cross Road, Londres." HPOS="397" VPOS="875" WIDTH="271" HEIGHT="50"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e4362751" TAGREFS="LT66" BASELINE="275 936 339 937 438 939" HPOS="271" VPOS="914" WIDTH="165" HEIGHT="33">
+            <Shape><Polygon POINTS="273 935 273 914 436 919 436 937 434 947 271 946"/></Shape>
+	    <String CONTENT="554. Crépuscule." HPOS="271" VPOS="914" WIDTH="165" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_2be0b843" TAGREFS="LT66" BASELINE="272 956 472 960" HPOS="270" VPOS="937" WIDTH="202" HEIGHT="34">
+            <Shape><Polygon POINTS="272 956 272 937 471 941 472 960 470 971 270 968"/></Shape>
+	    <String CONTENT="555. Soleil couchant." HPOS="270" VPOS="937" WIDTH="202" HEIGHT="34"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="203" VPOS="1007" WIDTH="558" HEIGHT="225" ID="eSc_textblock_a5a12686" TAGREFS="BT190">
+          <Shape>
+            <Polygon POINTS="203 1007 203 1232 761 1232 761 1007"/>
+          </Shape>
+          <TextLine ID="eSc_line_8cce0881" TAGREFS="LT66" BASELINE="215 1036 530 1040" HPOS="213" VPOS="1003" WIDTH="317" HEIGHT="48">
+            <Shape><Polygon POINTS="215 1036 215 1003 530 1011 530 1040 528 1051 213 1046"/></Shape>
+	    <String CONTENT="☙ SMEDLEY ASTON" HPOS="213" VPOS="1003" WIDTH="317" HEIGHT="48"/>
+          </TextLine>
+          <TextLine ID="eSc_line_f9a4ff16" TAGREFS="LT66" BASELINE="398 1064 753 1069" HPOS="396" VPOS="1043" WIDTH="357" HEIGHT="53">
+            <Shape><Polygon POINTS="398 1064 398 1043 753 1048 753 1069 752 1096 718 1096 716 1095 715 1095 714 1095 713 1094 700 1084 677 1091 667 1095 666 1095 665 1095 663 1095 652 1090 634 1082 587 1082 577 1087 568 1091 567 1091 566 1091 565 1091 563 1091 556 1085 554 1084 546 1085 516 1090 515 1090 514 1090 484 1082 475 1079 471 1082 457 1088 456 1088 455 1088 396 1077"/></Shape>
+	    <String CONTENT="7, Newhall Street, Birmingham (Angleterre)." HPOS="396" VPOS="1043" WIDTH="357" HEIGHT="53"/>
+          </TextLine>
+          <TextLine ID="eSc_line_4e67658d" TAGREFS="LT66" BASELINE="272 1099 320 1101 329 1100 454 1103" HPOS="268" VPOS="1072" WIDTH="184" HEIGHT="36">
+            <Shape><Polygon POINTS="271 1098 271 1072 452 1077 452 1101 450 1108 268 1104"/></Shape>
+	    <String CONTENT="556. Jour de brise." HPOS="268" VPOS="1072" WIDTH="184" HEIGHT="36"/>
+          </TextLine>
+          <TextLine ID="eSc_line_cfee64dd" TAGREFS="LT66" BASELINE="272 1121 315 1121 336 1121 413 1121" HPOS="270" VPOS="1099" WIDTH="142" HEIGHT="31">
+            <Shape><Polygon POINTS="271 1120 271 1099 412 1103 412 1120 410 1130 270 1128"/></Shape>
+	    <String CONTENT="557. En forêt." HPOS="270" VPOS="1099" WIDTH="142" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_64508f6f" TAGREFS="LT66" BASELINE="272 1140 315 1142 336 1143 459 1141" HPOS="270" VPOS="1119" WIDTH="189" HEIGHT="33">
+            <Shape><Polygon POINTS="271 1138 270 1119 456 1119 459 1140 457 1152 270 1149"/></Shape>
+	    <String CONTENT="558. Rivage désert." HPOS="270" VPOS="1119" WIDTH="189" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e85235fd" TAGREFS="LT66" BASELINE="272 1163 323 1163 331 1163 454 1164" HPOS="268" VPOS="1141" WIDTH="184" HEIGHT="33">
+            <Shape><Polygon POINTS="271 1162 271 1141 451 1143 452 1163 450 1174 323 1168 322 1168 314 1174 313 1174 312 1174 310 1174 268 1165"/></Shape>
+	    <String CONTENT="559. Étude de tête." HPOS="268" VPOS="1141" WIDTH="184" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_2dd7310c" TAGREFS="LT66" BASELINE="272 1180 315 1183 336 1183 397 1180" HPOS="270" VPOS="1158" WIDTH="126" HEIGHT="31">
+            <Shape><Polygon POINTS="271 1179 270 1158 393 1162 396 1179 393 1189 270 1186"/></Shape>
+	    <String CONTENT="560. Étude." HPOS="270" VPOS="1158" WIDTH="126" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_582ce2d8" TAGREFS="LT66" BASELINE="272 1204 322 1202 333 1204 412 1204" HPOS="270" VPOS="1179" WIDTH="140" HEIGHT="33">
+            <Shape><Polygon POINTS="271 1202 270 1179 409 1183 410 1202 409 1211 271 1212"/></Shape>
+	    <String CONTENT="561. Portrait." HPOS="270" VPOS="1179" WIDTH="140" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0385d72e" TAGREFS="LT66" BASELINE="271 1223 318 1223 335 1222 412 1225" HPOS="268" VPOS="1202" WIDTH="142" HEIGHT="46">
+            <Shape><Polygon POINTS="270 1222 270 1202 409 1205 410 1223 409 1248 370 1248 368 1247 367 1247 366 1247 361 1243 346 1236 268 1236"/></Shape>
+	    <String CONTENT="562. Portrait." HPOS="268" VPOS="1202" WIDTH="142" HEIGHT="46"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

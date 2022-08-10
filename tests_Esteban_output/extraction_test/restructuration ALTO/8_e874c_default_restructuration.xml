@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>8_e874c_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3293/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT190" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT191" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT192" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT193" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT194" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT195" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT196" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT197" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT198" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/>
+    <OtherTag ID="LT65" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT66" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT67" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT68" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="1014" HEIGHT="1585" PHYSICAL_IMG_NR="8" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="1014" HEIGHT="1585">
+        <TextBlock HPOS="214" VPOS="247" WIDTH="629" HEIGHT="1054" ID="eSc_textblock_190e7254" TAGREFS="BT193">
+          <Shape>
+            <Polygon POINTS="231 247 217 1095 214 1301 843 1301 843 247"/>
+          </Shape>
+          <TextLine ID="eSc_line_1080fbcf" TAGREFS="LT67" BASELINE="405 314 688 318" HPOS="404" VPOS="257" WIDTH="286" HEIGHT="74">
+            <Shape><Polygon POINTS="405 314 405 257 597 272 631 272 635 269 650 261 651 261 653 261 654 261 690 272 688 318 686 331 540 324 516 330 511 330 510 330 508 330 507 330 497 323 404 327"/></Shape>
+	    <String CONTENT="Abréviations" HPOS="404" VPOS="257" WIDTH="286" HEIGHT="74"/>
+          </TextLine>
+          <TextLine ID="eSc_line_2468ff82" TAGREFS="LT66" BASELINE="290 397 466 400 823 416" HPOS="288" VPOS="361" WIDTH="535" HEIGHT="61">
+            <Shape><Polygon POINTS="290 397 292 361 310 369 378 365 407 364 408 364 432 368 474 376 490 371 498 368 499 368 501 368 502 368 503 368 508 372 519 379 594 380 602 376 609 372 610 372 612 372 613 372 646 373 647 373 649 373 649 375 654 379 658 384 748 385 750 384 761 379 762 379 764 379 823 388 823 416 820 422 288 404"/></Shape>
+	    <String CONTENT="Les renseignements fournis par les exposants sur les" HPOS="288" VPOS="361" WIDTH="535" HEIGHT="61"/>
+          </TextLine>
+          <TextLine ID="eSc_line_a01cef2e" TAGREFS="LT66" BASELINE="268 426 477 429 822 443" HPOS="267" VPOS="393" WIDTH="555" HEIGHT="64">
+            <Shape><Polygon POINTS="268 426 268 393 351 402 376 397 379 397 380 397 382 397 383 397 395 404 501 402 543 402 544 402 561 405 590 410 606 408 618 405 620 405 621 405 629 408 639 413 822 417 822 443 820 451 707 457 705 457 658 449 625 443 616 449 606 453 605 453 604 453 551 451 519 450 518 450 516 450 516 449 512 446 506 439 494 446 493 446 491 446 490 446 489 446 487 446 473 438 436 443 434 443 433 443 432 443 432 442 430 442 427 437 375 443 371 443 370 443 368 443 367 443 347 434 267 441"/></Shape>
+	    <String CONTENT="procédés d'impression employés, sont indiqués par les" HPOS="267" VPOS="393" WIDTH="555" HEIGHT="64"/>
+          </TextLine>
+          <TextLine ID="eSc_line_34bfbfca" TAGREFS="LT66" BASELINE="267 454 489 457" HPOS="264" VPOS="430" WIDTH="225" HEIGHT="48">
+            <Shape><Polygon POINTS="267 454 267 430 487 433 489 457 487 476 354 478 352 478 351 478 350 478 350 476 341 468 337 464 264 463"/></Shape>
+	    <String CONTENT="abréviations suivantes :" HPOS="264" VPOS="430" WIDTH="225" HEIGHT="48"/>
+          </TextLine>
+          <TextLine ID="eSc_line_7cf80aac" TAGREFS="LT66" BASELINE="271 505 296 505 329 504 469 509" HPOS="267" VPOS="475" WIDTH="201" HEIGHT="41">
+            <Shape><Polygon POINTS="269 504 269 475 308 482 386 476 407 475 408 475 409 475 411 475 412 476 423 484 466 478 468 508 465 516 267 513"/></Shape>
+	    <String CONTENT="A. Agrandissement." HPOS="267" VPOS="475" WIDTH="201" HEIGHT="41"/>
+          </TextLine>
+          <TextLine ID="eSc_line_1abe5b2d" TAGREFS="LT66" BASELINE="569 515 590 515 626 517 768 521" HPOS="565" VPOS="487" WIDTH="201" HEIGHT="41">
+            <Shape><Polygon POINTS="568 513 568 487 766 487 766 520 764 528 565 520"/></Shape>
+	    <String CONTENT="D. Épreuve directe." HPOS="565" VPOS="487" WIDTH="201" HEIGHT="41"/>
+          </TextLine>
+          <TextLine ID="eSc_line_2c11b456" TAGREFS="LT66" BASELINE="271 524 305 527 325 527 471 530" HPOS="267" VPOS="504" WIDTH="203" HEIGHT="36">
+            <Shape><Polygon POINTS="269 523 269 504 469 509 470 529 468 540 267 530"/></Shape>
+	    <String CONTENT="Al. Papier albuminé." HPOS="267" VPOS="504" WIDTH="203" HEIGHT="36"/>
+          </TextLine>
+          <TextLine ID="eSc_line_c92c6399" TAGREFS="LT66" BASELINE="571 534 589 534 629 536 690 540" HPOS="567" VPOS="513" WIDTH="121" HEIGHT="33">
+            <Shape><Polygon POINTS="569 533 569 513 687 520 688 538 686 546 567 541"/></Shape>
+	    <String CONTENT="E. Émail." HPOS="567" VPOS="513" WIDTH="121" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_381ecd26" TAGREFS="LT66" BASELINE="268 546 520 552" HPOS="267" VPOS="520" WIDTH="253" HEIGHT="47">
+            <Shape><Polygon POINTS="268 546 269 520 289 527 518 527 520 552 518 567 330 554 267 562"/></Shape>
+	    <String CONTENT="Br. Papier au gélatino-bro¬" HPOS="267" VPOS="520" WIDTH="253" HEIGHT="47"/>
+          </TextLine>
+          <TextLine ID="eSc_line_9d6d60bc" TAGREFS="LT66" BASELINE="565 556 745 561" HPOS="563" VPOS="529" WIDTH="182" HEIGHT="42">
+            <Shape><Polygon POINTS="565 556 565 529 745 532 745 561 742 571 563 561"/></Shape>
+	    <String CONTENT="Hél. Héliogravure." HPOS="563" VPOS="529" WIDTH="182" HEIGHT="42"/>
+          </TextLine>
+          <TextLine ID="eSc_line_4b8d95e6" TAGREFS="LT66" BASELINE="345 566 466 570" HPOS="342" VPOS="548" WIDTH="124" HEIGHT="27">
+            <Shape><Polygon POINTS="345 566 345 548 465 552 466 570 464 575 342 571"/></Shape>
+	    <String CONTENT="mure d’argent." HPOS="342" VPOS="548" WIDTH="124" HEIGHT="27"/>
+          </TextLine>
+          <TextLine ID="eSc_line_f2114952" TAGREFS="LT66" BASELINE="565 575 604 578 626 577 782 582" HPOS="561" VPOS="552" WIDTH="220" HEIGHT="38">
+            <Shape><Polygon POINTS="564 574 564 552 780 562 781 581 778 590 561 581"/></Shape>
+	    <String CONTENT="Ph. Photocollographie." HPOS="561" VPOS="552" WIDTH="220" HEIGHT="38"/>
+          </TextLine>
+          <TextLine ID="eSc_line_48313946" TAGREFS="LT66" BASELINE="264 586 518 591" HPOS="261" VPOS="561" WIDTH="257" HEIGHT="42">
+            <Shape><Polygon POINTS="264 586 264 561 518 573 518 591 515 603 261 594"/></Shape>
+	    <String CONTENT="C. cl. Papier au collodio-" HPOS="261" VPOS="561" WIDTH="257" HEIGHT="42"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e5c39e45" TAGREFS="LT66" BASELINE="565 595 598 598 625 599 774 602" HPOS="561" VPOS="574" WIDTH="212" HEIGHT="37">
+            <Shape><Polygon POINTS="564 594 564 574 772 581 773 600 770 611 561 600"/></Shape>
+	    <String CONTENT="PI. Papier au platine." HPOS="561" VPOS="574" WIDTH="212" HEIGHT="37"/>
+          </TextLine>
+          <TextLine ID="eSc_line_d3983cd9" TAGREFS="LT66" BASELINE="345 606 421 608" HPOS="342" VPOS="585" WIDTH="79" HEIGHT="30">
+            <Shape><Polygon POINTS="345 606 345 585 420 587 421 608 419 615 342 611"/></Shape>
+	    <String CONTENT="chlorure." HPOS="342" VPOS="585" WIDTH="79" HEIGHT="30"/>
+          </TextLine>
+          <TextLine ID="eSc_line_77d983b9" TAGREFS="LT66" BASELINE="268 624 491 628" HPOS="265" VPOS="591" WIDTH="226" HEIGHT="45">
+            <Shape><Polygon POINTS="268 624 267 594 330 591 331 591 333 591 334 591 334 593 337 594 345 603 417 603 456 597 457 597 458 597 478 603 487 595 491 628 489 636 265 630"/></Shape>
+	    <String CONTENT="Ch. Papier au charbon." HPOS="265" VPOS="591" WIDTH="226" HEIGHT="45"/>
+          </TextLine>
+          <TextLine ID="eSc_line_4d78238f" TAGREFS="LT66" BASELINE="565 616 814 626" HPOS="563" VPOS="593" WIDTH="251" HEIGHT="47">
+            <Shape><Polygon POINTS="565 616 565 593 745 602 813 597 814 626 811 640 635 626 622 628 602 634 601 634 600 634 563 624"/></Shape>
+	    <String CONTENT="Pl. Dm. Papier au platine sepia." HPOS="563" VPOS="593" WIDTH="251" HEIGHT="47"/>
+          </TextLine>
+          <TextLine ID="eSc_line_54086d0f" TAGREFS="LT66" BASELINE="568 638 581 638 627 639 727 643" HPOS="564" VPOS="616" WIDTH="161" HEIGHT="32">
+            <Shape><Polygon POINTS="567 637 567 616 724 624 725 641 723 648 564 644"/></Shape>
+	    <String CONTENT="S. Papier salé." HPOS="564" VPOS="616" WIDTH="161" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_1b09cf10" TAGREFS="LT66" BASELINE="264 645 519 649" HPOS="260" VPOS="624" WIDTH="259" HEIGHT="40">
+            <Shape><Polygon POINTS="264 645 264 624 519 626 519 649 516 664 350 655 346 657 342 661 341 661 339 661 339 663 281 663 280 661 278 661 260 653"/></Shape>
+	    <String CONTENT="Ch. V. Papier charbon velours" HPOS="260" VPOS="624" WIDTH="259" HEIGHT="40"/>
+          </TextLine>
+          <TextLine ID="eSc_line_4905ef09" TAGREFS="LT66" BASELINE="573 659 594 660 626 660 780 664" HPOS="569" VPOS="636" WIDTH="211" HEIGHT="34">
+            <Shape><Polygon POINTS="572 657 572 636 780 644 780 663 777 670 569 664"/></Shape>
+	    <String CONTENT="Vp. Virage au platine." HPOS="569" VPOS="636" WIDTH="211" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_85a692cd" TAGREFS="LT66" BASELINE="343 663 411 667" HPOS="341" VPOS="644" WIDTH="70" HEIGHT="28">
+            <Shape><Polygon POINTS="343 663 343 644 409 645 411 667 408 672 341 668"/></Shape>
+	    <String CONTENT="Artigue." HPOS="341" VPOS="644" WIDTH="70" HEIGHT="28"/>
+          </TextLine>
+          <TextLine ID="eSc_line_69c2a4b3" TAGREFS="LT66" BASELINE="569 678 596 680 627 681 736 682" HPOS="565" VPOS="655" WIDTH="170" HEIGHT="34">
+            <Shape><Polygon POINTS="568 677 568 655 733 661 735 681 732 689 565 684"/></Shape>
+	    <String CONTENT="Vr. Virage à l'or." HPOS="565" VPOS="655" WIDTH="170" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_a811d843" TAGREFS="LT66" BASELINE="263 682 518 686" HPOS="261" VPOS="660" WIDTH="257" HEIGHT="33">
+            <Shape><Polygon POINTS="263 682 263 660 516 663 518 686 516 692 261 693"/></Shape>
+	    <String CONTENT="Gb. Procédé à la gomme" HPOS="261" VPOS="660" WIDTH="257" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_11ddbfb3" TAGREFS="LT66" BASELINE="565 698 600 700 626 700 814 707" HPOS="561" VPOS="674" WIDTH="252" HEIGHT="44">
+            <Shape><Polygon POINTS="564 697 564 674 813 685 813 706 810 718 561 704"/></Shape>
+	    <String CONTENT="Vu. Virage à l'azotate d’u¬" HPOS="561" VPOS="674" WIDTH="252" HEIGHT="44"/>
+          </TextLine>
+          <TextLine ID="eSc_line_f5f870bf" TAGREFS="LT66" BASELINE="342 704 449 704" HPOS="341" VPOS="682" WIDTH="108" HEIGHT="31">
+            <Shape><Polygon POINTS="342 704 342 682 449 685 449 704 448 713 341 709"/></Shape>
+	    <String CONTENT="bichromatée." HPOS="341" VPOS="682" WIDTH="108" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e406a3a7" TAGREFS="LT66" BASELINE="261 723 469 723 481 724 491 723 515 723" HPOS="257" VPOS="693" WIDTH="257" HEIGHT="41">
+            <Shape><Polygon POINTS="260 722 261 693 288 700 319 694 330 693 331 693 333 693 337 694 349 701 412 697 489 693 490 693 491 693 514 701 514 722 511 734 257 729"/></Shape>
+	    <String CONTENT="G. cl. Papier au gélatino-chlo¬" HPOS="257" VPOS="693" WIDTH="257" HEIGHT="41"/>
+          </TextLine>
+          <TextLine ID="eSc_line_a51115a6" TAGREFS="LT66" BASELINE="643 718 687 718" HPOS="642" VPOS="701" WIDTH="45" HEIGHT="26">
+            <Shape><Polygon POINTS="643 718 643 701 687 701 687 718 686 727 642 725"/></Shape>
+	    <String CONTENT="rane." HPOS="642" VPOS="701" WIDTH="45" HEIGHT="26"/>
+          </TextLine>
+          <TextLine ID="eSc_line_c80f8120" TAGREFS="LT66" BASELINE="565 737 768 743" HPOS="563" VPOS="711" WIDTH="205" HEIGHT="41">
+            <Shape><Polygon POINTS="565 737 565 711 766 723 768 743 765 752 563 740"/></Shape>
+	    <String CONTENT="Vc. Virage au cuivre." HPOS="563" VPOS="711" WIDTH="205" HEIGHT="41"/>
+          </TextLine>
+          <TextLine ID="eSc_line_a3cc15aa" TAGREFS="LT66" BASELINE="342 740 434 743 509 743" HPOS="338" VPOS="719" WIDTH="170" HEIGHT="52">
+            <Shape><Polygon POINTS="341 739 341 719 507 723 508 742 507 771 486 771 485 770 483 770 482 770 481 768 469 759 437 764 415 768 413 768 338 756"/></Shape>
+	    <String CONTENT="rure (dit aristotype)." HPOS="338" VPOS="719" WIDTH="170" HEIGHT="52"/>
+          </TextLine>
+          <TextLine ID="eSc_line_99eba962" TAGREFS="LT66" BASELINE="257 828 672 836 810 845" HPOS="255" VPOS="797" WIDTH="555" HEIGHT="57">
+            <Shape><Polygon POINTS="257 828 257 797 810 807 810 845 809 853 678 854 676 854 631 847 610 845 593 846 540 851 539 851 538 851 536 851 527 844 523 841 469 841 462 842 428 849 427 849 425 849 408 840 407 840 399 840 313 846 312 846 255 834"/></Shape>
+	    <String CONTENT="Indication des Sociétés auxquelles appartiennent les Exposants :" HPOS="255" VPOS="797" WIDTH="555" HEIGHT="57"/>
+          </TextLine>
+          <TextLine ID="eSc_line_181baf30" TAGREFS="LT66" BASELINE="256 882 736 895" HPOS="253" VPOS="845" WIDTH="483" HEIGHT="57">
+            <Shape><Polygon POINTS="256 882 256 853 314 858 321 854 333 845 334 845 335 845 337 845 449 847 450 847 503 861 515 863 535 862 598 857 600 857 601 857 602 857 602 858 610 865 612 865 625 853 626 853 627 853 629 853 630 853 666 867 668 869 736 870 736 895 733 902 253 890"/></Shape>
+	    <String CONTENT="C. C. L. Membre du Camera Club de Londres." HPOS="253" VPOS="845" WIDTH="483" HEIGHT="57"/>
+          </TextLine>
+          <TextLine ID="eSc_line_ecbf7ff6" TAGREFS="LT66" BASELINE="255 912 725 924" HPOS="253" VPOS="883" WIDTH="472" HEIGHT="49">
+            <Shape><Polygon POINTS="255 912 255 883 724 898 725 924 723 932 253 916"/></Shape>
+	    <String CONTENT="C. C. V. Membre du Camera Club de Vienne." HPOS="253" VPOS="883" WIDTH="472" HEIGHT="49"/>
+          </TextLine>
+          <TextLine ID="eSc_line_833347af" TAGREFS="LT66" BASELINE="253 940 610 948" HPOS="251" VPOS="914" WIDTH="359" HEIGHT="42">
+            <Shape><Polygon POINTS="253 940 253 914 609 916 610 948 608 956 251 944"/></Shape>
+	    <String CONTENT="L.R. Membre du Linked Ring." HPOS="251" VPOS="914" WIDTH="359" HEIGHT="42"/>
+          </TextLine>
+          <TextLine ID="eSc_line_2ce8cfdf" TAGREFS="LT66" BASELINE="253 966 692 977" HPOS="251" VPOS="937" WIDTH="443" HEIGHT="52">
+            <Shape><Polygon POINTS="253 966 255 937 281 947 298 939 302 937 304 937 305 937 306 937 315 940 343 948 483 948 668 947 670 947 671 947 694 957 692 977 691 982 647 989 646 989 645 989 630 982 590 987 589 987 588 987 586 987 577 981 576 980 251 974"/></Shape>
+	    <String CONTENT="P. C. P. Membre du Photo-Club de Paris." HPOS="251" VPOS="937" WIDTH="443" HEIGHT="52"/>
+          </TextLine>
+          <TextLine ID="eSc_line_26bd9015" TAGREFS="LT66" BASELINE="252 997 810 1010" HPOS="249" VPOS="966" WIDTH="561" HEIGHT="64">
+            <Shape><Polygon POINTS="252 997 252 966 314 973 350 968 362 966 363 966 364 966 368 968 382 974 393 969 399 966 400 966 401 966 403 966 411 969 434 976 465 970 471 969 473 969 474 969 475 969 475 970 485 977 516 970 528 969 530 969 531 969 532 969 532 970 534 972 543 978 569 972 579 970 580 970 581 970 583 970 584 972 594 980 622 973 624 973 625 973 626 973 650 981 692 974 703 973 704 973 715 974 761 984 807 977 810 1010 809 1022 764 1030 762 1030 761 1030 760 1030 746 1022 741 1022 659 1027 658 1027 657 1027 643 1021 641 1019 617 1021 540 1024 539 1024 507 1019 473 1011 380 1011 371 1018 367 1021 366 1021 364 1021 363 1021 249 1015"/></Shape>
+	    <String CONTENT="S. A. E. Membre de la Société d'Excursions des Amateurs" HPOS="249" VPOS="966" WIDTH="561" HEIGHT="64"/>
+          </TextLine>
+          <TextLine ID="eSc_line_ad5267f5" TAGREFS="LT66" BASELINE="375 1028 519 1028" HPOS="375" VPOS="1001" WIDTH="144" HEIGHT="35">
+            <Shape><Polygon POINTS="375 1028 375 1001 519 1009 519 1028 519 1036 375 1036"/></Shape>
+	    <String CONTENT="Photographes." HPOS="375" VPOS="1001" WIDTH="144" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_97eab36c" TAGREFS="LT66" BASELINE="251 1051 805 1065" HPOS="249" VPOS="1019" WIDTH="556" HEIGHT="60">
+            <Shape><Polygon POINTS="251 1051 251 1019 503 1032 547 1030 590 1026 592 1026 593 1026 594 1026 601 1031 605 1035 616 1031 630 1027 631 1027 633 1027 682 1034 709 1038 724 1035 754 1030 756 1030 805 1039 805 1065 802 1079 741 1071 625 1075 608 1075 606 1075 605 1075 602 1073 579 1067 531 1072 527 1072 526 1072 524 1072 523 1072 490 1064 458 1071 453 1071 452 1071 450 1071 449 1071 449 1069 448 1069 442 1061 351 1060 249 1064"/></Shape>
+	    <String CONTENT="S. A . P. Membre de la Société des Amateurs Photo¬" HPOS="249" VPOS="1019" WIDTH="556" HEIGHT="60"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e59b46ce" TAGREFS="LT66" BASELINE="375 1081 543 1085" HPOS="372" VPOS="1059" WIDTH="171" HEIGHT="32">
+            <Shape><Polygon POINTS="375 1081 375 1059 542 1063 543 1085 540 1091 372 1089"/></Shape>
+	    <String CONTENT="graphes de Paris." HPOS="372" VPOS="1059" WIDTH="171" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_55b5ef0f" TAGREFS="LT66" BASELINE="248 1108 802 1121" HPOS="245" VPOS="1075" WIDTH="557" HEIGHT="59">
+            <Shape><Polygon POINTS="248 1108 247 1079 300 1075 301 1075 302 1075 304 1075 310 1080 312 1081 314 1080 318 1076 319 1076 321 1076 322 1076 323 1076 333 1081 339 1084 354 1081 368 1079 370 1079 393 1083 416 1087 430 1084 456 1079 457 1079 458 1079 470 1085 477 1088 508 1087 579 1081 580 1081 581 1081 583 1081 593 1089 596 1091 608 1089 646 1084 647 1084 649 1084 650 1084 661 1091 663 1092 664 1091 680 1084 682 1084 683 1084 684 1084 686 1084 686 1085 694 1092 695 1094 802 1096 802 1121 799 1134 245 1114"/></Shape>
+	    <String CONTENT="S. F. P.  Membre de la Société Française de Photographie." HPOS="245" VPOS="1075" WIDTH="557" HEIGHT="59"/>
+          </TextLine>
+          <TextLine ID="eSc_line_79622d56" TAGREFS="LT66" BASELINE="269 1168 802 1182" HPOS="267" VPOS="1131" WIDTH="535" HEIGHT="59">
+            <Shape><Polygon POINTS="269 1168 269 1131 355 1142 364 1135 364 1134 366 1134 367 1134 368 1134 370 1134 371 1134 371 1135 372 1135 380 1145 399 1137 403 1135 404 1135 405 1135 407 1135 412 1137 432 1145 464 1139 482 1137 483 1137 538 1138 539 1138 540 1138 547 1143 555 1150 612 1150 617 1146 620 1143 621 1143 622 1143 624 1143 625 1143 634 1147 645 1153 802 1155 802 1182 799 1190 267 1179"/></Shape>
+	    <String CONTENT="Les membres du Linked Ring ayant été invités indivi¬" HPOS="267" VPOS="1131" WIDTH="535" HEIGHT="59"/>
+          </TextLine>
+          <TextLine ID="eSc_line_543dea7f" TAGREFS="LT66" BASELINE="247 1197 802 1211" HPOS="244" VPOS="1167" WIDTH="558" HEIGHT="60">
+            <Shape><Polygon POINTS="247 1197 247 1167 802 1187 802 1211 801 1224 637 1227 635 1227 634 1227 633 1227 621 1219 581 1225 580 1225 579 1225 577 1225 565 1216 564 1215 563 1216 551 1220 549 1220 548 1220 522 1213 507 1211 497 1213 482 1217 481 1217 479 1217 478 1217 477 1217 470 1212 465 1208 354 1208 322 1216 321 1216 319 1216 318 1216 292 1205 290 1204 244 1203"/></Shape>
+	    <String CONTENT="duellement par le Comité du Photo-Club, leurs œuvres" HPOS="244" VPOS="1167" WIDTH="558" HEIGHT="60"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0d3cacd1" TAGREFS="LT66" BASELINE="247 1225 556 1232" HPOS="244" VPOS="1200" WIDTH="312" HEIGHT="60">
+            <Shape><Polygon POINTS="247 1225 247 1200 555 1207 556 1232 555 1260 495 1260 494 1258 493 1258 486 1256 475 1250 460 1254 448 1256 446 1256 445 1256 437 1253 428 1248 421 1252 416 1256 415 1256 413 1256 412 1256 384 1249 363 1245 345 1248 312 1252 310 1252 244 1241"/></Shape>
+	    <String CONTENT="n'ont pas été soumises au Jury." HPOS="244" VPOS="1200" WIDTH="312" HEIGHT="60"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

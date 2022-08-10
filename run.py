@@ -78,7 +78,6 @@ def extraction(directory, output, titlecat, segmentationtranscription):
 
     # On créé un dossier pour les output (TEI, fichier de problèmes, dossier restructuration) :
     # on construit un chemin vers le dossier d'extraction en récupérant le chemin output :
-    # TODO output required="false" donc faire que varialbe soit l'input dans ce cas
     extraction_directory = output + "extraction_" + titlecat
     # Si le chemin n'existe pas, on créé le dossier (s'il existait, on aurait une erreur) :
     if not os.path.exists(extraction_directory):
@@ -87,7 +86,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     # on assigne à une variable le chemin vers le fichier
     output_file = extraction_directory + "/" + titlecat
 
-    # === 1.2 Création directe d'un fichier csv, si la chaine "csv" est contenue dans le titre du catalogue  ====
+    # === 2.2 Création directe d'un fichier csv, si la chaine "csv" est contenue dans le titre du catalogue  ====
     # si le titre du catalogue contient "csv", cela veut dire que l'utilisateur souhaite uniquement produire un fichier
     # csv à partir d'un fichier TEI déjà existant. Dans ce cas, la pipeline sera très courte, et consistera uniquement
     # dans la fonction "csv_immediat", qui appelle elle même la fonction XMLtoCSV
@@ -101,7 +100,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
         pass
     # autrement : on continue avec toute la pipeline normale :
 
-    # === 1.3 création du fichier problèmes et traitement de l'option -st  ====
+    # === 2.3 création du fichier problèmes et traitement de l'option -st  ====
     # On vérifie si un fichier correspondant "_problems.txt" existe déjà. Cela voudrait dire que la commande a déjà été
     # lancée auparavant, et on élimine ce fichier pour qu'un nouveau soit creé sans accumuler les informations en boucle
     problems = extraction_directory + "/" + titlecat + "_problems.txt"
@@ -121,7 +120,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
 
 
 
-    # === 2. Création d'un fichier TEI ====
+    # === 3. Création d'un arbre TEI ====
     # création des balises TEI (teiHeader, body) avec le paquet externe lxml et le module creationTEI.py :
     root_xml = ET.Element("TEI", xmlns="http://www.tei-c.org/ns/1.0")
     root_xml.attrib["{http://www.w3.org/XML/1998/namespace}id"] = titlecat
@@ -148,7 +147,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
         CSS = ET.ProcessingInstruction('xml-stylesheet', contenu_TEI.CSS)
         xml_tree.getroot().addprevious(CSS)
 
-    # === 3.1 Traitement préalable des ALTO en input ====
+    # === 4.1 Traitement préalable des ALTO en input ====
     # la méthode os.listdir() renvoie une liste des fichiers contenus dans un dossier donné :
     liste_en_desordre = os.listdir(directory)
     # nous appelons la fonction ordonner_altos() dans extractionCatEntrees_fonctions.py, qui retourne une liste des
@@ -161,7 +160,6 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     n_fichier = 0
     # on établit des variables qui nous permettront de faire des boucles :
     n_entree = 0
-    # TODO : il me semble que n_oeuvre ne sert à rien et que sa valeur sera toujours 0
     n_oeuvre = 0
     # compteurs pour vérification ALTO : nombre de textlines mal situées dans le document en entrée
     textline_dans_main_total = 0
@@ -194,7 +192,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             print(barre)
             print(message)
 
-            # === 3.2 On analyse la conformité et la structure des fichiers ALTO ====
+            # === 4.2 On analyse la conformité et la structure des fichiers ALTO ====
             # on appelle les fonctions du module Validations_xml.py
             # (le chemin est construit en associant le chemin vers le dossier + le nom du fichier actuel)
             etape += 1
@@ -214,7 +212,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             textline_dans_autres_total += textline_dans_autres
             # ces listes seront appelées à la fin du script pour montrer des messages sur le terminal
 
-            # === 3.3 Restructuration des ALTO en input ====
+            # === 4.3 Restructuration des ALTO en input ====
             etape += 1
             print('\t{} – Restructuration du fichier'.format(etape))
             # on appelle le module restructuration.py pour appliquer la feuille de transformation
@@ -246,7 +244,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             if chemin_restructuration:
                 print("\t   ✓ fichier '{}_restructuration.xml' créé".format(fichier))
 
-            # === 3.4 restructuration eventuelle de la segmentation des ALTO en input ====
+            # === 4.4 restructuration eventuelle de la segmentation des ALTO en input ====
             # On appelle une fonction qui vérifie que l'imbrication des éléments du fichier ALTO est correcte.
             # Si ce n'est pas le cas, la fonction corrige les problèmes
             etape += 1
@@ -258,7 +256,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             if TextLine_dans_Mainzone_liste:
                 TextLine_dans_Mainzone_liste_total.append(TextLine_dans_Mainzone_liste)
 
-            # === 4. Extraction des entrées ====
+            # === 5. Extraction des entrées ====
             etape += 1
             print("\t" + str(etape) + " – Extraction :")
             print("\n")
@@ -282,7 +280,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             for entree in list_entrees:
                 list_xml.append(entree)
 
-    # === 5. Outputs : TEI et CSV ====
+    # === 6. Outputs : TEI et CSV ====
 
     # on ajoute ou on redonne au nom du catalogue la terminaison en ".xml"
     if not output_file.__contains__(".xml"):
@@ -337,7 +335,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     # on créé le fichier CSV
     csv_produit = XML_to_CSV(output_file, extraction_directory, titlecat)
 
-    # === 5. Informations à afficher sur le terminal ====
+    # === 7. Informations à afficher sur le terminal ====
     print("\n")
     print(barre)
     print("    Résumé :")
