@@ -19,7 +19,7 @@ You may find complete and detailed instructions in the ```Guide - extraction de 
 
 - output : XML TEI and CSV files
 
-The script output is a XML-TEI file which combines all the ALTO transcriptions and sticks to the [ODD](https://github.com/carolinecorbieres/ArtlasCatalogues/blob/master/5_ImproveGROBIDoutput/ODD/ODD_VisualContagions.xml) done by Caroline Corbières. 
+The script output is an XML-TEI file which combines all the ALTO transcriptions and sticks to the [ODD](https://github.com/carolinecorbieres/ArtlasCatalogues/blob/master/5_ImproveGROBIDoutput/ODD/ODD_VisualContagions.xml) done by Caroline Corbières. 
 
 The ```/exemples_output``` directory contains examples of data produced by this pipeline.
    
@@ -31,25 +31,26 @@ The ```/exemples_output``` directory contains examples of data produced by this 
    
 ## Instructions 
 
-### eScriptorium
+For complete instructions, use the Jupyter notebook integrated guide. This pipeline has a pedagogic vocation, so the guide is designed to introduce students with no prior technical knowledge to Digital Humanities. The python script can be executed directly from the notebook, so students may work without using the terminal.
+
+1. Automatic/manual transcription of a digitized catalog with eScriptorium. Segmentation must be conformant to Segmonto Ontology.
+
+2. Script execution with the following command :
+
+```python3 run.py input output title```
+- ```python3 run.py``` : python execution commands
+- ```input``` : path to the directory containing ALTO transcribed catalog pages
+- ```output``` : path to the desired repository for the output (TEI + CSV)
+- ```title``` : catalog title (will be used for directorys and XML internal IDs)
 
 
 
-
-</div>
- 
 ## Installation
   - Clone the repository: ```git clone https://github.com/Juliettejns/extractionCatalogs```
   - Create virtual environment: ```virtualenv -p python3 env```
   - Run the virtual env: ```source env/bin/activate```
   - Install the requirements: ```pip install -r requirements.txt```
-  - Check the regex used in the `fonctions/instanciation_regex.py` file
-  - Run the program (previously): `python3 run.py input_dir output_dir catalogue_title -st`
-
-If you want to have images as your input, you need to add the option `-st` at the end of the command. It segments and transcribes your data.</br>
   - Stop the virtual env: ```source env/bin/deactivate```
-
-## Repository
 
 
 ## Credits
