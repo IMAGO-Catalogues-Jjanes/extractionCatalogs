@@ -1,0 +1,782 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Paris_1961">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Paris_1961_e1" source="Cat_Paris_1961_typo_0002.jpg">
+          <desc>
+            <name>Pierre LAHAUT</name>
+            <trait>
+              <p>, né à Bruxelles en 1931.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1961_e1_i1">
+            <num>1</num>
+            <title>Terreau tiède, 1961 </title>
+            <desc>1961 (huile, 130x162).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1961_e1_i2">
+            <num>2</num>
+            <title>Joli mois de mai, 1961 </title>
+            <desc>1961 (huile, 130x162).</desc>
+          </item>
+          <item n="3" xml:id="Paris_1961_e1_i3">
+            <num>3</num>
+            <title>La mort d’un homme n'est jamais inutile, 1961 </title>
+            <desc>1961 (huile, 114x146)*.</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Paris_1961_e2" source="Cat_Paris_1961_typo_0002.jpg">
+          <desc>
+            <name>Gisèle VAN-LANGE</name>
+            <trait>
+              <p>, née à Etterbeek en 1929.</p>
+            </trait>
+          </desc>
+          <item n="4" xml:id="Paris_1961_e2_i4">
+            <num>4</num>
+            <title>Dans l'après-midi, 1961 </title>
+            <desc>1961 (huile, 160x160).</desc>
+          </item>
+          <item n="5" xml:id="Paris_1961_e2_i5">
+            <num>5</num>
+            <title>Lieu propice, 1961 </title>
+            <desc>1961 (huile, 120x60).</desc>
+          </item>
+          <item n="6" xml:id="Paris_1961_e2_i6">
+            <num>6</num>
+            <title>L'année dernière à D., 1961 </title>
+            <desc>1961 (huile, 160x160).</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Paris_1961_e3" source="Cat_Paris_1961_typo_0002.jpg">
+          <desc>
+            <name>Paul VAN THIENEN</name>
+            <trait>
+              <p>, né à Bruxelles en 1927.</p>
+            </trait>
+          </desc>
+          <item n="7" xml:id="Paris_1961_e3_i7">
+            <num>7</num>
+            <title>La pêche sous la pluie, 1960 </title>
+            <desc>1960 (lavis, 70x 90) Collection Mme Kanarek, Bruxelles.</desc>
+          </item>
+          <item n="8" xml:id="Paris_1961_e3_i8">
+            <num>8</num>
+            <title>Le fortin dynamité, 1961 </title>
+            <desc>1961 (lavis, 70x90).</desc>
+          </item>
+          <item n="9" xml:id="Paris_1961_e3_i9">
+            <num>9</num>
+            <title>Les voiliers, 1961 </title>
+            <desc>1961 (lavis, 70x90).</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Paris_1961_e4" source="Cat_Paris_1961_typo_0002.jpg">
+          <desc>
+            <name>Jef VERHEYEN</name>
+            <trait>
+              <p>, né à Jeegem en 1932.</p>
+            </trait>
+          </desc>
+          <item n="10" xml:id="Paris_1961_e4_i10">
+            <num>10</num>
+            <title>1x1 = 2, 1961 </title>
+            <desc>1961 (huile, 133x100).</desc>
+          </item>
+          <item n="11" xml:id="Paris_1961_e4_i11">
+            <num>11</num>
+            <title>Peinture, 1961 </title>
+            <desc>1961 (huile, 133x100).</desc>
+          </item>
+          <item n="12" xml:id="Paris_1961_e4_i12">
+            <num>12</num>
+            <title>Peinture, 1961 </title>
+            <desc>1961 (huile, 133x100).</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Paris_1961_e5" source="Cat_Paris_1961_typo_0002.jpg">
+          <desc>
+            <name>Roger WITTEVRONGEL</name>
+            <trait>
+              <p>, né à Blankenberge en 1933.</p>
+            </trait>
+          </desc>
+          <item n="13" xml:id="Paris_1961_e5_i13">
+            <num>13</num>
+            <title>Ni mon cri ni ma fièvre ne sont de moi, 1960 </title>
+            <desc>1960 (huile, 183x122)*.</desc>
+          </item>
+          <item n="14" xml:id="Paris_1961_e5_i14">
+            <num>14</num>
+            <title>Cette chair qui ne se touche plus dans la vie, 1960 </title>
+            <desc>1960 (huile, 122x140).</desc>
+          </item>
+          <item n="15" xml:id="Paris_1961_e5_i15">
+            <num>15</num>
+            <title>Tout étonné de voir tant de choses, 1961 </title>
+            <desc>1961 (dessin à l’encre, 122x183).</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Paris_1961_e6" source="Cat_Paris_1961_typo_0003.jpg">
+          <desc>
+            <name>Marcel ARNOULD</name>
+            <trait>
+              <p>, né à Braine-le-Comte en 1928.</p>
+            </trait>
+          </desc>
+          <item n="16" xml:id="Paris_1961_e6_i16">
+            <num>16</num>
+            <title>Le monstre de feu, 1960 </title>
+            <desc>1960 (acier, 112)*.</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Paris_1961_e7" source="Cat_Paris_1961_typo_0003.jpg">
+          <desc>
+            <name>Roger BONDUEL</name>
+            <trait>
+              <p>, né à Pittem en 1930.</p>
+            </trait>
+          </desc>
+          <item n="17" xml:id="Paris_1961_e7_i17">
+            <num>17</num>
+            <title>Forme végétale, 1961 </title>
+            <desc>1961 (fer, 100)*.</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Paris_1961_e8" source="Cat_Paris_1961_typo_0003.jpg">
+          <desc>
+            <name>Félix ROULIN</name>
+            <trait>
+              <p>, né à Dinant en 1931.</p>
+            </trait>
+          </desc>
+          <item n="18" xml:id="Paris_1961_e8_i18">
+            <num>18</num>
+            <title>Sculpture, 1960 </title>
+            <desc>1960 (fer et laiton, 150).</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Paris_1961_e9" source="Cat_Paris_1961_typo_0003.jpg">
+          <desc>
+            <name>SECTION ILLUSTRATION DE LIVRES</name>
+            <trait>
+              <p>Jef Van HOOF, né à Bruxelles en 1928.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1961_e9_i1">
+            <num>1</num>
+            <title>« Le chef-d'œuvre inconnu » de Balzac, 1961 </title>
+            <desc>1961 (encre, plume, lavis et gouache, 4 planches).</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Paris_1961_e10" source="Cat_Paris_1961_typo_0003.jpg">
+          <desc>
+            <name>Frédéric DEVREESE</name>
+            <trait>
+              <p>, né à Amsterdam en 1929.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1961_e10_i1">
+            <num>1</num>
+            <title>Recitativo et Allegro </title>
+            <desc>(trompette et orchestre), 1960.</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Paris_1961_e11" source="Cat_Paris_1961_typo_0003.jpg">
+          <desc>
+            <name>Jacqueline FONTYN</name>
+            <trait>
+              <p>, née à Anvers en 1930.</p>
+            </trait>
+          </desc>
+          <item n="2" xml:id="Paris_1961_e11_i2">
+            <num>2</num>
+            <title>Divertimento pour orchestre à cordes, 1958.</title>
+            <desc>1958.</desc>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Paris_1961_e12" source="Cat_Paris_1961_typo_0003.jpg">
+          <desc>
+            <name>Henri ROUSSEUR</name>
+            <trait>
+              <p>, né à Malmédy en 1929.</p>
+            </trait>
+          </desc>
+          <item n="3" xml:id="Paris_1961_e12_i3">
+            <num>3</num>
+            <title>Exercices pour piano comprenant 4 pièces : impromptu et variations II caractères a et b, 1961.</title>
+            <desc>1961.</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Paris_1961_e13" source="Cat_Paris_1961_typo_0003.jpg">
+          <desc>
+            <name>Luc de HEUSCH</name>
+            <trait>
+              <p>, né à Bruxelles en 1927.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1961_e13_i1">
+            <num>1</num>
+            <title>Magritte ou la leçon de choses, 1960 </title>
+            <desc>1960 (couleurs).</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Paris_1961_e14" source="Cat_Paris_1961_typo_0005.jpg">
+          <desc>
+            <name>Fabio BARBOSA</name>
+            <trait>
+              <p>, né à Cachoeira Paulista en 1934.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1961_e14_i1">
+            <num>1</num>
+            <title>Peinture I, 1960 </title>
+            <desc>1960 (huile, 116x89).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1961_e14_i2">
+            <num>2</num>
+            <title>Opus 31, 1960 </title>
+            <desc>1960 (huile, 120x80).</desc>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Paris_1961_e15" source="Cat_Paris_1961_typo_0005.jpg">
+          <desc>
+            <name>Paulo BECKER</name>
+            <trait>
+              <p>, né à Santa Cruz en 1927.</p>
+            </trait>
+          </desc>
+          <item n="3" xml:id="Paris_1961_e15_i3">
+            <num>3</num>
+            <title>Peinture I, 1960 </title>
+            <desc>1960 (huile, 81x130).</desc>
+          </item>
+          <item n="4" xml:id="Paris_1961_e15_i4">
+            <num>4</num>
+            <title>Peinture III, 1960 </title>
+            <desc>1960 (huile, 81x130).</desc>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Paris_1961_e16" source="Cat_Paris_1961_typo_0005.jpg">
+          <desc>
+            <name>Glauco Octavio CASTILHOS RODRIGUES</name>
+            <trait>
+              <p>, né à Bagé en 1929.</p>
+            </trait>
+          </desc>
+          <item n="5" xml:id="Paris_1961_e16_i5">
+            <num>5</num>
+            <title>N° 23, 1961 </title>
+            <desc>1961 (huile, 97x195)*.</desc>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Paris_1961_e17" source="Cat_Paris_1961_typo_0005.jpg">
+          <desc>
+            <name>Willys DE CASTRO</name>
+            <trait>
+              <p>, né à Uberlandia en 1926.</p>
+            </trait>
+          </desc>
+          <item n="6" xml:id="Paris_1961_e17_i6">
+            <num>6</num>
+            <title>Instabilité intégrative, 1959-1961 </title>
+            <desc>1959-1961 (huile, 99x 99).</desc>
+          </item>
+          <item n="7" xml:id="Paris_1961_e17_i7">
+            <num>7</num>
+            <title>Forme de deux plans, 1960-1961 </title>
+            <desc>1960-1961 (huile, 99x99).</desc>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Paris_1961_e18" source="Cat_Paris_1961_typo_0005.jpg">
+          <desc>
+            <name>Rubem Mauro LUDOLF</name>
+            <trait>
+              <p>, né à Maceó en 1932.</p>
+            </trait>
+          </desc>
+          <item n="8" xml:id="Paris_1961_e18_i8">
+            <num>8</num>
+            <title>Périphérique, 1960 </title>
+            <desc>1960 (huile, 60x60).</desc>
+          </item>
+          <item n="9" xml:id="Paris_1961_e18_i9">
+            <num>9</num>
+            <title>Dialogue, 1960 </title>
+            <desc>1960 (huile, 60x60).</desc>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Paris_1961_e19" source="Cat_Paris_1961_typo_0005.jpg">
+          <desc>
+            <name>Teresa NICOLAO</name>
+            <trait>
+              <p>, née à Rio de Janeiro en 1928.</p>
+            </trait>
+          </desc>
+          <item n="10" xml:id="Paris_1961_e19_i10">
+            <num>10</num>
+            <title>N° 11, 1959 </title>
+            <desc>1959 (huile, 61x80).</desc>
+          </item>
+          <item n="11" xml:id="Paris_1961_e19_i11">
+            <num>11</num>
+            <title>N° 12, 1960 </title>
+            <desc>1960 (huile, 162x97).</desc>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Paris_1961_e20" source="Cat_Paris_1961_typo_0005.jpg">
+          <desc>
+            <name>Darcy PENTEADO</name>
+            <trait>
+              <p>, né à Sào Roque en 1926.</p>
+            </trait>
+          </desc>
+          <item n="12" xml:id="Paris_1961_e20_i12">
+            <num>12</num>
+            <title>Cage II, 1960 </title>
+            <desc>1960 (dessin émail, 65x50)*.</desc>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Paris_1961_e21" source="Cat_Paris_1961_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>13 Cage III, 1960 (dessin émail, 46x38).</p>
+            </trait>
+          </desc>
+          <item n="13" xml:id="Paris_1961_e21_i13">
+            <num>13</num>
+            <title>Cage III, 1960 </title>
+            <desc>1960 (dessin émail, 46x38). Loio PÉRSIO, né à Minas Gerais en 1927.</desc>
+          </item>
+          <item n="14" xml:id="Paris_1961_e21_i14">
+            <num>14</num>
+            <title>Vision tropicale N° 3, 1961 </title>
+            <desc>1961 (huile, 195x176).</desc>
+          </item>
+          <item n="15" xml:id="Paris_1961_e21_i15">
+            <num>15</num>
+            <title>Composition, 1961 </title>
+            <desc>1961 (huile, 195x176).</desc>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Paris_1961_e22" source="Cat_Paris_1961_typo_0005.jpg">
+          <desc>
+            <name>Flavio SHIRÔ</name>
+            <trait>
+              <p>, né à Saporo en 1928.</p>
+            </trait>
+          </desc>
+          <item n="16" xml:id="Paris_1961_e22_i16">
+            <num>16</num>
+            <title>Le haut Xingu, 1961 </title>
+            <desc>1961 (huile, 199x103).</desc>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Paris_1961_e23" source="Cat_Paris_1961_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>17 Muirapinema, 1961 (huile, 120x155). Ivan DA SILVA MORAES, né à Rio de Janeiro en 1936.</p>
+            </trait>
+          </desc>
+          <item n="18" xml:id="Paris_1961_e23_i18">
+            <num>18</num>
+            <title>Candomble </title>
+            <desc>(la fille de Oxùn), 1959-1960 (huile, 55x46).</desc>
+          </item>
+          <item n="19" xml:id="Paris_1961_e23_i19">
+            <num>19</num>
+            <title>Candomble </title>
+            <desc>(Oxùn), 1960 (huile, 100x80). Collection Dr Alognio de Paula.</desc>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Paris_1961_e24" source="Cat_Paris_1961_typo_0006.jpg">
+          <desc>
+            <name>Mary VIEIRA</name>
+            <trait>
+              <p>, née à São Paulo en 1927.</p>
+            </trait>
+          </desc>
+          <item n="20" xml:id="Paris_1961_e24_i20">
+            <num>20</num>
+            <title>Rythme dans l'espace N° 2, tension-expansion, 1951-1959 </title>
+            <desc>tension-expansion, 1951-1959 (aluminium- anti-corrodal, 160x 250x 250)*.</desc>
+          </item>
+          <item n="21" xml:id="Paris_1961_e24_i21">
+            <num>21</num>
+            <title>Colonne centripétale, deuxième variation, 1957 </title>
+            <desc>deuxième variation, 1957 (laiton, 300 x 50).</desc>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Paris_1961_e25" source="Cat_Paris_1961_typo_0006.jpg">
+          <desc>
+            <name>Dorothy BASTOS</name>
+            <trait>
+              <p>, née à São Paulo en 1931.</p>
+            </trait>
+          </desc>
+          <item n="22" xml:id="Paris_1961_e25_i22">
+            <num>22</num>
+            <title>Gravure I, 1961 </title>
+            <desc>1961 (xylographie, 50x34).</desc>
+          </item>
+          <item n="23" xml:id="Paris_1961_e25_i23">
+            <num>23</num>
+            <title>Gravure II, 1961 </title>
+            <desc>1961 (xylographie, 49x31).</desc>
+          </item>
+          <item n="24" xml:id="Paris_1961_e25_i24">
+            <num>24</num>
+            <title>Gravure III, 1961 </title>
+            <desc>1961 (xylographie, 24x50).</desc>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Paris_1961_e26" source="Cat_Paris_1961_typo_0006.jpg">
+          <desc>
+            <name>Mario CARNEIRO</name>
+            <trait>
+              <p>, né à Paris en 1930.</p>
+            </trait>
+          </desc>
+          <item n="25" xml:id="Paris_1961_e26_i25">
+            <num>25</num>
+            <title>Nature morte, 1961 </title>
+            <desc>1961 (aquatinte, 30x40).</desc>
+          </item>
+          <item n="26" xml:id="Paris_1961_e26_i26">
+            <num>26</num>
+            <title>Paniers, 1961 </title>
+            <desc>1961 (aquatinte, 35x54).</desc>
+          </item>
+          <item n="27" xml:id="Paris_1961_e26_i27">
+            <num>27</num>
+            <title>Nature morte, 1961 </title>
+            <desc>1961 (aquatinte, 40x54).</desc>
+          </item>
+        </entry>
+        <entry n="27" xml:id="Paris_1961_e27" source="Cat_Paris_1961_typo_0006.jpg">
+          <desc>
+            <name>José FERREIRA-LIMA</name>
+            <trait>
+              <p>, né à Récife-Pernambuco en 1934.</p>
+            </trait>
+          </desc>
+          <item n="28" xml:id="Paris_1961_e27_i28">
+            <num>28</num>
+            <title>Gravure A, 1961 </title>
+            <desc>1961 (aquatinte, 30x60).</desc>
+          </item>
+          <item n="29" xml:id="Paris_1961_e27_i29">
+            <num>29</num>
+            <title>Gravure B, 1961 </title>
+            <desc>1961 (aquatinte, 30x60).</desc>
+          </item>
+          <item n="30" xml:id="Paris_1961_e27_i30">
+            <num>30</num>
+            <title>Gravure C, 1961 </title>
+            <desc>1961 (aquatinte, 30x 60).</desc>
+          </item>
+        </entry>
+        <entry n="28" xml:id="Paris_1961_e28" source="Cat_Paris_1961_typo_0006.jpg">
+          <desc>
+            <name>Anna LETYCIA</name>
+            <trait>
+              <p>, née à Rio de Janeiro en 1929.</p>
+            </trait>
+          </desc>
+          <item n="31" xml:id="Paris_1961_e28_i31">
+            <num>31</num>
+            <title>Gravure 1, 1961 </title>
+            <desc>1961 (pointe sèche, 60x 50).</desc>
+          </item>
+          <item n="32" xml:id="Paris_1961_e28_i32">
+            <num>32</num>
+            <title>Gravure 2, 1961 </title>
+            <desc>1961 (aquatinte et pointe sèche, 46x35).</desc>
+          </item>
+          <item n="33" xml:id="Paris_1961_e28_i33">
+            <num>33</num>
+            <title>Gravure 3, 1961 </title>
+            <desc>1961 (aquatinte, 50x30).</desc>
+          </item>
+        </entry>
+        <entry n="29" xml:id="Paris_1961_e29" source="Cat_Paris_1961_typo_0006.jpg">
+          <desc>
+            <name>Rossini PEREZ</name>
+            <trait>
+              <p>, né à Rio Grande Do Norte en 1932.</p>
+            </trait>
+          </desc>
+          <item n="34" xml:id="Paris_1961_e29_i34">
+            <num>34</num>
+            <title>Gravure 5, 1961 </title>
+            <desc>1961 (pointe sèche, 50x 40).</desc>
+          </item>
+          <item n="35" xml:id="Paris_1961_e29_i35">
+            <num>35</num>
+            <title>Gravure 6, 1961 </title>
+            <desc>1961 (pointe sèche, 60x40).</desc>
+          </item>
+        </entry>
+        <entry n="30" xml:id="Paris_1961_e30" source="Cat_Paris_1961_typo_0006.jpg">
+          <desc>
+            <name>Gilvan José Meira Lins SAMICO</name>
+            <trait>
+              <p>, né à Pernambuco en 1928.</p>
+            </trait>
+          </desc>
+          <item n="36" xml:id="Paris_1961_e30_i36">
+            <num>36</num>
+            <title>Daniel et les Lions, 1961 </title>
+            <desc>1961 (xylogravure, 34x48).</desc>
+          </item>
+          <item n="37" xml:id="Paris_1961_e30_i37">
+            <num>37</num>
+            <title>La Vierge de La Palma, 1961 </title>
+            <desc>1961 (xylogravure, 34x36).</desc>
+          </item>
+          <item n="38" xml:id="Paris_1961_e30_i38">
+            <num>38</num>
+            <title>Annonciation, 1961 </title>
+            <desc>1961 (xylogravure, 28x26).</desc>
+          </item>
+        </entry>
+        <entry n="31" xml:id="Paris_1961_e31" source="Cat_Paris_1961_typo_0006.jpg">
+          <desc>
+            <name>Darcy PENTEADO</name>
+            <trait>
+              <p>, né à São Roque en 1926.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1961_e31_i1">
+            <num>1</num>
+            <title>Illustration pour « Pays du Carnaval » de Jorge Amado, 1960 </title>
+            <desc>1960 (encre de Chine, 3 planches).</desc>
+          </item>
+        </entry>
+        <entry n="32" xml:id="Paris_1961_e32" source="Cat_Paris_1961_typo_0006.jpg">
+          <desc>
+            <name>Béatrice TANAKA</name>
+            <trait>
+              <p>, née à Cernauti en 1932</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1961_e32_i1">
+            <num>1</num>
+            <title>« Hamlet », 1961.</title>
+            <desc>1961.</desc>
+          </item>
+          <item n="2" xml:id="Paris_1961_e32_i2">
+            <num>2</num>
+            <title>« Rhinocéros », 1961.</title>
+            <desc>1961.</desc>
+          </item>
+        </entry>
+        <entry n="33" xml:id="Paris_1961_e33" source="Cat_Paris_1961_typo_0009.jpg">
+          <desc>
+            <name>Ivan FILTCHEV</name>
+            <trait>
+              <p>, né à Troyan en 1926.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1961_e33_i1">
+            <num>1</num>
+            <title>Femme aux fruits, 1960 </title>
+            <desc>1960 (huile, 98x79). Collection Galerie Nationale, Sofia.</desc>
+          </item>
+        </entry>
+        <entry n="34" xml:id="Paris_1961_e34" source="Cat_Paris_1961_typo_0009.jpg">
+          <desc>
+            <name>Ivan KIRKOV</name>
+            <trait>
+              <p>, né à Assenovgrad en 1932.</p>
+            </trait>
+          </desc>
+          <item n="2" xml:id="Paris_1961_e34_i2">
+            <num>2</num>
+            <title>Jeune fille en rouge, 1961 </title>
+            <desc>1961 (huile, 130x 80).</desc>
+          </item>
+        </entry>
+        <entry n="35" xml:id="Paris_1961_e35" source="Cat_Paris_1961_typo_0009.jpg">
+          <desc>
+            <name>Dimitar KIROV</name>
+            <trait>
+              <p>, né à Plovdiv en 1935.</p>
+            </trait>
+          </desc>
+          <item n="3" xml:id="Paris_1961_e35_i3">
+            <num>3</num>
+            <title>Côte de pêcheurs, 1960 </title>
+            <desc>1960 (huile, 137x67).</desc>
+          </item>
+        </entry>
+        <entry n="36" xml:id="Paris_1961_e36" source="Cat_Paris_1961_typo_0009.jpg">
+          <desc>
+            <name>loan LEVIEV</name>
+            <trait>
+              <p>, né à Plovdiv en 1934.</p>
+            </trait>
+          </desc>
+          <item n="4" xml:id="Paris_1961_e36_i4">
+            <num>4</num>
+            <title>Jeune Fille avec poussin, 1961 </title>
+            <desc>1961 (huile, 61x41).</desc>
+          </item>
+        </entry>
+        <entry n="37" xml:id="Paris_1961_e37" source="Cat_Paris_1961_typo_0009.jpg">
+          <desc>
+            <name>Entcho PIRONKOV</name>
+            <trait>
+              <p>, né à Plovdiv en 1932.</p>
+            </trait>
+          </desc>
+          <item n="5" xml:id="Paris_1961_e37_i5">
+            <num>5</num>
+            <title>Cirque, 1960 </title>
+            <desc>1960 (huile, 70x180).</desc>
+          </item>
+        </entry>
+        <entry n="38" xml:id="Paris_1961_e38" source="Cat_Paris_1961_typo_0009.jpg">
+          <desc>
+            <name>Svetlin ROUSSEV</name>
+            <trait>
+              <p>, né à Assenovgrad en 1933.</p>
+            </trait>
+          </desc>
+          <item n="6" xml:id="Paris_1961_e38_i6">
+            <num>6</num>
+            <title>Paysanne, 1960 </title>
+            <desc>1960 (huile, 128x46).</desc>
+          </item>
+        </entry>
+        <entry n="39" xml:id="Paris_1961_e39" source="Cat_Paris_1961_typo_0009.jpg">
+          <desc>
+            <name>Alexandar DIAKOV</name>
+            <trait>
+              <p>, né à Sofia en 1932.</p>
+            </trait>
+          </desc>
+          <item n="7" xml:id="Paris_1961_e39_i7">
+            <num>7</num>
+            <title>Maçon, 1960 </title>
+            <desc>1960 (bronze, 180x60x60). Collection Galerie Nationale, Sofia.</desc>
+          </item>
+        </entry>
+        <entry n="40" xml:id="Paris_1961_e40" source="Cat_Paris_1961_typo_0009.jpg">
+          <desc>
+            <name>Liuben DIMANOV</name>
+            <trait>
+              <p>, né à Bela Slatina en 1934.</p>
+            </trait>
+          </desc>
+          <item n="8" xml:id="Paris_1961_e40_i8">
+            <num>8</num>
+            <title>Mineur, 1961 </title>
+            <desc>1961 (monotype, 65x46).</desc>
+          </item>
+          <item n="9" xml:id="Paris_1961_e40_i9">
+            <num>9</num>
+            <title>Femme, 1961 </title>
+            <desc>1961 (monotype, 46x65).</desc>
+          </item>
+        </entry>
+        <entry n="41" xml:id="Paris_1961_e41" source="Cat_Paris_1961_typo_0009.jpg">
+          <desc>
+            <name>Ivan KIOSSEV</name>
+            <trait>
+              <p>, né à Bourgas en 1933.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1961_e41_i1">
+            <num>1</num>
+            <title>Combattants de la Renaissance bulgare, 1961. </title>
+            <desc>1961. (Gouache, 6 planches.)</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

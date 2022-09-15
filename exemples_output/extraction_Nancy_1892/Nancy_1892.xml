@@ -1,0 +1,611 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Nancy_1892">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Nancy_1892_e1" source="Cat_Nancy_1892_typo_0001.jpg">
+          <desc>
+            <name>RINGENBACH (Emile),</name>
+            <trait>
+              <p> élève de Larcher, né à Nancy. Nancy.</p>
+            </trait>
+          </desc>
+          <item n="655" xml:id="Nancy_1892_e1_i655">
+            <num>655</num>
+            <title>Portrait de Mme S...</title>
+          </item>
+          <item n="656" xml:id="Nancy_1892_e1_i656">
+            <num>656</num>
+            <title>id. M. C...</title>
+          </item>
+          <item n="657" xml:id="Nancy_1892_e1_i657">
+            <num>657</num>
+            <title>Vallée de la Moselle </title>
+            <desc>(Liverdun).</desc>
+          </item>
+          <item n="658" xml:id="Nancy_1892_e1_i658">
+            <num>658</num>
+            <title>Coucher de soleil.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Nancy_1892_e2" source="Cat_Nancy_1892_typo_0001.jpg">
+          <desc>
+            <name>ROBINET (Paul),</name>
+            <trait>
+              <p> élève de Cabat, Meissonnier et Barrias, né à Magny-Vernois (Haute-Saône). Dôle, 9, rue Haute-des-Comards.</p>
+            </trait>
+          </desc>
+          <item n="659" xml:id="Nancy_1892_e2_i659">
+            <num>659</num>
+            <title>Matinée de printemps dans la vallée d’Engelberg.</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Nancy_1892_e3" source="Cat_Nancy_1892_typo_0001.jpg">
+          <desc>
+            <name>ROLLOT (Mlle Esther),</name>
+            <trait>
+              <p> élève de Hippolyte Dubois, née à Nancy. Nancy, rue Gilbert, 3.</p>
+            </trait>
+          </desc>
+          <item n="660" xml:id="Nancy_1892_e3_i660">
+            <num>660</num>
+            <title>Environs d’Alger.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Nancy_1892_e4" source="Cat_Nancy_1892_typo_0001.jpg">
+          <desc>
+            <name>ROUSSEL (Edmond).</name>
+            <trait>
+              <p>Nancy, 5 bis, rue d'Alliance.</p>
+            </trait>
+          </desc>
+          <item n="661" xml:id="Nancy_1892_e4_i661">
+            <num>661</num>
+            <title>Marseille, quai de la Fraternité.</title>
+            <desc>quai de la Fraternité.</desc>
+          </item>
+          <item n="662" xml:id="Nancy_1892_e4_i662">
+            <num>662</num>
+            <title>Banlieue de Marseille, le cabot </title>
+            <desc>le cabot (Sainte-Marguerite.</desc>
+          </item>
+          <item n="663" xml:id="Nancy_1892_e4_i663">
+            <num>663</num>
+            <title>Le Tréport, plage à marée basse.</title>
+            <desc>plage à marée basse.</desc>
+          </item>
+          <item n="664" xml:id="Nancy_1892_e4_i664">
+            <num>664</num>
+            <title>Boulogne-sur-Mer, jetée du sud-ouest.</title>
+            <desc>jetée du sud-ouest.</desc>
+          </item>
+          <item n="665" xml:id="Nancy_1892_e4_i665">
+            <num>665</num>
+            <title>Maisons de pêcheurs, près Equihen.</title>
+            <desc>près Equihen.</desc>
+          </item>
+          <item n="666" xml:id="Nancy_1892_e4_i666">
+            <num>666</num>
+            <title>Malzéville.</title>
+          </item>
+          <item n="667" xml:id="Nancy_1892_e4_i667">
+            <num>667</num>
+            <title>id.</title>
+          </item>
+          <item n="668" xml:id="Nancy_1892_e4_i668">
+            <num>668</num>
+            <title>Tomblaine.</title>
+          </item>
+          <item n="669" xml:id="Nancy_1892_e4_i669">
+            <num>669</num>
+            <title>Vimereux, Boulogne-sur-Mer.</title>
+            <desc>Boulogne-sur-Mer.</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Nancy_1892_e5" source="Cat_Nancy_1892_typo_0002.jpg">
+          <desc>
+            <name>ROUSSET (Mlle Léontine),</name>
+            <trait>
+              <p> élève de Mme Faivre et de Devilly, née à Sarguemines. Nancy, 33, rue des Carmes.</p>
+            </trait>
+          </desc>
+          <item n="670" xml:id="Nancy_1892_e5_i670">
+            <num>670</num>
+            <title>Portrait de Mme E...</title>
+          </item>
+          <item n="671" xml:id="Nancy_1892_e5_i671">
+            <num>671</num>
+            <title>— M. G...</title>
+            <desc>— M. G...</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Nancy_1892_e6" source="Cat_Nancy_1892_typo_0002.jpg">
+          <desc>
+            <name>ROVEL (Henri), élève de Cormon</name>
+            <trait>
+              <p>, né à St-Dié. Saint-Dié.</p>
+            </trait>
+          </desc>
+          <item n="672" xml:id="Nancy_1892_e6_i672">
+            <num>672</num>
+            <title>Schlitteur dans les Vosges.</title>
+          </item>
+          <item n="673" xml:id="Nancy_1892_e6_i673">
+            <num>673</num>
+            <title>Chevreuil mort.</title>
+          </item>
+          <item n="674" xml:id="Nancy_1892_e6_i674">
+            <num>674</num>
+            <title>Le cloître de la cathédrale de Saint-Dié,.</title>
+            <desc></desc>
+          </item>
+          <item n="675" xml:id="Nancy_1892_e6_i675">
+            <num>675</num>
+            <title>Le service obligatoire.</title>
+          </item>
+          <item n="676" xml:id="Nancy_1892_e6_i676">
+            <num>676</num>
+            <title>Un coin de Mirecourt.</title>
+          </item>
+          <item n="677" xml:id="Nancy_1892_e6_i677">
+            <num>677</num>
+            <title>Sur la plage.</title>
+          </item>
+          <item n="678" xml:id="Nancy_1892_e6_i678">
+            <num>678</num>
+            <title>Village des Vosges.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Nancy_1892_e7" source="Cat_Nancy_1892_typo_0002.jpg">
+          <desc>
+            <name>ROYER (Henri),</name>
+            <trait>
+              <p> élève de Lefebvre et F. Flameng, né à Nancy. Nancy, 1, rue de la Salpétrière.</p>
+            </trait>
+          </desc>
+          <item n="679" xml:id="Nancy_1892_e7_i679">
+            <num>679</num>
+            <title>Scènes de la vie de Bacchus.</title>
+          </item>
+          <item n="680" xml:id="Nancy_1892_e7_i680">
+            <num>680</num>
+            <title>Le Vieux.</title>
+          </item>
+          <item n="681" xml:id="Nancy_1892_e7_i681">
+            <num>681</num>
+            <title>Aux champs.</title>
+          </item>
+          <item n="682" xml:id="Nancy_1892_e7_i682">
+            <num>682</num>
+            <title>Etude.</title>
+          </item>
+          <item n="683" xml:id="Nancy_1892_e7_i683">
+            <num>683</num>
+            <title>Etude de tête.</title>
+          </item>
+          <item n="684" xml:id="Nancy_1892_e7_i684">
+            <num>684</num>
+            <title>Portrait du Docteur C.</title>
+          </item>
+          <item n="685" xml:id="Nancy_1892_e7_i685">
+            <num>685</num>
+            <title>Etude.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Nancy_1892_e8" source="Cat_Nancy_1892_typo_0002.jpg">
+          <desc>
+            <name>ROY (Emile), élève de Huel</name>
+            <trait>
+              <p>, né à Nancy. Nancy, 13, rue de l’Atrie.</p>
+            </trait>
+          </desc>
+          <item n="686" xml:id="Nancy_1892_e8_i686">
+            <num>686</num>
+            <title>Portrait de Mlle M. R...</title>
+          </item>
+          <item n="687" xml:id="Nancy_1892_e8_i687">
+            <num>687</num>
+            <title>Un noble </title>
+            <desc>(d’après une gravure de J. Callot).</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Nancy_1892_e9" source="Cat_Nancy_1892_typo_0002.jpg">
+          <desc>
+            <name>ROY (Mlle Maria),</name>
+            <trait>
+              <p> élève de l’Ecole des BeauxArts, né à Nancy. Nancy.</p>
+            </trait>
+          </desc>
+          <item n="688" xml:id="Nancy_1892_e9_i688">
+            <num>688</num>
+            <title>Roses trémières, panneau.</title>
+            <desc>panneau.</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Nancy_1892_e10" source="Cat_Nancy_1892_typo_0003.jpg">
+          <desc>
+            <name>SACHY (Henri DE),</name>
+            <trait>
+              <p> élève de P. Colin, A. Cabanel, E. Dubof et Mazerolles, né à Paris. Paris, Ecole des Beaux-Arts.</p>
+            </trait>
+          </desc>
+          <item n="689" xml:id="Nancy_1892_e10_i689">
+            <num>689</num>
+            <title>Au printemps.</title>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Nancy_1892_e11" source="Cat_Nancy_1892_typo_0003.jpg">
+          <desc>
+            <name>SAGE (Mlle Gabrielle LE)</name>
+            <trait>
+              <p>, née à Paris. Paris, 57, rue Pigalle.</p>
+            </trait>
+          </desc>
+          <item n="690" xml:id="Nancy_1892_e11_i690">
+            <num>690</num>
+            <title>Pivoines et Aubépine.</title>
+          </item>
+          <item n="691" xml:id="Nancy_1892_e11_i691">
+            <num>691</num>
+            <title>Pensées.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Nancy_1892_e12" source="Cat_Nancy_1892_typo_0003.jpg">
+          <desc>
+            <name>SAIN (Paul),</name>
+            <trait>
+              <p> élève de Guilbert d’Anelle et Gé rôme, né à Avignon. Paris, 33, rue du Dragon.</p>
+            </trait>
+          </desc>
+          <item n="692" xml:id="Nancy_1892_e12_i692">
+            <num>692</num>
+            <title>Le châtaigneraie du château de Corbeville.</title>
+          </item>
+          <item n="693" xml:id="Nancy_1892_e12_i693">
+            <num>693</num>
+            <title>Le Pont Saint-Bénézet à Avignon.</title>
+          </item>
+          <item n="694" xml:id="Nancy_1892_e12_i694">
+            <num>694</num>
+            <title>Le Rhône à Avignon.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Nancy_1892_e13" source="Cat_Nancy_1892_typo_0003.jpg">
+          <desc>
+            <name>SARAZIN (Mlle Marguerite),</name>
+            <trait>
+              <p> élève de Damas, née à Charleville. Charleville, 8, rue Victor-Cousin.</p>
+            </trait>
+          </desc>
+          <item n="695" xml:id="Nancy_1892_e13_i695">
+            <num>695</num>
+            <title>Reines-Marguerite.</title>
+          </item>
+          <item n="696" xml:id="Nancy_1892_e13_i696">
+            <num>696</num>
+            <title>Pommes et chrysanthèmes.</title>
+          </item>
+          <item n="697" xml:id="Nancy_1892_e13_i697">
+            <num>697</num>
+            <title>Giroflées et narcisses.</title>
+          </item>
+          <item n="698" xml:id="Nancy_1892_e13_i698">
+            <num>698</num>
+            <title>Fleurs de Nice.</title>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Nancy_1892_e14" source="Cat_Nancy_1892_typo_0003.jpg">
+          <desc>
+            <name>SCHIFF(J.-M.),</name>
+            <trait>
+              <p> élève de l’Ecole des Beaux-Arts de Nancy, né à Rettel-les-Siercke (Lorraine). Nancy, 3 bis, rue de La Salle.</p>
+            </trait>
+          </desc>
+          <item n="699" xml:id="Nancy_1892_e14_i699">
+            <num>699</num>
+            <title>Portrait de M. A...</title>
+          </item>
+          <item n="700" xml:id="Nancy_1892_e14_i700">
+            <num>700</num>
+            <title>id. M. M...</title>
+          </item>
+          <item n="701" xml:id="Nancy_1892_e14_i701">
+            <num>701</num>
+            <title>id. Mme H...</title>
+          </item>
+          <item n="702" xml:id="Nancy_1892_e14_i702">
+            <num>702</num>
+            <title>id. MlIe D...</title>
+          </item>
+          <item n="703" xml:id="Nancy_1892_e14_i703">
+            <num>703</num>
+            <title>Etude.</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Nancy_1892_e15" source="Cat_Nancy_1892_typo_0004.jpg">
+          <desc>
+            <name>SCITIVAUX (Tancrède DE)</name>
+            <trait>
+              <p>, né à Nancy. Château de Remicourt, près Nancy.</p>
+            </trait>
+          </desc>
+          <item n="704" xml:id="Nancy_1892_e15_i704">
+            <num>704</num>
+            <title>Antibes.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Nancy_1892_e16" source="Cat_Nancy_1892_typo_0004.jpg">
+          <desc>
+            <name>SEMENOWSKY.</name>
+            <trait>
+              <p>Paris, 7, rue Laffitte.</p>
+            </trait>
+          </desc>
+          <item n="705" xml:id="Nancy_1892_e16_i705">
+            <num>705</num>
+            <title>Etude.</title>
+          </item>
+          <item n="706" xml:id="Nancy_1892_e16_i706">
+            <num>706</num>
+            <title>Etude.</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Nancy_1892_e17" source="Cat_Nancy_1892_typo_0004.jpg">
+          <desc>
+            <name>SERRIER (Georges),</name>
+            <trait>
+              <p> élève de Gagliardini, né à Thionville. Paris, 65, rue de Douai.</p>
+            </trait>
+          </desc>
+          <item n="707" xml:id="Nancy_1892_e17_i707">
+            <num>707</num>
+            <title>- Le soir, bords de l’Allier.</title>
+            <desc>bords de l’Allier.</desc>
+          </item>
+          <item n="708" xml:id="Nancy_1892_e17_i708">
+            <num>708</num>
+            <title>Le Morin, à Crécy-en-Brie.</title>
+            <desc>à Crécy-en-Brie.</desc>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Nancy_1892_e18" source="Cat_Nancy_1892_typo_0004.jpg">
+          <desc>
+            <name>SILVA (Lucien-Lopes),</name>
+            <trait>
+              <p> élève de F. Pélez, A. Maignan et J. Lefèvre, né à Paris. Paris, 25, rue Condorcet.</p>
+            </trait>
+          </desc>
+          <item n="709" xml:id="Nancy_1892_e18_i709">
+            <num>709</num>
+            <title>Farniente.</title>
+          </item>
+          <item n="710" xml:id="Nancy_1892_e18_i710">
+            <num>710</num>
+            <title>Bouquet des champs.</title>
+          </item>
+          <item n="711" xml:id="Nancy_1892_e18_i711">
+            <num>711</num>
+            <title>Tête de femme de Louis XV.</title>
+          </item>
+          <item n="712" xml:id="Nancy_1892_e18_i712">
+            <num>712</num>
+            <title>Jeune fille.</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Nancy_1892_e19" source="Cat_Nancy_1892_typo_0004.jpg">
+          <desc>
+            <name>SIMON (J.-B.-Léon),</name>
+            <trait>
+              <p> élève de A. Migette, né à Metz. Metz, 3, rue du Moyen-Pont.</p>
+            </trait>
+          </desc>
+          <item n="713" xml:id="Nancy_1892_e19_i713">
+            <num>713</num>
+            <title>Prairies du Mouzon </title>
+            <desc>(Vosges).</desc>
+          </item>
+          <item n="714" xml:id="Nancy_1892_e19_i714">
+            <num>714</num>
+            <title>Vieille futaie </title>
+            <desc>(Meuse).</desc>
+          </item>
+          <item n="715" xml:id="Nancy_1892_e19_i715">
+            <num>715</num>
+            <title>A la pointe des Poulains </title>
+            <desc>(Belle-Isle).</desc>
+          </item>
+          <item n="716" xml:id="Nancy_1892_e19_i716">
+            <num>716</num>
+            <title>Près Neufchâteau </title>
+            <desc>(Vosges).</desc>
+          </item>
+          <item n="717" xml:id="Nancy_1892_e19_i717">
+            <num>717</num>
+            <title>Ruisseau de Vallières, près Metz.</title>
+            <desc>près Metz.</desc>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Nancy_1892_e20" source="Cat_Nancy_1892_typo_0005.jpg">
+          <desc>
+            <name>SIMON (Pierre-Paul),</name>
+            <trait>
+              <p> élève de L. O. Merson, né à Reims. Reims, 53, rue de l’Université.</p>
+            </trait>
+          </desc>
+          <item n="718" xml:id="Nancy_1892_e20_i718">
+            <num>718</num>
+            <title>Jeune Romaine </title>
+            <desc>(étude).</desc>
+          </item>
+          <item n="719" xml:id="Nancy_1892_e20_i719">
+            <num>719</num>
+            <title>Matelot pêcheur d’Etretat.</title>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Nancy_1892_e21" source="Cat_Nancy_1892_typo_0005.jpg">
+          <desc>
+            <name>SIMONNET (Lucien),</name>
+            <trait>
+              <p> elève de G. Boulanger, et de Nozal et J. Lefebvre, né à Paris. Sèvres, 3, rue des Rouillis.</p>
+            </trait>
+          </desc>
+          <item n="720" xml:id="Nancy_1892_e21_i720">
+            <num>720</num>
+            <title>Moutons sur la falaise.</title>
+          </item>
+          <item n="721" xml:id="Nancy_1892_e21_i721">
+            <num>721</num>
+            <title>Le côteau de la Monesse.</title>
+          </item>
+          <item n="722" xml:id="Nancy_1892_e21_i722">
+            <num>722</num>
+            <title>Le ruisseau.</title>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Nancy_1892_e22" source="Cat_Nancy_1892_typo_0005.jpg">
+          <desc>
+            <name>SOHET (Raoul),</name>
+            <trait>
+              <p> élève de L. Gérôme et J. Bas- tien Lepage, né à Damvillers (Meuse). Nancy, 28, rue des Dominicains.</p>
+            </trait>
+          </desc>
+          <item n="723" xml:id="Nancy_1892_e22_i723">
+            <num>723</num>
+            <title>Saint-Jean-Baptiste, étude.</title>
+            <desc>étude.</desc>
+          </item>
+          <item n="724" xml:id="Nancy_1892_e22_i724">
+            <num>724</num>
+            <title>Paysage. id.</title>
+          </item>
+          <item n="725" xml:id="Nancy_1892_e22_i725">
+            <num>725</num>
+            <title>Portrait de Mme S...</title>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Nancy_1892_e23" source="Cat_Nancy_1892_typo_0005.jpg">
+          <desc>
+            <name>SPRAUEL (Jules)</name>
+            <trait>
+              <p>, né à Strasbourg. Nancy, rue de Mon-Désert.</p>
+            </trait>
+          </desc>
+          <item n="726" xml:id="Nancy_1892_e23_i726">
+            <num>726</num>
+            <title>Coin de Méréville.</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Nancy_1892_e24" source="Cat_Nancy_1892_typo_0005.jpg">
+          <desc>
+            <name>SYNDON (Léon), élève de Bonnat</name>
+            <trait>
+              <p>, né à Cahors. Paris, 55, due du Cherche-Midi.</p>
+            </trait>
+          </desc>
+          <item n="727" xml:id="Nancy_1892_e24_i727">
+            <num>727</num>
+            <title>Poires </title>
+            <desc>(nature morte).</desc>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Nancy_1892_e25" source="Cat_Nancy_1892_typo_0005.jpg">
+          <desc>
+            <name>TAUZIN (Louis)</name>
+            <trait>
+              <p>, né à Bordeaux. Bellevue (S.-et-O.), 4, sentier des Pierres-Blanches.</p>
+            </trait>
+          </desc>
+          <item n="728" xml:id="Nancy_1892_e25_i728">
+            <num>728</num>
+            <title>Les roches de Vallières, à Royan.</title>
+            <desc>à Royan.</desc>
+          </item>
+          <item n="729" xml:id="Nancy_1892_e25_i729">
+            <num>729</num>
+            <title>Sous bois à Meudon.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

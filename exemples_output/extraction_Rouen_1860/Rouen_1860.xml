@@ -1,0 +1,521 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rouen_1860">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Rouen_1860_e1" source="CatRouen_1860_bpt6k1181800p_22.JPEG">
+          <desc>
+            <name>BAILLY (LÉON),</name>
+            <trait>
+              <p>A Paris, rue de Chabrol, 16.</p>
+            </trait>
+          </desc>
+          <item n="17" xml:id="Rouen_1860_e1_i17">
+            <num>17</num>
+            <title>Une partie de Loto.</title>
+          </item>
+          <item n="18" xml:id="Rouen_1860_e1_i18">
+            <num>18</num>
+            <title>Intérieur d’Atelier.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Rouen_1860_e2" source="CatRouen_1860_bpt6k1181800p_22.JPEG">
+          <desc>
+            <name>BALEFOURIER (ADOLPHE),</name>
+            <trait>
+              <p>A Paris, rue Frochot, 8, élève de M. Rémond. Médailles d'or de 3e et 2e classe, à Paris.</p>
+            </trait>
+          </desc>
+          <item n="19" xml:id="Rouen_1860_e2_i19">
+            <num>19</num>
+            <title>Vue prise à Fougiras </title>
+            <desc>(Haute-Vienne ).</desc>
+          </item>
+          <item n="20" xml:id="Rouen_1860_e2_i20">
+            <num>20</num>
+            <title>Bords du Gapau, ravin à Sainte-Eulalie </title>
+            <desc>ravin à Sainte-Eulalie (Var)</desc>
+          </item>
+          <item n="21" xml:id="Rouen_1860_e2_i21">
+            <num>21</num>
+            <title>Poste de la Douane, à Almanarve </title>
+            <desc>à Almanarve (Var).</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Rouen_1860_e3" source="CatRouen_1860_bpt6k1181800p_22.JPEG">
+          <desc>
+            <name>BARRIAT (CHARLES),</name>
+            <trait>
+              <p>A Passy-Paris, rue Franklin, 3, élève de M. Diéterle. Médailles d’argent de 1re classe, à Sèvres, 1850 et 1855.</p>
+            </trait>
+          </desc>
+          <item n="22" xml:id="Rouen_1860_e3_i22">
+            <num>22</num>
+            <title>Un petit Pécheur de Crevettes à Etretat.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Rouen_1860_e4" source="CatRouen_1860_bpt6k1181800p_22.JPEG">
+          <desc>
+            <name>BATTANCHON (EDMOND),</name>
+            <trait>
+              <p>A Paris, rue Laval, 23, élève de M. Gleyre.</p>
+            </trait>
+          </desc>
+          <item n="23" xml:id="Rouen_1860_e4_i23">
+            <num>23</num>
+            <title>Hébé.</title>
+          </item>
+          <item n="24" xml:id="Rouen_1860_e4_i24">
+            <num>24</num>
+            <title>Léda.</title>
+          </item>
+          <item n="25" xml:id="Rouen_1860_e4_i25">
+            <num>25</num>
+            <title>Diane.</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Rouen_1860_e5" source="CatRouen_1860_bpt6k1181800p_23.JPEG">
+          <desc>
+            <name>BAYARD (EMILE),</name>
+            <trait>
+              <p>Chez M. Lelarge, à Rouen, à Mont-Riboudet, et à Paris, rue Neuve-des-Capucines, 22.</p>
+            </trait>
+          </desc>
+          <item n="26" xml:id="Rouen_1860_e5_i26">
+            <num>26</num>
+            <title>Deux études de Chevaux </title>
+            <desc>(au fusain).</desc>
+          </item>
+          <item n="27" xml:id="Rouen_1860_e5_i27">
+            <num>27</num>
+            <title>Macadamisage d’un Pont à Paris </title>
+            <desc>(étude de chevaux.</desc>
+          </item>
+          <item n="28" xml:id="Rouen_1860_e5_i28">
+            <num>28</num>
+            <title>Un Chasseur.</title>
+          </item>
+          <item n="29" xml:id="Rouen_1860_e5_i29">
+            <num>29</num>
+            <title>Un Aveugle.</title>
+          </item>
+          <item n="30" xml:id="Rouen_1860_e5_i30">
+            <num>30</num>
+            <title>Douze Types d’Aliènés. Cette collection a été lithographiée, et forme le complément d’un ouvrage du Docteur Morel, de Rouen, sur la dégénèrés¬ cense de l’espèce humaine.</title>
+            <desc>et forme le complément d’un ouvrage du Docteur Morel, de Rouen, sur la dégénèréscense de l’espèce humaine.</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Rouen_1860_e6" source="CatRouen_1860_bpt6k1181800p_23.JPEG">
+          <desc>
+            <name>BAYEUX.</name>
+          </desc>
+          <item n="31" xml:id="Rouen_1860_e6_i31">
+            <num>31</num>
+            <title>Effet d’Hiver.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Rouen_1860_e7" source="CatRouen_1860_bpt6k1181800p_23.JPEG">
+          <desc>
+            <name>BAZIN (EUGÈNE),</name>
+            <trait>
+              <p>A Paris, rue du Faubourg-Sait-Martin, 167.</p>
+            </trait>
+          </desc>
+          <item n="32" xml:id="Rouen_1860_e7_i32">
+            <num>32</num>
+            <title>Sujets Militaires.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Rouen_1860_e8" source="CatRouen_1860_bpt6k1181800p_23.JPEG">
+          <desc>
+            <name>BELLANGÉ (HIPPOLYTE).</name>
+            <trait>
+              <p>A Paris, rue de Douai, 57 Chevalier de la Légion-d’Honneur.</p>
+            </trait>
+          </desc>
+          <item n="33" xml:id="Rouen_1860_e8_i33">
+            <num>33</num>
+            <title>Les Retardataires </title>
+            <desc>(départ de la Garde ImpéLyon, 1859).</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Rouen_1860_e9" source="CatRouen_1860_bpt6k1181800p_24.JPEG">
+          <desc>
+            <name>BÉNARD (AUGUSTE-SÉBASTIEN),</name>
+            <trait>
+              <p>A Paris, rue de Dunkerque, 85, élève de MM. Granger et Lafond.</p>
+            </trait>
+          </desc>
+          <item n="34" xml:id="Rouen_1860_e9_i34">
+            <num>34</num>
+            <title>Le Tombereau.</title>
+          </item>
+          <item n="35" xml:id="Rouen_1860_e9_i35">
+            <num>35</num>
+            <title>Le Retour de la ville.</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Rouen_1860_e10" source="CatRouen_1860_bpt6k1181800p_24.JPEG">
+          <desc>
+            <name>BÉNARD (HUBERT-EUGÈNE),</name>
+            <trait>
+              <p>A Boulogne-sur-Mer, route de Calais, 3, élève de M. Claurdius Jacquand.</p>
+            </trait>
+          </desc>
+          <item n="36" xml:id="Rouen_1860_e10_i36">
+            <num>36</num>
+            <title>La Brise en rade de Boulogne-sur-Mer.</title>
+          </item>
+          <item n="37" xml:id="Rouen_1860_e10_i37">
+            <num>37</num>
+            <title>Barque de Pécheurs du Portel, levant l’ancre par un gros temps </title>
+            <desc>levant l’ancre par un gros temps (marine).</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Rouen_1860_e11" source="CatRouen_1860_bpt6k1181800p_24.JPEG">
+          <desc>
+            <name>BENNETTER (J.),</name>
+            <trait>
+              <p>Peintre de marine à Paris, rue du Faubourg-Saint-Honoré, 217, élève de MM. L. Meyer et T. Gudin.</p>
+            </trait>
+          </desc>
+          <item n="38" xml:id="Rouen_1860_e11_i38">
+            <num>38</num>
+            <title>Effet de Lune. Une escadre venant en grande large, le premier plan repré¬ sente un navire marchant </title>
+            <desc>(brick), louvoyant et virant de bord, pour éviter les autres, et apprêtant le signal de nuit.</desc>
+          </item>
+          <item n="39" xml:id="Rouen_1860_e11_i39">
+            <num>39</num>
+            <title>Matin d’Eté. Mer du Nord, au premier plan, un </title>
+            <desc>un (Hardengerjack ), cer tain navire de cabotage, sur la côte de la Norvège, est abordé par des pêcheurs.</desc>
+          </item>
+          <item n="40" xml:id="Rouen_1860_e11_i40">
+            <num>40</num>
+            <title>Calme: Estre Bagholmen </title>
+            <desc>( Norwège). Appartenant à M. J. Deliquaire, à Rouen.</desc>
+          </item>
+          <item n="41" xml:id="Rouen_1860_e11_i41">
+            <num>41</num>
+            <title>Pécheurs de Homards dans Bjoornefjord, près de Bergem </title>
+            <desc>près de Bergem (Norwége).</desc>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Rouen_1860_e12" source="CatRouen_1860_bpt6k1181800p_24.JPEG">
+          <desc>
+            <name>BENTABOLE (LOUIS),</name>
+          </desc>
+          <item n="1" xml:id="Rouen_1860_e12_i1">
+            <title>A Paris, rue Pigalle, 22.</title>
+            <desc>rue Pigalle, 22.</desc>
+          </item>
+          <item n="2" xml:id="Rouen_1860_e12_i2">
+            <title>, Vue de Calais.</title>
+            <desc>Vue de Calais.</desc>
+          </item>
+          <item n="43" xml:id="Rouen_1860_e12_i43">
+            <num>43</num>
+            <title>Pêche au Maquereau </title>
+            <desc>(souvenir de Port-en- Bessin).</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Rouen_1860_e13" source="CatRouen_1860_bpt6k1181800p_25.JPEG">
+          <desc>
+            <name>BERTAUT (H.),</name>
+            <trait>
+              <p>A Pais, rue de la Ville-l'Evêque, 74, élève M. E.Giraud.</p>
+            </trait>
+          </desc>
+          <item n="44" xml:id="Rouen_1860_e13_i44">
+            <num>44</num>
+            <title>L'Attente.</title>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Rouen_1860_e14" source="CatRouen_1860_bpt6k1181800p_25.JPEG">
+          <desc>
+            <name>BERTHELEMY (PIERRE-EMILE),</name>
+            <trait>
+              <p>À Paris, rue Berthe, 13, élève de MM. Morin et Léon Cogniet. Médailles d’argent, à Rouen, en 1843, 1815, 1847, 1888, — Académie Impériale, 1839, — à Boulogne-sur-Mer, 1852</p>
+            </trait>
+          </desc>
+          <item n="45" xml:id="Rouen_1860_e14_i45">
+            <num>45</num>
+            <title>Après la Tempête. Parmi quelques épaves jetées à la côté, un chien seul s'est échappé du désastre, et, près du corps inanimé de son maître, fait retentir l’air de ses cris plaintifs.</title>
+            <desc>un chien seul s'est échappé du désastre, et, près du corps inanimé de son maître, fait retentir l’air de ses cris plaintifs.</desc>
+          </item>
+          <item n="46" xml:id="Rouen_1860_e14_i46">
+            <num>46</num>
+            <title>Une Bourrasque dans le port du Conquet</title>
+          </item>
+          <item n="47" xml:id="Rouen_1860_e14_i47">
+            <num>47</num>
+            <title>Barfleur </title>
+            <desc>(vue prise du côté de Gueutteville)</desc>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Rouen_1860_e15" source="CatRouen_1860_bpt6k1181800p_25.JPEG">
+          <desc>
+            <name>BLANCHE (Mlle EMMA),</name>
+            <trait>
+              <p>A Paris, rue Fontaine-Saint-Georges, 19 bis, élève de M.Léon Cogniet.</p>
+            </trait>
+          </desc>
+          <item n="48" xml:id="Rouen_1860_e15_i48">
+            <num>48</num>
+            <title>Le Thé.</title>
+          </item>
+          <item n="49" xml:id="Rouen_1860_e15_i49">
+            <num>49</num>
+            <title>Une jeune Bohémienne.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Rouen_1860_e16" source="CatRouen_1860_bpt6k1181800p_25.JPEG">
+          <desc>
+            <name>BLOT (EUGÈNE),</name>
+            <trait>
+              <p>A Boulogne-sur-Mer, rue de l'Ecu, 19, Membre de plusieurs Sociétés savantes. Médailles de bronze, à Toulouse, 1858, — d'argent (2e classe), à Bordeaux, 1859, — de vermeil (1er classe), à Londres, 1860.</p>
+            </trait>
+          </desc>
+          <item n="50" xml:id="Rouen_1860_e16_i50">
+            <num>50</num>
+            <title>Groupe de Pêcheurs prenant leur repas </title>
+            <desc>(terre cuite).</desc>
+          </item>
+          <item n="51" xml:id="Rouen_1860_e16_i51">
+            <num>51</num>
+            <title>Un Pêcheur Boulomais </title>
+            <desc>(terre cuite).</desc>
+          </item>
+          <item n="52" xml:id="Rouen_1860_e16_i52">
+            <num>52</num>
+            <title>Une Pêcheuse de Crevettes d°.</title>
+          </item>
+          <item n="53" xml:id="Rouen_1860_e16_i53">
+            <num>53</num>
+            <title>Femme de Pêcheur d°</title>
+          </item>
+          <item n="54" xml:id="Rouen_1860_e16_i54">
+            <num>54</num>
+            <title>Le Pêcheur à terre.  d°</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Rouen_1860_e17" source="CatRouen_1860_bpt6k1181800p_26.JPEG">
+          <desc>
+            <name>BLUHM (ALEXANDRE),</name>
+            <trait>
+              <p>A Paris, boulevard de Courcelles, 36.</p>
+            </trait>
+          </desc>
+          <item n="55" xml:id="Rouen_1860_e17_i55">
+            <num>55</num>
+            <title>Paysage.</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Rouen_1860_e18" source="CatRouen_1860_bpt6k1181800p_26.JPEG">
+          <desc>
+            <name>BONNEFOY (ARTHUR-HENRI),</name>
+            <trait>
+              <p>A Paris, rue de Lancry, 36, élève de M. Léon Cogniet.</p>
+            </trait>
+          </desc>
+          <item n="56" xml:id="Rouen_1860_e18_i56">
+            <num>56</num>
+            <title>Les premières teintes d’Autonne </title>
+            <desc>(paysage).</desc>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Rouen_1860_e19" source="CatRouen_1860_bpt6k1181800p_26.JPEG">
+          <desc>
+            <name>BOUDIN et CASINELLI.</name>
+          </desc>
+          <item n="57" xml:id="Rouen_1860_e19_i57">
+            <num>57</num>
+            <title>Marine.</title>
+          </item>
+          <item n="58" xml:id="Rouen_1860_e19_i58">
+            <num>58</num>
+            <title>Marine</title>
+          </item>
+          <item n="59" xml:id="Rouen_1860_e19_i59">
+            <num>59</num>
+            <title>Marine.</title>
+          </item>
+          <item n="60" xml:id="Rouen_1860_e19_i60">
+            <num>60</num>
+            <title>Marine.</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Rouen_1860_e20" source="CatRouen_1860_bpt6k1181800p_26.JPEG">
+          <desc>
+            <name>BOUET (GEORGES-ADELMARD)</name>
+            <trait>
+              <p>À Caen, rue de l’Académie, 6, élève de M. Paul Delaroche.</p>
+            </trait>
+          </desc>
+          <item n="61" xml:id="Rouen_1860_e20_i61">
+            <num>61</num>
+            <title>Un Sentier dans les rochers.</title>
+          </item>
+          <item n="62" xml:id="Rouen_1860_e20_i62">
+            <num>62</num>
+            <title>Intérieur d’Eglise ruinée.</title>
+          </item>
+          <item n="63" xml:id="Rouen_1860_e20_i63">
+            <num>63</num>
+            <title>Vue prise à la Brèche-au-Diable, près Falaise</title>
+            <desc>près Falaise</desc>
+          </item>
+          <item n="64" xml:id="Rouen_1860_e20_i64">
+            <num>64</num>
+            <title>Effet de soir.</title>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Rouen_1860_e21" source="CatRouen_1860_bpt6k1181800p_27.JPEG">
+          <desc>
+            <name>BOUQUET (MICHEL),</name>
+          </desc>
+        </entry>
+        <entry n="22" xml:id="Rouen_1860_e22" source="CatRouen_1860_bpt6k1181800p_27.JPEG">
+          <desc>
+            <name>BOURGEOIS (ISIDORE),</name>
+            <trait>
+              <p>A Paris, rue du Regard, 3. Deux Médailles de bronze, à Rouen.</p>
+            </trait>
+          </desc>
+          <item n="67" xml:id="Rouen_1860_e22_i67">
+            <num>67</num>
+            <title>Les feuilles d’automne </title>
+            <desc>(aquarelle).</desc>
+          </item>
+          <item n="68" xml:id="Rouen_1860_e22_i68">
+            <num>68</num>
+            <title>Vue prise à la vallée d’Oudenare, près Bou logne-sur-Mer </title>
+            <desc>près Bou logne-sur-Mer (aquarelle).</desc>
+          </item>
+          <item n="69" xml:id="Rouen_1860_e22_i69">
+            <num>69</num>
+            <title>Partie de Forêt, au Tyrol.</title>
+            <desc>au Tyrol.</desc>
+          </item>
+          <item n="70" xml:id="Rouen_1860_e22_i70">
+            <num>70</num>
+            <title>Village de Jouy, près Chartres.</title>
+            <desc>près Chartres.</desc>
+          </item>
+          <item n="71" xml:id="Rouen_1860_e22_i71">
+            <num>71</num>
+            <title>Effet de Neige.</title>
+          </item>
+          <item n="72" xml:id="Rouen_1860_e22_i72">
+            <num>72</num>
+            <title>Effet de Soleil dans une forêt</title>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Rouen_1860_e23" source="CatRouen_1860_bpt6k1181800p_27.JPEG">
+          <desc>
+            <name>BOYER (AUGUSTE),</name>
+            <trait>
+              <p>A Paris, rue de Douai, 69, élève de MM. Henri Delaborde et Amaury-Duval.</p>
+            </trait>
+          </desc>
+          <item n="73" xml:id="Rouen_1860_e23_i73">
+            <num>73</num>
+            <title>Le repos en Egypte.</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Rouen_1860_e24" source="CatRouen_1860_bpt6k1181800p_27.JPEG">
+          <desc>
+            <name>BREST (FABIUS),</name>
+            <trait>
+              <p>A Paris, rue de l’Empereur, 46 (faubourg Montmartre). 74 La Fontaine de Taksim, à Constantinople.</p>
+            </trait>
+          </desc>
+          <item n="75" xml:id="Rouen_1860_e24_i75">
+            <num>75</num>
+            <title>La Fontaine de Galata, à Constantinople</title>
+            <desc>à Constantinople</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,590 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Inde_1892">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Inde_1892_e1" source="Cat_Inde_1892_typo_0001.jpg">
+          <desc>
+            <name>BOCH (Mlle), Anna</name>
+            <trait>
+              <p>, née à Bruxelles. — 2, avenue de la Toison d’or (Bruxelles).</p>
+            </trait>
+          </desc>
+          <item n="154" xml:id="Inde_1892_e1_i154">
+            <num>154</num>
+            <title>Le retour de la pèche.</title>
+          </item>
+          <item n="155" xml:id="Inde_1892_e1_i155">
+            <num>155</num>
+            <title>Arc-en-ciel.</title>
+          </item>
+          <item n="156" xml:id="Inde_1892_e1_i156">
+            <num>156</num>
+            <title>Soir.</title>
+          </item>
+          <item n="157" xml:id="Inde_1892_e1_i157">
+            <num>157</num>
+            <title>Soir.</title>
+          </item>
+          <item n="158" xml:id="Inde_1892_e1_i158">
+            <num>158</num>
+            <title>Marée haute.</title>
+          </item>
+          <item n="159" xml:id="Inde_1892_e1_i159">
+            <num>159</num>
+            <title>Les barques.</title>
+          </item>
+          <item n="160" xml:id="Inde_1892_e1_i160">
+            <num>160</num>
+            <title>Intérieur.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Inde_1892_e2" source="Cat_Inde_1892_typo_0001.jpg">
+          <desc>
+            <name>BOISTEL, Léo</name>
+            <trait>
+              <p>, né à Dieupentale (Tarn-et-Garonne). — Dieupentale.</p>
+            </trait>
+          </desc>
+          <item n="161" xml:id="Inde_1892_e2_i161">
+            <num>161</num>
+            <title>Rarahu.</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Inde_1892_e3" source="Cat_Inde_1892_typo_0001.jpg">
+          <desc>
+            <name>BOITELET, (Mlle) Marie-Louise</name>
+            <trait>
+              <p>, née à Guéret. — 34, rue Fontaine, Paris.</p>
+            </trait>
+          </desc>
+          <item n="162" xml:id="Inde_1892_e3_i162">
+            <num>162</num>
+            <title>Les Malavaux, près Vichy </title>
+            <desc>près Vichy (Allier).</desc>
+          </item>
+          <item n="163" xml:id="Inde_1892_e3_i163">
+            <num>163</num>
+            <title>Fleurs.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Inde_1892_e4" source="Cat_Inde_1892_typo_0001.jpg">
+          <desc>
+            <name>BONNAFFÉ, Jules</name>
+            <trait>
+              <p>, né à Bordeaux (Gironde). — 52, avenue du Roule, Neuilly-sur-Seine.</p>
+            </trait>
+          </desc>
+          <item n="164" xml:id="Inde_1892_e4_i164">
+            <num>164</num>
+            <title>A quand ? Petite statuette, plâtre.</title>
+            <desc>plâtre.</desc>
+          </item>
+          <item n="165" xml:id="Inde_1892_e4_i165">
+            <num>165</num>
+            <title>Le père Noël. Buste, terre cuite.</title>
+            <desc>terre cuite.</desc>
+          </item>
+          <item n="166" xml:id="Inde_1892_e4_i166">
+            <num>166</num>
+            <title>Buste de Geuseux, terre cuite.</title>
+            <desc>terre cuite.</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Inde_1892_e5" source="Cat_Inde_1892_typo_0002.jpg">
+          <desc>
+            <name>BONNARD, Pierre</name>
+            <trait>
+              <p>, né à Paris. — 28, rue Pigalle.</p>
+            </trait>
+          </desc>
+          <item n="167" xml:id="Inde_1892_e5_i167">
+            <num>167</num>
+            <title>Portrait. Appartient à Mme M.</title>
+          </item>
+          <item n="168" xml:id="Inde_1892_e5_i168">
+            <num>168</num>
+            <title>Paysage de soir. Appartient à Mme R.</title>
+          </item>
+          <item n="169" xml:id="Inde_1892_e5_i169">
+            <num>169</num>
+            <title>Etude de coq.</title>
+          </item>
+          <item n="170" xml:id="Inde_1892_e5_i170">
+            <num>170</num>
+            <title>Déjeuner.</title>
+          </item>
+          <item n="171" xml:id="Inde_1892_e5_i171">
+            <num>171</num>
+            <title>Caniches.</title>
+          </item>
+          <item n="172" xml:id="Inde_1892_e5_i172">
+            <num>172</num>
+            <title>Intérieur.</title>
+          </item>
+          <item n="173" xml:id="Inde_1892_e5_i173">
+            <num>173</num>
+            <title>Crépuscule.</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Inde_1892_e6" source="Cat_Inde_1892_typo_0002.jpg">
+          <desc>
+            <name>BOU-CHAKOUR, Marc</name>
+            <trait>
+              <p>, né à Paris. — Le Puy (Hte-Lre).</p>
+            </trait>
+          </desc>
+          <item n="174" xml:id="Inde_1892_e6_i174">
+            <num>174</num>
+            <title>Distraite.</title>
+          </item>
+          <item n="175" xml:id="Inde_1892_e6_i175">
+            <num>175</num>
+            <title>Fleurs en pots.</title>
+          </item>
+          <item n="176" xml:id="Inde_1892_e6_i176">
+            <num>176</num>
+            <title>Foins en fleurs. Etude.</title>
+          </item>
+          <item n="177" xml:id="Inde_1892_e6_i177">
+            <num>177</num>
+            <title>Fantaisie.</title>
+          </item>
+          <item n="178" xml:id="Inde_1892_e6_i178">
+            <num>178</num>
+            <title>Étude.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Inde_1892_e7" source="Cat_Inde_1892_typo_0002.jpg">
+          <desc>
+            <name>BOUDIER (Mme), Jeanne</name>
+            <trait>
+              <p>, née à Paris, 16, rue JeanneHachette.</p>
+            </trait>
+          </desc>
+          <item n="179" xml:id="Inde_1892_e7_i179">
+            <num>179</num>
+            <title>Portraits. Miniature.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Inde_1892_e8" source="Cat_Inde_1892_typo_0002.jpg">
+          <desc>
+            <name>BOURDAIS [Mlle), Julienne</name>
+            <trait>
+              <p>, née à Poissy (Seine-etOise).</p>
+            </trait>
+          </desc>
+          <item n="180" xml:id="Inde_1892_e8_i180">
+            <num>180</num>
+            <title>Portrait.</title>
+          </item>
+          <item n="181" xml:id="Inde_1892_e8_i181">
+            <num>181</num>
+            <title>Nature morte.</title>
+          </item>
+          <item n="182" xml:id="Inde_1892_e8_i182">
+            <num>182</num>
+            <title>Fruits.</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Inde_1892_e9" source="Cat_Inde_1892_typo_0002.jpg">
+          <desc>
+            <name>BOUSSENOT, Fernand</name>
+            <trait>
+              <p>, né à Paris. — 5, rue Lincoln.</p>
+            </trait>
+          </desc>
+          <item n="183" xml:id="Inde_1892_e9_i183">
+            <num>183</num>
+            <title>Temps gris.</title>
+          </item>
+          <item n="184" xml:id="Inde_1892_e9_i184">
+            <num>184</num>
+            <title>Farniente</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Inde_1892_e10" source="Cat_Inde_1892_typo_0003.jpg">
+          <desc>
+            <name>BOUVET, Henry-Marius-Camille</name>
+            <trait>
+              <p>, né à Lyon. — 75, avenue de Wagram.</p>
+            </trait>
+          </desc>
+          <item n="185" xml:id="Inde_1892_e10_i185">
+            <num>185</num>
+            <title>Les laveuses.</title>
+          </item>
+          <item n="186" xml:id="Inde_1892_e10_i186">
+            <num>186</num>
+            <title>Les usines de M. Fougerol, aux Ollières</title>
+            <desc>aux Ollières</desc>
+          </item>
+          <item n="187" xml:id="Inde_1892_e10_i187">
+            <num>187</num>
+            <title>Le verger.</title>
+          </item>
+          <item n="188" xml:id="Inde_1892_e10_i188">
+            <num>188</num>
+            <title>Un coin d’atelier </title>
+            <desc>(Pastel).</desc>
+          </item>
+          <item n="189" xml:id="Inde_1892_e10_i189">
+            <num>189</num>
+            <title>Le champ de blé noir.</title>
+          </item>
+          <item n="190" xml:id="Inde_1892_e10_i190">
+            <num>190</num>
+            <title>Une ferme dans l’Isère.</title>
+          </item>
+          <item n="191" xml:id="Inde_1892_e10_i191">
+            <num>191</num>
+            <title>La route de Privas à Vernont aux Ollières </title>
+            <desc>(Ardèche).</desc>
+          </item>
+          <item n="192" xml:id="Inde_1892_e10_i192">
+            <num>192</num>
+            <title>Les bords de l’Hérieux, aux Ollières</title>
+            <desc>aux Ollières</desc>
+          </item>
+          <item n="193" xml:id="Inde_1892_e10_i193">
+            <num>193</num>
+            <title>Rochers dans l’Hérieux, aux Ollières</title>
+            <desc>aux Ollières</desc>
+          </item>
+          <item n="194" xml:id="Inde_1892_e10_i194">
+            <num>194</num>
+            <title>Le quai des Brotteaux à Lyon.</title>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Inde_1892_e11" source="Cat_Inde_1892_typo_0003.jpg">
+          <desc>
+            <name>BRANDT, Pierre</name>
+            <trait>
+              <p>, né à Paris. — A l'Ile Saint-Denis.</p>
+            </trait>
+          </desc>
+          <item n="195" xml:id="Inde_1892_e11_i195">
+            <num>195</num>
+            <title>Amont.</title>
+          </item>
+          <item n="196" xml:id="Inde_1892_e11_i196">
+            <num>196</num>
+            <title>Aval.</title>
+          </item>
+          <item n="197" xml:id="Inde_1892_e11_i197">
+            <num>197</num>
+            <title>Villeneuve-la-Garenne.</title>
+          </item>
+          <item n="198" xml:id="Inde_1892_e11_i198">
+            <num>198</num>
+            <title>Berge.</title>
+          </item>
+          <item n="199" xml:id="Inde_1892_e11_i199">
+            <num>199</num>
+            <title>Parc Monceau.</title>
+          </item>
+          <item n="200" xml:id="Inde_1892_e11_i200">
+            <num>200</num>
+            <title>Buttes Chaumont.</title>
+          </item>
+          <item n="201" xml:id="Inde_1892_e11_i201">
+            <num>201</num>
+            <title>Coupe de bois dans l'Ile Saint-Denis.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Inde_1892_e12" source="Cat_Inde_1892_typo_0003.jpg">
+          <desc>
+            <name>BRESSANT, Paul</name>
+            <trait>
+              <p>, né à la Basse-Terre (Guadeloupe). — 174, avenue du Maine.</p>
+            </trait>
+          </desc>
+          <item n="202" xml:id="Inde_1892_e12_i202">
+            <num>202</num>
+            <title>Le Soir.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Inde_1892_e13" source="Cat_Inde_1892_typo_0004.jpg">
+          <desc>
+            <name>BRION, Paul</name>
+            <trait>
+              <p>, né à Paris. — 135, boulevard SaintMichel.</p>
+            </trait>
+          </desc>
+          <item n="203" xml:id="Inde_1892_e13_i203">
+            <num>203</num>
+            <title>Portrait.</title>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Inde_1892_e14" source="Cat_Inde_1892_typo_0004.jpg">
+          <desc>
+            <name>BROC, François</name>
+            <trait>
+              <p>, né à Nîmes (Gard). — 18, rue de l’Orient. Paris.</p>
+            </trait>
+          </desc>
+          <item n="204" xml:id="Inde_1892_e14_i204">
+            <num>204</num>
+            <title>Hier.</title>
+          </item>
+          <item n="205" xml:id="Inde_1892_e14_i205">
+            <num>205</num>
+            <title>Aujourd’hui.</title>
+          </item>
+          <item n="206" xml:id="Inde_1892_e14_i206">
+            <num>206</num>
+            <title>Demain.</title>
+          </item>
+          <item n="207" xml:id="Inde_1892_e14_i207">
+            <num>207</num>
+            <title>La Force.</title>
+          </item>
+          <item n="208" xml:id="Inde_1892_e14_i208">
+            <num>208</num>
+            <title>La Nuit.</title>
+          </item>
+          <item n="209" xml:id="Inde_1892_e14_i209">
+            <num>209</num>
+            <title>Le Jour.</title>
+          </item>
+          <item n="210" xml:id="Inde_1892_e14_i210">
+            <num>210</num>
+            <title>Le Droit.</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Inde_1892_e15" source="Cat_Inde_1892_typo_0004.jpg">
+          <desc>
+            <name>BROU de P. C., Prosper</name>
+            <trait>
+              <p>, né à Brou (Eure-et-Loir. — 15, rue du Faubourg-Montmartre, Paris.</p>
+            </trait>
+          </desc>
+          <item n="211" xml:id="Inde_1892_e15_i211">
+            <num>211</num>
+            <title>Bois des Hautes-Bruyères.</title>
+          </item>
+          <item n="212" xml:id="Inde_1892_e15_i212">
+            <num>212</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="213" xml:id="Inde_1892_e15_i213">
+            <num>213</num>
+            <title>Bois de Boulogne.</title>
+          </item>
+          <item n="214" xml:id="Inde_1892_e15_i214">
+            <num>214</num>
+            <title>Œillets.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Inde_1892_e16" source="Cat_Inde_1892_typo_0004.jpg">
+          <desc>
+            <name>BROUSCH, Jean</name>
+            <trait>
+              <p>, né à Paris. — 54, rue de Rome,</p>
+            </trait>
+          </desc>
+          <item n="215" xml:id="Inde_1892_e16_i215">
+            <num>215</num>
+            <title>Bords de Seine </title>
+            <desc>(Colombes).</desc>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Inde_1892_e17" source="Cat_Inde_1892_typo_0004.jpg">
+          <desc>
+            <name>BRUNET, Eugène</name>
+            <trait>
+              <p>, né à Sarcelles (Seine-et-Oise). — 59, rue d’Amsterdam.</p>
+            </trait>
+          </desc>
+          <item n="216" xml:id="Inde_1892_e17_i216">
+            <num>216</num>
+            <title>Village de Sorques.</title>
+          </item>
+          <item n="217" xml:id="Inde_1892_e17_i217">
+            <num>217</num>
+            <title>Le canal à Episy.</title>
+          </item>
+          <item n="218" xml:id="Inde_1892_e17_i218">
+            <num>218</num>
+            <title>L’écluse du canal à Episy.</title>
+          </item>
+          <item n="219" xml:id="Inde_1892_e17_i219">
+            <num>219</num>
+            <title>Le Loing à Sorques.</title>
+          </item>
+          <item n="220" xml:id="Inde_1892_e17_i220">
+            <num>220</num>
+            <title>Un coin à Episy.</title>
+          </item>
+          <item n="221" xml:id="Inde_1892_e17_i221">
+            <num>221</num>
+            <title>Le Loing à Episy.</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Inde_1892_e18" source="Cat_Inde_1892_typo_0005.jpg">
+          <desc>
+            <name>BURAT, Alice (Marie-Elisabeth)</name>
+            <trait>
+              <p>, née à Paris. — 8, place du Palais-Bourbon.</p>
+            </trait>
+          </desc>
+          <item n="222" xml:id="Inde_1892_e18_i222">
+            <num>222</num>
+            <title>Dessin à la plume, d’après un paysage de Zuccarelli.</title>
+            <desc>d’après un paysage de Zuccarelli.</desc>
+          </item>
+          <item n="223" xml:id="Inde_1892_e18_i223">
+            <num>223</num>
+            <title>Rendez-Vous de chasse. Dessin à la plume.</title>
+          </item>
+          <item n="224" xml:id="Inde_1892_e18_i224">
+            <num>224</num>
+            <title>Après le bombardement. Dessin à la plume d’après photographie.</title>
+          </item>
+          <item n="225" xml:id="Inde_1892_e18_i225">
+            <num>225</num>
+            <title>Un dessous de bois. Dessina la plume.</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Inde_1892_e19" source="Cat_Inde_1892_typo_0005.jpg">
+          <desc>
+            <name>CARRAZ, Emile</name>
+            <trait>
+              <p>, né à Paris. — 100, rue du Goulet, à Noisy-le-Sec.</p>
+            </trait>
+          </desc>
+          <item n="226" xml:id="Inde_1892_e19_i226">
+            <num>226</num>
+            <title>Ferme de Boucy.</title>
+          </item>
+          <item n="227" xml:id="Inde_1892_e19_i227">
+            <num>227</num>
+            <title>Rivière des Prêtres </title>
+            <desc>(Charenton).</desc>
+          </item>
+          <item n="228" xml:id="Inde_1892_e19_i228">
+            <num>228</num>
+            <title>Gorge aux Loups </title>
+            <desc>(Fusain).</desc>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Inde_1892_e20" source="Cat_Inde_1892_typo_0005.jpg">
+          <desc>
+            <name>CASAS, Ramon</name>
+            <trait>
+              <p>, né à Barcelone (Espagne). — 3, rue Girardon, Paris.</p>
+            </trait>
+          </desc>
+          <item n="229" xml:id="Inde_1892_e20_i229">
+            <num>229</num>
+            <title>Una Corrida.</title>
+          </item>
+          <item n="230" xml:id="Inde_1892_e20_i230">
+            <num>230</num>
+            <title>Au Moulin de la Galette.</title>
+          </item>
+          <item n="231" xml:id="Inde_1892_e20_i231">
+            <num>231</num>
+            <title>San Pere de Rindebilles.</title>
+          </item>
+          <item n="232" xml:id="Inde_1892_e20_i232">
+            <num>232</num>
+            <title>Route de Barcelone.</title>
+          </item>
+          <item n="233" xml:id="Inde_1892_e20_i233">
+            <num>233</num>
+            <title>Vallcarca.</title>
+          </item>
+          <item n="234" xml:id="Inde_1892_e20_i234">
+            <num>234</num>
+            <title>Toilette.</title>
+          </item>
+          <item n="235" xml:id="Inde_1892_e20_i235">
+            <num>235</num>
+            <title>Etude.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

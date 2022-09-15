@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rouen_1878">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Rouen_1878_e1" source="CatRouen_1878_bpt6k11818013_18.JPEG">
+          <desc>
+            <name>ADELSWARD (d’)</name>
+            <trait>
+              <p>Chez Mme Cadart, boulevard Haussmann, 56, Paris.</p>
+            </trait>
+          </desc>
+          <item n="6" xml:id="Rouen_1878_e1_i6">
+            <num>6</num>
+            <title>Effet de lune.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Rouen_1878_e2" source="CatRouen_1878_bpt6k11818013_18.JPEG">
+          <desc>
+            <name>ALLONGÉ (Auguste),</name>
+            <trait>
+              <p>Né à Paris, élève de M. Léon Cogniet. Médaille d’or à l’Exposition des Arts appliqués à l’industrie, Médaille d’or à Saint-Germain-en-Laye, et d’argent à diverses Expositions de province Chez M. Dangleterre, rue de Seine, 42, Paris.</p>
+            </trait>
+          </desc>
+          <item n="7" xml:id="Rouen_1878_e2_i7">
+            <num>7</num>
+            <title>Paysage.</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Rouen_1878_e3" source="CatRouen_1878_bpt6k11818013_18.JPEG">
+          <desc>
+            <name>ANGRAND (Charles),</name>
+            <trait>
+              <p>Né à Criquetot-sur-Ouville, élève de l’Académie de Peinture de Rouen, et de M. Zacharie. Au Lycée Corneille, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="8" xml:id="Rouen_1878_e3_i8">
+            <num>8</num>
+            <title>Fleurs des champs.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Rouen_1878_e4" source="CatRouen_1878_bpt6k11818013_18.JPEG">
+          <desc>
+            <name>ANNALY,</name>
+            <trait>
+              <p>Né à Bordeaux, élève de MM. Auguin et Baudit. Rue de l’Eglise Saint-Seurin, 14, Bordeaux.</p>
+            </trait>
+          </desc>
+          <item n="9" xml:id="Rouen_1878_e4_i9">
+            <num>9</num>
+            <title>Après la pluie </title>
+            <desc>(Tarn).</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Rouen_1878_e5" source="CatRouen_1878_bpt6k11818013_18.JPEG">
+          <desc>
+            <name>AUGUIN (Louis-Augustin),</name>
+            <trait>
+              <p>Né à Rochefort, élève de Jules Cogniet et de Corot. Grande médaille, d’honneur. La Rochelle 1866, Grande Médaille, Exposition universelle Vienne (Autriche), 1873, 1ere Médaille d’or, Angoulême, 1876, Mention honorable, salon de Paris, 1877, Médailles à Niort, Toulouse, Montpellier, Lyon, Moulins, etc. Rue de la Course, 67, Bordeaux.</p>
+            </trait>
+          </desc>
+          <item n="10" xml:id="Rouen_1878_e5_i10">
+            <num>10</num>
+            <title>Les ombrages de juillet.</title>
+          </item>
+          <item n="11" xml:id="Rouen_1878_e5_i11">
+            <num>11</num>
+            <title>La Charente, près Cognac.</title>
+            <desc>près Cognac.</desc>
+          </item>
+          <item n="12" xml:id="Rouen_1878_e5_i12">
+            <num>12</num>
+            <title>Les derniers beaux jours.</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Rouen_1878_e6" source="CatRouen_1878_bpt6k11818013_19.JPEG">
+          <desc>
+            <name>AUBEL (d’),</name>
+            <trait>
+              <p>Chez Mme Cadart, Boulevard Haussmann, 56, Paris.</p>
+            </trait>
+          </desc>
+          <item n="13" xml:id="Rouen_1878_e6_i13">
+            <num>13</num>
+            <title>Nature morte.</title>
+          </item>
+          <item n="14" xml:id="Rouen_1878_e6_i14">
+            <num>14</num>
+            <title>Un coin de pré.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Rouen_1878_e7" source="CatRouen_1878_bpt6k11818013_19.JPEG">
+          <desc>
+            <name>AUTEROCHE (Fugénie VENOT d’),</name>
+            <trait>
+              <p>Professeur de dessin des écoles du 13e arrondissement de la ville de Paris. Née à Paris, élève de M. Léon Cogniet. Médaille à Londres, 1874, Médaille d’argent, Compiègne, 1877. Rue Fontaine-Saint-Georges, 42, Paris.</p>
+            </trait>
+          </desc>
+          <item n="15" xml:id="Rouen_1878_e7_i15">
+            <num>15</num>
+            <title>Prunes de Monsieur.</title>
+          </item>
+          <item n="16" xml:id="Rouen_1878_e7_i16">
+            <num>16</num>
+            <title>Prunes de Reine Claude.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Rouen_1878_e8" source="CatRouen_1878_bpt6k11818013_19.JPEG">
+          <desc>
+            <name>BALLIN (Auguste-Charles-Alfred),</name>
+            <trait>
+              <p>Né à Boulogne-sur-Mer, élève de M. J. Noël. Chez Mme Cadart, Boulevard Haussmann, 56, Paris.</p>
+            </trait>
+          </desc>
+          <item n="17" xml:id="Rouen_1878_e8_i17">
+            <num>17</num>
+            <title>Un combat naval, en 1800.</title>
+            <desc>en 1800.</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Rouen_1878_e9" source="CatRouen_1878_bpt6k11818013_19.JPEG">
+          <desc>
+            <name>BANCE (Albert),</name>
+            <trait>
+              <p>Chez M. Dubus. Boulevard Malesherbes, 60, Paris.</p>
+            </trait>
+          </desc>
+          <item n="18" xml:id="Rouen_1878_e9_i18">
+            <num>18</num>
+            <title>Un banc de moules à Villerville </title>
+            <desc>(Calvados).</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Rouen_1878_e10" source="CatRouen_1878_bpt6k11818013_20.JPEG">
+          <desc>
+            <name>BARIL (Alphonse),</name>
+            <trait>
+              <p>Né à Amiens 3 Médailles argent et bronze, rappel et diplôme d’hon- neur, à différentes Expositions des Amis-des-Arts de la Somme. Rue de la Bibliothèque, 6, Amiens.</p>
+            </trait>
+          </desc>
+          <item n="19" xml:id="Rouen_1878_e10_i19">
+            <num>19</num>
+            <title>Intérieur de ferme en Picardie.</title>
+          </item>
+          <item n="20" xml:id="Rouen_1878_e10_i20">
+            <num>20</num>
+            <title>Vue prise à Dreuil </title>
+            <desc>(Somme).</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Rouen_1878_e11" source="CatRouen_1878_bpt6k11818013_20.JPEG">
+          <desc>
+            <name>BARILLOT (Léon),</name>
+            <trait>
+              <p>Né à Montigny-lès-Metz (Lorraine) élève de MM. Cathelinaux et Bonnat. Rue de la Tour d’Auvergne, 16, Paris.</p>
+            </trait>
+          </desc>
+          <item n="21" xml:id="Rouen_1878_e11_i21">
+            <num>21</num>
+            <title>La porte à bateaux de Villiers-sur¬ Morin.</title>
+          </item>
+          <item n="22" xml:id="Rouen_1878_e11_i22">
+            <num>22</num>
+            <title>Le gué de Las-Landies, le jour du mar¬ ché d’Aurillac.</title>
+            <desc>le jour du marché d’Aurillac.</desc>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Rouen_1878_e12" source="CatRouen_1878_bpt6k11818013_20.JPEG">
+          <desc>
+            <name>BARRIAS (Félix),</name>
+            <trait>
+              <p>Né à Paris, élève de Léon Cogniet. Prix de Rome, 1844, 3e médaille, salon 1847, 1re médaille, 1852, 2e médaille, Expositio,n universelle, 1855. Chevalier de la Légion d’honneur, 1859, hors concours. Rue de Bruxelles, 34, Paris.</p>
+            </trait>
+          </desc>
+          <item n="23" xml:id="Rouen_1878_e12_i23">
+            <num>23</num>
+            <title>Les fleurs de la patrie.</title>
+          </item>
+          <item n="24" xml:id="Rouen_1878_e12_i24">
+            <num>24</num>
+            <title>La Fée aux perles.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

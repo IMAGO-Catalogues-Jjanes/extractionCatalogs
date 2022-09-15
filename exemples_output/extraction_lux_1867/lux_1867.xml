@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lux_1867">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="lux_1867_e1" source="Cat_Lux_1867_typo_0001.jpg">
+          <desc>
+            <name>VERNET (ÉMILE-JEAN-HORACE)</name>
+            <trait>
+              <p>, né à Paris, en 1789, élève de Vincent, chevalier de la Légion-d’Honneur en 1814, officier en 1825, membre de l’Institut en 1826, directeur de l’Académie de France à Rome en 1828, commandeur de la Légion-d'Honneur en 1842, grand officier en 1862, mort en 1863.</p>
+            </trait>
+          </desc>
+          <item n="180" xml:id="lux_1867_e1_i180">
+            <num>180</num>
+            <title>La barrière de Clichy, ou défense de Paris en 1814. Le maréchal Moncey donne au chef de bataillon Odiot l’ordre d’empêcher les Russes de s’emparer de la butte Montmartre. Parmi les acteurs de cette scène on remarque le maré¬ chal Moncey, M. Odiot, colonel, M. de Marguery-Dupaty, l'homme de lettres, Charlet, et Horace Vernet, l’auteur du tableau. Donné à la Chambre des pairs par M Odiot père, ancien orfèvre, colonel de la légion. H. 0, 97. — L. 1, 30. — Fig. de 0, 38.</title>
+            <desc>ou défense de Paris en 1814. Le maréchal Moncey donne au chef de bataillon Odiot l’ordre d’empêcher les Russes de s’emparer de la butte Montmartre. Parmi les acteurs de cette scène on remarque le maréchal Moncey, M. Odiot, colonel, M. de Marguery-Dupaty, l'homme de lettres, Charlet, et Horace Vernet, l’auteur du tableau. Donné à la Chambre des pairs par M Odiot père, ancien orfèvre, colonel de la légion. H. 0, 97. — L. 1, 30. — Fig. de 0, 38.</desc>
+          </item>
+          <item n="181" xml:id="lux_1867_e1_i181">
+            <num>181</num>
+            <title>Judilti et Holopherne. H. 2, 98. — L. 1,96. — Fig. gr. nat.</title>
+            <desc>98. — L. 1,96. — Fig. gr. nat.</desc>
+          </item>
+          <item n="182" xml:id="lux_1867_e1_i182">
+            <num>182</num>
+            <title>Raphaël au Vatican. Michel-Ange rencontrant Raphaël dans le Vatican avec ses élèves, lui dit : « Vous marchez entouré d’une suite nombreuse ainsi qu’un général.» — «Et vous, répondit Raphaël au peintre du Jugement dernier, vous allez seul comme le bourreau. » </title>
+            <desc>lui dit : « Vous marchez entouré d’une suite nombreuse ainsi qu’un général.» — «Et vous, répondit Raphaël au peintre du Jugement dernier, vous allez seul comme le bourreau. » (Vie de Raphaël, par M. QUATREMÈRE DE QUINCY.) H. 3, 92. — L. 3, 00. — Fig. gr. nat.</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="lux_1867_e2" source="Cat_Lux_1867_typo_0001.jpg">
+          <desc>
+            <name>VINCHON (JEAN-BAPTISTE-AUGUSTE)</name>
+            <trait>
+              <p>, né à Paris en 1787, élève de Serangeli, premier grand prix de Rome (Histoire) en 1814, chevalier de la Légion-d'Honneur en 1828, mort en 1855.</p>
+            </trait>
+          </desc>
+          <item n="183" xml:id="lux_1867_e2_i183">
+            <num>183</num>
+            <title>Épisode de l’Histoire de Venise. Une jeune fille patricienne, dont le fiancé est soupçonné d’avoir pris part à un complot contre le Doge de Venise, est enlevée la veille de ses noces, et traînée dans les cachots du tribunal des Dix. Après avoir été dépouillée de ses vêtements et couverte de</title>
+            <desc>dont le fiancé est soupçonné d’avoir pris part à un complot contre le Doge de Venise, est enlevée la veille de ses noces, et traînée dans les cachots du tribunal des Dix. Après avoir été dépouillée de ses vêtements et couverte de</desc>
+          </item>
+          <item n="184" xml:id="lux_1867_e2_i184">
+            <title>épreuve, et est menacée de celle du feu si elle persiste en¬</title>
+            <desc>et est menacée de celle du feu si elle persiste en¬</desc>
+          </item>
+          <item n="185" xml:id="lux_1867_e2_i185">
+            <title>core à ne faire aucune révélation.</title>
+          </item>
+          <item n="186" xml:id="lux_1867_e2_i186">
+            <title></title>
+            <desc>(Histoire de Venise.)</desc>
+          </item>
+          <item n="187" xml:id="lux_1867_e2_i187">
+            <title>H. 2, 45. — L. 2, 98.</title>
+            <desc>45. — L. 2, 98.</desc>
+          </item>
+          <item n="188" xml:id="lux_1867_e2_i188">
+            <title></title>
+            <desc>(Salon de 1847.)</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="lux_1867_e3" source="Cat_Lux_1867_typo_0002.jpg">
+          <desc>
+            <name>WATELET (LOUIS-ÉTIENNE)</name>
+            <trait>
+              <p>, né à Paris, chevalier de la Légion-d’Honneur en 1825.</p>
+            </trait>
+          </desc>
+          <item n="184" xml:id="lux_1867_e3_i184">
+            <num>184</num>
+            <title>Paysage d’après des études faites en Savoie. H. 1, 44. — L. 1, 94.</title>
+            <desc>44. — L. 1, 94.</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="lux_1867_e4" source="Cat_Lux_1867_typo_0002.jpg">
+          <desc>
+            <name>ZIEGLER (CLAUDE-JULES)</name>
+            <trait>
+              <p>, né à Langres (Haute-Marne), en 1804, chevalier de la Légion-d'Honneur en 1838, mort en 1856.</p>
+            </trait>
+          </desc>
+          <item n="185" xml:id="lux_1867_e4_i185">
+            <num>185</num>
+            <title>Le jeune Giotto dans l’atelier de Cimabuë. Cimabuë, peintre florentin, rencontra dans une de ses promenades le jeune Giotto s’amusant à dessiner une chè¬ vre du troupeau qu’il gardait, et l’engagea à venir à Flo¬ rence étudier la peinture. Giotto arriva un jour dans l’a¬ telier de Cimabuë, et à la vue de ses admirables ouvrages il lui vint, pour la première fois, une idée sérieuse de la peinture. Giotto fut depuis un des peintres les plus célè¬ bres de l’Italie. H. 2, 05. — L. 1, 30. — Fig. gr. nat.</title>
+            <desc>peintre florentin, rencontra dans une de ses promenades le jeune Giotto s’amusant à dessiner une chèvre du troupeau qu’il gardait, et l’engagea à venir à Florence étudier la peinture. Giotto arriva un jour dans l’atelier de Cimabuë, et à la vue de ses admirables ouvrages il lui vint, pour la première fois, une idée sérieuse de la peinture. Giotto fut depuis un des peintres les plus célèbres de l’Italie. H. 2, 05. — L. 1, 30. — Fig. gr. nat.</desc>
+          </item>
+          <item n="186" xml:id="lux_1867_e4_i186">
+            <num>186</num>
+            <title>Vision de saint Luc. H. 2,95. — L. 2, 10. — Fig. gr. nat.</title>
+            <desc>5. — L. 2, 10. — Fig. gr. nat.</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="lux_1867_e5" source="Cat_Lux_1867_typo_0002.jpg">
+          <desc>
+            <name>ZIEM (FÉLIX)</name>
+            <trait>
+              <p>, né à Beaune (Côte-d’Or), chevalier de la Légion-d'Honneur en 1857.</p>
+            </trait>
+          </desc>
+          <item n="187" xml:id="lux_1867_e5_i187">
+            <num>187</num>
+            <title>Vue de Venise. H. 1, 78. - L. 2. 60.</title>
+            <desc>78. - L. 2. 60.</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="lux_1867_e6" source="Cat_Lux_1867_typo_0002.jpg">
+          <desc>
+            <name>ZO (ACHILLE)</name>
+            <trait>
+              <p>, né à Bayonne (Basses-Pyrénées), élève de M. T. Couture.</p>
+            </trait>
+          </desc>
+          <item n="188" xml:id="lux_1867_e6_i188">
+            <num>188</num>
+            <title>L’Aveugle de la porte Doce Cantos, à Tolède. H. 1, 12. — L. 0, 80. — Fig. de 0, 40.</title>
+            <desc>à Tolède. H. 1, 12. — L. 0, 80. — Fig. de 0, 40.</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="lux_1867_e7" source="Cat_Lux_1867_typo_0003.jpg">
+          <desc>
+            <name>ALIGNY </name>
+            <trait>
+              <p>(TH. D’). (Voir page 1).</p>
+            </trait>
+          </desc>
+          <item n="189" xml:id="lux_1867_e7_i189">
+            <num>189</num>
+            <title>Vue de Genazzano </title>
+            <desc>(États-Romains). Dessin à la plume exécuté en 1835.</desc>
+          </item>
+          <item n="190" xml:id="lux_1867_e7_i190">
+            <num>190</num>
+            <title>Rochers et Châtaigniers, élude. Dessin à la plume, exécuté à Royat </title>
+            <desc>exécuté à Royat (Auvergne), en 1838.</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="lux_1867_e8" source="Cat_Lux_1867_typo_0003.jpg">
+          <desc>
+            <name>BELLEL.</name>
+            <trait>
+              <p> (Voir page 4).</p>
+            </trait>
+          </desc>
+          <item n="191" xml:id="lux_1867_e8_i191">
+            <num>191</num>
+            <title>Vallée de Saint-Amé </title>
+            <desc>(Vosges). Dessin au fusain.</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="lux_1867_e9" source="Cat_Lux_1867_typo_0003.jpg">
+          <desc>
+            <name>BENOUVILLE.</name>
+            <trait>
+              <p> (Voir page 5.)</p>
+            </trait>
+          </desc>
+          <item n="192" xml:id="lux_1867_e9_i192">
+            <num>192</num>
+            <title>Martyrs conduits au supplice. Dessin à l’aquarelle.</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="lux_1867_e10" source="Cat_Lux_1867_typo_0003.jpg">
+          <desc>
+            <name>BIDA (ALEXANDRE) </name>
+            <trait>
+              <p>, né à Toulouse (Haute-Garonne), élève d'Eugène Delacroix, chevalier de la Légiond’Honneur en 1855.</p>
+            </trait>
+          </desc>
+          <item n="193" xml:id="lux_1867_e10_i193">
+            <num>193</num>
+            <title>Réfectoire de moines grecs. Dessin au crayon noir.</title>
+          </item>
+          <item n="194" xml:id="lux_1867_e10_i194">
+            <num>194</num>
+            <title>L’Appel du soir, en Crimée. Dessin au crayon noir.</title>
+            <desc>en Crimée. Dessin au crayon noir.</desc>
+          </item>
+          <item n="195" xml:id="lux_1867_e10_i195">
+            <num>195</num>
+            <title>Le Champ de Booz, a Bethléem. Dessin au crayon noir.</title>
+            <desc>a Bethléem. Dessin au crayon noir.</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="lux_1867_e11" source="Cat_Lux_1867_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>(Salon de 1861.) COUDER. (Voir page 10.)</p>
+            </trait>
+          </desc>
+          <item n="196" xml:id="lux_1867_e11_i196">
+            <num>196</num>
+            <title>Notre-Dame-des-Sept-Douleurs. Dessin aux crayons noir et blanc sur papier gris, pour l'exé¬ cution des peintures qui décorent la chapelle du Saint-Sé¬ pulcre dans l’église Saint-Germain-l’Auxerrois</title>
+            <desc>pour l'exécution des peintures qui décorent la chapelle du Saint-Sépulcre dans l’église Saint-Germain-l’Auxerrois</desc>
+          </item>
+          <item n="197" xml:id="lux_1867_e11_i197">
+            <num>197</num>
+            <title>Le Christ et la Madeleine chez Simon le Pharisien. Dessin au crayon noir et au pastel qui a servi à l'exécution du tableau de l’église Notre-Dame-de-Lorette.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="lux_1867_e12" source="Cat_Lux_1867_typo_0004.jpg">
+          <desc>
+            <name>DAVID (MAXIME)</name>
+            <trait>
+              <p>, né à Châlons-sur-Marne (Marne), élève de Mme de Mirbel, chevalier de la Légion-d’Honneur en</p>
+            </trait>
+          </desc>
+          <item n="1851" xml:id="lux_1867_e12_i1851">
+            <num>1851</num>
+            <title></title>
+          </item>
+          <item n="198" xml:id="lux_1867_e12_i198">
+            <num>198</num>
+            <title>Trois portraits d’Abd-el-Kader, représenté sous des aspects différents </title>
+            <desc>représenté sous des aspects différents (miniatures).</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="lux_1867_e13" source="Cat_Lux_1867_typo_0004.jpg">
+          <desc>
+            <name>HEIM.</name>
+            <trait>
+              <p> (Voir la page 21.)</p>
+            </trait>
+          </desc>
+          <item n="199" xml:id="lux_1867_e13_i199">
+            <num>199</num>
+            <title>Portraits, au crayon noir rehaussé de blanc, de divers membres de l’Institut de France. Académie française : Andrieux, Arnaud, le baron de Barante, le vicomte de Bonald, Campenon, le comte Daru, Droz, Frayssinous, évêque d’Hermopolis, Michaud, Parceval-Grandmaison, le marquis de Pastoret, Villemain. Académie des inscriptions et belles-lettres : Le comte Alex. de Laborde, Raoul-Rochette, baron Syl¬ vestre de Sacy, Quatremère de Quincy. Académie des sciences : Baron Cuvier, Darcet, Geoffroy-Saint-Hilaire, de Mirbel, Serres. Académie des beaux-arts : Auber, Berton, Bidault </title>
+            <desc>au crayon noir rehaussé de blanc, de divers membres de l’Institut de France. Académie française : Andrieux, Arnaud, le baron de Barante, le vicomte de Bonald, Campenon, le comte Daru, Droz, Frayssinous, évêque d’Hermopolis, Michaud, Parceval-Grandmaison, le marquis de Pastoret, Villemain. Académie des inscriptions et belles-lettres : Le comte Alex. de Laborde, Raoul-Rochette, baron Sylvestre de Sacy, Quatremère de Quincy. Académie des sciences : Baron Cuvier, Darcet, Geoffroy-Saint-Hilaire, de Mirbel, Serres. Académie des beaux-arts : Auber, Berton, Bidault (1), Blondel, Boïeldieu, le baron Bosio, Catel, le comte de Chabrol-Volvic, Cartellier, Chérubini, David d'Angers, le baron Desnoyers (1), Drolling, Dupaty, Fontaine, le comte de Forbin, Galle (1), Garnier, Gatteaux, baron Gérard, baron Gros, Guérin, Hersent, Ingres, Labarre, Lebas, le baron Lemot, Lesueur, Lethiers, Meynier, Petitot, Percier, Picot, Abel de Pujol, Ramey père (1), Ramey fils, Régnault, Richomme, le comte Siméon, Tardieu, baron Taylor, Thevenin, le comte Turpin de Crissé, Carie Vernet, Horace Vernet. Divers artistes Mme Ancelot, Ansiaux, peintre, Bra, statuaire, Daguerre, peintre, Debay père, statuaire, Mme Hersent, peintre,</desc>
+          </item>
+          <item n="200" xml:id="lux_1867_e13_i200">
+            <title>Mme de Mirbel, peintre, Raggi, statuaire, Redouté, pein¬</title>
+            <desc>peintre, Raggi, statuaire, Redouté, pein¬</desc>
+          </item>
+          <item n="201" xml:id="lux_1867_e13_i201">
+            <title>tre, Taunay, peintre, Vandaël, peintre, Watelet, peintre.</title>
+            <desc>peintre, Vandaël, peintre, Watelet, peintre.</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="lux_1867_e14" source="Cat_Lux_1867_typo_0005.jpg">
+          <desc>
+            <name>HERBELIN (Mme JEANNE-MATHILDE) </name>
+            <trait>
+              <p>, née à Brunoy (Seineet-Oise), élève de M. Belloc.</p>
+            </trait>
+          </desc>
+          <item n="200" xml:id="lux_1867_e14_i200">
+            <num>200</num>
+            <title>Portrait de Mme Andryane. H. 0, 129. — L. 0, 106. Miniature sur ivoire donnée par l’auteur.</title>
+            <desc>129. — L. 0, 106. Miniature sur ivoire donnée par l’auteur.</desc>
+          </item>
+        </entry>
+        <entry n="15" xml:id="lux_1867_e15" source="Cat_Lux_1867_typo_0005.jpg">
+          <desc>
+            <name>INGRES.</name>
+            <trait>
+              <p> (Voir page 23.)</p>
+            </trait>
+          </desc>
+          <item n="201" xml:id="lux_1867_e15_i201">
+            <num>201</num>
+            <title>Cartons d’après lesquels ont été exécutés les vitraux qui décorent les chapelles de Dreux et de Saint¬ Ferdinand, à Sablonville, dédiées à Notre-Dame-de¬ la-Compassion. Chapelle de Saint-Ferdinand. Saint Philippe. — Saint Rupert. — Saint Charles-Bor¬ romée. — Saint François d’Assise. — Saint Ferdinand, roi. Saint Clément d’Alexandrie. — Saint Louis, roi. — Saint Antoine de Padoue. — Sainte Adélaïde. — Sainte Hélène, impératrice. — Sainte Rosalie. — Sainte Amélie, reine. La Foi. — L’Espérance. — La Charité. Chapelle de Dreux. Saint Denis. - Saint Remy. - Saint Germain. - Sainte Clothilde. - Sainte Geneviève. - Sainte Radegonde. - Sainte Isabelle de France. — Sainte Bathilde.</title>
+            <desc>à Sablonville, dédiées à Notre-Dame-dela-Compassion. Chapelle de Saint-Ferdinand. Saint Philippe. — Saint Rupert. — Saint Charles-Borromée. — Saint François d’Assise. — Saint Ferdinand, roi. Saint Clément d’Alexandrie. — Saint Louis, roi. — Saint Antoine de Padoue. — Sainte Adélaïde. — Sainte Hélène, impératrice. — Sainte Rosalie. — Sainte Amélie, reine. La Foi. — L’Espérance. — La Charité. Chapelle de Dreux. Saint Denis. - Saint Remy. - Saint Germain. - Sainte Clothilde. - Sainte Geneviève. - Sainte Radegonde. - Sainte Isabelle de France. — Sainte Bathilde.</desc>
+          </item>
+          <item n="202" xml:id="lux_1867_e15_i202">
+            <num>202</num>
+            <title>Portrait de M. Martin, dessin à la mine de plomb, portant la date de 1825.</title>
+            <desc>portant la date de 1825.</desc>
+          </item>
+        </entry>
+        <entry n="16" xml:id="lux_1867_e16" source="Cat_Lux_1867_typo_0005.jpg">
+          <desc>
+            <name>LAMI (EUGÈNE)</name>
+            <trait>
+              <p>, né à Paris, élève de Gros et d'Horace Vernet, chevalier de la Légion-d’honneur en 1837, officier en 1862.</p>
+            </trait>
+          </desc>
+          <item n="203" xml:id="lux_1867_e16_i203">
+            <num>203</num>
+            <title>Souper dans la salle de spectacle de Versailles. Aquarelle, faisant partie de la série des dessins repré¬ sentant les scènes diverses de la fête de Versailles offerte par l’Empereur à la reine d'Angleterre, en 1855</title>
+            <desc>faisant partie de la série des dessins représentant les scènes diverses de la fête de Versailles offerte par l’Empereur à la reine d'Angleterre, en 1855</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

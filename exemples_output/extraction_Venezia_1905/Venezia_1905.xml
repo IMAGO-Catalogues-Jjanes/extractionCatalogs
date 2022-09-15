@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Venezia_1905">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Venezia_1905_e1" source="Cat_Venezia_1905_typo_0003.jpg">
+          <desc>
+            <name>Bihari Sàndor</name>
+          </desc>
+          <item n="1" xml:id="Venezia_1905_e1_i1">
+            <num>1</num>
+            <title>La nutrice.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Venezia_1905_e2" source="Cat_Venezia_1905_typo_0003.jpg">
+          <desc>
+            <name>Boruth Andor</name>
+          </desc>
+          <item n="2" xml:id="Venezia_1905_e2_i2">
+            <num>2</num>
+            <title>Sitiuora in nero.</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Venezia_1905_e3" source="Cat_Venezia_1905_typo_0003.jpg">
+          <desc>
+            <name>Bosznay István</name>
+          </desc>
+          <item n="3" xml:id="Venezia_1905_e3_i3">
+            <num>3</num>
+            <title>Nella puszta di Radvàny </title>
+            <desc>(appartiene allo Stato ungherese).</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Venezia_1905_e4" source="Cat_Venezia_1905_typo_0003.jpg">
+          <desc>
+            <name>Bruck Miksa</name>
+          </desc>
+          <item n="4" xml:id="Venezia_1905_e4_i4">
+            <num>4</num>
+            <title>Nella propria casetta </title>
+            <desc>(appartiene allo Stato ungherese).</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Venezia_1905_e5" source="Cat_Venezia_1905_typo_0003.jpg">
+          <desc>
+            <name>Deàk Ébner Lajos</name>
+          </desc>
+          <item n="5" xml:id="Venezia_1905_e5_i5">
+            <num>5</num>
+            <title>&lt;/v&gt; Il mercato del pollame </title>
+            <desc>(appartiene allo Stato ungherese).</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Venezia_1905_e6" source="Cat_Venezia_1905_typo_0004.jpg">
+          <desc>
+            <name>Ferenczy Károly</name>
+          </desc>
+          <item n="6" xml:id="Venezia_1905_e6_i6">
+            <num>6</num>
+            <title>II pittore e il suo modello </title>
+            <desc>(appartiene allo Stato Ungherese).</desc>
+          </item>
+          <item n="7" xml:id="Venezia_1905_e6_i7">
+            <num>7</num>
+            <title>Paesaggio </title>
+            <desc>(appartiene allo Stato ungherese).</desc>
+          </item>
+          <item n="8" xml:id="Venezia_1905_e6_i8">
+            <num>8</num>
+            <title>Sera d‘Aprile.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Venezia_1905_e7" source="Cat_Venezia_1905_typo_0004.jpg">
+          <desc>
+            <name>Grünwald Béla</name>
+          </desc>
+          <item n="9" xml:id="Venezia_1905_e7_i9">
+            <num>9</num>
+            <title>Nella valle </title>
+            <desc>(appartiene allo Stato ungherese).</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Venezia_1905_e8" source="Cat_Venezia_1905_typo_0004.jpg">
+          <desc>
+            <name>Knopp Imre</name>
+          </desc>
+          <item n="10" xml:id="Venezia_1905_e8_i10">
+            <num>10</num>
+            <title>Interno.</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Venezia_1905_e9" source="Cat_Venezia_1905_typo_0004.jpg">
+          <desc>
+            <name>Làszló Fülöp Elek</name>
+          </desc>
+          <item n="11" xml:id="Venezia_1905_e9_i11">
+            <num>11</num>
+            <title>Ritratto del Conte Pierre de Vay.</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Venezia_1905_e10" source="Cat_Venezia_1905_typo_0004.jpg">
+          <desc>
+            <name>Lotz Karoly</name>
+          </desc>
+          <item n="12" xml:id="Venezia_1905_e10_i12">
+            <num>12</num>
+            <title>Ritratto di fanciullo.</title>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Venezia_1905_e11" source="Cat_Venezia_1905_typo_0004.jpg">
+          <desc>
+            <name>Magyar-Mannheimer Gusztàv</name>
+          </desc>
+          <item n="13" xml:id="Venezia_1905_e11_i13">
+            <num>13</num>
+            <title>Mattino sul lago di Balaton </title>
+            <desc>(appartiene allo Stato ungherese).</desc>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Venezia_1905_e12" source="Cat_Venezia_1905_typo_0004.jpg">
+          <desc>
+            <name>Màrk Lajos</name>
+          </desc>
+          <item n="14" xml:id="Venezia_1905_e12_i14">
+            <num>14</num>
+            <title>Ritratto di Signora.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Venezia_1905_e13" source="Cat_Venezia_1905_typo_0004.jpg">
+          <desc>
+            <name>Mednyànszky báró László</name>
+          </desc>
+          <item n="16" xml:id="Venezia_1905_e13_i16">
+            <num>16</num>
+            <title>L’alba </title>
+            <desc>(appartiene allo Stato ungherese).</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

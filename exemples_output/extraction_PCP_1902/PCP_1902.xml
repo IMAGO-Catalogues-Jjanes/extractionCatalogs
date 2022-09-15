@@ -1,0 +1,4168 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="PCP_1902">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="PCP_1902_e1" source="cat_pcp_1902.pdf_page_10.png">
+          <desc>
+            <name>ABBOTT (Yarnall).</name>
+            <trait>
+              <p>15, rue Delambre, Paris.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="PCP_1902_e1_i1">
+            <num>1</num>
+            <title>Le Calice. D. Pl.</title>
+          </item>
+          <item n="2" xml:id="PCP_1902_e1_i2">
+            <num>2</num>
+            <title>Coryphée. Gb.</title>
+          </item>
+          <item n="3" xml:id="PCP_1902_e1_i3">
+            <num>3</num>
+            <title>Waldweben. D. Pl.</title>
+          </item>
+          <item n="4" xml:id="PCP_1902_e1_i4">
+            <num>4</num>
+            <title>Le Ruisseau </title>
+            <desc>(Hiver). D. Pl.</desc>
+          </item>
+          <item n="5" xml:id="PCP_1902_e1_i5">
+            <num>5</num>
+            <title>Marie. Gb.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="PCP_1902_e2" source="cat_pcp_1902.pdf_page_10.png">
+          <desc>
+            <name>ADELOT (E.).</name>
+            <trait>
+              <p> C. EFF. Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="6" xml:id="PCP_1902_e2_i6">
+            <num>6</num>
+            <title>La Récolte des Chardons. Br.</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="PCP_1902_e3" source="cat_pcp_1902.pdf_page_10.png">
+          <desc>
+            <name>ARENDSEN.</name>
+            <trait>
+              <p>6, Molsteeg, Amsterdam, Hollande.</p>
+            </trait>
+          </desc>
+          <item n="7" xml:id="PCP_1902_e3_i7">
+            <num>7</num>
+            <title>Avant la pluie. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="PCP_1902_e4" source="cat_pcp_1902.pdf_page_11.png">
+          <desc>
+            <name>ASHTON (E.-R.).</name>
+            <trait>
+              <p> L. R. Camden Park, Tunbridge Wells (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="8" xml:id="PCP_1902_e4_i8">
+            <num>8</num>
+            <title>Chez le Grand Mogol.</title>
+          </item>
+          <item n="9" xml:id="PCP_1902_e4_i9">
+            <num>9</num>
+            <title>Dévotions de l'après-midi.</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="PCP_1902_e5" source="cat_pcp_1902.pdf_page_11.png">
+          <desc>
+            <name>BACHROUSCHINE (Wladimir).</name>
+            <trait>
+              <p>PRÉS. DE LA SOC. DE PHOTOGR. ARTIST. DE MOSCOU. Moscou.</p>
+            </trait>
+          </desc>
+          <item n="10" xml:id="PCP_1902_e5_i10">
+            <num>10</num>
+            <title>Sauguine. D. Gb. Fr.</title>
+          </item>
+          <item n="11" xml:id="PCP_1902_e5_i11">
+            <num>11</num>
+            <title>Paysage. D. Gb. Fr.</title>
+          </item>
+          <item n="12" xml:id="PCP_1902_e5_i12">
+            <num>12</num>
+            <title>Étude. D. Gb. Fr.</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="PCP_1902_e6" source="cat_pcp_1902.pdf_page_11.png">
+          <desc>
+            <name>BAILLOU (Ernest).</name>
+            <trait>
+              <p> P. C. P. - S. V. P. 71, boulevard de la Reine, Versailles (Seine-et-Oise).</p>
+            </trait>
+          </desc>
+          <item n="13" xml:id="PCP_1902_e6_i13">
+            <num>13</num>
+            <title>L'Automne à Trianon. D. Br.</title>
+          </item>
+          <item n="14" xml:id="PCP_1902_e6_i14">
+            <num>14</num>
+            <title>Le grand Canal, parc de Versailles. D. Br.</title>
+            <desc>parc de Versailles. D. Br.</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="PCP_1902_e7" source="cat_pcp_1902.pdf_page_11.png">
+          <desc>
+            <name>BAIRD (Miss A.).</name>
+            <trait>
+              <p>37, avenue de l'Alma, Paris.</p>
+            </trait>
+          </desc>
+          <item n="15" xml:id="PCP_1902_e7_i15">
+            <num>15</num>
+            <title>Une rue à Fribourg. A.</title>
+          </item>
+          <item n="16" xml:id="PCP_1902_e7_i16">
+            <num>16</num>
+            <title>Après l'orage </title>
+            <desc>(Lac de Genève). D.</desc>
+          </item>
+          <item n="17" xml:id="PCP_1902_e7_i17">
+            <num>17</num>
+            <title>Orage </title>
+            <desc>(Lac de Genève). D.</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="PCP_1902_e8" source="cat_pcp_1902.pdf_page_13.png">
+          <desc>
+            <name>BARUCCHI (Michel).</name>
+            <trait>
+              <p>32, quai Saint-Jean-Baptiste, Nice (Alpes- Maritimes).</p>
+            </trait>
+          </desc>
+          <item n="18" xml:id="PCP_1902_e8_i18">
+            <num>18</num>
+            <title>Effet de Soleil.</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="PCP_1902_e9" source="cat_pcp_1902.pdf_page_13.png">
+          <desc>
+            <name>BÉGOZ (Alfred).</name>
+            <trait>
+              <p>4, cité Hauteville, Paris.</p>
+            </trait>
+          </desc>
+          <item n="19" xml:id="PCP_1902_e9_i19">
+            <num>19</num>
+            <title>Suzanne.</title>
+          </item>
+          <item n="20" xml:id="PCP_1902_e9_i20">
+            <num>20</num>
+            <title>Dans le Verger.</title>
+          </item>
+          <item n="21" xml:id="PCP_1902_e9_i21">
+            <num>21</num>
+            <title>Les Marguerites.</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="PCP_1902_e10" source="cat_pcp_1902.pdf_page_13.png">
+          <desc>
+            <name>BÉGUIN. A.</name>
+            <trait>
+              <p> B. DE PH. rue Henri-Blès, Namur (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="22" xml:id="PCP_1902_e10_i22">
+            <num>22</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="23" xml:id="PCP_1902_e10_i23">
+            <num>23</num>
+            <title>Étude.</title>
+          </item>
+        </entry>
+        <entry n="11" xml:id="PCP_1902_e11" source="cat_pcp_1902.pdf_page_13.png">
+          <desc>
+            <name>BELLIENI (H.).</name>
+            <trait>
+              <p> S. F. P. 17, Place Carnot, Nancy (Meurthe-et- Moselle).</p>
+            </trait>
+          </desc>
+          <item n="24" xml:id="PCP_1902_e11_i24">
+            <num>24</num>
+            <title>Gardeuse d'oies. A. Ch.</title>
+          </item>
+          <item n="25" xml:id="PCP_1902_e11_i25">
+            <num>25</num>
+            <title>Charge de Cuirassiers. A. Ch.</title>
+          </item>
+          <item n="26" xml:id="PCP_1902_e11_i26">
+            <num>26</num>
+            <title>Brumes du matin. A Ch.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="PCP_1902_e12" source="cat_pcp_1902.pdf_page_13.png">
+          <desc>
+            <name>BELLIVET (G.).</name>
+            <trait>
+              <p> AR. N. - P. C. P. Montclair, Mantega, Nice (Alpes-Maritimes).</p>
+            </trait>
+          </desc>
+          <item n="27" xml:id="PCP_1902_e12_i27">
+            <num>27</num>
+            <title>Sous bois </title>
+            <desc>(Parc de Saint-Cloud). A. Br.</desc>
+          </item>
+          <item n="28" xml:id="PCP_1902_e12_i28">
+            <num>28</num>
+            <title>Environs de Nice. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="PCP_1902_e13" source="cat_pcp_1902.pdf_page_14.png">
+          <desc>
+            <name>BERGER (Paul).</name>
+            <trait>
+              <p>62, rue Caumartin, Paris.</p>
+            </trait>
+          </desc>
+          <item n="29" xml:id="PCP_1902_e13_i29">
+            <num>29</num>
+            <title>Portrait de Madame C... D. Ch.</title>
+          </item>
+          <item n="30" xml:id="PCP_1902_e13_i30">
+            <num>30</num>
+            <title>Suzanne </title>
+            <desc>(Étude). D. Ch.</desc>
+          </item>
+          <item n="31" xml:id="PCP_1902_e13_i31">
+            <num>31</num>
+            <title>Fille de ferme. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="14" xml:id="PCP_1902_e14" source="cat_pcp_1902.pdf_page_14.png">
+          <desc>
+            <name>BERGON (Paul).</name>
+            <trait>
+              <p> P. C. P. 40, boulevard Haussmann, Paris.</p>
+            </trait>
+          </desc>
+          <item n="32" xml:id="PCP_1902_e14_i32">
+            <num>32</num>
+            <title>Mélusine. Ch.</title>
+          </item>
+          <item n="33" xml:id="PCP_1902_e14_i33">
+            <num>33</num>
+            <title>Incantation. Ch.</title>
+          </item>
+          <item n="34" xml:id="PCP_1902_e14_i34">
+            <num>34</num>
+            <title>Portrait. Ch.</title>
+          </item>
+          <item n="35" xml:id="PCP_1902_e14_i35">
+            <num>35</num>
+            <title>A la Source. Ch.</title>
+          </item>
+          <item n="36" xml:id="PCP_1902_e14_i36">
+            <num>36</num>
+            <title>Vision. Ch.</title>
+          </item>
+          <item n="37" xml:id="PCP_1902_e14_i37">
+            <num>37</num>
+            <title>Elle passe... Ch.</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="PCP_1902_e15" source="cat_pcp_1902.pdf_page_14.png">
+          <desc>
+            <name>BERTRAND (Henri).</name>
+            <trait>
+              <p>Dieulefit (Drôme).</p>
+            </trait>
+          </desc>
+          <item n="38" xml:id="PCP_1902_e15_i38">
+            <num>38</num>
+            <title>Le Potier. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="PCP_1902_e16" source="cat_pcp_1902.pdf_page_14.png">
+          <desc>
+            <name>BESSON (Georges).</name>
+            <trait>
+              <p> P. C. P. - P. C. HAUT-JURA. 6, rue des Promenades, Saint-Claude (Jura).</p>
+            </trait>
+          </desc>
+          <item n="39" xml:id="PCP_1902_e16_i39">
+            <num>39</num>
+            <title>La Halte. A. G. B.</title>
+          </item>
+          <item n="40" xml:id="PCP_1902_e16_i40">
+            <num>40</num>
+            <title>Matinée d'Automne. A. Br.</title>
+          </item>
+          <item n="41" xml:id="PCP_1902_e16_i41">
+            <num>41</num>
+            <title>Effet de Neige. D. Br.</title>
+          </item>
+          <item n="42" xml:id="PCP_1902_e16_i42">
+            <num>42</num>
+            <title>Étude. D. Br.</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="PCP_1902_e17" source="cat_pcp_1902.pdf_page_15.png">
+          <desc>
+            <name>BIENDINÉ (A.).</name>
+            <trait>
+              <p>72 bis, rue de la Paix, Boulogne-sur- Mer (Pas-de-Calais).</p>
+            </trait>
+          </desc>
+          <item n="43" xml:id="PCP_1902_e17_i43">
+            <num>43</num>
+            <title>Au Coin du feu. Picardie.</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="PCP_1902_e18" source="cat_pcp_1902.pdf_page_15.png">
+          <desc>
+            <name>BILLIOQUE (L.),</name>
+            <trait>
+              <p> PRÉSID. DE S. P. D'ARCACHON. Villa Durandal, Arcachon (Gironde).</p>
+            </trait>
+          </desc>
+          <item n="44" xml:id="PCP_1902_e18_i44">
+            <num>44</num>
+            <title>La Pinasse. A Br.</title>
+          </item>
+          <item n="45" xml:id="PCP_1902_e18_i45">
+            <num>45</num>
+            <title>La Plage d'Arcachon. Ch.</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="PCP_1902_e19" source="cat_pcp_1902.pdf_page_15.png">
+          <desc>
+            <name>BINDER MESTRO (Madame).</name>
+            <trait>
+              <p>P. C. P. 7, rue d'Artois, Paris.</p>
+            </trait>
+          </desc>
+          <item n="46" xml:id="PCP_1902_e19_i46">
+            <num>46</num>
+            <title>Les Deux Sœurs.</title>
+          </item>
+          <item n="47" xml:id="PCP_1902_e19_i47">
+            <num>47</num>
+            <title>Madone.</title>
+          </item>
+          <item n="48" xml:id="PCP_1902_e19_i48">
+            <num>48</num>
+            <title>Lecture.</title>
+          </item>
+          <item n="49" xml:id="PCP_1902_e19_i49">
+            <num>49</num>
+            <title>Prière.</title>
+          </item>
+          <item n="50" xml:id="PCP_1902_e19_i50">
+            <num>50</num>
+            <title>Profil.</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="PCP_1902_e20" source="cat_pcp_1902.pdf_page_15.png">
+          <desc>
+            <name>BLAND (W.-R.).</name>
+            <trait>
+              <p>Duffield, Derby (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="51" xml:id="PCP_1902_e20_i51">
+            <num>51</num>
+            <title>Le Pic de Derbyshire. Paysage. Pl. Dm.</title>
+          </item>
+        </entry>
+        <entry n="21" xml:id="PCP_1902_e21" source="cat_pcp_1902.pdf_page_15.png">
+          <desc>
+            <name>BOBIR (N.</name>
+            <trait>
+              <p> de). SOC. DAGUERRE.</p>
+            </trait>
+          </desc>
+          <item n="21" xml:id="PCP_1902_e21_i21">
+            <num>21</num>
+            <title>-1, rue Triochsviatitelskaj Kiew </title>
+            <desc>rue Triochsviatitelskaj Kiew (Russie).</desc>
+          </item>
+          <item n="52" xml:id="PCP_1902_e21_i52">
+            <num>52</num>
+            <title>Coucher de Soleil.</title>
+          </item>
+        </entry>
+        <entry n="22" xml:id="PCP_1902_e22" source="cat_pcp_1902.pdf_page_16.png">
+          <desc>
+            <name>BOCA (Edmond).</name>
+            <trait>
+              <p> SOC. CAENNAISE PH. Le Belvédère, Caen (Calvados).</p>
+            </trait>
+          </desc>
+          <item n="53" xml:id="PCP_1902_e22_i53">
+            <num>53</num>
+            <title>Les Oies. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="23" xml:id="PCP_1902_e23" source="cat_pcp_1902.pdf_page_16.png">
+          <desc>
+            <name>BODEN (Evelyn).</name>
+            <trait>
+              <p>The Friary, Derby (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="54" xml:id="PCP_1902_e23_i54">
+            <num>54</num>
+            <title>Madame Gisborne et ses enfants. Pl.</title>
+          </item>
+          <item n="55" xml:id="PCP_1902_e23_i55">
+            <num>55</num>
+            <title>La Répétition. Pl.</title>
+          </item>
+          <item n="56" xml:id="PCP_1902_e23_i56">
+            <num>56</num>
+            <title>“ Flouted ”. Pl.</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="PCP_1902_e24" source="cat_pcp_1902.pdf_page_16.png">
+          <desc>
+            <name>BOEL. C.</name>
+            <trait>
+              <p> EFF. Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="57" xml:id="PCP_1902_e24_i57">
+            <num>57</num>
+            <title>Les Foins. Br.</title>
+          </item>
+        </entry>
+        <entry n="25" xml:id="PCP_1902_e25" source="cat_pcp_1902.pdf_page_16.png">
+          <desc>
+            <name>BOISSONNAS (F.).</name>
+            <trait>
+              <p>Quai de la Poste, Genève.</p>
+            </trait>
+          </desc>
+          <item n="58" xml:id="PCP_1902_e25_i58">
+            <num>58</num>
+            <title>Portrait de M. Janssen. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="26" xml:id="PCP_1902_e26" source="cat_pcp_1902.pdf_page_16.png">
+          <desc>
+            <name>BOIVIN (Mme André).</name>
+            <trait>
+              <p>64, rue de Lisbonne, Paris.</p>
+            </trait>
+          </desc>
+          <item n="59" xml:id="PCP_1902_e26_i59">
+            <num>59</num>
+            <title>Faneuses. D. Pl.</title>
+          </item>
+          <item n="60" xml:id="PCP_1902_e26_i60">
+            <num>60</num>
+            <title>La Rabette. D. Pl.</title>
+          </item>
+          <item n="61" xml:id="PCP_1902_e26_i61">
+            <num>61</num>
+            <title>Forêt de Rambouillet. D. Pl.</title>
+          </item>
+        </entry>
+        <entry n="27" xml:id="PCP_1902_e27" source="cat_pcp_1902.pdf_page_17.png">
+          <desc>
+            <name>BOSSU (G.).</name>
+            <trait>
+              <p>10, rue Madame, Paris.</p>
+            </trait>
+          </desc>
+          <item n="62" xml:id="PCP_1902_e27_i62">
+            <num>62</num>
+            <title>Contre-jour sous bois. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="28" xml:id="PCP_1902_e28" source="cat_pcp_1902.pdf_page_17.png">
+          <desc>
+            <name>BOURGEOIS (Paul).</name>
+            <trait>
+              <p> P. C. P. - S. A. E. 80, boulevard Malesherbes, Paris.</p>
+            </trait>
+          </desc>
+          <item n="63" xml:id="PCP_1902_e28_i63">
+            <num>63</num>
+            <title>Effet de soir, Inverness.</title>
+            <desc>Inverness.</desc>
+          </item>
+          <item n="64" xml:id="PCP_1902_e28_i64">
+            <num>64</num>
+            <title>La Rade d'Oban. Écosse.</title>
+          </item>
+        </entry>
+        <entry n="29" xml:id="PCP_1902_e29" source="cat_pcp_1902.pdf_page_17.png">
+          <desc>
+            <name>BOUTIQUE (Augustin).</name>
+            <trait>
+              <p> SOC. DU NORD DE LA FRANCE. 24, rue Saint- Thomas, Douai (Nord).</p>
+            </trait>
+          </desc>
+          <item n="65" xml:id="PCP_1902_e29_i65">
+            <num>65</num>
+            <title>Départ du Troupeau. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="30" xml:id="PCP_1902_e30" source="cat_pcp_1902.pdf_page_17.png">
+          <desc>
+            <name>BOUY (Georges).</name>
+            <trait>
+              <p>3, rue des Œillets, Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="66" xml:id="PCP_1902_e30_i66">
+            <num>66</num>
+            <title>Brouillard en Condraz. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="31" xml:id="PCP_1902_e31" source="cat_pcp_1902.pdf_page_17.png">
+          <desc>
+            <name>BOUY (Jules).</name>
+            <trait>
+              <p> C. EFF. 10, rue Charles, Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="67" xml:id="PCP_1902_e31_i67">
+            <num>67</num>
+            <title>Aumatin. Br.</title>
+          </item>
+        </entry>
+        <entry n="32" xml:id="PCP_1902_e32" source="cat_pcp_1902.pdf_page_18.png">
+          <desc>
+            <name>BOVIER (L.).</name>
+            <trait>
+              <p> C. EFF. 38, rue des Visitandines, Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="68" xml:id="PCP_1902_e32_i68">
+            <num>68</num>
+            <title>Avant le Salut. G. B.</title>
+          </item>
+          <item n="69" xml:id="PCP_1902_e32_i69">
+            <num>69</num>
+            <title>Joli Mai. G. B.</title>
+          </item>
+          <item n="70" xml:id="PCP_1902_e32_i70">
+            <num>70</num>
+            <title>Éveil de Printemps. G. B.</title>
+          </item>
+          <item n="71" xml:id="PCP_1902_e32_i71">
+            <num>71</num>
+            <title>Un Soir de Juin. Pl.</title>
+          </item>
+        </entry>
+        <entry n="33" xml:id="PCP_1902_e33" source="cat_pcp_1902.pdf_page_18.png">
+          <desc>
+            <name>BROWN (E.-L.).</name>
+            <trait>
+              <p>6, South, Clerk Street, Edimbourg (Écosse).</p>
+            </trait>
+          </desc>
+          <item n="72" xml:id="PCP_1902_e33_i72">
+            <num>72</num>
+            <title>Dans le Bois.</title>
+          </item>
+          <item n="73" xml:id="PCP_1902_e33_i73">
+            <num>73</num>
+            <title>A l'Ombre. Pl. S.</title>
+          </item>
+          <item n="74" xml:id="PCP_1902_e33_i74">
+            <num>74</num>
+            <title>Reviendra-t-il.</title>
+          </item>
+        </entry>
+        <entry n="34" xml:id="PCP_1902_e34" source="cat_pcp_1902.pdf_page_18.png">
+          <desc>
+            <name>BUCQUET (Mlle A.).</name>
+            <trait>
+              <p> P. C. P. 12, rue Paul-Baudry, Paris.</p>
+            </trait>
+          </desc>
+          <item n="75" xml:id="PCP_1902_e34_i75">
+            <num>75</num>
+            <title>Sur le Chemin.</title>
+          </item>
+          <item n="76" xml:id="PCP_1902_e34_i76">
+            <num>76</num>
+            <title>L’Amstel.</title>
+          </item>
+        </entry>
+        <entry n="35" xml:id="PCP_1902_e35" source="cat_pcp_1902.pdf_page_18.png">
+          <desc>
+            <name>BUCQUET (Maurice).</name>
+            <trait>
+              <p> P. C. P. - S. A. E. - S. F. P. - L. R. - S. V. P. 12, rue Paul-Baudry, Paris.</p>
+            </trait>
+          </desc>
+          <item n="77" xml:id="PCP_1902_e35_i77">
+            <num>77</num>
+            <title>Dans la Cité. Carcassonne.</title>
+          </item>
+          <item n="78" xml:id="PCP_1902_e35_i78">
+            <num>78</num>
+            <title>Moisson en Savoie.</title>
+          </item>
+          <item n="79" xml:id="PCP_1902_e35_i79">
+            <num>79</num>
+            <title>Portrait de M. P. Blanchard.</title>
+          </item>
+          <item n="80" xml:id="PCP_1902_e35_i80">
+            <num>80</num>
+            <title>Brume du Matin.</title>
+          </item>
+          <item n="81" xml:id="PCP_1902_e35_i81">
+            <num>81</num>
+            <title>Étude.</title>
+          </item>
+        </entry>
+        <entry n="36" xml:id="PCP_1902_e36" source="cat_pcp_1902.pdf_page_19.png">
+          <desc>
+            <name>BUFFIÈRES (Comte de).</name>
+            <trait>
+              <p> P. C. P. 29, rue de Bassano, Paris.</p>
+            </trait>
+          </desc>
+          <item n="82" xml:id="PCP_1902_e36_i82">
+            <num>82</num>
+            <title>Le Pont d'Ainay, à Lyon. A. Br.</title>
+            <desc>à Lyon. A. Br.</desc>
+          </item>
+        </entry>
+        <entry n="37" xml:id="PCP_1902_e37" source="cat_pcp_1902.pdf_page_19.png">
+          <desc>
+            <name>CADBY (Mme Carine).</name>
+            <trait>
+              <p> L. R. Platt Boro Green, Kent (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="83" xml:id="PCP_1902_e37_i83">
+            <num>83</num>
+            <title>Pavots.</title>
+          </item>
+          <item n="84" xml:id="PCP_1902_e37_i84">
+            <num>84</num>
+            <title>Une Silhouette.</title>
+          </item>
+          <item n="85" xml:id="PCP_1902_e37_i85">
+            <num>85</num>
+            <title>Nasturtiums.</title>
+          </item>
+        </entry>
+        <entry n="38" xml:id="PCP_1902_e38" source="cat_pcp_1902.pdf_page_19.png">
+          <desc>
+            <name>CADBY (W.-A.).</name>
+            <trait>
+              <p> L. R. Platt Boro Green, Kent (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="86" xml:id="PCP_1902_e38_i86">
+            <num>86</num>
+            <title>Cour de Ferme.</title>
+          </item>
+          <item n="87" xml:id="PCP_1902_e38_i87">
+            <num>87</num>
+            <title>Le Bois.</title>
+          </item>
+          <item n="88" xml:id="PCP_1902_e38_i88">
+            <num>88</num>
+            <title>Étude de tête.</title>
+          </item>
+        </entry>
+        <entry n="39" xml:id="PCP_1902_e39" source="cat_pcp_1902.pdf_page_19.png">
+          <desc>
+            <name>CAMUS (Victor).</name>
+            <trait>
+              <p> P. C. P. Morlaix (Finistère).</p>
+            </trait>
+          </desc>
+          <item n="89" xml:id="PCP_1902_e39_i89">
+            <num>89</num>
+            <title>Les Bords du Goyen-Pont-Croix. D. Ch. Fr.</title>
+          </item>
+          <item n="90" xml:id="PCP_1902_e39_i90">
+            <num>90</num>
+            <title>Vallée de Saint-Jean-du-Doigt. A. Ch. Fr.</title>
+          </item>
+          <item n="91" xml:id="PCP_1902_e39_i91">
+            <num>91</num>
+            <title>Morlaix, le Port. A. Ch. Fr.</title>
+            <desc>le Port. A. Ch. Fr.</desc>
+          </item>
+          <item n="92" xml:id="PCP_1902_e39_i92">
+            <num>92</num>
+            <title>En Décembre, Morlaix. D. Br.</title>
+            <desc>Morlaix. D. Br.</desc>
+          </item>
+        </entry>
+        <entry n="40" xml:id="PCP_1902_e40" source="cat_pcp_1902.pdf_page_19.png">
+          <desc>
+            <name>CANFYN (Albert).</name>
+            <trait>
+              <p> A. B. DE PH. 3, place du Lion d'Or, Gand (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="93" xml:id="PCP_1902_e40_i93">
+            <num>93</num>
+            <title>Providence des pêcheurs. A. Br.</title>
+          </item>
+          <item n="94" xml:id="PCP_1902_e40_i94">
+            <num>94</num>
+            <title>Ferme flamande. A. Br.</title>
+          </item>
+          <item n="95" xml:id="PCP_1902_e40_i95">
+            <num>95</num>
+            <title>Soir de Novembre. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="41" xml:id="PCP_1902_e41" source="cat_pcp_1902.pdf_page_20.png">
+          <desc>
+            <name>CANOVAS (Antonio).</name>
+            <trait>
+              <p>Almagro, 12, Madrid.</p>
+            </trait>
+          </desc>
+          <item n="96" xml:id="PCP_1902_e41_i96">
+            <num>96</num>
+            <title>Message d'Amour. D. G. cl.</title>
+          </item>
+          <item n="97" xml:id="PCP_1902_e41_i97">
+            <num>97</num>
+            <title>En Grèce. D. G. cl.</title>
+          </item>
+          <item n="98" xml:id="PCP_1902_e41_i98">
+            <num>98</num>
+            <title>La Prière. D. G. cl.</title>
+          </item>
+        </entry>
+        <entry n="42" xml:id="PCP_1902_e42" source="cat_pcp_1902.pdf_page_20.png">
+          <desc>
+            <name>CASIER (Jos.).</name>
+            <trait>
+              <p> A. B. DE PH. - P. C. P. 91, rue des Rémouleurs, Gand (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="99" xml:id="PCP_1902_e42_i99">
+            <num>99</num>
+            <title>Soir d'Automne à la mer.</title>
+          </item>
+          <item n="100" xml:id="PCP_1902_e42_i100">
+            <num>100</num>
+            <title>Au parc de S'Gravenwesel.</title>
+          </item>
+        </entry>
+        <entry n="43" xml:id="PCP_1902_e43" source="cat_pcp_1902.pdf_page_20.png">
+          <desc>
+            <name>CATALANO (Comte M.</name>
+            <trait>
+              <p> de). 1, rue Marchetti, Marseille.</p>
+            </trait>
+          </desc>
+          <item n="101" xml:id="PCP_1902_e43_i101">
+            <num>101</num>
+            <title>Matinée brumeuse sur le Bosphore. A. Ch.</title>
+          </item>
+          <item n="102" xml:id="PCP_1902_e43_i102">
+            <num>102</num>
+            <title>Crépuscule dans le golfe d'lsmidt. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="44" xml:id="PCP_1902_e44" source="cat_pcp_1902.pdf_page_20.png">
+          <desc>
+            <name>CAVANIET (Louis).</name>
+            <trait>
+              <p>168, rue Lafayette, Paris.</p>
+            </trait>
+          </desc>
+          <item n="103" xml:id="PCP_1902_e44_i103">
+            <num>103</num>
+            <title>La Lettre. Br.</title>
+          </item>
+        </entry>
+        <entry n="45" xml:id="PCP_1902_e45" source="cat_pcp_1902.pdf_page_20.png">
+          <desc>
+            <name>CHARPENTIER (Paul).</name>
+            <trait>
+              <p>11, quai Conti, Paris.</p>
+            </trait>
+          </desc>
+          <item n="104" xml:id="PCP_1902_e45_i104">
+            <num>104</num>
+            <title>Lever de soleil sur le lac Leman. A. Br.</title>
+          </item>
+          <item n="105" xml:id="PCP_1902_e45_i105">
+            <num>105</num>
+            <title>Coucher de soleil sur le lac des 4 Cantons A. Br.</title>
+          </item>
+        </entry>
+        <entry n="46" xml:id="PCP_1902_e46" source="cat_pcp_1902.pdf_page_22.png">
+          <desc>
+            <name>CHARPENTIER (Hector).</name>
+            <trait>
+              <p>51, rue Henri Kolb, Lille (Nord).</p>
+            </trait>
+          </desc>
+          <item n="106" xml:id="PCP_1902_e46_i106">
+            <num>106</num>
+            <title>Flots du soir.</title>
+          </item>
+          <item n="107" xml:id="PCP_1902_e46_i107">
+            <num>107</num>
+            <title>Sur la Plage de Katwyck.</title>
+          </item>
+          <item n="108" xml:id="PCP_1902_e46_i108">
+            <num>108</num>
+            <title>Laura.</title>
+          </item>
+        </entry>
+        <entry n="47" xml:id="PCP_1902_e47" source="cat_pcp_1902.pdf_page_22.png">
+          <desc>
+            <name>CHASTELLAIN (L.).</name>
+            <trait>
+              <p>Place Saint-Laurent, Lausanne (Suisse).</p>
+            </trait>
+          </desc>
+          <item n="109" xml:id="PCP_1902_e47_i109">
+            <num>109</num>
+            <title>Soleil couchant. A.</title>
+          </item>
+        </entry>
+        <entry n="48" xml:id="PCP_1902_e48" source="cat_pcp_1902.pdf_page_22.png">
+          <desc>
+            <name>CHÉRI ROUSSEAU (G.).</name>
+            <trait>
+              <p>3, rue de la Paix, Saint-Étienne (Loire).</p>
+            </trait>
+          </desc>
+          <item n="110" xml:id="PCP_1902_e48_i110">
+            <num>110</num>
+            <title>Paysage. Effet de neige. D. Ch.</title>
+          </item>
+          <item n="111" xml:id="PCP_1902_e48_i111">
+            <num>111</num>
+            <title>Paysage, Cerisiers en fleurs. D. Ch.</title>
+            <desc>Cerisiers en fleurs. D. Ch.</desc>
+          </item>
+        </entry>
+        <entry n="49" xml:id="PCP_1902_e49" source="cat_pcp_1902.pdf_page_22.png">
+          <desc>
+            <name>CHOISEUL. PRASLIN (Marq.</name>
+            <trait>
+              <p> de). P. C. P. 54, avenue Marceau, Paris.</p>
+            </trait>
+          </desc>
+          <item n="112" xml:id="PCP_1902_e49_i112">
+            <num>112</num>
+            <title>Coucher de soleil. Lucerne. A.</title>
+          </item>
+          <item n="113" xml:id="PCP_1902_e49_i113">
+            <num>113</num>
+            <title>Tanger. A.</title>
+          </item>
+          <item n="114" xml:id="PCP_1902_e49_i114">
+            <num>114</num>
+            <title>Reflets. Étude. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="50" xml:id="PCP_1902_e50" source="cat_pcp_1902.pdf_page_22.png">
+          <desc>
+            <name>CLELAND (Georges).</name>
+            <trait>
+              <p>61, Leith Walk, Leith, (Écosse).</p>
+            </trait>
+          </desc>
+          <item n="115" xml:id="PCP_1902_e50_i115">
+            <num>115</num>
+            <title>Juin. Pl.</title>
+          </item>
+          <item n="116" xml:id="PCP_1902_e50_i116">
+            <num>116</num>
+            <title>Inquiétude. Ch.</title>
+          </item>
+        </entry>
+        <entry n="51" xml:id="PCP_1902_e51" source="cat_pcp_1902.pdf_page_23.png">
+          <desc>
+            <name>CLÉMENT (Dr E.).</name>
+            <trait>
+              <p> P. C. P. - SOC. MALOUINE ET SERVANNAISE. Saint-Servan (Ille-et-Vilaine).</p>
+            </trait>
+          </desc>
+          <item n="117" xml:id="PCP_1902_e51_i117">
+            <num>117</num>
+            <title>Essai d'éventail. Ch. Fr.</title>
+          </item>
+          <item n="118" xml:id="PCP_1902_e51_i118">
+            <num>118</num>
+            <title>Avril. Ch. Fr.</title>
+          </item>
+          <item n="119" xml:id="PCP_1902_e51_i119">
+            <num>119</num>
+            <title>Près du poële. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="52" xml:id="PCP_1902_e52" source="cat_pcp_1902.pdf_page_23.png">
+          <desc>
+            <name>CLUGNY (Comte de).</name>
+            <trait>
+              <p>6, rue Leroux, Paris.</p>
+            </trait>
+          </desc>
+          <item n="120" xml:id="PCP_1902_e52_i120">
+            <num>120</num>
+            <title>Langueur. Ch.</title>
+          </item>
+          <item n="121" xml:id="PCP_1902_e52_i121">
+            <num>121</num>
+            <title>Tête 1845. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="53" xml:id="PCP_1902_e53" source="cat_pcp_1902.pdf_page_23.png">
+          <desc>
+            <name>CLUGNY (Marquis de).</name>
+            <trait>
+              <p>6, rue Leroux, Paris.</p>
+            </trait>
+          </desc>
+          <item n="122" xml:id="PCP_1902_e53_i122">
+            <num>122</num>
+            <title>Marché de Milly. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="54" xml:id="PCP_1902_e54" source="cat_pcp_1902.pdf_page_23.png">
+          <desc>
+            <name>COEVOET (J.).</name>
+            <trait>
+              <p>53, rue Emmery, Dunkerque (Nord).</p>
+            </trait>
+          </desc>
+          <item n="123" xml:id="PCP_1902_e54_i123">
+            <num>123</num>
+            <title>Coucher de soleil. Gb.</title>
+          </item>
+          <item n="124" xml:id="PCP_1902_e54_i124">
+            <num>124</num>
+            <title>Crépuscule au port. Gb.</title>
+          </item>
+        </entry>
+        <entry n="55" xml:id="PCP_1902_e55" source="cat_pcp_1902.pdf_page_23.png">
+          <desc>
+            <name>COHEN (S.).</name>
+            <trait>
+              <p>84, Utrechtschestraat, Amsterdam.</p>
+            </trait>
+          </desc>
+          <item n="125" xml:id="PCP_1902_e55_i125">
+            <num>125</num>
+            <title>Cygnes. Br.</title>
+          </item>
+          <item n="126" xml:id="PCP_1902_e55_i126">
+            <num>126</num>
+            <title>Brebis. Br.</title>
+          </item>
+        </entry>
+        <entry n="56" xml:id="PCP_1902_e56" source="cat_pcp_1902.pdf_page_24.png">
+          <desc>
+            <name>COLLINS (Miss Essie).</name>
+            <trait>
+              <p>Colombus, Ohio (U. S. A.).</p>
+            </trait>
+          </desc>
+          <item n="127" xml:id="PCP_1902_e56_i127">
+            <num>127</num>
+            <title>Ophélie. D. Pl.</title>
+          </item>
+        </entry>
+        <entry n="57" xml:id="PCP_1902_e57" source="cat_pcp_1902.pdf_page_24.png">
+          <desc>
+            <name>COQUET (E.).</name>
+            <trait>
+              <p>Nonancourt (Eure).</p>
+            </trait>
+          </desc>
+          <item n="128" xml:id="PCP_1902_e57_i128">
+            <num>128</num>
+            <title>Effet de neige.</title>
+          </item>
+        </entry>
+        <entry n="58" xml:id="PCP_1902_e58" source="cat_pcp_1902.pdf_page_24.png">
+          <desc>
+            <name>COSTE (Ferdinand).</name>
+            <trait>
+              <p> P. C. P. Lacanche, par Arnay-le-Duc (Côte- d'Or).</p>
+            </trait>
+          </desc>
+          <item n="129" xml:id="PCP_1902_e58_i129">
+            <num>129</num>
+            <title>Portrait.</title>
+          </item>
+        </entry>
+        <entry n="59" xml:id="PCP_1902_e59" source="cat_pcp_1902.pdf_page_24.png">
+          <desc>
+            <name>COUDELOU. SOC.</name>
+            <trait>
+              <p> DES AMAT. DE PARIS. 55, rue du Château-d'Eau, Paris.</p>
+            </trait>
+          </desc>
+          <item n="130" xml:id="PCP_1902_e59_i130">
+            <num>130</num>
+            <title>Reflets.</title>
+          </item>
+        </entry>
+        <entry n="60" xml:id="PCP_1902_e60" source="cat_pcp_1902.pdf_page_24.png">
+          <desc>
+            <name>CRAIG ANNAN.</name>
+            <trait>
+              <p> L. R. 230, Sauchiehall Street, Glasgow (Écosse).</p>
+            </trait>
+          </desc>
+          <item n="131" xml:id="PCP_1902_e60_i131">
+            <num>131</num>
+            <title>Portrait de M. Holland Day. A. Ch.</title>
+          </item>
+          <item n="132" xml:id="PCP_1902_e60_i132">
+            <num>132</num>
+            <title>Portrait du Professeur Young. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="61" xml:id="PCP_1902_e61" source="cat_pcp_1902.pdf_page_25.png">
+          <desc>
+            <name>CRAIGIE (Reginald).</name>
+            <trait>
+              <p> L. R. Camera-Club, Charing Cross road, Londres.</p>
+            </trait>
+          </desc>
+          <item n="133" xml:id="PCP_1902_e61_i133">
+            <num>133</num>
+            <title>Étude de valeurs. Pl.</title>
+          </item>
+        </entry>
+        <entry n="62" xml:id="PCP_1902_e62" source="cat_pcp_1902.pdf_page_25.png">
+          <desc>
+            <name>CROALL (W.-J.).</name>
+            <trait>
+              <p>18, St. Albans Road, Édimbourg (Écosse).</p>
+            </trait>
+          </desc>
+          <item n="134" xml:id="PCP_1902_e62_i134">
+            <num>134</num>
+            <title>Bull Dogs. A. Ch.</title>
+          </item>
+          <item n="135" xml:id="PCP_1902_e62_i135">
+            <num>135</num>
+            <title>Qui appelle ? Pl.</title>
+          </item>
+        </entry>
+        <entry n="63" xml:id="PCP_1902_e63" source="cat_pcp_1902.pdf_page_25.png">
+          <desc>
+            <name>CROOKE (W.).</name>
+            <trait>
+              <p> L. R. 103, Princes Street, Edimbourg (Écosse).</p>
+            </trait>
+          </desc>
+          <item n="136" xml:id="PCP_1902_e63_i136">
+            <num>136</num>
+            <title>Portrait de sir Noel Paton. R. S. A.</title>
+          </item>
+        </entry>
+        <entry n="64" xml:id="PCP_1902_e64" source="cat_pcp_1902.pdf_page_25.png">
+          <desc>
+            <name>CLUGNIÈRES (Eugène).</name>
+            <trait>
+              <p>59, rue de Gisors, Pontoise (Seine-et- Oise).</p>
+            </trait>
+          </desc>
+          <item n="137" xml:id="PCP_1902_e64_i137">
+            <num>137</num>
+            <title>Vers l'École. A. Ch. Fr.</title>
+          </item>
+          <item n="138" xml:id="PCP_1902_e64_i138">
+            <num>138</num>
+            <title>Nature morte. D. Gb.</title>
+          </item>
+        </entry>
+        <entry n="65" xml:id="PCP_1902_e65" source="cat_pcp_1902.pdf_page_25.png">
+          <desc>
+            <name>DA CUNHA (A.).</name>
+            <trait>
+              <p> P. C. P. 3, rue Meissonier, Paris.</p>
+            </trait>
+          </desc>
+          <item n="139" xml:id="PCP_1902_e65_i139">
+            <num>139</num>
+            <title>Avant les régates. Ch.</title>
+          </item>
+          <item n="140" xml:id="PCP_1902_e65_i140">
+            <num>140</num>
+            <title>Un pauvre diable. Br.</title>
+          </item>
+          <item n="141" xml:id="PCP_1902_e65_i141">
+            <num>141</num>
+            <title>Temps de grève.</title>
+          </item>
+        </entry>
+        <entry n="66" xml:id="PCP_1902_e66" source="cat_pcp_1902.pdf_page_26.png">
+          <desc>
+            <name>DARDONVILLE (Louis).</name>
+            <trait>
+              <p> P. C. P. - S. A. E. 15, Chaussée de la Muette, Paris.</p>
+            </trait>
+          </desc>
+          <item n="142" xml:id="PCP_1902_e66_i142">
+            <num>142</num>
+            <title>Relai de Chasse. A. Ch.</title>
+          </item>
+          <item n="143" xml:id="PCP_1902_e66_i143">
+            <num>143</num>
+            <title>La Falaise. A. Ch.</title>
+          </item>
+          <item n="144" xml:id="PCP_1902_e66_i144">
+            <num>144</num>
+            <title>Un Ruisseau. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="67" xml:id="PCP_1902_e67" source="cat_pcp_1902.pdf_page_26.png">
+          <desc>
+            <name>DARNIS (A.).</name>
+            <trait>
+              <p> P. C. P. - S. A. E. 4, rue Marbeuf, Paris.</p>
+            </trait>
+          </desc>
+          <item n="145" xml:id="PCP_1902_e67_i145">
+            <num>145</num>
+            <title>Paysanne du Poitou. D. Ch. Fr.</title>
+          </item>
+          <item n="146" xml:id="PCP_1902_e67_i146">
+            <num>146</num>
+            <title>Premières fleurs. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="68" xml:id="PCP_1902_e68" source="cat_pcp_1902.pdf_page_26.png">
+          <desc>
+            <name>DAVIS (Henry-E.).</name>
+            <trait>
+              <p>Camera-Club, Charing Cross road Londres (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="147" xml:id="PCP_1902_e68_i147">
+            <num>147</num>
+            <title>Lune d'été.</title>
+          </item>
+        </entry>
+        <entry n="69" xml:id="PCP_1902_e69" source="cat_pcp_1902.pdf_page_26.png">
+          <desc>
+            <name>DAVISON (Georges).</name>
+            <trait>
+              <p> L. R. Beechcroft, the Park, East Molesey. (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="148" xml:id="PCP_1902_e69_i148">
+            <num>148</num>
+            <title>L'Arbre aux longs bras.</title>
+          </item>
+          <item n="149" xml:id="PCP_1902_e69_i149">
+            <num>149</num>
+            <title>Portrait au soleil.</title>
+          </item>
+          <item n="150" xml:id="PCP_1902_e69_i150">
+            <num>150</num>
+            <title>La Porte ouverte.</title>
+          </item>
+          <item n="151" xml:id="PCP_1902_e69_i151">
+            <num>151</num>
+            <title>Un Village dans les South Downs.</title>
+          </item>
+          <item n="152" xml:id="PCP_1902_e69_i152">
+            <num>152</num>
+            <title>La Promenade.</title>
+          </item>
+        </entry>
+        <entry n="70" xml:id="PCP_1902_e70" source="cat_pcp_1902.pdf_page_27.png">
+          <desc>
+            <name>DAY (HOLLAND).</name>
+            <trait>
+              <p>9, Pinckney Street, Boston (U. S. A.).</p>
+            </trait>
+          </desc>
+          <item n="153" xml:id="PCP_1902_e70_i153">
+            <num>153</num>
+            <title>L'Élève favori. Pl.</title>
+          </item>
+          <item n="154" xml:id="PCP_1902_e70_i154">
+            <num>154</num>
+            <title>Le Déjeuner. Blidah. Pl.</title>
+          </item>
+          <item n="155" xml:id="PCP_1902_e70_i155">
+            <num>155</num>
+            <title>Chef Éthiopien. Pl.</title>
+          </item>
+          <item n="156" xml:id="PCP_1902_e70_i156">
+            <num>156</num>
+            <title>Le Masseur au bain Maure. Pl.</title>
+          </item>
+          <item n="157" xml:id="PCP_1902_e70_i157">
+            <num>157</num>
+            <title>Rue d'Alger. Pl. Gb.</title>
+          </item>
+        </entry>
+        <entry n="71" xml:id="PCP_1902_e71" source="cat_pcp_1902.pdf_page_27.png">
+          <desc>
+            <name>DELACRE (Pierre).</name>
+            <trait>
+              <p>Vilvorde (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="158" xml:id="PCP_1902_e71_i158">
+            <num>158</num>
+            <title>Moutons.</title>
+          </item>
+          <item n="159" xml:id="PCP_1902_e71_i159">
+            <num>159</num>
+            <title>Attelage à cinq.</title>
+          </item>
+        </entry>
+        <entry n="72" xml:id="PCP_1902_e72" source="cat_pcp_1902.pdf_page_27.png">
+          <desc>
+            <name>DELPECH (E.).</name>
+            <trait>
+              <p> P. C. P. 41, rue de Villiers, Neuilly (Seine).</p>
+            </trait>
+          </desc>
+          <item n="160" xml:id="PCP_1902_e72_i160">
+            <num>160</num>
+            <title>Portraits de M. H. R. - A. Gb.</title>
+          </item>
+          <item n="161" xml:id="PCP_1902_e72_i161">
+            <num>161</num>
+            <title>Portrait de M. G. I. - D. Gb.</title>
+          </item>
+        </entry>
+        <entry n="73" xml:id="PCP_1902_e73" source="cat_pcp_1902.pdf_page_27.png">
+          <desc>
+            <name>DEMACHY (Robert).</name>
+            <trait>
+              <p> P. C. P. - L. R. 13, rue Francois 1er, Paris</p>
+            </trait>
+          </desc>
+          <item n="162" xml:id="PCP_1902_e73_i162">
+            <num>162</num>
+            <title>Portrait de madame R. D.- D. Gb.</title>
+          </item>
+          <item n="163" xml:id="PCP_1902_e73_i163">
+            <num>163</num>
+            <title>Paysage d'Automne. A. Gb.</title>
+          </item>
+          <item n="164" xml:id="PCP_1902_e73_i164">
+            <num>164</num>
+            <title>Danseuse. D. Gb.</title>
+          </item>
+          <item n="165" xml:id="PCP_1902_e73_i165">
+            <num>165</num>
+            <title>Portrait. D. Gb.</title>
+          </item>
+          <item n="166" xml:id="PCP_1902_e73_i166">
+            <num>166</num>
+            <title>Étude. D. Gb.</title>
+          </item>
+          <item n="167" xml:id="PCP_1902_e73_i167">
+            <num>167</num>
+            <title>Tête d'Expression. D. Gb.</title>
+          </item>
+        </entry>
+        <entry n="74" xml:id="PCP_1902_e74" source="cat_pcp_1902.pdf_page_28.png">
+          <desc>
+            <name>DETAILLE (F.).</name>
+            <trait>
+              <p>21, rue de Noailles, Marseille (Bouches-du-Rhône).</p>
+            </trait>
+          </desc>
+          <item n="168" xml:id="PCP_1902_e74_i168">
+            <num>168</num>
+            <title>Le Petit Saint-Jean. D. Ch.</title>
+          </item>
+          <item n="169" xml:id="PCP_1902_e74_i169">
+            <num>169</num>
+            <title>Les Cygnes. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="75" xml:id="PCP_1902_e75" source="cat_pcp_1902.pdf_page_28.png">
+          <desc>
+            <name>DEWIT (Ch.).</name>
+            <trait>
+              <p> C. EFF. 27, rue Le Corrège, Bruxelles (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="170" xml:id="PCP_1902_e75_i170">
+            <num>170</num>
+            <title>Un Érudit. Ch.</title>
+          </item>
+          <item n="171" xml:id="PCP_1902_e75_i171">
+            <num>171</num>
+            <title>La Causette. Pl.</title>
+          </item>
+        </entry>
+        <entry n="76" xml:id="PCP_1902_e76" source="cat_pcp_1902.pdf_page_28.png">
+          <desc>
+            <name>DROUET. S.</name>
+            <trait>
+              <p> F. P. - S. A. E. 107, boulevard Malesherbes, Paris.</p>
+            </trait>
+          </desc>
+          <item n="172" xml:id="PCP_1902_e76_i172">
+            <num>172</num>
+            <title>Forêt de Compiègne. A. Br.</title>
+          </item>
+          <item n="173" xml:id="PCP_1902_e76_i173">
+            <num>173</num>
+            <title>Sur les Quais. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="77" xml:id="PCP_1902_e77" source="cat_pcp_1902.pdf_page_28.png">
+          <desc>
+            <name>DUBREUIL (Pierre).</name>
+            <trait>
+              <p> S. P. DE LILLE. 27, rue d'Angleterre, Lille (Nord).</p>
+            </trait>
+          </desc>
+          <item n="174" xml:id="PCP_1902_e77_i174">
+            <num>174</num>
+            <title>Les Quilles. Ch. V.</title>
+          </item>
+          <item n="175" xml:id="PCP_1902_e77_i175">
+            <num>175</num>
+            <title>Portrait d'un peintre. Gb.</title>
+          </item>
+          <item n="176" xml:id="PCP_1902_e77_i176">
+            <num>176</num>
+            <title>Les Bulles. Ch. V.</title>
+          </item>
+          <item n="177" xml:id="PCP_1902_e77_i177">
+            <num>177</num>
+            <title>Tête d'enfant. Gb.</title>
+          </item>
+          <item n="178" xml:id="PCP_1902_e77_i178">
+            <num>178</num>
+            <title>Le Benedicite. Gb.</title>
+          </item>
+        </entry>
+        <entry n="78" xml:id="PCP_1902_e78" source="cat_pcp_1902.pdf_page_29.png">
+          <desc>
+            <name>DUCOURAU (E.).</name>
+            <trait>
+              <p> P. C. P. 104, boulevard Haussmann, Paris.</p>
+            </trait>
+          </desc>
+          <item n="179" xml:id="PCP_1902_e78_i179">
+            <num>179</num>
+            <title>Fontaine à Sequeito. Espagne. A. Ch.</title>
+          </item>
+          <item n="180" xml:id="PCP_1902_e78_i180">
+            <num>180</num>
+            <title>Moutons de Sare </title>
+            <desc>(Basses-Pyrénées). A. Ch.</desc>
+          </item>
+          <item n="181" xml:id="PCP_1902_e78_i181">
+            <num>181</num>
+            <title>Troupeau d'Aulette. A. Ch.</title>
+          </item>
+          <item n="182" xml:id="PCP_1902_e78_i182">
+            <num>182</num>
+            <title>Paysage </title>
+            <desc>(Bidassoa). A. Ch.</desc>
+          </item>
+        </entry>
+        <entry n="79" xml:id="PCP_1902_e79" source="cat_pcp_1902.pdf_page_29.png">
+          <desc>
+            <name>DUPONT (Roger).</name>
+            <trait>
+              <p>4, boulevard Lundy, Reims (Marne).</p>
+            </trait>
+          </desc>
+          <item n="183" xml:id="PCP_1902_e79_i183">
+            <num>183</num>
+            <title>Étude. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="80" xml:id="PCP_1902_e80" source="cat_pcp_1902.pdf_page_29.png">
+          <desc>
+            <name>DUVAL (R.).</name>
+            <trait>
+              <p> P. C. DE ROUEN. 12, rue François-Arago, Rouen (Seine- Inférieure).</p>
+            </trait>
+          </desc>
+          <item n="184" xml:id="PCP_1902_e80_i184">
+            <num>184</num>
+            <title>Le Vieux Moulin.</title>
+          </item>
+          <item n="185" xml:id="PCP_1902_e80_i185">
+            <num>185</num>
+            <title>Crépuscule au Havre.</title>
+          </item>
+        </entry>
+        <entry n="81" xml:id="PCP_1902_e81" source="cat_pcp_1902.pdf_page_29.png">
+          <desc>
+            <name>EARLE (Morris).</name>
+            <trait>
+              <p>1918, Spruce Street, Philadelphie (U. S. A.).</p>
+            </trait>
+          </desc>
+          <item n="186" xml:id="PCP_1902_e81_i186">
+            <num>186</num>
+            <title>Carmita. A.</title>
+          </item>
+        </entry>
+        <entry n="82" xml:id="PCP_1902_e82" source="cat_pcp_1902.pdf_page_29.png">
+          <desc>
+            <name>ECALLE G.-C.).</name>
+            <trait>
+              <p>8, rue de l'Arcade, Paris.</p>
+            </trait>
+          </desc>
+          <item n="187" xml:id="PCP_1902_e82_i187">
+            <num>187</num>
+            <title>Profil de Médaille. D. Ch. Fr.</title>
+          </item>
+          <item n="188" xml:id="PCP_1902_e82_i188">
+            <num>188</num>
+            <title>Sous les Fleurs. D. Ch. Fr.</title>
+          </item>
+          <item n="189" xml:id="PCP_1902_e82_i189">
+            <num>189</num>
+            <title>Au Maroc. D. Ch. Fr.</title>
+          </item>
+          <item n="190" xml:id="PCP_1902_e82_i190">
+            <num>190</num>
+            <title>Jeune Fille au Stick. D. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="83" xml:id="PCP_1902_e83" source="cat_pcp_1902.pdf_page_31.png">
+          <desc>
+            <name>FAUCHIER MAGNAN (A.).</name>
+            <trait>
+              <p> P. C. P. 45, boulevard Haussmann, Paris.</p>
+            </trait>
+          </desc>
+          <item n="191" xml:id="PCP_1902_e83_i191">
+            <num>191</num>
+            <title>Vue de Hollande. A. Br.</title>
+          </item>
+          <item n="192" xml:id="PCP_1902_e83_i192">
+            <num>192</num>
+            <title>Vue de Hollande. A. Br.</title>
+          </item>
+          <item n="193" xml:id="PCP_1902_e83_i193">
+            <num>193</num>
+            <title>Dans l'île de Marken. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="84" xml:id="PCP_1902_e84" source="cat_pcp_1902.pdf_page_31.png">
+          <desc>
+            <name>FERRAND (H.).</name>
+            <trait>
+              <p>50, rue Victor-Hugo, Bois-Colombes (Seine).</p>
+            </trait>
+          </desc>
+          <item n="194" xml:id="PCP_1902_e84_i194">
+            <num>194</num>
+            <title>Marie-Anne. D. Ch. Fr.</title>
+          </item>
+          <item n="195" xml:id="PCP_1902_e84_i195">
+            <num>195</num>
+            <title>Étude. D. Ch. V.</title>
+          </item>
+          <item n="196" xml:id="PCP_1902_e84_i196">
+            <num>196</num>
+            <title>Portrait. D. Ch. V.</title>
+          </item>
+          <item n="197" xml:id="PCP_1902_e84_i197">
+            <num>197</num>
+            <title>A la Cuisine. D. Ch. V.</title>
+          </item>
+        </entry>
+        <entry n="85" xml:id="PCP_1902_e85" source="cat_pcp_1902.pdf_page_31.png">
+          <desc>
+            <name>FERRAND (Stanislas).</name>
+            <trait>
+              <p>50, rue Victor-Hugo, Bois-Colombes, (Seine).</p>
+            </trait>
+          </desc>
+          <item n="198" xml:id="PCP_1902_e85_i198">
+            <num>198</num>
+            <title>Méditation. D. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="86" xml:id="PCP_1902_e86" source="cat_pcp_1902.pdf_page_31.png">
+          <desc>
+            <name>FINEL (G.).</name>
+            <trait>
+              <p>53, rue du Midi, Taverny, (Seine-et- Oise).</p>
+            </trait>
+          </desc>
+          <item n="199" xml:id="PCP_1902_e86_i199">
+            <num>199</num>
+            <title>Le Chemin de l'Étable. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="87" xml:id="PCP_1902_e87" source="cat_pcp_1902.pdf_page_31.png">
+          <desc>
+            <name/>
+            <trait>
+              <p>2.</p>
+            </trait>
+          </desc>
+          <item n="2" xml:id="PCP_1902_e87_i2">
+            <num>2</num>
+            <title></title>
+          </item>
+        </entry>
+        <entry n="88" xml:id="PCP_1902_e88" source="cat_pcp_1902.pdf_page_32.png">
+          <desc>
+            <name>FISCHER (N.).</name>
+            <trait>
+              <p>Stengade, Copenhague (Danemark).</p>
+            </trait>
+          </desc>
+          <item n="200" xml:id="PCP_1902_e88_i200">
+            <num>200</num>
+            <title>Le Far West danois. Ch.</title>
+          </item>
+          <item n="201" xml:id="PCP_1902_e88_i201">
+            <num>201</num>
+            <title>Portrait de mon Père. Ch.</title>
+          </item>
+          <item n="202" xml:id="PCP_1902_e88_i202">
+            <num>202</num>
+            <title>Minuit. Ch.</title>
+          </item>
+          <item n="203" xml:id="PCP_1902_e88_i203">
+            <num>203</num>
+            <title>Clair de lune. Ch.</title>
+          </item>
+          <item n="204" xml:id="PCP_1902_e88_i204">
+            <num>204</num>
+            <title>Sainte Cécile. Ch.</title>
+          </item>
+        </entry>
+        <entry n="89" xml:id="PCP_1902_e89" source="cat_pcp_1902.pdf_page_32.png">
+          <desc>
+            <name>FLAMM (Docteur R.).</name>
+            <trait>
+              <p> P. C. P. 39, avenue Marceau, Paris.</p>
+            </trait>
+          </desc>
+          <item n="205" xml:id="PCP_1902_e89_i205">
+            <num>205</num>
+            <title>Portrait de mademoiselle Th. B. - D. Ch. Fr.</title>
+          </item>
+          <item n="206" xml:id="PCP_1902_e89_i206">
+            <num>206</num>
+            <title>Portrait de M. S. W. - D. Ch. Fr.</title>
+          </item>
+          <item n="207" xml:id="PCP_1902_e89_i207">
+            <num>207</num>
+            <title>Méditation. D. Ch. Fr.</title>
+          </item>
+          <item n="208" xml:id="PCP_1902_e89_i208">
+            <num>208</num>
+            <title>Cenza. D. Ch. Fr.</title>
+          </item>
+          <item n="209" xml:id="PCP_1902_e89_i209">
+            <num>209</num>
+            <title>Arlequin. D. Ch. Fr.</title>
+          </item>
+          <item n="220" xml:id="PCP_1902_e89_i220">
+            <num>220</num>
+            <title>Le Calvaire. D. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="90" xml:id="PCP_1902_e90" source="cat_pcp_1902.pdf_page_32.png">
+          <desc>
+            <name>FONDU (Charles).</name>
+            <trait>
+              <p> C. EFF. Vilvorde-lez-Bruxelles (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="211" xml:id="PCP_1902_e90_i211">
+            <num>211</num>
+            <title>Sœur Madeleine. Gb.</title>
+          </item>
+          <item n="212" xml:id="PCP_1902_e90_i212">
+            <num>212</num>
+            <title>L'Organiste. Br.</title>
+          </item>
+          <item n="213" xml:id="PCP_1902_e90_i213">
+            <num>213</num>
+            <title>Menaces d'Orage. Ch.</title>
+          </item>
+        </entry>
+        <entry n="91" xml:id="PCP_1902_e91" source="cat_pcp_1902.pdf_page_32.png">
+          <desc>
+            <name>FONSECA (Arnoldo).</name>
+            <trait>
+              <p>19, rua Luz Soriano, Lisbonne (Portugal).</p>
+            </trait>
+          </desc>
+          <item n="214" xml:id="PCP_1902_e91_i214">
+            <num>214</num>
+            <title>Vieux temps. D. Pl.</title>
+          </item>
+          <item n="215" xml:id="PCP_1902_e91_i215">
+            <num>215</num>
+            <title>Portrait commencé. D. Gb.</title>
+          </item>
+        </entry>
+        <entry n="92" xml:id="PCP_1902_e92" source="cat_pcp_1902.pdf_page_33.png">
+          <desc>
+            <name>FOULIS.</name>
+            <trait>
+              <p>27, Cluny Gardens, Edimbourg (Ecosse).</p>
+            </trait>
+          </desc>
+          <item n="216" xml:id="PCP_1902_e92_i216">
+            <num>216</num>
+            <title>Le Matin. Ch.</title>
+          </item>
+          <item n="217" xml:id="PCP_1902_e92_i217">
+            <num>217</num>
+            <title>Le Berger. Br.</title>
+          </item>
+        </entry>
+        <entry n="93" xml:id="PCP_1902_e93" source="cat_pcp_1902.pdf_page_33.png">
+          <desc>
+            <name>FREDERIKSEN (Carl).</name>
+            <trait>
+              <p>Nowevoldgade, 96, Copenhague (Danemark).</p>
+            </trait>
+          </desc>
+          <item n="218" xml:id="PCP_1902_e93_i218">
+            <num>218</num>
+            <title>Novembre. Pl.</title>
+          </item>
+        </entry>
+        <entry n="94" xml:id="PCP_1902_e94" source="cat_pcp_1902.pdf_page_33.png">
+          <desc>
+            <name>GANDON (Mlle M.).</name>
+            <trait>
+              <p>10, rue du Palais, Carcassonne (Aude).</p>
+            </trait>
+          </desc>
+          <item n="219" xml:id="PCP_1902_e94_i219">
+            <num>219</num>
+            <title>La Cité par temps de neige. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="95" xml:id="PCP_1902_e95" source="cat_pcp_1902.pdf_page_33.png">
+          <desc>
+            <name>GARCZYNSKI.</name>
+            <trait>
+              <p>34, rue du Pavé, Le Mans (Sarthe).</p>
+            </trait>
+          </desc>
+          <item n="220" xml:id="PCP_1902_e95_i220">
+            <num>220</num>
+            <title>Distraction. D. Br.</title>
+          </item>
+          <item n="221" xml:id="PCP_1902_e95_i221">
+            <num>221</num>
+            <title>Sous la Lampe. A. Br.</title>
+          </item>
+          <item n="222" xml:id="PCP_1902_e95_i222">
+            <num>222</num>
+            <title>Dans la Caye. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="96" xml:id="PCP_1902_e96" source="cat_pcp_1902.pdf_page_33.png">
+          <desc>
+            <name>GASPAR (Ch.).</name>
+            <trait>
+              <p> C. EFF. 16, rue de Virton, Arlon (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="223" xml:id="PCP_1902_e96_i223">
+            <num>223</num>
+            <title>Portrait. Br.</title>
+          </item>
+          <item n="224" xml:id="PCP_1902_e96_i224">
+            <num>224</num>
+            <title>Portrait. Pl.</title>
+          </item>
+          <item n="225" xml:id="PCP_1902_e96_i225">
+            <num>225</num>
+            <title>En Hiver. Pl.</title>
+          </item>
+        </entry>
+        <entry n="97" xml:id="PCP_1902_e97" source="cat_pcp_1902.pdf_page_34.png">
+          <desc>
+            <name>GEERTS (Jules).</name>
+            <trait>
+              <p> C. EFF. 168, boulevard Anspach, Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="226" xml:id="PCP_1902_e97_i226">
+            <num>226</num>
+            <title>Pâturage. Gb.</title>
+          </item>
+        </entry>
+        <entry n="98" xml:id="PCP_1902_e98" source="cat_pcp_1902.pdf_page_34.png">
+          <desc>
+            <name>GIBORY (A.).</name>
+            <trait>
+              <p>36, rue des Petits-Champs, Paris.</p>
+            </trait>
+          </desc>
+          <item n="227" xml:id="PCP_1902_e98_i227">
+            <num>227</num>
+            <title>Portrait. D. Ch. V.</title>
+          </item>
+        </entry>
+        <entry n="99" xml:id="PCP_1902_e99" source="cat_pcp_1902.pdf_page_34.png">
+          <desc>
+            <name>GILIBERT (A.).</name>
+            <trait>
+              <p> S. A. E. - P. C. P. 55, rue de Prony, Paris.</p>
+            </trait>
+          </desc>
+          <item n="228" xml:id="PCP_1902_e99_i228">
+            <num>228</num>
+            <title>Marine. A. Ch.</title>
+          </item>
+          <item n="229" xml:id="PCP_1902_e99_i229">
+            <num>229</num>
+            <title>Revenant de la Fontaine. A. Ch. Fr.</title>
+          </item>
+          <item n="230" xml:id="PCP_1902_e99_i230">
+            <num>230</num>
+            <title>Une Boucherie à Louviers. A. Br.</title>
+          </item>
+          <item n="231" xml:id="PCP_1902_e99_i231">
+            <num>231</num>
+            <title>Un Paludier de Saillé. A. Ch. Fr.</title>
+          </item>
+          <item n="232" xml:id="PCP_1902_e99_i232">
+            <num>232</num>
+            <title>Le Soir aux étangs de Cernay. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="100" xml:id="PCP_1902_e100" source="cat_pcp_1902.pdf_page_34.png">
+          <desc>
+            <name>GILLET(Fernand). S.</name>
+            <trait>
+              <p> A. E.- S. F. P. - P. C. P. 47, rue Jacob, Paris.</p>
+            </trait>
+          </desc>
+          <item n="233" xml:id="PCP_1902_e100_i233">
+            <num>233</num>
+            <title>Rêverie. A. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="101" xml:id="PCP_1902_e101" source="cat_pcp_1902.pdf_page_34.png">
+          <desc>
+            <name>GLEASON (Arthur-A.).</name>
+            <trait>
+              <p>52, Vernon Street Dedham, Mass. (U. S A.)</p>
+            </trait>
+          </desc>
+          <item n="234" xml:id="PCP_1902_e101_i234">
+            <num>234</num>
+            <title>Maternié. Pl.</title>
+          </item>
+          <item n="235" xml:id="PCP_1902_e101_i235">
+            <num>235</num>
+            <title>L'Étang. Pl.</title>
+          </item>
+          <item n="236" xml:id="PCP_1902_e101_i236">
+            <num>236</num>
+            <title>Paysage d’Hiver. Pl.</title>
+          </item>
+          <item n="237" xml:id="PCP_1902_e101_i237">
+            <num>237</num>
+            <title>Avril. Pl.</title>
+          </item>
+        </entry>
+        <entry n="102" xml:id="PCP_1902_e102" source="cat_pcp_1902.pdf_page_36.png">
+          <desc>
+            <name>GOMEZ GIMENO (Alfredo).</name>
+            <trait>
+              <p>7, rue Lafaurie-de-Montbadon, Bordeaux.</p>
+            </trait>
+          </desc>
+          <item n="238" xml:id="PCP_1902_e102_i238">
+            <num>238</num>
+            <title>Port de Royan. D. Ch. Fr.</title>
+          </item>
+          <item n="239" xml:id="PCP_1902_e102_i239">
+            <num>239</num>
+            <title>Port de Royan. D. Ch. Fr.</title>
+          </item>
+          <item n="240" xml:id="PCP_1902_e102_i240">
+            <num>240</num>
+            <title>En-tête pour Carte-lettre. D. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="103" xml:id="PCP_1902_e103" source="cat_pcp_1902.pdf_page_36.png">
+          <desc>
+            <name>GOSSIN (E.).</name>
+            <trait>
+              <p>14, rue du Faubourg Saint-Honoré, Paris.</p>
+            </trait>
+          </desc>
+          <item n="241" xml:id="PCP_1902_e103_i241">
+            <num>241</num>
+            <title>Sous-bois </title>
+            <desc>(Compiègne). D. Ch.</desc>
+          </item>
+        </entry>
+        <entry n="104" xml:id="PCP_1902_e104" source="cat_pcp_1902.pdf_page_36.png">
+          <desc>
+            <name>GOUDCHAUX (Henri).</name>
+            <trait>
+              <p> P. C. P. 6, rue Boissy d'Anglas, Paris.</p>
+            </trait>
+          </desc>
+          <item n="242" xml:id="PCP_1902_e104_i242">
+            <num>242</num>
+            <title>A Vevey.</title>
+          </item>
+        </entry>
+        <entry n="105" xml:id="PCP_1902_e105" source="cat_pcp_1902.pdf_page_36.png">
+          <desc>
+            <name>GOUNST (A.).</name>
+            <trait>
+              <p>Starokoniouchenny, Maison Gounst, Moscou.</p>
+            </trait>
+          </desc>
+          <item n="243" xml:id="PCP_1902_e105_i243">
+            <num>243</num>
+            <title>Étude. Ch.</title>
+          </item>
+        </entry>
+        <entry n="106" xml:id="PCP_1902_e106" source="cat_pcp_1902.pdf_page_36.png">
+          <desc>
+            <name>GOUSSEAU (Abel).</name>
+            <trait>
+              <p>Saint-Laurent-sur-Sèvre (Vendée).</p>
+            </trait>
+          </desc>
+          <item n="244" xml:id="PCP_1902_e106_i244">
+            <num>244</num>
+            <title>A L'Abreuvoir, étude de soir. D. Br.</title>
+            <desc>étude de soir. D. Br.</desc>
+          </item>
+        </entry>
+        <entry n="107" xml:id="PCP_1902_e107" source="cat_pcp_1902.pdf_page_37.png">
+          <desc>
+            <name>GRAHL (Mademoiselle.)</name>
+            <trait>
+              <p>33, Burgerwiese, Dresde (Allemagne).</p>
+            </trait>
+          </desc>
+          <item n="245" xml:id="PCP_1902_e107_i245">
+            <num>245</num>
+            <title>Automne. D.</title>
+          </item>
+          <item n="246" xml:id="PCP_1902_e107_i246">
+            <num>246</num>
+            <title>Frère et Sœur. D.</title>
+          </item>
+          <item n="247" xml:id="PCP_1902_e107_i247">
+            <num>247</num>
+            <title>Enfant. D.</title>
+          </item>
+          <item n="248" xml:id="PCP_1902_e107_i248">
+            <num>248</num>
+            <title>Jeunesse. D.</title>
+          </item>
+        </entry>
+        <entry n="108" xml:id="PCP_1902_e108" source="cat_pcp_1902.pdf_page_37.png">
+          <desc>
+            <name>GRAS (Henri).</name>
+            <trait>
+              <p> S. F. P. 52, Boulevard Ménilmontant, Paris.</p>
+            </trait>
+          </desc>
+          <item n="249" xml:id="PCP_1902_e108_i249">
+            <num>249</num>
+            <title>Château de Chillon. A. Ch. V.</title>
+          </item>
+          <item n="250" xml:id="PCP_1902_e108_i250">
+            <num>250</num>
+            <title>Coup de Mer à Villers. A. Ch. V.</title>
+          </item>
+        </entry>
+        <entry n="109" xml:id="PCP_1902_e109" source="cat_pcp_1902.pdf_page_37.png">
+          <desc>
+            <name>GRIMPREL (Georges).</name>
+            <trait>
+              <p> P. C. P. 71, rue du Faubourg-Saint-Honoré, Paris.</p>
+            </trait>
+          </desc>
+          <item n="251" xml:id="PCP_1902_e109_i251">
+            <num>251</num>
+            <title>'Aïcha'. Gb.</title>
+          </item>
+          <item n="252" xml:id="PCP_1902_e109_i252">
+            <num>252</num>
+            <title>Fenêtre d'Atelier. Gb.</title>
+          </item>
+          <item n="253" xml:id="PCP_1902_e109_i253">
+            <num>253</num>
+            <title>Étude. Gb.</title>
+          </item>
+          <item n="254" xml:id="PCP_1902_e109_i254">
+            <num>254</num>
+            <title>Médaillon. Gb.</title>
+          </item>
+          <item n="255" xml:id="PCP_1902_e109_i255">
+            <num>255</num>
+            <title>Sanguine. Gb.</title>
+          </item>
+        </entry>
+        <entry n="110" xml:id="PCP_1902_e110" source="cat_pcp_1902.pdf_page_37.png">
+          <desc>
+            <name>GUÉRIN (Henri).</name>
+            <trait>
+              <p> P. C. P. - S. A. E. 21, rue du général Foy, Paris.</p>
+            </trait>
+          </desc>
+          <item n="256" xml:id="PCP_1902_e110_i256">
+            <num>256</num>
+            <title>Brume.</title>
+          </item>
+          <item n="257" xml:id="PCP_1902_e110_i257">
+            <num>257</num>
+            <title>Brouillard en Seine.</title>
+          </item>
+        </entry>
+        <entry n="111" xml:id="PCP_1902_e111" source="cat_pcp_1902.pdf_page_38.png">
+          <desc>
+            <name>GUGGENHEIM (Albert).</name>
+            <trait>
+              <p> C. EFF. 3, rue de Lombardie, Bruxelles (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="258" xml:id="PCP_1902_e111_i258">
+            <num>258</num>
+            <title>Portrait du peintre Hans Christiansen. Pl.</title>
+          </item>
+          <item n="259" xml:id="PCP_1902_e111_i259">
+            <num>259</num>
+            <title>Portrait.</title>
+          </item>
+        </entry>
+        <entry n="112" xml:id="PCP_1902_e112" source="cat_pcp_1902.pdf_page_38.png">
+          <desc>
+            <name>HAAREN (Van).</name>
+            <trait>
+              <p>Arnheim (Hollande).</p>
+            </trait>
+          </desc>
+          <item n="260" xml:id="PCP_1902_e112_i260">
+            <num>260</num>
+            <title>Procesion dans le village. A.</title>
+          </item>
+        </entry>
+        <entry n="113" xml:id="PCP_1902_e113" source="cat_pcp_1902.pdf_page_38.png">
+          <desc>
+            <name>HÉGOT (Fernand).</name>
+            <trait>
+              <p>5, rue de la Paix, PAris.</p>
+            </trait>
+          </desc>
+          <item n="261" xml:id="PCP_1902_e113_i261">
+            <num>261</num>
+            <title>Bords de l'Yvette. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="114" xml:id="PCP_1902_e114" source="cat_pcp_1902.pdf_page_38.png">
+          <desc>
+            <name>HÉLAIN (A.).</name>
+            <trait>
+              <p> S. F. P. 2, rue Grétry, Paris.</p>
+            </trait>
+          </desc>
+          <item n="262" xml:id="PCP_1902_e114_i262">
+            <num>262</num>
+            <title>Lavoir en Bretagne. A. Ch.</title>
+          </item>
+          <item n="263" xml:id="PCP_1902_e114_i263">
+            <num>263</num>
+            <title>Soleil et Nuages. A. Ch.</title>
+          </item>
+          <item n="264" xml:id="PCP_1902_e114_i264">
+            <num>264</num>
+            <title>Pseudo-Clair de lune. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="115" xml:id="PCP_1902_e115" source="cat_pcp_1902.pdf_page_38.png">
+          <desc>
+            <name>HELLOUIN DE MENIBUS.</name>
+            <trait>
+              <p> S.F. P. 5, rue Sainte-Beuve, Paris.</p>
+            </trait>
+          </desc>
+          <item n="265" xml:id="PCP_1902_e115_i265">
+            <num>265</num>
+            <title>Dans la Buanderie. D. Ch. Fr.</title>
+          </item>
+          <item n="266" xml:id="PCP_1902_e115_i266">
+            <num>266</num>
+            <title>Bonne Maman. D. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="116" xml:id="PCP_1902_e116" source="cat_pcp_1902.pdf_page_39.png">
+          <desc>
+            <name>HERVÉ (Lucien).</name>
+            <trait>
+              <p> S. A. E. 71, rue Raynouard.</p>
+            </trait>
+          </desc>
+          <item n="267" xml:id="PCP_1902_e116_i267">
+            <num>267</num>
+            <title>Champigny-Saint-Marne. D.</title>
+          </item>
+        </entry>
+        <entry n="117" xml:id="PCP_1902_e117" source="cat_pcp_1902.pdf_page_39.png">
+          <desc>
+            <name>HORSLEY HINTON (A.).</name>
+            <trait>
+              <p> L. R. 52, Long Acre, Londres (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="268" xml:id="PCP_1902_e117_i268">
+            <num>268</num>
+            <title>“ Recessional ”. A. Pl.</title>
+          </item>
+          <item n="269" xml:id="PCP_1902_e117_i269">
+            <num>269</num>
+            <title>Vers les Collines. A. Pl.</title>
+          </item>
+          <item n="270" xml:id="PCP_1902_e117_i270">
+            <num>270</num>
+            <title>Les Dunes. A. Pl.</title>
+          </item>
+        </entry>
+        <entry n="118" xml:id="PCP_1902_e118" source="cat_pcp_1902.pdf_page_39.png">
+          <desc>
+            <name>HUDSON CHAPMANN.</name>
+            <trait>
+              <p>1128, Spruce Street, Philadelphie (U. S. A.)</p>
+            </trait>
+          </desc>
+          <item n="271" xml:id="PCP_1902_e118_i271">
+            <num>271</num>
+            <title>Au Réfectoire.</title>
+          </item>
+        </entry>
+        <entry n="119" xml:id="PCP_1902_e119" source="cat_pcp_1902.pdf_page_39.png">
+          <desc>
+            <name>HUGUET (Mme A.).</name>
+            <trait>
+              <p> P. C. P. 146, avenue des Champs-Élysées, Paris.</p>
+            </trait>
+          </desc>
+          <item n="272" xml:id="PCP_1902_e119_i272">
+            <num>272</num>
+            <title>La Lettre. A. Br.</title>
+          </item>
+          <item n="273" xml:id="PCP_1902_e119_i273">
+            <num>273</num>
+            <title>Étude de Contre-jour. A. Ch. V.</title>
+          </item>
+          <item n="274" xml:id="PCP_1902_e119_i274">
+            <num>274</num>
+            <title>Pâturage. A. Ch. Fr.</title>
+          </item>
+          <item n="275" xml:id="PCP_1902_e119_i275">
+            <num>275</num>
+            <title>Le Soir. Rentrée à la ferme. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="120" xml:id="PCP_1902_e120" source="cat_pcp_1902.pdf_page_39.png">
+          <desc>
+            <name>HUILLARD (Ernest).</name>
+            <trait>
+              <p> S. F. P.- S. A. E. 5, rue du 29 Juillet, Paris.</p>
+            </trait>
+          </desc>
+          <item n="276" xml:id="PCP_1902_e120_i276">
+            <num>276</num>
+            <title>La Mare aux Fées. D. Ch. V.</title>
+          </item>
+          <item n="277" xml:id="PCP_1902_e120_i277">
+            <num>277</num>
+            <title>Les Saules. D. Ch. V.</title>
+          </item>
+        </entry>
+        <entry n="121" xml:id="PCP_1902_e121" source="cat_pcp_1902.pdf_page_41.png">
+          <desc>
+            <name>HUILLIER (A.).</name>
+            <trait>
+              <p> P. C. P. 83, boulevard Haussmann, Paris.</p>
+            </trait>
+          </desc>
+          <item n="278" xml:id="PCP_1902_e121_i278">
+            <num>278</num>
+            <title>Les Chênes. A. Ch. V.</title>
+          </item>
+          <item n="279" xml:id="PCP_1902_e121_i279">
+            <num>279</num>
+            <title>Café Maure. A. Ch. V.</title>
+          </item>
+        </entry>
+        <entry n="122" xml:id="PCP_1902_e122" source="cat_pcp_1902.pdf_page_41.png">
+          <desc>
+            <name>IMBERT (Léonce).</name>
+            <trait>
+              <p>5, place de la Bourse, Marseille (Bouches-du-Rhône).</p>
+            </trait>
+          </desc>
+          <item n="280" xml:id="PCP_1902_e122_i280">
+            <num>280</num>
+            <title>Quiétude du Soir. A. Ch.</title>
+          </item>
+          <item n="281" xml:id="PCP_1902_e122_i281">
+            <num>281</num>
+            <title>Aube naissante. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="123" xml:id="PCP_1902_e123" source="cat_pcp_1902.pdf_page_41.png">
+          <desc>
+            <name>JACQUEMONT (H.).</name>
+            <trait>
+              <p>1, rue de Beaune, Paris.</p>
+            </trait>
+          </desc>
+          <item n="282" xml:id="PCP_1902_e123_i282">
+            <num>282</num>
+            <title>Lecture à vue. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="124" xml:id="PCP_1902_e124" source="cat_pcp_1902.pdf_page_41.png">
+          <desc>
+            <name>JOB (Charles).</name>
+            <trait>
+              <p>High Lands, The Drive Hove, Sussex, (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="283" xml:id="PCP_1902_e124_i283">
+            <num>283</num>
+            <title>Retour du Toupeau. Ch.</title>
+          </item>
+        </entry>
+        <entry n="125" xml:id="PCP_1902_e125" source="cat_pcp_1902.pdf_page_41.png">
+          <desc>
+            <name>JOLY (Jacques de).</name>
+            <trait>
+              <p> S. E. P. 34, rue de Tocqueville, Paris.</p>
+            </trait>
+          </desc>
+          <item n="284" xml:id="PCP_1902_e125_i284">
+            <num>284</num>
+            <title>Le Tricot de Grand'Mère. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="126" xml:id="PCP_1902_e126" source="cat_pcp_1902.pdf_page_42.png">
+          <desc>
+            <name>HUBERT (Émile).</name>
+            <trait>
+              <p> P. C. P. 138, boulevard Haussmann, Paris.</p>
+            </trait>
+          </desc>
+          <item n="285" xml:id="PCP_1902_e126_i285">
+            <num>285</num>
+            <title>Paysage Normand. A. Ch. V.</title>
+          </item>
+        </entry>
+        <entry n="127" xml:id="PCP_1902_e127" source="cat_pcp_1902.pdf_page_42.png">
+          <desc>
+            <name>KAPTEYN (Alb.).</name>
+            <trait>
+              <p> P. C. P. 11, Kurhausstrasse, Zurich (Suisse).</p>
+            </trait>
+          </desc>
+          <item n="286" xml:id="PCP_1902_e127_i286">
+            <num>286</num>
+            <title>Université de Glasgow dans le Brouillard. A. Br.</title>
+          </item>
+          <item n="287" xml:id="PCP_1902_e127_i287">
+            <num>287</num>
+            <title>Inondation. D. Pl.</title>
+          </item>
+          <item n="288" xml:id="PCP_1902_e127_i288">
+            <num>288</num>
+            <title>Tête de Fillette. A. Pl.</title>
+          </item>
+          <item n="289" xml:id="PCP_1902_e127_i289">
+            <num>289</num>
+            <title>Portrait. D. Pl.</title>
+          </item>
+        </entry>
+        <entry n="128" xml:id="PCP_1902_e128" source="cat_pcp_1902.pdf_page_42.png">
+          <desc>
+            <name>KÄSEBIER (Mme Gertrude).</name>
+            <trait>
+              <p> L. R.</p>
+            </trait>
+          </desc>
+          <item n="3" xml:id="PCP_1902_e128_i3">
+            <num>3</num>
+            <title>W. 29me rue, New-York </title>
+            <desc>New-York (U. S. A.).</desc>
+          </item>
+          <item n="290" xml:id="PCP_1902_e128_i290">
+            <num>290</num>
+            <title>Homme au Chapeau. Pl.</title>
+          </item>
+          <item n="291" xml:id="PCP_1902_e128_i291">
+            <num>291</num>
+            <title>Cathryne. Gb.</title>
+          </item>
+          <item n="292" xml:id="PCP_1902_e128_i292">
+            <num>292</num>
+            <title>Portrait de M. Clarence White. Gb.</title>
+          </item>
+          <item n="293" xml:id="PCP_1902_e128_i293">
+            <num>293</num>
+            <title>Au lever du Soleil. Gb.</title>
+          </item>
+          <item n="294" xml:id="PCP_1902_e128_i294">
+            <num>294</num>
+            <title>Portrait de M. Frédéric Evans. Gb.</title>
+          </item>
+          <item n="295" xml:id="PCP_1902_e128_i295">
+            <num>295</num>
+            <title>La Mariée. Gb.</title>
+          </item>
+        </entry>
+        <entry n="129" xml:id="PCP_1902_e129" source="cat_pcp_1902.pdf_page_42.png">
+          <desc>
+            <name>KLEINTJES (L.-L.).</name>
+            <trait>
+              <p>17, rue de Suisse, Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="296" xml:id="PCP_1902_e129_i296">
+            <num>296</num>
+            <title>Soins du ménage. Ch.</title>
+          </item>
+          <item n="297" xml:id="PCP_1902_e129_i297">
+            <num>297</num>
+            <title>Près du Berceau. Ch.</title>
+          </item>
+          <item n="298" xml:id="PCP_1902_e129_i298">
+            <num>298</num>
+            <title>Avant l'orage. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="130" xml:id="PCP_1902_e130" source="cat_pcp_1902.pdf_page_43.png">
+          <desc>
+            <name>KOURLINE (A.).</name>
+            <trait>
+              <p>Samara (Russie).</p>
+            </trait>
+          </desc>
+          <item n="299" xml:id="PCP_1902_e130_i299">
+            <num>299</num>
+            <title>Tempête sur la mer Noire. Ch.</title>
+          </item>
+          <item n="300" xml:id="PCP_1902_e130_i300">
+            <num>300</num>
+            <title>Dans la Carrière. Pl.</title>
+          </item>
+        </entry>
+        <entry n="131" xml:id="PCP_1902_e131" source="cat_pcp_1902.pdf_page_43.png">
+          <desc>
+            <name>KRAFFT (Hugues).</name>
+            <trait>
+              <p> P. C. P. 42, rue de Lubeck, Paris.</p>
+            </trait>
+          </desc>
+          <item n="301" xml:id="PCP_1902_e131_i301">
+            <num>301</num>
+            <title>Portai lde Chah-Zindé, à Samarkand. A. Ch.</title>
+            <desc>à Samarkand. A. Ch.</desc>
+          </item>
+          <item n="302" xml:id="PCP_1902_e131_i302">
+            <num>302</num>
+            <title>Une Juive de Samarkand. A. Ch.</title>
+          </item>
+          <item n="303" xml:id="PCP_1902_e131_i303">
+            <num>303</num>
+            <title>Le ravin de Siab </title>
+            <desc>(Turkestan Russe). A. Ch.</desc>
+          </item>
+          <item n="304" xml:id="PCP_1902_e131_i304">
+            <num>304</num>
+            <title>Le Torrent à Ourgout </title>
+            <desc>(Turkertan Russe). A. Ch.</desc>
+          </item>
+        </entry>
+        <entry n="132" xml:id="PCP_1902_e132" source="cat_pcp_1902.pdf_page_43.png">
+          <desc>
+            <name>LABAT (Louis).</name>
+            <trait>
+              <p>26, rue de la Salie, Bayonne (Basses- Pyrénées).</p>
+            </trait>
+          </desc>
+          <item n="305" xml:id="PCP_1902_e132_i305">
+            <num>305</num>
+            <title>Les Joncs. Gb.</title>
+          </item>
+          <item n="306" xml:id="PCP_1902_e132_i306">
+            <num>306</num>
+            <title>Portrait de M. Herrel. Gb.</title>
+          </item>
+        </entry>
+        <entry n="133" xml:id="PCP_1902_e133" source="cat_pcp_1902.pdf_page_43.png">
+          <desc>
+            <name>LACLOS (Albert de).</name>
+            <trait>
+              <p>16, rue du Pré-aux-Clercs, Paris.</p>
+            </trait>
+          </desc>
+          <item n="307" xml:id="PCP_1902_e133_i307">
+            <num>307</num>
+            <title>Bords de rivière. D. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="134" xml:id="PCP_1902_e134" source="cat_pcp_1902.pdf_page_44.png">
+          <desc>
+            <name>LAGUARDE (Mlle C.).</name>
+            <trait>
+              <p> P. C. P. Villa des Pins, Aix-en-Provence.</p>
+            </trait>
+          </desc>
+          <item n="308" xml:id="PCP_1902_e134_i308">
+            <num>308</num>
+            <title>La Mèche Blonde. Gb.</title>
+          </item>
+          <item n="309" xml:id="PCP_1902_e134_i309">
+            <num>309</num>
+            <title>Étude. B. B.</title>
+          </item>
+          <item n="310" xml:id="PCP_1902_e134_i310">
+            <num>310</num>
+            <title>Figure allégorique du Printemps. Gb.</title>
+          </item>
+          <item n="311" xml:id="PCP_1902_e134_i311">
+            <num>311</num>
+            <title>Enfant de chœur. Gb.</title>
+          </item>
+          <item n="312" xml:id="PCP_1902_e134_i312">
+            <num>312</num>
+            <title>Les Petits Bonnets. Gb.</title>
+          </item>
+        </entry>
+        <entry n="135" xml:id="PCP_1902_e135" source="cat_pcp_1902.pdf_page_44.png">
+          <desc>
+            <name>LAILLER (M.).</name>
+            <trait>
+              <p>86, rue de Miromesnil, Paris.</p>
+            </trait>
+          </desc>
+          <item n="313" xml:id="PCP_1902_e135_i313">
+            <num>313</num>
+            <title>Après la Moisson. D. Ch. Fr.</title>
+          </item>
+          <item n="314" xml:id="PCP_1902_e135_i314">
+            <num>314</num>
+            <title>La Hutte au bois. D. Ch. Fr.</title>
+          </item>
+          <item n="315" xml:id="PCP_1902_e135_i315">
+            <num>315</num>
+            <title>Temps d’Automne. A. Gb.</title>
+          </item>
+        </entry>
+        <entry n="136" xml:id="PCP_1902_e136" source="cat_pcp_1902.pdf_page_44.png">
+          <desc>
+            <name>LANGDON COBURN (Alvin).</name>
+            <trait>
+              <p>827, Boylston Street, Boston (U. S. A.).</p>
+            </trait>
+          </desc>
+          <item n="316" xml:id="PCP_1902_e136_i316">
+            <num>316</num>
+            <title>Le Stryge. Notre-Dame. Pl.</title>
+          </item>
+          <item n="317" xml:id="PCP_1902_e136_i317">
+            <num>317</num>
+            <title>Bords de rivière. Pl.</title>
+          </item>
+          <item n="318" xml:id="PCP_1902_e136_i318">
+            <num>318</num>
+            <title>L'Auberge. Pl.</title>
+          </item>
+        </entry>
+        <entry n="137" xml:id="PCP_1902_e137" source="cat_pcp_1902.pdf_page_44.png">
+          <desc>
+            <name>LANGLOIS (Maurice).</name>
+            <trait>
+              <p> S. V. P. - S. A. E. 15, rue Hoche, Versailles (Seine-et- Oise).</p>
+            </trait>
+          </desc>
+          <item n="319" xml:id="PCP_1902_e137_i319">
+            <num>319</num>
+            <title>Marine. A. Vu.</title>
+          </item>
+        </entry>
+        <entry n="138" xml:id="PCP_1902_e138" source="cat_pcp_1902.pdf_page_45.png">
+          <desc>
+            <name>LANGOIT (F.).</name>
+            <trait>
+              <p>23 bis, avenue Niel, Paris.</p>
+            </trait>
+          </desc>
+          <item n="320" xml:id="PCP_1902_e138_i320">
+            <num>320</num>
+            <title>“ Dédette ”. Portrait. D. Gb.</title>
+          </item>
+        </entry>
+        <entry n="139" xml:id="PCP_1902_e139" source="cat_pcp_1902.pdf_page_45.png">
+          <desc>
+            <name>LASSENCE (Mme Ch.</name>
+            <trait>
+              <p> de). Le Chalet, Petit-Boulevard, Pau (Basses-Pyrénées).</p>
+            </trait>
+          </desc>
+          <item n="321" xml:id="PCP_1902_e139_i321">
+            <num>321</num>
+            <title>Étude d'enfant. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="140" xml:id="PCP_1902_e140" source="cat_pcp_1902.pdf_page_45.png">
+          <desc>
+            <name>LE BÈGUE (René).</name>
+            <trait>
+              <p> P. C. P. 51, rue Le Peletier, Paris.</p>
+            </trait>
+          </desc>
+          <item n="322" xml:id="PCP_1902_e140_i322">
+            <num>322</num>
+            <title>Esquisse. Br.</title>
+          </item>
+          <item n="323" xml:id="PCP_1902_e140_i323">
+            <num>323</num>
+            <title>Étude pour une enseigne. Gb.</title>
+          </item>
+          <item n="324" xml:id="PCP_1902_e140_i324">
+            <num>324</num>
+            <title>Femme drapée. Gb.</title>
+          </item>
+          <item n="325" xml:id="PCP_1902_e140_i325">
+            <num>325</num>
+            <title>Éventail. Ch.</title>
+          </item>
+        </entry>
+        <entry n="141" xml:id="PCP_1902_e141" source="cat_pcp_1902.pdf_page_45.png">
+          <desc>
+            <name>LEDARD (René).</name>
+            <trait>
+              <p> P. C. P. 37, rue Godot-de-Mauroy, Paris.</p>
+            </trait>
+          </desc>
+          <item n="326" xml:id="PCP_1902_e141_i326">
+            <num>326</num>
+            <title>Portrait de Madame R.</title>
+          </item>
+          <item n="327" xml:id="PCP_1902_e141_i327">
+            <num>327</num>
+            <title>Marine.</title>
+          </item>
+          <item n="328" xml:id="PCP_1902_e141_i328">
+            <num>328</num>
+            <title>Sous les Grands Arbres.</title>
+          </item>
+          <item n="329" xml:id="PCP_1902_e141_i329">
+            <num>329</num>
+            <title>Inondation sur les bords de la Loire.</title>
+          </item>
+          <item n="330" xml:id="PCP_1902_e141_i330">
+            <num>330</num>
+            <title>Matinée d'Automne.</title>
+          </item>
+        </entry>
+        <entry n="142" xml:id="PCP_1902_e142" source="cat_pcp_1902.pdf_page_46.png">
+          <desc>
+            <name>LE ROUX (Paul).</name>
+            <trait>
+              <p> P. C. P. - S. A. E. 48, boulevard Malesherbes, Paris.</p>
+            </trait>
+          </desc>
+          <item n="331" xml:id="PCP_1902_e142_i331">
+            <num>331</num>
+            <title>Près de la Roche-Guyon.</title>
+          </item>
+          <item n="332" xml:id="PCP_1902_e142_i332">
+            <num>332</num>
+            <title>Sur le Lay </title>
+            <desc>(Vendée).</desc>
+          </item>
+          <item n="333" xml:id="PCP_1902_e142_i333">
+            <num>333</num>
+            <title>Marais mouillés </title>
+            <desc>(Vendée).</desc>
+          </item>
+        </entry>
+        <entry n="143" xml:id="PCP_1902_e143" source="cat_pcp_1902.pdf_page_46.png">
+          <desc>
+            <name>LESTRANGE (Comte de).</name>
+            <trait>
+              <p> P. C. P. - S. A. E. 43, avenue Montaigne, Paris.</p>
+            </trait>
+          </desc>
+          <item n="334" xml:id="PCP_1902_e143_i334">
+            <num>334</num>
+            <title>Sur la Seine. S.</title>
+          </item>
+          <item n="335" xml:id="PCP_1902_e143_i335">
+            <num>335</num>
+            <title>Feuilles mortes à Trianon. Ch. V.</title>
+          </item>
+        </entry>
+        <entry n="144" xml:id="PCP_1902_e144" source="cat_pcp_1902.pdf_page_46.png">
+          <desc>
+            <name>LEYS (F.).</name>
+            <trait>
+              <p> C. EFF. 26, rue Ernest-Allard (Bruxelles).</p>
+            </trait>
+          </desc>
+          <item n="336" xml:id="PCP_1902_e144_i336">
+            <num>336</num>
+            <title>Pauvre Bourg. Gb.</title>
+          </item>
+          <item n="337" xml:id="PCP_1902_e144_i337">
+            <num>337</num>
+            <title>L'Heure de l'Office. Gb.</title>
+          </item>
+          <item n="338" xml:id="PCP_1902_e144_i338">
+            <num>338</num>
+            <title>Via Serbelloni. Ch.</title>
+          </item>
+          <item n="339" xml:id="PCP_1902_e144_i339">
+            <num>339</num>
+            <title>La Rentrée. Ch.</title>
+          </item>
+          <item n="340" xml:id="PCP_1902_e144_i340">
+            <num>340</num>
+            <title>Profil. Pl.</title>
+          </item>
+        </entry>
+        <entry n="145" xml:id="PCP_1902_e145" source="cat_pcp_1902.pdf_page_46.png">
+          <desc>
+            <name>LOUP (Capitaine du).</name>
+            <trait>
+              <p>93, rue de Prony, Paris.</p>
+            </trait>
+          </desc>
+          <item n="341" xml:id="PCP_1902_e145_i341">
+            <num>341</num>
+            <title>Cascades du Cydnus. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="146" xml:id="PCP_1902_e146" source="cat_pcp_1902.pdf_page_46.png">
+          <desc>
+            <name>MABIRE (Edmond).</name>
+            <trait>
+              <p>6, rue de Madrid, Paris.</p>
+            </trait>
+          </desc>
+          <item n="342" xml:id="PCP_1902_e146_i342">
+            <num>342</num>
+            <title>Portrait de M. B. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="147" xml:id="PCP_1902_e147" source="cat_pcp_1902.pdf_page_47.png">
+          <desc>
+            <name>MAHY. C.</name>
+            <trait>
+              <p> EFF. Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="343" xml:id="PCP_1902_e147_i343">
+            <num>343</num>
+            <title>Neiges. Gb.</title>
+          </item>
+          <item n="344" xml:id="PCP_1902_e147_i344">
+            <num>344</num>
+            <title>Moutons. Gb.</title>
+          </item>
+        </entry>
+        <entry n="148" xml:id="PCP_1902_e148" source="cat_pcp_1902.pdf_page_47.png">
+          <desc>
+            <name>MALLET (H.).</name>
+            <trait>
+              <p>Villa Jeanne, Nice-Baumettes (Alves- Maritimes).</p>
+            </trait>
+          </desc>
+          <item n="345" xml:id="PCP_1902_e148_i345">
+            <num>345</num>
+            <title>Port de Marseille. A. B.</title>
+          </item>
+          <item n="346" xml:id="PCP_1902_e148_i346">
+            <num>346</num>
+            <title>Coucher de Soleil à Boulogne-sur-Mer. A. B.</title>
+          </item>
+        </entry>
+        <entry n="149" xml:id="PCP_1902_e149" source="cat_pcp_1902.pdf_page_47.png">
+          <desc>
+            <name>MALOFF CHRYSOPRAZE (M.).</name>
+            <trait>
+              <p>134, boulevard du Montparnasse, Paris.</p>
+            </trait>
+          </desc>
+          <item n="347" xml:id="PCP_1902_e149_i347">
+            <num>347</num>
+            <title>Par un Soir de Gros Temps. A. Ch. Fr.</title>
+          </item>
+          <item n="348" xml:id="PCP_1902_e149_i348">
+            <num>348</num>
+            <title>Clair de Lune. A. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="150" xml:id="PCP_1902_e150" source="cat_pcp_1902.pdf_page_47.png">
+          <desc>
+            <name>MANNHEIM (J.).</name>
+            <trait>
+              <p> P. C. P. 7, rue Saint-Georges, Paris.</p>
+            </trait>
+          </desc>
+          <item n="349" xml:id="PCP_1902_e150_i349">
+            <num>349</num>
+            <title>Étude. D. Pl.</title>
+          </item>
+        </entry>
+        <entry n="151" xml:id="PCP_1902_e151" source="cat_pcp_1902.pdf_page_47.png">
+          <desc>
+            <name>MANWARING (E.-E.).</name>
+            <trait>
+              <p>Holmbury St.-Botolph's road, Worthing (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="350" xml:id="PCP_1902_e151_i350">
+            <num>350</num>
+            <title>Port de Dieppe. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="152" xml:id="PCP_1902_e152" source="cat_pcp_1902.pdf_page_48.png">
+          <desc>
+            <name>MARCHANT (Mlle P.).</name>
+            <trait>
+              <p>12, rue de Lorraine, Saint-Germain-en- Laye (Seine-et-Oise).</p>
+            </trait>
+          </desc>
+          <item n="351" xml:id="PCP_1902_e152_i351">
+            <num>351</num>
+            <title>Étude. D. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="153" xml:id="PCP_1902_e153" source="cat_pcp_1902.pdf_page_48.png">
+          <desc>
+            <name>MARCHEVILLE (L.</name>
+            <trait>
+              <p> de). P. C. P. 138, boulevard Hau smann, Paris.</p>
+            </trait>
+          </desc>
+          <item n="352" xml:id="PCP_1902_e153_i352">
+            <num>352</num>
+            <title>Portrait. Ch.</title>
+          </item>
+        </entry>
+        <entry n="154" xml:id="PCP_1902_e154" source="cat_pcp_1902.pdf_page_48.png">
+          <desc>
+            <name>MARGUERY (A.).</name>
+            <trait>
+              <p>1, avenue Carnot, Deville-lès-Rouen (Seine-Inférieure).</p>
+            </trait>
+          </desc>
+          <item n="353" xml:id="PCP_1902_e154_i353">
+            <num>353</num>
+            <title>Matinée de Dégel. D. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="155" xml:id="PCP_1902_e155" source="cat_pcp_1902.pdf_page_48.png">
+          <desc>
+            <name>MARTINET (H.).</name>
+            <trait>
+              <p>39, rue de L'Ouest, Courbevoie (Seine).</p>
+            </trait>
+          </desc>
+          <item n="354" xml:id="PCP_1902_e155_i354">
+            <num>354</num>
+            <title>Soir d'hiyer à Pau. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="156" xml:id="PCP_1902_e156" source="cat_pcp_1902.pdf_page_48.png">
+          <desc>
+            <name>MASSION (Mlle A.).</name>
+            <trait>
+              <p>58, boulevard Haussmann, Paris.</p>
+            </trait>
+          </desc>
+          <item n="355" xml:id="PCP_1902_e156_i355">
+            <num>355</num>
+            <title>Petit Canal à Venise. A. Br.</title>
+          </item>
+          <item n="356" xml:id="PCP_1902_e156_i356">
+            <num>356</num>
+            <title>Le Vicomté à Dinard. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="157" xml:id="PCP_1902_e157" source="cat_pcp_1902.pdf_page_50.png">
+          <desc>
+            <name>MATHY (Capitaine R.).</name>
+            <trait>
+              <p> C. EFF. 41, rue Wény, Ixelles-Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="357" xml:id="PCP_1902_e157_i357">
+            <num>357</num>
+            <title>Étude. Gb.</title>
+          </item>
+          <item n="358" xml:id="PCP_1902_e157_i358">
+            <num>358</num>
+            <title>Captive. Br.</title>
+          </item>
+          <item n="359" xml:id="PCP_1902_e157_i359">
+            <num>359</num>
+            <title>Pensée. Br.</title>
+          </item>
+        </entry>
+        <entry n="158" xml:id="PCP_1902_e158" source="cat_pcp_1902.pdf_page_50.png">
+          <desc>
+            <name>MAUPEOU (Vte A.</name>
+            <trait>
+              <p> de). P. C. P. - S. A. E. 4, rue de La Baume, Paris.</p>
+            </trait>
+          </desc>
+          <item n="360" xml:id="PCP_1902_e158_i360">
+            <num>360</num>
+            <title>Sous la neige. A. Br.</title>
+          </item>
+          <item n="361" xml:id="PCP_1902_e158_i361">
+            <num>361</num>
+            <title>Sous la neige. A. Br.</title>
+          </item>
+          <item n="362" xml:id="PCP_1902_e158_i362">
+            <num>362</num>
+            <title>Sous la neige. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="159" xml:id="PCP_1902_e159" source="cat_pcp_1902.pdf_page_50.png">
+          <desc>
+            <name>MEYER HEIN (H.).</name>
+            <trait>
+              <p>16, rue Brémontier, Paris.</p>
+            </trait>
+          </desc>
+          <item n="363" xml:id="PCP_1902_e159_i363">
+            <num>363</num>
+            <title>L'Hiver. A. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="160" xml:id="PCP_1902_e160" source="cat_pcp_1902.pdf_page_50.png">
+          <desc>
+            <name>MICHELIS (Fernand).</name>
+            <trait>
+              <p>Palais de la Bourse (Marseille).</p>
+            </trait>
+          </desc>
+          <item n="364" xml:id="PCP_1902_e160_i364">
+            <num>364</num>
+            <title>Dans le Port. A. Ch.</title>
+          </item>
+          <item n="365" xml:id="PCP_1902_e160_i365">
+            <num>365</num>
+            <title>Remorqueur. A. Ch.</title>
+          </item>
+          <item n="366" xml:id="PCP_1902_e160_i366">
+            <num>366</num>
+            <title>Paysage d'Automne. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="161" xml:id="PCP_1902_e161" source="cat_pcp_1902.pdf_page_50.png">
+          <desc>
+            <name>MISONNE (Léonard).</name>
+            <trait>
+              <p> A. B. DE PH. Gilly (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="367" xml:id="PCP_1902_e161_i367">
+            <num>367</num>
+            <title>Hiver sur la Meuse.</title>
+          </item>
+          <item n="368" xml:id="PCP_1902_e161_i368">
+            <num>368</num>
+            <title>Au Coucher du Soleil.</title>
+          </item>
+          <item n="369" xml:id="PCP_1902_e161_i369">
+            <num>369</num>
+            <title>Hiver sur la Meuse.</title>
+          </item>
+          <item n="370" xml:id="PCP_1902_e161_i370">
+            <num>370</num>
+            <title>Brume.</title>
+          </item>
+          <item n="371" xml:id="PCP_1902_e161_i371">
+            <num>371</num>
+            <title>En passant.</title>
+          </item>
+        </entry>
+        <entry n="162" xml:id="PCP_1902_e162" source="cat_pcp_1902.pdf_page_51.png">
+          <desc>
+            <name>MIZAEL DE PAS (Comte).</name>
+            <trait>
+              <p>Rue Gauthier-de-Châtillon, Lille (Nord).</p>
+            </trait>
+          </desc>
+          <item n="372" xml:id="PCP_1902_e162_i372">
+            <num>372</num>
+            <title>Profil perdu. Br.</title>
+          </item>
+          <item n="373" xml:id="PCP_1902_e162_i373">
+            <num>373</num>
+            <title>Sybilla. Br.</title>
+          </item>
+        </entry>
+        <entry n="163" xml:id="PCP_1902_e163" source="cat_pcp_1902.pdf_page_51.png">
+          <desc>
+            <name>MONS (Van).</name>
+            <trait>
+              <p> C. EFF. Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="374" xml:id="PCP_1902_e163_i374">
+            <num>374</num>
+            <title>Moutons et Brouillard. Gb.</title>
+          </item>
+          <item n="375" xml:id="PCP_1902_e163_i375">
+            <num>375</num>
+            <title>Étang de Rouge-Cloître. Gb.</title>
+          </item>
+        </entry>
+        <entry n="164" xml:id="PCP_1902_e164" source="cat_pcp_1902.pdf_page_51.png">
+          <desc>
+            <name>NIEDECKEN (Georges).</name>
+            <trait>
+              <p>Milwankee (U. S. A.).</p>
+            </trait>
+          </desc>
+          <item n="376" xml:id="PCP_1902_e164_i376">
+            <num>376</num>
+            <title>Dans les Roseaux. Pl.</title>
+          </item>
+          <item n="377" xml:id="PCP_1902_e164_i377">
+            <num>377</num>
+            <title>Femme aux gants noirs. Pl.</title>
+          </item>
+          <item n="378" xml:id="PCP_1902_e164_i378">
+            <num>378</num>
+            <title>Dans le Bois. Pl.</title>
+          </item>
+          <item n="379" xml:id="PCP_1902_e164_i379">
+            <num>379</num>
+            <title>Femme lisant. Pl.</title>
+          </item>
+        </entry>
+        <entry n="165" xml:id="PCP_1902_e165" source="cat_pcp_1902.pdf_page_51.png">
+          <desc>
+            <name>NORTH (H.-A.).</name>
+            <trait>
+              <p>254, South 17th Street, Philadelphie.</p>
+            </trait>
+          </desc>
+          <item n="380" xml:id="PCP_1902_e165_i380">
+            <num>380</num>
+            <title>Soir d'Opéra. Pl.</title>
+          </item>
+          <item n="381" xml:id="PCP_1902_e165_i381">
+            <num>381</num>
+            <title>La Trinité à minuit. Pl.</title>
+          </item>
+        </entry>
+        <entry n="166" xml:id="PCP_1902_e166" source="cat_pcp_1902.pdf_page_51.png">
+          <desc>
+            <name>OTTENHEIM (Léon).</name>
+            <trait>
+              <p> S. V. P. - P. C. P. 73, rue Duplessis, Versailles (Seine- et-Oise).</p>
+            </trait>
+          </desc>
+          <item n="382" xml:id="PCP_1902_e166_i382">
+            <num>382</num>
+            <title>Moutons. A. Br. Vu.</title>
+          </item>
+          <item n="383" xml:id="PCP_1902_e166_i383">
+            <num>383</num>
+            <title>Le Mein, près Francfort. A. Br.</title>
+            <desc>près Francfort. A. Br.</desc>
+          </item>
+          <item n="384" xml:id="PCP_1902_e166_i384">
+            <num>384</num>
+            <title>L'Elbe à Hambourg. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="167" xml:id="PCP_1902_e167" source="cat_pcp_1902.pdf_page_52.png">
+          <desc>
+            <name>PATERSON (Andrew).</name>
+            <trait>
+              <p>32, Church Street, Inverness (Ecosse).</p>
+            </trait>
+          </desc>
+          <item n="385" xml:id="PCP_1902_e167_i385">
+            <num>385</num>
+            <title>Portrait d'une jeune Dame. D. Br.</title>
+          </item>
+          <item n="386" xml:id="PCP_1902_e167_i386">
+            <num>386</num>
+            <title>Ma Femme. D. Pl.</title>
+          </item>
+          <item n="387" xml:id="PCP_1902_e167_i387">
+            <num>387</num>
+            <title>Prière du Soir. D. Pl.</title>
+          </item>
+        </entry>
+        <entry n="168" xml:id="PCP_1902_e168" source="cat_pcp_1902.pdf_page_52.png">
+          <desc>
+            <name>PECTOR (S.).</name>
+            <trait>
+              <p> S. F. P. - S. A. E. 9, rue Lincoln, Paris.</p>
+            </trait>
+          </desc>
+          <item n="388" xml:id="PCP_1902_e168_i388">
+            <num>388</num>
+            <title>Moulin d'Habaurapt. A. Br.</title>
+          </item>
+          <item n="389" xml:id="PCP_1902_e168_i389">
+            <num>389</num>
+            <title>Le Hœneik. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="169" xml:id="PCP_1902_e169" source="cat_pcp_1902.pdf_page_52.png">
+          <desc>
+            <name>PERSONNAZ (A.).</name>
+            <trait>
+              <p> S. F. P.- S. A. E. 4, rue Sainte-Cécile, Pars.</p>
+            </trait>
+          </desc>
+          <item n="390" xml:id="PCP_1902_e169_i390">
+            <num>390</num>
+            <title>Effet du Soir sur la mer. A. Ch.</title>
+          </item>
+          <item n="391" xml:id="PCP_1902_e169_i391">
+            <num>391</num>
+            <title>Devant l’Esterel. A. Ch.</title>
+          </item>
+          <item n="392" xml:id="PCP_1902_e169_i392">
+            <num>392</num>
+            <title>Labour. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="170" xml:id="PCP_1902_e170" source="cat_pcp_1902.pdf_page_52.png">
+          <desc>
+            <name>PETIT(Charles). P.</name>
+            <trait>
+              <p> C. P. 30, avenue de Messine, Paris.</p>
+            </trait>
+          </desc>
+          <item n="393" xml:id="PCP_1902_e170_i393">
+            <num>393</num>
+            <title>A la foire de Montbran </title>
+            <desc>(Côtes-du-Nord). A. Ch.</desc>
+          </item>
+          <item n="394" xml:id="PCP_1902_e170_i394">
+            <num>394</num>
+            <title>A la foire de Montbran. A. Ch.</title>
+          </item>
+          <item n="395" xml:id="PCP_1902_e170_i395">
+            <num>395</num>
+            <title>Bords d'Etang. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="171" xml:id="PCP_1902_e171" source="cat_pcp_1902.pdf_page_52.png">
+          <desc>
+            <name>PETIT (Roger).</name>
+            <trait>
+              <p>30, avenue de Messine, Paris.</p>
+            </trait>
+          </desc>
+          <item n="396" xml:id="PCP_1902_e171_i396">
+            <num>396</num>
+            <title>Dans un Bar. A. Ch.</title>
+          </item>
+          <item n="397" xml:id="PCP_1902_e171_i397">
+            <num>397</num>
+            <title>Pauvre Vieille. A. Ch.</title>
+          </item>
+          <item n="398" xml:id="PCP_1902_e171_i398">
+            <num>398</num>
+            <title>En Hollande. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="172" xml:id="PCP_1902_e172" source="cat_pcp_1902.pdf_page_53.png">
+          <desc>
+            <name>PONS (Jean).</name>
+            <trait>
+              <p>25, cours Lieutaud, Marseille.</p>
+            </trait>
+          </desc>
+          <item n="399" xml:id="PCP_1902_e172_i399">
+            <num>399</num>
+            <title>Après l'Orage. D. Ch.</title>
+          </item>
+          <item n="400" xml:id="PCP_1902_e172_i400">
+            <num>400</num>
+            <title>Crépuscule. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="173" xml:id="PCP_1902_e173" source="cat_pcp_1902.pdf_page_53.png">
+          <desc>
+            <name>PRIN D'ORIGNY (F.).</name>
+            <trait>
+              <p> P. C. P. - S. A. E. 16, rue du Pré-aux-Clercs, Paris.</p>
+            </trait>
+          </desc>
+          <item n="401" xml:id="PCP_1902_e173_i401">
+            <num>401</num>
+            <title>Portrait. Ch. Fr.</title>
+          </item>
+          <item n="402" xml:id="PCP_1902_e173_i402">
+            <num>402</num>
+            <title>Brumes d'Automne. A. Pl.</title>
+          </item>
+          <item n="403" xml:id="PCP_1902_e173_i403">
+            <num>403</num>
+            <title>Le Pont des Saints-Pères. A. Pl.</title>
+          </item>
+          <item n="404" xml:id="PCP_1902_e173_i404">
+            <num>404</num>
+            <title>Matinée d'Octobre. D. Ch. Fr.</title>
+          </item>
+          <item n="405" xml:id="PCP_1902_e173_i405">
+            <num>405</num>
+            <title>La Marne à Champigny. D. Br.</title>
+          </item>
+        </entry>
+        <entry n="174" xml:id="PCP_1902_e174" source="cat_pcp_1902.pdf_page_53.png">
+          <desc>
+            <name>PROUST (Émile).</name>
+            <trait>
+              <p>11, rue de Laroche, Saintes (Charente- Inférieure).</p>
+            </trait>
+          </desc>
+          <item n="406" xml:id="PCP_1902_e174_i406">
+            <num>406</num>
+            <title>Château de Clisson. D. Ch. V.</title>
+          </item>
+        </entry>
+        <entry n="175" xml:id="PCP_1902_e175" source="cat_pcp_1902.pdf_page_53.png">
+          <desc>
+            <name>PUYO (C.).</name>
+            <trait>
+              <p> P. C. P. 5, avenue Dupuis, La Fère (Aisne).</p>
+            </trait>
+          </desc>
+          <item n="407" xml:id="PCP_1902_e175_i407">
+            <num>407</num>
+            <title>Impression d'Automne. Ch. Fr.</title>
+          </item>
+          <item n="408" xml:id="PCP_1902_e175_i408">
+            <num>408</num>
+            <title>Pommier en fleur. Ch. Fr.</title>
+          </item>
+          <item n="409" xml:id="PCP_1902_e175_i409">
+            <num>409</num>
+            <title>Nymphe. Ch. Fr.</title>
+          </item>
+          <item n="410" xml:id="PCP_1902_e175_i410">
+            <num>410</num>
+            <title>Octobre. Ch. Fr.</title>
+          </item>
+          <item n="411" xml:id="PCP_1902_e175_i411">
+            <num>411</num>
+            <title>Le Ruisseau. Ch. Fr.</title>
+          </item>
+          <item n="412" xml:id="PCP_1902_e175_i412">
+            <num>412</num>
+            <title>Étude. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="176" xml:id="PCP_1902_e176" source="cat_pcp_1902.pdf_page_54.png">
+          <desc>
+            <name>QUENTIN (J.).</name>
+            <trait>
+              <p>Sainte-Catherine-lez-Arras (Pas-de-Calais).</p>
+            </trait>
+          </desc>
+          <item n="413" xml:id="PCP_1902_e176_i413">
+            <num>413</num>
+            <title>Crépuscule d'Hiver. D.</title>
+          </item>
+          <item n="414" xml:id="PCP_1902_e176_i414">
+            <num>414</num>
+            <title>Pour les Oiseaux. D.</title>
+          </item>
+        </entry>
+        <entry n="177" xml:id="PCP_1902_e177" source="cat_pcp_1902.pdf_page_54.png">
+          <desc>
+            <name>REGAD (Albert).</name>
+            <trait>
+              <p> P. C. P. - PH. CL. HAUT-JURA. 42, rue du Pré, Saint-Claude (Jura).</p>
+            </trait>
+          </desc>
+          <item n="415" xml:id="PCP_1902_e177_i415">
+            <num>415</num>
+            <title>Impression d'Automne. A. Br.</title>
+          </item>
+          <item n="416" xml:id="PCP_1902_e177_i416">
+            <num>416</num>
+            <title>Moutons à l'Alpage. A. Br.</title>
+          </item>
+          <item n="417" xml:id="PCP_1902_e177_i417">
+            <num>417</num>
+            <title>Étang des Dombes. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="178" xml:id="PCP_1902_e178" source="cat_pcp_1902.pdf_page_54.png">
+          <desc>
+            <name>RISTON (Victor).</name>
+            <trait>
+              <p> PRÉS. DE LA SOC. LORRAINE DE PHOTOGR. Malzéville, Nancy (Meurthe-et-Moselle).</p>
+            </trait>
+          </desc>
+          <item n="418" xml:id="PCP_1902_e178_i418">
+            <num>418</num>
+            <title>A la Fontaine. A. G. Br.</title>
+          </item>
+          <item n="419" xml:id="PCP_1902_e178_i419">
+            <num>419</num>
+            <title>Au Travail. A. G. Br.</title>
+          </item>
+        </entry>
+        <entry n="179" xml:id="PCP_1902_e179" source="cat_pcp_1902.pdf_page_54.png">
+          <desc>
+            <name>RIVÉ.</name>
+            <trait>
+              <p>41, rue du Bel-Air, Le Mans (Sarthe).</p>
+            </trait>
+          </desc>
+          <item n="420" xml:id="PCP_1902_e179_i420">
+            <num>420</num>
+            <title>Agnus.</title>
+          </item>
+        </entry>
+        <entry n="180" xml:id="PCP_1902_e180" source="cat_pcp_1902.pdf_page_54.png">
+          <desc>
+            <name>ROCHAMBEAU (Comte de).</name>
+            <trait>
+              <p>P. C. P. 56, avenue Victor-Hugo, Paris.</p>
+            </trait>
+          </desc>
+          <item n="421" xml:id="PCP_1902_e180_i421">
+            <num>421</num>
+            <title>Coin de Foire. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="181" xml:id="PCP_1902_e181" source="cat_pcp_1902.pdf_page_55.png">
+          <desc>
+            <name>ROLATO-PETION (Paul).</name>
+            <trait>
+              <p>45, boulevard du Midi, Le Vésinet (Seine-et-Oise).</p>
+            </trait>
+          </desc>
+          <item n="422" xml:id="PCP_1902_e181_i422">
+            <num>422</num>
+            <title>Enfant. D. Ch.</title>
+          </item>
+          <item n="423" xml:id="PCP_1902_e181_i423">
+            <num>423</num>
+            <title>Étude. D. Ch.</title>
+          </item>
+          <item n="424" xml:id="PCP_1902_e181_i424">
+            <num>424</num>
+            <title>Invocation. D. Ch.</title>
+          </item>
+          <item n="425" xml:id="PCP_1902_e181_i425">
+            <num>425</num>
+            <title>Fresque. D. Gb.</title>
+          </item>
+        </entry>
+        <entry n="182" xml:id="PCP_1902_e182" source="cat_pcp_1902.pdf_page_55.png">
+          <desc>
+            <name>ROM (H.-N.).</name>
+            <trait>
+              <p>Sykkesholms Alle A B, Copenhague (Danemark).</p>
+            </trait>
+          </desc>
+          <item n="426" xml:id="PCP_1902_e182_i426">
+            <num>426</num>
+            <title>Automne. G. cl.</title>
+          </item>
+          <item n="427" xml:id="PCP_1902_e182_i427">
+            <num>427</num>
+            <title>Sieste. Ch.</title>
+          </item>
+        </entry>
+        <entry n="183" xml:id="PCP_1902_e183" source="cat_pcp_1902.pdf_page_55.png">
+          <desc>
+            <name>ROQUERBE (Gustave).</name>
+            <trait>
+              <p> S. A. E. 238, faubourg Saint-Honoré, Paris.</p>
+            </trait>
+          </desc>
+          <item n="428" xml:id="PCP_1902_e183_i428">
+            <num>428</num>
+            <title>Le Tricot. D.</title>
+          </item>
+          <item n="429" xml:id="PCP_1902_e183_i429">
+            <num>429</num>
+            <title>Fileuse au repos. D. Br.</title>
+          </item>
+          <item n="430" xml:id="PCP_1902_e183_i430">
+            <num>430</num>
+            <title>Poussière dorée. D. Br.</title>
+          </item>
+          <item n="431" xml:id="PCP_1902_e183_i431">
+            <num>431</num>
+            <title>Des Chardons. D. Br.</title>
+          </item>
+        </entry>
+        <entry n="184" xml:id="PCP_1902_e184" source="cat_pcp_1902.pdf_page_55.png">
+          <desc>
+            <name>ROUSSEAU (René).</name>
+            <trait>
+              <p> A. B. DE PH. 11, rue des Riches-Claires, Ypres, (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="432" xml:id="PCP_1902_e184_i432">
+            <num>432</num>
+            <title>L'Angélus. A.</title>
+          </item>
+        </entry>
+        <entry n="185" xml:id="PCP_1902_e185" source="cat_pcp_1902.pdf_page_56.png">
+          <desc>
+            <name>ROUZÉ (Paul).</name>
+            <trait>
+              <p> A. PRAT. DE PH. LILLE - S. P. LILLE. 84, rue Brûle-Maison, Lille (Nord).</p>
+            </trait>
+          </desc>
+          <item n="433" xml:id="PCP_1902_e185_i433">
+            <num>433</num>
+            <title>Troupeau de Moutons. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="186" xml:id="PCP_1902_e186" source="cat_pcp_1902.pdf_page_56.png">
+          <desc>
+            <name>ROY (Georges).</name>
+            <trait>
+              <p> P. C. P. - S. A. E. - S. F. P. 145, boulevard Haussmann, Paris.</p>
+            </trait>
+          </desc>
+          <item n="434" xml:id="PCP_1902_e186_i434">
+            <num>434</num>
+            <title>Bœufs à la Herse. A. Ch.</title>
+          </item>
+          <item n="435" xml:id="PCP_1902_e186_i435">
+            <num>435</num>
+            <title>Au Bord de l'eau. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="187" xml:id="PCP_1902_e187" source="cat_pcp_1902.pdf_page_56.png">
+          <desc>
+            <name>ROY (Mlle Madeleine).</name>
+            <trait>
+              <p>145, boulevard Haussmann, Paris.</p>
+            </trait>
+          </desc>
+          <item n="436" xml:id="PCP_1902_e187_i436">
+            <num>436</num>
+            <title>La petite Gitane. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="188" xml:id="PCP_1902_e188" source="cat_pcp_1902.pdf_page_56.png">
+          <desc>
+            <name>RUYSSEN (H.).</name>
+            <trait>
+              <p> C. EFF. Furnes (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="437" xml:id="PCP_1902_e188_i437">
+            <num>437</num>
+            <title>Étang. Br.</title>
+          </item>
+        </entry>
+        <entry n="189" xml:id="PCP_1902_e189" source="cat_pcp_1902.pdf_page_56.png">
+          <desc>
+            <name>SACRÉ (Edmond).</name>
+            <trait>
+              <p> A. B. DE PH. 1, rue de la Calandre, Gand (Belgique).</p>
+            </trait>
+          </desc>
+          <item n="438" xml:id="PCP_1902_e189_i438">
+            <num>438</num>
+            <title>Vieux Moine au Bréviaire. D. Gb.</title>
+          </item>
+          <item n="439" xml:id="PCP_1902_e189_i439">
+            <num>439</num>
+            <title>Brumes du Soir.</title>
+          </item>
+          <item n="440" xml:id="PCP_1902_e189_i440">
+            <num>440</num>
+            <title>Crépuscule d'Hiver. D. Gb. Nature Hivernale. D. Gb.</title>
+          </item>
+        </entry>
+        <entry n="190" xml:id="PCP_1902_e190" source="cat_pcp_1902.pdf_page_57.png">
+          <desc>
+            <name>SCHARF (Otto).</name>
+            <trait>
+              <p> L. R. 139, Victoria strasse, Crefeld (Allemagne).</p>
+            </trait>
+          </desc>
+          <item n="442" xml:id="PCP_1902_e190_i442">
+            <num>442</num>
+            <title>Le Ruisseau dans la Forêt.</title>
+          </item>
+          <item n="443" xml:id="PCP_1902_e190_i443">
+            <num>443</num>
+            <title>Bord de Prairie.</title>
+          </item>
+          <item n="444" xml:id="PCP_1902_e190_i444">
+            <num>444</num>
+            <title>Mère et Enfant.</title>
+          </item>
+        </entry>
+        <entry n="191" xml:id="PCP_1902_e191" source="cat_pcp_1902.pdf_page_57.png">
+          <desc>
+            <name>SCHELCHER (André).</name>
+            <trait>
+              <p>29, rue de la Bienfaisance, Paris.</p>
+            </trait>
+          </desc>
+          <item n="445" xml:id="PCP_1902_e191_i445">
+            <num>445</num>
+            <title>“ Bonum vinum lœtificat ”.</title>
+          </item>
+        </entry>
+        <entry n="192" xml:id="PCP_1902_e192" source="cat_pcp_1902.pdf_page_57.png">
+          <desc>
+            <name>SCOTT (Robert).</name>
+            <trait>
+              <p>New Lynn St, Léonard road, Ayr (Écosse).</p>
+            </trait>
+          </desc>
+          <item n="446" xml:id="PCP_1902_e192_i446">
+            <num>446</num>
+            <title>Étude de Tête. Al.</title>
+          </item>
+          <item n="447" xml:id="PCP_1902_e192_i447">
+            <num>447</num>
+            <title>Portrait du Révérend W. Cavins. Pl. Dm.</title>
+          </item>
+        </entry>
+        <entry n="193" xml:id="PCP_1902_e193" source="cat_pcp_1902.pdf_page_57.png">
+          <desc>
+            <name>SEIGNEURIE (Mme).</name>
+            <trait>
+              <p>28 bis, rue Guillaume-Tell, Paris.</p>
+            </trait>
+          </desc>
+          <item n="448" xml:id="PCP_1902_e193_i448">
+            <num>448</num>
+            <title>Légère Brise. A.</title>
+          </item>
+        </entry>
+        <entry n="194" xml:id="PCP_1902_e194" source="cat_pcp_1902.pdf_page_57.png">
+          <desc>
+            <name>SIMON (Th.).</name>
+            <trait>
+              <p>9, rue Clavel, Paris.</p>
+            </trait>
+          </desc>
+          <item n="449" xml:id="PCP_1902_e194_i449">
+            <num>449</num>
+            <title>Coucher de Soleil à Kairouan. A. Br.</title>
+          </item>
+          <item n="450" xml:id="PCP_1902_e194_i450">
+            <num>450</num>
+            <title>Oasis à Biskra. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="195" xml:id="PCP_1902_e195" source="cat_pcp_1902.pdf_page_59.png">
+          <desc>
+            <name>SINGLY (P.</name>
+            <trait>
+              <p> de). P. C. P. 89, boulevard Malesherbes, Paris.</p>
+            </trait>
+          </desc>
+          <item n="451" xml:id="PCP_1902_e195_i451">
+            <num>451</num>
+            <title>Les Crémeaux à Meulan. D. Pl.</title>
+          </item>
+        </entry>
+        <entry n="196" xml:id="PCP_1902_e196" source="cat_pcp_1902.pdf_page_59.png">
+          <desc>
+            <name>SNEYERS (L.).</name>
+            <trait>
+              <p> C. EFF. Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="452" xml:id="PCP_1902_e196_i452">
+            <num>452</num>
+            <title>Au Petit-jour. Gb.</title>
+          </item>
+          <item n="453" xml:id="PCP_1902_e196_i453">
+            <num>453</num>
+            <title>Soleil de Mars. Gb.</title>
+          </item>
+          <item n="454" xml:id="PCP_1902_e196_i454">
+            <num>454</num>
+            <title>Dame au Chapeau. Ch.</title>
+          </item>
+          <item n="455" xml:id="PCP_1902_e196_i455">
+            <num>455</num>
+            <title>Dans le Brouillard. Pl.</title>
+          </item>
+          <item n="456" xml:id="PCP_1902_e196_i456">
+            <num>456</num>
+            <title>La Herse. Gb.</title>
+          </item>
+        </entry>
+        <entry n="197" xml:id="PCP_1902_e197" source="cat_pcp_1902.pdf_page_59.png">
+          <desc>
+            <name>SOLLET (Charles).</name>
+            <trait>
+              <p> S. A. E. 1, rue Turbigo, Paris.</p>
+            </trait>
+          </desc>
+          <item n="457" xml:id="PCP_1902_e197_i457">
+            <num>457</num>
+            <title>La Dame à l'Éventail. D. Gb.</title>
+          </item>
+          <item n="458" xml:id="PCP_1902_e197_i458">
+            <num>458</num>
+            <title>Portrait. D. Gb.</title>
+          </item>
+          <item n="459" xml:id="PCP_1902_e197_i459">
+            <num>459</num>
+            <title>Portrait de M. V.-D. Gb.</title>
+          </item>
+          <item n="460" xml:id="PCP_1902_e197_i460">
+            <num>460</num>
+            <title>Aux Champs. D. Gb.</title>
+          </item>
+          <item n="461" xml:id="PCP_1902_e197_i461">
+            <num>461</num>
+            <title>Étude en sanguine. D. Gb.</title>
+          </item>
+          <item n="462" xml:id="PCP_1902_e197_i462">
+            <num>462</num>
+            <title>La Cuisinière. D. Gb.</title>
+          </item>
+        </entry>
+        <entry n="198" xml:id="PCP_1902_e198" source="cat_pcp_1902.pdf_page_59.png">
+          <desc>
+            <name>SOUZY (A.).</name>
+            <trait>
+              <p>28, boulevard Périer, Marseille.</p>
+            </trait>
+          </desc>
+          <item n="463" xml:id="PCP_1902_e198_i463">
+            <num>463</num>
+            <title>Étude. D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="199" xml:id="PCP_1902_e199" source="cat_pcp_1902.pdf_page_59.png">
+          <desc>
+            <name>SQUEVILLE (Maurice).</name>
+            <trait>
+              <p>15, rue Eugénie, Saint-Mandé (Seine).</p>
+            </trait>
+          </desc>
+          <item n="464" xml:id="PCP_1902_e199_i464">
+            <num>464</num>
+            <title>Portrait d'Enfant. A.</title>
+          </item>
+        </entry>
+        <entry n="200" xml:id="PCP_1902_e200" source="cat_pcp_1902.pdf_page_60.png">
+          <desc>
+            <name>STIEGLITZ (Alfred).</name>
+            <trait>
+              <p> L. R.</p>
+            </trait>
+          </desc>
+          <item n="3" xml:id="PCP_1902_e200_i3">
+            <num>3</num>
+            <title>W, 29me rue, New-York </title>
+            <desc>29me rue, New-York (U. S. A.).</desc>
+          </item>
+          <item n="465" xml:id="PCP_1902_e200_i465">
+            <num>465</num>
+            <title>Printemps.</title>
+          </item>
+          <item n="466" xml:id="PCP_1902_e200_i466">
+            <num>466</num>
+            <title>Étude d'éclairage. D. Pl.</title>
+          </item>
+        </entry>
+        <entry n="201" xml:id="PCP_1902_e201" source="cat_pcp_1902.pdf_page_60.png">
+          <desc>
+            <name>STOIBER (A.-H.).</name>
+            <trait>
+              <p> P. C. P. 31, boulevard Haussmann, Paris.</p>
+            </trait>
+          </desc>
+          <item n="467" xml:id="PCP_1902_e201_i467">
+            <num>467</num>
+            <title>Arc de Titus, à Rome. A. Ch.</title>
+            <desc>à Rome. A. Ch.</desc>
+          </item>
+          <item n="468" xml:id="PCP_1902_e201_i468">
+            <num>468</num>
+            <title>En Provence. A. Br.</title>
+          </item>
+          <item n="469" xml:id="PCP_1902_e201_i469">
+            <num>469</num>
+            <title>Approche de l'orage </title>
+            <desc>(Venise). A. Br.</desc>
+          </item>
+        </entry>
+        <entry n="202" xml:id="PCP_1902_e202" source="cat_pcp_1902.pdf_page_60.png">
+          <desc>
+            <name>STOUFFS (Victor).</name>
+            <trait>
+              <p>277, avenue Louise, Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="470" xml:id="PCP_1902_e202_i470">
+            <num>470</num>
+            <title>Brume d'Automne. A. Br.</title>
+          </item>
+          <item n="471" xml:id="PCP_1902_e202_i471">
+            <num>471</num>
+            <title>Décembre. A. Gb.</title>
+          </item>
+          <item n="472" xml:id="PCP_1902_e202_i472">
+            <num>472</num>
+            <title>La Tamise à Londres. A. Gb.</title>
+          </item>
+        </entry>
+        <entry n="203" xml:id="PCP_1902_e203" source="cat_pcp_1902.pdf_page_60.png">
+          <desc>
+            <name>STUMM (J.).</name>
+            <trait>
+              <p>20, rue d'Hauteville, Paris.</p>
+            </trait>
+          </desc>
+          <item n="473" xml:id="PCP_1902_e203_i473">
+            <num>473</num>
+            <title>Étude. A. G. Cl.</title>
+          </item>
+        </entry>
+        <entry n="204" xml:id="PCP_1902_e204" source="cat_pcp_1902.pdf_page_60.png">
+          <desc>
+            <name>TAPONIER (A.).</name>
+            <trait>
+              <p>12, rue de la Paix, Paris.</p>
+            </trait>
+          </desc>
+          <item n="474" xml:id="PCP_1902_e204_i474">
+            <num>474</num>
+            <title>Première Sortie. D.</title>
+          </item>
+          <item n="475" xml:id="PCP_1902_e204_i475">
+            <num>475</num>
+            <title>Profil d'Enfant. D. Ch.</title>
+          </item>
+          <item n="476" xml:id="PCP_1902_e204_i476">
+            <num>476</num>
+            <title>Un Rayon de soleil. D.</title>
+          </item>
+          <item n="477" xml:id="PCP_1902_e204_i477">
+            <num>477</num>
+            <title>Portrait de M. de Feure. A.</title>
+          </item>
+          <item n="478" xml:id="PCP_1902_e204_i478">
+            <num>478</num>
+            <title>Portrait en chapeau de Madame H. de D.-D. Ch.</title>
+          </item>
+        </entry>
+        <entry n="205" xml:id="PCP_1902_e205" source="cat_pcp_1902.pdf_page_61.png">
+          <desc>
+            <name>TEIL DU HAVELT (Baron du).</name>
+            <trait>
+              <p>P. C. P. 3, avenue d'Antin, Paris.</p>
+            </trait>
+          </desc>
+          <item n="479" xml:id="PCP_1902_e205_i479">
+            <num>479</num>
+            <title>Rêverie.</title>
+          </item>
+          <item n="480" xml:id="PCP_1902_e205_i480">
+            <num>480</num>
+            <title>Moutons au pâturage.</title>
+          </item>
+          <item n="481" xml:id="PCP_1902_e205_i481">
+            <num>481</num>
+            <title>La Napoule.</title>
+          </item>
+        </entry>
+        <entry n="206" xml:id="PCP_1902_e206" source="cat_pcp_1902.pdf_page_61.png">
+          <desc>
+            <name>THÉOPHILE-GAUTIER (Dr P.).</name>
+            <trait>
+              <p>46, rue de la Bienfaisance, Paris.</p>
+            </trait>
+          </desc>
+          <item n="482" xml:id="PCP_1902_e206_i482">
+            <num>482</num>
+            <title>Portrait de mademoiselle R. I.-D. Br.</title>
+          </item>
+          <item n="483" xml:id="PCP_1902_e206_i483">
+            <num>483</num>
+            <title>Tête de Jeune Fille. D. Gb.</title>
+          </item>
+          <item n="484" xml:id="PCP_1902_e206_i484">
+            <num>484</num>
+            <title>Iseult. D. Gb.</title>
+          </item>
+          <item n="485" xml:id="PCP_1902_e206_i485">
+            <num>485</num>
+            <title>Étude. D. Gb.</title>
+          </item>
+          <item n="486" xml:id="PCP_1902_e206_i486">
+            <num>486</num>
+            <title>A la fenêtre. D. Gb.</title>
+          </item>
+        </entry>
+        <entry n="207" xml:id="PCP_1902_e207" source="cat_pcp_1902.pdf_page_61.png">
+          <desc>
+            <name>THOMSON (Robert).</name>
+            <trait>
+              <p>66, Newington road, Édimbourg (Écosse).</p>
+            </trait>
+          </desc>
+          <item n="487" xml:id="PCP_1902_e207_i487">
+            <num>487</num>
+            <title>Arrivée de la Mariée. Ch.</title>
+          </item>
+          <item n="488" xml:id="PCP_1902_e207_i488">
+            <num>488</num>
+            <title>Bohémienne. Ch.</title>
+          </item>
+        </entry>
+        <entry n="208" xml:id="PCP_1902_e208" source="cat_pcp_1902.pdf_page_61.png">
+          <desc>
+            <name>THORÉ (A.</name>
+            <trait>
+              <p> de). Rue de la Sangle, Mantes (Seine- et-Oise).</p>
+            </trait>
+          </desc>
+          <item n="489" xml:id="PCP_1902_e208_i489">
+            <num>489</num>
+            <title>La Lecture. D.</title>
+          </item>
+        </entry>
+        <entry n="209" xml:id="PCP_1902_e209" source="cat_pcp_1902.pdf_page_62.png">
+          <desc>
+            <name>THURNEYSSEN (Émile).</name>
+            <trait>
+              <p> P. C. P. 10, rue de Tilsitt, Paris.</p>
+            </trait>
+          </desc>
+          <item n="490" xml:id="PCP_1902_e209_i490">
+            <num>490</num>
+            <title>Portraits de madame G. et de mademoiselle C. A. Br. Vu.</title>
+          </item>
+          <item n="491" xml:id="PCP_1902_e209_i491">
+            <num>491</num>
+            <title>Bords de l'Oise, en Hiver. A. Br. Vu.</title>
+            <desc>en Hiver. A. Br. Vu.</desc>
+          </item>
+          <item n="492" xml:id="PCP_1902_e209_i492">
+            <num>492</num>
+            <title>Jeanne d'Arc. A. Br. Vu.</title>
+          </item>
+          <item n="493" xml:id="PCP_1902_e209_i493">
+            <num>493</num>
+            <title>Ruines de l'Abbaye d'Ourscamp </title>
+            <desc>(Oise). A. Br. Vu.</desc>
+          </item>
+        </entry>
+        <entry n="210" xml:id="PCP_1902_e210" source="cat_pcp_1902.pdf_page_62.png">
+          <desc>
+            <name>TOLLU (Camille).</name>
+            <trait>
+              <p> P. C. P. 9, rue de Grenelle, Paris.</p>
+            </trait>
+          </desc>
+          <item n="494" xml:id="PCP_1902_e210_i494">
+            <num>494</num>
+            <title>A Saint-Sec.</title>
+          </item>
+          <item n="495" xml:id="PCP_1902_e210_i495">
+            <num>495</num>
+            <title>Le Portel.</title>
+          </item>
+          <item n="496" xml:id="PCP_1902_e210_i496">
+            <num>496</num>
+            <title>Moutons à Pinceloup.</title>
+          </item>
+          <item n="497" xml:id="PCP_1902_e210_i497">
+            <num>497</num>
+            <title>Boulogne-sur-mer. Futurs marins.</title>
+          </item>
+        </entry>
+        <entry n="211" xml:id="PCP_1902_e211" source="cat_pcp_1902.pdf_page_62.png">
+          <desc>
+            <name>TOUCAS (Albert).</name>
+            <trait>
+              <p> P. C. P. 29, boulevard des Batignolles, Paris.</p>
+            </trait>
+          </desc>
+          <item n="498" xml:id="PCP_1902_e211_i498">
+            <num>498</num>
+            <title>Contre-jour. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="212" xml:id="PCP_1902_e212" source="cat_pcp_1902.pdf_page_62.png">
+          <desc>
+            <name>TOURANCHET (Claudius).</name>
+            <trait>
+              <p>6, rue Jouffroy, Paris.</p>
+            </trait>
+          </desc>
+          <item n="499" xml:id="PCP_1902_e212_i499">
+            <num>499</num>
+            <title>Étude. D. Ch. Fr.</title>
+          </item>
+          <item n="500" xml:id="PCP_1902_e212_i500">
+            <num>500</num>
+            <title>Étude. D. Ch. Fr.</title>
+          </item>
+        </entry>
+        <entry n="213" xml:id="PCP_1902_e213" source="cat_pcp_1902.pdf_page_64.png">
+          <desc>
+            <name>TYSZKIEWICZ (Comte B.).</name>
+            <trait>
+              <p>P. C. P. - S. A. E. 2bis, rue Boccador, Paris.</p>
+            </trait>
+          </desc>
+          <item n="501" xml:id="PCP_1902_e213_i501">
+            <num>501</num>
+            <title>Paysan japonais en costume de mauvais temps. A. Ch.</title>
+          </item>
+          <item n="502" xml:id="PCP_1902_e213_i502">
+            <num>502</num>
+            <title>Pèlerin japonais. A. Ch.</title>
+          </item>
+          <item n="503" xml:id="PCP_1902_e213_i503">
+            <num>503</num>
+            <title>La Fête des Cerisiers en fleurs à Tokio </title>
+            <desc>(21 avril). A. Ch.</desc>
+          </item>
+          <item n="504" xml:id="PCP_1902_e213_i504">
+            <num>504</num>
+            <title>Vieux Murs de Nankin. A. Ch.</title>
+          </item>
+          <item n="505" xml:id="PCP_1902_e213_i505">
+            <num>505</num>
+            <title>Jonque de Guerre A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="214" xml:id="PCP_1902_e214" source="cat_pcp_1902.pdf_page_64.png">
+          <desc>
+            <name>UBELMANN (Robert).</name>
+            <trait>
+              <p>7, boulevard Barbès, Paris</p>
+            </trait>
+          </desc>
+          <item n="506" xml:id="PCP_1902_e214_i506">
+            <num>506</num>
+            <title>Soir sur le Leman. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="215" xml:id="PCP_1902_e215" source="cat_pcp_1902.pdf_page_64.png">
+          <desc>
+            <name>VALPINÇON (L.).</name>
+            <trait>
+              <p> P. C. P. 79, boulevard Malesherbes, Paris.</p>
+            </trait>
+          </desc>
+          <item n="507" xml:id="PCP_1902_e215_i507">
+            <num>507</num>
+            <title>Le Pâturage. A. Ch. V.</title>
+          </item>
+          <item n="508" xml:id="PCP_1902_e215_i508">
+            <num>508</num>
+            <title>Trappistes allant au travail. A. Ch. V.</title>
+          </item>
+        </entry>
+        <entry n="216" xml:id="PCP_1902_e216" source="cat_pcp_1902.pdf_page_64.png">
+          <desc>
+            <name>VERBEECK (Arthur).</name>
+            <trait>
+              <p> C. EFF.</p>
+            </trait>
+          </desc>
+          <item n="56" xml:id="PCP_1902_e216_i56">
+            <num>56</num>
+            <title>rue du Vanneau, Anvers </title>
+            <desc>Anvers (Belgique).</desc>
+          </item>
+          <item n="509" xml:id="PCP_1902_e216_i509">
+            <num>509</num>
+            <title>Matinée de Septembre.</title>
+          </item>
+          <item n="510" xml:id="PCP_1902_e216_i510">
+            <num>510</num>
+            <title>Intérieur en Campine.</title>
+          </item>
+        </entry>
+        <entry n="217" xml:id="PCP_1902_e217" source="cat_pcp_1902.pdf_page_65.png">
+          <desc>
+            <name>VIEUILLE (G.).</name>
+            <trait>
+              <p> S. F. P. 10, rue Dalayrac, Fontenay-sous- Bois (Seine).</p>
+            </trait>
+          </desc>
+          <item n="511" xml:id="PCP_1902_e217_i511">
+            <num>511</num>
+            <title>Les Lys. A.</title>
+          </item>
+          <item n="512" xml:id="PCP_1902_e217_i512">
+            <num>512</num>
+            <title>Fleurs des Près. A.</title>
+          </item>
+          <item n="513" xml:id="PCP_1902_e217_i513">
+            <num>513</num>
+            <title>Notre-Dame de Paris. Le soleil déclinait, le soir, prompt à le suivre, Brunissait l'horizon... VICTOR HUGO.</title>
+            <desc>prompt à le suivre, Brunissait l'horizon... VICTOR HUGO.</desc>
+          </item>
+        </entry>
+        <entry n="218" xml:id="PCP_1902_e218" source="cat_pcp_1902.pdf_page_65.png">
+          <desc>
+            <name>VILLESTREUX (Comte de la).</name>
+            <trait>
+              <p>P. C. P. - S. A. E. 27, rue Raynouard, Paris.</p>
+            </trait>
+          </desc>
+          <item n="514" xml:id="PCP_1902_e218_i514">
+            <num>514</num>
+            <title>Fontaine à Tipoli. A. Ch.</title>
+          </item>
+          <item n="515" xml:id="PCP_1902_e218_i515">
+            <num>515</num>
+            <title>Oasis de Tripoli. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="219" xml:id="PCP_1902_e219" source="cat_pcp_1902.pdf_page_65.png">
+          <desc>
+            <name>WALLON (E.).</name>
+            <trait>
+              <p> P. C. P. -S. A. E. -S. F. P. 65, rue de Prony, Paris.</p>
+            </trait>
+          </desc>
+          <item n="516" xml:id="PCP_1902_e219_i516">
+            <num>516</num>
+            <title>Soirs de Bretagne. La Sortie des Sardinières. A. Br.</title>
+          </item>
+          <item n="517" xml:id="PCP_1902_e219_i517">
+            <num>517</num>
+            <title>Soirs de Bretagne. Autour du Puits. A. Br.</title>
+          </item>
+          <item n="518" xml:id="PCP_1902_e219_i518">
+            <num>518</num>
+            <title>Au Pardon de Notre-Dame de la Pitié.</title>
+          </item>
+          <item n="519" xml:id="PCP_1902_e219_i519">
+            <num>519</num>
+            <title>Bords du Morbihan </title>
+            <desc>(Noyalo). A. Br.</desc>
+          </item>
+          <item n="520" xml:id="PCP_1902_e219_i520">
+            <num>520</num>
+            <title>Effet de Matin, Hennebont. A. Br.</title>
+            <desc>Hennebont. A. Br.</desc>
+          </item>
+        </entry>
+        <entry n="220" xml:id="PCP_1902_e220" source="cat_pcp_1902.pdf_page_65.png">
+          <desc>
+            <name>WALLS.</name>
+            <trait>
+              <p>47, Lothian Street, Édimbourg (Écosse).</p>
+            </trait>
+          </desc>
+          <item n="521" xml:id="PCP_1902_e220_i521">
+            <num>521</num>
+            <title>Le Rouet.</title>
+          </item>
+        </entry>
+        <entry n="221" xml:id="PCP_1902_e221" source="cat_pcp_1902.pdf_page_66.png">
+          <desc>
+            <name>WARBURG (Miss Agnès).</name>
+            <trait>
+              <p>8, Porchester Terrace, Londres (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="522" xml:id="PCP_1902_e221_i522">
+            <num>522</num>
+            <title>Le Journal. Pl.</title>
+          </item>
+          <item n="523" xml:id="PCP_1902_e221_i523">
+            <num>523</num>
+            <title>Ursula. Pl.</title>
+          </item>
+          <item n="524" xml:id="PCP_1902_e221_i524">
+            <num>524</num>
+            <title>Confluent de fleuve et mer. A. Pl.</title>
+          </item>
+          <item n="525" xml:id="PCP_1902_e221_i525">
+            <num>525</num>
+            <title>Lac de Bala, pays de Galles. Pl.</title>
+            <desc>pays de Galles. Pl.</desc>
+          </item>
+        </entry>
+        <entry n="222" xml:id="PCP_1902_e222" source="cat_pcp_1902.pdf_page_66.png">
+          <desc>
+            <name>WARBURG (J.-C.).</name>
+            <trait>
+              <p>21, Pembridge Gardens, Londres (Angleterre).</p>
+            </trait>
+          </desc>
+          <item n="526" xml:id="PCP_1902_e222_i526">
+            <num>526</num>
+            <title>Un Soleil. Pl.</title>
+          </item>
+          <item n="527" xml:id="PCP_1902_e222_i527">
+            <num>527</num>
+            <title>Rayon de Soleil. Pl.</title>
+          </item>
+          <item n="528" xml:id="PCP_1902_e222_i528">
+            <num>528</num>
+            <title>Boutique de Charpentier. Hollande. Pl.</title>
+          </item>
+          <item n="529" xml:id="PCP_1902_e222_i529">
+            <num>529</num>
+            <title>Oostkapelle. Hollande. Pl.</title>
+          </item>
+          <item n="530" xml:id="PCP_1902_e222_i530">
+            <num>530</num>
+            <title>Au “ Park ”. Londres. Br.</title>
+          </item>
+        </entry>
+        <entry n="223" xml:id="PCP_1902_e223" source="cat_pcp_1902.pdf_page_66.png">
+          <desc>
+            <name>WASSERMANN (Dr Melville).</name>
+            <trait>
+              <p>P. C. P. 1, rue du Général-Foy, Paris.</p>
+            </trait>
+          </desc>
+          <item n="531" xml:id="PCP_1902_e223_i531">
+            <num>531</num>
+            <title>Noce Arabe au Caire en 1900. A. Ch.</title>
+          </item>
+        </entry>
+        <entry n="224" xml:id="PCP_1902_e224" source="cat_pcp_1902.pdf_page_66.png">
+          <desc>
+            <name>WATTS LEE (Mme Francis).</name>
+            <trait>
+              <p>63, Peter Parley, Road, Boston (U. S. A.).</p>
+            </trait>
+          </desc>
+          <item n="532" xml:id="PCP_1902_e224_i532">
+            <num>532</num>
+            <title>Théodora. Pl.</title>
+          </item>
+          <item n="533" xml:id="PCP_1902_e224_i533">
+            <num>533</num>
+            <title>Billy. Pl.</title>
+          </item>
+          <item n="534" xml:id="PCP_1902_e224_i534">
+            <num>534</num>
+            <title>Milly. Pl.</title>
+          </item>
+        </entry>
+        <entry n="225" xml:id="PCP_1902_e225" source="cat_pcp_1902.pdf_page_67.png">
+          <desc>
+            <name>WERNWAG (C.-J.).</name>
+            <trait>
+              <p>709, Real Estate Trust, Blag, Philadelphie (U. S. A.).</p>
+            </trait>
+          </desc>
+          <item n="535" xml:id="PCP_1902_e225_i535">
+            <num>535</num>
+            <title>Étude à la Rembrandt. D. Pl.</title>
+          </item>
+          <item n="536" xml:id="PCP_1902_e225_i536">
+            <num>536</num>
+            <title>Portrait de H. D.-D. Pl.</title>
+          </item>
+        </entry>
+        <entry n="226" xml:id="PCP_1902_e226" source="cat_pcp_1902.pdf_page_67.png">
+          <desc>
+            <name>WETREMS (Ad.).</name>
+            <trait>
+              <p> C. EF. 13, Hydraulique, Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="537" xml:id="PCP_1902_e226_i537">
+            <num>537</num>
+            <title>Gros temps à marée haute. Ch.</title>
+          </item>
+        </entry>
+        <entry n="227" xml:id="PCP_1902_e227" source="cat_pcp_1902.pdf_page_67.png">
+          <desc>
+            <name>WHITEHEAD.</name>
+            <trait>
+              <p>George St, Alva (Écosse).</p>
+            </trait>
+          </desc>
+          <item n="538" xml:id="PCP_1902_e227_i538">
+            <num>538</num>
+            <title>Dans le Bois. D. Pl.</title>
+          </item>
+          <item n="539" xml:id="PCP_1902_e227_i539">
+            <num>539</num>
+            <title>Iris.</title>
+          </item>
+        </entry>
+        <entry n="228" xml:id="PCP_1902_e228" source="cat_pcp_1902.pdf_page_67.png">
+          <desc>
+            <name>WUNDERLY.</name>
+            <trait>
+              <p>Glaermischstraate, Zurich (Suisse).</p>
+            </trait>
+          </desc>
+          <item n="540" xml:id="PCP_1902_e228_i540">
+            <num>540</num>
+            <title>“L'esprit planait au-dessus des eaux.” A. Pl. Dm.</title>
+          </item>
+          <item n="541" xml:id="PCP_1902_e228_i541">
+            <num>541</num>
+            <title>Étude. A. Br.</title>
+          </item>
+        </entry>
+        <entry n="229" xml:id="PCP_1902_e229" source="cat_pcp_1902.pdf_page_67.png">
+          <desc>
+            <name>YVON (Albert).</name>
+            <trait>
+              <p>2, rue de l'Hôtel-de- Ville, Vincennes (Seine).</p>
+            </trait>
+          </desc>
+          <item n="542" xml:id="PCP_1902_e229_i542">
+            <num>542</num>
+            <title>La Bonne Pipe. D.</title>
+          </item>
+          <item n="543" xml:id="PCP_1902_e229_i543">
+            <num>543</num>
+            <title>Le Vieux Fumeur. D.</title>
+          </item>
+          <item n="544" xml:id="PCP_1902_e229_i544">
+            <num>544</num>
+            <title>Magda. D.</title>
+          </item>
+          <item n="545" xml:id="PCP_1902_e229_i545">
+            <num>545</num>
+            <title>Le Pont-Neuf au matin. D.</title>
+          </item>
+        </entry>
+        <entry n="230" xml:id="PCP_1902_e230" source="cat_pcp_1902.pdf_page_69.png">
+          <desc>
+            <name>ZIMMERMAN (Walter).</name>
+            <trait>
+              <p> S. P. DE PH. 10, South, 18th Street, Philadelphie (États-Unis).</p>
+            </trait>
+          </desc>
+          <item n="546" xml:id="PCP_1902_e230_i546">
+            <num>546</num>
+            <title>Port de Boston. D. Pl.</title>
+          </item>
+          <item n="547" xml:id="PCP_1902_e230_i547">
+            <num>547</num>
+            <title>Enfant à l'Épine. A. Pl.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

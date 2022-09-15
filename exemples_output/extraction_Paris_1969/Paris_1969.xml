@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Paris_1969">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Paris_1969_e1" source="Cat_Paris_1969_typo_0002.jpg">
+          <desc>
+            <name>PEINTURE</name>
+            <trait>
+              <p>Dimitrie GAVRILEAN, né en 1942 à Güra Humorului (Roumanie).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1969_e1_i1">
+            <num>1</num>
+            <title>La danse de la vie, 1969 </title>
+            <desc>1969 (huile, 137 x 117).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1969_e1_i2">
+            <num>2</num>
+            <title>Le temps, 1969 </title>
+            <desc>1969 (huile 70 x 70). ,</desc>
+          </item>
+          <item n="3" xml:id="Paris_1969_e1_i3">
+            <num>3</num>
+            <title>La fête de ta nouvelle année, 1969 </title>
+            <desc>1969 (huile, 110 x 170).</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Paris_1969_e2" source="Cat_Paris_1969_typo_0002.jpg">
+          <desc>
+            <name>Silvia RAOU,</name>
+            <trait>
+              <p> née en 1935 à Pietroaia (Roumanie).</p>
+            </trait>
+          </desc>
+          <item n="4" xml:id="Paris_1969_e2_i4">
+            <num>4</num>
+            <title>Colonne, 1969 </title>
+            <desc>1969 (pierre, 148 x 43 x 43).</desc>
+          </item>
+          <item n="5" xml:id="Paris_1969_e2_i5">
+            <num>5</num>
+            <title>Maternité, 1969 </title>
+            <desc>1969 (bronze, 155 x 32 x 40).</desc>
+          </item>
+          <item n="6" xml:id="Paris_1969_e2_i6">
+            <num>6</num>
+            <title>Etendards, 1969 </title>
+            <desc>1969 (acier, 61 x 60 x 60).</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Paris_1969_e3" source="Cat_Paris_1969_typo_0003.jpg">
+          <desc>
+            <name>Ethel LUCACI-BAIAS,</name>
+            <trait>
+              <p> née en 1936 à Covasna (Roumanie).</p>
+            </trait>
+          </desc>
+          <item n="7" xml:id="Paris_1969_e3_i7">
+            <num>7</num>
+            <title>Le flot géant, 1967 </title>
+            <desc>1967 (bois, 85 x 95).</desc>
+          </item>
+          <item n="8" xml:id="Paris_1969_e3_i8">
+            <num>8</num>
+            <title>Le nid de l’hirondelle marine, 1967 </title>
+            <desc>1967 (bois, 96 x 101).</desc>
+          </item>
+          <item n="9" xml:id="Paris_1969_e3_i9">
+            <num>9</num>
+            <title>La dynamique marine, 1967 </title>
+            <desc>1967 (bois, 88 x 152).</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Paris_1969_e4" source="Cat_Paris_1969_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>10 LES QUATRE ELEMENTS, 1969.</p>
+            </trait>
+          </desc>
+          <item n="10" xml:id="Paris_1969_e4_i10">
+            <num>10</num>
+            <title>LES QUATRE ELEMENTS, 1969. Ion STENDL, né en 1939 à Resitza </title>
+            <desc>1969. Ion STENDL, né en 1939 à Resitza (Roumanie). Peintre-graveur. Theodora MOISESCU-STENDL, née en 1938 à Bucarest Décoratrice. Radu DRAGOMIRESCU, né en 1944 à Rosetzi (Roumanie). Peintre. Radu STOICA, né en 1942 à Bucarest (Roumanie). Peintre.</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Paris_1969_e5" source="Cat_Paris_1969_typo_0003.jpg">
+          <desc>
+            <name>Nicolae BRINDUS,</name>
+            <trait>
+              <p> né en 1935 à Bucarest (Roumanie).</p>
+            </trait>
+          </desc>
+          <item n="11" xml:id="Paris_1969_e5_i11">
+            <num>11</num>
+            <title>Psaumes, vers de Tudor Arghezi, 1965.</title>
+            <desc>vers de Tudor Arghezi, 1965.</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Paris_1969_e6" source="Cat_Paris_1969_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>12 Phtora, 1968.</p>
+            </trait>
+          </desc>
+          <item n="12" xml:id="Paris_1969_e6_i12">
+            <num>12</num>
+            <title>Phtora, 1968. Cezar CORNEL, né en 1937 à Bucarest </title>
+            <desc>1968. Cezar CORNEL, né en 1937 à Bucarest (Roumanie).</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Paris_1969_e7" source="Cat_Paris_1969_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>13Taaroa, 1969.</p>
+            </trait>
+          </desc>
+          <item n="13" xml:id="Paris_1969_e7_i13">
+            <num>13</num>
+            <title>Taaroa, 1969. Corneliu DAN GEORGRIO</title>
+            <desc>1969. Corneliu DAN GEORGRIO</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Paris_1969_e8" source="Cat_Paris_1969_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>14 Blanc-noir, 1967.</p>
+            </trait>
+          </desc>
+          <item n="14" xml:id="Paris_1969_e8_i14">
+            <num>14</num>
+            <title>Blanc-noir, 1967. Costin MIEREANU, né en 1943 à Bucarest </title>
+            <desc>1967. Costin MIEREANU, né en 1943 à Bucarest (Roumanie).</desc>
+          </item>
+          <item n="15" xml:id="Paris_1969_e8_i15">
+            <num>15</num>
+            <title>Espaces au-delà du dernier, 1969.</title>
+            <desc>1969.</desc>
+          </item>
+          <item n="16" xml:id="Paris_1969_e8_i16">
+            <num>16</num>
+            <title>Espaces II, 1969.</title>
+            <desc>1969.</desc>
+          </item>
+          <item n="17" xml:id="Paris_1969_e8_i17">
+            <num>17</num>
+            <title>Couleurs du temps, 1969.</title>
+            <desc>1969.</desc>
+          </item>
+          <item n="18" xml:id="Paris_1969_e8_i18">
+            <num>18</num>
+            <title>Polymaphies 5 X 7, 1969.</title>
+            <desc>1969.</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Paris_1969_e9" source="Cat_Paris_1969_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>19 Dans la nuit des temps, 1969.</p>
+            </trait>
+          </desc>
+          <item n="19" xml:id="Paris_1969_e9_i19">
+            <num>19</num>
+            <title>Dans la nuit des temps, 1969. Eugen WENDEL, né en 1934 à Valea Rea </title>
+            <desc>1969. Eugen WENDEL, né en 1934 à Valea Rea (Roumanie).</desc>
+          </item>
+          <item n="20" xml:id="Paris_1969_e9_i20">
+            <num>20</num>
+            <title>Interférences, 1966.</title>
+            <desc>1966.</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Paris_1969_e10" source="Cat_Paris_1969_typo_0004.jpg">
+          <desc>
+            <name>Papa Ibra TALL,</name>
+            <trait>
+              <p> né en 1935 à Tivaouane (Sénégal).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1969_e10_i1">
+            <num>1</num>
+            <title>Point de non retour à John Coltrane, 1968</title>
+            <desc>1968</desc>
+          </item>
+          <item n="2" xml:id="Paris_1969_e10_i2">
+            <num>2</num>
+            <title>Pour un héros de la nouvelle Afrique, 1969</title>
+            <desc>1969</desc>
+          </item>
+          <item n="3" xml:id="Paris_1969_e10_i3">
+            <num>3</num>
+            <title>La route des Caraïbes, 1969 </title>
+            <desc>1969 (huile, 130 x 195).</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Paris_1969_e11" source="Cat_Paris_1969_typo_0006.jpg">
+          <desc>
+            <name>Anders PETERSEN,</name>
+            <trait>
+              <p> né en 1944 à Stockholm (Suède).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1969_e11_i1">
+            <num>1</num>
+            <title>D’un quartier de Reperbahn, 1968 </title>
+            <desc>1968 (noir et blanc).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1969_e11_i2">
+            <num>2</num>
+            <title>D’un quartier de Reperbahn, 1968 </title>
+            <desc>1968 (noir et blanc).</desc>
+          </item>
+          <item n="3" xml:id="Paris_1969_e11_i3">
+            <num>3</num>
+            <title>D’un quartier de Reperbahn, 1968 </title>
+            <desc>1968 (noir et blanc).</desc>
+          </item>
+          <item n="4" xml:id="Paris_1969_e11_i4">
+            <num>4</num>
+            <title>D'un quartier de Reperbahn, 1968 </title>
+            <desc>1968 (noir et blanc).</desc>
+          </item>
+          <item n="5" xml:id="Paris_1969_e11_i5">
+            <num>5</num>
+            <title>D’un quartier de Reperbahn, 1968 </title>
+            <desc>1968 (noir et blanc).</desc>
+          </item>
+          <item n="6" xml:id="Paris_1969_e11_i6">
+            <num>6</num>
+            <title>D'un quartier de Reperbahn, 1968 </title>
+            <desc>1968 (noir et blanc).</desc>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Paris_1969_e12" source="Cat_Paris_1969_typo_0006.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>7 PUSS (BISE)&lt;.b&gt;, 1969 (4 écrans, 225 x 325, montage de</p>
+            </trait>
+          </desc>
+          <item n="7" xml:id="Paris_1969_e12_i7">
+            <num>7</num>
+            <title>PUSS </title>
+            <desc>(BISE)&lt;.b&gt;, 1969 (4 écrans, 225 x 325, montage de dessins et de textes). Responsable : Lena SVEDBERG, née en 1946 à Göteborg (Suède). Carl-Johan DE GEER, né en 1938 à Montréal (Canada). Dessinateur-rédacteur. Lars HILLERSBERG, né en 1937 à Gnesta (Suède). Dessinateur-rédacteur. Ulf RAHMBERG, né en 1935 à Boras (Suède). Dessinateur-rédacteur. Peter WANGER, né en 1940 à Göteborg (Suède). Rédacteur.</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Paris_1969_e13" source="Cat_Paris_1969_typo_0006.jpg">
+          <desc>
+            <name>Erling JOHANSSON,</name>
+            <trait>
+              <p> né en 1935 à Stockholm (Suède).</p>
+            </trait>
+          </desc>
+          <item n="8" xml:id="Paris_1969_e13_i8">
+            <num>8</num>
+            <title>Anima mundi, 1967 </title>
+            <desc>1967 (noir et blanc). Fri-film produktion, Stockholm.</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,925 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Courbet_1882">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Courbet_1882_e1" source="Cat_Courbet_1882-1_typo_0001.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>16. — L’Homme blessé.</p>
+            </trait>
+          </desc>
+          <item n="16" xml:id="Courbet_1882_e1_i16">
+            <num>16</num>
+            <title>L’Homme blessé. Signé : G. Courbet, avec paraphe. Sans date. Expositions particulières de 1855 et de 1867. Le catalogue de cette dernière exposition place l'exécution de l’Homme blessé à la date de 1844. C’est évidemment une erreur : il suf¬ fit d’examiner la facture libre et souple du ta¬ bleau, pour être convaincu que ce n’est point là une oeuvre de débutant. L’erreur ayant été reproduite dans le catalogue de la vente du</title>
+            <desc>avec paraphe. Sans date. Expositions particulières de 1855 et de 1867. Le catalogue de cette dernière exposition place l'exécution de l’Homme blessé à la date de 1844. C’est évidemment une erreur : il suffit d’examiner la facture libre et souple du tableau, pour être convaincu que ce n’est point là une oeuvre de débutant. L’erreur ayant été reproduite dans le catalogue de la vente du</desc>
+          </item>
+          <item n="9" xml:id="Courbet_1882_e1_i9">
+            <num>9</num>
+            <title>décembre 1881, nous croyons devoir la recti¬ fier. La véritable date est 1854, comme l’atteste le catalogue de la première exposition privée du peintre, en 1855. Acheté pour l’État à la vente du 9 dé¬ cembre 1851. T. — H. 8.90. L. 0.81.</title>
+            <desc>nous croyons devoir la rectifier. La véritable date est 1854, comme l’atteste le catalogue de la première exposition privée du peintre, en 1855. Acheté pour l’État à la vente du 9 décembre 1851. T. — H. 8.90. L. 0.81.</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Courbet_1882_e2" source="Cat_Courbet_1882-1_typo_0001.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>17. — Le Chasseur badois.</p>
+            </trait>
+          </desc>
+          <item n="17" xml:id="Courbet_1882_e2_i17">
+            <num>17</num>
+            <title>Le Chasseur badois. Signé à gauche : .. 59. Gustave Courbet. T. — H. 1.18. L. 1.75. Appartient à M. D... M...</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Courbet_1882_e3" source="Cat_Courbet_1882-1_typo_0001.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>18. — Portrait, de M. Gueymard, artiste de</p>
+            </trait>
+          </desc>
+          <item n="18" xml:id="Courbet_1882_e3_i18">
+            <num>18</num>
+            <title> — Portrait, de M. Gueymard, artiste de l’Opéra, dans le rôle de Robert le Diable. Signé à gauche : G. Courbet. Sans date. Salon de 1857. T. — H. 1.57. L. 1.06. Appartient à M. Adolphe Reignard.</title>
+            <desc>de M. Gueymard, artiste de l’Opéra, dans le rôle de Robert le Diable. Signé à gauche : G. Courbet. Sans date. Salon de 1857. T. — H. 1.57. L. 1.06. Appartient à M. Adolphe Reignard.</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Courbet_1882_e4" source="Cat_Courbet_1882-1_typo_0002.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>19. — Baigneuse vue de dos.</p>
+            </trait>
+          </desc>
+          <item n="19" xml:id="Courbet_1882_e4_i19">
+            <num>19</num>
+            <title>Baigneuse vue de dos. Signé à droite : ..68. Courbet Gustave. T. — H. 1.28. L. 0.97.</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Courbet_1882_e5" source="Cat_Courbet_1882-1_typo_0002.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>20. — Les Amants dans la campagne, sen¬</p>
+            </trait>
+          </desc>
+          <item n="20" xml:id="Courbet_1882_e5_i20">
+            <num>20</num>
+            <title>Les Amants dans la campagne, sen¬ timents du jeune âge. Signé à droite : G. C. 1844. Expositions particulières de 1855 et 1867. T. — H. 0 76. L. 0.59. Appartient à M. Haro.</title>
+            <desc>sentiments du jeune âge. Signé à droite : G. C. 1844. Expositions particulières de 1855 et 1867. T. — H. 0 76. L. 0.59. Appartient à M. Haro.</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Courbet_1882_e6" source="Cat_Courbet_1882-1_typo_0002.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>21. — Une Dame espagnole.</p>
+            </trait>
+          </desc>
+          <item n="21" xml:id="Courbet_1882_e6_i21">
+            <num>21</num>
+            <title>Une Dame espagnole. Signé à gauche : ..55. G. Courbet. Exposition universelle de 1855. xposition particulière de 1867. T. — H. 0.80. L. 0.63. Appartient à M. Paton.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Courbet_1882_e7" source="Cat_Courbet_1882-1_typo_0002.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>22. — La Dormeuse, étude.</p>
+            </trait>
+          </desc>
+          <item n="22" xml:id="Courbet_1882_e7_i22">
+            <num>22</num>
+            <title>La Dormeuse, étude. Signé à droite : G. Courbet. Sans date. T. — H. 0.54. L. 0.63 Appartient à M. Bensusan.</title>
+            <desc>étude. Signé à droite : G. Courbet. Sans date. T. — H. 0.54. L. 0.63 Appartient à M. Bensusan.</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Courbet_1882_e8" source="Cat_Courbet_1882-1_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>23. — Cheval de chasse sellé et boule-dogue</p>
+            </trait>
+          </desc>
+          <item n="23" xml:id="Courbet_1882_e8_i23">
+            <num>23</num>
+            <title>Cheval de chasse sellé et boule-dogue en forêt, épisode de chasse à courre. Signé à gauche : ..63. Gustave Courbet. Salon de 1863. Exposition particulière de 1867. Au catalogue du Salon de 1863, ce tableau portait le titre de la Chasse au renard. L’auteur lui ayant fait subir quelques modifications après coup, un changement dans le titre devint néces¬ saire : le tableau reparut à l’exposition parti¬ culière de 1867, sous cette désignation que nous relevons sur le catalogue : « Le Cheval du pi¬ queur, épisode de chasse à courre. T. — H. 1.12. L. 1.35. Appartient à M. Recipon, député.</title>
+            <desc>épisode de chasse à courre. Signé à gauche : ..63. Gustave Courbet. Salon de 1863. Exposition particulière de 1867. Au catalogue du Salon de 1863, ce tableau portait le titre de la Chasse au renard. L’auteur lui ayant fait subir quelques modifications après coup, un changement dans le titre devint nécessaire : le tableau reparut à l’exposition particulière de 1867, sous cette désignation que nous relevons sur le catalogue : « Le Cheval du piqueur, épisode de chasse à courre. T. — H. 1.12. L. 1.35. Appartient à M. Recipon, député.</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Courbet_1882_e9" source="Cat_Courbet_1882-1_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>24. — La Femme à la vague.</p>
+            </trait>
+          </desc>
+          <item n="24" xml:id="Courbet_1882_e9_i24">
+            <num>24</num>
+            <title>La Femme à la vague. Signé à gauche : ..68. G. Courbet. T. — H. 0.63. L. 0.53. Appartient à M. Faure, de l'Opéra.</title>
+            <desc>de l'Opéra.</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Courbet_1882_e10" source="Cat_Courbet_1882-1_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>5. -— La Dame aux bijoux, étude.</p>
+            </trait>
+          </desc>
+          <item n="5" xml:id="Courbet_1882_e10_i5">
+            <num>5</num>
+            <title>-— La Dame aux bijoux, étude. Signé à droite : Gustave Courbet, ..67. Exposition particulière de 1867. T. — H. 0.81. L. 0.64. Appartient à M. Castagnary.</title>
+            <desc>étude. Signé à droite : Gustave Courbet, ..67. Exposition particulière de 1867. T. — H. 0.81. L. 0.64. Appartient à M. Castagnary.</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Courbet_1882_e11" source="Cat_Courbet_1882-1_typo_0004.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>26. — Femme endormie, étude.</p>
+            </trait>
+          </desc>
+          <item n="26" xml:id="Courbet_1882_e11_i26">
+            <num>26</num>
+            <title>Femme endormie, étude. Signé à gauche : G. Courbet. T. — H. 0.70. L. 0.94.</title>
+            <desc>étude. Signé à gauche : G. Courbet. T. — H. 0.70. L. 0.94.</desc>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Courbet_1882_e12" source="Cat_Courbet_1882-1_typo_0004.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>27. — Une Dormeuse, tête d’étude.</p>
+            </trait>
+          </desc>
+          <item n="27" xml:id="Courbet_1882_e12_i27">
+            <num>27</num>
+            <title>Une Dormeuse, tête d’étude. Signé à gauche : G. Courbet. Sans date. T. — H. 0.57. L. 0.47. Appartient à M. Henri Hecht.</title>
+            <desc>tête d’étude. Signé à gauche : G. Courbet. Sans date. T. — H. 0.57. L. 0.47. Appartient à M. Henri Hecht.</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Courbet_1882_e13" source="Cat_Courbet_1882-1_typo_0004.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>28. — Emiiius, cheval de course du haras de</p>
+            </trait>
+          </desc>
+          <item n="28" xml:id="Courbet_1882_e13_i28">
+            <num>28</num>
+            <title>Emiiius, cheval de course du haras de Saintes. Signé à gauche : Gustave Courbet. Le nom du cheval est écrit en haut, à gauche. Exposition particulière de 1867 : Émilius figure sur le catalogue avec la date de 1863. T. — H. 0.50, L. 0.60.</title>
+            <desc>cheval de course du haras de Saintes. Signé à gauche : Gustave Courbet. Le nom du cheval est écrit en haut, à gauche. Exposition particulière de 1867 : Émilius figure sur le catalogue avec la date de 1863. T. — H. 0.50, L. 0.60.</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Courbet_1882_e14" source="Cat_Courbet_1882-1_typo_0004.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>29. — Le Petit poney écossais, étude.</p>
+            </trait>
+          </desc>
+          <item n="29" xml:id="Courbet_1882_e14_i29">
+            <num>29</num>
+            <title>Le Petit poney écossais, étude. Signé : G. Courbet. Exposition particulière de 1867. T. — H. 0.65. L. 0.81. Appartient à M. Henri Vion.</title>
+            <desc>étude. Signé : G. Courbet. Exposition particulière de 1867. T. — H. 0.65. L. 0.81. Appartient à M. Henri Vion.</desc>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Courbet_1882_e15" source="Cat_Courbet_1882-1_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>30. — La Liseuse.</p>
+            </trait>
+          </desc>
+          <item n="30" xml:id="Courbet_1882_e15_i30">
+            <num>30</num>
+            <title>La Liseuse. Signé à droite : G. Courbet. Sans date. T. — H. 0.60. L. 0.73. Appartient à M. Ad. Reitlinger.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Courbet_1882_e16" source="Cat_Courbet_1882-1_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>31. — Femme endormie.</p>
+            </trait>
+          </desc>
+          <item n="31" xml:id="Courbet_1882_e16_i31">
+            <num>31</num>
+            <title> Femme endormie. Sans signature ni date.  T. — H. 0.64. L. 0.</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Courbet_1882_e17" source="Cat_Courbet_1882-1_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>32. — Femme nue endormie.</p>
+            </trait>
+          </desc>
+          <item n="32" xml:id="Courbet_1882_e17_i32">
+            <num>32</num>
+            <title> Femme nue endormie. Signé à gauche : ..58. Gustave Courbet. T. — H. 0.50. L. 0.65. Appartient à M. Bischoffsheim.</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Courbet_1882_e18" source="Cat_Courbet_1882-1_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>33. — La Sorcière, copie d’après Franz</p>
+            </trait>
+          </desc>
+          <item n="33" xml:id="Courbet_1882_e18_i33">
+            <num>33</num>
+            <title>La Sorcière, copie d’après Franz Hals. Signé à gauche : ..69. G. Courbet. A droite, de la main du peintre, le mono¬ gramme de Franz Hals, avec la date 1645, et au¬ dessous : Aix-la-Chapelle. Cette copie a été faite d’après le tableau ori¬ ginal qui faisait partie de la galerie Suermondt. T. — H. 0.85. L. 0.69.</title>
+            <desc>copie d’après Franz Hals. Signé à gauche : ..69. G. Courbet. A droite, de la main du peintre, le monogramme de Franz Hals, avec la date 1645, et audessous : Aix-la-Chapelle. Cette copie a été faite d’après le tableau original qui faisait partie de la galerie Suermondt. T. — H. 0.85. L. 0.69.</desc>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Courbet_1882_e19" source="Cat_Courbet_1882-1_typo_0009.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>35. — Portrait de l’auteur.</p>
+            </trait>
+          </desc>
+          <item n="35" xml:id="Courbet_1882_e19_i35">
+            <num>35</num>
+            <title>Portrait de l’auteur. Signé à gauche, en bleu : 1842, Gustave Courbet. C’est par ce tableau que l’artiste a débuté au Salon de 1844. T. — H. 0.46. L. 0.56.</title>
+            <desc>en bleu : 1842, Gustave Courbet. C’est par ce tableau que l’artiste a débuté au Salon de 1844. T. — H. 0.46. L. 0.56.</desc>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Courbet_1882_e20" source="Cat_Courbet_1882-1_typo_0009.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>36 — L’Homme à la ceinture de cuir, por¬</p>
+            </trait>
+          </desc>
+          <item n="36" xml:id="Courbet_1882_e20_i36">
+            <num>36</num>
+            <title>L’Homme à la ceinture de cuir, por¬ trait du peintre jeune. Signé à gauche : Gustave Courbet. Exposition particulière de 1855. Ce portrait paraît être celui que le peintre, dans le catalogue de cette exposition, plaçait à la date de 1849, et désignait en ces termes T. — H. 1.00. L. 0.78. Acheté pour l’État à la vente du 9 dé¬ cembre 1881.</title>
+            <desc>portrait du peintre jeune. Signé à gauche : Gustave Courbet. Exposition particulière de 1855. Ce portrait paraît être celui que le peintre, dans le catalogue de cette exposition, plaçait à la date de 1849, et désignait en ces termes T. — H. 1.00. L. 0.78. Acheté pour l’État à la vente du 9 décembre 1881.</desc>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Courbet_1882_e21" source="Cat_Courbet_1882-2_typo_0001.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>55. — Le Ruisseau couvert.</p>
+            </trait>
+          </desc>
+          <item n="55" xml:id="Courbet_1882_e21_i55">
+            <num>55</num>
+            <title>Le Ruisseau couvert. Situé à gauche : G. Courbet, ..65. Exposition universelle de 1867. T. — H. 0.90. L. 1.30. Appartient au Musée du Luxembourg, sur le catalogue duquel il porte le titre de Ruisseau du Puits noir.</title>
+            <desc>..65. Exposition universelle de 1867. T. — H. 0.90. L. 1.30. Appartient au Musée du Luxembourg, sur le catalogue duquel il porte le titre de Ruisseau du Puits noir.</desc>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Courbet_1882_e22" source="Cat_Courbet_1882-2_typo_0001.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>56. — Le Ruisseau du Puits noir.</p>
+            </trait>
+          </desc>
+          <item n="56" xml:id="Courbet_1882_e22_i56">
+            <num>56</num>
+            <title>Le Ruisseau du Puits noir. Signé à gauche : G. Courbet, ..55. T. — H. 1.04. L. 1.38. Appartient à M. X.</title>
+            <desc>..55. T. — H. 1.04. L. 1.38. Appartient à M. X.</desc>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Courbet_1882_e23" source="Cat_Courbet_1882-2_typo_0002.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>57. — Le Ruisseau couvert.</p>
+            </trait>
+          </desc>
+          <item n="57" xml:id="Courbet_1882_e23_i57">
+            <num>57</num>
+            <title>Le Ruisseau couvert. Signé à droite : G. Courbet. T. — H. 0.91. L. 1.32. Appartient à M. Adolphe Reitlinger.</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Courbet_1882_e24" source="Cat_Courbet_1882-2_typo_0002.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>58. — Le Château d’Ornans (Doubs).</p>
+            </trait>
+          </desc>
+          <item n="58" xml:id="Courbet_1882_e24_i58">
+            <num>58</num>
+            <title>Le Château d’Ornans </title>
+            <desc>(Doubs). Signé à droite : ..55. G. Courbet. Exposition universelle de 1855. Exposition particulière de 1867. T. — H. 0.80. L. 1.15. Appartient à M. Lutz.</desc>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Courbet_1882_e25" source="Cat_Courbet_1882-2_typo_0002.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>59. — La Sieste pendant la saison des foins</p>
+            </trait>
+          </desc>
+          <item n="59" xml:id="Courbet_1882_e25_i59">
+            <num>59</num>
+            <title>La Sieste pendant la saison des foins Signé : G. Courbet, ..68. Exposition particulière de 1867. Salon de 1869. T. — H. 2.12. L. 2.73. Appartient à la Ville de Paris.</title>
+            <desc>..68. Exposition particulière de 1867. Salon de 1869. T. — H. 2.12. L. 2.73. Appartient à la Ville de Paris.</desc>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Courbet_1882_e26" source="Cat_Courbet_1882-2_typo_0002.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>60. — Le Naufrage dans la neige (monta¬</p>
+            </trait>
+          </desc>
+          <item n="60" xml:id="Courbet_1882_e26_i60">
+            <num>60</num>
+            <title>Le Naufrage dans la neige </title>
+            <desc>(montagnes du Jura). Signé à gauche : ..60. G. Courbet. Exposition particulière de 1867. T. — H. 1.38. L. 2.00.</desc>
+          </item>
+        </entry>
+        <entry n="27" xml:id="Courbet_1882_e27" source="Cat_Courbet_1882-2_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>61. — Remise des chevreuils au ruisseau de</p>
+            </trait>
+          </desc>
+          <item n="61" xml:id="Courbet_1882_e27_i61">
+            <num>61</num>
+            <title>Remise des chevreuils au ruisseau de Plaisirs-Fontaine </title>
+            <desc>(Doubs). Signé à gauche : ..66. Gustave Courbet. Salon de 1866. T. — H. 1.70. L. 2.05. Appartient à M. X.</desc>
+          </item>
+        </entry>
+        <entry n="28" xml:id="Courbet_1882_e28" source="Cat_Courbet_1882-2_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>62. — La Grotte de la Loue.</p>
+            </trait>
+          </desc>
+          <item n="62" xml:id="Courbet_1882_e28_i62">
+            <num>62</num>
+            <title>La Grotte de la Loue. Signé à gauche : G. Courbet. Sans date. T. — H. 0.68. L. 0.78. Appartient à M. A... N...</title>
+          </item>
+        </entry>
+        <entry n="29" xml:id="Courbet_1882_e29" source="Cat_Courbet_1882-2_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>63. — Paysage d’Interlaken.</p>
+            </trait>
+          </desc>
+          <item n="63" xml:id="Courbet_1882_e29_i63">
+            <num>63</num>
+            <title>Paysage d’Interlaken. Signé à gauche : ..69. G. Courbet. T. — H. 0.60. L. 0.72. Appartient à M. Lutz.</title>
+          </item>
+        </entry>
+        <entry n="30" xml:id="Courbet_1882_e30" source="Cat_Courbet_1882-2_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>64. — Les Saules.</p>
+            </trait>
+          </desc>
+          <item n="64" xml:id="Courbet_1882_e30_i64">
+            <num>64</num>
+            <title>Les Saules. Signé à droite : G. Courbet. Sans date. T. — H. 0.88. L. 1.20. Appartient à M. Bensusan.</title>
+          </item>
+        </entry>
+        <entry n="31" xml:id="Courbet_1882_e31" source="Cat_Courbet_1882-2_typo_0004.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>65. — Le Baigneur.</p>
+            </trait>
+          </desc>
+          <item n="65" xml:id="Courbet_1882_e31_i65">
+            <num>65</num>
+            <title>Le Baigneur. Signé à droite : ..62. Gustave Courbet. T. — H. 0.56. L. 0.72. Appartient à M. Brame.</title>
+          </item>
+        </entry>
+        <entry n="32" xml:id="Courbet_1882_e32" source="Cat_Courbet_1882-2_typo_0004.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>66. — Remise des chevreuils.</p>
+            </trait>
+          </desc>
+          <item n="66" xml:id="Courbet_1882_e32_i66">
+            <num>66</num>
+            <title>Remise des chevreuils. Signe à gauche : G. Courbet. Sans date. T. — H. 0.60. L. 0.71. Appartient à M. Monteaux.</title>
+          </item>
+        </entry>
+        <entry n="33" xml:id="Courbet_1882_e33" source="Cat_Courbet_1882-2_typo_0004.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>67. — La Source bleue (lac de Saint-Point).</p>
+            </trait>
+          </desc>
+          <item n="67" xml:id="Courbet_1882_e33_i67">
+            <num>67</num>
+            <title>La Source bleue </title>
+            <desc>(lac de Saint-Point). Signé droite : ..72. G. Courbet. T. — H. 0.81. L. 1.00. Appartient à M. Durand-Ruel.</desc>
+          </item>
+        </entry>
+        <entry n="34" xml:id="Courbet_1882_e34" source="Cat_Courbet_1882-2_typo_0004.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>68. — Remise de cerfs, effet de neige.</p>
+            </trait>
+          </desc>
+          <item n="68" xml:id="Courbet_1882_e34_i68">
+            <num>68</num>
+            <title>Remise de cerfs, effet de neige. Signé à gauche: G. Courbet. Sans date. T. — H. 0.68. L. 0.85. Appartient à M. A... N....</title>
+            <desc>effet de neige. Signé à gauche: G. Courbet. Sans date. T. — H. 0.68. L. 0.85. Appartient à M. A... N....</desc>
+          </item>
+        </entry>
+        <entry n="35" xml:id="Courbet_1882_e35" source="Cat_Courbet_1882-2_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>69. — Les Roches d’Ornans.</p>
+            </trait>
+          </desc>
+          <item n="69" xml:id="Courbet_1882_e35_i69">
+            <num>69</num>
+            <title>Les Roches d’Ornans. Signé à gauche : ..96. G. Courbet. H. 0.72. L. 0.92. Appartient à M. Courtin.</title>
+          </item>
+        </entry>
+        <entry n="36" xml:id="Courbet_1882_e36" source="Cat_Courbet_1882-2_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>70. — Paysage, bords de la Loue.</p>
+            </trait>
+          </desc>
+          <item n="70" xml:id="Courbet_1882_e36_i70">
+            <num>70</num>
+            <title>Paysage, bords de la Loue. Signé à gauche : Gustave Courbet. Sans date. T. — H. 0.64. L. 0.80. Appartient à M. Lutz.</title>
+            <desc>bords de la Loue. Signé à gauche : Gustave Courbet. Sans date. T. — H. 0.64. L. 0.80. Appartient à M. Lutz.</desc>
+          </item>
+        </entry>
+        <entry n="37" xml:id="Courbet_1882_e37" source="Cat_Courbet_1882-2_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>71. — Paysage, bords de la Loue.</p>
+            </trait>
+          </desc>
+          <item n="71" xml:id="Courbet_1882_e37_i71">
+            <num>71</num>
+            <title>Paysage, bords de la Loue. Signé à droite : G. Courbet. Sans date. T. — H. 0.70. L. 107. Appartient à M. Barbedienne.</title>
+            <desc>bords de la Loue. Signé à droite : G. Courbet. Sans date. T. — H. 0.70. L. 107. Appartient à M. Barbedienne.</desc>
+          </item>
+        </entry>
+        <entry n="38" xml:id="Courbet_1882_e38" source="Cat_Courbet_1882-2_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>72. — Le Halage, bords de la Loue.</p>
+            </trait>
+          </desc>
+          <item n="72" xml:id="Courbet_1882_e38_i72">
+            <num>72</num>
+            <title>Le Halage, bords de la Loue. Signé à gauche : ..63. G. Courbet. T. — H. 0.63. L. 0.80. Appartient à M. Lutz.</title>
+            <desc>bords de la Loue. Signé à gauche : ..63. G. Courbet. T. — H. 0.63. L. 0.80. Appartient à M. Lutz.</desc>
+          </item>
+        </entry>
+        <entry n="39" xml:id="Courbet_1882_e39" source="Cat_Courbet_1882-2_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>73. — Le Rut.</p>
+            </trait>
+          </desc>
+          <item n="73" xml:id="Courbet_1882_e39_i73">
+            <num>73</num>
+            <title>Le Rut. Signé à droite : G. Courbet. Sans date. T. — H. 0.45. L. 0.54. Appartient à M. Fourquet.</title>
+          </item>
+        </entry>
+        <entry n="40" xml:id="Courbet_1882_e40" source="Cat_Courbet_1882-2_typo_0006.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>74. — Remise de chevreuils.</p>
+            </trait>
+          </desc>
+          <item n="74" xml:id="Courbet_1882_e40_i74">
+            <num>74</num>
+            <title>Remise de chevreuils. Signé à droite : G. Courbet. T. — H. 0.81. L. 1.00. Appartient à M. Détrimont.</title>
+          </item>
+        </entry>
+        <entry n="41" xml:id="Courbet_1882_e41" source="Cat_Courbet_1882-2_typo_0006.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>75. — Le Puits noir.</p>
+            </trait>
+          </desc>
+          <item n="75" xml:id="Courbet_1882_e41_i75">
+            <num>75</num>
+            <title>Le Puits noir. Signé à gauche : G. Courbet. Sans date. T. — H. 0.71. L. 0.90. Appartient à M. Bensusan.</title>
+          </item>
+        </entry>
+        <entry n="42" xml:id="Courbet_1882_e42" source="Cat_Courbet_1882-2_typo_0006.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>76. — Paysage de Saintonge.</p>
+            </trait>
+          </desc>
+          <item n="76" xml:id="Courbet_1882_e42_i76">
+            <num>76</num>
+            <title>Paysage de Saintonge. Signé à gauche : ..62. Gustave Courbet. T. — H. 0.64. L. 0.90. Appartient à M. D... M....</title>
+          </item>
+        </entry>
+        <entry n="43" xml:id="Courbet_1882_e43" source="Cat_Courbet_1882-2_typo_0006.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>77. — Le Parc de Rochemont.</p>
+            </trait>
+          </desc>
+          <item n="77" xml:id="Courbet_1882_e43_i77">
+            <num>77</num>
+            <title>Le Parc de Rochemont. Signé à droite : ..62. Gustave Courbet. Exposition particulière de 1867. T. — H. 0.83. L. 1.10. Appartient à M. Étienne Baudry.</title>
+          </item>
+        </entry>
+        <entry n="44" xml:id="Courbet_1882_e44" source="Cat_Courbet_1882-2_typo_0006.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>78. — Paysage des alpes.</p>
+            </trait>
+          </desc>
+          <item n="78" xml:id="Courbet_1882_e44_i78">
+            <num>78</num>
+            <title>Paysage des alpes. Signé à gauche : G. Courbet. Sans date. T. — H. 0.37. L. 0.45. Appartient à M. de Salverte.</title>
+          </item>
+        </entry>
+        <entry n="45" xml:id="Courbet_1882_e45" source="Cat_Courbet_1882-2_typo_0007.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>79. — Paysage avec cascade.</p>
+            </trait>
+          </desc>
+          <item n="79" xml:id="Courbet_1882_e45_i79">
+            <num>79</num>
+            <title>Paysage avec cascade. Signé à gauche: G. C. 1846. Sans date. T.— H. 0.41. L. 0.66. Appartient à M. Henri Hecht.</title>
+          </item>
+        </entry>
+        <entry n="46" xml:id="Courbet_1882_e46" source="Cat_Courbet_1882-2_typo_0007.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>80. — La Dent de Jaman.</p>
+            </trait>
+          </desc>
+          <item n="80" xml:id="Courbet_1882_e46_i80">
+            <num>80</num>
+            <title>La Dent de Jaman. Signé à gauche : G. Courbet. T. — H. 0.47. L. 0.61.</title>
+          </item>
+        </entry>
+        <entry n="47" xml:id="Courbet_1882_e47" source="Cat_Courbet_1882-2_typo_0007.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>81. — Le Château de Chillon.</p>
+            </trait>
+          </desc>
+          <item n="81" xml:id="Courbet_1882_e47_i81">
+            <num>81</num>
+            <title>Le Château de Chillon. Signé à gauche : ..73. G. Courbet. T. — H. 0.86. L. 1.21.</title>
+          </item>
+        </entry>
+        <entry n="48" xml:id="Courbet_1882_e48" source="Cat_Courbet_1882-2_typo_0007.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>82. — Sous bois.</p>
+            </trait>
+          </desc>
+          <item n="82" xml:id="Courbet_1882_e48_i82">
+            <num>82</num>
+            <title>Sous bois. Signé à gauche : G. Courbet. Sans date. T. — H. 0.46. L. 0.55. Appartient à M. Luquet.</title>
+          </item>
+        </entry>
+        <entry n="49" xml:id="Courbet_1882_e49" source="Cat_Courbet_1882-2_typo_0007.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>83. — L’Affût.</p>
+            </trait>
+          </desc>
+          <item n="83" xml:id="Courbet_1882_e49_i83">
+            <num>83</num>
+            <title>L’Affût. Signé à gauche : G. Courbet. Sans date. T. — H. 0.50. L. 0.69. Appartient à M. Faure, de l’Opéra.</title>
+            <desc>de l’Opéra.</desc>
+          </item>
+          <item n="5" xml:id="Courbet_1882_e49_i5">
+            <num>5</num>
+            <title></title>
+          </item>
+        </entry>
+        <entry n="50" xml:id="Courbet_1882_e50" source="Cat_Courbet_1882-3_typo_0001.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>129. — Champignons.</p>
+            </trait>
+          </desc>
+          <item n="129" xml:id="Courbet_1882_e50_i129">
+            <num>129</num>
+            <title> Champignons. Signé à gauche : ..72. G. Courbet. A droite, de la main du peintre, on lit la dé¬ dicace : « A M. Ordinaire. » T. — H. 0.61. L. 0.65. Appartient au Dr Ordinaire.</title>
+            <desc>de la main du peintre, on lit la dédicace : « A M. Ordinaire. » T. — H. 0.61. L. 0.65. Appartient au Dr Ordinaire.</desc>
+          </item>
+        </entry>
+        <entry n="51" xml:id="Courbet_1882_e51" source="Cat_Courbet_1882-3_typo_0002.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>130. — Truite.</p>
+            </trait>
+          </desc>
+          <item n="130" xml:id="Courbet_1882_e51_i130">
+            <num>130</num>
+            <title>Truite. Signé à gauche : ..71. G. Courbet, In vinculis faciebat. T. — H. 0.52. L. 0.85. Appartient à M. Pasteur.</title>
+            <desc>In vinculis faciebat. T. — H. 0.52. L. 0.85. Appartient à M. Pasteur.</desc>
+          </item>
+        </entry>
+        <entry n="52" xml:id="Courbet_1882_e52" source="Cat_Courbet_1882-3_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>131. — L’Homme à la pipe, portrait de l’au¬</p>
+            </trait>
+          </desc>
+          <item n="131" xml:id="Courbet_1882_e52_i131">
+            <num>131</num>
+            <title>L’Homme à la pipe, portrait de l’au¬ teur. Crayon noir. Signe à gauche : G. Courbet. H. 0.29. L. 0.21. Appartient à Mme ve Daumier.</title>
+            <desc>portrait de l’auteur. Crayon noir. Signe à gauche : G. Courbet. H. 0.29. L. 0.21. Appartient à Mme ve Daumier.</desc>
+          </item>
+        </entry>
+        <entry n="53" xml:id="Courbet_1882_e53" source="Cat_Courbet_1882-3_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>132. — Jeune fille à la guitare, rêverie (por¬</p>
+            </trait>
+          </desc>
+          <item n="132" xml:id="Courbet_1882_e53_i132">
+            <num>132</num>
+            <title>Jeune fille à la guitare, rêverie </title>
+            <desc>rêverie (portrait de Mlle Zélie Courbet.) Crayon noir. Signé à gauche : G. C. Exposition particulière de 1855, où il était inscrit au catalogue avec la date de 1847. Exposition particulière de 1867. H. 0.45. L. 0.29.</desc>
+          </item>
+        </entry>
+        <entry n="54" xml:id="Courbet_1882_e54" source="Cat_Courbet_1882-3_typo_0006.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>133. — Paysage.</p>
+            </trait>
+          </desc>
+          <item n="133" xml:id="Courbet_1882_e54_i133">
+            <num>133</num>
+            <title>Paysage. Crayon noir. Signé à droite : Gustave Courbet. ..58. H. 0.24. L. 0.23. Appartient à M. Fourcaud.</title>
+          </item>
+        </entry>
+        <entry n="55" xml:id="Courbet_1882_e55" source="Cat_Courbet_1882-3_typo_0006.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>134. — Portrait de M. Urbain Cuenot.</p>
+            </trait>
+          </desc>
+          <item n="134" xml:id="Courbet_1882_e55_i134">
+            <num>134</num>
+            <title>Portrait de M. Urbain Cuenot. Crayon noir. H. 0.42. L. 0.39.</title>
+          </item>
+        </entry>
+        <entry n="56" xml:id="Courbet_1882_e56" source="Cat_Courbet_1882-3_typo_0006.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>135. — Le Peintre à son chevalet.</p>
+            </trait>
+          </desc>
+          <item n="135" xml:id="Courbet_1882_e56_i135">
+            <num>135</num>
+            <title>Le Peintre à son chevalet. Crayon noir. Exposition particulière de 1855, où il était inscrit au catalogue avec la date de 1848. Exposition particulière de 1867. H. 0.5. L. 0.33.</title>
+            <desc>où il était inscrit au catalogue avec la date de 1848. Exposition particulière de 1867. H. 0.5. L. 0.33.</desc>
+          </item>
+        </entry>
+        <entry n="57" xml:id="Courbet_1882_e57" source="Cat_Courbet_1882-3_typo_0006.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>136. — Jeune homme assis, étude.</p>
+            </trait>
+          </desc>
+          <item n="136" xml:id="Courbet_1882_e57_i136">
+            <num>136</num>
+            <title>Jeune homme assis, étude. Crayon noir. H. 0.45. L. 0.34.</title>
+            <desc>étude. Crayon noir. H. 0.45. L. 0.34.</desc>
+          </item>
+        </entry>
+        <entry n="58" xml:id="Courbet_1882_e58" source="Cat_Courbet_1882-3_typo_0007.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>137. — Portrait de M. Promayet.</p>
+            </trait>
+          </desc>
+          <item n="137" xml:id="Courbet_1882_e58_i137">
+            <num>137</num>
+            <title>Portrait de M. Promayet. Crayon noir. Signé à gauche : G. C. 1847. H. 0.31. L. 0.24. Appartient à M. Antonin Proust.</title>
+          </item>
+        </entry>
+        <entry n="59" xml:id="Courbet_1882_e59" source="Cat_Courbet_1882-3_typo_0007.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>138. — Le Fumeur, profil.</p>
+            </trait>
+          </desc>
+          <item n="138" xml:id="Courbet_1882_e59_i138">
+            <num>138</num>
+            <title>Le Fumeur, profil. Crayon noir. Signé à gauche : G. C. H. 0.19. L. 0.14.</title>
+            <desc>profil. Crayon noir. Signé à gauche : G. C. H. 0.19. L. 0.14.</desc>
+          </item>
+        </entry>
+        <entry n="60" xml:id="Courbet_1882_e60" source="Cat_Courbet_1882-3_typo_0007.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>139. — Portrait de l’auteur.</p>
+            </trait>
+          </desc>
+          <item n="139" xml:id="Courbet_1882_e60_i139">
+            <num>139</num>
+            <title>Portrait de l’auteur. Crayon noir. Signé à gauche : ..48. G. Courbet. H. 0.26. L. 0.21. Appartient à M. D... M....</title>
+          </item>
+        </entry>
+        <entry n="61" xml:id="Courbet_1882_e61" source="Cat_Courbet_1882-3_typo_0007.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>140. — Au cabaret.</p>
+            </trait>
+          </desc>
+          <item n="140" xml:id="Courbet_1882_e61_i140">
+            <num>140</num>
+            <title>Au cabaret. Crayon noir. Signé à gauche : G. Courbet. H, 0.46. L. 0.59. Appartient à M. Théodore Duret.</title>
+            <desc>0.46. L. 0.59. Appartient à M. Théodore Duret.</desc>
+          </item>
+        </entry>
+        <entry n="62" xml:id="Courbet_1882_e62" source="Cat_Courbet_1882-3_typo_0008.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>141. — Les Femmes dans les blés.</p>
+            </trait>
+          </desc>
+          <item n="141" xml:id="Courbet_1882_e62_i141">
+            <num>141</num>
+            <title>Les Femmes dans les blés. Crayon noir. Signé à droite : G. Courbet 1855. Exposition particulière de 1867. H. 0.48. L. 0.56</title>
+          </item>
+        </entry>
+        <entry n="63" xml:id="Courbet_1882_e63" source="Cat_Courbet_1882-3_typo_0008.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>142. — Tête d’homme.</p>
+            </trait>
+          </desc>
+          <item n="142" xml:id="Courbet_1882_e63_i142">
+            <num>142</num>
+            <title>Tête d’homme. Crayon noir. H. 0.28. L. 0.20.</title>
+          </item>
+        </entry>
+        <entry n="64" xml:id="Courbet_1882_e64" source="Cat_Courbet_1882-3_typo_0008.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>143. — Intérieur de forêt.</p>
+            </trait>
+          </desc>
+          <item n="143" xml:id="Courbet_1882_e64_i143">
+            <num>143</num>
+            <title>Intérieur de forêt. Crayon noir. H. 0.24. L. 0.18.</title>
+          </item>
+        </entry>
+        <entry n="65" xml:id="Courbet_1882_e65" source="Cat_Courbet_1882-3_typo_0008.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>144. — Peintre avec sa palette.</p>
+            </trait>
+          </desc>
+          <item n="144" xml:id="Courbet_1882_e65_i144">
+            <num>144</num>
+            <title>Peintre avec sa palette. Crayon noir. H. 0.40. L. 0.27.</title>
+          </item>
+        </entry>
+        <entry n="66" xml:id="Courbet_1882_e66" source="Cat_Courbet_1882-3_typo_0008.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>145. — Tête d’étude.</p>
+            </trait>
+          </desc>
+          <item n="145" xml:id="Courbet_1882_e66_i145">
+            <num>145</num>
+            <title>Tête d’étude. Crayon noir. Signé à droite : G. Courbet, 1847. H. 0.49. L. 0.39. Appartient à M. Beillet.</title>
+            <desc>1847. H. 0.49. L. 0.39. Appartient à M. Beillet.</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

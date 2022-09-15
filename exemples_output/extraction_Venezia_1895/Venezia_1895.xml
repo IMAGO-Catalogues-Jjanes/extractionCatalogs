@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Venezia_1895">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Venezia_1895_e1" source="Cat_Venezia_1895_typo_0001.jpg">
+          <desc>
+            <name>Ciardi Guglielmo.</name>
+            <trait>
+              <p> — N. a Venezia, ove dimora. Percorse gli studi classici e quelli regolari dell’Accademia, viaggiò per sua istruzione all’estero. Dalla laguna, dalla campagna veneta, anche nelle sue sembianze più umili e più uniformi, ha saputo attingere molteplici e attraenti concezioni pittoriche. A Berlino nel 1886 trionfò il suo «Messidoro», che ricomparve l’ anno dopo alla Mostra artistica di Venezia, insieme coi quadri bellissimi «Venezia», «Nubi di Primavera», Laguna di Chioggia», «Alpi dolomitiche», «Il Torrente: Val di Primiero», «A caccia». Da qualche anno il Ciardi sembra rivolgere tutta la sua attività artistica al paese, a preferenza delle marine.</p>
+            </trait>
+          </desc>
+          <item n="63" xml:id="Venezia_1895_e1_i63">
+            <num>63</num>
+            <title>Sera </title>
+            <desc>(Schilpario, Val di Scalve). F</desc>
+          </item>
+          <item n="64" xml:id="Venezia_1895_e1_i64">
+            <num>64</num>
+            <title>Mattino d’autunno. F</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Venezia_1895_e2" source="Cat_Venezia_1895_typo_0001.jpg">
+          <desc>
+            <name>Cima Luigi.</name>
+            <trait>
+              <p> — Paesista e pittore di genere, n. a Villa di Villa (Belluno) v. a Venezia. Fra le sue. cose più pregiate si pongono i quadri di soggetto pastorale, come «Il ritorno del pascolo», e «Un tosatore di pecore».</p>
+            </trait>
+          </desc>
+          <item n="65" xml:id="Venezia_1895_e2_i65">
+            <num>65</num>
+            <title>Vacche alla pozza. F</title>
+          </item>
+          <item n="66" xml:id="Venezia_1895_e2_i66">
+            <num>66</num>
+            <title>Nevicata. F</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Venezia_1895_e3" source="Cat_Venezia_1895_typo_0002.jpg">
+          <desc>
+            <name>Coleman Enrico.</name>
+            <trait>
+              <p> — N. a Roma il 21 giugno 1846. Suo padre era un valente pittore, inglese di nascita, il quale venuto a Roma per studiarne le gallerie artistiche, s’innamorò talmente della campagna romana che pose stanza nella grande città e vi rimase fino alla morte. Il Coleman non ebbe bisogno di inscriversi in una Accademia, diventò pittore frequentando lo studio paterno. «Quel tanto che faccio — egli scrive argutamente — è il frutto spontaneo di ciò che credo una malattia ereditaria».</p>
+            </trait>
+          </desc>
+          <item n="67" xml:id="Venezia_1895_e3_i67">
+            <num>67</num>
+            <title>Sul gran Sasso d’Italia </title>
+            <desc>(Settembre). F</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Venezia_1895_e4" source="Cat_Venezia_1895_typo_0002.jpg">
+          <desc>
+            <name>Collier John.</name>
+            <trait>
+              <p> — N. a Londra nel 1850. È il secondogenito d' un lord, che tenne in Inghilterra uffici eminenti. Gli fu maestro, nella sua adolescenza, il Poynter, e, quando si recò all'estero a scopo di perfezionamento, studiò a Parigi sotto la guida di Jean Paul Laurens. Più tardi fu discepolo di Alma Tadema. Cominciò ad esporre nel 1876 al Salon parigino un suo quadro «Andrea dal Castagno». Oltre ad una serie ragguardevole di ritratti, ha condotto a termine molti quadri segnalati di genere storico, come «L’ultimo viaggio di Enrico Hudson» «La morte di Cleopatra», «Un bicchiere di vino con Cesare Borgia».</p>
+            </trait>
+          </desc>
+          <item n="68" xml:id="Venezia_1895_e4_i68">
+            <num>68</num>
+            <title>Ninfa del bosco. A</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Venezia_1895_e5" source="Cat_Venezia_1895_typo_0003.jpg">
+          <desc>
+            <name>Corelli Augusto.</name>
+            <trait>
+              <p> — N. nel 1853 a Roma. Tratta egualmente la pittura ad olio e l'acquarello, e si direbbe che abbia una naturale propensione pei soggetti drammatici o drammaticamente atteggiati. A Milano, nel 1881, espose «Dopo l'agguato», rappresentante un gentiluomo del cinquecento assassinato sul limitare d’un bosco, a Torino, nel 1884, «Povera Maria», ove un contadino sta prostrato ai piedi della bara in cui giace la sua diletta.</p>
+            </trait>
+          </desc>
+          <item n="69" xml:id="Venezia_1895_e5_i69">
+            <num>69</num>
+            <title>Ritorno dalla vendemmia. G</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Venezia_1895_e6" source="Cat_Venezia_1895_typo_0003.jpg">
+          <desc>
+            <name>Costa Giovanni.</name>
+            <trait>
+              <p>— N. a Roma nel 1826. Dal</p>
+            </trait>
+          </desc>
+          <item n="1857" xml:id="Venezia_1895_e6_i1857">
+            <num>1857</num>
+            <title>al 1859 visse nel paesello d’Ariccia, stu¬ diando assiduamente dal vero. Partecipò, come volontario, alla guerra dell' indipendenza italiana, poi si trattenne a lungo in Firenze, ove il suo ingegno si affinò. Gode amicizie illustri e molta estimazione in Inghilterra, ed è fra gli artisti che primi infusero uno spirito nuovo nell’ arte ita¬ liana.</title>
+            <desc>studiando assiduamente dal vero. Partecipò, come volontario, alla guerra dell' indipendenza italiana, poi si trattenne a lungo in Firenze, ove il suo ingegno si affinò. Gode amicizie illustri e molta estimazione in Inghilterra, ed è fra gli artisti che primi infusero uno spirito nuovo nell’ arte italiana.</desc>
+          </item>
+          <item n="70" xml:id="Venezia_1895_e6_i70">
+            <num>70</num>
+            <title>Ad fonlem aricinum. G</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Venezia_1895_e7" source="Cat_Venezia_1895_typo_0003.jpg">
+          <desc>
+            <name>Courtens Franz.</name>
+            <trait>
+              <p> — N. a Termonde (Belgio)</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Venezia_1895_e7_i1">
+            <title>il 24 febbraio 1853, vive a Bruxelles. Paesista di</title>
+          </item>
+          <item n="2" xml:id="Venezia_1895_e7_i2">
+            <title>gran fama, ritrae con sentimento profondo la</title>
+            <desc>ritrae con sentimento profondo la</desc>
+          </item>
+          <item n="3" xml:id="Venezia_1895_e7_i3">
+            <title>campagna nella stagione autunnale e la marina</title>
+          </item>
+          <item n="4" xml:id="Venezia_1895_e7_i4">
+            <title>nell’ ora crepuscolare. Il suo quadro più ammi¬</title>
+          </item>
+          <item n="71" xml:id="Venezia_1895_e7_i71">
+            <num>71</num>
+            <title>Sole di Settembre. L</title>
+          </item>
+          <item n="72" xml:id="Venezia_1895_e7_i72">
+            <num>72</num>
+            <title>Vento del Nord. L</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Venezia_1895_e8" source="Cat_Venezia_1895_typo_0004.jpg">
+          <desc>
+            <name>Dagnan-Bouveret P.</name>
+            <trait>
+              <p> A. J. — N. il 7 gennaio 1852 à Parigi. Fu discepolo di Gérôme ed espose per la prima volta al Salon del 1879 il quadro «Un matrimonio mediante fotografie», cui seguirono «Benedizione d’un Pari» (1882), «La Vaccinazione» (1883), «Cavalli all’ abbeveratoio» (1884), «Santa Vergine» (1885) «Pane benedetto». Le opere del Dagnan-Bouveret s’inspirano a una concezione delicata della vita, e spesso ad un sentimento di dolce religiosità. Egli è il poeta delle pie costumanze bretoni.</p>
+            </trait>
+          </desc>
+          <item n="73" xml:id="Venezia_1895_e8_i73">
+            <num>73</num>
+            <title>Madonna. H</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Venezia_1895_e9" source="Cat_Venezia_1895_typo_0004.jpg">
+          <desc>
+            <name>Dalbono Eduardo.</name>
+            <trait>
+              <p> — N. a Napoli nel 1843, cominciò i suoi studi a Roma, indi tornato nella sua città, ebbe a maestri Domenico Morelli e il Mancinelli. Dimorò poi òtto anni a Parigi. Fra le numerose opere uscite dal suo pennello, una delle più felici è «La leggenda delle Sirene». Egli rende con foga di colore e d'immaginazione l’intensa azzurrità del suo mare.</p>
+            </trait>
+          </desc>
+          <item n="74" xml:id="Venezia_1895_e9_i74">
+            <num>74</num>
+            <title>Il mare a Torre Annunziata. D</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Venezia_1895_e10" source="Cat_Venezia_1895_typo_0004.jpg">
+          <desc>
+            <name>Da Molin Oreste.</name>
+            <trait>
+              <p> — N nel 1857 a Pieve di</p>
+            </trait>
+          </desc>
+          <item n="75" xml:id="Venezia_1895_e10_i75">
+            <num>75</num>
+            <title>Diurnisti a due lire. C</title>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Venezia_1895_e11" source="Cat_Venezia_1895_typo_0005.jpg">
+          <desc>
+            <name>Danieli Francesco.</name>
+            <trait>
+              <p> — N. a Verona, paesista e pittore di genere, cominciò a farsi notare nel 1881. A Milano, nella Mostra triennale del 1894, espose «Mortis religio.»</p>
+            </trait>
+          </desc>
+          <item n="76" xml:id="Venezia_1895_e11_i76">
+            <num>76</num>
+            <title>Riflessi amarri G</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Venezia_1895_e12" source="Cat_Venezia_1895_typo_0005.jpg">
+          <desc>
+            <name>Davis Henry W.</name>
+            <trait>
+              <p> B. — Paesista inglese di molta finezza vive a Glaslyn.</p>
+            </trait>
+          </desc>
+          <item n="77" xml:id="Venezia_1895_e12_i77">
+            <num>77</num>
+            <title>Frutteto in Picardia. A</title>
+          </item>
+          <item n="78" xml:id="Venezia_1895_e12_i78">
+            <num>78</num>
+            <title>Ombra della sera. A</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Venezia_1895_e13" source="Cat_Venezia_1895_typo_0005.jpg">
+          <desc>
+            <name>Dell' Acqua Cesare.</name>
+            <trait>
+              <p> — N. il 22 Luglio 1821 a Pirano, vive a Bruxelles. V. Comitato di Patrocinio.</p>
+            </trait>
+          </desc>
+          <item n="79" xml:id="Venezia_1895_e13_i79">
+            <num>79</num>
+            <title>Stella mattutina. D</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

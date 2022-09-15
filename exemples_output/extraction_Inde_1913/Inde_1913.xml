@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Inde_1913">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Inde_1913_e1" source="Cat_Inde_1913_typo_0001.jpg">
+          <desc>
+            <name>CONQUET (Henri)</name>
+            <trait>
+              <p>, né à Paris. - 58, boulevard Emile-Augier, 16e.</p>
+            </trait>
+          </desc>
+          <item n="683" xml:id="Inde_1913_e1_i683">
+            <num>683</num>
+            <title>Saint-Cloud.</title>
+          </item>
+          <item n="684" xml:id="Inde_1913_e1_i684">
+            <num>684</num>
+            <title>La côte près de Batz </title>
+            <desc>(Loire-Inférieure).</desc>
+          </item>
+          <item n="685" xml:id="Inde_1913_e1_i685">
+            <num>685</num>
+            <title>Portrait de M. R...</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Inde_1913_e2" source="Cat_Inde_1913_typo_0001.jpg">
+          <desc>
+            <name>CONTANT</name>
+            <trait>
+              <p>, né à Blois. — 89, quai Ulysse-Besnard, Blois (Loir-et-Cher).</p>
+            </trait>
+          </desc>
+          <item n="686" xml:id="Inde_1913_e2_i686">
+            <num>686</num>
+            <title>Matin </title>
+            <desc>(Blois).</desc>
+          </item>
+          <item n="687" xml:id="Inde_1913_e2_i687">
+            <num>687</num>
+            <title>Soir </title>
+            <desc>(Cagnes).</desc>
+          </item>
+          <item n="688" xml:id="Inde_1913_e2_i688">
+            <num>688</num>
+            <title>Printemps </title>
+            <desc>(Cros de Cagnes).</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Inde_1913_e3" source="Cat_Inde_1913_typo_0001.jpg">
+          <desc>
+            <name>CORFU (Georges-Félicien)</name>
+            <trait>
+              <p>, né à Jonchery-sur-Vesles (Marne). — 86, rue Lamarck, 18e.</p>
+            </trait>
+          </desc>
+          <item n="689" xml:id="Inde_1913_e3_i689">
+            <num>689</num>
+            <title>Le repos, Créteil </title>
+            <desc>Créteil (Seine).</desc>
+          </item>
+          <item n="690" xml:id="Inde_1913_e3_i690">
+            <num>690</num>
+            <title>L’effort.</title>
+          </item>
+          <item n="691" xml:id="Inde_1913_e3_i691">
+            <num>691</num>
+            <title>Paysage.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Inde_1913_e4" source="Cat_Inde_1913_typo_0001.jpg">
+          <desc>
+            <name>CORlN (Edwin-P.)</name>
+            <trait>
+              <p>, né à Londres. — 15, rue Arsène-Houssaye, 8e.</p>
+            </trait>
+          </desc>
+          <item n="692" xml:id="Inde_1913_e4_i692">
+            <num>692</num>
+            <title>Palais de Hampton Court.</title>
+          </item>
+          <item n="693" xml:id="Inde_1913_e4_i693">
+            <num>693</num>
+            <title>Palais de Hampton-Court </title>
+            <desc>(triptyque).</desc>
+          </item>
+          <item n="694" xml:id="Inde_1913_e4_i694">
+            <num>694</num>
+            <title>La baie de Combe-Martin </title>
+            <desc>(Angleterre).</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Inde_1913_e5" source="Cat_Inde_1913_typo_0002.jpg">
+          <desc>
+            <name>CORNILLON-BARNAVE (Charles-Marie-Joseph),</name>
+            <trait>
+              <p>né à Marseille. - 21, rue Geoffroy-Saint-Hilaire.</p>
+            </trait>
+          </desc>
+          <item n="695" xml:id="Inde_1913_e5_i695">
+            <num>695</num>
+            <title>Ecolier, portrait </title>
+            <desc>portrait (dessin sanguine).</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Inde_1913_e6" source="Cat_Inde_1913_typo_0002.jpg">
+          <desc>
+            <name>COULON (Gustave)</name>
+            <trait>
+              <p>, né à Paris. — 12, rue de la Victoire, 9e.</p>
+            </trait>
+          </desc>
+          <item n="656" xml:id="Inde_1913_e6_i656">
+            <num>656</num>
+            <title>Bénévent-l’Abbaye </title>
+            <desc>(aquarelle).</desc>
+          </item>
+          <item n="697" xml:id="Inde_1913_e6_i697">
+            <num>697</num>
+            <title>Marine </title>
+            <desc>(aquarelle).</desc>
+          </item>
+          <item n="698" xml:id="Inde_1913_e6_i698">
+            <num>698</num>
+            <title>Gargilesse </title>
+            <desc>(aquarelle).</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Inde_1913_e7" source="Cat_Inde_1913_typo_0002.jpg">
+          <desc>
+            <name>COULON (Henri)</name>
+            <trait>
+              <p>, né à Paris. — 37, rue de Châteaudun, 9e.</p>
+            </trait>
+          </desc>
+          <item n="699" xml:id="Inde_1913_e7_i699">
+            <num>699</num>
+            <title>La vallée du Verger.</title>
+          </item>
+          <item n="700" xml:id="Inde_1913_e7_i700">
+            <num>700</num>
+            <title>La vallée de la Creuse au Pin </title>
+            <desc>(Indre).</desc>
+          </item>
+          <item n="701" xml:id="Inde_1913_e7_i701">
+            <num>701</num>
+            <title>Le rocher des Fileuses à Crozan </title>
+            <desc>(Creuse).</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Inde_1913_e8" source="Cat_Inde_1913_typo_0002.jpg">
+          <desc>
+            <name>COURCHÉ (Félix)</name>
+            <trait>
+              <p>, né à Paris. - 73, rue Louis- Blanc, 10e.</p>
+            </trait>
+          </desc>
+          <item n="702" xml:id="Inde_1913_e8_i702">
+            <num>702</num>
+            <title>Bacchante au cygne.</title>
+          </item>
+          <item n="703" xml:id="Inde_1913_e8_i703">
+            <num>703</num>
+            <title>Bacchante à la pomme.</title>
+          </item>
+          <item n="704" xml:id="Inde_1913_e8_i704">
+            <num>704</num>
+            <title>Frileuse.</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Inde_1913_e9" source="Cat_Inde_1913_typo_0003.jpg">
+          <desc>
+            <name>COURCIER (Mlle Hélène)</name>
+            <trait>
+              <p>, née à Aire-sur-la-Lys (Pas-de-Calais). — 83, avenue de Saint-Cloud, Versailles.</p>
+            </trait>
+          </desc>
+          <item n="705" xml:id="Inde_1913_e9_i705">
+            <num>705</num>
+            <title>Etudes de Bretagne.</title>
+          </item>
+          <item n="706" xml:id="Inde_1913_e9_i706">
+            <num>706</num>
+            <title>Un marché au Mans </title>
+            <desc>(esquisse).</desc>
+          </item>
+          <item n="707" xml:id="Inde_1913_e9_i707">
+            <num>707</num>
+            <title>Sous-bois à l’automne </title>
+            <desc>(Versailles).</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Inde_1913_e10" source="Cat_Inde_1913_typo_0003.jpg">
+          <desc>
+            <name>COUSIN (Charles)</name>
+            <trait>
+              <p>, né à Paris. — 10, place Dancourt, 18e, et Maison Pellerin, 30, rue d’Enghien, 9e.</p>
+            </trait>
+          </desc>
+          <item n="708" xml:id="Inde_1913_e10_i708">
+            <num>708</num>
+            <title>Grand canal à Venise </title>
+            <desc>(appartient à M. E. P...)</desc>
+          </item>
+          <item n="709" xml:id="Inde_1913_e10_i709">
+            <num>709</num>
+            <title>Un canal à Venise.</title>
+          </item>
+          <item n="710" xml:id="Inde_1913_e10_i710">
+            <num>710</num>
+            <title>Triptyque </title>
+            <desc>(Etudes).</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Inde_1913_e11" source="Cat_Inde_1913_typo_0003.jpg">
+          <desc>
+            <name>COUSSEDIÈRE (Charles-Jean)</name>
+            <trait>
+              <p>, né à Paris. — Rue Bonne-Mouche, Montévrain (Seine-et-Marne).</p>
+            </trait>
+          </desc>
+          <item n="711" xml:id="Inde_1913_e11_i711">
+            <num>711</num>
+            <title>Etude.</title>
+          </item>
+          <item n="712" xml:id="Inde_1913_e11_i712">
+            <num>712</num>
+            <title>Etude.</title>
+          </item>
+          <item n="713" xml:id="Inde_1913_e11_i713">
+            <num>713</num>
+            <title>Paysage.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Inde_1913_e12" source="Cat_Inde_1913_typo_0003.jpg">
+          <desc>
+            <name>COUSTURIER (Lucie)</name>
+            <trait>
+              <p>, née à Paris. — 43, boulevard Beauséjour, 16e.</p>
+            </trait>
+          </desc>
+          <item n="714" xml:id="Inde_1913_e12_i714">
+            <num>714</num>
+            <title>Saule pleureur.</title>
+          </item>
+          <item n="715" xml:id="Inde_1913_e12_i715">
+            <num>715</num>
+            <title>Nature morte.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Inde_1913_e13" source="Cat_Inde_1913_typo_0004.jpg">
+          <desc>
+            <name>COUSTURIER (Mme Henriette)</name>
+            <trait>
+              <p>, née à Dijon (Côted’Or). — 11, boulevard de Clichy.</p>
+            </trait>
+          </desc>
+          <item n="716" xml:id="Inde_1913_e13_i716">
+            <num>716</num>
+            <title>Des fleurs </title>
+            <desc>(peinture).</desc>
+          </item>
+          <item n="717" xml:id="Inde_1913_e13_i717">
+            <num>717</num>
+            <title>Santa Maria dei Servi </title>
+            <desc>(Sienne), aquarelle.</desc>
+          </item>
+          <item n="718" xml:id="Inde_1913_e13_i718">
+            <num>718</num>
+            <title>A Fiesole </title>
+            <desc>(aquarelle).</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Inde_1913_e14" source="Cat_Inde_1913_typo_0004.jpg">
+          <desc>
+            <name>COUTURIER (Claude)</name>
+            <trait>
+              <p>, né à Paris. — 33, rue de Longchamp, Neuilly-sur-Seine.</p>
+            </trait>
+          </desc>
+          <item n="719" xml:id="Inde_1913_e14_i719">
+            <num>719</num>
+            <title>La Roseraie du faune </title>
+            <desc>(coin de parc abandonné).</desc>
+          </item>
+          <item n="720" xml:id="Inde_1913_e14_i720">
+            <num>720</num>
+            <title>Fleurs de Nice.</title>
+          </item>
+          <item n="721" xml:id="Inde_1913_e14_i721">
+            <num>721</num>
+            <title>Au bois de Boulogne.</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Inde_1913_e15" source="Cat_Inde_1913_typo_0004.jpg">
+          <desc>
+            <name>CREED (Ninette)</name>
+            <trait>
+              <p>, née à Paris. — 1, avenue Jules- Janin, 16e.</p>
+            </trait>
+          </desc>
+          <item n="722" xml:id="Inde_1913_e15_i722">
+            <num>722</num>
+            <title>Etude de fleurs.</title>
+          </item>
+          <item n="723" xml:id="Inde_1913_e15_i723">
+            <num>723</num>
+            <title>Etude de tête.</title>
+          </item>
+          <item n="724" xml:id="Inde_1913_e15_i724">
+            <num>724</num>
+            <title>Nu.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Inde_1913_e16" source="Cat_Inde_1913_typo_0004.jpg">
+          <desc>
+            <name>CSAKY (Joseph-A.),</name>
+            <trait>
+              <p> né en Hongrie. — 3 bis, place de la Sorbonne, 6e.</p>
+            </trait>
+          </desc>
+          <item n="725" xml:id="Inde_1913_e16_i725">
+            <num>725</num>
+            <title>Groupe de femmes </title>
+            <desc>(plâtre).</desc>
+          </item>
+          <item n="726" xml:id="Inde_1913_e16_i726">
+            <num>726</num>
+            <title>Tête de femme </title>
+            <desc>(plâtre).</desc>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Inde_1913_e17" source="Cat_Inde_1913_typo_0005.jpg">
+          <desc>
+            <name>CURPHEY (Grâce),</name>
+            <trait>
+              <p> née en Ecosse. — 126, boulevard du Montparnasse, 14e.</p>
+            </trait>
+          </desc>
+          <item n="727" xml:id="Inde_1913_e17_i727">
+            <num>727</num>
+            <title>Les hortensias.</title>
+          </item>
+          <item n="728" xml:id="Inde_1913_e17_i728">
+            <num>728</num>
+            <title>Les violettes.</title>
+          </item>
+          <item n="729" xml:id="Inde_1913_e17_i729">
+            <num>729</num>
+            <title>Une étude.</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Inde_1913_e18" source="Cat_Inde_1913_typo_0005.jpg">
+          <desc>
+            <name>CUVILLIER (Albert)</name>
+            <trait>
+              <p>, né à Paris. — 3 bis, rue d’Athènes, 9e.</p>
+            </trait>
+          </desc>
+          <item n="730" xml:id="Inde_1913_e18_i730">
+            <num>730</num>
+            <title>Quai du Louvre.</title>
+          </item>
+          <item n="731" xml:id="Inde_1913_e18_i731">
+            <num>731</num>
+            <title>Port Saint-Bernard.</title>
+          </item>
+          <item n="732" xml:id="Inde_1913_e18_i732">
+            <num>732</num>
+            <title>Port Henri IV. </title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Inde_1913_e19" source="Cat_Inde_1913_typo_0005.jpg">
+          <desc>
+            <name>DALBANNE (Claudius)</name>
+            <trait>
+              <p>, né à Lyon. — 22, chemin des Tournelles, Lyon, et 16, rue Le Verrier, 6e,</p>
+            </trait>
+          </desc>
+        </entry>
+        <entry n="20" xml:id="Inde_1913_e20" source="Cat_Inde_1913_typo_0006.jpg">
+          <desc>
+            <name>DAMELINCOURT (Hubert)</name>
+            <trait>
+              <p>, né à Tarbes (Hautes¬</p>
+            </trait>
+          </desc>
+        </entry>
+        <entry n="21" xml:id="Inde_1913_e21" source="Cat_Inde_1913_typo_0006.jpg">
+          <desc>
+            <name>DAMERON (Henri)</name>
+            <trait>
+              <p>, né à Gourdon (Saône-et-Loire). — 76, rue Michel-Bizot, 12e.</p>
+            </trait>
+          </desc>
+          <item n="740" xml:id="Inde_1913_e21_i740">
+            <num>740</num>
+            <title>Jeune fille brodant.</title>
+          </item>
+          <item n="741" xml:id="Inde_1913_e21_i741">
+            <num>741</num>
+            <title>Une rue à Bry-sur-Marne.</title>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Inde_1913_e22" source="Cat_Inde_1913_typo_0006.jpg">
+          <desc>
+            <name>DANNENBERG (Alice)</name>
+            <trait>
+              <p>, née à Riga. — 87, rue d’Assas.</p>
+            </trait>
+          </desc>
+          <item n="742" xml:id="Inde_1913_e22_i742">
+            <num>742</num>
+            <title>Venise.</title>
+          </item>
+          <item n="743" xml:id="Inde_1913_e22_i743">
+            <num>743</num>
+            <title>Etude.</title>
+          </item>
+          <item n="744" xml:id="Inde_1913_e22_i744">
+            <num>744</num>
+            <title>Effet.</title>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Inde_1913_e23" source="Cat_Inde_1913_typo_0006.jpg">
+          <desc>
+            <name>DANIS (Georges)</name>
+            <trait>
+              <p>, né à Bapaume (Pas-de-Calais). — 28, rue de Neuilly, à Rosny-sous-Bois (Seine).</p>
+            </trait>
+          </desc>
+          <item n="745" xml:id="Inde_1913_e23_i745">
+            <num>745</num>
+            <title>A l'aube.</title>
+          </item>
+          <item n="746" xml:id="Inde_1913_e23_i746">
+            <num>746</num>
+            <title>En permission.</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Inde_1913_e24" source="Cat_Inde_1913_typo_0007.jpg">
+          <desc>
+            <name>D’ANNE TANT (Pierre)</name>
+            <trait>
+              <p>, né à Bruxelles. — 6, boulevard Michel-Brézin, Garches (S.-et-O.).</p>
+            </trait>
+          </desc>
+          <item n="747" xml:id="Inde_1913_e24_i747">
+            <num>747</num>
+            <title>Marchand de cresson.</title>
+          </item>
+          <item n="748" xml:id="Inde_1913_e24_i748">
+            <num>748</num>
+            <title>Le trait.</title>
+          </item>
+          <item n="749" xml:id="Inde_1913_e24_i749">
+            <num>749</num>
+            <title>Brodeuse au métier.</title>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Inde_1913_e25" source="Cat_Inde_1913_typo_0007.jpg">
+          <desc>
+            <name>DANTU (Georges)</name>
+            <trait>
+              <p>, né à Paris. — 14, rue La Fontaine.</p>
+            </trait>
+          </desc>
+          <item n="750" xml:id="Inde_1913_e25_i750">
+            <num>750</num>
+            <title>Sous les glycines mauves du Japon.</title>
+          </item>
+          <item n="751" xml:id="Inde_1913_e25_i751">
+            <num>751</num>
+            <title>Cerisier rose au Japon.</title>
+          </item>
+          <item n="752" xml:id="Inde_1913_e25_i752">
+            <num>752</num>
+            <title>Paysage au Japon.</title>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Inde_1913_e26" source="Cat_Inde_1913_typo_0007.jpg">
+          <desc>
+            <name>DAYNES (Victor)</name>
+            <trait>
+              <p>, né à Colmar. —- 115, rue Bolivar.</p>
+            </trait>
+          </desc>
+          <item n="753" xml:id="Inde_1913_e26_i753">
+            <num>753</num>
+            <title>Jeux maternels.</title>
+          </item>
+          <item n="754" xml:id="Inde_1913_e26_i754">
+            <num>754</num>
+            <title>La Loggia dei Lanzi </title>
+            <desc>(Florence).</desc>
+          </item>
+          <item n="755" xml:id="Inde_1913_e26_i755">
+            <num>755</num>
+            <title>Le chimiste.</title>
+          </item>
+        </entry>
+        <entry n="27" xml:id="Inde_1913_e27" source="Cat_Inde_1913_typo_0007.jpg">
+          <desc>
+            <name>DEBIESSE (Philippe)</name>
+            <trait>
+              <p>, né à Villefranche (Rhône). — Avenue du Chemin-de-Fer, Raincy.</p>
+            </trait>
+          </desc>
+          <item n="756" xml:id="Inde_1913_e27_i756">
+            <num>756</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="757" xml:id="Inde_1913_e27_i757">
+            <num>757</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="758" xml:id="Inde_1913_e27_i758">
+            <num>758</num>
+            <title>Etudes.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

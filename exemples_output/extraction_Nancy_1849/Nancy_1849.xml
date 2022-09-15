@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Nancy_1849">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Nancy_1849_e1" source="Cat_Nancy_1849_typo_0001.jpg">
+          <desc>
+            <name>LEBOEUF.</name>
+          </desc>
+          <item n="81" xml:id="Nancy_1849_e1_i81">
+            <num>81</num>
+            <title>Portrait du pape Pie IX.</title>
+          </item>
+          <item n="82" xml:id="Nancy_1849_e1_i82">
+            <num>82</num>
+            <title>Un Capucin, </title>
+            <desc>(étude).</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Nancy_1849_e2" source="Cat_Nancy_1849_typo_0001.jpg">
+          <desc>
+            <name>LEFORESTIER.</name>
+          </desc>
+          <item n="82" xml:id="Nancy_1849_e2_i82">
+            <num>82</num>
+            <title>Trois cadres de dessins, </title>
+            <desc>(même numéro). LÉVY ( Gustave ), graveur, rue St-Antoine, 32, à Paris.</desc>
+          </item>
+          <item n="83" xml:id="Nancy_1849_e2_i83">
+            <num>83</num>
+            <title>Le roi des Belges, gravé sur acier.</title>
+            <desc>gravé sur acier.</desc>
+          </item>
+          <item n="84" xml:id="Nancy_1849_e2_i84">
+            <num>84</num>
+            <title>Rembrandt.</title>
+          </item>
+          <item n="85" xml:id="Nancy_1849_e2_i85">
+            <num>85</num>
+            <title>Edelinck, graveur sous Louis XIV.</title>
+            <desc>graveur sous Louis XIV.</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Nancy_1849_e3" source="Cat_Nancy_1849_typo_0001.jpg">
+          <desc>
+            <name>MÉNESSIER (Auguste),</name>
+            <trait>
+              <p> peintre à Metz.</p>
+            </trait>
+          </desc>
+          <item n="86" xml:id="Nancy_1849_e3_i86">
+            <num>86</num>
+            <title>Effet de clair de lune.</title>
+          </item>
+          <item n="87" xml:id="Nancy_1849_e3_i87">
+            <num>87</num>
+            <title>Effet du soir.</title>
+          </item>
+          <item n="88" xml:id="Nancy_1849_e3_i88">
+            <num>88</num>
+            <title>Souvenir d’une chapelle, sur les bords de la Moselle.</title>
+            <desc>sur les bords de la Moselle.</desc>
+          </item>
+          <item n="89" xml:id="Nancy_1849_e3_i89">
+            <num>89</num>
+            <title>Cadre de cinq dessins, </title>
+            <desc>(manière noire).</desc>
+          </item>
+          <item n="90" xml:id="Nancy_1849_e3_i90">
+            <num>90</num>
+            <title>Trois autres cadres, idem, </title>
+            <desc>idem, (même numéro).</desc>
+          </item>
+          <item n="91" xml:id="Nancy_1849_e3_i91">
+            <num>91</num>
+            <title>Cadre de deux sépias.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Nancy_1849_e4" source="Cat_Nancy_1849_typo_0001.jpg">
+          <desc>
+            <name>MOYSE.</name>
+          </desc>
+          <item n="92" xml:id="Nancy_1849_e4_i92">
+            <num>92</num>
+            <title>Étude de vieille femme.</title>
+          </item>
+          <item n="93" xml:id="Nancy_1849_e4_i93">
+            <num>93</num>
+            <title>Portrait de M. ***.</title>
+          </item>
+          <item n="94" xml:id="Nancy_1849_e4_i94">
+            <num>94</num>
+            <title>Id. de Mme. ***.</title>
+          </item>
+          <item n="95" xml:id="Nancy_1849_e4_i95">
+            <num>95</num>
+            <title>Id. de</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Nancy_1849_e5" source="Cat_Nancy_1849_typo_0002.jpg">
+          <desc>
+            <name>Mme M.,</name>
+            <trait>
+              <p> élève de M. Pierre.</p>
+            </trait>
+          </desc>
+          <item n="96" xml:id="Nancy_1849_e5_i96">
+            <num>96</num>
+            <title>Aquarelle. Copie d’un tableau à l’huile, sur un sujet tiré de Pévéril du Pic, roman de Walter-Scott. Julien et Alice effrayés de l’apparition de la reine de l’ile de Man.</title>
+            <desc>sur un sujet tiré de Pévéril du Pic, roman de Walter-Scott. Julien et Alice effrayés de l’apparition de la reine de l’ile de Man.</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Nancy_1849_e6" source="Cat_Nancy_1849_typo_0002.jpg">
+          <desc>
+            <name>Mlle MOLLET (Éléonore),</name>
+            <trait>
+              <p> rue de la Monnaie, 7.</p>
+            </trait>
+          </desc>
+          <item n="97" xml:id="Nancy_1849_e6_i97">
+            <num>97</num>
+            <title>Portrait de Mme J., </title>
+            <desc>( pastel ).</desc>
+          </item>
+          <item n="98" xml:id="Nancy_1849_e6_i98">
+            <num>98</num>
+            <title>Id. de M. de M., idem.</title>
+            <desc>idem.</desc>
+          </item>
+          <item n="99" xml:id="Nancy_1849_e6_i99">
+            <num>99</num>
+            <title>Étude d’atelier.</title>
+          </item>
+          <item n="100" xml:id="Nancy_1849_e6_i100">
+            <num>100</num>
+            <title>L’enfance de Callot. Copie du tableau du Musée de Nancy.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Nancy_1849_e7" source="Cat_Nancy_1849_typo_0002.jpg">
+          <desc>
+            <name>PAULUS (Charles),</name>
+            <trait>
+              <p> place de Grève, 11.</p>
+            </trait>
+          </desc>
+          <item n="101" xml:id="Nancy_1849_e7_i101">
+            <num>101</num>
+            <title>Portrait du général de Préval, </title>
+            <desc>(étude).</desc>
+          </item>
+          <item n="102" xml:id="Nancy_1849_e7_i102">
+            <num>102</num>
+            <title>Id. de M. B.</title>
+          </item>
+          <item n="103" xml:id="Nancy_1849_e7_i103">
+            <num>103</num>
+            <title>Id. de M. L. P.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Nancy_1849_e8" source="Cat_Nancy_1849_typo_0002.jpg">
+          <desc>
+            <name>PIERRE (René),</name>
+            <trait>
+              <p> rue des Michottes, 3.</p>
+            </trait>
+          </desc>
+          <item n="104" xml:id="Nancy_1849_e8_i104">
+            <num>104</num>
+            <title>Portrait de Mlle ***.</title>
+          </item>
+          <item n="105" xml:id="Nancy_1849_e8_i105">
+            <num>105</num>
+            <title>Id. de M. P., </title>
+            <desc>(à la plume).</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Nancy_1849_e9" source="Cat_Nancy_1849_typo_0002.jpg">
+          <desc>
+            <name>ROLLIN.</name>
+          </desc>
+          <item n="106" xml:id="Nancy_1849_e9_i106">
+            <num>106</num>
+            <title>Visitation de Sainte-Marie aux Vierges, </title>
+            <desc>(à la plume). D'après un tableau attribué à Rottenhamd, de l’ancienne école Vénitienne, que l’on peut voir chez M. Rollin, rue des Ponts, 50. La scène se passe sur des nuages. La présence de Marie immaculée semble suffire au bonheur des vierges mortelles, qui ont quitté les asiles consacrés à la pureté pour venir au-devant de la reine des cieux.</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Nancy_1849_e10" source="Cat_Nancy_1849_typo_0003.jpg">
+          <desc>
+            <name>RONDANI (Erminio).</name>
+          </desc>
+          <item n="107" xml:id="Nancy_1849_e10_i107">
+            <num>107</num>
+            <title>Portrait de Monseigneur.</title>
+          </item>
+          <item n="108" xml:id="Nancy_1849_e10_i108">
+            <num>108</num>
+            <title>Id. de M. C. 108 bis. Id. de M. ***.</title>
+          </item>
+          <item n="109" xml:id="Nancy_1849_e10_i109">
+            <num>109</num>
+            <title>Repos en Égypte.</title>
+          </item>
+          <item n="110" xml:id="Nancy_1849_e10_i110">
+            <num>110</num>
+            <title>Adoration des Bergers.</title>
+          </item>
+          <item n="111" xml:id="Nancy_1849_e10_i111">
+            <num>111</num>
+            <title>Brennus et Camille, </title>
+            <desc>(aquarelle)</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Nancy_1849_e11" source="Cat_Nancy_1849_typo_0003.jpg">
+          <desc>
+            <name>ROUSSEL, de Verdun.</name>
+          </desc>
+          <item n="112" xml:id="Nancy_1849_e11_i112">
+            <num>112</num>
+            <title>L’enfance de Silène.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Nancy_1849_e12" source="Cat_Nancy_1849_typo_0003.jpg">
+          <desc>
+            <name>Mme ROUCHIER,</name>
+            <trait>
+              <p> née Jaser.</p>
+            </trait>
+          </desc>
+          <item n="113" xml:id="Nancy_1849_e12_i113">
+            <num>113</num>
+            <title>Un cadre de portraits, contenant ceux de M. et Mme de R., </title>
+            <desc>contenant ceux de M. et Mme de R., (aquarelle). de Mme et Mlle de P., idem. de M. H., (miniature), de Mme de L., idem. Un Enfant, aquarelle.</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Nancy_1849_e13" source="Cat_Nancy_1849_typo_0003.jpg">
+          <desc>
+            <name>SÉLIGMANN.</name>
+          </desc>
+          <item n="114" xml:id="Nancy_1849_e13_i114">
+            <num>114</num>
+            <title>Deux Buveurs, </title>
+            <desc>(pastel).</desc>
+          </item>
+          <item n="115" xml:id="Nancy_1849_e13_i115">
+            <num>115</num>
+            <title>Le Joueur de violon, idem.</title>
+            <desc>idem.</desc>
+          </item>
+          <item n="116" xml:id="Nancy_1849_e13_i116">
+            <num>116</num>
+            <title>La Réflexion, </title>
+            <desc>(dessin à l’estompe).</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Nancy_1849_e14" source="Cat_Nancy_1849_typo_0003.jpg">
+          <desc>
+            <name>Mme STUREL (Octavie),</name>
+            <trait>
+              <p> née PEIGNEZ, à Metz.</p>
+            </trait>
+          </desc>
+          <item n="117" xml:id="Nancy_1849_e14_i117">
+            <num>117</num>
+            <title>L’Album, </title>
+            <desc>(composition au pastel).</desc>
+          </item>
+          <item n="118" xml:id="Nancy_1849_e14_i118">
+            <num>118</num>
+            <title>Roses Trémières et Liserons, idem.</title>
+            <desc>idem.</desc>
+          </item>
+          <item n="119" xml:id="Nancy_1849_e14_i119">
+            <num>119</num>
+            <title>Pivoines et Iris, idem.</title>
+            <desc>idem.</desc>
+          </item>
+          <item n="120" xml:id="Nancy_1849_e14_i120">
+            <num>120</num>
+            <title>Fruits.</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Nancy_1849_e15" source="Cat_Nancy_1849_typo_0003.jpg">
+          <desc>
+            <name>DE SAINT-GERMAIN.</name>
+            <trait>
+              <p>Cinq Paysages à l’huile , sous les nos 121, 122, 123,</p>
+            </trait>
+          </desc>
+          <item n="124" xml:id="Nancy_1849_e15_i124">
+            <num>124</num>
+            <title>et 125.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Nancy_1849_e16" source="Cat_Nancy_1849_typo_0004.jpg">
+          <desc>
+            <name>THORELLE (J.-J.)</name>
+            <trait>
+              <p> peintre et professeur de dessin, rue SaintGeorges, 7 bis.</p>
+            </trait>
+          </desc>
+          <item n="126" xml:id="Nancy_1849_e16_i126">
+            <num>126</num>
+            <title>L’arrivée de Jacob en Égypte, </title>
+            <desc>(dessin à la plume et à l'encre de Chine.</desc>
+          </item>
+          <item n="28" xml:id="Nancy_1849_e16_i28">
+            <num>28</num>
+            <title>« Or, Jacob envoya Juda devant lui vers Joseph, pour l’aver¬</title>
+            <desc>Jacob envoya Juda devant lui vers Joseph, pour l’aver¬</desc>
+          </item>
+          <item n="29" xml:id="Nancy_1849_e16_i29">
+            <num>29</num>
+            <title>« Quand Jacob y fut arrivé, Joseph fit mettre les chevaux à</title>
+            <desc>Joseph fit mettre les chevaux à</desc>
+          </item>
+          <item n="127" xml:id="Nancy_1849_e16_i127">
+            <num>127</num>
+            <title>Le Pater, genre de peinture manuscrite sur peau de vélin.</title>
+            <desc>genre de peinture manuscrite sur peau de vélin.</desc>
+          </item>
+          <item n="128" xml:id="Nancy_1849_e16_i128">
+            <num>128</num>
+            <title>Salvator mundi.</title>
+          </item>
+          <item n="129" xml:id="Nancy_1849_e16_i129">
+            <num>129</num>
+            <title>La Vierge, l’enfant Jésus et Saint Jean, peint sur bois.</title>
+            <desc>l’enfant Jésus et Saint Jean, peint sur bois.</desc>
+          </item>
+          <item n="130" xml:id="Nancy_1849_e16_i130">
+            <num>130</num>
+            <title>Andromède.</title>
+          </item>
+          <item n="131" xml:id="Nancy_1849_e16_i131">
+            <num>131</num>
+            <title>Ecce Homo, </title>
+            <desc>(encre de Chine).</desc>
+          </item>
+          <item n="132" xml:id="Nancy_1849_e16_i132">
+            <num>132</num>
+            <title>Mater dolorosa.</title>
+          </item>
+          <item n="133" xml:id="Nancy_1849_e16_i133">
+            <num>133</num>
+            <title>La prédication, </title>
+            <desc>(intérieur).</desc>
+          </item>
+          <item n="134" xml:id="Nancy_1849_e16_i134">
+            <num>134</num>
+            <title>La procession dans le cloître, idem.</title>
+            <desc>idem.</desc>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Nancy_1849_e17" source="Cat_Nancy_1849_typo_0004.jpg">
+          <desc>
+            <name>WAULTRIN.</name>
+          </desc>
+          <item n="135" xml:id="Nancy_1849_e17_i135">
+            <num>135</num>
+            <title>Vue prise au vieux Château, environs de Bade.</title>
+            <desc>environs de Bade.</desc>
+          </item>
+          <item n="136" xml:id="Nancy_1849_e17_i136">
+            <num>136</num>
+            <title>Entrée du vieux Château de Bade.</title>
+          </item>
+          <item n="137" xml:id="Nancy_1849_e17_i137">
+            <num>137</num>
+            <title>Promenade en bateau.</title>
+          </item>
+          <item n="138" xml:id="Nancy_1849_e17_i138">
+            <num>138</num>
+            <title>Le Meunier de Sans-Souci.</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Nancy_1849_e18" source="Cat_Nancy_1849_typo_0005.jpg">
+          <desc>
+            <name>VIARD aîné.</name>
+          </desc>
+          <item n="139" xml:id="Nancy_1849_e18_i139">
+            <num>139</num>
+            <title>Statue de la Vierge.</title>
+          </item>
+          <item n="140" xml:id="Nancy_1849_e18_i140">
+            <num>140</num>
+            <title>M. le curé de St-Clément, </title>
+            <desc>(statuette).</desc>
+          </item>
+          <item n="141" xml:id="Nancy_1849_e18_i141">
+            <num>141</num>
+            <title>Mme T., </title>
+            <desc>(buste).</desc>
+          </item>
+          <item n="142" xml:id="Nancy_1849_e18_i142">
+            <num>142</num>
+            <title>M V. jeune, idem.</title>
+            <desc>idem.</desc>
+          </item>
+          <item n="143" xml:id="Nancy_1849_e18_i143">
+            <num>143</num>
+            <title>Deux Médaillons.</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Nancy_1849_e19" source="Cat_Nancy_1849_typo_0005.jpg">
+          <desc>
+            <name>VIARD (Giorné),</name>
+            <trait>
+              <p> sculpteur à Paris.</p>
+            </trait>
+          </desc>
+          <item n="144" xml:id="Nancy_1849_e19_i144">
+            <num>144</num>
+            <title>Buste de M. G.</title>
+          </item>
+          <item n="145" xml:id="Nancy_1849_e19_i145">
+            <num>145</num>
+            <title>Id. du général Drouot.</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Nancy_1849_e20" source="Cat_Nancy_1849_typo_0005.jpg">
+          <desc>
+            <name>CLERC (Prosper).</name>
+          </desc>
+          <item n="146" xml:id="Nancy_1849_e20_i146">
+            <num>146</num>
+            <title>Jeune Pâtre, </title>
+            <desc>(demi-statue), étude.</desc>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Nancy_1849_e21" source="Cat_Nancy_1849_typo_0005.jpg">
+          <desc>
+            <name>Mlle BARTHELEMY,</name>
+            <trait>
+              <p> rue des Quatre-Églises, 6.</p>
+            </trait>
+          </desc>
+          <item n="147" xml:id="Nancy_1849_e21_i147">
+            <num>147</num>
+            <title>Paul et Virginie, </title>
+            <desc>(Aquarelle).</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

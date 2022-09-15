@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rouen_1872">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Rouen_1872_e1" source="Cat_Rouen_1872_bpt6k1181046x_32.JPEG">
+          <desc>
+            <name>DEFAUX (Alexandre),</name>
+            <trait>
+              <p>Né à Bercy (Seine). Mention honorable à Paris. Médaille à Rouen. Rue Duperré, 4, Paris,</p>
+            </trait>
+          </desc>
+          <item n="105" xml:id="Rouen_1872_e1_i105">
+            <num>105</num>
+            <title>Environs de Barbizon.</title>
+          </item>
+          <item n="106" xml:id="Rouen_1872_e1_i106">
+            <num>106</num>
+            <title>Forêt de Sénart </title>
+            <desc>(coucher de soleil).</desc>
+          </item>
+          <item n="107" xml:id="Rouen_1872_e1_i107">
+            <num>107</num>
+            <title>Le Moulin de Jarcy </title>
+            <desc>(étude d’après nature).</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Rouen_1872_e2" source="Cat_Rouen_1872_bpt6k1181046x_32.JPEG">
+          <desc>
+            <name>DELAMBRE (Léon),</name>
+            <trait>
+              <p>Né à Paris, élève de M. L. Bonlangé. Rue du Rond-Point, 13, aux Lilas (Seine)</p>
+            </trait>
+          </desc>
+          <item n="108" xml:id="Rouen_1872_e2_i108">
+            <num>108</num>
+            <title>Vue prise en Franche-Comté.</title>
+          </item>
+          <item n="109" xml:id="Rouen_1872_e2_i109">
+            <num>109</num>
+            <title>Les harengs, </title>
+            <desc>(poissons et gibier).</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Rouen_1872_e3" source="Cat_Rouen_1872_bpt6k1181046x_32.JPEG">
+          <desc>
+            <name>DELECHAUX (Marcelin),</name>
+            <trait>
+              <p>Né à Bordeaux, élève de M. Plassan. Rue du Chemin de fer, 69, à la Garenne de Colombe (Seine).</p>
+            </trait>
+          </desc>
+          <item n="110" xml:id="Rouen_1872_e3_i110">
+            <num>110</num>
+            <title>L’amateur.</title>
+          </item>
+          <item n="111" xml:id="Rouen_1872_e3_i111">
+            <num>111</num>
+            <title>Une première pipe.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Rouen_1872_e4" source="Cat_Rouen_1872_bpt6k1181046x_32.JPEG">
+          <desc>
+            <name>DESACHY (Henri-Emile),</name>
+            <trait>
+              <p>Né à Paris, élève de MM. Cabanel et P. Colin. Avenue de Neuilly, 163, à Neuily-sur-Seine.</p>
+            </trait>
+          </desc>
+          <item n="112" xml:id="Rouen_1872_e4_i112">
+            <num>112</num>
+            <title>Paysage.</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Rouen_1872_e5" source="Cat_Rouen_1872_bpt6k1181046x_33.JPEG">
+          <desc>
+            <name>DESAVARY (Charles-Paul),</name>
+            <trait>
+              <p>Né à Arras (Pas-de-Calais), élève de MM. C. Dutilleux et Corot. Rue Saint-Aubert, 69, Arras (Pas-de-Calais).</p>
+            </trait>
+          </desc>
+          <item n="113" xml:id="Rouen_1872_e5_i113">
+            <num>113</num>
+            <title>Avenue de Schoubrach, au Caire.</title>
+            <desc>au Caire.</desc>
+          </item>
+          <item n="114" xml:id="Rouen_1872_e5_i114">
+            <num>114</num>
+            <title>Au printemps, dans le pré de Sainte-Cathe¬ rine-lès-Arras.</title>
+            <desc>dans le pré de Sainte-Catherine-lès-Arras.</desc>
+          </item>
+          <item n="15" xml:id="Rouen_1872_e5_i15">
+            <num>15</num>
+            <title>En été, dans le pré de Sainte-Catherine-lès. Arras.</title>
+            <desc>dans le pré de Sainte-Catherine-lès. Arras.</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Rouen_1872_e6" source="Cat_Rouen_1872_bpt6k1181046x_33.JPEG">
+          <desc>
+            <name>DESJARDINS (Louis-Léon),</name>
+            <trait>
+              <p>Né à Amiens (Sonme), élève de Horace Vernet. Médailles à Rouen, 1863 et 1864. A Guéret (Creuse).</p>
+            </trait>
+          </desc>
+          <item n="116" xml:id="Rouen_1872_e6_i116">
+            <num>116</num>
+            <title>Près du village.</title>
+          </item>
+          <item n="117" xml:id="Rouen_1872_e6_i117">
+            <num>117</num>
+            <title>Chemin creux sous bois.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Rouen_1872_e7" source="Cat_Rouen_1872_bpt6k1181046x_33.JPEG">
+          <desc>
+            <name>DESSORINS (Ls.-Lx).</name>
+            <trait>
+              <p>Né à Paris, élève de M. Delvau. Rue Lallier, 4, Paris.</p>
+            </trait>
+          </desc>
+          <item n="118" xml:id="Rouen_1872_e7_i118">
+            <num>118</num>
+            <title>Vue prise à Pont-Audemer, le Port.</title>
+            <desc>le Port.</desc>
+          </item>
+          <item n="119" xml:id="Rouen_1872_e7_i119">
+            <num>119</num>
+            <title>Vue prise à Pont-Audemer, intérieur de la Ville.</title>
+            <desc>intérieur de la Ville.</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Rouen_1872_e8" source="Cat_Rouen_1872_bpt6k1181046x_33.JPEG">
+          <desc>
+            <name>DESTAPPE (Maurice),</name>
+            <trait>
+              <p>Né à Paris, élève de M. Jules Noël. A Barfleur (Manche).</p>
+            </trait>
+          </desc>
+          <item n="120" xml:id="Rouen_1872_e8_i120">
+            <num>120</num>
+            <title>Effet de brume, au matin, près Cherbourg.</title>
+            <desc>au matin, près Cherbourg.</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Rouen_1872_e9" source="Cat_Rouen_1872_bpt6k1181046x_34.JPEG">
+          <desc>
+            <name>DÉVÉ (Eugène),</name>
+            <trait>
+              <p>Né à Rouen, élève de Flers. Rue de Rocroy, 2, Paris.</p>
+            </trait>
+          </desc>
+          <item n="121" xml:id="Rouen_1872_e9_i121">
+            <num>121</num>
+            <title>Animaux sur les hauteurs de Villers</title>
+          </item>
+          <item n="122" xml:id="Rouen_1872_e9_i122">
+            <num>122</num>
+            <title>Vue prise sur la côte de Grâce, à Honfleur</title>
+            <desc>à Honfleur</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Rouen_1872_e10" source="Cat_Rouen_1872_bpt6k1181046x_34.JPEG">
+          <desc>
+            <name>DE VOS (Julien),</name>
+            <trait>
+              <p>Né à Bailleul (Nord), élève de MM. Colas et Caband Rue d’Albuféra, 106, Vernon (Eure).</p>
+            </trait>
+          </desc>
+          <item n="123" xml:id="Rouen_1872_e10_i123">
+            <num>123</num>
+            <title>Ecole de village</title>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Rouen_1872_e11" source="Cat_Rouen_1872_bpt6k1181046x_34.JPEG">
+          <desc>
+            <name>D’HAUTEL (Virgile),</name>
+            <trait>
+              <p>Né à Paris, élève de Mm. Lequien et L. Cogniet. Rue du Château-d’Eau, 94, Paris.</p>
+            </trait>
+          </desc>
+          <item n="124" xml:id="Rouen_1872_e11_i124">
+            <num>124</num>
+            <title>Groseilles et prunes.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Rouen_1872_e12" source="Cat_Rouen_1872_bpt6k1181046x_34.JPEG">
+          <desc>
+            <name>DONEAUD (Jean-Eugène),</name>
+            <trait>
+              <p>Né à Paris, élève de H. Flandrin. à Villa-Montmorency (Auteuil)</p>
+            </trait>
+          </desc>
+          <item n="125" xml:id="Rouen_1872_e12_i125">
+            <num>125</num>
+            <title>Strasbourg </title>
+            <desc>(esquisse)</desc>
+          </item>
+          <item n="126" xml:id="Rouen_1872_e12_i126">
+            <num>126</num>
+            <title>Les préparatifs.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Rouen_1872_e13" source="Cat_Rouen_1872_bpt6k1181046x_35.JPEG">
+          <desc>
+            <name>DOURLENS (Xavier-Jules),</name>
+            <trait>
+              <p>Né à Arras (pas-de-Calais), élève de M. C. Dutilleux. Rue des Gaugniers, 11, Arras.</p>
+            </trait>
+          </desc>
+          <item n="127" xml:id="Rouen_1872_e13_i127">
+            <num>127</num>
+            <title>Aux environs de Mont-Saint-Eloy </title>
+            <desc>(Pas-deCalais).</desc>
+          </item>
+          <item n="128" xml:id="Rouen_1872_e13_i128">
+            <num>128</num>
+            <title>Soleil du matin.</title>
+          </item>
+          <item n="129" xml:id="Rouen_1872_e13_i129">
+            <num>129</num>
+            <title>Cour de ferme près Arras.</title>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Rouen_1872_e14" source="Cat_Rouen_1872_bpt6k1181046x_35.JPEG">
+          <desc>
+            <name>D</name>
+            <trait>
+              <p>0ZE (Jean-Marie-Melchior), Né à Uzès (Gard), élève de M. Jules F’élon. 17 Médailles, argent, vermeil et or, à diverses expositions de provinces, et deux Mentions honorables aux salons de Paris. 1861 et 1865. Officier d’Académie et Chevalier de l’Ordre royal d’Isabelle-la Catholique. Boulevard du Grand-Cours, 19, Nîmes (Gard).</p>
+            </trait>
+          </desc>
+          <item n="130" xml:id="Rouen_1872_e14_i130">
+            <num>130</num>
+            <title>Les douze apôtres, saint Gervais, sainte Hélène et saint Louis. Réduction des peintures murales, formant l'hémi¬ cycle du choeur de l’église de Saint-Gervasy, </title>
+            <desc>saint Gervais, sainte Hélène et saint Louis. Réduction des peintures murales, formant l'hémicycle du choeur de l’église de Saint-Gervasy, (Gard).</desc>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Rouen_1872_e15" source="Cat_Rouen_1872_bpt6k1181046x_35.JPEG">
+          <desc>
+            <name>DUBOC (Adolphe),</name>
+            <trait>
+              <p>Né à Rouen, élève de M. G. Morin. Mention honorable et Médaille de bronze, à Rouen Rue de la Cigogne, 3, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="131" xml:id="Rouen_1872_e15_i131">
+            <num>131</num>
+            <title>Vue de l’église Saint-Vivien, prise rue Eau¬ de-Robec).</title>
+            <desc>prise rue Eaude-Robec).</desc>
+          </item>
+          <item n="132" xml:id="Rouen_1872_e15_i132">
+            <num>132</num>
+            <title>Vue de l’église Saint-Laurent </title>
+            <desc>(prise, rue du Cimetière Saint-Laurent).</desc>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Rouen_1872_e16" source="Cat_Rouen_1872_bpt6k1181046x_36.JPEG">
+          <desc>
+            <name>DUBOURG (Mlle Victoria),</name>
+            <trait>
+              <p>Née à Paris, rue de l’Université, 19, Paris.</p>
+            </trait>
+          </desc>
+          <item n="133" xml:id="Rouen_1872_e16_i133">
+            <num>133</num>
+            <title>Panier de prunes.</title>
+          </item>
+          <item n="134" xml:id="Rouen_1872_e16_i134">
+            <num>134</num>
+            <title>Fleurs et Fruits.</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Rouen_1872_e17" source="Cat_Rouen_1872_bpt6k1181046x_36.JPEG">
+          <desc>
+            <name>DUBOURG (Louis-Alexandre),</name>
+            <trait>
+              <p>Né à Honfleur (Calvados), élève de M. Léon Cogniet. Médailles d'argent à Rouen, Saint-Lô, Caen. Médailles de bronze aux expositions de Rouen, Metz, le Havre, etc. Rue de la ville, Honfleur (Calvados).</p>
+            </trait>
+          </desc>
+          <item n="135" xml:id="Rouen_1872_e17_i135">
+            <num>135</num>
+            <title>Des Glaneuses.</title>
+          </item>
+          <item n="136" xml:id="Rouen_1872_e17_i136">
+            <num>136</num>
+            <title>Le Marché Sainte-Catherine, à Honfleur</title>
+            <desc>à Honfleur</desc>
+          </item>
+          <item n="137" xml:id="Rouen_1872_e17_i137">
+            <num>137</num>
+            <title>Ferme Saint-Siméon, à Honfleur</title>
+            <desc>à Honfleur</desc>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Rouen_1872_e18" source="Cat_Rouen_1872_bpt6k1181046x_36.JPEG">
+          <desc>
+            <name>DUCHESNE (Louis-Charles),</name>
+            <trait>
+              <p>Né à Vailly (Aisne), élève de M. Barrias. Deux médailles d’or, une médaille de vermeil, une d’argent et deux en bronze. Rue Saint-Nicolas, 71, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="138" xml:id="Rouen_1872_e18_i138">
+            <num>138</num>
+            <title>Le moulin de Penne-de-Pie </title>
+            <desc>(Calvados).</desc>
+          </item>
+          <item n="139" xml:id="Rouen_1872_e18_i139">
+            <num>139</num>
+            <title>Un moulin près d’Honfleur </title>
+            <desc>(Calvados).</desc>
+          </item>
+          <item n="140" xml:id="Rouen_1872_e18_i140">
+            <num>140</num>
+            <title>Lilas.</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Rouen_1872_e19" source="Cat_Rouen_1872_bpt6k1181046x_36.JPEG">
+          <desc>
+            <name>DUPRÉ (Victor),</name>
+            <trait>
+              <p>Né à Limoges (Haute-vienne), élève de M. Jules Dupré. Rue Saint-Georges, 45, Paris.</p>
+            </trait>
+          </desc>
+          <item n="141" xml:id="Rouen_1872_e19_i141">
+            <num>141</num>
+            <title>L'abreuvoir.</title>
+          </item>
+          <item n="142" xml:id="Rouen_1872_e19_i142">
+            <num>142</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="143" xml:id="Rouen_1872_e19_i143">
+            <num>143</num>
+            <title>Environs de Cayeux.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Venezia_1920">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Venezia_1920_e1" source="Cat_Venezia_1920_typo_0001.jpg">
+          <desc>
+            <name>Mehoffer Josef.</name>
+          </desc>
+          <item n="102" xml:id="Venezia_1920_e1_i102">
+            <num>102</num>
+            <title>a Quindici disegni a carbone.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Venezia_1920_e2" source="Cat_Venezia_1920_typo_0001.jpg">
+          <desc>
+            <name>Pankiewicz Josef.</name>
+          </desc>
+          <item n="103" xml:id="Venezia_1920_e2_i103">
+            <num>103</num>
+            <title>Motivo di Senna </title>
+            <desc>(acquaforte).</desc>
+          </item>
+          <item n="104" xml:id="Venezia_1920_e2_i104">
+            <num>104</num>
+            <title>II porto di Fécamp »</title>
+          </item>
+          <item n="105" xml:id="Venezia_1920_e2_i105">
+            <num>105</num>
+            <title>II molino »</title>
+          </item>
+          <item n="106" xml:id="Venezia_1920_e2_i106">
+            <num>106</num>
+            <title>L'argine »</title>
+          </item>
+          <item n="107" xml:id="Venezia_1920_e2_i107">
+            <num>107</num>
+            <title>La bétulla »</title>
+          </item>
+          <item n="108" xml:id="Venezia_1920_e2_i108">
+            <num>108</num>
+            <title>'Côte de grace à Honfleur' »</title>
+          </item>
+          <item n="109" xml:id="Venezia_1920_e2_i109">
+            <num>109</num>
+            <title>Motivo di Parigi »</title>
+          </item>
+          <item n="110" xml:id="Venezia_1920_e2_i110">
+            <num>110</num>
+            <title>Un vicolo di Dinau »</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Venezia_1920_e3" source="Cat_Venezia_1920_typo_0001.jpg">
+          <desc>
+            <name>Rubezak Josef.</name>
+          </desc>
+          <item n="111" xml:id="Venezia_1920_e3_i111">
+            <num>111</num>
+            <title>a Motivi di Cracovia </title>
+            <desc>(tre acquefolti).</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Venezia_1920_e4" source="Cat_Venezia_1920_typo_0001.jpg">
+          <desc>
+            <name>Skoczylas Wladyslaw.</name>
+          </desc>
+          <item n="111" xml:id="Venezia_1920_e4_i111">
+            <num>111</num>
+            <title>-121 Le tradizioni di Tatra </title>
+            <desc>(un dici silografie).</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Venezia_1920_e5" source="Cat_Venezia_1920_typo_0001.jpg">
+          <desc>
+            <name>Stankiewiczowna Zofia</name>
+          </desc>
+          <item n="123" xml:id="Venezia_1920_e5_i123">
+            <num>123</num>
+            <title>-128 Vecchia Varsavia </title>
+            <desc>(sei acqueforti).</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Venezia_1920_e6" source="Cat_Venezia_1920_typo_0001.jpg">
+          <desc>
+            <name>Szczyglinski Henryk.</name>
+          </desc>
+          <item n="129" xml:id="Venezia_1920_e6_i129">
+            <num>129</num>
+            <title>Chiesa dei Domenicani a Cracovia. </title>
+            <title>129a Cimitero.</title>
+            <desc>(litografia).</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Venezia_1920_e7" source="Cat_Venezia_1920_typo_0001.jpg">
+          <desc>
+            <name>Wyczolkowski Leon.</name>
+            <trait>
+              <p>130 Vecchio montanaro (acquaforte). 131 Lagonero di Tatra » 132 I pini » 133 Una ragazza di Tatra »</p>
+            </trait>
+          </desc>
+          <item n="134" xml:id="Venezia_1920_e7_i134">
+            <num>134</num>
+            <title>-143 Città Lublin </title>
+            <desc>(dieci litografie).</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Venezia_1920_e8" source="Cat_Venezia_1920_typo_0002.jpg">
+          <desc>
+            <name>Alexeeff Alexandre.</name>
+          </desc>
+          <item n="1" xml:id="Venezia_1920_e8_i1">
+            <num>1</num>
+            <title>Pesche.</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Venezia_1920_e9" source="Cat_Venezia_1920_typo_0002.jpg">
+          <desc>
+            <name>Besrodny Pierre.</name>
+          </desc>
+          <item n="2" xml:id="Venezia_1920_e9_i2">
+            <num>2</num>
+            <title>Raggio di luce.</title>
+          </item>
+          <item n="3" xml:id="Venezia_1920_e9_i3">
+            <num>3</num>
+            <title>Bottega araba in Algeri.</title>
+          </item>
+          <item n="4" xml:id="Venezia_1920_e9_i4">
+            <num>4</num>
+            <title>Terrazza a Siviglia.</title>
+          </item>
+          <item n="5" xml:id="Venezia_1920_e9_i5">
+            <num>5</num>
+            <title>La città d'oro.</title>
+          </item>
+          <item n="6" xml:id="Venezia_1920_e9_i6">
+            <num>6</num>
+            <title>Campo Santa Margherita - Venezia.</title>
+          </item>
+          <item n="7" xml:id="Venezia_1920_e9_i7">
+            <num>7</num>
+            <title>Canalazzo - Venezia.</title>
+          </item>
+          <item n="8" xml:id="Venezia_1920_e9_i8">
+            <num>8</num>
+            <title>Chiesa della Salute - Venezia </title>
+            <desc>(acquerello).</desc>
+          </item>
+          <item n="9" xml:id="Venezia_1920_e9_i9">
+            <num>9</num>
+            <title>Finestra chiusa. »</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Venezia_1920_e10" source="Cat_Venezia_1920_typo_0002.jpg">
+          <desc>
+            <name>Chiriaeff Eugène.</name>
+          </desc>
+          <item n="10" xml:id="Venezia_1920_e10_i10">
+            <num>10</num>
+            <title>Scena di ballo.</title>
+          </item>
+          <item n="11" xml:id="Venezia_1920_e10_i11">
+            <num>11</num>
+            <title>Scena di ballo.</title>
+          </item>
+          <item n="12" xml:id="Venezia_1920_e10_i12">
+            <num>12</num>
+            <title>Fiori.</title>
+          </item>
+          <item n="13" xml:id="Venezia_1920_e10_i13">
+            <num>13</num>
+            <title>Fiori.</title>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Venezia_1920_e11" source="Cat_Venezia_1920_typo_0002.jpg">
+          <desc>
+            <name>De Weligonoff Zenaide.</name>
+          </desc>
+          <item n="14" xml:id="Venezia_1920_e11_i14">
+            <num>14</num>
+            <title>Olivi in Liguria.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Venezia_1920_e12" source="Cat_Venezia_1920_typo_0002.jpg">
+          <desc>
+            <name>Girmunschi Giacomo.</name>
+          </desc>
+          <item n="15" xml:id="Venezia_1920_e12_i15">
+            <num>15</num>
+            <title>Medio Evo - Capri.</title>
+          </item>
+          <item n="16" xml:id="Venezia_1920_e12_i16">
+            <num>16</num>
+            <title>II Corso Tiberio - Capri.</title>
+          </item>
+          <item n="17" xml:id="Venezia_1920_e12_i17">
+            <num>17</num>
+            <title>L'Alba - Capri.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Venezia_1920_e13" source="Cat_Venezia_1920_typo_0003.jpg">
+          <desc>
+            <name>Gontcharova Nathalie.</name>
+          </desc>
+          <item n="18" xml:id="Venezia_1920_e13_i18">
+            <num>18</num>
+            <title>Spagnuola.</title>
+          </item>
+          <item n="19" xml:id="Venezia_1920_e13_i19">
+            <num>19</num>
+            <title>Spagnuola con ventaglio.</title>
+          </item>
+          <item n="20" xml:id="Venezia_1920_e13_i20">
+            <num>20</num>
+            <title>Venditrice </title>
+            <desc>(acquerello).</desc>
+          </item>
+          <item n="21" xml:id="Venezia_1920_e13_i21">
+            <num>21</num>
+            <title>Danzatrice spagnuola »</title>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Venezia_1920_e14" source="Cat_Venezia_1920_typo_0003.jpg">
+          <desc>
+            <name>Grigoriew Boris.</name>
+          </desc>
+          <item n="22" xml:id="Venezia_1920_e14_i22">
+            <num>22</num>
+            <title>II palazzo delle danze.</title>
+          </item>
+          <item n="23" xml:id="Venezia_1920_e14_i23">
+            <num>23</num>
+            <title>Ritratto dell'altore Moissi </title>
+            <desc>(Max Reigardt).</desc>
+          </item>
+          <item n="24" xml:id="Venezia_1920_e14_i24">
+            <num>24</num>
+            <title>Testa di donna.</title>
+          </item>
+          <item n="25" xml:id="Venezia_1920_e14_i25">
+            <num>25</num>
+            <title>Villaggio russo.</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Venezia_1920_e15" source="Cat_Venezia_1920_typo_0003.jpg">
+          <desc>
+            <name>Jawlensky Alexei.</name>
+            <trait>
+              <p>26 Sguardo supremo. 27 Goccie di vita. 28 Martirio. 29 Sibilla.</p>
+            </trait>
+          </desc>
+          <item n="30" xml:id="Venezia_1920_e15_i30">
+            <num>30</num>
+            <title>-32 Variazioni sul tema </title>
+            <desc>(n. 20-25-26 della serie).</desc>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Venezia_1920_e16" source="Cat_Venezia_1920_typo_0003.jpg">
+          <desc>
+            <name>Kaehlbrandt Zanelli Elisabetta.</name>
+          </desc>
+          <item n="33" xml:id="Venezia_1920_e16_i33">
+            <num>33</num>
+            <title>Ritratto di bambina.</title>
+          </item>
+          <item n="34" xml:id="Venezia_1920_e16_i34">
+            <num>34</num>
+            <title>Bambina al piano.</title>
+          </item>
+          <item n="35" xml:id="Venezia_1920_e16_i35">
+            <num>35</num>
+            <title>In giardino.</title>
+          </item>
+          <item n="36" xml:id="Venezia_1920_e16_i36">
+            <num>36</num>
+            <title>Ritorno alle stalle.</title>
+          </item>
+          <item n="37" xml:id="Venezia_1920_e16_i37">
+            <num>37</num>
+            <title>Vespero.</title>
+          </item>
+          <item n="38" xml:id="Venezia_1920_e16_i38">
+            <num>38</num>
+            <title>Anticoli Corrado.</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Venezia_1920_e17" source="Cat_Venezia_1920_typo_0003.jpg">
+          <desc>
+            <name>Larionoff Michel.</name>
+          </desc>
+          <item n="39" xml:id="Venezia_1920_e17_i39">
+            <num>39</num>
+            <title>Schizzo per il ballo russo Baba Zaga </title>
+            <desc>(acquerello).</desc>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Venezia_1920_e18" source="Cat_Venezia_1920_typo_0004.jpg">
+          <desc>
+            <name>Nesnakomoff Jawlensky André.</name>
+          </desc>
+          <item n="40" xml:id="Venezia_1920_e18_i40">
+            <num>40</num>
+            <title>La commedia è finita.</title>
+          </item>
+          <item n="41" xml:id="Venezia_1920_e18_i41">
+            <num>41</num>
+            <title>Fiore d'autunno.</title>
+          </item>
+          <item n="42" xml:id="Venezia_1920_e18_i42">
+            <num>42</num>
+            <title>Autunno.</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Venezia_1920_e19" source="Cat_Venezia_1920_typo_0004.jpg">
+          <desc>
+            <name>Portnoff Miscia.</name>
+          </desc>
+          <item n="43" xml:id="Venezia_1920_e19_i43">
+            <num>43</num>
+            <title>La Pianta di Miriam.</title>
+          </item>
+          <item n="44" xml:id="Venezia_1920_e19_i44">
+            <num>44</num>
+            <title>L’alba su Monte Amiata.</title>
+          </item>
+          <item n="45" xml:id="Venezia_1920_e19_i45">
+            <num>45</num>
+            <title>Dolly pensierosa.</title>
+          </item>
+          <item n="46" xml:id="Venezia_1920_e19_i46">
+            <num>46</num>
+            <title>Capri.</title>
+          </item>
+          <item n="47" xml:id="Venezia_1920_e19_i47">
+            <num>47</num>
+            <title>Piazza Savonarola - Primavera.</title>
+          </item>
+          <item n="48" xml:id="Venezia_1920_e19_i48">
+            <num>48</num>
+            <title>Piazza Savonarola - Autunno a.</title>
+          </item>
+          <item n="49" xml:id="Venezia_1920_e19_i49">
+            <num>49</num>
+            <title>Piazza Savonarola - Autunno b.</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Venezia_1920_e20" source="Cat_Venezia_1920_typo_0004.jpg">
+          <desc>
+            <name>Scirokof Michel.</name>
+          </desc>
+          <item n="50" xml:id="Venezia_1920_e20_i50">
+            <num>50</num>
+            <title>Maternità.</title>
+          </item>
+          <item n="51" xml:id="Venezia_1920_e20_i51">
+            <num>51</num>
+            <title>Natura morta.</title>
+          </item>
+          <item n="52" xml:id="Venezia_1920_e20_i52">
+            <num>52</num>
+            <title>Natura morta.</title>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Venezia_1920_e21" source="Cat_Venezia_1920_typo_0004.jpg">
+          <desc>
+            <name>Slutskaja Lija.</name>
+          </desc>
+          <item n="53" xml:id="Venezia_1920_e21_i53">
+            <num>53</num>
+            <title>-58 Interni.</title>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Venezia_1920_e22" source="Cat_Venezia_1920_typo_0004.jpg">
+          <desc>
+            <name>Stelletsky Demitry.</name>
+          </desc>
+          <item n="59" xml:id="Venezia_1920_e22_i59">
+            <num>59</num>
+            <title>Dall' alba alla notte.</title>
+          </item>
+          <item n="60" xml:id="Venezia_1920_e22_i60">
+            <num>60</num>
+            <title>Primavera.</title>
+          </item>
+          <item n="61" xml:id="Venezia_1920_e22_i61">
+            <num>61</num>
+            <title>Estate.</title>
+          </item>
+          <item n="62" xml:id="Venezia_1920_e22_i62">
+            <num>62</num>
+            <title>Autunno.</title>
+          </item>
+          <item n="63" xml:id="Venezia_1920_e22_i63">
+            <num>63</num>
+            <title>Inverno.</title>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Venezia_1920_e23" source="Cat_Venezia_1920_typo_0004.jpg">
+          <desc>
+            <name>Werefkine Marianne.</name>
+          </desc>
+          <item n="64" xml:id="Venezia_1920_e23_i64">
+            <num>64</num>
+            <title>Fantasmi.</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Venezia_1920_e24" source="Cat_Venezia_1920_typo_0005.jpg">
+          <desc>
+            <name>Soudbinine Seraphin.</name>
+          </desc>
+          <item n="65" xml:id="Venezia_1920_e24_i65">
+            <num>65</num>
+            <title>La danza </title>
+            <desc>(legno).</desc>
+          </item>
+          <item n="66" xml:id="Venezia_1920_e24_i66">
+            <num>66</num>
+            <title>La Vergine </title>
+            <desc>(ebano).</desc>
+          </item>
+          <item n="67" xml:id="Venezia_1920_e24_i67">
+            <num>67</num>
+            <title>Testa decorativa </title>
+            <desc>(cemento).</desc>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Venezia_1920_e25" source="Cat_Venezia_1920_typo_0005.jpg">
+          <desc>
+            <name>Grigoriew Boris.</name>
+            <trait>
+              <p>68 Ritratto del Sig. Chaljapine in Boris Godounoff (disegno). 69 Donna (disegno) 70 Donna » 71 Nyon » 72 Paesaggio russo » 73 Paesaggio russo »</p>
+            </trait>
+          </desc>
+          <item n="74" xml:id="Venezia_1920_e25_i74">
+            <num>74</num>
+            <title>-103 30 Disegni.</title>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Venezia_1920_e26" source="Cat_Venezia_1920_typo_0005.jpg">
+          <desc>
+            <name>Portnoff Miscia.</name>
+          </desc>
+          <item n="104" xml:id="Venezia_1920_e26_i104">
+            <num>104</num>
+            <title>La mimosa </title>
+            <desc>(acquafòrte a colori).</desc>
+          </item>
+          <item n="105" xml:id="Venezia_1920_e26_i105">
+            <num>105</num>
+            <title>Monte Amiata coperto di neve »</title>
+          </item>
+          <item n="106" xml:id="Venezia_1920_e26_i106">
+            <num>106</num>
+            <title>Alla fontana »</title>
+          </item>
+          <item n="107" xml:id="Venezia_1920_e26_i107">
+            <num>107</num>
+            <title>L'uccellino sul biancospino »</title>
+          </item>
+        </entry>
+        <entry n="27" xml:id="Venezia_1920_e27" source="Cat_Venezia_1920_typo_0005.jpg">
+          <desc>
+            <name>Slutskaja Lija.</name>
+            <trait>
+              <p>(Illustrazioni per opere di Andersen) :</p>
+            </trait>
+          </desc>
+          <item n="108" xml:id="Venezia_1920_e27_i108">
+            <num>108</num>
+            <title>II compagno di viaggio.</title>
+          </item>
+          <item n="109" xml:id="Venezia_1920_e27_i109">
+            <num>109</num>
+            <title>II guardiano di porci.</title>
+          </item>
+          <item n="110" xml:id="Venezia_1920_e27_i110">
+            <num>110</num>
+            <title>La collina di Elfet.</title>
+          </item>
+          <item n="111" xml:id="Venezia_1920_e27_i111">
+            <num>111</num>
+            <title>'Le briquet'.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

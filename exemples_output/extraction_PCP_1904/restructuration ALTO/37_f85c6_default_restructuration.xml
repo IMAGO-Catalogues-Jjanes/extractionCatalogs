@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>37_f85c6_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:5172/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT270" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT271" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT272" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT273" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT274" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT275" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT276" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT277" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT278" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/>
+    <OtherTag ID="LT96" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT97" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT98" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT99" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="543" HEIGHT="995" PHYSICAL_IMG_NR="37" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="543" HEIGHT="995">
+        <TextBlock HPOS="32" VPOS="55" WIDTH="473" HEIGHT="573" ID="eSc_textblock_b04e22f4" TAGREFS="BT275">
+          <Shape>
+            <Polygon POINTS="32 55 32 628 505 628 505 55"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="357" VPOS="649" WIDTH="168" HEIGHT="75" ID="eSc_textblock_0805d913" TAGREFS="BT274">
+          <Shape>
+            <Polygon POINTS="357 649 357 724 525 724 525 649"/>
+          </Shape>
+          <TextLine ID="eSc_line_e0b9ff6f" TAGREFS="LT97" BASELINE="371 677 516 675" HPOS="369" VPOS="655" WIDTH="147" HEIGHT="34">
+            <Shape><Polygon POINTS="371 677 369 658 513 655 516 675 514 687 457 684 371 689"/></Shape>
+	    <String CONTENT="L'HEURE DU THÉ" HPOS="369" VPOS="655" WIDTH="147" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_8137d500" TAGREFS="LT97" BASELINE="392 702 503 698" HPOS="391" VPOS="678" WIDTH="112" HEIGHT="36">
+            <Shape><Polygon POINTS="392 702 391 681 501 678 503 698 503 712 465 707 450 713 449 713 448 713 446 713 420 708 393 714"/></Shape>
+	    <String CONTENT="par N. FISCHER." HPOS="391" VPOS="678" WIDTH="112" HEIGHT="36"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

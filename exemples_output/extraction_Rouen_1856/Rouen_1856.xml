@@ -1,0 +1,3173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rouen_1856">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Rouen_1856_e1" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f6/383,1654,1117,419/full/0/default.jpg">
+          <desc>
+            <name>GÉRICAULT (LOUIS-THÉODORE),</name>
+            <trait>
+              <p>Ne a Rouen en 1790 mort à Paris en 1824, élève de Carle Vernet et de Guérin.</p>
+            </trait>
+          </desc>
+          <item n="3" xml:id="Rouen_1856_e1_i3">
+            <num>3</num>
+            <title>Etude de têtes de Chevreuils. Donné par M. His de la Salle</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Rouen_1856_e2" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f6/369,2113,1184,428/full/0/default.jpg">
+          <desc>
+            <name>ISABEY (J.).</name>
+          </desc>
+          <item n="4" xml:id="Rouen_1856_e2_i4">
+            <num>4</num>
+            <title>Bonaparte, premier Consul, visitant, en 1801. la manufacture de M. Sevène, au faubourg Saint-Sever. Acquis par le Musée en 1856.</title>
+            <desc>premier Consul, visitant, en 1801. la manufacture de M. Sevène, au faubourg Saint-Sever. Acquis par le Musée en 1856.</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Rouen_1856_e3" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f7/328,580,1174,703/full/0/default.jpg">
+          <desc>
+            <name>PERCIER (CHARLES),</name>
+            <trait>
+              <p>Né à Paris en 1764, mort dans la même ville en 1838.</p>
+            </trait>
+          </desc>
+          <item n="5" xml:id="Rouen_1856_e3_i5">
+            <num>5</num>
+            <title>Vase antique en forme de Coupe tire du jardin. Farnèse, à Rome.</title>
+            <desc>à Rome.</desc>
+          </item>
+          <item n="6" xml:id="Rouen_1856_e3_i6">
+            <num>6</num>
+            <title>Porte en Bronze, de l’Eglise Saint-Pierre de Rome. Ces deux dessins ont été légués par M. Vellet, architecte, né à Rouen.</title>
+            <desc>de l’Eglise Saint-Pierre de Rome. Ces deux dessins ont été légués par M. Vellet, architecte, né à Rouen.</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Rouen_1856_e4" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f7/348,1299,1141,347/full/0/default.jpg">
+          <desc>
+            <name>PEETER-NEEFFS,</name>
+            <trait>
+              <p>Né à Anvers en 1580.</p>
+            </trait>
+          </desc>
+          <item n="7" xml:id="Rouen_1856_e4_i7">
+            <num>7</num>
+            <title>Intérieur d’une Eglise gothique, effet de nuit. Provenant aussi du legs de M. Vellet.</title>
+            <desc>effet de nuit. Provenant aussi du legs de M. Vellet.</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Rouen_1856_e5" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f7/341,1716,1168,798/full/0/default.jpg">
+          <desc>
+            <name>RONMY (GUILLAUME-FRÉDÉRIC),</name>
+            <trait>
+              <p>Né à Rouen en 1786, mort a Passy en 1854, élève de Vien et de Faunay.</p>
+            </trait>
+          </desc>
+          <item n="8" xml:id="Rouen_1856_e5_i8">
+            <num>8</num>
+            <title>Sacrice d'Abraham à son arivée dans la terre. de Chanaan. Légué par l’auteur à sa ville natale. NOTA. Faute d’espace, on n’a pu faire figurer à l'Exposition deux autres Tableaux, également donnés au Musée, savoir, le Supplice de Brunehaut, donné par l’Empereur en 1854, et le Départ des Grecs de Parga, donné en 1855 par M. A. Duclos, de Paris.</title>
+            <desc>on n’a pu faire figurer à l'Exposition deux autres Tableaux, également donnés au Musée, savoir, le Supplice de Brunehaut, donné par l’Empereur en 1854, et le Départ des Grecs de Parga, donné en 1855 par M. A. Duclos, de Paris.</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Rouen_1856_e6" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f8/269,588,890,330/full/0/default.jpg">
+          <desc>
+            <name>ACHARD,</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="9" xml:id="Rouen_1856_e6_i9">
+            <num>9</num>
+            <title>Paysage.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Rouen_1856_e7" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f8/319,929,1052,400/full/0/default.jpg">
+          <desc>
+            <name>ADELINA (Mlle),</name>
+            <trait>
+              <p>A Paris, boulevard Mont-Parnasse, 136.</p>
+            </trait>
+          </desc>
+          <item n="10" xml:id="Rouen_1856_e7_i10">
+            <num>10</num>
+            <title>Camélias, Primevères, fond de ciel.</title>
+            <desc>Primevères, fond de ciel.</desc>
+          </item>
+          <item n="11" xml:id="Rouen_1856_e7_i11">
+            <num>11</num>
+            <title>Roses et Cosmos.</title>
+          </item>
+          <item n="12" xml:id="Rouen_1856_e7_i12">
+            <num>12</num>
+            <title>Roses et Coquelicots.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Rouen_1856_e8" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f8/319,1372,1161,1187/full/0/default.jpg">
+          <desc>
+            <name>AILLAUD (ALPHONSE),</name>
+            <trait>
+              <p>A Rouen, rue Chasse-Marée, 5.</p>
+            </trait>
+          </desc>
+          <item n="13" xml:id="Rouen_1856_e8_i13">
+            <num>13</num>
+            <title>Le Porte-Etendard des Guides </title>
+            <desc>(1856). Aquarelle rehaussée de pastel.</desc>
+          </item>
+          <item n="14" xml:id="Rouen_1856_e8_i14">
+            <num>14</num>
+            <title>L’Avant-Garde. Deux Cuirassiers de la Garde. précédant un général, arrivent sur le terrain d’une revue. Aquarelle réhausée de pastel. Ces deux dessins appartiennent à M. V..</title>
+            <desc>arrivent sur le terrain d’une revue. Aquarelle réhausée de pastel. Ces deux dessins appartiennent à M. V..</desc>
+          </item>
+          <item n="15" xml:id="Rouen_1856_e8_i15">
+            <num>15</num>
+            <title>Artillerie légère de la Vieille-Garde, Champ de bataille de Wagram </title>
+            <desc>Champ de bataille de Wagram (1809). Appartient à M. L..</desc>
+          </item>
+          <item n="16" xml:id="Rouen_1856_e8_i16">
+            <num>16</num>
+            <title>Une Charge des Lanciers rouges de la Garde. impériale, Enfoncés les Prussiens!... </title>
+            <desc>Enfoncés les Prussiens!... (Campagne de 1813.). Vendu à M. G..</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Rouen_1856_e9" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f9/287,617,1154,345/full/0/default.jpg">
+          <desc>
+            <name>ANDRÉ (JULES),</name>
+            <trait>
+              <p>AParis.</p>
+            </trait>
+          </desc>
+          <item n="17" xml:id="Rouen_1856_e9_i17">
+            <num>17</num>
+            <title>Marais près de Bourganeuf </title>
+            <desc>(département de la Creuse.).</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Rouen_1856_e10" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f9/280,1046,1140,251/full/0/default.jpg">
+          <desc>
+            <name>BARON (STÉPHANE),</name>
+            <trait>
+              <p>A Paries, rue de l'Ouest, 36.</p>
+            </trait>
+          </desc>
+          <item n="18" xml:id="Rouen_1856_e10_i18">
+            <num>18</num>
+            <title>Le Jean de Paris </title>
+            <desc>(forêt de Fontainebleau).</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Rouen_1856_e11" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f9/294,1401,1113,252/full/0/default.jpg">
+          <desc>
+            <name>BARRY (FRANÇOIS),</name>
+            <trait>
+              <p>A Paris, rue de Laval, 11.</p>
+            </trait>
+          </desc>
+          <item n="19" xml:id="Rouen_1856_e11_i19">
+            <num>19</num>
+            <title>Le Coup de Vent.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Rouen_1856_e12" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f9/273,1743,1161,457/full/0/default.jpg">
+          <desc>
+            <name>BAUDIT (AMÉDÉE),</name>
+            <trait>
+              <p>A Paris, rue de Douai, 43.</p>
+            </trait>
+          </desc>
+          <item n="20" xml:id="Rouen_1856_e12_i20">
+            <num>20</num>
+            <title>Les Dunes de Bretagne.</title>
+          </item>
+          <item n="21" xml:id="Rouen_1856_e12_i21">
+            <num>21</num>
+            <title>Au bord d’un Etang.</title>
+          </item>
+          <item n="22" xml:id="Rouen_1856_e12_i22">
+            <num>22</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="25" xml:id="Rouen_1856_e12_i25">
+            <num>25</num>
+            <title>Sur les bords du Loing.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Rouen_1856_e13" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f9/280,2270,1168,306/full/0/default.jpg">
+          <desc>
+            <name>BENNETER (L-J).</name>
+            <trait>
+              <p>A Paris, rue du Faubourg-Saint-Honoré, 217, élève de F. Gudin et du peintre hollandais Louis Meyer.</p>
+            </trait>
+          </desc>
+          <item n="24" xml:id="Rouen_1856_e13_i24">
+            <num>24</num>
+            <title>La Rade de Camaret près Brest.</title>
+          </item>
+          <item n="25" xml:id="Rouen_1856_e13_i25">
+            <num>25</num>
+            <title>Clair de Lune et Calme: un Train de Bois sur. un lac inférieur en Norwége.</title>
+          </item>
+          <item n="26" xml:id="Rouen_1856_e13_i26">
+            <num>26</num>
+            <title>Mauvais Tenps en pleine Mer, un petit Navire. en train de diminuer de voiles.</title>
+          </item>
+          <item n="27" xml:id="Rouen_1856_e13_i27">
+            <num>27</num>
+            <title>Clair de Lune et Calme plat, un Brick-Goëlette à côté d'un Navire naufragé, dont il tâche de sauver le chargement.</title>
+            <desc>dont il tâche de sauver le chargement.</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Rouen_1856_e14" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f10/396,1264,1069,327/full/0/default.jpg">
+          <desc>
+            <name>BENTABOLE (Louis),</name>
+            <trait>
+              <p>A Paris, rue Pigale, 22.</p>
+            </trait>
+          </desc>
+          <item n="28" xml:id="Rouen_1856_e14_i28">
+            <num>28</num>
+            <title>La Rentrée au Port.</title>
+          </item>
+          <item n="29" xml:id="Rouen_1856_e14_i29">
+            <num>29</num>
+            <title>Rade de Boulogne-sur-Mer.</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Rouen_1856_e15" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f10/396,1702,1117,450/full/0/default.jpg">
+          <desc>
+            <name>BERLIOZ DE PRÉMONT.</name>
+            <trait>
+              <p>A Paris. 50 Vue du Château de Vauvenargues.</p>
+            </trait>
+          </desc>
+          <item n="31" xml:id="Rouen_1856_e15_i31">
+            <num>31</num>
+            <title>L’Echarpe. Etude de figure.</title>
+          </item>
+          <item n="32" xml:id="Rouen_1856_e15_i32">
+            <num>32</num>
+            <title>Le Collier.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Rouen_1856_e16" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f10/383,2263,1151,333/full/0/default.jpg">
+          <desc>
+            <name>BERTHÉLEMY (ÉMILE),</name>
+            <trait>
+              <p>A Montmartre, rue Berthe, 9.</p>
+            </trait>
+          </desc>
+          <item n="33" xml:id="Rouen_1856_e16_i33">
+            <num>33</num>
+            <title>Arrivée des Bateaux de pêche au port de Douar- nenez </title>
+            <desc>(Bretagne).</desc>
+          </item>
+          <item n="54" xml:id="Rouen_1856_e16_i54">
+            <num>54</num>
+            <title>Porte d’Ecurie, à Pont-Audemer.</title>
+            <desc>à Pont-Audemer.</desc>
+          </item>
+          <item n="35" xml:id="Rouen_1856_e16_i35">
+            <num>35</num>
+            <title>Vue du Port de Courseulles, prise de la mer.</title>
+            <desc>prise de la mer.</desc>
+          </item>
+          <item n="36" xml:id="Rouen_1856_e16_i36">
+            <num>36</num>
+            <title>Vue du Port de Courseulles, prise de l’intérieur. du port.</title>
+            <desc>prise de l’intérieur. du port.</desc>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Rouen_1856_e17" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f11/294,936,1147,252/full/0/default.jpg">
+          <desc>
+            <name>BERTIER (EUGÈNE),</name>
+            <trait>
+              <p>A Paris, rue d’Enfe, 66́.</p>
+            </trait>
+          </desc>
+          <item n="57" xml:id="Rouen_1856_e17_i57">
+            <num>57</num>
+            <title>Soldats écoutant une Chanteuse.</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Rouen_1856_e18" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f11/287,1299,1175,415/full/0/default.jpg">
+          <desc>
+            <name>BOUQUET (MICHEL),</name>
+            <trait>
+              <p>A Paris, rue de Suresne, 1 bis.</p>
+            </trait>
+          </desc>
+          <item n="28" xml:id="Rouen_1856_e18_i28">
+            <num>28</num>
+            <title>Paysage aux environs de Quimperlé.</title>
+          </item>
+          <item n="29" xml:id="Rouen_1856_e18_i29">
+            <num>29</num>
+            <title>Une Mare, près le château de Kervegan </title>
+            <desc>près le château de Kervegan (Bretagne).</desc>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Rouen_1856_e19" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f11/314,1764,1120,319/full/0/default.jpg">
+          <desc>
+            <name>DOURGES (Mlle),</name>
+            <trait>
+              <p>1 Puis, rue Sunt-Cues, 54.</p>
+            </trait>
+          </desc>
+          <item n="40" xml:id="Rouen_1856_e19_i40">
+            <num>40</num>
+            <title>Une Petite fille mangeant.</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Rouen_1856_e20" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f11/300,2119,1169,422/full/0/default.jpg">
+          <desc>
+            <name>BOURLET DE LA VALLÉE (Mme),</name>
+            <trait>
+              <p> née ESPÉRANCE LANGLOIS, A Paris.</p>
+            </trait>
+          </desc>
+          <item n="41" xml:id="Rouen_1856_e20_i41">
+            <num>41</num>
+            <title>Paysannes Normandes.</title>
+          </item>
+          <item n="42" xml:id="Rouen_1856_e20_i42">
+            <num>42</num>
+            <title>Abbaye à Saint-Denis.</title>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Rouen_1856_e21" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f12/403,635,953,135/full/0/default.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>43. Retour de la Pêche aux Harengs.</p>
+            </trait>
+          </desc>
+          <item n="43" xml:id="Rouen_1856_e21_i43">
+            <num>43</num>
+            <title>Retour de la Pêche aux Harengs.</title>
+          </item>
+          <item n="44" xml:id="Rouen_1856_e21_i44">
+            <num>44</num>
+            <title>Baigneuses.</title>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Rouen_1856_e22" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f12/396,841,1008,319/full/0/default.jpg">
+          <desc>
+            <name>BRISSOT DE WARVILLE</name>
+            <trait>
+              <p>Au palais de Compiègne</p>
+            </trait>
+          </desc>
+          <item n="5" xml:id="Rouen_1856_e22_i5">
+            <num>5</num>
+            <title>Vue prise à Chartretes, près Melun</title>
+            <desc>près Melun</desc>
+          </item>
+          <item n="46" xml:id="Rouen_1856_e22_i46">
+            <num>46</num>
+            <title>Un Paysage.</title>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Rouen_1856_e23" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f12/403,1245,1131,879/full/0/default.jpg">
+          <desc>
+            <name>BUJON,</name>
+            <trait>
+              <p>A Rouen. 47 Le Sculpteur de Bosses.</p>
+            </trait>
+          </desc>
+          <item n="48" xml:id="Rouen_1856_e23_i48">
+            <num>48</num>
+            <title>La Famille en goguette.</title>
+          </item>
+          <item n="49" xml:id="Rouen_1856_e23_i49">
+            <num>49</num>
+            <title>Tête de Jeune fille.</title>
+          </item>
+          <item n="50" xml:id="Rouen_1856_e23_i50">
+            <num>50</num>
+            <title>Le Tambour crevé.</title>
+          </item>
+          <item n="51" xml:id="Rouen_1856_e23_i51">
+            <num>51</num>
+            <title>Troupier, ne m’bitez pas)..</title>
+            <desc>ne m’bitez pas)..</desc>
+          </item>
+          <item n="52" xml:id="Rouen_1856_e23_i52">
+            <num>52</num>
+            <title>Episode de l’Inondation de 1856.</title>
+          </item>
+          <item n="53" xml:id="Rouen_1856_e23_i53">
+            <num>53</num>
+            <title>Le Double malheur d’un exposant. L'Artiste, entendant critiquer son ouvrage et désirant savoir ce que les spectateurs en pensent, à le malheur de mettre le pied sur la robe de la jeune personne.</title>
+            <desc>entendant critiquer son ouvrage et désirant savoir ce que les spectateurs en pensent, à le malheur de mettre le pied sur la robe de la jeune personne.</desc>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Rouen_1856_e24" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f12/396,2215,1124,347/full/0/default.jpg">
+          <desc>
+            <name>CARBILLET,</name>
+            <trait>
+              <p>A Paris, rue Saint-Andre-des-Aris, 37.</p>
+            </trait>
+          </desc>
+          <item n="54" xml:id="Rouen_1856_e24_i54">
+            <num>54</num>
+            <title>Portrait de Fenme.</title>
+          </item>
+          <item n="55" xml:id="Rouen_1856_e24_i55">
+            <num>55</num>
+            <title>Jeune Fille. Téte d’expression.</title>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Rouen_1856_e25" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f13/265,584,975,317/full/0/default.jpg">
+          <desc>
+            <name>CARON (PAULINE),</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="56" xml:id="Rouen_1856_e25_i56">
+            <num>56</num>
+            <title>Deux Enfants jouant sur une table.</title>
+          </item>
+          <item n="57" xml:id="Rouen_1856_e25_i57">
+            <num>57</num>
+            <title>Un Enfant lisant.</title>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Rouen_1856_e26" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f13/265,917,975,304/full/0/default.jpg">
+          <desc>
+            <name>CHAPLIN,</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="58" xml:id="Rouen_1856_e26_i58">
+            <num>58</num>
+            <title>Femme à la Cage.</title>
+          </item>
+          <item n="59" xml:id="Rouen_1856_e26_i59">
+            <num>59</num>
+            <title>La Toilette.</title>
+          </item>
+        </entry>
+        <entry n="27" xml:id="Rouen_1856_e27" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f13/265,1277,1084,473/full/0/default.jpg">
+          <desc>
+            <name>CHARPENTIER (AUGUSTE),</name>
+            <trait>
+              <p>A Paris, boulevard Poissonnière, 14.</p>
+            </trait>
+          </desc>
+          <item n="60" xml:id="Rouen_1856_e27_i60">
+            <num>60</num>
+            <title>Le Christ.</title>
+          </item>
+          <item n="61" xml:id="Rouen_1856_e27_i61">
+            <num>61</num>
+            <title>Péché.</title>
+          </item>
+          <item n="62" xml:id="Rouen_1856_e27_i62">
+            <num>62</num>
+            <title>Innocence.</title>
+          </item>
+          <item n="63" xml:id="Rouen_1856_e27_i63">
+            <num>63</num>
+            <title>Volupté.</title>
+          </item>
+        </entry>
+        <entry n="28" xml:id="Rouen_1856_e28" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f13/285,1766,1104,236/full/0/default.jpg">
+          <desc>
+            <name>CHARPENTIER (EUGÈNE),</name>
+            <trait>
+              <p>A Versailles, rue de Provence, 1.</p>
+            </trait>
+          </desc>
+          <item n="64" xml:id="Rouen_1856_e28_i64">
+            <num>64</num>
+            <title>La Trève en Crimée.</title>
+          </item>
+        </entry>
+        <entry n="29" xml:id="Rouen_1856_e29" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f13/278,2065,1173,453/full/0/default.jpg">
+          <desc>
+            <name>CIBOT (E.).</name>
+            <trait>
+              <p>A Paris, rue Suger, 12.</p>
+            </trait>
+          </desc>
+          <item n="65" xml:id="Rouen_1856_e29_i65">
+            <num>65</num>
+            <title>La Charité </title>
+            <desc>(Caritas), prise dans son acention. la plus large et la plus efficace. Basée sur la Religion chrétienne, dont le premier principe est l’amour du semblable, Aimez-vous les uns les autres.</desc>
+          </item>
+          <item n="66" xml:id="Rouen_1856_e29_i66">
+            <num>66</num>
+            <title>Vue prise à Orsay.</title>
+          </item>
+        </entry>
+        <entry n="30" xml:id="Rouen_1856_e30" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f14/369,1635,903,287/full/0/default.jpg">
+          <desc>
+            <name>COROT.</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="67" xml:id="Rouen_1856_e30_i67">
+            <num>67</num>
+            <title>Vue du Port de La Rochelle.</title>
+          </item>
+        </entry>
+        <entry n="31" xml:id="Rouen_1856_e31" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f14/341,1979,886,244/full/0/default.jpg">
+          <desc>
+            <name>COUTURIER.</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="68" xml:id="Rouen_1856_e31_i68">
+            <num>68</num>
+            <title>Basse-Cour.</title>
+          </item>
+        </entry>
+        <entry n="32" xml:id="Rouen_1856_e32" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f14/359,2276,1028,286/full/0/default.jpg">
+          <desc>
+            <name>COURT (JOSEPH),</name>
+            <trait>
+              <p>Conservateur du Musée de Rouen.</p>
+            </trait>
+          </desc>
+          <item n="69" xml:id="Rouen_1856_e32_i69">
+            <num>69</num>
+            <title>Portait de M. Fleury, Maire de Rouen.</title>
+            <desc>Maire de Rouen.</desc>
+          </item>
+        </entry>
+        <entry n="33" xml:id="Rouen_1856_e33" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f15/273,635,1161,272/full/0/default.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>70. Portrait des Enfants de M. E B..</p>
+            </trait>
+          </desc>
+          <item n="70" xml:id="Rouen_1856_e33_i70">
+            <num>70</num>
+            <title>Portrait des Enfants de M. E B..</title>
+          </item>
+          <item n="71" xml:id="Rouen_1856_e33_i71">
+            <num>71</num>
+            <title>Portrait d’un jeune Arabe.</title>
+          </item>
+          <item n="72" xml:id="Rouen_1856_e33_i72">
+            <num>72</num>
+            <title>Une Jeune Femme au bal. Ce pastel appartient à M. Legrip ainé</title>
+          </item>
+        </entry>
+        <entry n="34" xml:id="Rouen_1856_e34" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f15/287,977,1127,224/full/0/default.jpg">
+          <desc>
+            <name>COUSIN,</name>
+            <trait>
+              <p>Aux Andelys.</p>
+            </trait>
+          </desc>
+          <item n="73" xml:id="Rouen_1856_e34_i73">
+            <num>73</num>
+            <title>Portrait de Mme A.</title>
+          </item>
+        </entry>
+        <entry n="35" xml:id="Rouen_1856_e35" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f15/273,1278,1161,375/full/0/default.jpg">
+          <desc>
+            <name>COUVELEY,</name>
+            <trait>
+              <p>Au Havre.</p>
+            </trait>
+          </desc>
+          <item n="74" xml:id="Rouen_1856_e35_i74">
+            <num>74</num>
+            <title>Une Halte d’Arabes en Asie.</title>
+          </item>
+          <item n="75" xml:id="Rouen_1856_e35_i75">
+            <num>75</num>
+            <title>Une Caravane en marche </title>
+            <desc>(environs de Smyrne)</desc>
+          </item>
+          <item n="76" xml:id="Rouen_1856_e35_i76">
+            <num>76</num>
+            <title>Plage, près Sainte-Adresse.</title>
+            <desc>près Sainte-Adresse.</desc>
+          </item>
+        </entry>
+        <entry n="36" xml:id="Rouen_1856_e36" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f15/266,1723,1134,518/full/0/default.jpg">
+          <desc>
+            <name>CURZON (ALFRED DE),</name>
+            <trait>
+              <p>A Paris, rue Bonaparte, 13.</p>
+            </trait>
+          </desc>
+          <item n="77" xml:id="Rouen_1856_e36_i77">
+            <num>77</num>
+            <title>Démocrite. Paysauge ave figuret.</title>
+          </item>
+          <item n="78" xml:id="Rouen_1856_e36_i78">
+            <num>78</num>
+            <title>Albanaise près d’une citerne.</title>
+          </item>
+          <item n="79" xml:id="Rouen_1856_e36_i79">
+            <num>79</num>
+            <title>La Villa d’Est à Tivoli.</title>
+          </item>
+          <item n="80" xml:id="Rouen_1856_e36_i80">
+            <num>80</num>
+            <title>Le Tibre à Fiumiscino.</title>
+          </item>
+        </entry>
+        <entry n="37" xml:id="Rouen_1856_e37" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f15/266,2304,1134,278/full/0/default.jpg">
+          <desc>
+            <name>DAGNAN (L.).</name>
+            <trait>
+              <p>A Pris, rue Saint-Georges, 35.</p>
+            </trait>
+          </desc>
+          <item n="81" xml:id="Rouen_1856_e37_i81">
+            <num>81</num>
+            <title>Forêt de Fontainebleau.</title>
+          </item>
+          <item n="82" xml:id="Rouen_1856_e37_i82">
+            <num>82</num>
+            <title>Le Bois au bord de l’eau.</title>
+          </item>
+        </entry>
+        <entry n="38" xml:id="Rouen_1856_e38" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f16/376,642,1076,217/full/0/default.jpg">
+          <desc>
+            <name>DEBOIS</name>
+            <trait>
+              <p>A Paris, rue de Fille-du-Calvaire, 6.</p>
+            </trait>
+          </desc>
+          <item n="83" xml:id="Rouen_1856_e38_i83">
+            <num>83</num>
+            <title>Daniel dans la Fosse aux lions.</title>
+          </item>
+        </entry>
+        <entry n="39" xml:id="Rouen_1856_e39" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f16/369,964,1158,436/full/0/default.jpg">
+          <desc>
+            <name>DEMIZE.</name>
+            <trait>
+              <p>A Fonen, nue des Carmés, eour de M. Paillon, qhamacien.</p>
+            </trait>
+          </desc>
+          <item n="84" xml:id="Rouen_1856_e39_i84">
+            <num>84</num>
+            <title>F.-G. Belliard, Colporteur-Crieur de papiers.</title>
+            <desc>Colporteur-Crieur de papiers.</desc>
+          </item>
+          <item n="85" xml:id="Rouen_1856_e39_i85">
+            <num>85</num>
+            <title>Aveugle, esquisse.</title>
+            <desc>esquisse.</desc>
+          </item>
+          <item n="86" xml:id="Rouen_1856_e39_i86">
+            <num>86</num>
+            <title>Tête d’Etude. Dessins à l'estampe</title>
+          </item>
+        </entry>
+        <entry n="40" xml:id="Rouen_1856_e40" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f16/362,1422,1165,449/full/0/default.jpg">
+          <desc>
+            <name>DESPLANQUE (CHARLES),</name>
+            <trait>
+              <p>Elève de Jacquand. A Boulognesur-Mer, rue des Vieillards, 15.</p>
+            </trait>
+          </desc>
+          <item n="87" xml:id="Rouen_1856_e40_i87">
+            <num>87</num>
+            <title>Un Corps-de-Garde au moyen-âge, la Partie. de Dés.</title>
+          </item>
+          <item n="88" xml:id="Rouen_1856_e40_i88">
+            <num>88</num>
+            <title>Tête de Bœuf à l’étable.</title>
+          </item>
+        </entry>
+        <entry n="41" xml:id="Rouen_1856_e41" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f16/362,1976,967,326/full/0/default.jpg">
+          <desc>
+            <name>DEVEDEUX.</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="89" xml:id="Rouen_1856_e41_i89">
+            <num>89</num>
+            <title>La Baigneuse.</title>
+          </item>
+          <item n="90" xml:id="Rouen_1856_e41_i90">
+            <num>90</num>
+            <title>Jeune Mère.</title>
+          </item>
+        </entry>
+        <entry n="42" xml:id="Rouen_1856_e42" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f16/362,2338,1014,238/full/0/default.jpg">
+          <desc>
+            <name>DOERR (CHARLES),</name>
+            <trait>
+              <p>A Paris, rue du Faubourg-Saint-Honoré, 235.</p>
+            </trait>
+          </desc>
+          <item n="21" xml:id="Rouen_1856_e42_i21">
+            <num>21</num>
+            <title>Cléopâtre au Bain.</title>
+          </item>
+        </entry>
+        <entry n="43" xml:id="Rouen_1856_e43" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f17/300,599,1169,459/full/0/default.jpg">
+          <desc>
+            <name>DUJARDIN (LOUIS),</name>
+            <trait>
+              <p>A Arcueil, route de Cachan, 1.</p>
+            </trait>
+          </desc>
+          <item n="42" xml:id="Rouen_1856_e43_i42">
+            <num>42</num>
+            <title>Le Plaisir des Jardins.</title>
+          </item>
+          <item n="33" xml:id="Rouen_1856_e43_i33">
+            <num>33</num>
+            <title>Le Triomphe de Galathée.</title>
+          </item>
+          <item n="94" xml:id="Rouen_1856_e43_i94">
+            <num>94</num>
+            <title>Gravures sur bois, scientifiques, industrielles. et commerciales.</title>
+            <desc>scientifiques, industrielles. et commerciales.</desc>
+          </item>
+        </entry>
+        <entry n="44" xml:id="Rouen_1856_e44" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f17/280,1121,1168,470/full/0/default.jpg">
+          <desc>
+            <name>DUMÉE,</name>
+            <trait>
+              <p>A Rouen, rue du Chanp-des-Oiseaux, 81.</p>
+            </trait>
+          </desc>
+          <item n="95" xml:id="Rouen_1856_e44_i95">
+            <num>95</num>
+            <title>Louis XIV à Dunkerque.</title>
+          </item>
+          <item n="96" xml:id="Rouen_1856_e44_i96">
+            <num>96</num>
+            <title>Poste militaire au château de Clère.</title>
+          </item>
+          <item n="97" xml:id="Rouen_1856_e44_i97">
+            <num>97</num>
+            <title>La Leçon de musique.</title>
+          </item>
+          <item n="98" xml:id="Rouen_1856_e44_i98">
+            <num>98</num>
+            <title>Une Marine.</title>
+          </item>
+        </entry>
+        <entry n="45" xml:id="Rouen_1856_e45" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f17/287,1641,1175,586/full/0/default.jpg">
+          <desc>
+            <name>DUNGLAS (CAMLLE),</name>
+            <trait>
+              <p>A Rouen, rue d’Anvers, 5.</p>
+            </trait>
+          </desc>
+          <item n="99" xml:id="Rouen_1856_e45_i99">
+            <num>99</num>
+            <title>Un Zouave terrassant un Russe.</title>
+          </item>
+          <item n="100" xml:id="Rouen_1856_e45_i100">
+            <num>100</num>
+            <title>Un Chiffonnier et une Chiffonnière buvant. ensemble.</title>
+          </item>
+          <item n="101" xml:id="Rouen_1856_e45_i101">
+            <num>101</num>
+            <title>Scène d’inondation.</title>
+          </item>
+          <item n="102" xml:id="Rouen_1856_e45_i102">
+            <num>102</num>
+            <title>Napoléon III au milieu des Inondés. Ces groupes sont en terre.</title>
+          </item>
+        </entry>
+        <entry n="46" xml:id="Rouen_1856_e46" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f17/244,2275,1241,336/full/0/default.jpg">
+          <desc>
+            <name>DUTILLEUX.</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="103" xml:id="Rouen_1856_e46_i103">
+            <num>103</num>
+            <title>Paysage aux environs de Valenciennes.</title>
+          </item>
+        </entry>
+        <entry n="47" xml:id="Rouen_1856_e47" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f18/376,633,1151,507/full/0/default.jpg">
+          <desc>
+            <name>ESTIENNE.</name>
+            <trait>
+              <p>A Paris, rue Base-du-Rempart, 14.</p>
+            </trait>
+          </desc>
+          <item n="104" xml:id="Rouen_1856_e47_i104">
+            <num>104</num>
+            <title>La Première victime d’une jeune Chasserese.</title>
+          </item>
+          <item n="105" xml:id="Rouen_1856_e47_i105">
+            <num>105</num>
+            <title>Une Mariée.</title>
+          </item>
+          <item n="106" xml:id="Rouen_1856_e47_i106">
+            <num>106</num>
+            <title>Travail et Récompense.</title>
+          </item>
+          <item n="107" xml:id="Rouen_1856_e47_i107">
+            <num>107</num>
+            <title>Paresse et Punition.</title>
+          </item>
+          <item n="108" xml:id="Rouen_1856_e47_i108">
+            <num>108</num>
+            <title>Un Zouave faisant son cale.</title>
+          </item>
+        </entry>
+        <entry n="48" xml:id="Rouen_1856_e48" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f18/376,1244,1158,525/full/0/default.jpg">
+          <desc>
+            <name>FAURÉ (Ĺoy),</name>
+            <trait>
+              <p>A Paris, rue du Faubourg-Poissonnière.</p>
+            </trait>
+          </desc>
+          <item n="109" xml:id="Rouen_1856_e48_i109">
+            <num>109</num>
+            <title>Le Dante à Bavenne. Lorsqu'il passait dans la ville, les enfants se le montraient. entre eux en disant:</title>
+            <desc>les enfants se le montraient. entre eux en disant:</desc>
+          </item>
+          <item n="110" xml:id="Rouen_1856_e48_i110">
+            <num>110</num>
+            <title>Vieille Femme italienne.</title>
+          </item>
+        </entry>
+        <entry n="49" xml:id="Rouen_1856_e49" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f18/376,1859,1041,313/full/0/default.jpg">
+          <desc>
+            <name>TAUVEL (Aveusr),</name>
+            <trait>
+              <p>A Paris, boulevard du Mont-Parnase.</p>
+            </trait>
+          </desc>
+          <item n="111" xml:id="Rouen_1856_e49_i111">
+            <num>111</num>
+            <title>Sanglier.</title>
+          </item>
+          <item n="112" xml:id="Rouen_1856_e49_i112">
+            <num>112</num>
+            <title>Tableau de genre.</title>
+          </item>
+        </entry>
+        <entry n="50" xml:id="Rouen_1856_e50" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f18/383,2270,1034,299/full/0/default.jpg">
+          <desc>
+            <name>FECHNER (E.).</name>
+            <trait>
+              <p>A Paris, rue Hauteville, 92.</p>
+            </trait>
+          </desc>
+          <item n="113" xml:id="Rouen_1856_e50_i113">
+            <num>113</num>
+            <title>Jeune Fille avec un Miroir.</title>
+          </item>
+          <item n="114" xml:id="Rouen_1856_e50_i114">
+            <num>114</num>
+            <title>Jeune Fille faisant des bulles de savon.</title>
+          </item>
+        </entry>
+        <entry n="51" xml:id="Rouen_1856_e51" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f19/294,588,1168,764/full/0/default.jpg">
+          <desc>
+            <name>FERRET (EUGÈNE-ALEXIS),</name>
+            <trait>
+              <p>Ne à Rouen , élève de M. Barre père.</p>
+            </trait>
+          </desc>
+          <item n="115" xml:id="Rouen_1856_e51_i115">
+            <num>115</num>
+            <title>Médaillon représentant M. Alp. Lupot, artiste graveur, chef des ateliers du graveur général. des monnaies.</title>
+            <desc>artiste graveur, chef des ateliers du graveur général. des monnaies.</desc>
+          </item>
+          <item n="716" xml:id="Rouen_1856_e51_i716">
+            <num>716</num>
+            <title>Un Médaillon représentant M. Hippolyte Du- buire, contrôleur-adjoint à la fabrication. des coins et poinçons près l’administration. des monnaies et médailles.</title>
+            <desc>contrôleur-adjoint à la fabrication. des coins et poinçons près l’administration. des monnaies et médailles.</desc>
+          </item>
+          <item n="117" xml:id="Rouen_1856_e51_i117">
+            <num>117</num>
+            <title>Mlle D., de Paris.</title>
+            <desc>de Paris.</desc>
+          </item>
+        </entry>
+        <entry n="52" xml:id="Rouen_1856_e52" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f19/291,1408,782,299/full/0/default.jpg">
+          <desc>
+            <name>FICHET,</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="118" xml:id="Rouen_1856_e52_i118">
+            <num>118</num>
+            <title>Les Premiers pas.</title>
+          </item>
+        </entry>
+        <entry n="53" xml:id="Rouen_1856_e53" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f19/314,1798,1093,415/full/0/default.jpg">
+          <desc>
+            <name>FLANDIN (EUGÈNE),</name>
+            <trait>
+              <p>A Paris, rue de Berlin, 18.</p>
+            </trait>
+          </desc>
+          <item n="119" xml:id="Rouen_1856_e53_i119">
+            <num>119</num>
+            <title>L’Entrée du Bosphore, à Constantinople.</title>
+            <desc>à Constantinople.</desc>
+          </item>
+          <item n="120" xml:id="Rouen_1856_e53_i120">
+            <num>120</num>
+            <title>Les Murailles de Constantinople.</title>
+          </item>
+          <item n="121" xml:id="Rouen_1856_e53_i121">
+            <num>121</num>
+            <title>Vue prise à Athènes.</title>
+          </item>
+        </entry>
+        <entry n="54" xml:id="Rouen_1856_e54" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f19/321,2304,1113,251/full/0/default.jpg">
+          <desc>
+            <name>FLANDRIN (PAUL).</name>
+            <trait>
+              <p>A Paris, rue de Seine-Saint-Germain, 47.</p>
+            </trait>
+          </desc>
+          <item n="122" xml:id="Rouen_1856_e54_i122">
+            <num>122</num>
+            <title>Les bords du Gardon.</title>
+          </item>
+          <item n="123" xml:id="Rouen_1856_e54_i123">
+            <num>123</num>
+            <title>Vue des bords du Rhône, près de Vienne en Dauphiné.</title>
+            <desc>près de Vienne en Dauphiné.</desc>
+          </item>
+        </entry>
+        <entry n="55" xml:id="Rouen_1856_e55" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f20/362,813,1055,245/full/0/default.jpg">
+          <desc>
+            <name>FLEURY (LÉON),</name>
+            <trait>
+              <p>A Paris, rue Saint-Lazare, 46.</p>
+            </trait>
+          </desc>
+          <item n="124" xml:id="Rouen_1856_e55_i124">
+            <num>124</num>
+            <title>Vue de Rouen, prise du chemin de fer</title>
+            <desc>prise du chemin de fer</desc>
+          </item>
+        </entry>
+        <entry n="56" xml:id="Rouen_1856_e56" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f20/355,1169,1042,326/full/0/default.jpg">
+          <desc>
+            <name>FOIRESTIER-GOZOLI (LAURE),</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="125" xml:id="Rouen_1856_e56_i125">
+            <num>125</num>
+            <title>Jeune Mère.</title>
+          </item>
+          <item n="126" xml:id="Rouen_1856_e56_i126">
+            <num>126</num>
+            <title>La Peinture.</title>
+          </item>
+        </entry>
+        <entry n="57" xml:id="Rouen_1856_e57" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f20/348,1572,1049,587/full/0/default.jpg">
+          <desc>
+            <name>FONTENAY (DE).</name>
+            <trait>
+              <p>A Paris, quai de l’Ecole, 8.</p>
+            </trait>
+          </desc>
+          <item n="127" xml:id="Rouen_1856_e57_i127">
+            <num>127</num>
+            <title>Ruines du Château de Longueville.</title>
+          </item>
+          <item n="128" xml:id="Rouen_1856_e57_i128">
+            <num>128</num>
+            <title>Falaises sous le Château de Dieppe.</title>
+          </item>
+          <item n="129" xml:id="Rouen_1856_e57_i129">
+            <num>129</num>
+            <title>Vue des environs du Château-Gaillard.</title>
+          </item>
+          <item n="130" xml:id="Rouen_1856_e57_i130">
+            <num>130</num>
+            <title>Vue de Montajou </title>
+            <desc>(Haute-Garonne).</desc>
+          </item>
+          <item n="131" xml:id="Rouen_1856_e57_i131">
+            <num>131</num>
+            <title>Un Chalet près Brientz.</title>
+          </item>
+          <item n="132" xml:id="Rouen_1856_e57_i132">
+            <num>132</num>
+            <title>Une Ferme en Normandie.</title>
+          </item>
+        </entry>
+        <entry n="58" xml:id="Rouen_1856_e58" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f20/342,2283,1089,258/full/0/default.jpg">
+          <desc>
+            <name>FOULONGNE (ALFRED-CHARIES),</name>
+            <trait>
+              <p>A Paris, rue du Bac, S3, élève de MM. Paul Delaroche et Gleyre.</p>
+            </trait>
+          </desc>
+          <item n="133" xml:id="Rouen_1856_e58_i133">
+            <num>133</num>
+            <title>Meloenis chez la sorcière Staphyla</title>
+          </item>
+          <item n="134" xml:id="Rouen_1856_e58_i134">
+            <num>134</num>
+            <title>L’Amour captivant l’Innocence.</title>
+          </item>
+          <item n="135" xml:id="Rouen_1856_e58_i135">
+            <num>135</num>
+            <title>Portrait de M. P. D.</title>
+          </item>
+          <item n="136" xml:id="Rouen_1856_e58_i136">
+            <num>136</num>
+            <title>Sermon sur la Montagne </title>
+            <desc>(saint Malhiey. chap. 5e).</desc>
+          </item>
+          <item n="137" xml:id="Rouen_1856_e58_i137">
+            <num>137</num>
+            <title>Mont Rhodé, route de Fontana </title>
+            <desc>route de Fontana (Auvergne).</desc>
+          </item>
+          <item n="138" xml:id="Rouen_1856_e58_i138">
+            <num>138</num>
+            <title>Coulée de lave volcanique près Volvic </title>
+            <desc>(Au vergne).</desc>
+          </item>
+          <item n="139" xml:id="Rouen_1856_e58_i139">
+            <num>139</num>
+            <title>Gorges d’Enval </title>
+            <desc>(Auvergne).</desc>
+          </item>
+          <item n="140" xml:id="Rouen_1856_e58_i140">
+            <num>140</num>
+            <title>Sous les Châtaigniers, près Royat </title>
+            <desc>près Royat (Auvergne).</desc>
+          </item>
+        </entry>
+        <entry n="59" xml:id="Rouen_1856_e59" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f21/253,1832,1161,668/full/0/default.jpg">
+          <desc>
+            <name>FREMY (JACQUES-NOEL-MARIE),</name>
+            <trait>
+              <p>A Paris, rue Saint-Anré-des-Arts, 27, élève de MM. Begnaul et Darin.</p>
+            </trait>
+          </desc>
+          <item n="141" xml:id="Rouen_1856_e59_i141">
+            <num>141</num>
+            <title>Vue intérieure de la Galerie de sculpture. dans laquelle se trouve la statue de Jeanne d’Arc, par la princesse Marie </title>
+            <desc>par la princesse Marie (au Palais, de. Versailles.</desc>
+          </item>
+          <item n="142" xml:id="Rouen_1856_e59_i142">
+            <num>142</num>
+            <title>La Vue.</title>
+          </item>
+          <item n="145" xml:id="Rouen_1856_e59_i145">
+            <num>145</num>
+            <title>Le Toucher.</title>
+          </item>
+          <item n="44" xml:id="Rouen_1856_e59_i44">
+            <num>44</num>
+            <title>Napoléon ler.</title>
+          </item>
+        </entry>
+        <entry n="60" xml:id="Rouen_1856_e60" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f22/419,635,953,265/full/0/default.jpg">
+          <desc>
+            <name>FRERE (THÉODORE),</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="115" xml:id="Rouen_1856_e60_i115">
+            <num>115</num>
+            <title>Caravane au repos, dans le desert.</title>
+            <desc>dans le desert.</desc>
+          </item>
+        </entry>
+        <entry n="61" xml:id="Rouen_1856_e61" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f22/410,936,1151,600/full/0/default.jpg">
+          <desc>
+            <name>FRICHOT (VALENTINE),</name>
+            <trait>
+              <p>A Paris, rue de Bretagne, 65, élève de Mlle de Varenne.</p>
+            </trait>
+          </desc>
+          <item n="146" xml:id="Rouen_1856_e61_i146">
+            <num>146</num>
+            <title>Tableau de salle à manger.</title>
+          </item>
+          <item n="147" xml:id="Rouen_1856_e61_i147">
+            <num>147</num>
+            <title>L’Eté.</title>
+          </item>
+          <item n="148" xml:id="Rouen_1856_e61_i148">
+            <num>148</num>
+            <title>Le Printemps.</title>
+          </item>
+          <item n="149" xml:id="Rouen_1856_e61_i149">
+            <num>149</num>
+            <title>Le jeune Dénicheur d’oiseaux.</title>
+          </item>
+          <item n="130" xml:id="Rouen_1856_e61_i130">
+            <num>130</num>
+            <title>L’Amour montrant au doigt un petitpapillon. qui se brâle à son flambeau.</title>
+          </item>
+        </entry>
+        <entry n="62" xml:id="Rouen_1856_e62" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f22/410,1634,1124,504/full/0/default.jpg">
+          <desc>
+            <name>FULCONIS (LOUIS),</name>
+            <trait>
+              <p>A Rouen, rue des Bonnetiers, 9, élève de l'Académie des Beaux Arts d’Avignon et de Marseille.</p>
+            </trait>
+          </desc>
+          <item n="151" xml:id="Rouen_1856_e62_i151">
+            <num>151</num>
+            <title>La Vierge et l’Enfant Jésus.</title>
+          </item>
+          <item n="152" xml:id="Rouen_1856_e62_i152">
+            <num>152</num>
+            <title>Buste de M. G. C.</title>
+          </item>
+          <item n="153" xml:id="Rouen_1856_e62_i153">
+            <num>153</num>
+            <title>Buste de M. A. F.</title>
+          </item>
+          <item n="154" xml:id="Rouen_1856_e62_i154">
+            <num>154</num>
+            <title>Buste de M. A.C.</title>
+          </item>
+        </entry>
+        <entry n="63" xml:id="Rouen_1856_e63" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f22/417,2263,1158,326/full/0/default.jpg">
+          <desc>
+            <name>GAMAIN (LOUIS),</name>
+            <trait>
+              <p>Au Havre, rue de l’Hopital, 37.</p>
+            </trait>
+          </desc>
+          <item n="155" xml:id="Rouen_1856_e63_i155">
+            <num>155</num>
+            <title>Phare et Jetée Nord, au Havre.</title>
+            <desc>au Havre.</desc>
+          </item>
+          <item n="156" xml:id="Rouen_1856_e63_i156">
+            <num>156</num>
+            <title>Revue de la Flotte anglaise à Spithead, passee.</title>
+            <desc>passee.</desc>
+          </item>
+          <item n="157" xml:id="Rouen_1856_e63_i157">
+            <num>157</num>
+            <title>Vaisseau mixte anglais de 130 canons le Duc de Wellington.</title>
+          </item>
+          <item n="158" xml:id="Rouen_1856_e63_i158">
+            <num>158</num>
+            <title>Vue prise à Etretat, falaise Nord.</title>
+            <desc>falaise Nord.</desc>
+          </item>
+        </entry>
+        <entry n="64" xml:id="Rouen_1856_e64" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f23/287,1203,1099,238/full/0/default.jpg">
+          <desc>
+            <name>GARNERAY (E.),</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="159" xml:id="Rouen_1856_e64_i159">
+            <num>159</num>
+            <title>Ve de Cahuais nise au nadde la Cue.</title>
+          </item>
+        </entry>
+        <entry n="65" xml:id="Rouen_1856_e65" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f23/273,1504,1148,306/full/0/default.jpg">
+          <desc>
+            <name>GENGEMBRE (L.-L.).</name>
+            <trait>
+              <p>A Paris, aux Termes, avehue des Termes, 42.</p>
+            </trait>
+          </desc>
+          <item n="160" xml:id="Rouen_1856_e65_i160">
+            <num>160</num>
+            <title>Chevaux de trait.</title>
+          </item>
+          <item n="161" xml:id="Rouen_1856_e65_i161">
+            <num>161</num>
+            <title>Chasseur d’Afrique </title>
+            <desc>(tenue de guerre).</desc>
+          </item>
+        </entry>
+        <entry n="66" xml:id="Rouen_1856_e66" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f23/294,1880,1127,238/full/0/default.jpg">
+          <desc>
+            <name>GOLA (E.).</name>
+            <trait>
+              <p>Capitane au 81e de Ligne, rue Impériale, 6.</p>
+            </trait>
+          </desc>
+          <item n="162" xml:id="Rouen_1856_e66_i162">
+            <num>162</num>
+            <title>Dessin à la plume.</title>
+          </item>
+        </entry>
+        <entry n="67" xml:id="Rouen_1856_e67" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f23/287,2188,1161,374/full/0/default.jpg">
+          <desc>
+            <name>GUDIN.</name>
+            <trait>
+              <p>A Paris, rue de Balzae, 26.</p>
+            </trait>
+          </desc>
+          <item n="165" xml:id="Rouen_1856_e67_i165">
+            <num>165</num>
+            <title>Jean-Bart sortant de Dunkerque à travers la Flotte anglaise.</title>
+          </item>
+          <item n="164" xml:id="Rouen_1856_e67_i164">
+            <num>164</num>
+            <title>Vue de Sallenelle, embouchure de l’Orne.</title>
+            <desc>embouchure de l’Orne.</desc>
+          </item>
+        </entry>
+        <entry n="68" xml:id="Rouen_1856_e68" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f24/400,624,1085,337/full/0/default.jpg">
+          <desc>
+            <name>GUIMARD (Mlle LOUISE EUDES DE),</name>
+            <trait>
+              <p>A Pari,rue Ménilmontant,5, élève de M. Léon Cogniet.</p>
+            </trait>
+          </desc>
+          <item n="165" xml:id="Rouen_1856_e68_i165">
+            <num>165</num>
+            <title>La Captivité de Baylone.</title>
+          </item>
+          <item n="166" xml:id="Rouen_1856_e68_i166">
+            <num>166</num>
+            <title>Une Ecole de Basse-Normandie.</title>
+          </item>
+        </entry>
+        <entry n="69" xml:id="Rouen_1856_e69" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f24/394,1038,1137,369/full/0/default.jpg">
+          <desc>
+            <name>HALPHEN (ALBERT-LOUIS),</name>
+            <trait>
+              <p>A Paris, rue Fontaine-Saint-Georges, 38. 167 L’Oracle des bois.</p>
+            </trait>
+          </desc>
+          <item n="168" xml:id="Rouen_1856_e69_i168">
+            <num>168</num>
+            <title>Jeune Fille donnant à manger à des Poules.</title>
+          </item>
+        </entry>
+        <entry n="70" xml:id="Rouen_1856_e70" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f24/392,1449,1231,400/full/0/default.jpg">
+          <desc>
+            <name>HAMON (PIERRE-PAUL),</name>
+            <trait>
+              <p>Aux Batignolles, rue Saint-Louis, 9, élève de MM. Léon Cogniet et G. Morin.</p>
+            </trait>
+          </desc>
+          <item n="169" xml:id="Rouen_1856_e70_i169">
+            <num>169</num>
+            <title>Nature morte.</title>
+          </item>
+          <item n="170" xml:id="Rouen_1856_e70_i170">
+            <num>170</num>
+            <title>Nature morte.</title>
+          </item>
+          <item n="171" xml:id="Rouen_1856_e70_i171">
+            <num>171</num>
+            <title>Nature morte.</title>
+          </item>
+        </entry>
+        <entry n="71" xml:id="Rouen_1856_e71" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f24/386,1913,1078,249/full/0/default.jpg">
+          <desc>
+            <name>HAMMAN (EDOUARD),</name>
+            <trait>
+              <p>A Paris, rue Rochechouart, 70.</p>
+            </trait>
+          </desc>
+          <item n="172" xml:id="Rouen_1856_e71_i172">
+            <num>172</num>
+            <title>La Grappe de Raisin.</title>
+          </item>
+        </entry>
+        <entry n="72" xml:id="Rouen_1856_e72" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f24/400,2266,1139,303/full/0/default.jpg">
+          <desc>
+            <name>HÉBERT,</name>
+            <trait>
+              <p>GRAVEUR SUR BOIS, A Versailles, avenue de Picardie, 22.</p>
+            </trait>
+          </desc>
+          <item n="173" xml:id="Rouen_1856_e72_i173">
+            <num>173</num>
+            <title>Le Christ en Croix, d’après Van-Dick, </title>
+            <desc>d’après Van-Dick, (Frontis</desc>
+          </item>
+          <item n="174" xml:id="Rouen_1856_e72_i174">
+            <title>de l’Europe.).</title>
+          </item>
+        </entry>
+        <entry n="73" xml:id="Rouen_1856_e73" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f25/307,854,1086,238/full/0/default.jpg">
+          <desc>
+            <name>HEYDER (DE),</name>
+          </desc>
+          <item n="1" xml:id="Rouen_1856_e73_i1">
+            <title>A Belleville, rue Levert, 5.</title>
+            <desc>rue Levert, 5.</desc>
+          </item>
+        </entry>
+        <entry n="74" xml:id="Rouen_1856_e74" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f25/280,1210,1113,251/full/0/default.jpg">
+          <desc>
+            <name>HERVIER (ADOLPHE),</name>
+            <trait>
+              <p>A Paris, rue du Helder, 18.</p>
+            </trait>
+          </desc>
+          <item n="175" xml:id="Rouen_1856_e74_i175">
+            <num>175</num>
+            <title>Intérieur de Cour.</title>
+          </item>
+        </entry>
+        <entry n="75" xml:id="Rouen_1856_e75" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f25/273,1545,1127,272/full/0/default.jpg">
+          <desc>
+            <name>HERVIEU (ACHILLE),</name>
+            <trait>
+              <p>À Rouen, rue Beauvoisine, 131 , à Paris, rue Saint-Martin, 271 ancien</p>
+            </trait>
+          </desc>
+          <item n="176" xml:id="Rouen_1856_e75_i176">
+            <num>176</num>
+            <title>Portrait de Mme...</title>
+          </item>
+        </entry>
+        <entry n="76" xml:id="Rouen_1856_e76" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f25/280,1948,1154,299/full/0/default.jpg">
+          <desc>
+            <name>HINTZ (JULES),</name>
+            <trait>
+              <p>A Paris, rue Fontaine, 37.</p>
+            </trait>
+          </desc>
+          <item n="177" xml:id="Rouen_1856_e76_i177">
+            <num>177</num>
+            <title>Marine, Côtes-du-Nord. </title>
+            <desc>Côtes-du-Nord. (Un Homme à la mer.).</desc>
+          </item>
+        </entry>
+        <entry n="77" xml:id="Rouen_1856_e77" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f25/300,2283,1100,279/full/0/default.jpg">
+          <desc>
+            <name>HOGUET.</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="178" xml:id="Rouen_1856_e77_i178">
+            <num>178</num>
+            <title>Plage de Normantie.</title>
+          </item>
+        </entry>
+        <entry n="78" xml:id="Rouen_1856_e78" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f26/323,613,1240,1479/full/0/default.jpg">
+          <desc>
+            <name>HOSTEIN (EDOUARD),</name>
+            <trait>
+              <p>A Paris, rue Blanche, 25.</p>
+            </trait>
+          </desc>
+          <item n="179" xml:id="Rouen_1856_e78_i179">
+            <num>179</num>
+            <title>La Seine avant son endiguement. Vue prise du coteau de Quillebeuf, on aperçoit l'em bouchure de la Seine, le château de Tancarville, Lillebonne, et le château de N.-D. De Gravenchon, au moment de l’ar rivée de la Barre.</title>
+            <desc>on aperçoit l'em bouchure de la Seine, le château de Tancarville, Lillebonne, et le château de N.-D. De Gravenchon, au moment de l’ar rivée de la Barre.</desc>
+          </item>
+          <item n="180" xml:id="Rouen_1856_e78_i180">
+            <num>180</num>
+            <title>La Seine après son endiguement. Vue prise de l’Aiguille-de-Pierre-Gant près Tancarville: on découvre tout le panorama de la vallée de Quillebeuf depuis la forêt de Brotonne jusqu’à la pointe de la Roque. Ces deux Tableaux ont été commandés par la Chambre de Commerce de Rouen.</title>
+          </item>
+          <item n="181" xml:id="Rouen_1856_e78_i181">
+            <num>181</num>
+            <title>Rives de laSeine entre Caudebecet Villequier.</title>
+          </item>
+          <item n="182" xml:id="Rouen_1856_e78_i182">
+            <num>182</num>
+            <title>Vue générale de la rade de Toulon </title>
+            <desc>(Var). Ce Tableau, peint d’après nature, en mars 1856, repré sente la flotte revenue de Crimée.</desc>
+          </item>
+          <item n="183" xml:id="Rouen_1856_e78_i183">
+            <num>183</num>
+            <title>Palmier dans une bastide de la rade de Toulon. Vue peinte sur nature en janvier 1856.</title>
+          </item>
+        </entry>
+        <entry n="79" xml:id="Rouen_1856_e79" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f26/274,2153,1292,446/full/0/default.jpg">
+          <desc>
+            <name>HUBER</name>
+            <trait>
+              <p>A Paris, rue du Delta, 12.</p>
+            </trait>
+          </desc>
+          <item n="184" xml:id="Rouen_1856_e79_i184">
+            <num>184</num>
+            <title>Le Crépuscule.</title>
+          </item>
+          <item n="185" xml:id="Rouen_1856_e79_i185">
+            <num>185</num>
+            <title>Vue prise à Socqueville en Normandie.</title>
+          </item>
+        </entry>
+        <entry n="80" xml:id="Rouen_1856_e80" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f27/437,656,984,155/full/0/default.jpg">
+          <desc>
+            <name>JACOTT-CAPPELAERE (Mme),</name>
+          </desc>
+          <item n="1" xml:id="Rouen_1856_e80_i1">
+            <title>A Paris, rue de Valois-du-Roule, 24.</title>
+            <desc>rue de Valois-du-Roule, 24.</desc>
+          </item>
+        </entry>
+        <entry n="81" xml:id="Rouen_1856_e81" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f27/294,820,1113,74/full/0/default.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>186. Chien de basse-cour.</p>
+            </trait>
+          </desc>
+          <item n="186" xml:id="Rouen_1856_e81_i186">
+            <num>186</num>
+            <title>Chien de basse-cour.</title>
+          </item>
+        </entry>
+        <entry n="82" xml:id="Rouen_1856_e82" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f27/287,1005,1161,333/full/0/default.jpg">
+          <desc>
+            <name>JACQUAND (CLAUDIUS),</name>
+            <trait>
+              <p>A Paris, rue du Faubourg-Saint-Honoré, 237.</p>
+            </trait>
+          </desc>
+          <item n="187" xml:id="Rouen_1856_e82_i187">
+            <num>187</num>
+            <title>Un Moine Quêteur, avant non : « Pour les Pauvres, s’il vous plaît!».</title>
+            <desc>avant non : « Pour les Pauvres, s’il vous plaît!».</desc>
+          </item>
+        </entry>
+        <entry n="83" xml:id="Rouen_1856_e83" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f27/287,1435,1147,443/full/0/default.jpg">
+          <desc>
+            <name>LAINÉ (ACHILLE),</name>
+            <trait>
+              <p>A Paris, rue Saint-Florentin, 1, élève de M. Barry.</p>
+            </trait>
+          </desc>
+          <item n="188" xml:id="Rouen_1856_e83_i188">
+            <num>188</num>
+            <title>Un Lever de Lune.</title>
+          </item>
+          <item n="189" xml:id="Rouen_1856_e83_i189">
+            <num>189</num>
+            <title>Vue prise sur les bords de la Saône, soleil couchant.</title>
+            <desc>soleil couchant.</desc>
+          </item>
+        </entry>
+        <entry n="84" xml:id="Rouen_1856_e84" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f27/280,1907,1141,245/full/0/default.jpg">
+          <desc>
+            <name>LAMBINET (Ele),</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="190" xml:id="Rouen_1856_e84_i190">
+            <num>190</num>
+            <title>Paysage normand à Aumale).</title>
+          </item>
+        </entry>
+        <entry n="85" xml:id="Rouen_1856_e85" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f27/287,2249,1161,347/full/0/default.jpg">
+          <desc>
+            <name>LANOUE (HIPPOLYTE-FELIX),</name>
+            <trait>
+              <p>A Paris, rue Fontaine-Saint-Georges, 21, elève de MM. Bertin et Horace Vernet.</p>
+            </trait>
+          </desc>
+          <item n="191" xml:id="Rouen_1856_e85_i191">
+            <num>191</num>
+            <title>Un Trableau Nature morte, une Lièvre et une Buse.</title>
+            <desc>une Lièvre et une Buse.</desc>
+          </item>
+        </entry>
+        <entry n="86" xml:id="Rouen_1856_e86" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f28/339,657,1206,337/full/0/default.jpg">
+          <desc>
+            <name>LAPITO (AUGUSTE),</name>
+            <trait>
+              <p>A Paris, rue Saint-Anne, 29.</p>
+            </trait>
+          </desc>
+          <item n="192" xml:id="Rouen_1856_e86_i192">
+            <num>192</num>
+            <title>Vue prise dans le Cento-Valle </title>
+            <desc>(Suise ita lienne).</desc>
+          </item>
+        </entry>
+        <entry n="87" xml:id="Rouen_1856_e87" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f28/348,1066,1124,368/full/0/default.jpg">
+          <desc>
+            <name>LASSALLE (Emile),</name>
+            <trait>
+              <p>A Montmartre, rue Gabrielle, 2</p>
+            </trait>
+          </desc>
+          <item n="193" xml:id="Rouen_1856_e87_i193">
+            <num>193</num>
+            <title>Médée poursuivie.</title>
+          </item>
+          <item n="194" xml:id="Rouen_1856_e87_i194">
+            <num>194</num>
+            <title>Chevaux effravés.</title>
+          </item>
+          <item n="195" xml:id="Rouen_1856_e87_i195">
+            <num>195</num>
+            <title>Portrait de lady Barring.</title>
+          </item>
+        </entry>
+        <entry n="88" xml:id="Rouen_1856_e88" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f28/348,1545,1124,244/full/0/default.jpg">
+          <desc>
+            <name>LASSALLE (LOUIS),</name>
+            <trait>
+              <p>A Paris, rue Rochechouart.</p>
+            </trait>
+          </desc>
+          <item n="196" xml:id="Rouen_1856_e88_i196">
+            <num>196</num>
+            <title>La Blanchisseuse.</title>
+          </item>
+        </entry>
+        <entry n="89" xml:id="Rouen_1856_e89" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f28/348,1880,1165,436/full/0/default.jpg">
+          <desc>
+            <name>LAUGIEN (AUGUSTE),</name>
+            <trait>
+              <p>A Paris, quai des Grands-Augustins, 27.</p>
+            </trait>
+          </desc>
+          <item n="107" xml:id="Rouen_1856_e89_i107">
+            <num>107</num>
+            <title>Vue prise sur les bords de la Méditerrannée</title>
+          </item>
+          <item n="198" xml:id="Rouen_1856_e89_i198">
+            <num>198</num>
+            <title>Vue prise de la villa Cloquet </title>
+            <desc>(rade de Toulon).</desc>
+          </item>
+        </entry>
+        <entry n="90" xml:id="Rouen_1856_e90" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f28/348,2372,1076,231/full/0/default.jpg">
+          <desc>
+            <name>LAVENAS (J.-J.)</name>
+            <trait>
+              <p>A Evreux , élève de Désoria</p>
+            </trait>
+          </desc>
+          <item n="199" xml:id="Rouen_1856_e90_i199">
+            <num>199</num>
+            <title>Portrait à l’encre de Chine.</title>
+          </item>
+        </entry>
+        <entry n="91" xml:id="Rouen_1856_e91" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f29/266,622,1175,388/full/0/default.jpg">
+          <desc>
+            <name>LAVENAS Père (L.-J.)</name>
+            <trait>
+              <p> et LAVENAS Fils (Ire) A Evreux. Deux Tableaux, manuscrits monumentaux</p>
+            </trait>
+          </desc>
+          <item n="200" xml:id="Rouen_1856_e91_i200">
+            <num>200</num>
+            <title>sur l’histoire d’Angleterre.</title>
+          </item>
+          <item n="201" xml:id="Rouen_1856_e91_i201">
+            <num>201</num>
+            <title></title>
+          </item>
+        </entry>
+        <entry n="92" xml:id="Rouen_1856_e92" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f29/280,1107,1148,252/full/0/default.jpg">
+          <desc>
+            <name>LÉCUYER (LÉONIE),</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="202" xml:id="Rouen_1856_e92_i202">
+            <num>202</num>
+            <title>Chevaux à l'écurie.</title>
+          </item>
+        </entry>
+        <entry n="93" xml:id="Rouen_1856_e93" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f29/266,1449,1182,593/full/0/default.jpg">
+          <desc>
+            <name>LEFERVRE,</name>
+            <trait>
+              <p>A Rouen, rue des Carmes, 77.</p>
+            </trait>
+          </desc>
+          <item n="203" xml:id="Rouen_1856_e93_i203">
+            <num>203</num>
+            <title>Moulin pris sur la rivière de Scie, près Auffay.</title>
+            <desc>près Auffay.</desc>
+          </item>
+          <item n="204" xml:id="Rouen_1856_e93_i204">
+            <num>204</num>
+            <title>Vue prise à Caudebec. Ces quatre tableaux</title>
+          </item>
+          <item n="205" xml:id="Rouen_1856_e93_i205">
+            <num>205</num>
+            <title>Vue prise à Saint-Georges. sont peints à l’huile et</title>
+          </item>
+          <item n="206" xml:id="Rouen_1856_e93_i206">
+            <num>206</num>
+            <title>vue prise à Auffray fixés.</title>
+          </item>
+          <item n="207" xml:id="Rouen_1856_e93_i207">
+            <num>207</num>
+            <title>Effet de Soleil couchant.</title>
+          </item>
+        </entry>
+        <entry n="94" xml:id="Rouen_1856_e94" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f29/273,2153,1141,416/full/0/default.jpg">
+          <desc>
+            <name>LEFEBURE (Mlle),</name>
+            <trait>
+              <p>A Paris, rue Laval, 17.</p>
+            </trait>
+          </desc>
+          <item n="208" xml:id="Rouen_1856_e94_i208">
+            <num>208</num>
+            <title>Lecture de la Bible.</title>
+          </item>
+          <item n="209" xml:id="Rouen_1856_e94_i209">
+            <num>209</num>
+            <title>Bouquetière.</title>
+          </item>
+          <item n="210" xml:id="Rouen_1856_e94_i210">
+            <num>210</num>
+            <title>Petite Mendiante.</title>
+          </item>
+        </entry>
+        <entry n="95" xml:id="Rouen_1856_e95" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f30/380,612,1077,254/full/0/default.jpg">
+          <desc>
+            <name>LE GENTILLE (VICTOR),</name>
+            <trait>
+              <p>A Paris, rue de la Tour-d’Auvergne, 33</p>
+            </trait>
+          </desc>
+          <item n="211" xml:id="Rouen_1856_e95_i211">
+            <num>211</num>
+            <title>Intérieur d’un Moulin en Bretagne.</title>
+          </item>
+        </entry>
+        <entry n="96" xml:id="Rouen_1856_e96" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f30/373,1004,1159,581/full/0/default.jpg">
+          <desc>
+            <name>LEGRIP (FRÉDÉRIC),</name>
+            <trait>
+              <p>A Paris, rue des Marais-Saint-Germain, 11.</p>
+            </trait>
+          </desc>
+          <item n="212" xml:id="Rouen_1856_e96_i212">
+            <num>212</num>
+            <title>Le Printemps, rives de la Seine.</title>
+            <desc>rives de la Seine.</desc>
+          </item>
+          <item n="215" xml:id="Rouen_1856_e96_i215">
+            <num>215</num>
+            <title>Le Bac de Haute-Ie, près la Roche-Guyon tomne.</title>
+            <desc>près la Roche-Guyon tomne.</desc>
+          </item>
+          <item n="214" xml:id="Rouen_1856_e96_i214">
+            <num>214</num>
+            <title>Entrée d’un village </title>
+            <title>215. Cimetière dans le Vexin normand (Effet d’au</title>
+            <desc>(Haute-Normandie).</desc>
+          </item>
+          <item n="216" xml:id="Rouen_1856_e96_i216">
+            <num>216</num>
+            <title>Le Déjeûner.</title>
+          </item>
+        </entry>
+        <entry n="97" xml:id="Rouen_1856_e97" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f30/373,1641,1105,223/full/0/default.jpg">
+          <desc>
+            <name>LEHOUX.</name>
+            <trait>
+              <p>A Paris, rue Neuve-des-Mathurins, 121.</p>
+            </trait>
+          </desc>
+          <item n="217" xml:id="Rouen_1856_e97_i217">
+            <num>217</num>
+            <title>Un Café an Caire.</title>
+          </item>
+        </entry>
+        <entry n="98" xml:id="Rouen_1856_e98" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f30/366,1974,1132,568/full/0/default.jpg">
+          <desc>
+            <name>LELARGE (R).</name>
+            <trait>
+              <p>A Rouen, place de l’Hotel-de-Ville, 4.</p>
+            </trait>
+          </desc>
+          <item n="218" xml:id="Rouen_1856_e98_i218">
+            <num>218</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="219" xml:id="Rouen_1856_e98_i219">
+            <num>219</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="220" xml:id="Rouen_1856_e98_i220">
+            <num>220</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="221" xml:id="Rouen_1856_e98_i221">
+            <num>221</num>
+            <title>Sapins </title>
+            <desc>(Souvenir des Pyrènées).</desc>
+          </item>
+          <item n="222" xml:id="Rouen_1856_e98_i222">
+            <num>222</num>
+            <title>Baigneuses.</title>
+          </item>
+        </entry>
+        <entry n="99" xml:id="Rouen_1856_e99" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f31/223,621,1215,460/full/0/default.jpg">
+          <desc>
+            <name>LEMAIRE-TERNANTE (AMÉDÉE),</name>
+            <trait>
+              <p>A Paris, rue de la Victoire, 32.</p>
+            </trait>
+          </desc>
+          <item n="223" xml:id="Rouen_1856_e99_i223">
+            <num>223</num>
+            <title>Le Pêcheur innocent.</title>
+          </item>
+          <item n="224" xml:id="Rouen_1856_e99_i224">
+            <num>224</num>
+            <title>La Récolte des Pommès de Terre, dan, la plaine de Nanterre.</title>
+            <desc>dan, la plaine de Nanterre.</desc>
+          </item>
+        </entry>
+        <entry n="100" xml:id="Rouen_1856_e100" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f31/228,1120,881,354/full/0/default.jpg">
+          <desc>
+            <name>LEMMEMS.</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="225" xml:id="Rouen_1856_e100_i225">
+            <num>225</num>
+            <title>Quatre Cris de Paris.</title>
+            <title>225. Deux Paysages.</title>
+          </item>
+        </entry>
+        <entry n="101" xml:id="Rouen_1856_e101" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f31/228,1524,1210,1106/full/0/default.jpg">
+          <desc>
+            <name>LENEPVEU (JULES),</name>
+            <trait>
+              <p>A Paris, chenin de ronde de la barèré Planchle.</p>
+            </trait>
+          </desc>
+          <item n="227" xml:id="Rouen_1856_e101_i227">
+            <num>227</num>
+            <title>L’Ermite Pierre de Morone élu à la Papaute. Un archevéque et deux évêques furent députés pres de le pour lui porter la nouvelle de son élection. Le pauvre Ermite. en voyant ces dignitaires de l’Eglise dont le rang était si supérieur au sien, se jette à l eurs genoux, les prélats, de leur côté, se mi rent à genoux pour demander la bénédiction du nouveau Pape L... Lorsqu’on eut fait comprendre à Pierre l’étonnante rèvo Intion qui venait de s’opérer daps sa destinée, Il voulut se déro ber par la fuite à tant d’honneur. SISMONDI, Histoire des Républiques italiennes.</title>
+            <desc>se jette à l eurs genoux, les prélats, de leur côté, se mi rent à genoux pour demander la bénédiction du nouveau Pape L... Lorsqu’on eut fait comprendre à Pierre l’étonnante rèvo Intion qui venait de s’opérer daps sa destinée, Il voulut se déro ber par la fuite à tant d’honneur. SISMONDI, Histoire des Républiques italiennes.</desc>
+          </item>
+          <item n="228" xml:id="Rouen_1856_e101_i228">
+            <num>228</num>
+            <title>La Confrérie de Saint-Roch se rendant à Saint. Marc de Venise, le jour de la Fête-Dieu.</title>
+            <desc>le jour de la Fête-Dieu.</desc>
+          </item>
+        </entry>
+        <entry n="102" xml:id="Rouen_1856_e102" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f32/401,572,871,332/full/0/default.jpg">
+          <desc>
+            <name>LÉPAULLE (G.),</name>
+            <trait>
+              <p>A Paris, rue des Martyrs, 27.</p>
+            </trait>
+          </desc>
+          <item n="229" xml:id="Rouen_1856_e102_i229">
+            <num>229</num>
+            <title>Le Rêve d’Amour.</title>
+          </item>
+          <item n="230" xml:id="Rouen_1856_e102_i230">
+            <num>230</num>
+            <title>L’Egyptien et son Coursier.</title>
+          </item>
+        </entry>
+        <entry n="103" xml:id="Rouen_1856_e103" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f32/407,1029,829,279/full/0/default.jpg">
+          <desc>
+            <name>LEPOITEVIN.</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="231" xml:id="Rouen_1856_e103_i231">
+            <num>231</num>
+            <title>Le chemin de la Ferme.</title>
+          </item>
+        </entry>
+        <entry n="104" xml:id="Rouen_1856_e104" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f32/398,1406,1189,733/full/0/default.jpg">
+          <desc>
+            <name>LIGNY (A.</name>
+            <trait>
+              <p> DE). A Rouen, rue d'Ernemont.</p>
+            </trait>
+          </desc>
+          <item n="232" xml:id="Rouen_1856_e104_i232">
+            <num>232</num>
+            <title>Ruines de l’Abbaye de Jumièges.</title>
+          </item>
+          <item n="233" xml:id="Rouen_1856_e104_i233">
+            <num>233</num>
+            <title>Etude d’après mature.</title>
+          </item>
+          <item n="234" xml:id="Rouen_1856_e104_i234">
+            <num>234</num>
+            <title>Vue de Rouen, prise au quai des Curandiers.</title>
+            <desc>prise au quai des Curandiers.</desc>
+          </item>
+          <item n="235" xml:id="Rouen_1856_e104_i235">
+            <num>235</num>
+            <title>Vue de Rouen, prise des chantiers qu Mon. Riboudet.</title>
+            <desc>prise des chantiers qu Mon. Riboudet.</desc>
+          </item>
+          <item n="236" xml:id="Rouen_1856_e104_i236">
+            <num>236</num>
+            <title>Etudes d’après nature. Aquarelles.</title>
+          </item>
+        </entry>
+        <entry n="105" xml:id="Rouen_1856_e105" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f32/417,2172,1006,329/full/0/default.jpg">
+          <desc>
+            <name>LONGCHAMP (HENHIETTE DE),</name>
+            <trait>
+              <p>4 Paeis, dué de Se, 11.</p>
+            </trait>
+          </desc>
+          <item n="237" xml:id="Rouen_1856_e105_i237">
+            <num>237</num>
+            <title>Guirlande de Marguerites.</title>
+          </item>
+        </entry>
+        <entry n="106" xml:id="Rouen_1856_e106" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f33/266,576,1148,721/full/0/default.jpg">
+          <desc>
+            <name>LORGUELLEUX (A),</name>
+            <trait>
+              <p>A Rouen, rue des Carmos, 12.</p>
+            </trait>
+          </desc>
+          <item n="238" xml:id="Rouen_1856_e106_i238">
+            <num>238</num>
+            <title>Portrait de M. D... de Rouen. Pastel.</title>
+          </item>
+          <item n="239" xml:id="Rouen_1856_e106_i239">
+            <num>239</num>
+            <title>Portrait de M. P..., de Rouen. Pastel.</title>
+            <desc>de Rouen. Pastel.</desc>
+          </item>
+          <item n="240" xml:id="Rouen_1856_e106_i240">
+            <num>240</num>
+            <title>Portrait de M. B. de Pavilly. Pastel.</title>
+          </item>
+          <item n="241" xml:id="Rouen_1856_e106_i241">
+            <num>241</num>
+            <title>Portrait de M. J.-L. B. — de Sottville. Huile</title>
+          </item>
+        </entry>
+        <entry n="107" xml:id="Rouen_1856_e107" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f33/266,1340,1141,388/full/0/default.jpg">
+          <desc>
+            <name>LOTTIN DE LAVAL</name>
+            <trait>
+              <p>Au château des Trois-Vals, près de Bernay (Eure).</p>
+            </trait>
+          </desc>
+          <item n="242" xml:id="Rouen_1856_e107_i242">
+            <num>242</num>
+            <title>Une Mosquée.</title>
+          </item>
+          <item n="243" xml:id="Rouen_1856_e107_i243">
+            <num>243</num>
+            <title>Paysage </title>
+            <desc>(vue d’Orient).</desc>
+          </item>
+          <item n="244" xml:id="Rouen_1856_e107_i244">
+            <num>244</num>
+            <title>Paysage </title>
+            <desc>(Vue d’Orient).</desc>
+          </item>
+        </entry>
+        <entry n="108" xml:id="Rouen_1856_e108" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f33/265,1808,1182,413/full/0/default.jpg">
+          <desc>
+            <name>LUCAS.</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="245" xml:id="Rouen_1856_e108_i245">
+            <num>245</num>
+            <title>Vue du Port de Villefranche, près Nice.</title>
+            <desc>près Nice.</desc>
+          </item>
+          <item n="246" xml:id="Rouen_1856_e108_i246">
+            <num>246</num>
+            <title>Eglise de Saint-Georges des Grecs, à Venise.</title>
+            <desc>à Venise.</desc>
+          </item>
+          <item n="247" xml:id="Rouen_1856_e108_i247">
+            <num>247</num>
+            <title>Souvenir de la rivière de Gènes.</title>
+          </item>
+        </entry>
+        <entry n="109" xml:id="Rouen_1856_e109" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f33/279,2264,903,263/full/0/default.jpg">
+          <desc>
+            <name>MAGAUD (ADOLPHE),</name>
+            <trait>
+              <p>A Paris, boulevard Poisonnière, 24.</p>
+            </trait>
+          </desc>
+          <item n="248" xml:id="Rouen_1856_e109_i248">
+            <num>248</num>
+            <title>Nature morte.</title>
+          </item>
+          <item n="249" xml:id="Rouen_1856_e109_i249">
+            <num>249</num>
+            <title>Fleurs.</title>
+          </item>
+          <item n="250" xml:id="Rouen_1856_e109_i250">
+            <num>250</num>
+            <title>Fleurs.</title>
+          </item>
+        </entry>
+        <entry n="110" xml:id="Rouen_1856_e110" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f34/369,854,939,381/full/0/default.jpg">
+          <desc>
+            <name>MALENSON (PAUL),</name>
+            <trait>
+              <p>A Rouen, rne des Charretes, 10.</p>
+            </trait>
+          </desc>
+          <item n="251" xml:id="Rouen_1856_e110_i251">
+            <num>251</num>
+            <title>Chasse au Canard.</title>
+          </item>
+          <item n="252" xml:id="Rouen_1856_e110_i252">
+            <num>252</num>
+            <title>Chasse au Cerf.</title>
+          </item>
+          <item n="253" xml:id="Rouen_1856_e110_i253">
+            <num>253</num>
+            <title>Chasse en Plaine.</title>
+          </item>
+        </entry>
+        <entry n="111" xml:id="Rouen_1856_e111" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f34/376,1353,1048,320/full/0/default.jpg">
+          <desc>
+            <name>MARAINE (DE R.).</name>
+            <trait>
+              <p>Apati, Pé dEue, 16.</p>
+            </trait>
+          </desc>
+          <item n="254" xml:id="Rouen_1856_e111_i254">
+            <num>254</num>
+            <title>Une Exécution capitale en Crimée.</title>
+          </item>
+          <item n="255" xml:id="Rouen_1856_e111_i255">
+            <num>255</num>
+            <title>Vla de quoi graisser la marmite.</title>
+          </item>
+        </entry>
+        <entry n="112" xml:id="Rouen_1856_e112" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f34/383,1777,1103,293/full/0/default.jpg">
+          <desc>
+            <name>MARHON.</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="256" xml:id="Rouen_1856_e112_i256">
+            <num>256</num>
+            <title>La Petite Bouquetiere.</title>
+          </item>
+        </entry>
+        <entry n="113" xml:id="Rouen_1856_e113" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f34/376,2160,1165,402/full/0/default.jpg">
+          <desc>
+            <name>MASSÉ (EMUNRI</name>
+            <trait>
+              <p>A Paris, me Pigale, 2.</p>
+            </trait>
+          </desc>
+          <item n="257" xml:id="Rouen_1856_e113_i257">
+            <num>257</num>
+            <title>Un Grenadier de la Garde Impériale </title>
+            <desc>(tenue. de campagne).</desc>
+          </item>
+          <item n="258" xml:id="Rouen_1856_e113_i258">
+            <num>258</num>
+            <title>Pâtre italien.</title>
+          </item>
+        </entry>
+        <entry n="114" xml:id="Rouen_1856_e114" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f35/227,624,1135,359/full/0/default.jpg">
+          <desc>
+            <name>MÉDARD (VIRGINIE).</name>
+            <trait>
+              <p>A Paris, rue du Temple, 192.</p>
+            </trait>
+          </desc>
+          <item n="259" xml:id="Rouen_1856_e114_i259">
+            <num>259</num>
+            <title>Deux Tableaux de fleurs. Au pastel.</title>
+          </item>
+        </entry>
+        <entry n="115" xml:id="Rouen_1856_e115" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f35/239,1087,828,404/full/0/default.jpg">
+          <desc>
+            <name>MELOTTE(E.).</name>
+            <trait>
+              <p>Roren, rue de IErée, 21.</p>
+            </trait>
+          </desc>
+          <item n="260" xml:id="Rouen_1856_e115_i260">
+            <num>260</num>
+            <title>Portrait de Mme E. M..</title>
+          </item>
+          <item n="261" xml:id="Rouen_1856_e115_i261">
+            <num>261</num>
+            <title>Portrait de M..</title>
+          </item>
+          <item n="262" xml:id="Rouen_1856_e115_i262">
+            <num>262</num>
+            <title>Portrait de M. K.</title>
+          </item>
+        </entry>
+        <entry n="116" xml:id="Rouen_1856_e116" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f35/226,1612,931,349/full/0/default.jpg">
+          <desc>
+            <name>MERLIN.</name>
+            <trait>
+              <p>A Rouen, rue Senf́aux, 4 bis.</p>
+            </trait>
+          </desc>
+          <item n="265" xml:id="Rouen_1856_e116_i265">
+            <num>265</num>
+            <title>Me du Pont-de-JArche en 1820.</title>
+          </item>
+          <item n="264" xml:id="Rouen_1856_e116_i264">
+            <num>264</num>
+            <title>Paysage.</title>
+          </item>
+        </entry>
+        <entry n="117" xml:id="Rouen_1856_e117" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f35/226,2068,1175,500/full/0/default.jpg">
+          <desc>
+            <name>MICHEL (JULES),</name>
+            <trait>
+              <p>Au château du Réel, près le Bose-le-Hard, élève de feu Marcel Verdier.</p>
+            </trait>
+          </desc>
+          <item n="265" xml:id="Rouen_1856_e117_i265">
+            <num>265</num>
+            <title>Portrait de M.L.</title>
+          </item>
+          <item n="266" xml:id="Rouen_1856_e117_i266">
+            <num>266</num>
+            <title>Portrait de Mme L...</title>
+          </item>
+          <item n="267" xml:id="Rouen_1856_e117_i267">
+            <num>267</num>
+            <title>Portrait des Enfants de M. L..</title>
+          </item>
+          <item n="268" xml:id="Rouen_1856_e117_i268">
+            <num>268</num>
+            <title>Tableau de genre </title>
+            <desc>(Laveuses).</desc>
+          </item>
+        </entry>
+        <entry n="118" xml:id="Rouen_1856_e118" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f36/365,601,865,245/full/0/default.jpg">
+          <desc>
+            <name>MOLINS (DE).</name>
+          </desc>
+          <item n="269" xml:id="Rouen_1856_e118_i269">
+            <num>269</num>
+            <title>Les Joueurs de Boule.</title>
+          </item>
+          <item n="270" xml:id="Rouen_1856_e118_i270">
+            <num>270</num>
+            <title>Une Chasse.</title>
+          </item>
+        </entry>
+        <entry n="119" xml:id="Rouen_1856_e119" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f36/351,903,843,188/full/0/default.jpg">
+          <desc>
+            <name>MOREAU.</name>
+          </desc>
+          <item n="271" xml:id="Rouen_1856_e119_i271">
+            <num>271</num>
+            <title>Chevaux au repos.</title>
+          </item>
+        </entry>
+        <entry n="120" xml:id="Rouen_1856_e120" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f36/413,1153,928,281/full/0/default.jpg">
+          <desc>
+            <name>MOBEL (JLES),</name>
+            <trait>
+              <p>A Paris, rue de la Grande-Chaumière, 8.</p>
+            </trait>
+          </desc>
+          <item n="272" xml:id="Rouen_1856_e120_i272">
+            <num>272</num>
+            <title>La Vierge et l’Enfant Jésus.</title>
+          </item>
+        </entry>
+        <entry n="121" xml:id="Rouen_1856_e121" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f36/424,1518,1148,481/full/0/default.jpg">
+          <desc>
+            <name>MORIN (GUSTAVE),</name>
+            <trait>
+              <p>Directeur de l'École Municipale de Peinture et de Dessin de Rouen.</p>
+            </trait>
+          </desc>
+          <item n="273" xml:id="Rouen_1856_e121_i273">
+            <num>273</num>
+            <title>Un Conte de Buveur.</title>
+          </item>
+          <item n="274" xml:id="Rouen_1856_e121_i274">
+            <num>274</num>
+            <title>Les Amateurs de Médailles.</title>
+          </item>
+          <item n="275" xml:id="Rouen_1856_e121_i275">
+            <num>275</num>
+            <title>Le Madrigal.</title>
+          </item>
+          <item n="76" xml:id="Rouen_1856_e121_i76">
+            <num>76</num>
+            <title>Les Aigrefins.</title>
+          </item>
+        </entry>
+        <entry n="122" xml:id="Rouen_1856_e122" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f36/427,2062,1213,547/full/0/default.jpg">
+          <desc>
+            <name>MOUILLARD (ALFRED),</name>
+            <trait>
+              <p>À Rouen, rue de la Croix-de-Fer, 2.</p>
+            </trait>
+          </desc>
+          <item n="277" xml:id="Rouen_1856_e122_i277">
+            <num>277</num>
+            <title>Corneille attendant auprès de l’échoppe d’un savetier sa chaussure que ce dernier rac¬ commode.</title>
+          </item>
+        </entry>
+        <entry n="123" xml:id="Rouen_1856_e123" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f37/232,663,1161,155/full/0/default.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>278. Charles IX au Louvre, faisant de l’armurerie.</p>
+            </trait>
+          </desc>
+          <item n="278" xml:id="Rouen_1856_e123_i278">
+            <num>278</num>
+            <title>Charles IX au Louvre, faisant de l’armurerie.</title>
+            <desc>faisant de l’armurerie.</desc>
+          </item>
+          <item n="279" xml:id="Rouen_1856_e123_i279">
+            <num>279</num>
+            <title>Erasme dans l’atelier d’Holbein.</title>
+          </item>
+        </entry>
+        <entry n="124" xml:id="Rouen_1856_e124" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f37/218,923,1162,531/full/0/default.jpg">
+          <desc>
+            <name>MOZIN (CH.),</name>
+            <trait>
+              <p>A Trouville-sur-Mer.</p>
+            </trait>
+          </desc>
+          <item n="280" xml:id="Rouen_1856_e124_i280">
+            <num>280</num>
+            <title>Vue générale du Port de Rouen.</title>
+          </item>
+          <item n="281" xml:id="Rouen_1856_e124_i281">
+            <num>281</num>
+            <title>Entrée du Port de Trouville.</title>
+          </item>
+          <item n="282" xml:id="Rouen_1856_e124_i282">
+            <num>282</num>
+            <title>Etretat.</title>
+          </item>
+          <item n="285" xml:id="Rouen_1856_e124_i285">
+            <num>285</num>
+            <title>Honfleur. Sortie du Port.</title>
+          </item>
+          <item n="284" xml:id="Rouen_1856_e124_i284">
+            <num>284</num>
+            <title>Trouville, Entrée du Port.</title>
+            <desc>Entrée du Port.</desc>
+          </item>
+        </entry>
+        <entry n="125" xml:id="Rouen_1856_e125" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f37/239,1593,1141,183/full/0/default.jpg">
+          <desc>
+            <name>NOEL (JUrES).</name>
+          </desc>
+          <item n="285" xml:id="Rouen_1856_e125_i285">
+            <num>285</num>
+            <title>Souvenirs de Bretagne.</title>
+          </item>
+        </entry>
+        <entry n="126" xml:id="Rouen_1856_e126" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f37/232,1887,1148,306/full/0/default.jpg">
+          <desc>
+            <name>NOTERMAN.</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="286" xml:id="Rouen_1856_e126_i286">
+            <num>286</num>
+            <title>Un Chien f’airant une Perdrix attachée à un mur.</title>
+          </item>
+        </entry>
+        <entry n="127" xml:id="Rouen_1856_e127" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f37/232,2345,1154,237/full/0/default.jpg">
+          <desc>
+            <name>OUIN (MICHEL),</name>
+            <trait>
+              <p>A Pieppe.</p>
+            </trait>
+          </desc>
+          <item n="287" xml:id="Rouen_1856_e127_i287">
+            <num>287</num>
+            <title>Sculptures en Ivoire, Rondes-Boses et Reliets</title>
+            <desc>Rondes-Boses et Reliets</desc>
+          </item>
+        </entry>
+        <entry n="128" xml:id="Rouen_1856_e128" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f38/431,630,1075,264/full/0/default.jpg">
+          <desc>
+            <name>OUVRIÉ (JUSTIN),</name>
+            <trait>
+              <p>A Parie, rue de La Bruyere, 2.</p>
+            </trait>
+          </desc>
+          <item n="288" xml:id="Rouen_1856_e128_i288">
+            <num>288</num>
+            <title>Cour de Ferme à Montfort-l’Amaury.</title>
+          </item>
+        </entry>
+        <entry n="129" xml:id="Rouen_1856_e129" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f38/451,984,1117,306/full/0/default.jpg">
+          <desc>
+            <name>PARIS )JOSEPH),</name>
+            <trait>
+              <p>A Paris, rue de l’Entrepôt-des-Marais, 33. 289 Troupeau descendant un ravin.</p>
+            </trait>
+          </desc>
+          <item n="290" xml:id="Rouen_1856_e129_i290">
+            <num>290</num>
+            <title>Vache s’abreuvant </title>
+            <desc>(intérieur d’une cour).</desc>
+          </item>
+        </entry>
+        <entry n="130" xml:id="Rouen_1856_e130" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f38/451,1394,1110,320/full/0/default.jpg">
+          <desc>
+            <name>PARMENTIER (MARIE-FÉLIX),</name>
+            <trait>
+              <p>A Paris, passage Chauson, 3, élève de M. Leon Cogniet.</p>
+            </trait>
+          </desc>
+          <item n="291" xml:id="Rouen_1856_e130_i291">
+            <num>291</num>
+            <title>Un Chanteur arabe à Tunis.</title>
+          </item>
+          <item n="292" xml:id="Rouen_1856_e130_i292">
+            <num>292</num>
+            <title>Un Changeur de Monnaie à Tumis.</title>
+          </item>
+        </entry>
+        <entry n="131" xml:id="Rouen_1856_e131" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f38/451,1825,1165,395/full/0/default.jpg">
+          <desc>
+            <name>PETIT (ANTOINE-BAPTISTE).</name>
+            <trait>
+              <p>A Veraille, rue le Suvois, 5</p>
+            </trait>
+          </desc>
+          <item n="293" xml:id="Rouen_1856_e131_i293">
+            <num>293</num>
+            <title>Vue de la ville de Jérusalem, prise du mont. Olivier.</title>
+            <desc>prise du mont. Olivier.</desc>
+          </item>
+          <item n="294" xml:id="Rouen_1856_e131_i294">
+            <num>294</num>
+            <title>Vue du canal de Bruges.</title>
+          </item>
+        </entry>
+        <entry n="132" xml:id="Rouen_1856_e132" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f38/458,2304,1042,292/full/0/default.jpg">
+          <desc>
+            <name>PIETERS.</name>
+            <trait>
+              <p>A Rouen, rue Grand-Pont, 36.</p>
+            </trait>
+          </desc>
+          <item n="295" xml:id="Rouen_1856_e132_i295">
+            <num>295</num>
+            <title>Portrait de M. M...</title>
+          </item>
+          <item n="296" xml:id="Rouen_1856_e132_i296">
+            <num>296</num>
+            <title>Portrait de M. D....</title>
+          </item>
+        </entry>
+        <entry n="133" xml:id="Rouen_1856_e133" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f39/259,630,947,313/full/0/default.jpg">
+          <desc>
+            <name>PIVEL (E).</name>
+            <trait>
+              <p>A Paris, rue Vivienne, 22. 297 Après l’orage.</p>
+            </trait>
+          </desc>
+          <item n="298" xml:id="Rouen_1856_e133_i298">
+            <num>298</num>
+            <title>Village maritime.</title>
+          </item>
+        </entry>
+        <entry n="134" xml:id="Rouen_1856_e134" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f39/284,1029,972,251/full/0/default.jpg">
+          <desc>
+            <name>PINELLI (AUGUSTE DE),</name>
+            <trait>
+              <p>A Paris, faubourg Saint-Honoré, 137.</p>
+            </trait>
+          </desc>
+          <item n="299" xml:id="Rouen_1856_e134_i299">
+            <num>299</num>
+            <title>La Distraction.</title>
+          </item>
+        </entry>
+        <entry n="135" xml:id="Rouen_1856_e135" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f39/268,1338,1095,757/full/0/default.jpg">
+          <desc>
+            <name>PIQUOT (JULIE,</name>
+            <trait>
+              <p> née HERZOG), A Rouen, rue Saint-Sever, 69, élève de Redoute.</p>
+            </trait>
+          </desc>
+          <item n="300" xml:id="Rouen_1856_e135_i300">
+            <num>300</num>
+            <title>Tableau, Fleurs et Fruits dans un panier.</title>
+            <desc>Fleurs et Fruits dans un panier.</desc>
+          </item>
+          <item n="301" xml:id="Rouen_1856_e135_i301">
+            <num>301</num>
+            <title>Tableau.    Id.</title>
+          </item>
+          <item n="302" xml:id="Rouen_1856_e135_i302">
+            <num>302</num>
+            <title>Groupe de Fleurs dans un vase.</title>
+          </item>
+          <item n="30" xml:id="Rouen_1856_e135_i30">
+            <num>30</num>
+            <title>Couronne de Roses et Fleurs variées.</title>
+          </item>
+          <item n="304" xml:id="Rouen_1856_e135_i304">
+            <num>304</num>
+            <title>Groupe de Marguerites</title>
+          </item>
+          <item n="305" xml:id="Rouen_1856_e135_i305">
+            <num>305</num>
+            <title>Groupe de Roses et d’Anémones.</title>
+          </item>
+          <item n="306" xml:id="Rouen_1856_e135_i306">
+            <num>306</num>
+            <title>Un Portrait de Napoléon ler.</title>
+          </item>
+          <item n="307" xml:id="Rouen_1856_e135_i307">
+            <num>307</num>
+            <title>La Vierge et l’Enfant Jésus.</title>
+          </item>
+        </entry>
+        <entry n="136" xml:id="Rouen_1856_e136" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f39/268,2186,1140,453/full/0/default.jpg">
+          <desc>
+            <name>PLUVETTE</name>
+            <trait>
+              <p>A Paris, rue de Latayette, 34.</p>
+            </trait>
+          </desc>
+          <item n="508" xml:id="Rouen_1856_e136_i508">
+            <num>508</num>
+            <title>La Vieille et ses deux Servantes.</title>
+          </item>
+          <item n="309" xml:id="Rouen_1856_e136_i309">
+            <num>309</num>
+            <title>Le premier pas de l’Enfant Jesus.</title>
+          </item>
+        </entry>
+        <entry n="137" xml:id="Rouen_1856_e137" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f40/370,603,1018,295/full/0/default.jpg">
+          <desc>
+            <name>PONTREMOLI</name>
+            <trait>
+              <p>A Paris, rue Martel, 14</p>
+            </trait>
+          </desc>
+          <item n="310" xml:id="Rouen_1856_e137_i310">
+            <num>310</num>
+            <title>Napoleon Il au milieu des Inondes.</title>
+          </item>
+        </entry>
+        <entry n="138" xml:id="Rouen_1856_e138" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f40/366,1014,1189,449/full/0/default.jpg">
+          <desc>
+            <name>POUSSIN (CHARLES),</name>
+            <trait>
+              <p>A Paris, rue Lafayette, 34.</p>
+            </trait>
+          </desc>
+          <item n="311" xml:id="Rouen_1856_e138_i311">
+            <num>311</num>
+            <title>La Fable du Meunier, son Fils et l’Ane.</title>
+            <desc>son Fils et l’Ane.</desc>
+          </item>
+          <item n="312" xml:id="Rouen_1856_e138_i312">
+            <num>312</num>
+            <title>Une Forge en Normandie.</title>
+          </item>
+        </entry>
+        <entry n="139" xml:id="Rouen_1856_e139" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f40/391,1563,989,312/full/0/default.jpg">
+          <desc>
+            <name>RAVERGIE,</name>
+            <trait>
+              <p>A Paris, rue du 29 Juillet, 5.</p>
+            </trait>
+          </desc>
+          <item n="313" xml:id="Rouen_1856_e139_i313">
+            <num>313</num>
+            <title>La Vierge et l’Enfant Jésus.</title>
+          </item>
+        </entry>
+        <entry n="140" xml:id="Rouen_1856_e140" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f40/407,1970,998,657/full/0/default.jpg">
+          <desc>
+            <name>RENOUT (PHLIPPE).</name>
+            <trait>
+              <p>A Louviers.</p>
+            </trait>
+          </desc>
+          <item n="314" xml:id="Rouen_1856_e140_i314">
+            <num>314</num>
+            <title>Raisins et Capucines.</title>
+          </item>
+          <item n="315" xml:id="Rouen_1856_e140_i315">
+            <num>315</num>
+            <title>Pêches et Abricots.</title>
+          </item>
+          <item n="316" xml:id="Rouen_1856_e140_i316">
+            <num>316</num>
+            <title>Ecuries du Château-Gaillard.</title>
+          </item>
+          <item n="317" xml:id="Rouen_1856_e140_i317">
+            <num>317</num>
+            <title>Pont-de-l’Arche, </title>
+            <desc>(12 Juillet 1856).</desc>
+          </item>
+          <item n="318" xml:id="Rouen_1856_e140_i318">
+            <num>318</num>
+            <title>Haute-Vieille-Tour, à Rouen.</title>
+            <desc>à Rouen.</desc>
+          </item>
+        </entry>
+        <entry n="141" xml:id="Rouen_1856_e141" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f41/348,630,1162,387/full/0/default.jpg">
+          <desc>
+            <name>RENOUARD, (EUGÈNE),</name>
+            <trait>
+              <p>A Rouen, rue des Carmes, 64.</p>
+            </trait>
+          </desc>
+          <item n="519" xml:id="Rouen_1856_e141_i519">
+            <num>519</num>
+            <title>Vue du lac des Quatre-Cantons et des monta gnes d’Uri, prise de Fissigen</title>
+            <desc>prise de Fissigen</desc>
+          </item>
+          <item n="320" xml:id="Rouen_1856_e141_i320">
+            <num>320</num>
+            <title>Une Miniature.</title>
+          </item>
+        </entry>
+        <entry n="142" xml:id="Rouen_1856_e142" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f41/348,1135,1148,244/full/0/default.jpg">
+          <desc>
+            <name>REYNAUD,</name>
+            <trait>
+              <p>AParis.</p>
+            </trait>
+          </desc>
+          <item n="221" xml:id="Rouen_1856_e142_i221">
+            <num>221</num>
+            <title>La Dinette du Perroquet.</title>
+          </item>
+        </entry>
+        <entry n="143" xml:id="Rouen_1856_e143" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f41/335,1483,1175,436/full/0/default.jpg">
+          <desc>
+            <name>RIVOULON (A.).</name>
+            <trait>
+              <p>A Paris, rue de Fleurus, 1.</p>
+            </trait>
+          </desc>
+          <item n="322" xml:id="Rouen_1856_e143_i322">
+            <num>322</num>
+            <title>Episode de la bataille des Pyramides, Charge. désespérée des Mamelucks sur le grand carré commandé par le général Bonaparte.</title>
+            <desc>Charge. désespérée des Mamelucks sur le grand carré commandé par le général Bonaparte.</desc>
+          </item>
+        </entry>
+        <entry n="144" xml:id="Rouen_1856_e144" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f41/348,1955,1093,265/full/0/default.jpg">
+          <desc>
+            <name>ROEHN (ALp.),</name>
+            <trait>
+              <p>A Paris, quai Veltaire, 47..</p>
+            </trait>
+          </desc>
+          <item n="323" xml:id="Rouen_1856_e144_i323">
+            <num>323</num>
+            <title>Le Bâton de vieillesse.</title>
+          </item>
+        </entry>
+        <entry n="145" xml:id="Rouen_1856_e145" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f41/355,2318,1073,251/full/0/default.jpg">
+          <desc>
+            <name>SAINT-MARTIN (PAUL),</name>
+            <trait>
+              <p>A Paris, rue Guénégaud, 19.</p>
+            </trait>
+          </desc>
+          <item n="324" xml:id="Rouen_1856_e145_i324">
+            <num>324</num>
+            <title>Lithographie.</title>
+          </item>
+          <item n="325" xml:id="Rouen_1856_e145_i325">
+            <num>325</num>
+            <title>Lithographie.</title>
+          </item>
+          <item n="326" xml:id="Rouen_1856_e145_i326">
+            <num>326</num>
+            <title>Lithographie.</title>
+          </item>
+        </entry>
+        <entry n="146" xml:id="Rouen_1856_e146" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f42/396,827,905,381/full/0/default.jpg">
+          <desc>
+            <name>SALMON (THÉODORE),</name>
+            <trait>
+              <p>A Belleville, rue des Bois, 6</p>
+            </trait>
+          </desc>
+          <item n="327" xml:id="Rouen_1856_e146_i327">
+            <num>327</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="328" xml:id="Rouen_1856_e146_i328">
+            <num>328</num>
+            <title>La Toilette.</title>
+          </item>
+        </entry>
+        <entry n="147" xml:id="Rouen_1856_e147" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f42/389,1285,898,354/full/0/default.jpg">
+          <desc>
+            <name>SCHEFTER (ARY),</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="329" xml:id="Rouen_1856_e147_i329">
+            <num>329</num>
+            <title>Portrait de Béranger.</title>
+          </item>
+          <item n="330" xml:id="Rouen_1856_e147_i330">
+            <num>330</num>
+            <title>Portrait de M. Arago.</title>
+          </item>
+        </entry>
+        <entry n="148" xml:id="Rouen_1856_e148" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f42/403,1812,878,367/full/0/default.jpg">
+          <desc>
+            <name>SCHMID.</name>
+            <trait>
+              <p>A Vernon, rue de la Madeleine, 10.</p>
+            </trait>
+          </desc>
+          <item n="331" xml:id="Rouen_1856_e148_i331">
+            <num>331</num>
+            <title>Un Séducteur.</title>
+          </item>
+          <item n="332" xml:id="Rouen_1856_e148_i332">
+            <num>332</num>
+            <title>Portrait de Mle C..</title>
+          </item>
+        </entry>
+        <entry n="149" xml:id="Rouen_1856_e149" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f42/410,2311,857,271/full/0/default.jpg">
+          <desc>
+            <name>SHEREES,</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="333" xml:id="Rouen_1856_e149_i333">
+            <num>333</num>
+            <title>Intérieur hollandais.</title>
+          </item>
+        </entry>
+        <entry n="150" xml:id="Rouen_1856_e150" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f43/298,562,1183,1137/full/0/default.jpg">
+          <desc>
+            <name>SORIEUL (L.),</name>
+            <trait>
+              <p>1 Paris, re de Chaonron, 14.</p>
+            </trait>
+          </desc>
+          <item n="334" xml:id="Rouen_1856_e150_i334">
+            <num>334</num>
+            <title>Soldats secourant des Pretres français emi grés en Italie. Une foule de Prêtres français émigrés restèrent tout à coup sans retraite par l’occupation de la Romagne..— Le clergé et les moines profitèrent de la victoire des répu blicains pour les congédier. Le général Bonaparte, imuigné de cete cruauté, dot a était loin d’ofrir l’exemple aux vaincus, invita hautement. par une proclamation, les évêques et les supérieurs ccclé siastiques à donner asile à ces pauvres prêtres, qu’il place sous la protection de ses troupes. Cette circonstance amena les scènes les plus touchantes. beauçoup de soldats reconnurent les curés de leurs vil¬ lages.</title>
+            <desc>imuigné de cete cruauté, dot a était loin d’ofrir l’exemple aux vaincus, invita hautement. par une proclamation, les évêques et les supérieurs ccclé siastiques à donner asile à ces pauvres prêtres, qu’il place sous la protection de ses troupes. Cette circonstance amena les scènes les plus touchantes. beauçoup de soldats reconnurent les curés de leurs villages.</desc>
+          </item>
+        </entry>
+        <entry n="151" xml:id="Rouen_1856_e151" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f43/298,1839,1160,304/full/0/default.jpg">
+          <desc>
+            <name>THUILIER (PIERRE),</name>
+            <trait>
+              <p>A Paris, rue de Vaugirard, 23.</p>
+            </trait>
+          </desc>
+          <item n="335" xml:id="Rouen_1856_e151_i335">
+            <num>335</num>
+            <title>Vue prise aux environs de Morestrel </title>
+            <desc>(Isère).</desc>
+          </item>
+        </entry>
+        <entry n="152" xml:id="Rouen_1856_e152" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f43/261,2280,949,305/full/0/default.jpg">
+          <desc>
+            <name>TIGER (ADOLPHE).</name>
+            <trait>
+              <p>à Rouen, rue Eau-de-Robec, 227.</p>
+            </trait>
+          </desc>
+          <item n="336" xml:id="Rouen_1856_e152_i336">
+            <num>336</num>
+            <title>Etude de Fleurs saur porcelaine.</title>
+          </item>
+        </entry>
+        <entry n="153" xml:id="Rouen_1856_e153" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f44/382,557,1223,305/full/0/default.jpg">
+          <desc>
+            <name>TRONVILLE (F.-J.).</name>
+            <trait>
+              <p>A Paris, rue de Miromenil, 42.</p>
+            </trait>
+          </desc>
+          <item n="337" xml:id="Rouen_1856_e153_i337">
+            <num>337</num>
+            <title>Paysans bretons surpris par la marée montante.</title>
+          </item>
+        </entry>
+        <entry n="154" xml:id="Rouen_1856_e154" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f44/424,931,909,341/full/0/default.jpg">
+          <desc>
+            <name>TUITE (T.-T.).</name>
+            <trait>
+              <p>A Paris, rue de Miroménil, 8.</p>
+            </trait>
+          </desc>
+          <item n="338" xml:id="Rouen_1856_e154_i338">
+            <num>338</num>
+            <title>Château de Dumbarton </title>
+            <desc>(Ecose).</desc>
+          </item>
+        </entry>
+        <entry n="155" xml:id="Rouen_1856_e155" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f44/410,1386,1181,668/full/0/default.jpg">
+          <desc>
+            <name>VALADON (JULES).</name>
+            <trait>
+              <p>A Paris, élève de MM. Léon Cogniet et Droling</p>
+            </trait>
+          </desc>
+          <item n="339" xml:id="Rouen_1856_e155_i339">
+            <num>339</num>
+            <title>Trois belles choses. Pierrot, La Venus de Milo et Arlequin. Pierrot représente l’Innocence, la Vénus de Milo, chef d’œuvre antique, la Beauté absolue, et Arlequin, l'Esprit.</title>
+            <desc>La Venus de Milo et Arlequin. Pierrot représente l’Innocence, la Vénus de Milo, chef d’œuvre antique, la Beauté absolue, et Arlequin, l'Esprit.</desc>
+          </item>
+          <item n="340" xml:id="Rouen_1856_e155_i340">
+            <num>340</num>
+            <title>Julie et Claire couronnant le buste de Rousseau.</title>
+          </item>
+        </entry>
+        <entry n="156" xml:id="Rouen_1856_e156" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f44/407,2131,1098,485/full/0/default.jpg">
+          <desc>
+            <name>VÉRON (ALEXANDRE),</name>
+            <trait>
+              <p>A paris, rue des Martyrs, 14, élève de M. H. Delaroche</p>
+            </trait>
+          </desc>
+          <item n="341" xml:id="Rouen_1856_e156_i341">
+            <num>341</num>
+            <title>Le Clos des Vignes à Anvers.</title>
+          </item>
+          <item n="342" xml:id="Rouen_1856_e156_i342">
+            <num>342</num>
+            <title>Soleil Couchant sur l’Oise.</title>
+          </item>
+          <item n="343" xml:id="Rouen_1856_e156_i343">
+            <num>343</num>
+            <title>Le Soir, Vue des bords de l’Oise.</title>
+            <desc>Vue des bords de l’Oise.</desc>
+          </item>
+        </entry>
+        <entry n="157" xml:id="Rouen_1856_e157" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f45/314,560,1134,217/full/0/default.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>344. Les Carrières, route de l’le-Adam.</p>
+            </trait>
+          </desc>
+          <item n="344" xml:id="Rouen_1856_e157_i344">
+            <num>344</num>
+            <title>Les Carrières, route de l’le-Adam.</title>
+            <desc>route de l’le-Adam.</desc>
+          </item>
+          <item n="345" xml:id="Rouen_1856_e157_i345">
+            <num>345</num>
+            <title>Le Printemps à Fontainebleau.</title>
+          </item>
+          <item n="546" xml:id="Rouen_1856_e157_i546">
+            <num>546</num>
+            <title>Les Laveuses à Anvers.</title>
+          </item>
+        </entry>
+        <entry n="158" xml:id="Rouen_1856_e158" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f45/300,923,1162,600/full/0/default.jpg">
+          <desc>
+            <name>VIGER-DUVIGNEAU (JEAN-LOUIS-HECTOR).</name>
+            <trait>
+              <p>A Paris, rue de l’Ouest, 36.</p>
+            </trait>
+          </desc>
+          <item n="347" xml:id="Rouen_1856_e158_i347">
+            <num>347</num>
+            <title>Le Christ descendu de la Croix. Dessin à l’estompe d’après son tableau original acquis par le Ministère d’État.</title>
+          </item>
+          <item n="348" xml:id="Rouen_1856_e158_i348">
+            <num>348</num>
+            <title>Paysage. </title>
+            <desc>(Les Pécheurs parisiens).</desc>
+          </item>
+          <item n="349" xml:id="Rouen_1856_e158_i349">
+            <num>349</num>
+            <title>Portrait d’après M. Poullain.</title>
+          </item>
+        </entry>
+        <entry n="159" xml:id="Rouen_1856_e159" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f45/258,1709,1170,529/full/0/default.jpg">
+          <desc>
+            <name>VIGER-DUVIGNEAU (Mme PERRINE),</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="350" xml:id="Rouen_1856_e159_i350">
+            <num>350</num>
+            <title>Les Noces de Gamache.</title>
+          </item>
+          <item n="351" xml:id="Rouen_1856_e159_i351">
+            <num>351</num>
+            <title>Nature Morte, Fruits et Légumes.</title>
+            <desc>Fruits et Légumes.</desc>
+          </item>
+          <item n="352" xml:id="Rouen_1856_e159_i352">
+            <num>352</num>
+            <title>Idem.</title>
+          </item>
+          <item n="353" xml:id="Rouen_1856_e159_i353">
+            <num>353</num>
+            <title>Idem.</title>
+          </item>
+        </entry>
+        <entry n="160" xml:id="Rouen_1856_e160" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f45/306,2279,1195,308/full/0/default.jpg">
+          <desc>
+            <name>VALFORT (C.),</name>
+            <trait>
+              <p>A Paris, rue du Nord, 31.</p>
+            </trait>
+          </desc>
+          <item n="354" xml:id="Rouen_1856_e160_i354">
+            <num>354</num>
+            <title>Un Cafe à Ain-Temouchen </title>
+            <desc>(province d’Oran).</desc>
+          </item>
+          <item n="355" xml:id="Rouen_1856_e160_i355">
+            <num>355</num>
+            <title>Une Caravane dans un défilé en Afrique.</title>
+          </item>
+          <item n="356" xml:id="Rouen_1856_e160_i356">
+            <num>356</num>
+            <title>Une Rue à Constantine.</title>
+          </item>
+          <item n="357" xml:id="Rouen_1856_e160_i357">
+            <num>357</num>
+            <title>Une Rue à Constantine.</title>
+          </item>
+          <item n="358" xml:id="Rouen_1856_e160_i358">
+            <num>358</num>
+            <title>Halte d’une Caravane dans le désert de Sahara</title>
+          </item>
+          <item n="359" xml:id="Rouen_1856_e160_i359">
+            <num>359</num>
+            <title>Convoi dans un défilé en Afrique.</title>
+          </item>
+          <item n="260" xml:id="Rouen_1856_e160_i260">
+            <num>260</num>
+            <title>Une Rue à Constantine.</title>
+          </item>
+          <item n="361" xml:id="Rouen_1856_e160_i361">
+            <num>361</num>
+            <title>Une Vedette arabe en Kabylie.</title>
+          </item>
+          <item n="362" xml:id="Rouen_1856_e160_i362">
+            <num>362</num>
+            <title>Un Marchand d’esclaves.</title>
+          </item>
+          <item n="363" xml:id="Rouen_1856_e160_i363">
+            <num>363</num>
+            <title>Un Café à Alger.</title>
+          </item>
+        </entry>
+        <entry n="161" xml:id="Rouen_1856_e161" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f46/349,1380,1210,478/full/0/default.jpg">
+          <desc>
+            <name>VALIOUS DE VILLENEUVE</name>
+            <trait>
+              <p>A Paris, rue Bleue, 18.</p>
+            </trait>
+          </desc>
+          <item n="364" xml:id="Rouen_1856_e161_i364">
+            <num>364</num>
+            <title>Deux Dessins aux crayons de couleurs.</title>
+          </item>
+          <item n="265" xml:id="Rouen_1856_e161_i265">
+            <num>265</num>
+            <title>Une jeune Fille portant du bois dans son tablier</title>
+          </item>
+          <item n="366" xml:id="Rouen_1856_e161_i366">
+            <num>366</num>
+            <title>Une jeune Fille appuyée à la balustrade</title>
+          </item>
+        </entry>
+        <entry n="162" xml:id="Rouen_1856_e162" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f46/357,2004,1202,573/full/0/default.jpg">
+          <desc>
+            <name>VANONI (FRÉDÉRIC),</name>
+            <trait>
+              <p>De Rome. A Rouen, rue d'Anvers, 104.</p>
+            </trait>
+          </desc>
+          <item n="367" xml:id="Rouen_1856_e162_i367">
+            <num>367</num>
+            <title>Le Décaméron.</title>
+          </item>
+          <item n="368" xml:id="Rouen_1856_e162_i368">
+            <num>368</num>
+            <title>Vue du Château de Fernex.</title>
+          </item>
+          <item n="569" xml:id="Rouen_1856_e162_i569">
+            <num>569</num>
+            <title>Une Sérénade à Venise.</title>
+          </item>
+          <item n="370" xml:id="Rouen_1856_e162_i370">
+            <num>370</num>
+            <title>Vue de la Villa Reale, aux environs de Naples.</title>
+            <desc>aux environs de Naples.</desc>
+          </item>
+        </entry>
+        <entry n="163" xml:id="Rouen_1856_e163" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f47/241,1217,1093,732/full/0/default.jpg">
+          <desc>
+            <name>VILLEVIEILLE,</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="376" xml:id="Rouen_1856_e163_i376">
+            <num>376</num>
+            <title>Paysage pris à Maison-Lafitte. VIGNON </title>
+            <desc>(JULES DE). A Paris, rue du Faubourg-Saint-Honoré, 235.</desc>
+          </item>
+          <item n="377" xml:id="Rouen_1856_e163_i377">
+            <num>377</num>
+            <title>Intérieur de Cuisine.</title>
+          </item>
+          <item n="378" xml:id="Rouen_1856_e163_i378">
+            <num>378</num>
+            <title>Une Laveuse de vaisselle.</title>
+          </item>
+        </entry>
+        <entry n="164" xml:id="Rouen_1856_e164" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f47/254,2026,1190,559/full/0/default.jpg">
+          <desc>
+            <name>VINCENT (Mme CH),</name>
+            <trait>
+              <p> née SOPHIE CALBRIS, A Lille rue Esquermoise, 35.</p>
+            </trait>
+          </desc>
+          <item n="379" xml:id="Rouen_1856_e164_i379">
+            <num>379</num>
+            <title>Bords de la Deule.</title>
+          </item>
+          <item n="380" xml:id="Rouen_1856_e164_i380">
+            <num>380</num>
+            <title>Lambersard </title>
+            <desc>(Flandre).</desc>
+          </item>
+          <item n="381" xml:id="Rouen_1856_e164_i381">
+            <num>381</num>
+            <title>Environs de Chateau-Thierry.</title>
+          </item>
+          <item n="382" xml:id="Rouen_1856_e164_i382">
+            <num>382</num>
+            <title>Monchaux </title>
+            <desc>(Flandre).</desc>
+          </item>
+        </entry>
+        <entry n="165" xml:id="Rouen_1856_e165" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f48/444,792,1049,266/full/0/default.jpg">
+          <desc>
+            <name>BOUET,</name>
+            <trait>
+              <p>de Caen.</p>
+            </trait>
+          </desc>
+          <item n="383" xml:id="Rouen_1856_e165_i383">
+            <num>383</num>
+            <title>Iterieur de l’Edlise de Winsminster.</title>
+          </item>
+        </entry>
+        <entry n="166" xml:id="Rouen_1856_e166" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f48/437,1114,1049,245/full/0/default.jpg">
+          <desc>
+            <name>MÉLICOURT.</name>
+            <trait>
+              <p>A Dieppe.</p>
+            </trait>
+          </desc>
+          <item n="384" xml:id="Rouen_1856_e166_i384">
+            <num>384</num>
+            <title>Portrait de Jeune Homme.</title>
+          </item>
+        </entry>
+        <entry n="167" xml:id="Rouen_1856_e167" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f48/431,1422,1144,572/full/0/default.jpg">
+          <desc>
+            <name>PAIN (E.),</name>
+            <trait>
+              <p>Professeur à l'Ecole Municipale de Peinture et de Dessin de Rouen. Rue du Champ-du-Pardon, 14.</p>
+            </trait>
+          </desc>
+          <item n="385" xml:id="Rouen_1856_e167_i385">
+            <num>385</num>
+            <title>Napolitain. Croquis aux crayons de couleur.</title>
+          </item>
+          <item n="386" xml:id="Rouen_1856_e167_i386">
+            <num>386</num>
+            <title>Intérieur d’une Cour de Ferme. Etude</title>
+          </item>
+        </entry>
+        <entry n="168" xml:id="Rouen_1856_e168" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f48/431,2017,877,326/full/0/default.jpg">
+          <desc>
+            <name>HAUTIER (Mlle).</name>
+            <trait>
+              <p>A Paris.</p>
+            </trait>
+          </desc>
+          <item n="387" xml:id="Rouen_1856_e168_i387">
+            <num>387</num>
+            <title>Nature morte.</title>
+          </item>
+          <item n="388" xml:id="Rouen_1856_e168_i388">
+            <num>388</num>
+            <title>Nature morte.</title>
+          </item>
+        </entry>
+        <entry n="169" xml:id="Rouen_1856_e169" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f48/437,2359,844,217/full/0/default.jpg">
+          <desc>
+            <name>MALLET (FELIX),</name>
+            <trait>
+              <p>A Malamnay.</p>
+            </trait>
+          </desc>
+          <item n="389" xml:id="Rouen_1856_e169_i389">
+            <num>389</num>
+            <title>Nature morte.</title>
+          </item>
+        </entry>
+        <entry n="170" xml:id="Rouen_1856_e170" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f49/214,629,864,260/full/0/default.jpg">
+          <desc>
+            <name>VASSE,</name>
+            <trait>
+              <p>A Dieppe, Grand’Rue, 131</p>
+            </trait>
+          </desc>
+          <item n="390" xml:id="Rouen_1856_e170_i390">
+            <num>390</num>
+            <title>La Lecture de l’Evangile.</title>
+          </item>
+        </entry>
+        <entry n="171" xml:id="Rouen_1856_e171" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f49/264,919,1083,271/full/0/default.jpg">
+          <desc>
+            <name>PAUL.</name>
+            <trait>
+              <p>Sculpteur à Paris</p>
+            </trait>
+          </desc>
+          <item n="391" xml:id="Rouen_1856_e171_i391">
+            <num>391</num>
+            <title>Jeanne d’Arc. Statuette.</title>
+          </item>
+        </entry>
+        <entry n="172" xml:id="Rouen_1856_e172" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f49/249,1249,928,209/full/0/default.jpg">
+          <desc>
+            <name>OUVRIER (FRANÇOIS),</name>
+            <trait>
+              <p>A Dieppe, Grand-Rue, 18 et 20.</p>
+            </trait>
+          </desc>
+          <item n="392" xml:id="Rouen_1856_e172_i392">
+            <num>392</num>
+            <title>Sculptures sur ivoire.</title>
+          </item>
+        </entry>
+        <entry n="173" xml:id="Rouen_1856_e173" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f49/242,1550,1020,498/full/0/default.jpg">
+          <desc>
+            <name>COURT (JOSEPH),</name>
+            <trait>
+              <p>Conservateur du Musée de Rouen.</p>
+            </trait>
+          </desc>
+          <item n="393" xml:id="Rouen_1856_e173_i393">
+            <num>393</num>
+            <title>Mgr Sibour, Archevêque de Paris.</title>
+            <desc>Archevêque de Paris.</desc>
+          </item>
+          <item n="394" xml:id="Rouen_1856_e173_i394">
+            <num>394</num>
+            <title>Portrait de Mme L.</title>
+          </item>
+          <item n="395" xml:id="Rouen_1856_e173_i395">
+            <num>395</num>
+            <title>Portrait de M. le Comte 0.</title>
+          </item>
+          <item n="396" xml:id="Rouen_1856_e173_i396">
+            <num>396</num>
+            <title>Portrait de M. le Chevalier 0.</title>
+          </item>
+          <item n="397" xml:id="Rouen_1856_e173_i397">
+            <num>397</num>
+            <title>Tête d’etude.</title>
+          </item>
+        </entry>
+        <entry n="174" xml:id="Rouen_1856_e174" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f49/261,2110,1197,433/full/0/default.jpg">
+          <desc>
+            <name>DUBOC.</name>
+            <trait>
+              <p>A Rouen, rue Ganterie.</p>
+            </trait>
+          </desc>
+          <item n="398" xml:id="Rouen_1856_e174_i398">
+            <num>398</num>
+            <title>Paysage. Vue prise dans le département de l’Eure.</title>
+          </item>
+          <item n="399" xml:id="Rouen_1856_e174_i399">
+            <num>399</num>
+            <title>Paysage. les bords de l'Oise </title>
+            <desc>(environs de Creil.</desc>
+          </item>
+        </entry>
+        <entry n="175" xml:id="Rouen_1856_e175" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f50/383,599,1176,276/full/0/default.jpg">
+          <desc>
+            <name>CORBE.</name>
+            <trait>
+              <p>A Bonsecours, prés Rouen.</p>
+            </trait>
+          </desc>
+          <item n="400" xml:id="Rouen_1856_e175_i400">
+            <num>400</num>
+            <title>Portrait de M. L, élève de l’École Saint-Cyr</title>
+            <desc>élève de l’École Saint-Cyr</desc>
+          </item>
+        </entry>
+        <entry n="176" xml:id="Rouen_1856_e176" source="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1180625h/f50/395,953,1168,1278/full/0/default.jpg">
+          <desc>
+            <name>GOUPIL,</name>
+            <trait>
+              <p>A Paris, boulevard Montmartre, 19, et rue d’Enghien, 12.</p>
+            </trait>
+          </desc>
+          <item n="401" xml:id="Rouen_1856_e176_i401">
+            <num>401</num>
+            <title>L’Ensevelissement du Christ, par H. Dupont. d’après P. Delaroche.</title>
+            <desc>par H. Dupont. d’après P. Delaroche.</desc>
+          </item>
+          <item n="402" xml:id="Rouen_1856_e176_i402">
+            <num>402</num>
+            <title>Ma Soeur n’y est pas, par Levasseur, d’apres Hamon.</title>
+            <desc>par Levasseur, d’apres Hamon.</desc>
+          </item>
+          <item n="403" xml:id="Rouen_1856_e176_i403">
+            <num>403</num>
+            <title>Une Messe en Kabylie, par Girardet, d’apres. H. Vernet.</title>
+            <desc>par Girardet, d’apres. H. Vernet.</desc>
+          </item>
+          <item n="404" xml:id="Rouen_1856_e176_i404">
+            <num>404</num>
+            <title>Fidélité, par Castan, d’après A. Dedreux.</title>
+            <desc>par Castan, d’après A. Dedreux.</desc>
+          </item>
+          <item n="405" xml:id="Rouen_1856_e176_i405">
+            <num>405</num>
+            <title>L’Annonciation, par Martinet, d’après Jala¬ bert.</title>
+            <desc>par Martinet, d’après Jalabert.</desc>
+          </item>
+          <item n="406" xml:id="Rouen_1856_e176_i406">
+            <num>406</num>
+            <title>L’Enseignement Mutuel, par Jouanni, d'après Holfeld.</title>
+            <desc>par Jouanni, d'après Holfeld.</desc>
+          </item>
+          <item n="407" xml:id="Rouen_1856_e176_i407">
+            <num>407</num>
+            <title>La Prière de Famille, par les mêmes.</title>
+            <desc>par les mêmes.</desc>
+          </item>
+          <item n="408" xml:id="Rouen_1856_e176_i408">
+            <num>408</num>
+            <title>Facsimile d’un dessin de Raphaël </title>
+            <desc>(Vierge). par Dupont. Dessins.</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

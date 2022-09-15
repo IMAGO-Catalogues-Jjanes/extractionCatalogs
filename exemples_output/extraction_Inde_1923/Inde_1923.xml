@@ -1,0 +1,810 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Inde_1923">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Inde_1923_e1" source="Cat_Inde_1923_typo_0001.jpg">
+          <desc>
+            <name>PENZYNA (Gustave)</name>
+            <trait>
+              <p>, né à Sandomir. — Pologne. — 16, rue du Saint-Gothard, 14e.</p>
+            </trait>
+          </desc>
+          <item n="3659" xml:id="Inde_1923_e1_i3659">
+            <num>3659</num>
+            <title>Psyché en hêtre sculpté et ciré. — 3.000 fr.</title>
+          </item>
+          <item n="3660" xml:id="Inde_1923_e1_i3660">
+            <num>3660</num>
+            <title>Table à thé sculptée et patinée, avec abat-jour. —</title>
+            <desc>avec abat-jour. —</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Inde_1923_e2" source="Cat_Inde_1923_typo_0001.jpg">
+          <desc>
+            <name>PÉRAIRE (Maurice)</name>
+            <trait>
+              <p>, né à Aix-en-Provence. — 197, boulevard Saint-Germain, 7e.</p>
+            </trait>
+          </desc>
+          <item n="3661" xml:id="Inde_1923_e2_i3661">
+            <num>3661</num>
+            <title>Fleurs </title>
+            <desc>(étude).</desc>
+          </item>
+          <item n="3662" xml:id="Inde_1923_e2_i3662">
+            <num>3662</num>
+            <title>Sous-bois.</title>
+          </item>
+          <item n="3663" xml:id="Inde_1923_e2_i3663">
+            <num>3663</num>
+            <title>A Montmorency.</title>
+          </item>
+          <item n="3664" xml:id="Inde_1923_e2_i3664">
+            <num>3664</num>
+            <title>Primevères.</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Inde_1923_e3" source="Cat_Inde_1923_typo_0001.jpg">
+          <desc>
+            <name>PERCEVAULT (Louis)</name>
+            <trait>
+              <p>, né à Paris. — 12, avenue de Châtillon, 14e</p>
+            </trait>
+          </desc>
+          <item n="3665" xml:id="Inde_1923_e3_i3665">
+            <num>3665</num>
+            <title>Vieux moulin. — 250 fr.</title>
+          </item>
+          <item n="3666" xml:id="Inde_1923_e3_i3666">
+            <num>3666</num>
+            <title>Chaumière à Givouard. — 250 fr.</title>
+          </item>
+          <item n="3667" xml:id="Inde_1923_e3_i3667">
+            <num>3667</num>
+            <title>Chemin creux </title>
+            <desc>(Igny). — 200 fr.</desc>
+          </item>
+          <item n="3668" xml:id="Inde_1923_e3_i3668">
+            <num>3668</num>
+            <title>Etude. — 200 fr.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Inde_1923_e4" source="Cat_Inde_1923_typo_0001.jpg">
+          <desc>
+            <name>PERDRIAT (Hélène)</name>
+            <trait>
+              <p>, née à la Rochelle (Charente-Inférieure). — 8, impasse Ronsin, 15e.</p>
+            </trait>
+          </desc>
+          <item n="3669" xml:id="Inde_1923_e4_i3669">
+            <num>3669</num>
+            <title>Mes amies. — 3.000 fr.</title>
+          </item>
+          <item n="3670" xml:id="Inde_1923_e4_i3670">
+            <num>3670</num>
+            <title>La biche au bois. — 2.500 fr.</title>
+          </item>
+          <item n="3671" xml:id="Inde_1923_e4_i3671">
+            <num>3671</num>
+            <title>Jeune fille. — 1.500 fr.</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Inde_1923_e5" source="Cat_Inde_1923_typo_0001.jpg">
+          <desc>
+            <name>PÉRILLARD (Jules-Louis)</name>
+            <trait>
+              <p>, né à Lausanne. — Suisse. — 7, rue de Lancry, 10e.</p>
+            </trait>
+          </desc>
+          <item n="3672" xml:id="Inde_1923_e5_i3672">
+            <num>3672</num>
+            <title>Entrée de la maison rouge. — 450 fr.</title>
+          </item>
+          <item n="3673" xml:id="Inde_1923_e5_i3673">
+            <num>3673</num>
+            <title>Village d’Egly. — 450 fr.</title>
+          </item>
+          <item n="3674" xml:id="Inde_1923_e5_i3674">
+            <num>3674</num>
+            <title>Peinture. — 550 fr.</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Inde_1923_e6" source="Cat_Inde_1923_typo_0001.jpg">
+          <desc>
+            <name>PERINCIOLI (Etienne)</name>
+            <trait>
+              <p>, né à Doccio. — Suisse. — 5, Jennerweg, à Berne.</p>
+            </trait>
+          </desc>
+          <item n="3675" xml:id="Inde_1923_e6_i3675">
+            <num>3675</num>
+            <title>Singe philosophe </title>
+            <desc>(marbre). — 800 fr.</desc>
+          </item>
+          <item n="3676" xml:id="Inde_1923_e6_i3676">
+            <num>3676</num>
+            <title>L’Italienne </title>
+            <desc>(marbre). — 700 fr.</desc>
+          </item>
+          <item n="3677" xml:id="Inde_1923_e6_i3677">
+            <num>3677</num>
+            <title>Recueillement </title>
+            <desc>(onyx). — 600 fr.</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Inde_1923_e7" source="Cat_Inde_1923_typo_0001.jpg">
+          <desc>
+            <name>PÉRINET (Louis)</name>
+            <trait>
+              <p>, né à Poissy (S.-et-O.). — 33, rue des Ecoles, à Villeneuve-Saint-Georges (S.-et-O.).</p>
+            </trait>
+          </desc>
+          <item n="3677" xml:id="Inde_1923_e7_i3677">
+            <num>3677</num>
+            <title>bis a) Chapelle sur la côte bretonne. — 600 fr. b) L’étang, clair de lune. — 500 fr. c) Dessin. — 200 fr.</title>
+            <desc>clair de lune. — 500 fr. c) Dessin. — 200 fr.</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Inde_1923_e8" source="Cat_Inde_1923_typo_0002.jpg">
+          <desc>
+            <name>PÉRONNE (Henri-Louis)</name>
+            <trait>
+              <p>, né à Paris. — 53, rue Hoche, à Pantin (Seine).</p>
+            </trait>
+          </desc>
+          <item n="3678" xml:id="Inde_1923_e8_i3678">
+            <num>3678</num>
+            <title>La cigarette. — 1.500 fr.</title>
+          </item>
+          <item n="3679" xml:id="Inde_1923_e8_i3679">
+            <num>3679</num>
+            <title>Les maçons.— 2.000 fr.</title>
+          </item>
+          <item n="3680" xml:id="Inde_1923_e8_i3680">
+            <num>3680</num>
+            <title>Portrait.— 500 fr.</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Inde_1923_e9" source="Cat_Inde_1923_typo_0002.jpg">
+          <desc>
+            <name>PERRET (Jean)</name>
+            <trait>
+              <p>, né à Lyon. — 235, Faubourg-Saint-Honoré, 8e.</p>
+            </trait>
+          </desc>
+          <item n="3681" xml:id="Inde_1923_e9_i3681">
+            <num>3681</num>
+            <title>Nu. — 3.000 fr.</title>
+          </item>
+          <item n="3682" xml:id="Inde_1923_e9_i3682">
+            <num>3682</num>
+            <title>Portrait.</title>
+          </item>
+          <item n="3683" xml:id="Inde_1923_e9_i3683">
+            <num>3683</num>
+            <title>Portrait.</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Inde_1923_e10" source="Cat_Inde_1923_typo_0002.jpg">
+          <desc>
+            <name>PERRETTE (Paul-Emile)</name>
+            <trait>
+              <p>, né à Clamecy (Nièvre). — 35, rue de Liège, 8e.</p>
+            </trait>
+          </desc>
+          <item n="3684" xml:id="Inde_1923_e10_i3684">
+            <num>3684</num>
+            <title>Rue du Pavé-Saint-Lazare </title>
+            <desc>(Semur). — 600 fr.</desc>
+          </item>
+          <item n="3685" xml:id="Inde_1923_e10_i3685">
+            <num>3685</num>
+            <title>Paysage d’hiver. — 300 fr.</title>
+          </item>
+          <item n="3686" xml:id="Inde_1923_e10_i3686">
+            <num>3686</num>
+            <title>Paysage d’hiver. — 300 fr.</title>
+          </item>
+          <item n="3687" xml:id="Inde_1923_e10_i3687">
+            <num>3687</num>
+            <title>Reine-marguerite </title>
+            <desc>(fleurs). — 400 fr.</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Inde_1923_e11" source="Cat_Inde_1923_typo_0002.jpg">
+          <desc>
+            <name>PERRIN-MAXENCE (Henri)</name>
+            <trait>
+              <p>, né à Saint-Etienne (Loire). — 3, rue Boissonade, 14e.</p>
+            </trait>
+          </desc>
+          <item n="3688" xml:id="Inde_1923_e11_i3688">
+            <num>3688</num>
+            <title>Paysage de la Creuse. — 1.500 fr.</title>
+          </item>
+          <item n="3689" xml:id="Inde_1923_e11_i3689">
+            <num>3689</num>
+            <title>Fleurs. — 800 fr.</title>
+          </item>
+          <item n="3690" xml:id="Inde_1923_e11_i3690">
+            <num>3690</num>
+            <title>Ruine de Crozant. — 2.000 fr.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Inde_1923_e12" source="Cat_Inde_1923_typo_0002.jpg">
+          <desc>
+            <name>PERROT (Charles-Joseph-Victor)</name>
+            <trait>
+              <p>, né à Moreuil (Somme). — 13, rue de la Roquette, 11e.</p>
+            </trait>
+          </desc>
+          <item n="3691" xml:id="Inde_1923_e12_i3691">
+            <num>3691</num>
+            <title>Faneuse picarde. — 300 fr.</title>
+          </item>
+          <item n="3692" xml:id="Inde_1923_e12_i3692">
+            <num>3692</num>
+            <title>Coin d’étang à Blangy </title>
+            <desc>(Somme). — 200 fr.</desc>
+          </item>
+          <item n="3693" xml:id="Inde_1923_e12_i3693">
+            <num>3693</num>
+            <title>Dieppe, un coin du port. — 200 fr.</title>
+            <desc>un coin du port. — 200 fr.</desc>
+          </item>
+          <item n="3694" xml:id="Inde_1923_e12_i3694">
+            <num>3694</num>
+            <title>Oranges de Nice. — 200 fr.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Inde_1923_e13" source="Cat_Inde_1923_typo_0002.jpg">
+          <desc>
+            <name>PERROTET (Louis-Joseph)</name>
+            <trait>
+              <p>, né à Beaune (Côte-d’Or. — 10, rue Merlin, 11e.</p>
+            </trait>
+          </desc>
+          <item n="3695" xml:id="Inde_1923_e13_i3695">
+            <num>3695</num>
+            <title>Portrait d’octogénaire.</title>
+          </item>
+          <item n="3696" xml:id="Inde_1923_e13_i3696">
+            <num>3696</num>
+            <title>Nature morte </title>
+            <desc>(pommes et oranges). — 500 fr.</desc>
+          </item>
+          <item n="3697" xml:id="Inde_1923_e13_i3697">
+            <num>3697</num>
+            <title>Paysage </title>
+            <desc>(colonie franco-américaine de Beaubourg).</desc>
+          </item>
+          <item n="3698" xml:id="Inde_1923_e13_i3698">
+            <num>3698</num>
+            <title>Paysage </title>
+            <desc>(angle d’un parc à Malnoue), 550 fr.</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Inde_1923_e14" source="Cat_Inde_1923_typo_0002.jpg">
+          <desc>
+            <name>PERS (Gunnar)</name>
+            <trait>
+              <p>, né à Kila. — Suédois. — 4, rue Belloni, 15e.</p>
+            </trait>
+          </desc>
+          <item n="3699" xml:id="Inde_1923_e14_i3699">
+            <num>3699</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="3700" xml:id="Inde_1923_e14_i3700">
+            <num>3700</num>
+            <title>Paysage. </title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Inde_1923_e15" source="Cat_Inde_1923_typo_0003.jpg">
+          <desc>
+            <name>PERSON (Ch.-Henri)</name>
+            <trait>
+              <p>, né à Amiens. — 48, bd des Batignolles, 17e.</p>
+            </trait>
+          </desc>
+          <item n="3701" xml:id="Inde_1923_e15_i3701">
+            <num>3701</num>
+            <title>Marine.</title>
+          </item>
+          <item n="3702" xml:id="Inde_1923_e15_i3702">
+            <num>3702</num>
+            <title>Paysage. — 2.110 fr.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Inde_1923_e16" source="Cat_Inde_1923_typo_0003.jpg">
+          <desc>
+            <name>PESKÉ (Jean).</name>
+            <trait>
+              <p> — Français. — 39, boulevard Saint-Jacques, 14e.</p>
+            </trait>
+          </desc>
+          <item n="3703" xml:id="Inde_1923_e16_i3703">
+            <num>3703</num>
+            <title>Paysage.</title>
+          </item>
+          <item n="3704" xml:id="Inde_1923_e16_i3704">
+            <num>3704</num>
+            <title>Fruits.</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Inde_1923_e17" source="Cat_Inde_1923_typo_0003.jpg">
+          <desc>
+            <name>PÉTÉRELLE (Adolphe)</name>
+            <trait>
+              <p>, né à Genève. — Français. — 11, cité Falguière, 15e.</p>
+            </trait>
+          </desc>
+          <item n="3705" xml:id="Inde_1923_e17_i3705">
+            <num>3705</num>
+            <title>Frise « Danse ». — 2.500 fr.</title>
+          </item>
+          <item n="3706" xml:id="Inde_1923_e17_i3706">
+            <num>3706</num>
+            <title>Baignade. — 1.500 fr.</title>
+          </item>
+          <item n="3707" xml:id="Inde_1923_e17_i3707">
+            <num>3707</num>
+            <title>Campagne. — 1.000 fr.</title>
+          </item>
+          <item n="3708" xml:id="Inde_1923_e17_i3708">
+            <num>3708</num>
+            <title>Ronde. — 1.200 fr.</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Inde_1923_e18" source="Cat_Inde_1923_typo_0003.jpg">
+          <desc>
+            <name>PETIT (Paul)</name>
+            <trait>
+              <p>, né à Dammarie-sur-Saulx (Meuse). — Hôtel de l’Europe, 74, avenue de Strasbourg, à Dammarie-sur-Saulx.</p>
+            </trait>
+          </desc>
+          <item n="3709" xml:id="Inde_1923_e18_i3709">
+            <num>3709</num>
+            <title>Eglise de Dizy, près Epernay. — 350 fr.</title>
+            <desc>près Epernay. — 350 fr.</desc>
+          </item>
+          <item n="3710" xml:id="Inde_1923_e18_i3710">
+            <num>3710</num>
+            <title>Canal de Cumières, près Epernay. — 350 fr.</title>
+            <desc>près Epernay. — 350 fr.</desc>
+          </item>
+          <item n="3711" xml:id="Inde_1923_e18_i3711">
+            <num>3711</num>
+            <title>Allée d’arbres. — 350 fr.</title>
+          </item>
+          <item n="3712" xml:id="Inde_1923_e18_i3712">
+            <num>3712</num>
+            <title>Portrait de femme. — Appartient à l’auteur.</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Inde_1923_e19" source="Cat_Inde_1923_typo_0003.jpg">
+          <desc>
+            <name>PETITJEAN (Hippolyte)</name>
+            <trait>
+              <p>, né à Mâcon. — 5, villa du Parc-Montsouris, 26, rue Nansouty, 14e.</p>
+            </trait>
+          </desc>
+          <item n="3713" xml:id="Inde_1923_e19_i3713">
+            <num>3713</num>
+            <title>Baigneuse surprise. — 1.200 fr.</title>
+          </item>
+          <item n="3714" xml:id="Inde_1923_e19_i3714">
+            <num>3714</num>
+            <title>Baigneuses. -— 1.200 fr.</title>
+          </item>
+          <item n="3715" xml:id="Inde_1923_e19_i3715">
+            <num>3715</num>
+            <title>Consolatrice. — 1.500 fr.</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Inde_1923_e20" source="Cat_Inde_1923_typo_0003.jpg">
+          <desc>
+            <name>PETITJEAN (Marcelle)</name>
+            <trait>
+              <p>, née à Paris. — 5, villa du Parc-Montsou¬</p>
+            </trait>
+          </desc>
+          <item n="3716" xml:id="Inde_1923_e20_i3716">
+            <num>3716</num>
+            <title>Femmes au bord de la mer. — 800 fr.</title>
+          </item>
+          <item n="3717" xml:id="Inde_1923_e20_i3717">
+            <num>3717</num>
+            <title>Baigneuses. — 800 fr.</title>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Inde_1923_e21" source="Cat_Inde_1923_typo_0003.jpg">
+          <desc>
+            <name>PETITJEAN-FURET (Armand)</name>
+            <trait>
+              <p>, né à Paris. — 26, rue Lécluze, 17e. Trois maquettes pour les frises fantasmagoriques.</p>
+            </trait>
+          </desc>
+          <item n="3718" xml:id="Inde_1923_e21_i3718">
+            <num>3718</num>
+            <title>Lueurs crépusculaires </title>
+            <desc>(cire détrempée). — Appartient à l’auteur.</desc>
+          </item>
+          <item n="3719" xml:id="Inde_1923_e21_i3719">
+            <num>3719</num>
+            <title>Lueurs crépusculaires </title>
+            <desc>(cire détrempée). — 500 fr.</desc>
+          </item>
+          <item n="3720" xml:id="Inde_1923_e21_i3720">
+            <num>3720</num>
+            <title>Lueurs crépusculaires </title>
+            <desc>(cire détrempée). — 300 fr.</desc>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Inde_1923_e22" source="Cat_Inde_1923_typo_0004.jpg">
+          <desc>
+            <name>PÉTRILLY (Henri)</name>
+            <trait>
+              <p>, né à Florence. — Italien. — 41, avenue de Paris, à Vincennes.</p>
+            </trait>
+          </desc>
+          <item n="3721" xml:id="Inde_1923_e22_i3721">
+            <num>3721</num>
+            <title>Le Blasphème </title>
+            <desc>(buste plâtre). — Exécution bronze, 1.000 fr</desc>
+          </item>
+          <item n="3722" xml:id="Inde_1923_e22_i3722">
+            <num>3722</num>
+            <title>La sorcière </title>
+            <desc>(buste plâtre patiné). — Exécution bronze, 1.200 fr.</desc>
+          </item>
+          <item n="3723" xml:id="Inde_1923_e22_i3723">
+            <num>3723</num>
+            <title>Chiens de berger </title>
+            <desc>(encadrement de 8 médaillons bronze). — 850 fr.</desc>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Inde_1923_e23" source="Cat_Inde_1923_typo_0004.jpg">
+          <desc>
+            <name>PHILASTRE (Noëmi)</name>
+            <trait>
+              <p>, née à Saïgon. —- Française. — 20, rue Visconti, 6e.</p>
+            </trait>
+          </desc>
+          <item n="3724" xml:id="Inde_1923_e23_i3724">
+            <num>3724</num>
+            <title>Nature morte. — 600 fr.</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Inde_1923_e24" source="Cat_Inde_1923_typo_0004.jpg">
+          <desc>
+            <name>PHILLIPS (Bertha)</name>
+            <trait>
+              <p>, née à New-York (U. S. A.), — Américaine. — 14, rue Visconti, 6e.</p>
+            </trait>
+          </desc>
+          <item n="3725" xml:id="Inde_1923_e24_i3725">
+            <num>3725</num>
+            <title>Un jardin. — 400 fr.</title>
+          </item>
+          <item n="3726" xml:id="Inde_1923_e24_i3726">
+            <num>3726</num>
+            <title>Batons Jacobs. — 250 fr.</title>
+          </item>
+          <item n="3727" xml:id="Inde_1923_e24_i3727">
+            <num>3727</num>
+            <title>Murols. — 250 fr.</title>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Inde_1923_e25" source="Cat_Inde_1923_typo_0004.jpg">
+          <desc>
+            <name>PHOCAS (Suzanne)</name>
+            <trait>
+              <p>, née à Lille. — 14, rue du Regard, 6e.</p>
+            </trait>
+          </desc>
+          <item n="3728" xml:id="Inde_1923_e25_i3728">
+            <num>3728</num>
+            <title>Peinture. — 1.800 fr.</title>
+          </item>
+          <item n="3729" xml:id="Inde_1923_e25_i3729">
+            <num>3729</num>
+            <title>Nature morte. — 900 fr.</title>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Inde_1923_e26" source="Cat_Inde_1923_typo_0004.jpg">
+          <desc>
+            <name>PIA (René)</name>
+            <trait>
+              <p>, né à Margny-les-Compiègne (Oise). — 66, rue Thomas, à Marseille.</p>
+            </trait>
+          </desc>
+          <item n="3730" xml:id="Inde_1923_e26_i3730">
+            <num>3730</num>
+            <title>Cassis n° 1. — 500 fr.</title>
+          </item>
+          <item n="3731" xml:id="Inde_1923_e26_i3731">
+            <num>3731</num>
+            <title>Cassis n° 2. — 500 fr.</title>
+          </item>
+          <item n="3732" xml:id="Inde_1923_e26_i3732">
+            <num>3732</num>
+            <title>Dessin. — 200 fr.</title>
+          </item>
+        </entry>
+        <entry n="27" xml:id="Inde_1923_e27" source="Cat_Inde_1923_typo_0004.jpg">
+          <desc>
+            <name>PICABIA (Francis)</name>
+            <trait>
+              <p>, né à Paris. — « La maison rose », au Tremblay-sur-Mauldre (Seine-et-Oise).</p>
+            </trait>
+          </desc>
+          <item n="3733" xml:id="Inde_1923_e27_i3733">
+            <num>3733</num>
+            <title>Optophone. — 5.000 fr.</title>
+          </item>
+          <item n="3734" xml:id="Inde_1923_e27_i3734">
+            <num>3734</num>
+            <title>Volucelle. — 5.000 fr.</title>
+          </item>
+          <item n="3735" xml:id="Inde_1923_e27_i3735">
+            <num>3735</num>
+            <title>Volumètre. — 5.000 fr.</title>
+          </item>
+        </entry>
+        <entry n="28" xml:id="Inde_1923_e28" source="Cat_Inde_1923_typo_0004.jpg">
+          <desc>
+            <name>PICARD (Mme Gabrielle)</name>
+            <trait>
+              <p>, née à Mouriès. — 10, r. Rochechouart, 9e.</p>
+            </trait>
+          </desc>
+          <item n="3736" xml:id="Inde_1923_e28_i3736">
+            <num>3736</num>
+            <title>Paysage. — 300 fr.</title>
+          </item>
+          <item n="3737" xml:id="Inde_1923_e28_i3737">
+            <num>3737</num>
+            <title>Nature morte </title>
+            <desc>(aquarelle). — 150 fr.</desc>
+          </item>
+          <item n="3738" xml:id="Inde_1923_e28_i3738">
+            <num>3738</num>
+            <title>Fleurs </title>
+            <desc>(aquarelle). —- 150 fr.</desc>
+          </item>
+        </entry>
+        <entry n="29" xml:id="Inde_1923_e29" source="Cat_Inde_1923_typo_0005.jpg">
+          <desc>
+            <name>PICARD (Olivier-David)</name>
+            <trait>
+              <p>, né à Bruxelles. — Belge. — 242, boulevard Raspail, 14e.</p>
+            </trait>
+          </desc>
+          <item n="3739" xml:id="Inde_1923_e29_i3739">
+            <num>3739</num>
+            <title>Danseuses.</title>
+          </item>
+        </entry>
+        <entry n="30" xml:id="Inde_1923_e30" source="Cat_Inde_1923_typo_0005.jpg">
+          <desc>
+            <name>PICARD (Roger-Marie)</name>
+            <trait>
+              <p>, né à Déols (Indre). — 50, rue Vavin, 6e.</p>
+            </trait>
+          </desc>
+          <item n="3740" xml:id="Inde_1923_e30_i3740">
+            <num>3740</num>
+            <title>Fillette </title>
+            <desc>(paysage). — 400 fr.</desc>
+          </item>
+          <item n="3741" xml:id="Inde_1923_e30_i3741">
+            <num>3741</num>
+            <title>Maisons dans l’eau </title>
+            <desc>(paysage). — 400 fr.</desc>
+          </item>
+          <item n="3742" xml:id="Inde_1923_e30_i3742">
+            <num>3742</num>
+            <title>Au jardin </title>
+            <desc>(paysage). — 400 fr.</desc>
+          </item>
+        </entry>
+        <entry n="31" xml:id="Inde_1923_e31" source="Cat_Inde_1923_typo_0005.jpg">
+          <desc>
+            <name>PICARD DU CHAMBON (René)</name>
+            <trait>
+              <p>, né à Pierrefitte-sur-Loire (Allier). — 5, rue de l’Odéon, 6e.</p>
+            </trait>
+          </desc>
+          <item n="3743" xml:id="Inde_1923_e31_i3743">
+            <num>3743</num>
+            <title>L’anneau </title>
+            <desc>(composition idéaliste). — 1.000 fr.</desc>
+          </item>
+          <item n="3744" xml:id="Inde_1923_e31_i3744">
+            <num>3744</num>
+            <title>Etoiles </title>
+            <desc>(mode primitif, ordre décoratif). — 1.000 fr.</desc>
+          </item>
+        </entry>
+        <entry n="32" xml:id="Inde_1923_e32" source="Cat_Inde_1923_typo_0005.jpg">
+          <desc>
+            <name>PICARD LE DOUX</name>
+            <trait>
+              <p>, né à Paris. — 13, rue Paul-Féval, 18e.</p>
+            </trait>
+          </desc>
+          <item n="3745" xml:id="Inde_1923_e32_i3745">
+            <num>3745</num>
+            <title>La lutteuse. — 3-500 fr.</title>
+          </item>
+          <item n="3746" xml:id="Inde_1923_e32_i3746">
+            <num>3746</num>
+            <title>Paysage. — 700 fr.</title>
+          </item>
+          <item n="3747" xml:id="Inde_1923_e32_i3747">
+            <num>3747</num>
+            <title>Paysage. — 700 fr.</title>
+          </item>
+        </entry>
+        <entry n="33" xml:id="Inde_1923_e33" source="Cat_Inde_1923_typo_0005.jpg">
+          <desc>
+            <name>PICHON (Suzanne)</name>
+            <trait>
+              <p>, née à Nancy. — La Valerette, Leysin (Suisse).</p>
+            </trait>
+          </desc>
+          <item n="3748" xml:id="Inde_1923_e33_i3748">
+            <num>3748</num>
+            <title>Montagnes après le coucher du soleil. — 600 fr.</title>
+          </item>
+          <item n="3749" xml:id="Inde_1923_e33_i3749">
+            <num>3749</num>
+            <title>Montagnes à l’approche du crépuscule. — 600 fr.</title>
+          </item>
+          <item n="3750" xml:id="Inde_1923_e33_i3750">
+            <num>3750</num>
+            <title>Lac de montagnes. — 600 fr.</title>
+          </item>
+        </entry>
+        <entry n="34" xml:id="Inde_1923_e34" source="Cat_Inde_1923_typo_0005.jpg">
+          <desc>
+            <name>PICHOT (Ramon)</name>
+            <trait>
+              <p>, né à Barcelone. — Espagnol. — 5, rue des Saules, 18e.</p>
+            </trait>
+          </desc>
+          <item n="3751" xml:id="Inde_1923_e34_i3751">
+            <num>3751</num>
+            <title>Marché, Marseille. — 1.500 fr.</title>
+            <desc>Marseille. — 1.500 fr.</desc>
+          </item>
+          <item n="3752" xml:id="Inde_1923_e34_i3752">
+            <num>3752</num>
+            <title>Poissonnerie, Marseille. — 1.500 fr.</title>
+            <desc>Marseille. — 1.500 fr.</desc>
+          </item>
+          <item n="3753" xml:id="Inde_1923_e34_i3753">
+            <num>3753</num>
+            <title>Vieux port. — 1.500 fr.</title>
+          </item>
+        </entry>
+        <entry n="35" xml:id="Inde_1923_e35" source="Cat_Inde_1923_typo_0005.jpg">
+          <desc>
+            <name>PIERRET (Auguste-Pierre)</name>
+            <trait>
+              <p>, né à Paris. — 42, bd. St-Germain, 5e.</p>
+            </trait>
+          </desc>
+          <item n="3753" xml:id="Inde_1923_e35_i3753">
+            <num>3753</num>
+            <title>bis a) Menton, cap Martin. — 1.000 fr. b) Menton, cap Martin. — 600 fr. c) Menton, vieille rue. — 600 fr.</title>
+            <desc>cap Martin. — 1.000 fr. b) Menton, cap Martin. — 600 fr. c) Menton, vieille rue. — 600 fr.</desc>
+          </item>
+        </entry>
+        <entry n="36" xml:id="Inde_1923_e36" source="Cat_Inde_1923_typo_0005.jpg">
+          <desc>
+            <name>PIET (Fernand)</name>
+            <trait>
+              <p>, né à Paris. — 35, rue Lamarck, 18e.</p>
+            </trait>
+          </desc>
+          <item n="3754" xml:id="Inde_1923_e36_i3754">
+            <num>3754</num>
+            <title>Canal Saint-Martin, temps gris. — 500 fr.</title>
+            <desc>temps gris. — 500 fr.</desc>
+          </item>
+          <item n="3755" xml:id="Inde_1923_e36_i3755">
+            <num>3755</num>
+            <title>Sur la Seine à Saint-Ouen. — 700 fr.</title>
+          </item>
+          <item n="3756" xml:id="Inde_1923_e36_i3756">
+            <num>3756</num>
+            <title>La Seine à Ivry. — 500 fr.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

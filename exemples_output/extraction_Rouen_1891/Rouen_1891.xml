@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rouen_1891">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Rouen_1891_e1" source="CatRouen_1891_bpt6k1181805r_34.JPEG">
+          <desc>
+            <name>DE CONINCK (Mlle Régina)</name>
+            <trait>
+              <p>, née à Paris, élève de son père , méd. d’arg., Amiens, 1890. — Rue Voiture, 25, Amiens.</p>
+            </trait>
+          </desc>
+          <item n="200" xml:id="Rouen_1891_e1_i200">
+            <num>200</num>
+            <title>« Pour les artistes de la rue ».</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Rouen_1891_e2" source="CatRouen_1891_bpt6k1181805r_34.JPEG">
+          <desc>
+            <name>DEFAUX (Alexandre)</name>
+            <trait>
+              <p>, né à Bercy (Seine) , méd 3e cl., Paris, 1874, 2° cl., 1875, x 1881, H. C. — Avenue de Villiers, 18, Paris.</p>
+            </trait>
+          </desc>
+          <item n="201" xml:id="Rouen_1891_e2_i201">
+            <num>201</num>
+            <title>Le printemps.</title>
+          </item>
+          <item n="202" xml:id="Rouen_1891_e2_i202">
+            <num>202</num>
+            <title>Ma basse-cour.</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Rouen_1891_e3" source="CatRouen_1891_bpt6k1181805r_34.JPEG">
+          <desc>
+            <name>DEHAUSSY (Jules)</name>
+            <trait>
+              <p>, né à Péronne, élève de Fragonard et A. Dehaussy, dipl. d’hon, Besancon, Amiens, etc., etc. — A la Guyonnerie, par Orsay (Seine-et-Oise).</p>
+            </trait>
+          </desc>
+          <item n="203" xml:id="Rouen_1891_e3_i203">
+            <num>203</num>
+            <title>Y pense-t-il? </title>
+            <desc>(paysannerie). Voir aux Dessins.</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Rouen_1891_e4" source="CatRouen_1891_bpt6k1181805r_34.JPEG">
+          <desc>
+            <name>DELACOUR (Mme Emilie)</name>
+            <trait>
+              <p>, née à Paris, élève de M. A. Weisz. — Rue Mariotte, 5, Paris.</p>
+            </trait>
+          </desc>
+          <item n="204" xml:id="Rouen_1891_e4_i204">
+            <num>204</num>
+            <title>Japonaiserie.</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Rouen_1891_e5" source="CatRouen_1891_bpt6k1181805r_34.JPEG">
+          <desc>
+            <name>DELACROIX (Henry-Eugène)</name>
+            <trait>
+              <p>, né à Solesmes (Nord), élève de Cabanel, méd. 3e cl. Paris, 1876, 2e cl., 1889, méd. d’arg., 1889 E. U : A x. — Boulevard Saint-Jacques, 69, Paris.</p>
+            </trait>
+          </desc>
+          <item n="205" xml:id="Rouen_1891_e5_i205">
+            <num>205</num>
+            <title>Le réveil.</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Rouen_1891_e6" source="CatRouen_1891_bpt6k1181805r_34.JPEG">
+          <desc>
+            <name>DELACROIX-GARNIER (Mme Pauline)</name>
+            <trait>
+              <p>, née à Paris, élève de MM. Henry Delacroix et Jules Garnier. — Boulevard Saint-Jacques, 69, Paris.</p>
+            </trait>
+          </desc>
+          <item n="206" xml:id="Rouen_1891_e6_i206">
+            <num>206</num>
+            <title>Marie la jardinière. Voir aux Dessins.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Rouen_1891_e7" source="CatRouen_1891_bpt6k1181805r_34.JPEG">
+          <desc>
+            <name>DELAHOGUE (Alexis),</name>
+            <trait>
+              <p> ne à Soissons (Aisne), élève de MM. Henri Caïn et Saintpierre, M. Il., SaintMande. — Rue des Marais, 44, Paris.</p>
+            </trait>
+          </desc>
+          <item n="207" xml:id="Rouen_1891_e7_i207">
+            <num>207</num>
+            <title>Vieux puits à Blandy-les-Tours </title>
+            <desc>(Seine-et-Marne).</desc>
+          </item>
+          <item n="208" xml:id="Rouen_1891_e7_i208">
+            <num>208</num>
+            <title>Etude à Maisons-Alfort.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Rouen_1891_e8" source="CatRouen_1891_bpt6k1181805r_39.JPEG">
+          <desc>
+            <name>DELAHOGUE (Eugène)</name>
+            <trait>
+              <p>, né à Soissons (Aisne), élève de M. Henri Caïn, méd. d’arg., Saint-Mandé. Rue des Marais, 44, Paris.</p>
+            </trait>
+          </desc>
+          <item n="209" xml:id="Rouen_1891_e8_i209">
+            <num>209</num>
+            <title>La Seine à Choisy-le-Roi</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Rouen_1891_e9" source="CatRouen_1891_bpt6k1181805r_39.JPEG">
+          <desc>
+            <name>DELAMARE (Mme Charlotte)</name>
+            <trait>
+              <p>, née à Rouen, élève de M. Zacharie. — Place Saint-Hilaire, 1, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="210" xml:id="Rouen_1891_e9_i210">
+            <num>210</num>
+            <title>Un savetier dans son échoppe.</title>
+          </item>
+          <item n="211" xml:id="Rouen_1891_e9_i211">
+            <num>211</num>
+            <title>Chanson du printemps.</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Rouen_1891_e10" source="CatRouen_1891_bpt6k1181805r_39.JPEG">
+          <desc>
+            <name>DELAMBRE (Léon-Pierre)</name>
+            <trait>
+              <p>, né à Paris, élève de Louis-J. -B. Boulanger. — Chailly-en- Bierre (Seine-et-Marne).</p>
+            </trait>
+          </desc>
+          <item n="212" xml:id="Rouen_1891_e10_i212">
+            <num>212</num>
+            <title>La route de Paris, dans la forêt de Fontainebleau.</title>
+            <desc>dans la forêt de Fontainebleau.</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Rouen_1891_e11" source="CatRouen_1891_bpt6k1181805r_39.JPEG">
+          <desc>
+            <name>DELATTRE (Joseph)</name>
+            <trait>
+              <p>, né à Déville-lès-Rouen (Seine-Inférieure), élève de MM. Gérome et Lebel, méd. d’arg., 1886, méd. vas 1888, Rouen. — Grande-Route, 163. Déville-lès-Rouen.</p>
+            </trait>
+          </desc>
+          <item n="213" xml:id="Rouen_1891_e11_i213">
+            <num>213</num>
+            <title>Vue de Rouen, temps gris. Appartient à M. Donard.</title>
+            <desc>temps gris. Appartient à M. Donard.</desc>
+          </item>
+          <item n="214" xml:id="Rouen_1891_e11_i214">
+            <num>214</num>
+            <title>Vue de Rouen. Appartient à M. le Dr Rocher.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Rouen_1891_e12" source="CatRouen_1891_bpt6k1181805r_39.JPEG">
+          <desc>
+            <name>DELAUNAY (Jules)</name>
+            <trait>
+              <p>, né à Paris, élève de M. J.-P. Laurens. — Rue Fontaine-Saint-Georges, 13, Paris.</p>
+            </trait>
+          </desc>
+          <item n="215" xml:id="Rouen_1891_e12_i215">
+            <num>215</num>
+            <title>Liseuse.</title>
+          </item>
+          <item n="216" xml:id="Rouen_1891_e12_i216">
+            <num>216</num>
+            <title>« Vous regardez ma mouche, Monsieur ? » Alfred de Musser : la Mouche </title>
+            <desc>Monsieur ? » Alfred de Musser : la Mouche (chap. V).</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Rouen_1891_e13" source="CatRouen_1891_bpt6k1181805r_39.JPEG">
+          <desc>
+            <name>DELHUMEAU, (Gustave-Henri-Eugène),</name>
+            <trait>
+              <p>  né. aux Moutiers-les-Maufaits (Vendée), élève de A. Cabanel, M. H., Paris. 1889., 1889.E.U., dipl. d’hon, et méd. d’or à Londres. — Rue Bayen, 34, (Ternes) Paris. 217 Namouna.</p>
+            </trait>
+          </desc>
+          <item n="218" xml:id="Rouen_1891_e13_i218">
+            <num>218</num>
+            <title>Portrait de Mlle M. de M... du Lys.</title>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Rouen_1891_e14" source="CatRouen_1891_bpt6k1181805r_40.JPEG">
+          <desc>
+            <name>DELPY (Camille)</name>
+            <trait>
+              <p>, né à Joigny (Yonne), élève de Daubiguy et Corot, M. H., Paris, méd. 3° cl., Paris, 1884. — Rue Caumartin, 9, Paris.</p>
+            </trait>
+          </desc>
+          <item n="219" xml:id="Rouen_1891_e14_i219">
+            <num>219</num>
+            <title>La Seine à Oissel, le matin </title>
+            <desc>le matin (près Rouen).</desc>
+          </item>
+          <item n="220" xml:id="Rouen_1891_e14_i220">
+            <num>220</num>
+            <title>Soir d’automne, la Seine </title>
+            <desc>(près Vernon).</desc>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Rouen_1891_e15" source="CatRouen_1891_bpt6k1181805r_40.JPEG">
+          <desc>
+            <name>DEMAGNY Georges)</name>
+            <trait>
+              <p>, né à Bayeux (Calvados). élève de M. H. Bonnefoy, M. H.. Versailles, 1889, méd. br., Boulogne-sur-Mer. 1890. — Avenue Malakoff, 157, Paris.</p>
+            </trait>
+          </desc>
+          <item n="221" xml:id="Rouen_1891_e15_i221">
+            <num>221</num>
+            <title>Intérieur d’atelier.</title>
+          </item>
+          <item n="222" xml:id="Rouen_1891_e15_i222">
+            <num>222</num>
+            <title>La Seine à Ivry </title>
+            <desc>(effet d’orage).</desc>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Rouen_1891_e16" source="CatRouen_1891_bpt6k1181805r_40.JPEG">
+          <desc>
+            <name>DENET (Charles)</name>
+            <trait>
+              <p>, né à Evreux, élève de M. Bonnat, prix de la Ville de Rouen, Exposi- tion de la Société des Amis des Arts, 1889, méd. en province. — Rue Saint-Léger, 38, Evreux, et rue Jouffroy, 2, Paris.</p>
+            </trait>
+          </desc>
+          <item n="223" xml:id="Rouen_1891_e16_i223">
+            <num>223</num>
+            <title>Portrait du peintre Fernand Landais.</title>
+          </item>
+          <item n="224" xml:id="Rouen_1891_e16_i224">
+            <num>224</num>
+            <title>Au saut du lit.</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Rouen_1891_e17" source="CatRouen_1891_bpt6k1181805r_40.JPEG">
+          <desc>
+            <name>DÉNEUX (Gabriel),</name>
+            <trait>
+              <p> élève de Cabanel et de M. Gé- rôme, M. H. — Rue Lécluse, 6, Paris.</p>
+            </trait>
+          </desc>
+          <item n="225" xml:id="Rouen_1891_e17_i225">
+            <num>225</num>
+            <title>Le feu du pardon de N.-D. de la Clarté </title>
+            <desc>(Côtes-du- Nord) (peinture à l’encaustique des anciens Grecs)</desc>
+          </item>
+          <item n="226" xml:id="Rouen_1891_e17_i226">
+            <num>226</num>
+            <title>La rentre au parc </title>
+            <desc>(peinture à l’encaustique des auciens Grecs).</desc>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Rouen_1891_e18" source="CatRouen_1891_bpt6k1181805r_40.JPEG">
+          <desc>
+            <name>DERIGNY (Mlle Jeanne) née à Lunéville (Meurthe</name>
+            <trait>
+              <p>et-Moselle), élève de MM. Jules Lefebvre et Ben jamin Constant. — Rue Guillaume-Tell, 34 bis Paris.</p>
+            </trait>
+          </desc>
+          <item n="227" xml:id="Rouen_1891_e18_i227">
+            <num>227</num>
+            <title>Bouquet de lilas.</title>
+          </item>
+          <item n="228" xml:id="Rouen_1891_e18_i228">
+            <num>228</num>
+            <title>Groseilles et abricots.</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Rouen_1891_e19" source="CatRouen_1891_bpt6k1181805r_40.JPEG">
+          <desc>
+            <name>DERONDEL (Mme Marie)</name>
+            <trait>
+              <p>, née à Bourg-la-Reine (Seine), élève de M. Ballavoine. — Rue de la Mare, 92, Paris.</p>
+            </trait>
+          </desc>
+          <item n="229" xml:id="Rouen_1891_e19_i229">
+            <num>229</num>
+            <title>Fillette aux lilas.</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Rouen_1891_e20" source="CatRouen_1891_bpt6k1181805r_41.JPEG">
+          <desc>
+            <name>DESCAMDS-SABOURET (Mme Louisa-Cécile) née</name>
+            <trait>
+              <p>à Paris, élève de M. Tony Robert-Fleury. — Rue de la Présentation, 11, Paris.</p>
+            </trait>
+          </desc>
+          <item n="230" xml:id="Rouen_1891_e20_i230">
+            <num>230</num>
+            <title>Melon et fruits. PEINTURE.</title>
+          </item>
+          <item n="41" xml:id="Rouen_1891_e20_i41">
+            <num>41</num>
+            <title></title>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Rouen_1891_e21" source="CatRouen_1891_bpt6k1181805r_41.JPEG">
+          <desc>
+            <name/>
+            <trait>
+              <p>231. Bibelots et roses de Nice.</p>
+            </trait>
+          </desc>
+          <item n="231" xml:id="Rouen_1891_e21_i231">
+            <num>231</num>
+            <title>Bibelots et roses de Nice. DESCHAMPS </title>
+            <desc>(Louis) né à Montélimar (Drome), élève de Cabanel, H. C. — Boulevard Berthier, 31, Paris.</desc>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Rouen_1891_e22" source="CatRouen_1891_bpt6k1181805r_41.JPEG">
+          <desc>
+            <name/>
+            <trait>
+              <p>232. Joueur de flûte.</p>
+            </trait>
+          </desc>
+          <item n="232" xml:id="Rouen_1891_e22_i232">
+            <num>232</num>
+            <title>Joueur de flûte. DESGOFFE </title>
+            <desc>(Blaise), né à Paris, élève de H. Flandrin et de M. Bouguereau, méd. 3e cl., Paris</desc>
+          </item>
+          <item n="1861" xml:id="Rouen_1891_e22_i1861">
+            <num>1861</num>
+            <title>, 2e cl., 1863, x 1878. — Rue Dutot, 1, Paris.</title>
+            <desc>1863, x 1878. — Rue Dutot, 1, Paris.</desc>
+          </item>
+          <item n="233" xml:id="Rouen_1891_e22_i233">
+            <num>233</num>
+            <title>Verre de cristal de roche, gravé, du Musée du Louvre </title>
+            <desc>gravé, du Musée du Louvre (étude).</desc>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Rouen_1891_e23" source="CatRouen_1891_bpt6k1181805r_41.JPEG">
+          <desc>
+            <name>Appartient à M.</name>
+            <trait>
+              <p> A. Darcel.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Rouen_1891_e23_i1">
+            <title>DEUILLY </title>
+            <desc>(Eugène-Auguste-François), né à Lille,</desc>
+          </item>
+          <item n="2" xml:id="Rouen_1891_e23_i2">
+            <title>élève de MM. Gérôme, Auguste et Léon Glaize.</title>
+            <desc>Auguste et Léon Glaize.</desc>
+          </item>
+          <item n="3" xml:id="Rouen_1891_e23_i3">
+            <title>M. H., Paris, 1888, méd. 3e cl., 1889, méd. d’arg.,</title>
+            <desc>Paris, 1888, méd. 3e cl., 1889, méd. d’arg.,</desc>
+          </item>
+          <item n="4" xml:id="Rouen_1891_e23_i4">
+            <title>Rouen, 1888. — Rue de Vaugirard, 103, Paris</title>
+            <desc>1888. — Rue de Vaugirard, 103, Paris</desc>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Rouen_1891_e24" source="CatRouen_1891_bpt6k1181805r_41.JPEG">
+          <desc>
+            <name/>
+            <trait>
+              <p>234. Le rêve et la réalité.</p>
+            </trait>
+          </desc>
+          <item n="234" xml:id="Rouen_1891_e24_i234">
+            <num>234</num>
+            <title>Le rêve et la réalité. DEYBOLLE </title>
+            <desc>(Théophile), né à Paris, élève de Cabanel et- de M. Bouguereau, M. H., Paris,</desc>
+          </item>
+          <item n="48" xml:id="Rouen_1891_e24_i48">
+            <num>48</num>
+            <title>-E. U., H. C. — Concarneau </title>
+            <desc>(Finistère).</desc>
+          </item>
+          <item n="235" xml:id="Rouen_1891_e24_i235">
+            <num>235</num>
+            <title>Marchande de moules.</title>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Rouen_1891_e25" source="CatRouen_1891_bpt6k1181805r_41.JPEG">
+          <desc>
+            <name/>
+            <trait>
+              <p>236. Lavoir breton.</p>
+            </trait>
+          </desc>
+          <item n="236" xml:id="Rouen_1891_e25_i236">
+            <num>236</num>
+            <title>Lavoir breton. DEZOBRY </title>
+            <desc>(Arthur-Louis-Henri), né à Montmo rency, élève de Ségé, de Boulanger et de M. J. Le febvre, méd. 3e cl. Evreux, 1886, méd. de br. Amiens, 1887 — Rue Bague, 2, Montmorency.</desc>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Rouen_1891_e26" source="CatRouen_1891_bpt6k1181805r_41.JPEG">
+          <desc>
+            <name/>
+            <trait>
+              <p>237. Le Sierroz (Savoie).</p>
+            </trait>
+          </desc>
+          <item n="237" xml:id="Rouen_1891_e26_i237">
+            <num>237</num>
+            <title>Le Sierroz </title>
+            <desc>(Savoie). DIDIER-POUGET (William), né à Toulouse, élève de Baudit, de Lalanne et de M. Auguin, méd. de verm., Arcachon, 1888, med. d’arg., Montpellier,</desc>
+          </item>
+          <item n="1890" xml:id="Rouen_1891_e26_i1890">
+            <num>1890</num>
+            <title>, M. H., Paris, 1890. — Boulevard de Clichy,</title>
+            <desc>Paris, 1890. — Boulevard de Clichy,</desc>
+          </item>
+          <item n="238" xml:id="Rouen_1891_e26_i238">
+            <num>238</num>
+            <title>Le soir </title>
+            <desc>(route de Lourdes).</desc>
+          </item>
+          <item n="239" xml:id="Rouen_1891_e26_i239">
+            <num>239</num>
+            <title>Le passage à niveau </title>
+            <desc>(effet de soir).</desc>
+          </item>
+        </entry>
+        <entry n="27" xml:id="Rouen_1891_e27" source="CatRouen_1891_bpt6k1181805r_42.JPEG">
+          <desc>
+            <name>DILIGRON (Alfred)</name>
+            <trait>
+              <p>, né à Rouen, élève de Morinet de Daubigny et de M. Guillemet. — Rue du Champ-du-Pardon, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="240" xml:id="Rouen_1891_e27_i240">
+            <num>240</num>
+            <title>Vue de Rouen.</title>
+          </item>
+        </entry>
+        <entry n="28" xml:id="Rouen_1891_e28" source="CatRouen_1891_bpt6k1181805r_42.JPEG">
+          <desc>
+            <name>DILLON (Henri-Patrice)</name>
+            <trait>
+              <p>, né à Son Francisco) (Californie ) de parents français, élève de M Carolus Duran, M. H., Paris, 1890. — Boulevard Rochechouart, 84, Paris.</p>
+            </trait>
+          </desc>
+          <item n="241" xml:id="Rouen_1891_e28_i241">
+            <num>241</num>
+            <title>La lampe.</title>
+          </item>
+          <item n="242" xml:id="Rouen_1891_e28_i242">
+            <num>242</num>
+            <title>La politique. Voir à la Gravure.</title>
+          </item>
+        </entry>
+        <entry n="29" xml:id="Rouen_1891_e29" source="CatRouen_1891_bpt6k1181805r_42.JPEG">
+          <desc>
+            <name>DONNADIEU (Mme Jeanne)</name>
+            <trait>
+              <p>, née à Paris, élève de Feyen-Perrin et de MM. Bin, Krug et Lévy, M. H., Paris, 1886, méd. de verm., Amiens. — Rue Victor-Massé, 17, Paris.</p>
+            </trait>
+          </desc>
+          <item n="243" xml:id="Rouen_1891_e29_i243">
+            <num>243</num>
+            <title>La cuisson du pain à La Barbinière </title>
+            <desc>(Bretagne).</desc>
+          </item>
+        </entry>
+        <entry n="30" xml:id="Rouen_1891_e30" source="CatRouen_1891_bpt6k1181805r_42.JPEG">
+          <desc>
+            <name>DORNOIS (Albert)</name>
+            <trait>
+              <p>, né à Sévigné (Orne), élève de Lalanne, de Pelouse et de M. J. Léfebvre, M. H., Paris, 1889 E. U. — Boulevard Malesherbes, 192, Paris</p>
+            </trait>
+          </desc>
+          <item n="244" xml:id="Rouen_1891_e30_i244">
+            <num>244</num>
+            <title>Vallon de Sainte-Honorine près Port-en-Bessin. Voir aux Dessins et à la Gravure.</title>
+          </item>
+        </entry>
+        <entry n="31" xml:id="Rouen_1891_e31" source="CatRouen_1891_bpt6k1181805r_42.JPEG">
+          <desc>
+            <name>DROUIN (Mme Claire-Alice)</name>
+            <trait>
+              <p>, née à Rouen, M. H., Rouen, 1889. — Rue des Arsins, 2, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="245" xml:id="Rouen_1891_e31_i245">
+            <num>245</num>
+            <title>Chrysanthèmes.</title>
+          </item>
+          <item n="246" xml:id="Rouen_1891_e31_i246">
+            <num>246</num>
+            <title>Le journal </title>
+            <desc>(étude).</desc>
+          </item>
+        </entry>
+        <entry n="32" xml:id="Rouen_1891_e32" source="CatRouen_1891_bpt6k1181805r_42.JPEG">
+          <desc>
+            <name>DUBOURG (Louis-Alexandre)</name>
+            <trait>
+              <p>, né à Honfleur, élève de L. Cogniet, A x. — Rue Saint-Léonard, 45, Honfleur.</p>
+            </trait>
+          </desc>
+          <item n="247" xml:id="Rouen_1891_e32_i247">
+            <num>247</num>
+            <title>Pêcheuses de crabes.</title>
+          </item>
+          <item n="248" xml:id="Rouen_1891_e32_i248">
+            <num>248</num>
+            <title>Une table de cuisine.</title>
+          </item>
+        </entry>
+        <entry n="33" xml:id="Rouen_1891_e33" source="CatRouen_1891_bpt6k1181805r_42.JPEG">
+          <desc>
+            <name>DUBOURG (Charles)</name>
+            <trait>
+              <p>, né à Louviers, élève de M. A Duboc, méd. 3 cl., et méd. de verm., Evreux, 1886 et 1890. — Ancien couvent Sainte Barbe, par Louviers.</p>
+            </trait>
+          </desc>
+          <item n="249" xml:id="Rouen_1891_e33_i249">
+            <num>249</num>
+            <title>Un bras de l’Eure à Becdal. Voir aux Dessins et à la Gravure.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

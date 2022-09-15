@@ -1,0 +1,1733 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Strasbourg_1884">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Strasbourg_1884_e1" source="Cat_Strasbourg_1884-1_typo_0001.jpg">
+          <desc>
+            <name>RAPIN, Alexandre.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="217" xml:id="Strasbourg_1884_e1_i217">
+            <num>217</num>
+            <title>Entrée de village </title>
+            <desc>(Normandie). . . . fr. 400</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Strasbourg_1884_e2" source="Cat_Strasbourg_1884-1_typo_0001.jpg">
+          <desc>
+            <name>REGNAULT, Émile</name>
+            <trait>
+              <p>Nevy-sur-Seille (Jura).</p>
+            </trait>
+          </desc>
+          <item n="218" xml:id="Strasbourg_1884_e2_i218">
+            <num>218</num>
+            <title>Estafettes arabes attendant des ordres dans la cour du Bardo </title>
+            <desc>(Tunis) . . 1000</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Strasbourg_1884_e3" source="Cat_Strasbourg_1884-1_typo_0001.jpg">
+          <desc>
+            <name>REIBER, Paul.</name>
+            <trait>
+              <p>Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="219" xml:id="Strasbourg_1884_e3_i219">
+            <num>219</num>
+            <title>Nature morte.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Strasbourg_1884_e4" source="Cat_Strasbourg_1884-1_typo_0001.jpg">
+          <desc>
+            <name>RIEDMULLER, Chevalier Xavier,</name>
+            <trait>
+              <p> de Stuttgart.</p>
+            </trait>
+          </desc>
+          <item n="220" xml:id="Strasbourg_1884_e4_i220">
+            <num>220</num>
+            <title>Matinée de printemps </title>
+            <desc>(bords de la Rems) 375</desc>
+          </item>
+          <item n="221" xml:id="Strasbourg_1884_e4_i221">
+            <num>221</num>
+            <title>Le soir en Italie. . . . . . . . . . 1875</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Strasbourg_1884_e5" source="Cat_Strasbourg_1884-1_typo_0001.jpg">
+          <desc>
+            <name>RINCKENBACH, Edmond.</name>
+            <trait>
+              <p>Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="222" xml:id="Strasbourg_1884_e5_i222">
+            <num>222</num>
+            <title>Portrait de Mad. R.</title>
+          </item>
+          <item n="223" xml:id="Strasbourg_1884_e5_i223">
+            <num>223</num>
+            <title>Portrait de M. R.</title>
+          </item>
+          <item n="224" xml:id="Strasbourg_1884_e5_i224">
+            <num>224</num>
+            <title>Seule!. . . . . . . . . . . . . . . 250</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Strasbourg_1884_e6" source="Cat_Strasbourg_1884-1_typo_0001.jpg">
+          <desc>
+            <name>RISLER.</name>
+          </desc>
+          <item n="225" xml:id="Strasbourg_1884_e6_i225">
+            <num>225</num>
+            <title>Portrait de fillette.</title>
+          </item>
+          <item n="226" xml:id="Strasbourg_1884_e6_i226">
+            <num>226</num>
+            <title>Jeune fille effeuillant une marguerite.</title>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Strasbourg_1884_e7" source="Cat_Strasbourg_1884-1_typo_0001.jpg">
+          <desc>
+            <name>ROBINSON, Henry.</name>
+            <trait>
+              <p>Anglais. — Concarneau.</p>
+            </trait>
+          </desc>
+          <item n="227" xml:id="Strasbourg_1884_e7_i227">
+            <num>227</num>
+            <title>Poulailler. . . . . . . . . . . . 300</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Strasbourg_1884_e8" source="Cat_Strasbourg_1884-1_typo_0001.jpg">
+          <desc>
+            <name>ROLL, Alfred-Philippe.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="228" xml:id="Strasbourg_1884_e8_i228">
+            <num>228</num>
+            <title>Dame avec des coquelicots. . . . . 6000</title>
+          </item>
+          <item n="229" xml:id="Strasbourg_1884_e8_i229">
+            <num>229</num>
+            <title>Fleurs. . . . . . . . . . . . . . . 2000</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Strasbourg_1884_e9" source="Cat_Strasbourg_1884-1_typo_0002.jpg">
+          <desc>
+            <name>RONNER, Mad.</name>
+            <trait>
+              <p> Henriette. Hollandaise. — Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="230" xml:id="Strasbourg_1884_e9_i230">
+            <num>230</num>
+            <title>Un larron. . . . . . . . . . . . . fr. 1600</title>
+          </item>
+          <item n="231" xml:id="Strasbourg_1884_e9_i231">
+            <num>231</num>
+            <title>Au soleil. . . . . . . . . . . . . 1100</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Strasbourg_1884_e10" source="Cat_Strasbourg_1884-1_typo_0002.jpg">
+          <desc>
+            <name>ROUGE, Charles.</name>
+            <trait>
+              <p>Saverne.</p>
+            </trait>
+          </desc>
+          <item n="232" xml:id="Strasbourg_1884_e10_i232">
+            <num>232</num>
+            <title>Porte romane à Neuwiller, les sculp¬ tures du tympan ont été remises au jour en janvier 1884 </title>
+            <desc>les sculptures du tympan ont été remises au jour en janvier 1884 (aquarelle). . 25</desc>
+          </item>
+          <item n="233" xml:id="Strasbourg_1884_e10_i233">
+            <num>233</num>
+            <title>Cercle de Saint-Michel près de Saint¬ Jean-des-Choux, emplacement pro¬ bable d’un ancien temple circulaire païen </title>
+            <desc>emplacement probable d’un ancien temple circulaire païen (aquarelle). . . . . . . . . 25</desc>
+          </item>
+          <item n="234" xml:id="Strasbourg_1884_e10_i234">
+            <num>234</num>
+            <title>Vieilles maisons à Bouxwiller, 17e siècle</title>
+            <desc>17e siècle</desc>
+          </item>
+          <item n="235" xml:id="Strasbourg_1884_e10_i235">
+            <num>235</num>
+            <title>Tapisseries du 16e siècle à Saint-Jean¬ des-Choux </title>
+            <desc>(aquarelle). . . . . . . . . . . 25</desc>
+          </item>
+          <item n="236" xml:id="Strasbourg_1884_e10_i236">
+            <num>236</num>
+            <title>Boiseries de Marmoutier, 18e siècle</title>
+            <desc>18e siècle</desc>
+          </item>
+          <item n="237" xml:id="Strasbourg_1884_e10_i237">
+            <num>237</num>
+            <title>Paysannes allant en pèlerinage à la grotte de Saint-Vit, le 1er mai. . 50</title>
+            <desc>le 1er mai. . 50</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Strasbourg_1884_e11" source="Cat_Strasbourg_1884-1_typo_0002.jpg">
+          <desc>
+            <name>ROVEL, Henri.</name>
+            <trait>
+              <p>Sainl-Dié.</p>
+            </trait>
+          </desc>
+          <item n="238" xml:id="Strasbourg_1884_e11_i238">
+            <num>238</num>
+            <title>Tête de nègre </title>
+            <desc>(10 ans). . . . . . . 230</desc>
+          </item>
+          <item n="239" xml:id="Strasbourg_1884_e11_i239">
+            <num>239</num>
+            <title>Tête de jeune femme arabe. . . . . 230</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Strasbourg_1884_e12" source="Cat_Strasbourg_1884-1_typo_0002.jpg">
+          <desc>
+            <name>ROYER, Charles.</name>
+            <trait>
+              <p>Langres.</p>
+            </trait>
+          </desc>
+          <item n="240" xml:id="Strasbourg_1884_e12_i240">
+            <num>240</num>
+            <title>En chasse. . . . . . . . . . . . . 200</title>
+          </item>
+          <item n="241" xml:id="Strasbourg_1884_e12_i241">
+            <num>241</num>
+            <title>Pêches. . . . . . . . . . . . . . . 150</title>
+          </item>
+          <item n="242" xml:id="Strasbourg_1884_e12_i242">
+            <num>242</num>
+            <title>La romance. . . . . . . . . . . . 150</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Strasbourg_1884_e13" source="Cat_Strasbourg_1884-1_typo_0003.jpg">
+          <desc>
+            <name>RUGA, Alexandre.</name>
+            <trait>
+              <p>Suisse. — Milan.</p>
+            </trait>
+          </desc>
+          <item n="243" xml:id="Strasbourg_1884_e13_i243">
+            <num>243</num>
+            <title>La sensitive </title>
+            <desc>(buste), marbre. . . . . fr. 400</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Strasbourg_1884_e14" source="Cat_Strasbourg_1884-1_typo_0003.jpg">
+          <desc>
+            <name>SAIN, Paul.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="244" xml:id="Strasbourg_1884_e14_i244">
+            <num>244</num>
+            <title>Viroflay. . . . . . . . . . . . . . 200</title>
+          </item>
+          <item n="245" xml:id="Strasbourg_1884_e14_i245">
+            <num>245</num>
+            <title>Billancourt. . . . . . . . . . . . . 200</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Strasbourg_1884_e15" source="Cat_Strasbourg_1884-1_typo_0003.jpg">
+          <desc>
+            <name>SALANSON, Mlle Eugénie.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="246" xml:id="Strasbourg_1884_e15_i246">
+            <num>246</num>
+            <title>Sur la plage. . . . . . . . . . . . 2000</title>
+          </item>
+          <item n="247" xml:id="Strasbourg_1884_e15_i247">
+            <num>247</num>
+            <title>Fille de la Grève. . . . . . . . . 1500</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Strasbourg_1884_e16" source="Cat_Strasbourg_1884-1_typo_0003.jpg">
+          <desc>
+            <name>SALLES, Jules.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="248" xml:id="Strasbourg_1884_e16_i248">
+            <num>248</num>
+            <title>Nourrice italienne. . . . . . . . . 1500</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Strasbourg_1884_e17" source="Cat_Strasbourg_1884-1_typo_0003.jpg">
+          <desc>
+            <name>SALLES-WAGNER, Mad.</name>
+            <trait>
+              <p> Adélaïde. Paris.</p>
+            </trait>
+          </desc>
+          <item n="249" xml:id="Strasbourg_1884_e17_i249">
+            <num>249</num>
+            <title>Bretonne en prière. . . . . . . . . 1200</title>
+          </item>
+          <item n="250" xml:id="Strasbourg_1884_e17_i250">
+            <num>250</num>
+            <title>Le petit trompette. . . . . . . . . 1000</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Strasbourg_1884_e18" source="Cat_Strasbourg_1884-1_typo_0003.jpg">
+          <desc>
+            <name>SAUVAGE, Arsène-Symphorien.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="251" xml:id="Strasbourg_1884_e18_i251">
+            <num>251</num>
+            <title>Le Moulin des corbeaux près Joinville¬ le-Pont. . . . . . . . . . . . . 300</title>
+          </item>
+          <item n="252" xml:id="Strasbourg_1884_e18_i252">
+            <num>252</num>
+            <title>Homard. . . . . . . . . . . . . . 250</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Strasbourg_1884_e19" source="Cat_Strasbourg_1884-1_typo_0003.jpg">
+          <desc>
+            <name>SCHUTZENBERGER, L.</name>
+            <trait>
+              <p>, né à Strasbourg. Paris.</p>
+            </trait>
+          </desc>
+          <item n="253" xml:id="Strasbourg_1884_e19_i253">
+            <num>253</num>
+            <title>Vanniers ambulants dans les îles du Rhin. . . . . . . . . . . . . 3000</title>
+          </item>
+          <item n="254" xml:id="Strasbourg_1884_e19_i254">
+            <num>254</num>
+            <title>Iles du Rhin. . . . . . . . . . . 1500</title>
+          </item>
+          <item n="255" xml:id="Strasbourg_1884_e19_i255">
+            <num>255</num>
+            <title>Iles du Rhin. . . . . . . . . . . 1500</title>
+          </item>
+          <item n="256" xml:id="Strasbourg_1884_e19_i256">
+            <num>256</num>
+            <title>Baigneuse. . . . . . . . . . . . . 2000</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Strasbourg_1884_e20" source="Cat_Strasbourg_1884-1_typo_0004.jpg">
+          <desc>
+            <name>SCHWEICH, C.</name>
+            <trait>
+              <p>Düsseldorf.</p>
+            </trait>
+          </desc>
+          <item n="257" xml:id="Strasbourg_1884_e20_i257">
+            <num>257</num>
+            <title>Bords de fleuve </title>
+            <desc>(Allemagne du Nord) fr. 200</desc>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Strasbourg_1884_e21" source="Cat_Strasbourg_1884-1_typo_0004.jpg">
+          <desc>
+            <name>SIMON, François.</name>
+            <trait>
+              <p>Marseille.</p>
+            </trait>
+          </desc>
+          <item n="258" xml:id="Strasbourg_1884_e21_i258">
+            <num>258</num>
+            <title>Bélier dans le parc </title>
+            <desc>(race africaine). 800</desc>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Strasbourg_1884_e22" source="Cat_Strasbourg_1884-1_typo_0004.jpg">
+          <desc>
+            <name>SIMON, Jean-Baptiste-Léon</name>
+            <trait>
+              <p>, né à Metz. Metz.</p>
+            </trait>
+          </desc>
+          <item n="259" xml:id="Strasbourg_1884_e22_i259">
+            <num>259</num>
+            <title>Un étang en forêt </title>
+            <desc>(fusain). . . . . . 350</desc>
+          </item>
+          <item n="260" xml:id="Strasbourg_1884_e22_i260">
+            <num>260</num>
+            <title>Étude d’arbres, avril </title>
+            <desc>avril (fusain). . . . 150</desc>
+          </item>
+          <item n="261" xml:id="Strasbourg_1884_e22_i261">
+            <num>261</num>
+            <title>Les hêtres de Briey </title>
+            <desc>(fusain). . . 250</desc>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Strasbourg_1884_e23" source="Cat_Strasbourg_1884-1_typo_0004.jpg">
+          <desc>
+            <name>STAHL, Émile.</name>
+            <trait>
+              <p>Schiltigheim.</p>
+            </trait>
+          </desc>
+          <item n="262" xml:id="Strasbourg_1884_e23_i262">
+            <num>262</num>
+            <title>Chasseur à l’affût. . . . . . . . . . 500</title>
+          </item>
+          <item n="263" xml:id="Strasbourg_1884_e23_i263">
+            <num>263</num>
+            <title>Le rôti. . . . . . . . . . . . . . 500</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Strasbourg_1884_e24" source="Cat_Strasbourg_1884-1_typo_0004.jpg">
+          <desc>
+            <name>STUPFLER, Henri</name>
+            <trait>
+              <p>, né à Mulhouse. Paris.</p>
+            </trait>
+          </desc>
+          <item n="264" xml:id="Strasbourg_1884_e24_i264">
+            <num>264</num>
+            <title>Jeune Italienne en méditation. . . . 1000</title>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Strasbourg_1884_e25" source="Cat_Strasbourg_1884-1_typo_0004.jpg">
+          <desc>
+            <name>TEMPRA, Quirino.</name>
+            <trait>
+              <p>Rome. — Milan.</p>
+            </trait>
+          </desc>
+          <item n="265" xml:id="Strasbourg_1884_e25_i265">
+            <num>265</num>
+            <title>L’orpheline </title>
+            <desc>(buste), marbre. . . . . 500</desc>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Strasbourg_1884_e26" source="Cat_Strasbourg_1884-1_typo_0004.jpg">
+          <desc>
+            <name>THIÉBAULT, Louis.</name>
+            <trait>
+              <p>Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="266" xml:id="Strasbourg_1884_e26_i266">
+            <num>266</num>
+            <title>Éventail.</title>
+          </item>
+          <item n="267" xml:id="Strasbourg_1884_e26_i267">
+            <num>267</num>
+            <title>Marine.</title>
+          </item>
+          <item n="268" xml:id="Strasbourg_1884_e26_i268">
+            <num>268</num>
+            <title>Fleurs.</title>
+          </item>
+          <item n="269" xml:id="Strasbourg_1884_e26_i269">
+            <num>269</num>
+            <title>Boules de neige </title>
+            <desc>(fleurs).</desc>
+          </item>
+          <item n="270" xml:id="Strasbourg_1884_e26_i270">
+            <num>270</num>
+            <title>Paysage.</title>
+          </item>
+        </entry>
+        <entry n="27" xml:id="Strasbourg_1884_e27" source="Cat_Strasbourg_1884-1_typo_0005.jpg">
+          <desc>
+            <name>THOLEN, Willem.</name>
+            <trait>
+              <p>Kampen (Hollande).</p>
+            </trait>
+          </desc>
+          <item n="271" xml:id="Strasbourg_1884_e27_i271">
+            <num>271</num>
+            <title>Paysage hollandais. . . . . . . . . fr. 1800</title>
+          </item>
+          <item n="272" xml:id="Strasbourg_1884_e27_i272">
+            <num>272</num>
+            <title>Une tourbière en Hollande. . . . . 300</title>
+          </item>
+        </entry>
+        <entry n="28" xml:id="Strasbourg_1884_e28" source="Cat_Strasbourg_1884-1_typo_0005.jpg">
+          <desc>
+            <name>TIMMERMANS, Louis.</name>
+            <trait>
+              <p>Belge. — Paris.</p>
+            </trait>
+          </desc>
+          <item n="273" xml:id="Strasbourg_1884_e28_i273">
+            <num>273</num>
+            <title>En route pour la pêche aux crevettes près Villers </title>
+            <desc>(Normandie). . . . . 550</desc>
+          </item>
+        </entry>
+        <entry n="29" xml:id="Strasbourg_1884_e29" source="Cat_Strasbourg_1884-1_typo_0005.jpg">
+          <desc>
+            <name>TISSANDIER, Albert.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="274" xml:id="Strasbourg_1884_e29_i274">
+            <num>274</num>
+            <title>Façade nord de Notre-Dame de Paris</title>
+          </item>
+          <item n="275" xml:id="Strasbourg_1884_e29_i275">
+            <num>275</num>
+            <title>Tentative de retour en ballon, Paris</title>
+            <desc>Paris</desc>
+          </item>
+        </entry>
+        <entry n="30" xml:id="Strasbourg_1884_e30" source="Cat_Strasbourg_1884-1_typo_0005.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>assiégé (dessin). . . . . . . . . 200 TITZ, Louis. Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="276" xml:id="Strasbourg_1884_e30_i276">
+            <num>276</num>
+            <title>La lessive à la ferme </title>
+            <desc>(aquarelle). . 130</desc>
+          </item>
+          <item n="277" xml:id="Strasbourg_1884_e30_i277">
+            <num>277</num>
+            <title>Femme au puits </title>
+            <desc>(aquarelle). . . . . 90</desc>
+          </item>
+          <item n="278" xml:id="Strasbourg_1884_e30_i278">
+            <num>278</num>
+            <title>Moissonneuse </title>
+            <desc>(aquarelle). . . . . . 90</desc>
+          </item>
+        </entry>
+        <entry n="31" xml:id="Strasbourg_1884_e31" source="Cat_Strasbourg_1884-1_typo_0005.jpg">
+          <desc>
+            <name>TJARDA VAN STARKENBORGH,</name>
+            <trait>
+              <p> J. N. Düsseldorf.</p>
+            </trait>
+          </desc>
+          <item n="279" xml:id="Strasbourg_1884_e31_i279">
+            <num>279</num>
+            <title>En Thuringe </title>
+            <desc>(paysage). . . . . . . 1125</desc>
+          </item>
+        </entry>
+        <entry n="32" xml:id="Strasbourg_1884_e32" source="Cat_Strasbourg_1884-1_typo_0005.jpg">
+          <desc>
+            <name>TRIPONEL, Mad.</name>
+            <trait>
+              <p> Marie. Versailles.</p>
+            </trait>
+          </desc>
+          <item n="280" xml:id="Strasbourg_1884_e32_i280">
+            <num>280</num>
+            <title>Bégonias </title>
+            <title>280 a. Acacias. . . . . . . . . . . . . 120</title>
+            <desc>(faïence). . . . . . . . . 130</desc>
+          </item>
+        </entry>
+        <entry n="33" xml:id="Strasbourg_1884_e33" source="Cat_Strasbourg_1884-1_typo_0005.jpg">
+          <desc>
+            <name>TUYTTENS, Jérôme.</name>
+            <trait>
+              <p>Anvers.</p>
+            </trait>
+          </desc>
+          <item n="281" xml:id="Strasbourg_1884_e33_i281">
+            <num>281</num>
+            <title>Soirée d’hiver. . . . . . . . . . . 200</title>
+          </item>
+          <item n="282" xml:id="Strasbourg_1884_e33_i282">
+            <num>282</num>
+            <title>Aquarelle. . . . . . . . . . . . . 75</title>
+          </item>
+          <item n="283" xml:id="Strasbourg_1884_e33_i283">
+            <num>283</num>
+            <title>Aquarelle. . . . . . . . . . . . . 75</title>
+          </item>
+        </entry>
+        <entry n="34" xml:id="Strasbourg_1884_e34" source="Cat_Strasbourg_1884-2_typo_0001.jpg">
+          <desc>
+            <name>GRISON, Adolphe.</name>
+            <trait>
+              <p>Champigny-sur-Marne.</p>
+            </trait>
+          </desc>
+          <item n="108" xml:id="Strasbourg_1884_e34_i108">
+            <num>108</num>
+            <title>Gil-Blas. . . . . . . . . . . . . . fr. 1000</title>
+          </item>
+          <item n="109" xml:id="Strasbourg_1884_e34_i109">
+            <num>109</num>
+            <title>La rue Poterie à Vitré </title>
+            <desc>(Bretagne). Appartient à M. ***.</desc>
+          </item>
+        </entry>
+        <entry n="35" xml:id="Strasbourg_1884_e35" source="Cat_Strasbourg_1884-2_typo_0001.jpg">
+          <desc>
+            <name>GROSS, Mlle Emilie.</name>
+            <trait>
+              <p>Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="110" xml:id="Strasbourg_1884_e35_i110">
+            <num>110</num>
+            <title>Jeune vieille.</title>
+          </item>
+          <item n="111" xml:id="Strasbourg_1884_e35_i111">
+            <num>111</num>
+            <title>Pivoines.</title>
+          </item>
+        </entry>
+        <entry n="36" xml:id="Strasbourg_1884_e36" source="Cat_Strasbourg_1884-2_typo_0001.jpg">
+          <desc>
+            <name>GRUND, Jean.</name>
+            <trait>
+              <p>Autrichien. — Baden-Baden.</p>
+            </trait>
+          </desc>
+          <item n="112" xml:id="Strasbourg_1884_e36_i112">
+            <num>112</num>
+            <title>Ménade en ivresse. . . . . . . . . 3000</title>
+          </item>
+        </entry>
+        <entry n="37" xml:id="Strasbourg_1884_e37" source="Cat_Strasbourg_1884-2_typo_0001.jpg">
+          <desc>
+            <name>GUIGNÉ, Alexis-Eugène.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="113" xml:id="Strasbourg_1884_e37_i113">
+            <num>113</num>
+            <title>Montigny-sur-le-Loing </title>
+            <desc>(aquarelle). . 150</desc>
+          </item>
+          <item n="114" xml:id="Strasbourg_1884_e37_i114">
+            <num>114</num>
+            <title>Bords de la Seine à Saint-Denis </title>
+            <desc>(aquarelle). . . . . . . . . . . . . . 150</desc>
+          </item>
+        </entry>
+        <entry n="38" xml:id="Strasbourg_1884_e38" source="Cat_Strasbourg_1884-2_typo_0001.jpg">
+          <desc>
+            <name>GUINDON, Marius.</name>
+            <trait>
+              <p>Marseille.</p>
+            </trait>
+          </desc>
+          <item n="115" xml:id="Strasbourg_1884_e38_i115">
+            <num>115</num>
+            <title>Labourage à Ostie </title>
+            <desc>(bords du Tibre). 1500</desc>
+          </item>
+        </entry>
+        <entry n="39" xml:id="Strasbourg_1884_e39" source="Cat_Strasbourg_1884-2_typo_0001.jpg">
+          <desc>
+            <name>HAFFNER, Félix (feu)</name>
+            <trait>
+              <p>, né à Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="116" xml:id="Strasbourg_1884_e39_i116">
+            <num>116</num>
+            <title>Portrait de Mad. Rousselet.</title>
+          </item>
+          <item n="117" xml:id="Strasbourg_1884_e39_i117">
+            <num>117</num>
+            <title>Portrait de Mad. Ringeissen.</title>
+          </item>
+        </entry>
+        <entry n="40" xml:id="Strasbourg_1884_e40" source="Cat_Strasbourg_1884-2_typo_0001.jpg">
+          <desc>
+            <name>HÉBERT, Édouard-Ernest-Paulin.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="118" xml:id="Strasbourg_1884_e40_i118">
+            <num>118</num>
+            <title>Souvenir de Saint-Valéry. . . . . . 250</title>
+          </item>
+          <item n="119" xml:id="Strasbourg_1884_e40_i119">
+            <num>119</num>
+            <title>L'offrande à la Madone </title>
+            <desc>(aquarelle). . 200</desc>
+          </item>
+        </entry>
+        <entry n="41" xml:id="Strasbourg_1884_e41" source="Cat_Strasbourg_1884-2_typo_0002.jpg">
+          <desc>
+            <name>HOCHSTUHL, Charles.</name>
+            <trait>
+              <p>Sainte-Marie-aux-Mines.</p>
+            </trait>
+          </desc>
+          <item n="120" xml:id="Strasbourg_1884_e41_i120">
+            <num>120</num>
+            <title>Environs de Sainte-Marie. . . . . . fr 400</title>
+          </item>
+          <item n="121" xml:id="Strasbourg_1884_e41_i121">
+            <num>121</num>
+            <title>Allée de cerisiers </title>
+            <desc>(avant la pluie). . 300</desc>
+          </item>
+          <item n="122" xml:id="Strasbourg_1884_e41_i122">
+            <num>122</num>
+            <title>La roche aux corbeaux. . . . . . . 250</title>
+          </item>
+          <item n="123" xml:id="Strasbourg_1884_e41_i123">
+            <num>123</num>
+            <title>Ile du Rhin </title>
+            <desc>(hiver). . . . . . . . . 250</desc>
+          </item>
+          <item n="124" xml:id="Strasbourg_1884_e41_i124">
+            <num>124</num>
+            <title>Près de Ribeauvillé </title>
+            <desc>(hiver). . . . . 250</desc>
+          </item>
+        </entry>
+        <entry n="42" xml:id="Strasbourg_1884_e42" source="Cat_Strasbourg_1884-2_typo_0002.jpg">
+          <desc>
+            <name>HODEBERT, Léon-César-Auguste.</name>
+            <trait>
+              <p>Rouen.</p>
+            </trait>
+          </desc>
+          <item n="125" xml:id="Strasbourg_1884_e42_i125">
+            <num>125</num>
+            <title>Les huîtres. . . . . . . . . . . . 250</title>
+          </item>
+        </entry>
+        <entry n="43" xml:id="Strasbourg_1884_e43" source="Cat_Strasbourg_1884-2_typo_0002.jpg">
+          <desc>
+            <name>HUMBERT, Louis.</name>
+            <trait>
+              <p>Chaumont.</p>
+            </trait>
+          </desc>
+          <item n="126" xml:id="Strasbourg_1884_e43_i126">
+            <num>126</num>
+            <title>Un chemin en forêt. . . . . . . . 700</title>
+          </item>
+        </entry>
+        <entry n="44" xml:id="Strasbourg_1884_e44" source="Cat_Strasbourg_1884-2_typo_0002.jpg">
+          <desc>
+            <name>HUMMEL, J.</name>
+            <trait>
+              <p> G. Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="127" xml:id="Strasbourg_1884_e44_i127">
+            <num>127</num>
+            <title>Nature morte.</title>
+          </item>
+        </entry>
+        <entry n="45" xml:id="Strasbourg_1884_e45" source="Cat_Strasbourg_1884-2_typo_0002.jpg">
+          <desc>
+            <name>HUYSMANS, Jean-Baptiste.</name>
+            <trait>
+              <p>Belge. — Paris.</p>
+            </trait>
+          </desc>
+          <item n="128" xml:id="Strasbourg_1884_e45_i128">
+            <num>128</num>
+            <title>Rêverie. . . . . . . . . . . . . . 400</title>
+          </item>
+        </entry>
+        <entry n="46" xml:id="Strasbourg_1884_e46" source="Cat_Strasbourg_1884-2_typo_0002.jpg">
+          <desc>
+            <name>IWILL, Joseph.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="129" xml:id="Strasbourg_1884_e46_i129">
+            <num>129</num>
+            <title>Ile de Walckeren </title>
+            <desc>(Zélande), route dans les Dunes. . . . . . . . . . . . 350</desc>
+          </item>
+          <item n="130" xml:id="Strasbourg_1884_e46_i130">
+            <num>130</num>
+            <title>Entrée de ferme à Étretat. . . . . . 200</title>
+          </item>
+          <item n="131" xml:id="Strasbourg_1884_e46_i131">
+            <num>131</num>
+            <title>Sentier sous bois </title>
+            <desc>(pastel). . . . . . 180</desc>
+          </item>
+        </entry>
+        <entry n="47" xml:id="Strasbourg_1884_e47" source="Cat_Strasbourg_1884-2_typo_0002.jpg">
+          <desc>
+            <name>JACOBS, Louis.</name>
+            <trait>
+              <p>Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="132" xml:id="Strasbourg_1884_e47_i132">
+            <num>132</num>
+            <title>Chaloupe de pêche ostendaise. . . . 500</title>
+          </item>
+          <item n="133" xml:id="Strasbourg_1884_e47_i133">
+            <num>133</num>
+            <title>Une vue de l’Escaut à l’approche du crépuscule. . . . . . . . . . . . 400</title>
+          </item>
+        </entry>
+        <entry n="48" xml:id="Strasbourg_1884_e48" source="Cat_Strasbourg_1884-2_typo_0003.jpg">
+          <desc>
+            <name>JACOBS, Rodolphe.</name>
+            <trait>
+              <p>Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="134" xml:id="Strasbourg_1884_e48_i134">
+            <num>134</num>
+            <title>La fille de ferme. . . . . . . . . . fr. 350</title>
+          </item>
+          <item n="135" xml:id="Strasbourg_1884_e48_i135">
+            <num>135</num>
+            <title>La répétition. . . . . . . . . . . . 350</title>
+          </item>
+        </entry>
+        <entry n="49" xml:id="Strasbourg_1884_e49" source="Cat_Strasbourg_1884-2_typo_0003.jpg">
+          <desc>
+            <name>JUNDT, Gustave</name>
+            <trait>
+              <p>, né à Strasbourg. Paris.</p>
+            </trait>
+          </desc>
+          <item n="136" xml:id="Strasbourg_1884_e49_i136">
+            <num>136</num>
+            <title>Le dimanche matin. . . . . . . . 1200</title>
+          </item>
+        </entry>
+        <entry n="50" xml:id="Strasbourg_1884_e50" source="Cat_Strasbourg_1884-2_typo_0003.jpg">
+          <desc>
+            <name>KAROLY, Mlle C. S.</name>
+            <trait>
+              <p>, née à Molsheim. Lyon.</p>
+            </trait>
+          </desc>
+          <item n="137" xml:id="Strasbourg_1884_e50_i137">
+            <num>137</num>
+            <title>Une jeune Bordelaise. . . . . . . . 150</title>
+          </item>
+          <item n="138" xml:id="Strasbourg_1884_e50_i138">
+            <num>138</num>
+            <title>Saint-Bris </title>
+            <desc>(Huguenots). .  . . . . . 500</desc>
+          </item>
+          <item n="139" xml:id="Strasbourg_1884_e50_i139">
+            <num>139</num>
+            <title>Un coq. . . . . . . . . . . . . 250</title>
+          </item>
+        </entry>
+        <entry n="51" xml:id="Strasbourg_1884_e51" source="Cat_Strasbourg_1884-2_typo_0003.jpg">
+          <desc>
+            <name>KEGELJAN, Franz.</name>
+            <trait>
+              <p>Namur.</p>
+            </trait>
+          </desc>
+          <item n="140" xml:id="Strasbourg_1884_e51_i140">
+            <num>140</num>
+            <title>Les rochers de Dave </title>
+            <desc>(bords de la Meuse) 1300</desc>
+          </item>
+          <item n="141" xml:id="Strasbourg_1884_e51_i141">
+            <num>141</num>
+            <title>Le village de Dave. . . . . . . . . 900</title>
+          </item>
+        </entry>
+        <entry n="52" xml:id="Strasbourg_1884_e52" source="Cat_Strasbourg_1884-2_typo_0003.jpg">
+          <desc>
+            <name>KOLLER, Rodolphe.</name>
+            <trait>
+              <p>Zurich.</p>
+            </trait>
+          </desc>
+          <item n="142" xml:id="Strasbourg_1884_e52_i142">
+            <num>142</num>
+            <title>Vaches au bord du lac. . . . . . . 4500</title>
+          </item>
+        </entry>
+        <entry n="53" xml:id="Strasbourg_1884_e53" source="Cat_Strasbourg_1884-2_typo_0003.jpg">
+          <desc>
+            <name>LANDELLE, Charles.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="143" xml:id="Strasbourg_1884_e53_i143">
+            <num>143</num>
+            <title>Campement de Bohémiens. . . . . 1000</title>
+          </item>
+          <item n="144" xml:id="Strasbourg_1884_e53_i144">
+            <num>144</num>
+            <title>Femme de Boghari </title>
+            <desc>(province d’Alger) 800</desc>
+          </item>
+        </entry>
+        <entry n="54" xml:id="Strasbourg_1884_e54" source="Cat_Strasbourg_1884-2_typo_0003.jpg">
+          <desc>
+            <name>LANDRÉ, Mlle Louise-Amélie.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="145" xml:id="Strasbourg_1884_e54_i145">
+            <num>145</num>
+            <title>Fleurs de mai. . . . . . . . . . . 250</title>
+          </item>
+          <item n="146" xml:id="Strasbourg_1884_e54_i146">
+            <num>146</num>
+            <title>Vue de Port-Navalo </title>
+            <desc>(Bretagne). . . 100</desc>
+          </item>
+        </entry>
+        <entry n="55" xml:id="Strasbourg_1884_e55" source="Cat_Strasbourg_1884-2_typo_0003.jpg">
+          <desc>
+            <name>LANSYER, Emmanuel.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="147" xml:id="Strasbourg_1884_e55_i147">
+            <num>147</num>
+            <title>Le château de Tennesue </title>
+            <desc>(Deux-Sèvres) 600</desc>
+          </item>
+          <item n="148" xml:id="Strasbourg_1884_e55_i148">
+            <num>148</num>
+            <title>Marine </title>
+            <desc>(temps d’orage). . . . . . . 900</desc>
+          </item>
+        </entry>
+        <entry n="56" xml:id="Strasbourg_1884_e56" source="Cat_Strasbourg_1884-2_typo_0004.jpg">
+          <desc>
+            <name>LAROQUE, Georges.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="149" xml:id="Strasbourg_1884_e56_i149">
+            <num>149</num>
+            <title>Chiens anglais </title>
+            <desc>(Foxhounds). . . . . fr. 650</desc>
+          </item>
+        </entry>
+        <entry n="57" xml:id="Strasbourg_1884_e57" source="Cat_Strasbourg_1884-2_typo_0004.jpg">
+          <desc>
+            <name>LATHUILE, Gauthier-Louis.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="150" xml:id="Strasbourg_1884_e57_i150">
+            <num>150</num>
+            <title>Rouget </title>
+            <desc>(nature morte). . . . . . . vendu.</desc>
+          </item>
+        </entry>
+        <entry n="58" xml:id="Strasbourg_1884_e58" source="Cat_Strasbourg_1884-2_typo_0004.jpg">
+          <desc>
+            <name>LA VILLETTE, Mad. Elodie</name>
+            <trait>
+              <p>, née à Strasbourg. Fort d’Aubervilliers.</p>
+            </trait>
+          </desc>
+          <item n="151" xml:id="Strasbourg_1884_e58_i151">
+            <num>151</num>
+            <title>Les sables </title>
+            <desc>(île de Groix). . . . . . 2000</desc>
+          </item>
+          <item n="152" xml:id="Strasbourg_1884_e58_i152">
+            <num>152</num>
+            <title>Port Saint-Nicolas </title>
+            <desc>(île de Groix). . 1000</desc>
+          </item>
+        </entry>
+        <entry n="59" xml:id="Strasbourg_1884_e59" source="Cat_Strasbourg_1884-2_typo_0004.jpg">
+          <desc>
+            <name>LÉAUTEZ, Mlle Marie.</name>
+            <trait>
+              <p>Troyes.</p>
+            </trait>
+          </desc>
+          <item n="153" xml:id="Strasbourg_1884_e59_i153">
+            <num>153</num>
+            <title>Le soir à Vauchassis </title>
+            <desc>(Aube). . . . 400</desc>
+          </item>
+        </entry>
+        <entry n="60" xml:id="Strasbourg_1884_e60" source="Cat_Strasbourg_1884-2_typo_0004.jpg">
+          <desc>
+            <name>LEEMPUTTEN, Frans van.</name>
+            <trait>
+              <p>Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="154" xml:id="Strasbourg_1884_e60_i154">
+            <num>154</num>
+            <title>Dans la bruyère </title>
+            <desc>(nord de la Belgique) 2000</desc>
+          </item>
+          <item n="155" xml:id="Strasbourg_1884_e60_i155">
+            <num>155</num>
+            <title>Récolte de pommes de terre </title>
+            <desc>(Zélande) 1200</desc>
+          </item>
+        </entry>
+        <entry n="61" xml:id="Strasbourg_1884_e61" source="Cat_Strasbourg_1884-2_typo_0004.jpg">
+          <desc>
+            <name>LEREDDE, Octave.</name>
+          </desc>
+          <item n="1" xml:id="Strasbourg_1884_e61_i1">
+            <title>Paris.</title>
+          </item>
+        </entry>
+        <entry n="62" xml:id="Strasbourg_1884_e62" source="Cat_Strasbourg_1884-2_typo_0004.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>156. Un bouquiniste (eau forte). . . . . 20</p>
+            </trait>
+          </desc>
+          <item n="156" xml:id="Strasbourg_1884_e62_i156">
+            <num>156</num>
+            <title>Un bouquiniste </title>
+            <desc>(eau forte). . . . . 20 LE SAGE, Mlle Gabrielle. Paris.</desc>
+          </item>
+          <item n="157" xml:id="Strasbourg_1884_e62_i157">
+            <num>157</num>
+            <title>Roses </title>
+            <desc>(aquarelle). . . . . . . . . . 90</desc>
+          </item>
+          <item n="158" xml:id="Strasbourg_1884_e62_i158">
+            <num>158</num>
+            <title>Mohamed, Raïs de Dahabich </title>
+            <desc>Raïs de Dahabich (faïence) 150</desc>
+          </item>
+        </entry>
+        <entry n="63" xml:id="Strasbourg_1884_e63" source="Cat_Strasbourg_1884-2_typo_0004.jpg">
+          <desc>
+            <name>LE SÉNÉCHAL DE KERDRÉORET,</name>
+            <trait>
+              <p> Gustave-Édouard. Paris.</p>
+            </trait>
+          </desc>
+          <item n="159" xml:id="Strasbourg_1884_e63_i159">
+            <num>159</num>
+            <title>Le Trèport. . . . . . . . . . . . . 350</title>
+          </item>
+        </entry>
+        <entry n="64" xml:id="Strasbourg_1884_e64" source="Cat_Strasbourg_1884-2_typo_0004.jpg">
+          <desc>
+            <name>MAIGNAN, Albert.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="160" xml:id="Strasbourg_1884_e64_i160">
+            <num>160</num>
+            <title>Hommage à Clovis II. . . . . . . 6000</title>
+          </item>
+        </entry>
+        <entry n="65" xml:id="Strasbourg_1884_e65" source="Cat_Strasbourg_1884-2_typo_0005.jpg">
+          <desc>
+            <name>MAISONNEUVE, Louis.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="161" xml:id="Strasbourg_1884_e65_i161">
+            <num>161</num>
+            <title>Saint Jérôme. . . . . . . . . . . fr. 2000</title>
+          </item>
+        </entry>
+        <entry n="66" xml:id="Strasbourg_1884_e66" source="Cat_Strasbourg_1884-2_typo_0005.jpg">
+          <desc>
+            <name>MARINIER, Jules.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="162" xml:id="Strasbourg_1884_e66_i162">
+            <num>162</num>
+            <title>Faisans et perdrix. . . . . . . . .  300</title>
+          </item>
+        </entry>
+        <entry n="67" xml:id="Strasbourg_1884_e67" source="Cat_Strasbourg_1884-2_typo_0005.jpg">
+          <desc>
+            <name>MARX, Alphonse.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="163" xml:id="Strasbourg_1884_e67_i163">
+            <num>163</num>
+            <title>Huîtres. . . . . . . . . . . . . . 300</title>
+          </item>
+          <item n="164" xml:id="Strasbourg_1884_e67_i164">
+            <num>164</num>
+            <title>Fraises. . . . . . . . . . . . . . 300</title>
+          </item>
+        </entry>
+        <entry n="68" xml:id="Strasbourg_1884_e68" source="Cat_Strasbourg_1884-2_typo_0005.jpg">
+          <desc>
+            <name>MASCART, Gustave.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="165" xml:id="Strasbourg_1884_e68_i165">
+            <num>165</num>
+            <title>Côtes de Normandie </title>
+            <desc>(marée basse). 500</desc>
+          </item>
+          <item n="166" xml:id="Strasbourg_1884_e68_i166">
+            <num>166</num>
+            <title>Une rue à Saint-Maurice-sur-Aveyron</title>
+          </item>
+        </entry>
+        <entry n="69" xml:id="Strasbourg_1884_e69" source="Cat_Strasbourg_1884-2_typo_0005.jpg">
+          <desc>
+            <name>MENDEZ, Manuel.</name>
+            <trait>
+              <p>Espagnol. — Paris.</p>
+            </trait>
+          </desc>
+          <item n="167" xml:id="Strasbourg_1884_e69_i167">
+            <num>167</num>
+            <title>Le Printemps 400</title>
+          </item>
+          <item n="168" xml:id="Strasbourg_1884_e69_i168">
+            <num>168</num>
+            <title>Idem  panneaux décoratifs.  400</title>
+          </item>
+        </entry>
+        <entry n="70" xml:id="Strasbourg_1884_e70" source="Cat_Strasbourg_1884-2_typo_0005.jpg">
+          <desc>
+            <name>MOREAU DE JOURS,</name>
+            <trait>
+              <p> Georges. Paris.</p>
+            </trait>
+          </desc>
+          <item n="169" xml:id="Strasbourg_1884_e70_i169">
+            <num>169</num>
+            <title>Une Parisienne. . . . . . . . . . . 800</title>
+          </item>
+        </entry>
+        <entry n="71" xml:id="Strasbourg_1884_e71" source="Cat_Strasbourg_1884-2_typo_0005.jpg">
+          <desc>
+            <name>MUSIN, Auguste.</name>
+            <trait>
+              <p>Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="170" xml:id="Strasbourg_1884_e71_i170">
+            <num>170</num>
+            <title>Le yacht « La Coquette ». . . . . . 1000</title>
+          </item>
+        </entry>
+        <entry n="72" xml:id="Strasbourg_1884_e72" source="Cat_Strasbourg_1884-2_typo_0005.jpg">
+          <desc>
+            <name>MUSIN, François.</name>
+            <trait>
+              <p>Bruxelles</p>
+            </trait>
+          </desc>
+          <item n="171" xml:id="Strasbourg_1884_e72_i171">
+            <num>171</num>
+            <title>L’arrière-port d’Ostende. . . . . . . 1000</title>
+          </item>
+        </entry>
+        <entry n="73" xml:id="Strasbourg_1884_e73" source="Cat_Strasbourg_1884-3_typo_0001.jpg">
+          <desc>
+            <name>AMMAN, Charles.</name>
+            <trait>
+              <p>Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Strasbourg_1884_e73_i1">
+            <num>1</num>
+            <title>Andromaque de Rochegrosse </title>
+            <desc>(Salon de 1883), d’après une reproduction du Journal illustré.</desc>
+          </item>
+        </entry>
+        <entry n="74" xml:id="Strasbourg_1884_e74" source="Cat_Strasbourg_1884-3_typo_0001.jpg">
+          <desc>
+            <name>ANTHONISSEN, Louis-Joseph.</name>
+            <trait>
+              <p>Belge. — Paris.</p>
+            </trait>
+          </desc>
+          <item n="2" xml:id="Strasbourg_1884_e74_i2">
+            <num>2</num>
+            <title>Les raisins. . . . . . . . . . . . fr. 1000</title>
+          </item>
+          <item n="3" xml:id="Strasbourg_1884_e74_i3">
+            <num>3</num>
+            <title>Effet de neige. . . . . . . . . . . 300</title>
+          </item>
+          <item n="4" xml:id="Strasbourg_1884_e74_i4">
+            <num>4</num>
+            <title>Effet de soir dans les Flandres. . . 150</title>
+          </item>
+        </entry>
+        <entry n="75" xml:id="Strasbourg_1884_e75" source="Cat_Strasbourg_1884-3_typo_0001.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>d’AVRIL, Édouard. Grenoble.</p>
+            </trait>
+          </desc>
+          <item n="5" xml:id="Strasbourg_1884_e75_i5">
+            <num>5</num>
+            <title>Le passage du ruisseau. . . . . . 1000</title>
+          </item>
+          <item n="6" xml:id="Strasbourg_1884_e75_i6">
+            <num>6</num>
+            <title>Un lavoir. . . . . . . . . . . . . 600</title>
+          </item>
+        </entry>
+        <entry n="76" xml:id="Strasbourg_1884_e76" source="Cat_Strasbourg_1884-3_typo_0002.jpg">
+          <desc>
+            <name>BÆR, Gil,</name>
+            <trait>
+              <p> né en Alsace. Asnières.</p>
+            </trait>
+          </desc>
+          <item n="7" xml:id="Strasbourg_1884_e76_i7">
+            <num>7</num>
+            <title>« Dans les sentiers remplis d’ivresse»</title>
+          </item>
+        </entry>
+        <entry n="77" xml:id="Strasbourg_1884_e77" source="Cat_Strasbourg_1884-3_typo_0002.jpg">
+          <desc>
+            <name>BALLUE, Pierre-Ernest.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="8" xml:id="Strasbourg_1884_e77_i8">
+            <num>8</num>
+            <title>Dans les cascades de Cernay. . . . fr. 400</title>
+          </item>
+        </entry>
+        <entry n="78" xml:id="Strasbourg_1884_e78" source="Cat_Strasbourg_1884-3_typo_0002.jpg">
+          <desc>
+            <name>BAUDIT, Amédée.</name>
+            <trait>
+              <p>Suisse. — Bordeaux.</p>
+            </trait>
+          </desc>
+          <item n="9" xml:id="Strasbourg_1884_e78_i9">
+            <num>9</num>
+            <title>La fenêtre de ma voisine. . . . . . 1200</title>
+          </item>
+          <item n="10" xml:id="Strasbourg_1884_e78_i10">
+            <num>10</num>
+            <title>La chute du Mahourat </title>
+            <desc>(Cauterets). . 1000</desc>
+          </item>
+          <item n="11" xml:id="Strasbourg_1884_e78_i11">
+            <num>11</num>
+            <title>Fleurs. . . . . . . . . . . . . . . 500</title>
+          </item>
+        </entry>
+        <entry n="79" xml:id="Strasbourg_1884_e79" source="Cat_Strasbourg_1884-3_typo_0002.jpg">
+          <desc>
+            <name>BAUDUIN, Roland.</name>
+            <trait>
+              <p>Anvers.</p>
+            </trait>
+          </desc>
+          <item n="12" xml:id="Strasbourg_1884_e79_i12">
+            <num>12</num>
+            <title>Une page d’amour. . . . . . . . . 250</title>
+          </item>
+          <item n="13" xml:id="Strasbourg_1884_e79_i13">
+            <num>13</num>
+            <title>Après le bal. . . . . . . . . . . . 250</title>
+          </item>
+          <item n="14" xml:id="Strasbourg_1884_e79_i14">
+            <num>14</num>
+            <title>Souvenir d’Ostende. . . . . . . . . 250</title>
+          </item>
+        </entry>
+        <entry n="80" xml:id="Strasbourg_1884_e80" source="Cat_Strasbourg_1884-3_typo_0002.jpg">
+          <desc>
+            <name>BECK, Jules.</name>
+            <trait>
+              <p>Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="15" xml:id="Strasbourg_1884_e80_i15">
+            <num>15</num>
+            <title>La Suisse entre 2000 et 4600 mètres d’altitude. </title>
+            <desc>(Vues photographiques.)</desc>
+          </item>
+        </entry>
+        <entry n="81" xml:id="Strasbourg_1884_e81" source="Cat_Strasbourg_1884-3_typo_0002.jpg">
+          <desc>
+            <name>BELLANGÉ, Eugène.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="16" xml:id="Strasbourg_1884_e81_i16">
+            <num>16</num>
+            <title>Épisode de Wagram, 1809. </title>
+            <desc>1809. (L’artillerie française s’apprête à soutenir une charge de cavalerie dirigée au loin contre l’armée autrichienne). . . 2500</desc>
+          </item>
+          <item n="17" xml:id="Strasbourg_1884_e81_i17">
+            <num>17</num>
+            <title>Le retour au pays </title>
+            <desc>(Normandie). . . 600</desc>
+          </item>
+          <item n="18" xml:id="Strasbourg_1884_e81_i18">
+            <num>18</num>
+            <title>Souvenir d’Interlaken. . . . . . . . 1200</title>
+          </item>
+        </entry>
+        <entry n="82" xml:id="Strasbourg_1884_e82" source="Cat_Strasbourg_1884-3_typo_0003.jpg">
+          <desc>
+            <name>BELLANGER, Félix-Pierre.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="19" xml:id="Strasbourg_1884_e82_i19">
+            <num>19</num>
+            <title>Après le repas. . . . . . . . . . . fr. 500</title>
+          </item>
+        </entry>
+        <entry n="83" xml:id="Strasbourg_1884_e83" source="Cat_Strasbourg_1884-3_typo_0003.jpg">
+          <desc>
+            <name>BERTHÉLEMY, Pierre-Émile.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="20" xml:id="Strasbourg_1884_e83_i20">
+            <num>20</num>
+            <title>Vue de l’église de St.-Vaast-la-Hougue 500</title>
+          </item>
+        </entry>
+        <entry n="84" xml:id="Strasbourg_1884_e84" source="Cat_Strasbourg_1884-3_typo_0003.jpg">
+          <desc>
+            <name>BIDLINGMEYER, Jules.</name>
+            <trait>
+              <p>Mulhouse.</p>
+            </trait>
+          </desc>
+          <item n="21" xml:id="Strasbourg_1884_e84_i21">
+            <num>21</num>
+            <title>Bécasse et poissons. . . . . . . . . 200</title>
+          </item>
+          <item n="22" xml:id="Strasbourg_1884_e84_i22">
+            <num>22</num>
+            <title>Bords de l’Ill. . . . . . . . . . . 100</title>
+          </item>
+        </entry>
+        <entry n="85" xml:id="Strasbourg_1884_e85" source="Cat_Strasbourg_1884-3_typo_0003.jpg">
+          <desc>
+            <name>BIRONNEAU, Mlle Marie.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="23" xml:id="Strasbourg_1884_e85_i23">
+            <num>23</num>
+            <title>Tête de genre </title>
+            <desc>(pâte tendre). . . . . 75</desc>
+          </item>
+          <item n="24" xml:id="Strasbourg_1884_e85_i24">
+            <num>24</num>
+            <title>Jeune Italien </title>
+            <desc>(faïence). . . . . 75</desc>
+          </item>
+        </entry>
+        <entry n="86" xml:id="Strasbourg_1884_e86" source="Cat_Strasbourg_1884-3_typo_0003.jpg">
+          <desc>
+            <name>BIVA, Paul.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="25" xml:id="Strasbourg_1884_e86_i25">
+            <num>25</num>
+            <title>Roses. . . . . . . . . . . . . . . 300</title>
+          </item>
+          <item n="26" xml:id="Strasbourg_1884_e86_i26">
+            <num>26</num>
+            <title>Fruits et fleurs. . . . . . . . . . . 350</title>
+          </item>
+        </entry>
+        <entry n="87" xml:id="Strasbourg_1884_e87" source="Cat_Strasbourg_1884-3_typo_0003.jpg">
+          <desc>
+            <name>BOCION, François.</name>
+            <trait>
+              <p>Lausanne.</p>
+            </trait>
+          </desc>
+          <item n="27" xml:id="Strasbourg_1884_e87_i27">
+            <num>27</num>
+            <title>Environs d’Evian. . . . . . . . . 1200</title>
+          </item>
+          <item n="28" xml:id="Strasbourg_1884_e87_i28">
+            <num>28</num>
+            <title>Grand canal à Venise. . . . . . . 1000</title>
+          </item>
+          <item n="29" xml:id="Strasbourg_1884_e87_i29">
+            <num>29</num>
+            <title>A Clarens </title>
+            <desc>(lac Léman). . . . . . . 500</desc>
+          </item>
+          <item n="30" xml:id="Strasbourg_1884_e87_i30">
+            <num>30</num>
+            <title>Les Filets. . . . . . . . . . . . . 700</title>
+          </item>
+        </entry>
+        <entry n="88" xml:id="Strasbourg_1884_e88" source="Cat_Strasbourg_1884-3_typo_0003.jpg">
+          <desc>
+            <name>BOQUENTIN, Mlle Marie.</name>
+            <trait>
+              <p>Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="31" xml:id="Strasbourg_1884_e88_i31">
+            <num>31</num>
+            <title>Lady Catharine Howard, d’après Wilkin </title>
+            <desc>d’après Wilkin (miniature). . . . . . . . 300</desc>
+          </item>
+        </entry>
+        <entry n="89" xml:id="Strasbourg_1884_e89" source="Cat_Strasbourg_1884-3_typo_0004.jpg">
+          <desc>
+            <name>COURTAT, Louis.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="55" xml:id="Strasbourg_1884_e89_i55">
+            <num>55</num>
+            <title>Jeune fille. . . . . . . . . . . . . fr. 800</title>
+          </item>
+          <item n="56" xml:id="Strasbourg_1884_e89_i56">
+            <num>56</num>
+            <title>Tête de jeune fille. . . . . . . . . 800</title>
+          </item>
+        </entry>
+        <entry n="90" xml:id="Strasbourg_1884_e90" source="Cat_Strasbourg_1884-3_typo_0004.jpg">
+          <desc>
+            <name>CROSNIER, Jules.</name>
+            <trait>
+              <p>Français. — Genève.</p>
+            </trait>
+          </desc>
+          <item n="57" xml:id="Strasbourg_1884_e90_i57">
+            <num>57</num>
+            <title>Une ferme en Bourbonnais </title>
+            <desc>(aquarelle) 200</desc>
+          </item>
+          <item n="58" xml:id="Strasbourg_1884_e90_i58">
+            <num>58</num>
+            <title>Avant l’averse </title>
+            <desc>(Millières), » 180</desc>
+          </item>
+          <item n="59" xml:id="Strasbourg_1884_e90_i59">
+            <num>59</num>
+            <title>Branches de pommiers, » 160</title>
+            <desc>» 160</desc>
+          </item>
+        </entry>
+        <entry n="91" xml:id="Strasbourg_1884_e91" source="Cat_Strasbourg_1884-3_typo_0004.jpg">
+          <desc>
+            <name>DELSAUX, Guillaume.</name>
+            <trait>
+              <p>Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="60" xml:id="Strasbourg_1884_e91_i60">
+            <num>60</num>
+            <title>Un quai à Namur. . . . . . . . . 400</title>
+          </item>
+          <item n="61" xml:id="Strasbourg_1884_e91_i61">
+            <num>61</num>
+            <title>Matinée d’avril. . . . . . . . . . . 375</title>
+          </item>
+        </entry>
+        <entry n="92" xml:id="Strasbourg_1884_e92" source="Cat_Strasbourg_1884-3_typo_0004.jpg">
+          <desc>
+            <name>DEROCHE, Mad.</name>
+            <trait>
+              <p> Marie. Montigny (Eure).</p>
+            </trait>
+          </desc>
+          <item n="62" xml:id="Strasbourg_1884_e92_i62">
+            <num>62</num>
+            <title>Roses de Nice. . . . . . . . . . . 400</title>
+          </item>
+          <item n="63" xml:id="Strasbourg_1884_e92_i63">
+            <num>63</num>
+            <title>Chrysanthèmes. . . . . . . . . . . 300</title>
+          </item>
+        </entry>
+        <entry n="93" xml:id="Strasbourg_1884_e93" source="Cat_Strasbourg_1884-3_typo_0004.jpg">
+          <desc>
+            <name>DEROCHE, Victor.</name>
+            <trait>
+              <p>Montigny (Eure).</p>
+            </trait>
+          </desc>
+          <item n="64" xml:id="Strasbourg_1884_e93_i64">
+            <num>64</num>
+            <title>Pêcheuses de la Somme. . . . . . 350</title>
+          </item>
+          <item n="65" xml:id="Strasbourg_1884_e93_i65">
+            <num>65</num>
+            <title>Pêche à la courtine à l’embouchure de la Charente. . . . . . . . . . 450</title>
+          </item>
+        </entry>
+        <entry n="94" xml:id="Strasbourg_1884_e94" source="Cat_Strasbourg_1884-3_typo_0004.jpg">
+          <desc>
+            <name>DESLIENS, Mlle Marie.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="66" xml:id="Strasbourg_1884_e94_i66">
+            <num>66</num>
+            <title>Panier de cerises. . . . . . . . . 200</title>
+          </item>
+        </entry>
+        <entry n="95" xml:id="Strasbourg_1884_e95" source="Cat_Strasbourg_1884-3_typo_0004.jpg">
+          <desc>
+            <name>DEYROLLE, Théophile.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="67" xml:id="Strasbourg_1884_e95_i67">
+            <num>67</num>
+            <title>Un sauvetage à Concarneau </title>
+            <desc>(Finistère) 1000</desc>
+          </item>
+          <item n="68" xml:id="Strasbourg_1884_e95_i68">
+            <num>68</num>
+            <title>Paysanne bretonne. . . . . . . . . 300</title>
+          </item>
+        </entry>
+        <entry n="96" xml:id="Strasbourg_1884_e96" source="Cat_Strasbourg_1884-3_typo_0005.jpg">
+          <desc>
+            <name>DIEMER, Henri.</name>
+            <trait>
+              <p>Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="69" xml:id="Strasbourg_1884_e96_i69">
+            <num>69</num>
+            <title>Environs d’Ostwald.</title>
+          </item>
+          <item n="70" xml:id="Strasbourg_1884_e96_i70">
+            <num>70</num>
+            <title>Fond de forêt.</title>
+          </item>
+        </entry>
+        <entry n="97" xml:id="Strasbourg_1884_e97" source="Cat_Strasbourg_1884-3_typo_0005.jpg">
+          <desc>
+            <name>DORNOIS, Albert.</name>
+            <trait>
+              <p>Paris. Ensemble. Séparés.</p>
+            </trait>
+          </desc>
+          <item n="71" xml:id="Strasbourg_1884_e97_i71">
+            <num>71</num>
+            <title>Metz. Pont Saint-Georges. 200  fr. 150 fusains</title>
+          </item>
+          <item n="72" xml:id="Strasbourg_1884_e97_i72">
+            <num>72</num>
+            <title>» Château de Vernéville  75</title>
+          </item>
+          <item n="73" xml:id="Strasbourg_1884_e97_i73">
+            <num>73</num>
+            <title>Prairie à Montmerrey </title>
+            <desc>(Orne). .  120</desc>
+          </item>
+        </entry>
+        <entry n="98" xml:id="Strasbourg_1884_e98" source="Cat_Strasbourg_1884-3_typo_0005.jpg">
+          <desc>
+            <name>DUPAIN, Edmond-Louis.</name>
+            <trait>
+              <p>Paris.</p>
+            </trait>
+          </desc>
+          <item n="74" xml:id="Strasbourg_1884_e98_i74">
+            <num>74</num>
+            <title>Namouna. . . . . . . . . . . . . 1500</title>
+          </item>
+        </entry>
+        <entry n="99" xml:id="Strasbourg_1884_e99" source="Cat_Strasbourg_1884-3_typo_0005.jpg">
+          <desc>
+            <name>DUSSIEUX-KELLER, Mad.</name>
+            <trait>
+              <p> Stéphanie. Paris.</p>
+            </trait>
+          </desc>
+          <item n="75" xml:id="Strasbourg_1884_e99_i75">
+            <num>75</num>
+            <title>Orange ouverte. . . . . . . . . . 300</title>
+          </item>
+          <item n="76" xml:id="Strasbourg_1884_e99_i76">
+            <num>76</num>
+            <title>Fleurs des champs. . . . . . . . . 350</title>
+          </item>
+        </entry>
+        <entry n="100" xml:id="Strasbourg_1884_e100" source="Cat_Strasbourg_1884-3_typo_0005.jpg">
+          <desc>
+            <name>EHRHARD, Auguste.</name>
+            <trait>
+              <p>Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="77" xml:id="Strasbourg_1884_e100_i77">
+            <num>77</num>
+            <title>Marchande de fleurs.</title>
+          </item>
+          <item n="78" xml:id="Strasbourg_1884_e100_i78">
+            <num>78</num>
+            <title>Joueurs de cartes.</title>
+          </item>
+        </entry>
+        <entry n="101" xml:id="Strasbourg_1884_e101" source="Cat_Strasbourg_1884-3_typo_0005.jpg">
+          <desc>
+            <name>EISMAN-SEMENOWSKY, Émile.</name>
+            <trait>
+              <p>Russe. — Paris.</p>
+            </trait>
+          </desc>
+          <item n="79" xml:id="Strasbourg_1884_e101_i79">
+            <num>79</num>
+            <title>Froufrou. . . . . . . . . . . . . 1500</title>
+          </item>
+          <item n="80" xml:id="Strasbourg_1884_e101_i80">
+            <num>80</num>
+            <title>In vino veritas. . . . . . . . . . . 1200</title>
+          </item>
+          <item n="81" xml:id="Strasbourg_1884_e101_i81">
+            <num>81</num>
+            <title>Friquette. . . . . . . . . . . . . 600</title>
+          </item>
+          <item n="82" xml:id="Strasbourg_1884_e101_i82">
+            <num>82</num>
+            <title>Flora. . . . . . . . . . . . . . . 600</title>
+          </item>
+        </entry>
+        <entry n="102" xml:id="Strasbourg_1884_e102" source="Cat_Strasbourg_1884-3_typo_0005.jpg">
+          <desc>
+            <name>FISCHER, Carlos.</name>
+            <trait>
+              <p>Strasbourg.</p>
+            </trait>
+          </desc>
+          <item n="83" xml:id="Strasbourg_1884_e102_i83">
+            <num>83</num>
+            <title>Roses.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

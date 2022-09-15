@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Paris_1965">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Paris_1965_e1" source="Cat_Paris_1965_typo_0002.jpg">
+          <desc>
+            <name>Peter SCHAMONI,</name>
+            <trait>
+              <p> né en 1934 à Berlin (Allemagne).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e1_i1">
+            <title>Voyage de découvertes sans savoir, 1963. Internationes e.V.</title>
+            <desc>1963. Internationes e.V.</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e1_i2">
+            <title>Bonn.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Paris_1965_e2" source="Cat_Paris_1965_typo_0002.jpg">
+          <desc>
+            <name>Ferry RADAX,</name>
+            <trait>
+              <p> né en 1932 à Vienne (Autriche).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e2_i1">
+            <title>En marge, 1963 </title>
+            <desc>1963 (noir). Victor N. Cohen, Zurich.</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e2_i2">
+            <title>Hundertwasser, 1965 </title>
+            <desc>1965 (noir et couleurs).</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Paris_1965_e3" source="Cat_Paris_1965_typo_0002.jpg">
+          <desc>
+            <name>Paulo Gil de ANDRADE SOARES,</name>
+            <trait>
+              <p> né en 1935 à Salvador</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e3_i1">
+            <title></title>
+            <desc>(Brésil).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e3_i2">
+            <title>Histoire du Cangaço, 1965 </title>
+            <desc>1965 (noir).</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Paris_1965_e4" source="Cat_Paris_1965_typo_0002.jpg">
+          <desc>
+            <name>Marcel CARRIERE,</name>
+            <trait>
+              <p> né en 1934 à Québec (Canada).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e4_i1">
+            <title>Villeneuve, peintre-barbier, 1964. Office national du Film</title>
+            <desc>peintre-barbier, 1964. Office national du Film</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Paris_1965_e5" source="Cat_Paris_1965_typo_0002.jpg">
+          <desc>
+            <name>Canada.</name>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e5_i1">
+            <title>Jacques GODBOUT, né en 1933 à Montréal </title>
+            <desc>né en 1933 à Montréal (Canada).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e5_i2">
+            <title>Le monde va nous prendre pour des sauvages, 1963. Office</title>
+            <desc>1963. Office</desc>
+          </item>
+          <item n="3" xml:id="Paris_1965_e5_i3">
+            <title>National du Film, Canada.</title>
+            <desc>Canada.</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Paris_1965_e6" source="Cat_Paris_1965_typo_0002.jpg">
+          <desc>
+            <name>Antonio MERCERO JULDAIN,</name>
+            <trait>
+              <p> né en 1936 à Lasarte</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e6_i1">
+            <title></title>
+            <desc>(Espagne).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e6_i2">
+            <title>Trotin troteras, 1962. Ecole Officielle de cinéma, Madrid.</title>
+            <desc>1962. Ecole Officielle de cinéma, Madrid.</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Paris_1965_e7" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Pedro OLEA RETOLAZA,</name>
+            <trait>
+              <p> né en 1938 à Bilbao (Espagne).</p>
+            </trait>
+          </desc>
+        </entry>
+        <entry n="8" xml:id="Paris_1965_e8" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Anabel</name>
+            <trait>
+              <p> 1963. Ecole Officielle de Cinéma, Madrid.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e8_i1">
+            <title>Luis PELLEGERO BEL, né en 1938 à Pampelune </title>
+            <desc>né en 1938 à Pampelune (Espagne).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e8_i2">
+            <title>Plastique, 1962.</title>
+            <desc>1962.</desc>
+          </item>
+          <item n="3" xml:id="Paris_1965_e8_i3">
+            <title>Chromatique, 1962.</title>
+            <desc>1962.</desc>
+          </item>
+          <item n="4" xml:id="Paris_1965_e8_i4">
+            <title>Eurythmie, 1962.</title>
+            <desc>1962.</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Paris_1965_e9" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>FRANCE</name>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e9_i1">
+            <title>Jacques BRISSOT, né en 1929, à Paris </title>
+            <desc>né en 1929, à Paris (France).</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Paris_1965_e10" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>La</name>
+            <trait>
+              <p> troisième Biennale de Paris, 1963 (noir).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e10_i1">
+            <title>Dominique DELOUCHE, né en 1931 à Paris </title>
+            <desc>né en 1931 à Paris (France).</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Paris_1965_e11" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>L'Adage,</name>
+            <trait>
+              <p> 1964 (noir).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e11_i1">
+            <title>Parade 1964,1965 </title>
+            <desc>965 (couleurs).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e11_i2">
+            <title>Jean DESVILLES, né en 1931 à Paris </title>
+            <desc>né en 1931 à Paris (France).</desc>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Paris_1965_e12" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Auto-portrait de Rembrandt,</name>
+            <trait>
+              <p> 1965 (noir).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e12_i1">
+            <title>Claude GUILLEMOT, né en 1935 à Alger </title>
+            <desc>né en 1935 à Alger (Algérie).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e12_i2">
+            <title>La Belle Epoque, 1964 </title>
+            <desc>1964 (couleurs).</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Paris_1965_e13" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Adrien</name>
+            <trait>
+              <p> s'éloigne, 1964 (noir).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e13_i1">
+            <title>Piotr KAMLER, né en 1936 à Varsovie </title>
+            <desc>né en 1936 à Varsovie (Pologne).</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Paris_1965_e14" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Meurtre,</name>
+            <trait>
+              <p> 1964 (couleurs).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e14_i1">
+            <title>Nelly KAPLAN, née en 1932 à Buenos-Aires </title>
+            <desc>née en 1932 à Buenos-Aires (Argentine).</desc>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Paris_1965_e15" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Abel Gance,</name>
+            <trait>
+              <p> Hier et Demain, 1963 (noir et couleurs).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e15_i1">
+            <title>Peter KASSOVITZ, né en 1938 à Budapest </title>
+            <desc>né en 1938 à Budapest (Hongrie).</desc>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Paris_1965_e16" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Steinberg,</name>
+            <trait>
+              <p> 1963 (noir).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e16_i1">
+            <title>Réveil musculaire, 1965 </title>
+            <desc>1965 (noir).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e16_i2">
+            <title>Jean-François LA GUIONIE, né en 1939 à Besançon</title>
+            <desc>né en 1939 à Besançon</desc>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Paris_1965_e17" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>(France).</name>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e17_i1">
+            <title>La demoiselle et le violoncelliste, 1964 </title>
+            <desc>1964 (couleurs).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e17_i2">
+            <title>Edouard LUNTZ, né en 1931 à La Baule </title>
+            <desc>né en 1931 à La Baule (France).</desc>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Paris_1965_e18" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>L</name>
+            <trait>
+              <p>'escalier, 1964 (noir).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e18_i1">
+            <title>Manuel OTERO, né en 1938 à Esponella </title>
+            <desc>né en 1938 à Esponella (Espagne).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e18_i2">
+            <title>L'île aux cactus, 1963 </title>
+            <desc>1963 (easmancolor).</desc>
+          </item>
+          <item n="3" xml:id="Paris_1965_e18_i3">
+            <title>Atome Tilt, 1964 </title>
+            <desc>1964 (easmancolor). En collaboration avec Jacques</desc>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Paris_1965_e19" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Leroux.</name>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e19_i1">
+            <title>Gérard PATRIS, né en 1931 à Bouresse </title>
+            <desc>né en 1931 à Bouresse (France).</desc>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Paris_1965_e20" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Dubuffet,</name>
+            <trait>
+              <p> auto-portrait, 1962 (couleurs).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e20_i1">
+            <title>Daniel PAUQUET, né en 1936 à La Garenne-Colombes</title>
+            <desc>né en 1936 à La Garenne-Colombes</desc>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Paris_1965_e21" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>(France).</name>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e21_i1">
+            <title>Catch, 1964 </title>
+            <desc>1964 (noir).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e21_i2">
+            <title>Jean-Daniel POLLET, né en 1936 à La Madeleine </title>
+            <desc>né en 1936 à La Madeleine (France).</desc>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Paris_1965_e22" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Bassae,</name>
+            <trait>
+              <p> 1964 (couleurs).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e22_i1">
+            <title>Jean-Pierre PREVOST, né en 1942 à Laigle </title>
+            <desc>né en 1942 à Laigle (France).</desc>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Paris_1965_e23" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Trois</name>
+            <trait>
+              <p> motifs contre un mur, 1965 (noir).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e23_i1">
+            <title>Gérard RENATEAU, né en 1933 à Biarritz </title>
+            <desc>né en 1933 à Biarritz (France).</desc>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Paris_1965_e24" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Les</name>
+            <trait>
+              <p> tachistes, 1962 (couleurs).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e24_i1">
+            <title>Jacques ROULAND, né en 1930 à Lourdoueix-St-Pierre</title>
+            <desc>né en 1930 à Lourdoueix-St-Pierre</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e24_i2">
+            <title></title>
+            <desc>(France).</desc>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Paris_1965_e25" source="Cat_Paris_1965_typo_0003.jpg">
+          <desc>
+            <name>Romancero,</name>
+            <trait>
+              <p> 1962 (noir).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e25_i1">
+            <title>Alain SAURY, né en 1932 à Soisy </title>
+            <desc>né en 1932 à Soisy (France).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e25_i2">
+            <title>Au pied de l'arbre, 1964 </title>
+            <desc>1964 (noir).</desc>
+          </item>
+          <item n="3" xml:id="Paris_1965_e25_i3">
+            <title>Ecce Homo, 1964 </title>
+            <desc>1964 (noir).</desc>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Paris_1965_e26" source="Cat_Paris_1965_typo_0004.jpg">
+          <desc>
+            <name>Guy THOUVENIN,</name>
+            <trait>
+              <p> né en 1935 à Paris (France).</p>
+            </trait>
+          </desc>
+        </entry>
+        <entry n="27" xml:id="Paris_1965_e27" source="Cat_Paris_1965_typo_0004.jpg">
+          <desc>
+            <name>Aqua-Thème,</name>
+            <trait>
+              <p> 1964 (noir).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e27_i1">
+            <title>Jacques VEINAT, né en 1931 à Paris </title>
+            <desc>né en 1931 à Paris (France).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e27_i2">
+            <title>H. M. ou l'espace du dedans, 1964 </title>
+            <desc>1964 (couleurs).</desc>
+          </item>
+        </entry>
+        <entry n="28" xml:id="Paris_1965_e28" source="Cat_Paris_1965_typo_0004.jpg">
+          <desc>
+            <name>François WEYERGANS,</name>
+            <trait>
+              <p> né en 1941 à Aix-en-Provence</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e28_i1">
+            <title></title>
+            <desc>(France).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e28_i2">
+            <title>Statues, 1964 </title>
+            <desc>1964 (noir).</desc>
+          </item>
+          <item n="3" xml:id="Paris_1965_e28_i3">
+            <title>Bejart, 1961 </title>
+            <desc>1961 (noir).</desc>
+          </item>
+        </entry>
+        <entry n="29" xml:id="Paris_1965_e29" source="Cat_Paris_1965_typo_0004.jpg">
+          <desc>
+            <name>Gabor TAKACS,</name>
+            <trait>
+              <p> né en 1930 à Budapest (Hongrie).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e29_i1">
+            <title>La composition dans la peinture, 1963. Hungarofilm, Studios</title>
+            <desc>1963. Hungarofilm, Studios</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e29_i2">
+            <title>de Budapest, Hongrie.</title>
+            <desc>Hongrie.</desc>
+          </item>
+          <item n="3" xml:id="Paris_1965_e29_i3">
+            <title>Les couleurs dans la peinture, 1964. Hungarofilm, Studios de</title>
+            <desc>1964. Hungarofilm, Studios de</desc>
+          </item>
+          <item n="4" xml:id="Paris_1965_e29_i4">
+            <title>Budapest, Hongrie.</title>
+            <desc>Hongrie.</desc>
+          </item>
+        </entry>
+        <entry n="30" xml:id="Paris_1965_e30" source="Cat_Paris_1965_typo_0004.jpg">
+          <desc>
+            <name>André GOLDENBERG,</name>
+            <trait>
+              <p> et J. et J.P. PACALY, né en 1932 à</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e30_i1">
+            <title>Marrakech </title>
+            <desc>(Maroc).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e30_i2">
+            <title>Le jardin de Louardiri, 1964 </title>
+            <desc>1964 (couleurs).</desc>
+          </item>
+        </entry>
+        <entry n="31" xml:id="Paris_1965_e31" source="Cat_Paris_1965_typo_0004.jpg">
+          <desc>
+            <name>Karel G.</name>
+            <trait>
+              <p> SCHMEINK, né en 1937 à Amsterdam (Pays-Bas).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e31_i1">
+            <title>Des portes, des fenêtres, 1965. Rijksvoorlichtingsdienst,</title>
+            <desc>des fenêtres, 1965. Rijksvoorlichtingsdienst,</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e31_i2">
+            <title>La Haye.</title>
+          </item>
+        </entry>
+        <entry n="32" xml:id="Paris_1965_e32" source="Cat_Paris_1965_typo_0004.jpg">
+          <desc>
+            <name>Krzysztof DEBOWSKI,</name>
+            <trait>
+              <p> né en 1932 à Varsovie (Pologne).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e32_i1">
+            <title>Dimanche à la campagne, 1963. Film Polski, Varsovie.</title>
+            <desc>1963. Film Polski, Varsovie.</desc>
+          </item>
+        </entry>
+        <entry n="33" xml:id="Paris_1965_e33" source="Cat_Paris_1965_typo_0004.jpg">
+          <desc>
+            <name>Stefan JANIK,</name>
+            <trait>
+              <p> né en 1932 à Argenteuil (France).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e33_i1">
+            <title>Pêle-mêle, 1965. Film Polski, Varsovie.</title>
+            <desc>1965. Film Polski, Varsovie.</desc>
+          </item>
+        </entry>
+        <entry n="34" xml:id="Paris_1965_e34" source="Cat_Paris_1965_typo_0004.jpg">
+          <desc>
+            <name>Daniel SZCZECHURA,</name>
+            <trait>
+              <p> né en 1930 à Varsovie (Pologne).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e34_i1">
+            <title>Le fauteuil, 1963. Feux pleins, Paris.</title>
+            <desc>1963. Feux pleins, Paris.</desc>
+          </item>
+        </entry>
+        <entry n="35" xml:id="Paris_1965_e35" source="Cat_Paris_1965_typo_0005.jpg">
+          <desc>
+            <name>Nina BEHAR,</name>
+            <trait>
+              <p> née en 1930 à Bucarest (Roumanie).</p>
+            </trait>
+          </desc>
+        </entry>
+        <entry n="36" xml:id="Paris_1965_e36" source="Cat_Paris_1965_typo_0005.jpg">
+          <desc>
+            <name>Art Monumental,</name>
+            <trait>
+              <p> 1964. Romfilm, Bucarest.</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e36_i1">
+            <title>Erich NUSSBAUM, né en 1934 à Cris-Hunedoara </title>
+            <desc>né en 1934 à Cris-Hunedoara (Rou¬</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e36_i2">
+            <title>manie).</title>
+          </item>
+          <item n="3" xml:id="Paris_1965_e36_i3">
+            <title>Tapis paysan de Roumanie, 1965. Romfilm, Bucarest.</title>
+            <desc>1965. Romfilm, Bucarest.</desc>
+          </item>
+          <item n="4" xml:id="Paris_1965_e36_i4">
+            <title>Al. Ciucurenco, 1964. Romfilm, Bucarest.</title>
+            <desc>1964. Romfilm, Bucarest.</desc>
+          </item>
+        </entry>
+        <entry n="37" xml:id="Paris_1965_e37" source="Cat_Paris_1965_typo_0005.jpg">
+          <desc>
+            <name>SUEDE</name>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e37_i1">
+            <title>Ralph LUNDSTEN, né en 1936 à Ersnäs </title>
+            <desc>né en 1936 à Ersnäs (Suède).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e37_i2">
+            <title>Composition en trois phrases, 1965.</title>
+            <desc>1965.</desc>
+          </item>
+        </entry>
+        <entry n="38" xml:id="Paris_1965_e38" source="Cat_Paris_1965_typo_0005.jpg">
+          <desc>
+            <name>Le Hoang HOA,</name>
+            <trait>
+              <p> né en 1933 à Khành-Hoa (Vietnam).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e38_i1">
+            <title>Les laques, 1961. Centre National Cinématographique du</title>
+            <desc>1961. Centre National Cinématographique du</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e38_i2">
+            <title>Vietnam, Saïgon.</title>
+            <desc>Saïgon.</desc>
+          </item>
+        </entry>
+        <entry n="39" xml:id="Paris_1965_e39" source="Cat_Paris_1965_typo_0005.jpg">
+          <desc>
+            <name>Boris KOLAR,</name>
+            <trait>
+              <p> né en 1933 à Zagreb (Yougoslavie).</p>
+            </trait>
+          </desc>
+        </entry>
+        <entry n="40" xml:id="Paris_1965_e40" source="Cat_Paris_1965_typo_0005.jpg">
+          <desc>
+            <name>Vau-vau,</name>
+            <trait>
+              <p> 1964 (couleurs).</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="Paris_1965_e40_i1">
+            <title>Irena VRKLJAN, née en 1930 à Belgrade </title>
+            <desc>née en 1930 à Belgrade (Yougoslavie).</desc>
+          </item>
+          <item n="2" xml:id="Paris_1965_e40_i2">
+            <title>Le peintre Rabusin, 1964. Radiodiffusion Télévision de</title>
+            <desc>1964. Radiodiffusion Télévision de</desc>
+          </item>
+          <item n="3" xml:id="Paris_1965_e40_i3">
+            <title>Zagreb.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

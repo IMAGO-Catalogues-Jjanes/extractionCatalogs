@@ -1,0 +1,720 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rouen_1869">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Rouen_1869_e1" source="Cat_Rouen_1869_typo_0001.jpg">
+          <desc>
+            <name>LOUVRY (Albert),</name>
+            <trait>
+              <p>Né à Rouen, élève de MM. Gustave Morin et Pils. Boulevard du Montparnasse. 111, Paris.</p>
+            </trait>
+          </desc>
+          <item n="226" xml:id="Rouen_1869_e1_i226">
+            <num>226</num>
+            <title>Dessous de Bois </title>
+            <desc>(effet du matin).</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Rouen_1869_e2" source="Cat_Rouen_1869_typo_0001.jpg">
+          <desc>
+            <name>MAGY (Jules),</name>
+            <trait>
+              <p>Né à Metz, élève de E. Loubon. Rue des Martyrs, 24, Paris.</p>
+            </trait>
+          </desc>
+          <item n="227" xml:id="Rouen_1869_e2_i227">
+            <num>227</num>
+            <title>Le Siroco </title>
+            <desc>(Algérie).</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Rouen_1869_e3" source="Cat_Rouen_1869_typo_0001.jpg">
+          <desc>
+            <name>MAINCENT (Gustave),</name>
+            <trait>
+              <p>Né à Paris, élève de MM. Pils et Cabasson. Rue Saint-Paul, 26, Paris.</p>
+            </trait>
+          </desc>
+          <item n="228" xml:id="Rouen_1869_e3_i228">
+            <num>228</num>
+            <title>Barrage à Champigny.</title>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Rouen_1869_e4" source="Cat_Rouen_1869_typo_0001.jpg">
+          <desc>
+            <name>MALDANT (Charles),</name>
+            <trait>
+              <p>Né à Savigny (Côte-d'Or), élève de A. Gibert. A Savigny.</p>
+            </trait>
+          </desc>
+          <item n="229" xml:id="Rouen_1869_e4_i229">
+            <num>229</num>
+            <title>Nature morte.</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Rouen_1869_e5" source="Cat_Rouen_1869_typo_0002.jpg">
+          <desc>
+            <name>MALENÇON (Paul),</name>
+            <trait>
+              <p>Né à Rouen, élève de Gros et P. Delaroche. Médaille d'argent et rappel à Rouen. Rue des Charrettes, 10, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="230" xml:id="Rouen_1869_e5_i230">
+            <num>230</num>
+            <title>Episode de chasse.</title>
+          </item>
+          <item n="231" xml:id="Rouen_1869_e5_i231">
+            <num>231</num>
+            <title>Le lancé.</title>
+          </item>
+          <item n="232" xml:id="Rouen_1869_e5_i232">
+            <num>232</num>
+            <title>Chasse au cerf.</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Rouen_1869_e6" source="Cat_Rouen_1869_typo_0002.jpg">
+          <desc>
+            <name>MALLET (Félix),</name>
+            <trait>
+              <p>Né à Rouen. Demeurant à Malaunay.</p>
+            </trait>
+          </desc>
+          <item n="233" xml:id="Rouen_1869_e6_i233">
+            <num>233</num>
+            <title>Gare au chat, nature morte.</title>
+            <desc>nature morte.</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Rouen_1869_e7" source="Cat_Rouen_1869_typo_0002.jpg">
+          <desc>
+            <name>MANZONI (Paolo),</name>
+            <trait>
+              <p>Né à Déjio (Italie). Médaille d'or au Havre, 1868. Rue Boulainvilliers, 18, Passy-Paris.</p>
+            </trait>
+          </desc>
+          <item n="234" xml:id="Rouen_1869_e7_i234">
+            <num>234</num>
+            <title>Effet de neige.</title>
+          </item>
+          <item n="235" xml:id="Rouen_1869_e7_i235">
+            <num>235</num>
+            <title>Effet de nuit aux environs de Bristol.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Rouen_1869_e8" source="Cat_Rouen_1869_typo_0002.jpg">
+          <desc>
+            <name>MARC (Eugène),</name>
+            <trait>
+              <p>Né à Rouen, élève de David d’Angers. Rue Vandamme, 67, Paris.</p>
+            </trait>
+          </desc>
+          <item n="236" xml:id="Rouen_1869_e8_i236">
+            <num>236</num>
+            <title>Le Moineau.</title>
+          </item>
+          <item n="237" xml:id="Rouen_1869_e8_i237">
+            <num>237</num>
+            <title>Le chant du Rossignol.</title>
+          </item>
+          <item n="238" xml:id="Rouen_1869_e8_i238">
+            <num>238</num>
+            <title>Oranges et figues.</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Rouen_1869_e9" source="Cat_Rouen_1869_typo_0003.jpg">
+          <desc>
+            <name>MARCHAUX (Aimé),</name>
+            <trait>
+              <p>Né à Paris, élève de MM. Hébert et Jalabert. Paris.</p>
+            </trait>
+          </desc>
+          <item n="239" xml:id="Rouen_1869_e9_i239">
+            <num>239</num>
+            <title>Jeune fille arrosant des fleurs.</title>
+          </item>
+          <item n="240" xml:id="Rouen_1869_e9_i240">
+            <num>240</num>
+            <title>Jeune fille cueillant des fleurs.</title>
+          </item>
+          <item n="241" xml:id="Rouen_1869_e9_i241">
+            <num>241</num>
+            <title>Jeune fille prenant un papillon.</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Rouen_1869_e10" source="Cat_Rouen_1869_typo_0003.jpg">
+          <desc>
+            <name>MARTIN (Eugène),</name>
+            <trait>
+              <p>Né au Havre, élève de MM. Léon Cogniet et Hébert. Médaille d'argent, Le Havre, 1868. Boulevard Rochechouart, 64, Paris.</p>
+            </trait>
+          </desc>
+          <item n="242" xml:id="Rouen_1869_e10_i242">
+            <num>242</num>
+            <title>Chassé du Cabaret.</title>
+          </item>
+          <item n="243" xml:id="Rouen_1869_e10_i243">
+            <num>243</num>
+            <title>Le Nouveau-né.</title>
+          </item>
+          <item n="244" xml:id="Rouen_1869_e10_i244">
+            <num>244</num>
+            <title>Protection du Grand-Père.</title>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Rouen_1869_e11" source="Cat_Rouen_1869_typo_0003.jpg">
+          <desc>
+            <name>MARTIN (Gabriel),</name>
+            <trait>
+              <p>Né à Rouen, élève de MM. Gustave Morin et Cabanel. Rue Madame, 52, Paris.</p>
+            </trait>
+          </desc>
+          <item n="245" xml:id="Rouen_1869_e11_i245">
+            <num>245</num>
+            <title>Locuste, en présence de Néron, fait l’essai d’un poison sur un esclave.</title>
+            <desc>en présence de Néron, fait l’essai d’un poison sur un esclave.</desc>
+          </item>
+          <item n="246" xml:id="Rouen_1869_e11_i246">
+            <num>246</num>
+            <title>Tête </title>
+            <desc>(Étude).</desc>
+          </item>
+          <item n="247" xml:id="Rouen_1869_e11_i247">
+            <num>247</num>
+            <title>Tête </title>
+            <desc>(Étude).</desc>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Rouen_1869_e12" source="Cat_Rouen_1869_typo_0003.jpg">
+          <desc>
+            <name>MASSE (Jules),</name>
+            <trait>
+              <p>Né à Marseille, élève de P. Delaroche. Rue Fontaine, 42, Paris.</p>
+            </trait>
+          </desc>
+          <item n="248" xml:id="Rouen_1869_e12_i248">
+            <num>248</num>
+            <title>La Femme au pantin.</title>
+          </item>
+          <item n="249" xml:id="Rouen_1869_e12_i249">
+            <num>249</num>
+            <title>Fantaisie.</title>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Rouen_1869_e13" source="Cat_Rouen_1869_typo_0004.jpg">
+          <desc>
+            <name>MASURE (Jules),</name>
+            <trait>
+              <p>Né à Braisne (Aisne), élève de M. Corot. Ex. Rue du Cherche-Midi, 45, Paris.</p>
+            </trait>
+          </desc>
+          <item n="250" xml:id="Rouen_1869_e13_i250">
+            <num>250</num>
+            <title>La Mer aux environs d’Antibes.</title>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Rouen_1869_e14" source="Cat_Rouen_1869_typo_0004.jpg">
+          <desc>
+            <name>MEESTER (Anatole de),</name>
+            <trait>
+              <p>Elève de M. Senar. Boulevard Botanique, 47, Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="251" xml:id="Rouen_1869_e14_i251">
+            <num>251</num>
+            <title>Marchand d’oranges à Java.</title>
+          </item>
+          <item n="252" xml:id="Rouen_1869_e14_i252">
+            <num>252</num>
+            <title>Le Liseur.</title>
+          </item>
+          <item n="253" xml:id="Rouen_1869_e14_i253">
+            <num>253</num>
+            <title>La mauvaise nouvelle.</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Rouen_1869_e15" source="Cat_Rouen_1869_typo_0004.jpg">
+          <desc>
+            <name>MEESTER (Raymond de),</name>
+            <trait>
+              <p>Né à Malines, élève de Daiwaille. Médaille de bronze, Rouen, 1862, médaille d'argent, Rouen,</p>
+            </trait>
+          </desc>
+          <item n="1864" xml:id="Rouen_1869_e15_i1864">
+            <num>1864</num>
+            <title>Rue de la Loi, 92, à Bruxelles.</title>
+            <desc>92, à Bruxelles.</desc>
+          </item>
+          <item n="254" xml:id="Rouen_1869_e15_i254">
+            <num>254</num>
+            <title>Environs d’Alger </title>
+            <desc>(Afrique).</desc>
+          </item>
+          <item n="255" xml:id="Rouen_1869_e15_i255">
+            <num>255</num>
+            <title>Environs d’Alger </title>
+            <desc>(Afrique).</desc>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Rouen_1869_e16" source="Cat_Rouen_1869_typo_0004.jpg">
+          <desc>
+            <name>MÉGRET (Mlle Félicie),</name>
+            <trait>
+              <p>Née à Paris, élève de M. Léon Cogniet. Rue des Fossés du-Temple, 26, Paris.</p>
+            </trait>
+          </desc>
+          <item n="256" xml:id="Rouen_1869_e16_i256">
+            <num>256</num>
+            <title>Galilée.</title>
+          </item>
+          <item n="257" xml:id="Rouen_1869_e16_i257">
+            <num>257</num>
+            <title>La Leçon.</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Rouen_1869_e17" source="Cat_Rouen_1869_typo_0005.jpg">
+          <desc>
+            <name>MELOTTE (Édouard-Auguste),</name>
+            <trait>
+              <p>Né à Paris, élève de M. Navez. Médaille d’or et deux rappels, Rouen, mention honorable, Paris, médaille de vermeil, Alençon. Rue de l'Impératrice, 76, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="258" xml:id="Rouen_1869_e17_i258">
+            <num>258</num>
+            <title>Portrait de M. M***.</title>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Rouen_1869_e18" source="Cat_Rouen_1869_typo_0005.jpg">
+          <desc>
+            <name>MERME (Charles),</name>
+            <trait>
+              <p>Né à Cherbourg (Manche). Rue de la Corderie, 16, à Lorient (Morbihan).</p>
+            </trait>
+          </desc>
+          <item n="259" xml:id="Rouen_1869_e18_i259">
+            <num>259</num>
+            <title>Les côtes de l’île Bourbon, saison de l’hiver¬ nage.</title>
+            <desc>saison de l’hivernage.</desc>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Rouen_1869_e19" source="Cat_Rouen_1869_typo_0005.jpg">
+          <desc>
+            <name>MOLLET (Ernest),</name>
+            <trait>
+              <p>Né à Vouziers (Ardennes), élève de MM. Cœdès et Couture. Rue de la Victoire, 46, Paris.</p>
+            </trait>
+          </desc>
+          <item n="260" xml:id="Rouen_1869_e19_i260">
+            <num>260</num>
+            <title>Lapin et Canard.</title>
+          </item>
+          <item n="261" xml:id="Rouen_1869_e19_i261">
+            <num>261</num>
+            <title>Intérieur de forge.</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Rouen_1869_e20" source="Cat_Rouen_1869_typo_0005.jpg">
+          <desc>
+            <name>MONGODIN (Victor),</name>
+            <trait>
+              <p>Né à Vire (Calvados), élève de M. de Rudder. Médailles St-Quentin, 1859, Caen, 1861, Alençon, 1865, et Le Havre, 1868. Rue Oudinot, 23, Paris.</p>
+            </trait>
+          </desc>
+          <item n="262" xml:id="Rouen_1869_e20_i262">
+            <num>262</num>
+            <title>Le Déjeûner au Camp.</title>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Rouen_1869_e21" source="Cat_Rouen_1869_typo_0006.jpg">
+          <desc>
+            <name>MOORMANS (Franz),</name>
+            <trait>
+              <p>Né à Rotterdam (Pays-Bas), élève de l'Académie d’Anvers. Chez M. Dumesnil, boulevard de l’Hôpital, 4, Paris.</p>
+            </trait>
+          </desc>
+          <item n="263" xml:id="Rouen_1869_e21_i263">
+            <num>263</num>
+            <title>La Blanchisseuse.</title>
+          </item>
+          <item n="264" xml:id="Rouen_1869_e21_i264">
+            <num>264</num>
+            <title>Un Duo.</title>
+          </item>
+          <item n="265" xml:id="Rouen_1869_e21_i265">
+            <num>265</num>
+            <title>Intérieur de cabaret hollandais.</title>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Rouen_1869_e22" source="Cat_Rouen_1869_typo_0006.jpg">
+          <desc>
+            <name>MOREAU (Gustave),</name>
+            <trait>
+              <p>Né à Paris, élève de M. Picot. Médailles aux expositions de 1864 et de 1865. Ex. Rue de La Rochefoucauld, 14, Paris.</p>
+            </trait>
+          </desc>
+          <item n="266" xml:id="Rouen_1869_e22_i266">
+            <num>266</num>
+            <title>Diomède dévoré par ses chevaux.</title>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Rouen_1869_e23" source="Cat_Rouen_1869_typo_0006.jpg">
+          <desc>
+            <name>MOREAU (Nicolas),</name>
+            <trait>
+              <p>Né à Paris, élève de MM. Picot et Jules Dupré. Médailles, Rouen et Bayonne. Rue de Paris, Isle-Adam.</p>
+            </trait>
+          </desc>
+          <item n="267" xml:id="Rouen_1869_e23_i267">
+            <num>267</num>
+            <title>Jument et son poulain.</title>
+          </item>
+          <item n="268" xml:id="Rouen_1869_e23_i268">
+            <num>268</num>
+            <title>Chevaux de trait.</title>
+          </item>
+          <item n="269" xml:id="Rouen_1869_e23_i269">
+            <num>269</num>
+            <title>Groom à cheval.</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Rouen_1869_e24" source="Cat_Rouen_1869_typo_0006.jpg">
+          <desc>
+            <name>MOREL-FATIO (Antoine-Léon),</name>
+            <trait>
+              <p>Né à Rouen. Chevalier de la Légion d'honneur, hors concours. Au palais du Louvre, Paris.</p>
+            </trait>
+          </desc>
+          <item n="270" xml:id="Rouen_1869_e24_i270">
+            <num>270</num>
+            <title>Le Matin, marine.</title>
+            <desc>marine.</desc>
+          </item>
+          <item n="271" xml:id="Rouen_1869_e24_i271">
+            <num>271</num>
+            <title>Vaisseaux du XVIIe siècle.</title>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Rouen_1869_e25" source="Cat_Rouen_1869_typo_0007.jpg">
+          <desc>
+            <name>MORIN (Gustave),</name>
+            <trait>
+              <p>Né à Rouen, élève de Chaumont et de M. Léon Cogniet. Chevalier de la Légion d'honneur, hors concours. Enclave Sainte-Marie, à Rouen, 272 Pêcheuses de moules à Villerville (Calvados).</p>
+            </trait>
+          </desc>
+          <item n="273" xml:id="Rouen_1869_e25_i273">
+            <num>273</num>
+            <title>La Promenade du matin.</title>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Rouen_1869_e26" source="Cat_Rouen_1869_typo_0007.jpg">
+          <desc>
+            <name>MORIN (Mlle Léonie),</name>
+            <trait>
+              <p>Née à Rouen, élève de M. G. Morin, son père. Médaille à Caen. Enclave Sainte-Marie, Rouen,</p>
+            </trait>
+          </desc>
+          <item n="274" xml:id="Rouen_1869_e26_i274">
+            <num>274</num>
+            <title>Fleurs d’élé.</title>
+          </item>
+        </entry>
+        <entry n="27" xml:id="Rouen_1869_e27" source="Cat_Rouen_1869_typo_0007.jpg">
+          <desc>
+            <name>MORRIS (Henry),</name>
+            <trait>
+              <p>Né à Liverpool (Angleterre), élève de Van Ysendyck. Boulevard de la Seine, à Poissy.</p>
+            </trait>
+          </desc>
+          <item n="275" xml:id="Rouen_1869_e27_i275">
+            <num>275</num>
+            <title>Vue de Granville.</title>
+          </item>
+          <item n="276" xml:id="Rouen_1869_e27_i276">
+            <num>276</num>
+            <title>Les Grèves de la Séez, près du Mont Saint¬ Michel.</title>
+            <desc>près du Mont SaintMichel.</desc>
+          </item>
+          <item n="277" xml:id="Rouen_1869_e27_i277">
+            <num>277</num>
+            <title>Paysage près de Liverpool </title>
+            <desc>(Angleterre).</desc>
+          </item>
+        </entry>
+        <entry n="28" xml:id="Rouen_1869_e28" source="Cat_Rouen_1869_typo_0007.jpg">
+          <desc>
+            <name>MOULIGNON (Léopold de),</name>
+            <trait>
+              <p>Né à Pontoise (Seine-et-Oise), élève de P. Delaroche et de Picot. Mention honorable, Paris, 1862. Rue de Bruxelles, 36, Paris.</p>
+            </trait>
+          </desc>
+          <item n="278" xml:id="Rouen_1869_e28_i278">
+            <num>278</num>
+            <title>Le Rêve de Sybille </title>
+            <desc>(tiré du roman de M. O. Feuillet).</desc>
+          </item>
+        </entry>
+        <entry n="29" xml:id="Rouen_1869_e29" source="CatRouen_1869_bpt6k1181045h_32.JPEG">
+          <desc>
+            <name>ANDRE (Jules),</name>
+            <trait>
+              <p>Né à Paris, élève de Watelet. Chevaier de la Légion d’honneur, hors concours. Rue du Buis, 8, Paris-Anteuil.</p>
+            </trait>
+          </desc>
+          <item n="3" xml:id="Rouen_1869_e29_i3">
+            <num>3</num>
+            <title>Moulin à Ségret </title>
+            <desc>(Seine-et-Marne).</desc>
+          </item>
+          <item n="4" xml:id="Rouen_1869_e29_i4">
+            <num>4</num>
+            <title>Embouchure de la Gironde à Royan </title>
+            <desc>(Charente- Inférieure).</desc>
+          </item>
+        </entry>
+        <entry n="30" xml:id="Rouen_1869_e30" source="CatRouen_1869_bpt6k1181045h_32.JPEG">
+          <desc>
+            <name>ANTIGNA (Alexandre),</name>
+            <trait>
+              <p>Né à Orléans, élève de Paul Delaroche. Médailles de 3e, 2e et  1re classe, à Paris, Chevalier de la Légion d’honneur , hors concours. Rue Trézel, 17, Paris.</p>
+            </trait>
+          </desc>
+          <item n="5" xml:id="Rouen_1869_e30_i5">
+            <num>5</num>
+            <title>L'Enfant et son Ombre.</title>
+          </item>
+          <item n="6" xml:id="Rouen_1869_e30_i6">
+            <num>6</num>
+            <title>La Sieste.</title>
+          </item>
+          <item n="7" xml:id="Rouen_1869_e30_i7">
+            <num>7</num>
+            <title>Tête de fantaisie.</title>
+          </item>
+        </entry>
+        <entry n="31" xml:id="Rouen_1869_e31" source="CatRouen_1869_bpt6k1181045h_32.JPEG">
+          <desc>
+            <name>ARMAND-DUMARESQ (Ch.-Édouard),</name>
+            <trait>
+              <p>Né à Paris, élève de M. Couture. Médailles 1861, 1863, Chevalier de la Légion d'honneur, hors concours. Rue de Laval, 33, Paris.</p>
+            </trait>
+          </desc>
+          <item n="8" xml:id="Rouen_1869_e31_i8">
+            <num>8</num>
+            <title>Le Retour de l’île d’Elbe. L'Empereur rencobtre à La Mure, près de Vizille, l'avant-garde de l'armée envoyée pour l'arrêter, 7 mars 1815.</title>
+            <desc>près de Vizille, l'avant-garde de l'armée envoyée pour l'arrêter, 7 mars 1815.</desc>
+          </item>
+        </entry>
+        <entry n="32" xml:id="Rouen_1869_e32" source="CatRouen_1869_bpt6k1181045h_33.JPEG">
+          <desc>
+            <name>ARNOUX (Michel),</name>
+            <trait>
+              <p>Né à Paris, élève de MM. L. Cogniet et E. Frère. A Ecouen (Seine-et-Oise).</p>
+            </trait>
+          </desc>
+          <item n="9" xml:id="Rouen_1869_e32_i9">
+            <num>9</num>
+            <title>La petite Dévideuse.</title>
+          </item>
+        </entry>
+        <entry n="33" xml:id="Rouen_1869_e33" source="CatRouen_1869_bpt6k1181045h_33.JPEG">
+          <desc>
+            <name>AUDIAT (Mme Félicie),</name>
+            <trait>
+              <p>Née à Paris, Rue Richer, 41, Paris.</p>
+            </trait>
+          </desc>
+          <item n="10" xml:id="Rouen_1869_e33_i10">
+            <num>10</num>
+            <title>L’Abandon.</title>
+          </item>
+          <item n="11" xml:id="Rouen_1869_e33_i11">
+            <num>11</num>
+            <title>Le Repentir.</title>
+          </item>
+        </entry>
+        <entry n="34" xml:id="Rouen_1869_e34" source="CatRouen_1869_bpt6k1181045h_33.JPEG">
+          <desc>
+            <name>AUGÉ (Étienne),</name>
+            <trait>
+              <p>Né à Saintes (Charente-Inférieure), élève de M. A. Augé, son frère. Boulevard Mazas, 36, Paris.</p>
+            </trait>
+          </desc>
+          <item n="12" xml:id="Rouen_1869_e34_i12">
+            <num>12</num>
+            <title>Costumes des environs de Saint-Brieuc.</title>
+          </item>
+        </entry>
+        <entry n="35" xml:id="Rouen_1869_e35" source="CatRouen_1869_bpt6k1181045h_33.JPEG">
+          <desc>
+            <name>AVANÇON (Ernest d’),</name>
+            <trait>
+              <p>Né à Troyes (Aube), élève de M. Busson. Rue Fontaine-Saint-Georges, 47, Paris.</p>
+            </trait>
+          </desc>
+          <item n="13" xml:id="Rouen_1869_e35_i13">
+            <num>13</num>
+            <title>Une Lame </title>
+            <desc>(à Dieppe).</desc>
+          </item>
+        </entry>
+        <entry n="36" xml:id="Rouen_1869_e36" source="CatRouen_1869_bpt6k1181045h_33.JPEG">
+          <desc>
+            <name>BAILLY (Léon-Charles-Adrien),</name>
+            <trait>
+              <p>Né à Saint-Omer (Pas-de-Calais), élève de M. L. Cogniet. Médailles Dijon, Troyes et Rouen. Avenue d’Eylau, 119, Paris,-Passy.</p>
+            </trait>
+          </desc>
+          <item n="14" xml:id="Rouen_1869_e36_i14">
+            <num>14</num>
+            <title>Une Pêcheuse des environs de Boulogne</title>
+          </item>
+        </entry>
+        <entry n="37" xml:id="Rouen_1869_e37" source="CatRouen_1869_bpt6k1181045h_34.JPEG">
+          <desc>
+            <name>BALFOURIER (Adolphe),</name>
+            <trait>
+              <p>Né à Montmorency (Seine-et-Oise), élève de M. Rémond. Médailles d’or, 2e et 3e classe, Paris, hors concours. Rue Frochot, 8, Paris.</p>
+            </trait>
+          </desc>
+          <item n="15" xml:id="Rouen_1869_e37_i15">
+            <num>15</num>
+            <title>Le Coudon et le Cours du Gapeau </title>
+            <desc>(Var).</desc>
+          </item>
+        </entry>
+        <entry n="38" xml:id="Rouen_1869_e38" source="CatRouen_1869_bpt6k1181045h_34.JPEG">
+          <desc>
+            <name>BALLIN (Auguste),</name>
+            <trait>
+              <p>Né à Boulogne-sur-Mer, élève de M. Jules Noël. Médaille de bronze, Le Havre 1868. Rue Sainte-Adresse, 19, au Havre.</p>
+            </trait>
+          </desc>
+          <item n="16" xml:id="Rouen_1869_e38_i16">
+            <num>16</num>
+            <title>Bateau de Pêche, Lever de Lune.</title>
+            <desc>Lever de Lune.</desc>
+          </item>
+          <item n="17" xml:id="Rouen_1869_e38_i17">
+            <num>17</num>
+            <title>Vue de l’Avant-Port du Havre.</title>
+          </item>
+        </entry>
+        <entry n="39" xml:id="Rouen_1869_e39" source="CatRouen_1869_bpt6k1181045h_34.JPEG">
+          <desc>
+            <name>BECQ DE FOUQUIERES (Mme Louise),</name>
+            <trait>
+              <p>Née à Paris, élève d’Isidore Pils. Médaille de bronze, Rouen 1862, d'argent, Rouen 1864. Rue d’Anjou-Saint-Honoré, 19, Paris.</p>
+            </trait>
+          </desc>
+          <item n="18" xml:id="Rouen_1869_e39_i18">
+            <num>18</num>
+            <title>Le Benedicite.</title>
+          </item>
+        </entry>
+        <entry n="40" xml:id="Rouen_1869_e40" source="CatRouen_1869_bpt6k1181045h_34.JPEG">
+          <desc>
+            <name>BELLANGÉ (Eugène),</name>
+            <trait>
+              <p>Né à Rouen, élève de feu son père et de Picot. Médailles à Rouen, Nantes, Le Havre, Boulogne et Porto. Rue de Douai, 57, Paris.</p>
+            </trait>
+          </desc>
+          <item n="19" xml:id="Rouen_1869_e40_i19">
+            <num>19</num>
+            <title>Vue du Port de Trouville-sur-Mer </title>
+            <desc>(Calvados).</desc>
+          </item>
+          <item n="20" xml:id="Rouen_1869_e40_i20">
+            <num>20</num>
+            <title>Un Écarté à la Cantine </title>
+            <desc>(Italie)</desc>
+          </item>
+          <item n="21" xml:id="Rouen_1869_e40_i21">
+            <num>21</num>
+            <title>Episode de la Bataille de l’Alma </title>
+            <desc>(Crimée) Arrivant au secours des Zouaves, le 39e de Ligne s’élance à l’at- taque des hauteurs voisines du télégraphe que protége encore l’artillerie russe.</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

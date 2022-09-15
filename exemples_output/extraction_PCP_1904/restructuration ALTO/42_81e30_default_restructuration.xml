@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>42_81e30_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:5177/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT270" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT271" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT272" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT273" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT274" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT275" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT276" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT277" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT278" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/>
+    <OtherTag ID="LT96" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT97" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT98" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT99" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="543" HEIGHT="995" PHYSICAL_IMG_NR="42" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="543" HEIGHT="995">
+        <TextBlock HPOS="50" VPOS="84" WIDTH="440" HEIGHT="567" ID="eSc_textblock_1af1ff7f" TAGREFS="BT275">
+          <Shape>
+            <Polygon POINTS="50 84 50 651 490 651 490 84"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="403" VPOS="686" WIDTH="133" HEIGHT="71" ID="eSc_textblock_5512007b" TAGREFS="BT274">
+          <Shape>
+            <Polygon POINTS="403 686 403 757 536 757 536 686"/>
+          </Shape>
+          <TextLine ID="eSc_line_116de43e" TAGREFS="LT97" BASELINE="421 707 468 706 533 705" HPOS="419" VPOS="687" WIDTH="113" HEIGHT="30">
+            <Shape><Polygon POINTS="420 706 419 689 529 687 532 704 532 716 420 717"/></Shape>
+	    <String CONTENT="HOLLANDAISE" HPOS="419" VPOS="687" WIDTH="113" HEIGHT="30"/>
+          </TextLine>
+          <TextLine ID="eSc_line_339beac1" TAGREFS="LT97" BASELINE="423 732 530 728" HPOS="420" VPOS="710" WIDTH="110" HEIGHT="38">
+            <Shape><Polygon POINTS="423 732 420 712 528 710 530 728 529 745 469 742 460 747 459 747 458 747 457 747 456 747 451 743 423 748"/></Shape>
+	    <String CONTENT="par A. GERBER." HPOS="420" VPOS="710" WIDTH="110" HEIGHT="38"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

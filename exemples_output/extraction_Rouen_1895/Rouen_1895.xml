@@ -1,0 +1,671 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rouen_1895">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="Rouen_1895_e1" source="CatRouen_1895_bpt6k11806295_24.JPEG">
+          <desc>
+            <name>BARRE (Mlle Henriette)</name>
+            <trait>
+              <p>, née à Pommeréval. — Boulevard Beauvoisine, 91, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="26" xml:id="Rouen_1895_e1_i26">
+            <num>26</num>
+            <title>Marine.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="Rouen_1895_e2" source="CatRouen_1895_bpt6k11806295_24.JPEG">
+          <desc>
+            <name>BARRIAS (Félix-Joseph)</name>
+            <trait>
+              <p>, né à Paris, élève de Léon Cogniet, prix de Rome, 184, méd, 32, cl., 18475 1re cl. 1851, 2° cl. 1855., E. L. :. X, 1859, méd. or. 1889, E. U. — Rue de Bruxelles, 34, Paris.</p>
+            </trait>
+          </desc>
+          <item n="27" xml:id="Rouen_1895_e2_i27">
+            <num>27</num>
+            <title>Repos pendant la séance.</title>
+          </item>
+        </entry>
+        <entry n="3" xml:id="Rouen_1895_e3" source="CatRouen_1895_bpt6k11806295_24.JPEG">
+          <desc>
+            <name>BARTHALOT (Marius)</name>
+            <trait>
+              <p>, né à Marseille, élève de Cabanel et de MM. Bonnat et Saintpierre. — Rue Alfred-Stevens, 3, Paris.</p>
+            </trait>
+          </desc>
+          <item n="28" xml:id="Rouen_1895_e3_i28">
+            <num>28</num>
+            <title>Route d’Orange à Sorgues </title>
+            <desc>(Vaucluse).</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="Rouen_1895_e4" source="CatRouen_1895_bpt6k11806295_24.JPEG">
+          <desc>
+            <name>BASCHET (Marcel)</name>
+            <trait>
+              <p>, né à Gagny (Seine-et-Oise) élève de Boulanger et de M. Lefebvre, prix de Rome, 1883, 2e méd., Paris, 1889, méd., Anvers, 1894, méd. d’hon., Lyon, 1894. — Rue de l’Abbaye, 12, Paris.</p>
+            </trait>
+          </desc>
+          <item n="29" xml:id="Rouen_1895_e4_i29">
+            <num>29</num>
+            <title>Portrait de Mme Leroux-Ribeyre.</title>
+          </item>
+        </entry>
+        <entry n="5" xml:id="Rouen_1895_e5" source="CatRouen_1895_bpt6k11806295_24.JPEG">
+          <desc>
+            <name>BATON (Zacharie-Constant-Théodore)</name>
+            <trait>
+              <p>, né à Arras, élève, de G. Boulanger, et de MM. J. Lefebvre et G. Colin. — Rue de Navarin, 12, Paris.</p>
+            </trait>
+          </desc>
+          <item n="30" xml:id="Rouen_1895_e5_i30">
+            <num>30</num>
+            <title>Le repos du jardinier.</title>
+          </item>
+          <item n="31" xml:id="Rouen_1895_e5_i31">
+            <num>31</num>
+            <title>Etude : femme nue.</title>
+          </item>
+        </entry>
+        <entry n="6" xml:id="Rouen_1895_e6" source="CatRouen_1895_bpt6k11806295_24.JPEG">
+          <desc>
+            <name>BAUDOUIN (Paul-Albert)</name>
+            <trait>
+              <p>, né à Rouen, élève de Gleyre, de Elie Delaunay et de M. Puvis de Cha vannes, méd. 3e cl., Paris, 1882, 2e cl., 1886, méd. or. 1889 E. U. , H. C., 2g. — Rue de Rennes, n° 121, Paris.</p>
+            </trait>
+          </desc>
+          <item n="32" xml:id="Rouen_1895_e6_i32">
+            <num>32</num>
+            <title>Sur l’eau.</title>
+          </item>
+          <item n="33" xml:id="Rouen_1895_e6_i33">
+            <num>33</num>
+            <title>Sur la route de Doboka </title>
+            <desc>(Hongrie).</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="Rouen_1895_e7" source="CatRouen_1895_bpt6k11806295_24.JPEG">
+          <desc>
+            <name>BAUDRY (Bernard)</name>
+            <trait>
+              <p>, né à Rouen, élève de MM. Lebel et Zacharie. — Rue de la Motte, 3, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="34" xml:id="Rouen_1895_e7_i34">
+            <num>34</num>
+            <title>Le repos du modèle.</title>
+          </item>
+          <item n="35" xml:id="Rouen_1895_e7_i35">
+            <num>35</num>
+            <title>Etude.</title>
+          </item>
+        </entry>
+        <entry n="8" xml:id="Rouen_1895_e8" source="CatRouen_1895_bpt6k11806295_25.JPEG">
+          <desc>
+            <name>BAYARD-KATE (Mlle),</name>
+            <trait>
+              <p> née en Amérique, élève de MM. Carolus Duran et Henner. — Rue Mazarine, n°́ 9, Paris.</p>
+            </trait>
+          </desc>
+          <item n="36" xml:id="Rouen_1895_e8_i36">
+            <num>36</num>
+            <title>Tête d’étude</title>
+          </item>
+        </entry>
+        <entry n="9" xml:id="Rouen_1895_e9" source="CatRouen_1895_bpt6k11806295_25.JPEG">
+          <desc>
+            <name>BAYE (Pierre-Alphonse)</name>
+            <trait>
+              <p>, né à Paris , méd. or et arg., Angers, Lille, Versailles, Langres, Narbonne, Ar cachon, Tours. — Rue Charles V, 23, Paris.</p>
+            </trait>
+          </desc>
+          <item n="37" xml:id="Rouen_1895_e9_i37">
+            <num>37</num>
+            <title>Chez un avoeat.</title>
+          </item>
+          <item n="38" xml:id="Rouen_1895_e9_i38">
+            <num>38</num>
+            <title>Petits bouquins.</title>
+          </item>
+        </entry>
+        <entry n="10" xml:id="Rouen_1895_e10" source="CatRouen_1895_bpt6k11806295_25.JPEG">
+          <desc>
+            <name>BÉNARD,</name>
+            <trait>
+              <p> (Romain), né au Havre, élève de E. Lefebvre et de M. L. Le Poittevin. — Rue du Champdes-Oiseaux, 83, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="39" xml:id="Rouen_1895_e10_i39">
+            <num>39</num>
+            <title>Le petit bras de la Seine à Freneuse </title>
+            <desc>(Seine-et-Oise).</desc>
+          </item>
+          <item n="40" xml:id="Rouen_1895_e10_i40">
+            <num>40</num>
+            <title>Pèches.</title>
+          </item>
+        </entry>
+        <entry n="11" xml:id="Rouen_1895_e11" source="CatRouen_1895_bpt6k11806295_25.JPEG">
+          <desc>
+            <name>BENNER (Jean)</name>
+            <trait>
+              <p>, né à Mulhouse, élève de Pils, méd. 25 cl., 1872, méd. br. F. H. 1889, H. C., x,</p>
+            </trait>
+          </desc>
+          <item n="1894" xml:id="Rouen_1895_e11_i1894">
+            <num>1894</num>
+            <title>Boulevard de Clichy, 71, Paris.</title>
+            <desc>71, Paris.</desc>
+          </item>
+          <item n="41" xml:id="Rouen_1895_e11_i41">
+            <num>41</num>
+            <title>Frisson d’automne.</title>
+          </item>
+          <item n="42" xml:id="Rouen_1895_e11_i42">
+            <num>42</num>
+            <title>Pavots.</title>
+          </item>
+        </entry>
+        <entry n="12" xml:id="Rouen_1895_e12" source="CatRouen_1895_bpt6k11806295_25.JPEG">
+          <desc>
+            <name>BENOIST-LÉVY (Jules)</name>
+            <trait>
+              <p>, né à Paris, élève de MM.Jules Lefebvre et Doucet. — Rue Saint-André-des-Arts, n° 37, Paris.</p>
+            </trait>
+          </desc>
+          <item n="43" xml:id="Rouen_1895_e12_i43">
+            <num>43</num>
+            <title>Combat à Tinténiac.</title>
+          </item>
+          <item n="44" xml:id="Rouen_1895_e12_i44">
+            <num>44</num>
+            <title>Porte du Jersheral, Dinan.</title>
+            <desc>Dinan.</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="Rouen_1895_e13" source="CatRouen_1895_bpt6k11806295_25.JPEG">
+          <desc>
+            <name>BERGERET (Pierre-Denis)</name>
+            <trait>
+              <p>, né à Villeparisis (Seine- et-Marne), élève. de E. Isabey, méd. 3e cl., 1875, 2° cl., 1877, 1889 E. U. —  Rue Victor-Macé, 26, Paris.</p>
+            </trait>
+          </desc>
+          <item n="45" xml:id="Rouen_1895_e13_i45">
+            <num>45</num>
+            <title>Figues.</title>
+          </item>
+          <item n="46" xml:id="Rouen_1895_e13_i46">
+            <num>46</num>
+            <title>Fruits.</title>
+          </item>
+        </entry>
+        <entry n="14" xml:id="Rouen_1895_e14" source="CatRouen_1895_bpt6k11806295_26.JPEG">
+          <desc>
+            <name>BERTHÉLEMY (Valentin-Émile)</name>
+            <trait>
+              <p>, né à Rouen, élève de son père, de Boulanger et de M. Gérome , M. H., Dijon, Caen, Toulouse , méd. arg., Londres, Périgueux, méd. verm., Evreux. — Rue de la Gare, n° 10, Bernières-sur-Mer (Calvados).</p>
+            </trait>
+          </desc>
+          <item n="47" xml:id="Rouen_1895_e14_i47">
+            <num>47</num>
+            <title>La neige au bord de la mer.</title>
+          </item>
+          <item n="48" xml:id="Rouen_1895_e14_i48">
+            <num>48</num>
+            <title>Le forgeron.</title>
+          </item>
+        </entry>
+        <entry n="15" xml:id="Rouen_1895_e15" source="CatRouen_1895_bpt6k11806295_26.JPEG">
+          <desc>
+            <name>BERTHELOT (Ferdinand)</name>
+            <trait>
+              <p>, né à Blainville-Crèvon, élève de MM. Lebel, Zacharie et Gérome. — A Blainville-Crevon.</p>
+            </trait>
+          </desc>
+          <item n="49" xml:id="Rouen_1895_e15_i49">
+            <num>49</num>
+            <title>Portrait de ma mère.</title>
+          </item>
+          <item n="50" xml:id="Rouen_1895_e15_i50">
+            <num>50</num>
+            <title>Portrait de l’auteur.</title>
+          </item>
+        </entry>
+        <entry n="16" xml:id="Rouen_1895_e16" source="CatRouen_1895_bpt6k11806295_26.JPEG">
+          <desc>
+            <name>BERTON (Paul-Emile)</name>
+            <trait>
+              <p>, né à Chartrettes (Seine-etMarne), élève de Delaunay et de MM. Allongé et Puvis de Chavannes. — Rue Mozart, 9, Paris.</p>
+            </trait>
+          </desc>
+          <item n="51" xml:id="Rouen_1895_e16_i51">
+            <num>51</num>
+            <title>La cueillette de pommes.</title>
+          </item>
+          <item n="52" xml:id="Rouen_1895_e16_i52">
+            <num>52</num>
+            <title>Retour des pécheurs à Cancale.</title>
+          </item>
+        </entry>
+        <entry n="17" xml:id="Rouen_1895_e17" source="CatRouen_1895_bpt6k11806295_26.JPEG">
+          <desc>
+            <name>BESNUS (Michel-Amédée)</name>
+            <trait>
+              <p>, né à Paris, élève de Léon Cogniet et Jules Dupré, méd. br., Rouen, 1864, plusieurs méd. à Nice, E. U. de Londres, 1874, etc., A x, 1891. — Rue Mayet, 24, Paris.</p>
+            </trait>
+          </desc>
+          <item n="53" xml:id="Rouen_1895_e17_i53">
+            <num>53</num>
+            <title>Un orage sur la Marne à Samméroy, près la Ferté- sous-Jouarre.</title>
+            <desc>près la Ferté- sous-Jouarre.</desc>
+          </item>
+        </entry>
+        <entry n="18" xml:id="Rouen_1895_e18" source="CatRouen_1895_bpt6k11806295_26.JPEG">
+          <desc>
+            <name>BESSOY (Jules-Gustave)</name>
+            <trait>
+              <p>, né à Paris, élève de Elie Delaunay et de MM. G. Moreau et J. Blanc. — Rue du Sentier, 20, Paris.</p>
+            </trait>
+          </desc>
+          <item n="54" xml:id="Rouen_1895_e18_i54">
+            <num>54</num>
+            <title>Le Christ consolateur. Prêt de l’Etat.</title>
+          </item>
+        </entry>
+        <entry n="19" xml:id="Rouen_1895_e19" source="CatRouen_1895_bpt6k11806295_26.JPEG">
+          <desc>
+            <name>BICOT (Mme Gabrielle de) élève de Baudit </name>
+            <trait>
+              <p>— Rue Cardinet, 18, Paris.</p>
+            </trait>
+          </desc>
+          <item n="55" xml:id="Rouen_1895_e19_i55">
+            <num>55</num>
+            <title>Tête de vieille femme.</title>
+          </item>
+        </entry>
+        <entry n="20" xml:id="Rouen_1895_e20" source="CatRouen_1895_bpt6k11806295_26.JPEG">
+          <desc>
+            <name>BIVA (Henri) né à Paris,</name>
+            <trait>
+              <p> elève de MM. A. Nozal et Léon Tanzi, M. H., Paris, 1892, méd. verm. de la Socièté d’Horticulture, Rouen, 1893, méd. 3° cl., Paris, 1895. — Rue du Château-d’Eau, 72, Paris.</p>
+            </trait>
+          </desc>
+          <item n="56" xml:id="Rouen_1895_e20_i56">
+            <num>56</num>
+            <title>Le soir.</title>
+          </item>
+          <item n="57" xml:id="Rouen_1895_e20_i57">
+            <num>57</num>
+            <title>Roses et bluets. Voir aux Dessins.</title>
+          </item>
+        </entry>
+        <entry n="21" xml:id="Rouen_1895_e21" source="CatRouen_1895_bpt6k11806295_27.JPEG">
+          <desc>
+            <name>BIVA (Paul)</name>
+            <trait>
+              <p>, né à Paris , méd, Paris, 1893. — Rue d’Hauteville, 12, Paris.</p>
+            </trait>
+          </desc>
+          <item n="58" xml:id="Rouen_1895_e21_i58">
+            <num>58</num>
+            <title>Roses.</title>
+          </item>
+          <item n="59" xml:id="Rouen_1895_e21_i59">
+            <num>59</num>
+            <title>Pivoines. Voir aux Dessins</title>
+          </item>
+        </entry>
+        <entry n="22" xml:id="Rouen_1895_e22" source="CatRouen_1895_bpt6k11806295_27.JPEG">
+          <desc>
+            <name>BOISLECOMTE (Edmond de)</name>
+            <trait>
+              <p>, né à Arras, élève de MM. J.-P. Laurens et Rivey, méd. verm., arg., Caen, Amiens, Rouen.— A Mondétour, près Blainville (Seine-Inférieure), et rue Poncelet, 26, Paris.</p>
+            </trait>
+          </desc>
+          <item n="60" xml:id="Rouen_1895_e22_i60">
+            <num>60</num>
+            <title>Cabrera.</title>
+          </item>
+          <item n="61" xml:id="Rouen_1895_e22_i61">
+            <num>61</num>
+            <title>Espagnol.</title>
+          </item>
+        </entry>
+        <entry n="23" xml:id="Rouen_1895_e23" source="CatRouen_1895_bpt6k11806295_27.JPEG">
+          <desc>
+            <name>BOMBLED (Charles).</name>
+            <trait>
+              <p> — Rue Pérou, 27, Paris.</p>
+            </trait>
+          </desc>
+          <item n="62" xml:id="Rouen_1895_e23_i62">
+            <num>62</num>
+            <title>Hussards de Louis XIV.</title>
+          </item>
+        </entry>
+        <entry n="24" xml:id="Rouen_1895_e24" source="CatRouen_1895_bpt6k11806295_27.JPEG">
+          <desc>
+            <name>BOMDARD (Maurice),</name>
+            <trait>
+              <p> élève de G Boulanger et de M. J. Lefebvre , 3° méd., Paris, 1880, 2e méd., Paris, E. U. 1889, 2°e, méd., Paris, 1890, H. C. — Rue A. de Neuville, 39, Paris.</p>
+            </trait>
+          </desc>
+          <item n="63" xml:id="Rouen_1895_e24_i63">
+            <num>63</num>
+            <title>Un marchand de bibelots à Venise.</title>
+          </item>
+          <item n="64" xml:id="Rouen_1895_e24_i64">
+            <num>64</num>
+            <title>La, place, de l’oasis de Sidi-Ocla, près Biskra</title>
+            <desc>place, de l’oasis de Sidi-Ocla, près Biskra</desc>
+          </item>
+        </entry>
+        <entry n="25" xml:id="Rouen_1895_e25" source="CatRouen_1895_bpt6k11806295_27.JPEG">
+          <desc>
+            <name>BONNEFOY (Adrien-Adolphe)</name>
+            <trait>
+              <p>, né à Paris, élève de M. J.-P. Laurens, M. H. et méd. arg., Versailles, 1885 et 1889, méd. br., Lyon, 1893, et 1895, H.C., Chicago, 1893. — Rue de Bretonvilliers, 3, Paris.</p>
+            </trait>
+          </desc>
+          <item n="65" xml:id="Rouen_1895_e25_i65">
+            <num>65</num>
+            <title>Jeanne d’Arc. Une autre fois, elle entendit encore la voix, vit la clarté, mais, dans cette clarté, de nobles figures, dont l’une avait des ailes et semblait un sage prud’homme, il lui dit: « Jeanne, sois bonne, va au secours du roi de France et tu lui rendras son royaume ». Voir aux Dessins.</title>
+            <desc>elle entendit encore la voix, vit la clarté, mais, dans cette clarté, de nobles figures, dont l’une avait des ailes et semblait un sage prud’homme, il lui dit: « Jeanne, sois bonne, va au secours du roi de France et tu lui rendras son royaume ». Voir aux Dessins.</desc>
+          </item>
+        </entry>
+        <entry n="26" xml:id="Rouen_1895_e26" source="CatRouen_1895_bpt6k11806295_28.JPEG">
+          <desc>
+            <name>BONNEFOY (Henry)</name>
+            <trait>
+              <p>, né à Boulogne-sur-Mer, élève de. Léon Cogniet, méd. 3e cl., Paris, 1880, méd. 2° Cl., Paris, 1884 et 1889 E. L. — Rue Fontaine, n° 42, Paris.</p>
+            </trait>
+          </desc>
+          <item n="66" xml:id="Rouen_1895_e26_i66">
+            <num>66</num>
+            <title>On ferme.</title>
+          </item>
+          <item n="28" xml:id="Rouen_1895_e26_i28">
+            <num>28</num>
+            <title></title>
+          </item>
+        </entry>
+        <entry n="27" xml:id="Rouen_1895_e27" source="CatRouen_1895_bpt6k11806295_28.JPEG">
+          <desc>
+            <name/>
+            <trait>
+              <p>67. Retard.</p>
+            </trait>
+          </desc>
+          <item n="67" xml:id="Rouen_1895_e27_i67">
+            <num>67</num>
+            <title>Retard. BOUCHOR </title>
+            <desc>(Joseph-Félix), né à Paris, élève de MM. Benjamin Constant et Jules Lefebvre, M. H., Paris, 1888, méd. br., E. U. 1889, méd. 2e cl.,</desc>
+          </item>
+          <item n="1892" xml:id="Rouen_1895_e27_i1892">
+            <num>1892</num>
+            <title>H. C. — A Freneuse, par Elbeuf </title>
+            <desc>par Elbeuf (Seine Inférieure).</desc>
+          </item>
+          <item n="68" xml:id="Rouen_1895_e27_i68">
+            <num>68</num>
+            <title>En décembre </title>
+            <desc>(Freneuse).</desc>
+          </item>
+        </entry>
+        <entry n="28" xml:id="Rouen_1895_e28" source="CatRouen_1895_bpt6k11806295_28.JPEG">
+          <desc>
+            <name/>
+            <trait>
+              <p>69. Au passage de l’île (Freneuse).</p>
+            </trait>
+          </desc>
+          <item n="69" xml:id="Rouen_1895_e28_i69">
+            <num>69</num>
+            <title>Au passage de l’île </title>
+            <desc>(Freneuse). BOIGOURD (Auguste), né à Pont-Audemer, élève de Bellel , méd. br., Caen, 1873, méd. verm., Rouen,</desc>
+          </item>
+          <item n="1882" xml:id="Rouen_1895_e28_i1882">
+            <num>1882</num>
+            <title>, méd. verm, gr. mod., Caen, 1825 , 3° méd., Evreux, 1886. A x. — Avenue du Plessis-la-Musse, à Chantenay-sur-Loire, près Nantes.</title>
+            <desc>gr. mod., Caen, 1825 , 3° méd., Evreux, 1886. A x. — Avenue du Plessis-la-Musse, à Chantenay-sur-Loire, près Nantes.</desc>
+          </item>
+        </entry>
+        <entry n="29" xml:id="Rouen_1895_e29" source="CatRouen_1895_bpt6k11806295_28.JPEG">
+          <desc>
+            <name/>
+            <trait>
+              <p>70. Les blés dans le Roumois.</p>
+            </trait>
+          </desc>
+          <item n="70" xml:id="Rouen_1895_e29_i70">
+            <num>70</num>
+            <title>Les blés dans le Roumois. BOIGOURD </title>
+            <desc>(Mlle Cécile-Augustine), née à Pont-Audemer, élève de M. A. Bougourd, M. H., Boulogne sur-Mer, 187, méd, verm. de la Société des Amis des Arts. Rouen 1889. — Avenue du Plessis-la Musse, à Chantenay-sur-Loire, près Nantes.</desc>
+          </item>
+          <item n="71" xml:id="Rouen_1895_e29_i71">
+            <num>71</num>
+            <title>Pivoines.</title>
+          </item>
+        </entry>
+        <entry n="30" xml:id="Rouen_1895_e30" source="CatRouen_1895_bpt6k11806295_28.JPEG">
+          <desc>
+            <name/>
+            <trait>
+              <p>72. Coquelicots.</p>
+            </trait>
+          </desc>
+          <item n="72" xml:id="Rouen_1895_e30_i72">
+            <num>72</num>
+            <title>Coquelicots. BOURDON </title>
+            <desc>(Mlle Georgette), née à Elbeuf, élève de Mlle Mouchel. — Rue de Caudebec, 23, Elbeuf.</desc>
+          </item>
+          <item n="73" xml:id="Rouen_1895_e30_i73">
+            <num>73</num>
+            <title>Chrysanthèmes </title>
+            <desc>(panneau décoratif).</desc>
+          </item>
+        </entry>
+        <entry n="31" xml:id="Rouen_1895_e31" source="CatRouen_1895_bpt6k11806295_28.JPEG">
+          <desc>
+            <name/>
+            <trait>
+              <p>74. Les parchemins.</p>
+            </trait>
+          </desc>
+          <item n="74" xml:id="Rouen_1895_e31_i74">
+            <num>74</num>
+            <title>Les parchemins. BOURGEOIS </title>
+            <desc>(Urbain), né à Nevers, élève de H. Flandrin et Cabanel, 1er second grand prix de Rome, 1867, méd. 3e cl., Paris, 1877 , méd.</desc>
+          </item>
+          <item n="2" xml:id="Rouen_1895_e31_i2">
+            <num>2</num>
+            <title>° cl., 1880, méd. br., E. L. 1889, H. C. — Rue de l’Abbaye, 13, Paris.</title>
+            <desc>1880, méd. br., E. L. 1889, H. C. — Rue de l’Abbaye, 13, Paris.</desc>
+          </item>
+          <item n="75" xml:id="Rouen_1895_e31_i75">
+            <num>75</num>
+            <title>La vigilance.</title>
+          </item>
+          <item n="76" xml:id="Rouen_1895_e31_i76">
+            <num>76</num>
+            <title>Sainte Madeleine.</title>
+          </item>
+        </entry>
+        <entry n="32" xml:id="Rouen_1895_e32" source="CatRouen_1895_bpt6k11806295_29.JPEG">
+          <desc>
+            <name>BOURGOGNE (Pierre)</name>
+            <trait>
+              <p>, né à Paris, élève de Justin Lequien , H. C. — Rue de Branca, 32 ter, Sèvres (Seine-et-Oise).</p>
+            </trait>
+          </desc>
+          <item n="77" xml:id="Rouen_1895_e32_i77">
+            <num>77</num>
+            <title>Fleurs de printemps.</title>
+          </item>
+          <item n="78" xml:id="Rouen_1895_e32_i78">
+            <num>78</num>
+            <title>Premières fleurs</title>
+          </item>
+        </entry>
+        <entry n="33" xml:id="Rouen_1895_e33" source="CatRouen_1895_bpt6k11806295_29.JPEG">
+          <desc>
+            <name>BOISQUET (Charles)</name>
+            <trait>
+              <p>, né à Paris, élève de MM. Julien Dupré et G. Laugée. — Rue de la Pompe, 7, Paris.</p>
+            </trait>
+          </desc>
+          <item n="79" xml:id="Rouen_1895_e33_i79">
+            <num>79</num>
+            <title>Un coin de falaise, à Trestraon </title>
+            <desc>à Trestraon (Côtes-du-Nord).</desc>
+          </item>
+          <item n="80" xml:id="Rouen_1895_e33_i80">
+            <num>80</num>
+            <title>Une route à Meudon </title>
+            <desc>(printemps).</desc>
+          </item>
+        </entry>
+        <entry n="34" xml:id="Rouen_1895_e34" source="CatRouen_1895_bpt6k11806295_29.JPEG">
+          <desc>
+            <name>BOUTIGNNY (Jacques-Louis-Xavier)</name>
+            <trait>
+              <p>, né à Rouen, élève de MM. Lebel, et Zacharie. — Avenue du Mont-Riboudet, 246, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="81" xml:id="Rouen_1895_e34_i81">
+            <num>81</num>
+            <title>Les coteaux de Canteleu </title>
+            <desc>(vue prise du Mont-Ribou- det.</desc>
+          </item>
+          <item n="82" xml:id="Rouen_1895_e34_i82">
+            <num>82</num>
+            <title>Les premières feuilles, la rivière de Cailly, à Ba peaume-lès-Rouen.</title>
+            <desc>à Ba peaume-lès-Rouen.</desc>
+          </item>
+        </entry>
+        <entry n="35" xml:id="Rouen_1895_e35" source="CatRouen_1895_bpt6k11806295_29.JPEG">
+          <desc>
+            <name>BOITILLIÉ (Raphaël)</name>
+            <trait>
+              <p>, né à Rouen, élève de MM. Diogène Maillard et Truphème. — Rue du Faubourg-Saint-Martin, 5, Paris.</p>
+            </trait>
+          </desc>
+          <item n="83" xml:id="Rouen_1895_e35_i83">
+            <num>83</num>
+            <title>Le soir à Billancourt. Voir aux Dessins et à la Grarure</title>
+          </item>
+        </entry>
+        <entry n="36" xml:id="Rouen_1895_e36" source="CatRouen_1895_bpt6k11806295_29.JPEG">
+          <desc>
+            <name>BOUTROUX (Mme veuve),</name>
+            <trait>
+              <p> née Christine-Félicité du Villard), née à Paris, élève de M. Robert-Fleury, A x, 1895. — Rue Dulong, 10, Rouen.</p>
+            </trait>
+          </desc>
+          <item n="84" xml:id="Rouen_1895_e36_i84">
+            <num>84</num>
+            <title>Glaïeuls.</title>
+          </item>
+          <item n="85" xml:id="Rouen_1895_e36_i85">
+            <num>85</num>
+            <title>Lilas. Voir aux Dessins.</title>
+          </item>
+        </entry>
+        <entry n="37" xml:id="Rouen_1895_e37" source="CatRouen_1895_bpt6k11806295_29.JPEG">
+          <desc>
+            <name>BRANDE (Mlle. Marie-Rose-Emilie)</name>
+            <trait>
+              <p>, née à Orléans (Loiret), élève de M. J.-A. Langrand. — Rue des Jardins, Yvetot.</p>
+            </trait>
+          </desc>
+          <item n="86" xml:id="Rouen_1895_e37_i86">
+            <num>86</num>
+            <title>Melon et fruits.</title>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

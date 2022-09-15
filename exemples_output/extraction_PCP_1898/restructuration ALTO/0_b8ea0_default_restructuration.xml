@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>0_b8ea0_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:3550/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT180" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT181" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT182" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT183" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT184" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT185" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT186" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT187" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT188" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT189" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/>
+    <OtherTag ID="LT62" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT63" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT64" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="618" HEIGHT="1039" PHYSICAL_IMG_NR="0" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="618" HEIGHT="1039">
+        <TextBlock HPOS="13" VPOS="3" WIDTH="598" HEIGHT="1028" ID="eSc_textblock_ac1bbc93" TAGREFS="BT184">
+          <Shape>
+            <Polygon POINTS="13 3 15 1031 609 1031 611 6"/>
+          </Shape>
+          <TextLine ID="eSc_line_cc098ca5" TAGREFS="LT63" BASELINE="38 112 236 114" HPOS="34" VPOS="58" WIDTH="201" HEIGHT="64">
+            <Shape><Polygon POINTS="37 111 36 64 58 58 59 58 60 58 78 63 90 66 98 63 110 58 111 58 112 58 136 58 156 58 157 58 162 63 169 68 222 68 234 62 235 113 234 118 136 122 135 122 121 118 46 122 45 122 34 116"/></Shape>
+	    <String CONTENT="Salon" HPOS="34" VPOS="58" WIDTH="201" HEIGHT="64"/>
+          </TextLine>
+          <TextLine ID="eSc_line_17122012" TAGREFS="LT63" BASELINE="174 183 269 182" HPOS="172" VPOS="123" WIDTH="96" HEIGHT="72">
+            <Shape><Polygon POINTS="173 182 172 135 185 135 186 134 197 124 197 123 198 123 199 123 200 123 221 123 238 131 247 135 265 129 268 181 267 195 172 189"/></Shape>
+	    <String CONTENT="de" HPOS="172" VPOS="123" WIDTH="96" HEIGHT="72"/>
+          </TextLine>
+          <TextLine ID="eSc_line_d28f4651" TAGREFS="LT63" BASELINE="132 254 202 252 475 251 491 253 598 252" HPOS="130" VPOS="191" WIDTH="467" HEIGHT="80">
+            <Shape><Polygon POINTS="131 253 130 220 195 220 195 219 239 199 240 199 241 199 251 202 264 192 265 192 266 192 336 206 355 196 356 196 357 196 384 198 385 198 386 198 393 203 399 198 400 198 401 198 402 198 426 200 435 193 435 192 436 192 437 192 473 197 504 191 505 191 506 191 507 191 531 206 574 205 575 205 576 205 596 215 597 251 595 269 565 267 564 267 553 258 535 262 534 262 533 262 514 257 474 268 466 270 465 270 465 271 447 271 446 270 445 270 444 270 444 269 442 267 430 258 403 263 402 263 401 263 387 258 379 266 375 270 375 271 374 271 373 271 319 271 318 271 308 265 297 259 272 264 257 268 256 268 233 264 212 261 208 264 205 266 204 266 203 266 202 266 201 266 197 264 189 259 137 259 133 263"/></Shape>
+	    <String CONTENT="Photographie" HPOS="130" VPOS="191" WIDTH="467" HEIGHT="80"/>
+          </TextLine>
+          <TextLine ID="eSc_line_09ec4c5e" TAGREFS="LT63" BASELINE="312 608 433 606" HPOS="309" VPOS="563" WIDTH="123" HEIGHT="56">
+            <Shape><Polygon POINTS="311 607 309 576 322 576 324 575 344 563 345 563 346 563 369 563 370 563 384 574 389 577 429 574 432 605 431 619 412 619 411 618 410 618 409 618 399 611 370 616 350 619 349 619 310 613"/></Shape>
+	    <String CONTENT="Ve ANNÉE" HPOS="309" VPOS="563" WIDTH="123" HEIGHT="56"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0463ef90" TAGREFS="LT63" BASELINE="366 645 426 645" HPOS="364" VPOS="616" WIDTH="61" HEIGHT="46">
+            <Shape><Polygon POINTS="365 644 364 619 424 616 425 644 424 662 364 651"/></Shape>
+	    <String CONTENT="1898" HPOS="364" VPOS="616" WIDTH="61" HEIGHT="46"/>
+          </TextLine>
+          <TextLine ID="eSc_line_90c6915f" TAGREFS="LT63" BASELINE="110 901 463 903" HPOS="108" VPOS="854" WIDTH="354" HEIGHT="59">
+            <Shape><Polygon POINTS="109 900 109 854 144 862 164 855 165 855 166 855 167 855 168 855 169 855 185 864 243 858 244 858 245 858 260 865 323 865 352 860 374 856 375 856 439 856 440 856 462 863 462 902 461 909 430 912 429 912 410 909 390 906 383 909 377 912 377 913 321 913 320 912 319 912 318 912 316 909 311 905 283 905 276 909 274 911 273 911 272 911 271 911 267 910 256 906 242 910 238 911 237 911 236 911 227 910 194 905 177 910 175 911 174 911 173 911 172 911 171 911 170 910 165 905 134 905 108 910"/></Shape>
+	    <String CONTENT="Photo-Club" HPOS="108" VPOS="854" WIDTH="354" HEIGHT="59"/>
+          </TextLine>
+          <TextLine ID="eSc_line_86a0de52" TAGREFS="LT62" BASELINE="56 990 127 989" HPOS="53" VPOS="947" WIDTH="73" HEIGHT="62">
+            <Shape><Polygon POINTS="55 989 53 952 105 953 123 947 126 988 126 1004 55 1009"/></Shape>
+	    <String CONTENT="SAM." HPOS="53" VPOS="947" WIDTH="73" HEIGHT="62"/>
+          </TextLine>
+          <TextLine ID="eSc_line_c10d7162" TAGREFS="LT63" BASELINE="291 1004 346 1006 382 1007 545 1009" HPOS="288" VPOS="961" WIDTH="256" HEIGHT="67">
+            <Shape><Polygon POINTS="290 1003 288 968 304 961 304 961 304 961 305 961 305 961 305 961 305 961 305 961 306 961 330 968 331 969 365 970 369 968 379 962 380 962 380 962 381 962 381 962 381 962 382 962 382 962 382 962 383 962 383 962 396 968 408 962 408 962 409 962 409 962 409 962 409 962 444 964 444 964 444 964 445 964 445 964 446 964 446 964 452 969 455 971 460 969 476 963 476 963 477 963 477 963 478 963 478 963 478 963 479 963 479 963 479 963 490 969 493 970 543 970 544 1008 543 1028 289 1028"/></Shape>
+	    <String CONTENT="de Paris" HPOS="288" VPOS="961" WIDTH="256" HEIGHT="67"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

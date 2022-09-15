@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lux_1818">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="lux_1818_e1" source="Cat_Lux_1818_typo_0003.jpg">
+          <desc>
+            <name/>
+            <trait>
+              <p>22. Bélisaire demandant l’aumône.</p>
+            </trait>
+          </desc>
+          <item n="22" xml:id="lux_1818_e1_i22">
+            <num>22</num>
+            <title>Bélisaire demandant l’aumône. On dit que Bélisaire, fameux général, après avoir assuré la paix de l’empire romain par ses victoires, devint bientôt victime de la ja¬ lousie et de l’intrigue. Il perdit son crédit à la cour de l’empereur Justinien, qui, oubliant les services qu’il avoit rendus à l’état, lui fit brûler les yeux. Ce vieux guerrier, réduit à la mendicité, parcouroit les rues de Constanti¬ nople en implorant la pitié des passants. Il est représenté assis au pied d’un arc de triomphe qui rappelle ses glorieux exploits il tient entre ses bras un jeune enfant qui lui sert de conducteur, et qui reçoit dans un cas¬ que l’aumône que lui donne une femme tou¬ chée de compassion. Le bâton de Bélisaire est appuyé sur une pierre où on lit ces mots : Date obolum Belisario. Donnez une obole à Bélisaire. Sur le second plan on voit un soldat qui, reconnoissant son général, paroît aussi surpris qu’ému de cet affligeant spectacle. On aperçoit au fond divers monuments.</title>
+            <desc>fameux général, après avoir assuré la paix de l’empire romain par ses victoires, devint bientôt victime de la jalousie et de l’intrigue. Il perdit son crédit à la cour de l’empereur Justinien, qui, oubliant les services qu’il avoit rendus à l’état, lui fit brûler les yeux. Ce vieux guerrier, réduit à la mendicité, parcouroit les rues de Constantinople en implorant la pitié des passants. Il est représenté assis au pied d’un arc de triomphe qui rappelle ses glorieux exploits il tient entre ses bras un jeune enfant qui lui sert de conducteur, et qui reçoit dans un casque l’aumône que lui donne une femme touchée de compassion. Le bâton de Bélisaire est appuyé sur une pierre où on lit ces mots : Date obolum Belisario. Donnez une obole à Bélisaire. Sur le second plan on voit un soldat qui, reconnoissant son général, paroît aussi surpris qu’ému de cet affligeant spectacle. On aperçoit au fond divers monuments.</desc>
+          </item>
+          <item n="3" xml:id="lux_1818_e1_i3">
+            <num>3</num>
+            <title></title>
+          </item>
+          <item n="4" xml:id="lux_1818_e1_i4">
+            <title>plus grand. Le peintre a fait dans celui-ci d'heu¬</title>
+          </item>
+          <item n="5" xml:id="lux_1818_e1_i5">
+            <title>reux changements.</title>
+          </item>
+        </entry>
+        <entry n="2" xml:id="lux_1818_e2" source="Cat_Lux_1818_typo_0004.jpg">
+          <desc>
+            <name>DEMARNE (Jean-Louis)</name>
+            <trait>
+              <p>, né à Bruxelles.</p>
+            </trait>
+          </desc>
+          <item n="23" xml:id="lux_1818_e2_i23">
+            <num>23</num>
+            <title>Le départ pour une noce de village. Des hommes, des femmes, et des enfants, montés sur une voiture à quatre chevaux, partent pour la noce, un ménétrier fait partie de ce joyeux équipage. Une femme qui garde ses bestiaux indique à ces voyageurs la route qu'ils doivent suivre. Cette scène se passe au soleil levant, sur un chemin au bord d’une haie, dans une campa¬ gne pittoresque de Franche-Comté, enrichie d’arbres et de montagnes, dont plusieurs se détachent sur l’horizon.</title>
+            <desc>des femmes, et des enfants, montés sur une voiture à quatre chevaux, partent pour la noce, un ménétrier fait partie de ce joyeux équipage. Une femme qui garde ses bestiaux indique à ces voyageurs la route qu'ils doivent suivre. Cette scène se passe au soleil levant, sur un chemin au bord d’une haie, dans une campagne pittoresque de Franche-Comté, enrichie d’arbres et de montagnes, dont plusieurs se détachent sur l’horizon.</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="lux_1818_e3" source="Cat_Lux_1818_typo_0004.jpg">
+          <desc>
+            <name>DROLLING</name>
+            <trait>
+              <p>, né à Paris, ancien pensionnaire de France à Rome.</p>
+            </trait>
+          </desc>
+          <item n="24" xml:id="lux_1818_e3_i24">
+            <num>24</num>
+            <title>Orphée perdant Eurydice. Presque aux portes du jour, trouble, hors de lui-même, Il s’arrête, il se tourne, il revoit ce qu’il aime. C’en est fait, un coup-d’œil a détruit son bonheur.</title>
+            <desc>trouble, hors de lui-même, Il s’arrête, il se tourne, il revoit ce qu’il aime. C’en est fait, un coup-d’œil a détruit son bonheur.</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

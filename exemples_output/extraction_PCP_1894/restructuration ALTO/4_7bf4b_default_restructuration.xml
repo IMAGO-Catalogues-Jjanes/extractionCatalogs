@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>4_7bf4b_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2982/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT166" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT167" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT168" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT169" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT170" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT171" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT172" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT173" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT174" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT175" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT176" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT177" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT178" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT179" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT213" LABEL="CustomZone:advert" DESCRIPTION="block type CustomZone:advert"/>
+    <OtherTag ID="LT57" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT58" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT59" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT60" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/><OtherTag ID="LT61" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="924" HEIGHT="1520" PHYSICAL_IMG_NR="4" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="924" HEIGHT="1520">
+        <TextBlock HPOS="105" VPOS="140" WIDTH="562" HEIGHT="105" ID="eSc_textblock_8babeeba" TAGREFS="BT171">
+          <Shape>
+            <Polygon POINTS="105 140 105 245 667 245 667 140"/>
+          </Shape>
+        </TextBlock>
+        <TextBlock HPOS="78" VPOS="330" WIDTH="597" HEIGHT="1046" ID="eSc_textblock_ce607811" TAGREFS="BT166">
+          <Shape>
+            <Polygon POINTS="78 330 78 1376 675 1376 675 330"/>
+          </Shape>
+          <TextLine ID="eSc_line_36c90801" TAGREFS="LT61" BASELINE="173 392 591 392" HPOS="173" VPOS="358" WIDTH="418" HEIGHT="48">
+            <Shape><Polygon POINTS="173 392 173 358 591 358 591 392 591 400 173 406"/></Shape>
+	    <String CONTENT="L’ART PHOTOGRAPHIOUE" HPOS="173" VPOS="358" WIDTH="418" HEIGHT="48"/>
+          </TextLine>
+          <TextLine ID="eSc_line_4537c2d3" TAGREFS="LT58" BASELINE="210 487 655 487" HPOS="209" VPOS="464" WIDTH="446" HEIGHT="35">
+            <Shape><Polygon POINTS="210 487 210 464 655 464 655 487 654 499 209 495"/></Shape>
+	    <String CONTENT="'ART Photographique ?... La photographie un Art !.." HPOS="209" VPOS="464" WIDTH="446" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_d630e8e0" TAGREFS="LT58" BASELINE="214 514 657 511" HPOS="212" VPOS="490" WIDTH="445" HEIGHT="30">
+            <Shape><Polygon POINTS="214 514 212 490 655 492 657 511 656 516 214 520"/></Shape>
+	    <String CONTENT="Allons donc ! Est-ce qu’on peut avec la photo¬" HPOS="212" VPOS="490" WIDTH="445" HEIGHT="30"/>
+          </TextLine>
+          <TextLine ID="eSc_line_4e7db54b" TAGREFS="LT58" BASELINE="215 538 657 535" HPOS="212" VPOS="514" WIDTH="445" HEIGHT="34">
+            <Shape><Polygon POINTS="215 538 212 519 654 514 657 535 656 542 215 548"/></Shape>
+	    <String CONTENT="graphie concevoir une œuvre, ordonnancer un" HPOS="212" VPOS="514" WIDTH="445" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_2395983b" TAGREFS="LT58" BASELINE="215 560 656 562" HPOS="211" VPOS="538" WIDTH="444" HEIGHT="34">
+            <Shape><Polygon POINTS="214 559 212 539 652 538 655 561 652 572 211 570"/></Shape>
+	    <String CONTENT="sujet ? Est-ce que le photographe peut rendre ce" HPOS="211" VPOS="538" WIDTH="444" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_91200564" TAGREFS="LT58" BASELINE="110 587 656 583" HPOS="106" VPOS="562" WIDTH="550" HEIGHT="33">
+            <Shape><Polygon POINTS="110 587 106 566 652 562 656 583 655 594 110 595"/></Shape>
+	    <String CONTENT="qu’il voit, autrement que ne le voit son objectif, c’est-à-dire" HPOS="106" VPOS="562" WIDTH="550" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_68340a62" TAGREFS="LT58" BASELINE="111 610 657 608" HPOS="109" VPOS="583" WIDTH="548" HEIGHT="37">
+            <Shape><Polygon POINTS="111 610 109 587 652 583 657 608 655 620 110 618"/></Shape>
+	    <String CONTENT="un œil fixe et dont la vision ne se trouve aucunement" HPOS="109" VPOS="583" WIDTH="548" HEIGHT="37"/>
+          </TextLine>
+          <TextLine ID="eSc_line_f10c7e9d" TAGREFS="LT58" BASELINE="111 635 656 633" HPOS="109" VPOS="614" WIDTH="547" HEIGHT="32">
+            <Shape><Polygon POINTS="111 635 109 616 652 614 656 633 654 646 110 643"/></Shape>
+	    <String CONTENT="modifiée par des rapports avec un cerveau ? Il travaille en" HPOS="109" VPOS="614" WIDTH="547" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_a134b334" TAGREFS="LT58" BASELINE="110 661 657 658" HPOS="107" VPOS="639" WIDTH="550" HEIGHT="29">
+            <Shape><Polygon POINTS="110 661 107 642 654 639 657 658 656 667 110 668"/></Shape>
+	    <String CONTENT="compagnie de la lumière, soit, mais la lumière ne garde-" HPOS="107" VPOS="639" WIDTH="550" HEIGHT="29"/>
+          </TextLine>
+          <TextLine ID="eSc_line_cf784ca2" TAGREFS="LT58" BASELINE="110 685 657 682" HPOS="107" VPOS="659" WIDTH="550" HEIGHT="35">
+            <Shape><Polygon POINTS="110 685 107 666 654 659 657 682 655 694 109 692"/></Shape>
+	    <String CONTENT="t-elle pas envers lui tous ses secrets ? Une œuvre d'art, cette" HPOS="107" VPOS="659" WIDTH="550" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_a0885cf2" TAGREFS="LT58" BASELINE="110 710 657 706" HPOS="107" VPOS="686" WIDTH="550" HEIGHT="32">
+            <Shape><Polygon POINTS="110 710 107 690 654 686 657 706 656 714 110 718"/></Shape>
+	    <String CONTENT="chose qui nous représente tout en détail, nous montre les" HPOS="107" VPOS="686" WIDTH="550" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_dbf44c43" TAGREFS="LT58" BASELINE="110 735 657 733" HPOS="107" VPOS="708" WIDTH="550" HEIGHT="35">
+            <Shape><Polygon POINTS="110 735 107 710 654 708 657 733 656 742 110 743"/></Shape>
+	    <String CONTENT="lointains aussi nets que les premiers plans ? Un art, cette" HPOS="107" VPOS="708" WIDTH="550" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_755fc786" TAGREFS="LT58" BASELINE="110 760 657 760" HPOS="110" VPOS="734" WIDTH="547" HEIGHT="34">
+            <Shape><Polygon POINTS="110 760 110 734 657 737 657 760 657 766 110 768"/></Shape>
+	    <String CONTENT="manière de sport consistant à viser un obiet, à presser un" HPOS="110" VPOS="734" WIDTH="547" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e2f6a3a0" TAGREFS="LT58" BASELINE="110 785 656 781" HPOS="109" VPOS="761" WIDTH="547" HEIGHT="30">
+            <Shape><Polygon POINTS="110 785 109 761 654 762 656 781 655 787 110 791"/></Shape>
+	    <String CONTENT="bouton et à jeter sur une plaque de verre une mixture chi¬" HPOS="109" VPOS="761" WIDTH="547" HEIGHT="30"/>
+          </TextLine>
+          <TextLine ID="eSc_line_74dbdfe1" TAGREFS="LT58" BASELINE="110 809 657 806" HPOS="107" VPOS="786" WIDTH="550" HEIGHT="32">
+            <Shape><Polygon POINTS="110 809 107 790 654 786 657 806 655 818 109 817"/></Shape>
+	    <String CONTENT="mique plus ou moins savamment combinée ?..... Si nous" HPOS="107" VPOS="786" WIDTH="550" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_85861315" TAGREFS="LT58" BASELINE="110 833 657 833" HPOS="109" VPOS="811" WIDTH="548" HEIGHT="32">
+            <Shape><Polygon POINTS="110 833 110 811 657 814 657 833 656 843 109 842"/></Shape>
+	    <String CONTENT="admettons la conception possible, où peut-il y avoir, dans" HPOS="109" VPOS="811" WIDTH="548" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_a5b228d5" TAGREFS="LT58" BASELINE="110 858 656 855" HPOS="107" VPOS="837" WIDTH="549" HEIGHT="30">
+            <Shape><Polygon POINTS="110 858 107 841 652 837 656 855 655 867 110 867"/></Shape>
+	    <String CONTENT="tout cela, création d’une expression originale, personnelle" HPOS="107" VPOS="837" WIDTH="549" HEIGHT="30"/>
+          </TextLine>
+          <TextLine ID="eSc_line_3351e218" TAGREFS="LT58" BASELINE="111 882 657 880" HPOS="109" VPOS="861" WIDTH="548" HEIGHT="34">
+            <Shape><Polygon POINTS="111 882 109 863 654 861 657 880 656 887 111 895"/></Shape>
+	    <String CONTENT="pour l’œuvre conçue ? L’Art photographique !... La Photo¬" HPOS="109" VPOS="861" WIDTH="548" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_a82532dd" TAGREFS="LT58" BASELINE="110 908 477 904" HPOS="107" VPOS="882" WIDTH="370" HEIGHT="33">
+            <Shape><Polygon POINTS="110 908 107 889 474 882 477 904 477 915 110 915"/></Shape>
+	    <String CONTENT="graphie un Art !... Non ! mille fois non !" HPOS="107" VPOS="882" WIDTH="370" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_d93a4dd1" TAGREFS="LT58" BASELINE="130 932 553 928" HPOS="128" VPOS="903" WIDTH="425" HEIGHT="38">
+            <Shape><Polygon POINTS="130 932 128 909 550 903 553 928 552 939 130 941"/></Shape>
+	    <String CONTENT="A mon tour, je répondrai : oui ! mille fois oui !" HPOS="128" VPOS="903" WIDTH="425" HEIGHT="38"/>
+          </TextLine>
+          <TextLine ID="eSc_line_6aa1fa53" TAGREFS="LT58" BASELINE="130 955 657 951" HPOS="128" VPOS="927" WIDTH="529" HEIGHT="36">
+            <Shape><Polygon POINTS="130 955 128 936 654 927 657 951 656 961 130 963"/></Shape>
+	    <String CONTENT="Certes, il eviste au moins autant d’arts que Sganarelle" HPOS="128" VPOS="927" WIDTH="529" HEIGHT="36"/>
+          </TextLine>
+          <TextLine ID="eSc_line_6df1eb9e" TAGREFS="LT58" BASELINE="110 980 657 977" HPOS="109" VPOS="956" WIDTH="548" HEIGHT="34">
+            <Shape><Polygon POINTS="110 980 109 956 655 958 657 977 656 986 110 990"/></Shape>
+	    <String CONTENT="aurait pu dénombrer de fagots. Par opposition à tous ces" HPOS="109" VPOS="956" WIDTH="548" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_54dc0036" TAGREFS="LT58" BASELINE="110 1004 659 1001" HPOS="109" VPOS="981" WIDTH="550" HEIGHT="32">
+            <Shape><Polygon POINTS="110 1004 109 981 656 982 659 1001 659 1013 110 1013"/></Shape>
+	    <String CONTENT="arts, exclusivement mécaniques en général, notre langue a" HPOS="109" VPOS="981" WIDTH="550" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_c28a2cab" TAGREFS="LT58" BASELINE="110 1029 657 1029" HPOS="110" VPOS="1007" WIDTH="547" HEIGHT="31">
+            <Shape><Polygon POINTS="110 1029 110 1007 657 1008 657 1029 657 1036 110 1038"/></Shape>
+	    <String CONTENT="créé l'expression : Arts Libéraux ou Beaux-Arts. Cette créa¬" HPOS="110" VPOS="1007" WIDTH="547" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_e8cbc631" TAGREFS="LT58" BASELINE="111 1055 657 1051" HPOS="109" VPOS="1031" WIDTH="548" HEIGHT="31">
+            <Shape><Polygon POINTS="111 1055 109 1034 654 1031 657 1051 656 1062 111 1062"/></Shape>
+	    <String CONTENT="tion tenait en germe l’idée que nous attachons aujourd’hui" HPOS="109" VPOS="1031" WIDTH="548" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_b15d255b" TAGREFS="LT58" BASELINE="110 1079 656 1076" HPOS="107" VPOS="1056" WIDTH="549" HEIGHT="29">
+            <Shape><Polygon POINTS="110 1079 107 1058 652 1056 656 1076 655 1084 110 1085"/></Shape>
+	    <String CONTENT="au mot art. En l’écrivant ou en le prononçant, nous n’enten¬" HPOS="107" VPOS="1056" WIDTH="549" HEIGHT="29"/>
+          </TextLine>
+          <TextLine ID="eSc_line_ce1fc79f" TAGREFS="LT58" BASELINE="110 1103 656 1099" HPOS="107" VPOS="1079" WIDTH="549" HEIGHT="33">
+            <Shape><Polygon POINTS="110 1103 107 1080 652 1079 656 1099 655 1108 110 1112"/></Shape>
+	    <String CONTENT="dons plus une simple production d’œuvre quelconque desti¬" HPOS="107" VPOS="1079" WIDTH="549" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_90f89af4" TAGREFS="LT58" BASELINE="111 1128 657 1126" HPOS="107" VPOS="1102" WIDTH="550" HEIGHT="34">
+            <Shape><Polygon POINTS="111 1128 107 1109 130 1102 131 1102 133 1102 655 1103 657 1126 656 1132 111 1136"/></Shape>
+	    <String CONTENT="née à captiver l’imagination humaine ; nous oublions" HPOS="107" VPOS="1102" WIDTH="550" HEIGHT="34"/>
+          </TextLine>
+          <TextLine ID="eSc_line_299e6cff" TAGREFS="LT58" BASELINE="111 1153 656 1148" HPOS="110" VPOS="1128" WIDTH="546" HEIGHT="37">
+            <Shape><Polygon POINTS="111 1153 110 1128 654 1129 656 1148 655 1160 111 1165"/></Shape>
+	    <String CONTENT="I'habileté enployée à remplir ce besoin de captation ; nous." HPOS="110" VPOS="1128" WIDTH="546" HEIGHT="37"/>
+          </TextLine>
+          <TextLine ID="eSc_line_813950b7" TAGREFS="LT58" BASELINE="111 1176 657 1174" HPOS="109" VPOS="1155" WIDTH="548" HEIGHT="31">
+            <Shape><Polygon POINTS="111 1176 109 1157 654 1155 657 1174 656 1185 111 1186"/></Shape>
+	    <String CONTENT="y voyons le mobile de l’œuvre, le ressort secret qui attache" HPOS="109" VPOS="1155" WIDTH="548" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_40fdb8a3" TAGREFS="LT58" BASELINE="111 1202 656 1198" HPOS="109" VPOS="1179" WIDTH="547" HEIGHT="30">
+            <Shape><Polygon POINTS="111 1202 109 1183 652 1179 656 1198 655 1205 111 1209"/></Shape>
+	    <String CONTENT="cette même imagination, l’émeut et la satisfait par l’imita¬" HPOS="109" VPOS="1179" WIDTH="547" HEIGHT="30"/>
+          </TextLine>
+          <TextLine ID="eSc_line_218ca8c7" TAGREFS="LT58" BASELINE="111 1227 656 1223" HPOS="109" VPOS="1202" WIDTH="547" HEIGHT="31">
+            <Shape><Polygon POINTS="111 1227 109 1203 652 1202 656 1223 655 1231 111 1233"/></Shape>
+	    <String CONTENT="tion des objets extérieurs ; nous y constatons les principes" HPOS="109" VPOS="1202" WIDTH="547" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_7cca4b66" TAGREFS="LT58" BASELINE="111 1251 656 1248" HPOS="109" VPOS="1228" WIDTH="547" HEIGHT="32">
+            <Shape><Polygon POINTS="111 1251 109 1231 652 1228 656 1248 654 1260 110 1259"/></Shape>
+	    <String CONTENT="déterminant cette imitation et nous la faisant accepter" HPOS="109" VPOS="1228" WIDTH="547" HEIGHT="32"/>
+          </TextLine>
+          <TextLine ID="eSc_line_8a8f38cb" TAGREFS="LT58" BASELINE="111 1274 496 1271" HPOS="109" VPOS="1254" WIDTH="387" HEIGHT="31">
+            <Shape><Polygon POINTS="111 1274 109 1256 493 1254 496 1271 495 1280 111 1285"/></Shape>
+	    <String CONTENT="comme une haute jouissance intellectuelle." HPOS="109" VPOS="1254" WIDTH="387" HEIGHT="31"/>
+          </TextLine>
+          <TextLine ID="eSc_line_cef76402" TAGREFS="LT58" BASELINE="131 1298 657 1294" HPOS="129" VPOS="1274" WIDTH="528" HEIGHT="33">
+            <Shape><Polygon POINTS="131 1298 129 1276 654 1274 657 1294 656 1304 131 1307"/></Shape>
+	    <String CONTENT="Des procédès purement matériels employés, il n’est plus" HPOS="129" VPOS="1274" WIDTH="528" HEIGHT="33"/>
+          </TextLine>
+          <TextLine ID="eSc_line_35710054" TAGREFS="LT58" BASELINE="112 1323 656 1323" HPOS="112" VPOS="1303" WIDTH="544" HEIGHT="53">
+            <Shape><Polygon POINTS="112 1323 112 1303 656 1303 656 1323 656 1356 599 1356 598 1355 596 1355 595 1355 580 1342 557 1354 556 1354 556 1355 547 1355 465 1355 463 1354 462 1354 461 1354 441 1338 321 1338 308 1351 305 1354 305 1355 304 1355 302 1355 301 1355 300 1355 288 1351 278 1349 262 1351 234 1355 233 1355 231 1355 220 1350 192 1338 112 1349"/></Shape>
+	    <String CONTENT="question. Ils demeurent science et application de sciences." HPOS="112" VPOS="1303" WIDTH="544" HEIGHT="53"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="112" VPOS="470" WIDTH="95" HEIGHT="98" ID="eSc_textblock_34cf0c5c" TAGREFS="BT169">
+          <Shape>
+            <Polygon POINTS="112 470 113 568 207 567 205 470"/>
+          </Shape>
+          <TextLine ID="eSc_line_408ebe40" TAGREFS="LT59" BASELINE="132 553 183 552" HPOS="129" VPOS="466" WIDTH="53" HEIGHT="98">
+            <Shape><Polygon POINTS="131 552 129 466 178 468 182 551 181 563 132 564"/></Shape>
+	    <String CONTENT="L" HPOS="129" VPOS="466" WIDTH="53" HEIGHT="98"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

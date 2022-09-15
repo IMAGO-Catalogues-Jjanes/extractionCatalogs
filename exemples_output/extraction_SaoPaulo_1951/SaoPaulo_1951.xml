@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SaoPaulo_1951">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="SaoPaulo_1951_e1" source="Cat_SaoPaulo_1951_0002.jpg">
+          <desc>
+            <name>Ivan Le Lorraine ALBRIGHT </name>
+            <trait>
+              <p>(EE. UU. 1897 —)</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1951_e1_i1">
+            <num>1</num>
+            <title>Mulher — 1928 . 84x56. Museum of Modern Art, New York</title>
+            <desc>— 1928 . 84x56. Museum of Modern Art, New York</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="SaoPaulo_1951_e2" source="Cat_SaoPaulo_1951_0002.jpg">
+          <desc>
+            <name>William BAZIOTES </name>
+            <trait>
+              <p>(EE. UU. 1911 —)</p>
+            </trait>
+          </desc>
+          <item n="2" xml:id="SaoPaulo_1951_e2_i2">
+            <num>2</num>
+            <title>Natureza morta — máscaras — 1946 — 91x122. Philip C. Johonson, New York</title>
+            <desc>— máscaras — 1946 — 91x122. Philip C. Johonson, New York</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1951_e2_i3">
+            <num>3</num>
+            <title>O sonâmbulo — 1951. 122x102. The Kootz Gal¬ lery, New York</title>
+            <desc>— 1951. 122x102. The Kootz Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="SaoPaulo_1951_e3" source="Cat_SaoPaulo_1951_0003.jpg">
+          <desc>
+            <name>Hyman BLOOM </name>
+            <trait>
+              <p>(Latvia, 1913 —)</p>
+            </trait>
+          </desc>
+          <item n="4" xml:id="SaoPaulo_1951_e3_i4">
+            <num>4</num>
+            <title>A noiva — 1945. 127x63,5. Durlacher Brothers, New York</title>
+            <desc>— 1945. 127x63,5. Durlacher Brothers, New York</desc>
+          </item>
+          <item n="5" xml:id="SaoPaulo_1951_e3_i5">
+            <num>5</num>
+            <title>Tesouro escondido — 1947. 109x109. Durlacher Brothers, New York</title>
+            <desc>— 1947. 109x109. Durlacher Brothers, New York</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="SaoPaulo_1951_e4" source="Cat_SaoPaulo_1951_0003.jpg">
+          <desc>
+            <name>Peter BLUME </name>
+            <trait>
+              <p>(Russia, 1906 —)</p>
+            </trait>
+          </desc>
+          <item n="6" xml:id="SaoPaulo_1951_e4_i6">
+            <num>6</num>
+            <title>O rochedo — 1948. 147x188. Edgar Kaufmann Jr., New York</title>
+            <desc>— 1948. 147x188. Edgar Kaufmann Jr., New York</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="SaoPaulo_1951_e5" source="Cat_SaoPaulo_1951_0003.jpg">
+          <desc>
+            <name>Charles BURCHFIELD </name>
+            <trait>
+              <p>(EE. UU. 1893 —)</p>
+            </trait>
+          </desc>
+          <item n="7" xml:id="SaoPaulo_1951_e5_i7">
+            <num>7</num>
+            <title>Inverno — 1930-43. Aquarela. 81x104. Interna¬ tional Business Machines Corporation</title>
+            <desc>— 1930-43. Aquarela. 81x104. International Business Machines Corporation</desc>
+          </item>
+          <item n="8" xml:id="SaoPaulo_1951_e5_i8">
+            <num>8</num>
+            <title>Um dia de meio-inverno — 1945. aquarela. 72x64. Frank K.M. Hehn Galleries, New York</title>
+            <desc>— 1945. aquarela. 72x64. Frank K.M. Hehn Galleries, New York</desc>
+          </item>
+          <item n="9" xml:id="SaoPaulo_1951_e5_i9">
+            <num>9</num>
+            <title>Esfinge e via-láctea — 1946. aquarela s/papel. Utica, N. Y.</title>
+            <desc>— 1946. aquarela s/papel. Utica, N. Y.</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="SaoPaulo_1951_e6" source="Cat_SaoPaulo_1951_0003.jpg">
+          <desc>
+            <name>Stuart DAVIS </name>
+            <trait>
+              <p>(EE. UU. 1894 —)</p>
+            </trait>
+          </desc>
+          <item n="10" xml:id="SaoPaulo_1951_e6_i10">
+            <num>10</num>
+            <title>'Ursine Park' — 1942. 50,8x103. International Business Machines Corporation</title>
+            <desc>— 1942. 50,8x103. International Business Machines Corporation</desc>
+          </item>
+          <item n="11" xml:id="SaoPaulo_1951_e6_i11">
+            <num>11</num>
+            <title>“Arboretum by flashbulb” — 1942. 45x91. Sr. e Sra. Milton Lowenthal, New York</title>
+            <desc>— 1942. 45x91. Sr. e Sra. Milton Lowenthal, New York</desc>
+          </item>
+          <item n="12" xml:id="SaoPaulo_1951_e6_i12">
+            <num>12</num>
+            <title>Vistos — 1951. 101,6x132. The Downtown Gal¬ lery, New York</title>
+            <desc>— 1951. 101,6x132. The Downtown Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="SaoPaulo_1951_e7" source="Cat_SaoPaulo_1951_0003.jpg">
+          <desc>
+            <name>Max ERNEST </name>
+            <trait>
+              <p>(Alemanha, 1891 —)</p>
+            </trait>
+          </desc>
+          <item n="13" xml:id="SaoPaulo_1951_e7_i13">
+            <num>13</num>
+            <title>Núpcias quimicas — 1947-48. 66x150,4 M. Knoe- dler &amp; Co., New York</title>
+            <desc>— 1947-48. 66x150,4 M. Knoe- dler &amp; Co., New York</desc>
+          </item>
+          <item n="14" xml:id="SaoPaulo_1951_e7_i14">
+            <num>14</num>
+            <title>A festa dos deuses — 1948. 106,6x152,4. M. Knoedler &amp; Co., New York</title>
+            <desc>— 1948. 106,6x152,4. M. Knoedler &amp; Co., New York</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="SaoPaulo_1951_e8" source="Cat_SaoPaulo_1951_0004.jpg">
+          <desc>
+            <name>Philip EVERGOOD </name>
+            <trait>
+              <p>(EE. UU. 1901 —)</p>
+            </trait>
+          </desc>
+          <item n="15" xml:id="SaoPaulo_1951_e8_i15">
+            <num>15</num>
+            <title>Natureza morta — 1944. 88,9x102. Sr. e Sra. Hudson D. Walker, New York.</title>
+            <desc>— 1944. 88,9x102. Sr. e Sra. Hudson D. Walker, New York.</desc>
+          </item>
+          <item n="16" xml:id="SaoPaulo_1951_e8_i16">
+            <num>16</num>
+            <title>Os homens e a montanha — 1945. Herbert Small, Takoma Park, Maryland</title>
+            <desc>— 1945. Herbert Small, Takoma Park, Maryland</desc>
+          </item>
+          <item n="17" xml:id="SaoPaulo_1951_e8_i17">
+            <num>17</num>
+            <title>Alegria em New Jersey — 1951. 88,9x102. A.C.A. Gallery, New York</title>
+            <desc>— 1951. 88,9x102. A.C.A. Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="SaoPaulo_1951_e9" source="Cat_SaoPaulo_1951_0004.jpg">
+          <desc>
+            <name>Lyonel FEININGER </name>
+            <trait>
+              <p>(EE. UU. 1871 —)</p>
+            </trait>
+          </desc>
+          <item n="18" xml:id="SaoPaulo_1951_e9_i18">
+            <num>18</num>
+            <title>A costa do nunca-mais — 1944. 48,2x81. Curt Valentin, New York</title>
+            <desc>— 1944. 48,2x81. Curt Valentin, New York</desc>
+          </item>
+          <item n="19" xml:id="SaoPaulo_1951_e9_i19">
+            <num>19</num>
+            <title>A ilha distante — 1946-47. 50,8x88,9. The Buchholz Gallery, New York</title>
+            <desc>— 1946-47. 50,8x88,9. The Buchholz Gallery, New York</desc>
+          </item>
+          <item n="20" xml:id="SaoPaulo_1951_e9_i20">
+            <num>20</num>
+            <title>“Vita nova” — 1947. 79,9x100,3. The Buchholz Gallery, New York</title>
+            <desc>— 1947. 79,9x100,3. The Buchholz Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="SaoPaulo_1951_e10" source="Cat_SaoPaulo_1951_0004.jpg">
+          <desc>
+            <name>Fritz GLARNER </name>
+            <trait>
+              <p>(Suíça, 1899—)</p>
+            </trait>
+          </desc>
+          <item n="21" xml:id="SaoPaulo_1951_e10_i21">
+            <num>21</num>
+            <title>Pintura relacionai — Tondo — n.° 20 — 1950-51. óleo s/masonite. Diâmetro 121. Rose Fried Gal¬ lery, New York</title>
+            <desc>— Tondo — n.° 20 — 1950-51. óleo s/masonite. Diâmetro 121. Rose Fried Gallery, New York</desc>
+          </item>
+          <item n="22" xml:id="SaoPaulo_1951_e10_i22">
+            <num>22</num>
+            <title>Pintura relacional — 1950. 147x122. Rose Fried Gallery, New York</title>
+            <desc>— 1950. 147x122. Rose Fried Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="SaoPaulo_1951_e11" source="Cat_SaoPaulo_1951_0004.jpg">
+          <desc>
+            <name>Morris GRAVES </name>
+            <trait>
+              <p>(EE. UU. 1910 —)</p>
+            </trait>
+          </desc>
+          <item n="23" xml:id="SaoPaulo_1951_e11_i23">
+            <num>23</num>
+            <title>Pássaro cego — 1950. gouache. 76,5x68,5. Mu¬ seum of Modern Art, New York</title>
+            <desc>— 1950. gouache. 76,5x68,5. Museum of Modern Art, New York</desc>
+          </item>
+          <item n="24" xml:id="SaoPaulo_1951_e11_i24">
+            <num>24</num>
+            <title>Pinheiro jovem e alegre — 1944. aquarela e gouache. 136x68,5. Museum of Modern Art, New York</title>
+            <desc>— 1944. aquarela e gouache. 136x68,5. Museum of Modern Art, New York</desc>
+          </item>
+          <item n="25" xml:id="SaoPaulo_1951_e11_i25">
+            <num>25</num>
+            <title>“Bouquet” enfeitiçado — 1944. têmpera s/papel arrôs. 76,5x70. Willard Gallery, New York</title>
+            <desc>— 1944. têmpera s/papel arrôs. 76,5x70. Willard Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="12" xml:id="SaoPaulo_1951_e12" source="Cat_SaoPaulo_1951_0005.jpg">
+          <desc>
+            <name>George GROSZ </name>
+            <trait>
+              <p>(Alemanha, 1893 —)</p>
+            </trait>
+          </desc>
+          <item n="26" xml:id="SaoPaulo_1951_e12_i26">
+            <num>26</num>
+            <title>O sobrevivente — 1944. 96,5x80. Associated American Artists Galleries, New York</title>
+            <desc>— 1944. 96,5x80. Associated American Artists Galleries, New York</desc>
+          </item>
+          <item n="27" xml:id="SaoPaulo_1951_e12_i27">
+            <num>27</num>
+            <title>Um pedaço de meu mundo, n.° 1 — 1944. 96,5x137. Associated American Artists Galleries, New York</title>
+            <desc>n.° 1 — 1944. 96,5x137. Associated American Artists Galleries, New York</desc>
+          </item>
+          <item n="28" xml:id="SaoPaulo_1951_e12_i28">
+            <num>28</num>
+            <title>O pintor do buraco, segunda versão — 1948. 51x71. Associated American Artists Galleries, New York</title>
+            <desc>segunda versão — 1948. 51x71. Associated American Artists Galleries, New York</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="SaoPaulo_1951_e13" source="Cat_SaoPaulo_1951_0005.jpg">
+          <desc>
+            <name>Edward HOPPER </name>
+            <trait>
+              <p>(EE. UU. 1882 —)</p>
+            </trait>
+          </desc>
+          <item n="29" xml:id="SaoPaulo_1951_e13_i29">
+            <num>29</num>
+            <title>Posto de gasolina — 1940. 67x102. Fundo Sra. Simon Guggenheim.</title>
+            <desc>— 1940. 67x102. Fundo Sra. Simon Guggenheim.</desc>
+          </item>
+          <item n="30" xml:id="SaoPaulo_1951_e13_i30">
+            <num>30</num>
+            <title>Madrugada em Pennsylvania — 1942. 62x112. Sr. e Sra. Otto L. Spaeth, New York</title>
+            <desc>— 1942. 62x112. Sr. e Sra. Otto L. Spaeth, New York</desc>
+          </item>
+          <item n="31" xml:id="SaoPaulo_1951_e13_i31">
+            <num>31</num>
+            <title>Manhã no Cabo Cod — 1950. 86,3x102. Frank K.M. Hehn Galleries, New York</title>
+            <desc>— 1950. 86,3x102. Frank K.M. Hehn Galleries, New York</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="SaoPaulo_1951_e14" source="Cat_SaoPaulo_1951_0005.jpg">
+          <desc>
+            <name>Willem de KOONING </name>
+            <trait>
+              <p>(Holanda, 1904 —)</p>
+            </trait>
+          </desc>
+          <item n="32" xml:id="SaoPaulo_1951_e14_i32">
+            <num>32</num>
+            <title>Atico — 1949-50. 156x204. Egan Gallery, New York</title>
+            <desc>— 1949-50. 156x204. Egan Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="15" xml:id="SaoPaulo_1951_e15" source="Cat_SaoPaulo_1951_0005.jpg">
+          <desc>
+            <name>Yasuo KUNIYOSHI </name>
+            <trait>
+              <p>(Japão, 1893 —)</p>
+            </trait>
+          </desc>
+          <item n="33" xml:id="SaoPaulo_1951_e15_i33">
+            <num>33</num>
+            <title>Cavalo sem cabeça querendo pular — 1945. 145x89. Museum of the Granbrook Academy of Art</title>
+            <desc>— 1945. 145x89. Museum of the Granbrook Academy of Art</desc>
+          </item>
+          <item n="34" xml:id="SaoPaulo_1951_e15_i34">
+            <num>34</num>
+            <title>Peixe voador — 1930. 76x127. The Downtown Gallery, New York</title>
+            <desc>— 1930. 76x127. The Downtown Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="16" xml:id="SaoPaulo_1951_e16" source="Cat_SaoPaulo_1951_0005.jpg">
+          <desc>
+            <name>Jacob LAWRENCE </name>
+            <trait>
+              <p>(EE. UU. 1917 —)</p>
+            </trait>
+          </desc>
+          <item n="35" xml:id="SaoPaulo_1951_e16_i35">
+            <num>35</num>
+            <title>Pedras tumulares — 1942, gouache s/papel.</title>
+            <desc>— 1942, gouache s/papel.</desc>
+          </item>
+          <item n="36" xml:id="SaoPaulo_1951_e16_i36">
+            <num>36</num>
+            <title>Sedação — 1950. caseina. 79x58. Museum of Modern Art, New York</title>
+            <desc>— 1950. caseina. 79x58. Museum of Modern Art, New York</desc>
+          </item>
+          <item n="37" xml:id="SaoPaulo_1951_e16_i37">
+            <num>37</num>
+            <title>Cortiço — 1951. caseina s/papel. 63,5x55. The Downtow Gallery, New York</title>
+            <desc>— 1951. caseina s/papel. 63,5x55. The Downtow Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="17" xml:id="SaoPaulo_1951_e17" source="Cat_SaoPaulo_1951_0006.jpg">
+          <desc>
+            <name>Jack LEVINE </name>
+            <trait>
+              <p>(EE. UU. 1915 —)</p>
+            </trait>
+          </desc>
+          <item n="38" xml:id="SaoPaulo_1951_e17_i38">
+            <num>38</num>
+            <title>O banquete — 1941. 64x76. Sr. E Sra. Roy R. Neuberger, New York</title>
+            <desc>— 1941. 64x76. Sr. E Sra. Roy R. Neuberger, New York</desc>
+          </item>
+          <item n="39" xml:id="SaoPaulo_1951_e17_i39">
+            <num>39</num>
+            <title>Apteka — 1947. 102x152. The Downtown Gallery, New York</title>
+            <desc>— 1947. 102x152. The Downtown Gallery, New York</desc>
+          </item>
+          <item n="40" xml:id="SaoPaulo_1951_e17_i40">
+            <num>40</num>
+            <title>O fim da linha — 1948. 91x61. The Phillips Gal¬ lery, Washington, D.C.</title>
+            <desc>— 1948. 91x61. The Phillips Gallery, Washington, D.C.</desc>
+          </item>
+        </entry>
+        <entry n="18" xml:id="SaoPaulo_1951_e18" source="Cat_SaoPaulo_1951_0006.jpg">
+          <desc>
+            <name>Loren MACIVER </name>
+            <trait>
+              <p>(EE. UU. 1905 —)</p>
+            </trait>
+          </desc>
+          <item n="41" xml:id="SaoPaulo_1951_e18_i41">
+            <num>41</num>
+            <title>Planta — 1945. 102x66. Sr. e Sra. James Thrall Soby, Farmington, Conn.</title>
+            <desc>— 1945. 102x66. Sr. e Sra. James Thrall Soby, Farmington, Conn.</desc>
+          </item>
+          <item n="42" xml:id="SaoPaulo_1951_e18_i42">
+            <num>42</num>
+            <title>Emmet Kelly — 1947. 102x81. Sr. e Sra. Roy R. Neuberger, New York</title>
+            <desc>— 1947. 102x81. Sr. e Sra. Roy R. Neuberger, New York</desc>
+          </item>
+          <item n="43" xml:id="SaoPaulo_1951_e18_i43">
+            <num>43</num>
+            <title>Carvão e madeira — 1949. 102x157. Pierre Ma¬ tisse Gallery, New York</title>
+            <desc>— 1949. 102x157. Pierre Matisse Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="19" xml:id="SaoPaulo_1951_e19" source="Cat_SaoPaulo_1951_0006.jpg">
+          <desc>
+            <name>John MARIN </name>
+            <trait>
+              <p>(EE. UU. 1870 —)</p>
+            </trait>
+          </desc>
+          <item n="44" xml:id="SaoPaulo_1951_e19_i44">
+            <num>44</num>
+            <title>Movimento, bote, mar, rochedos e céu, Maine —</title>
+            <desc>bote, mar, rochedos e céu, Maine —</desc>
+          </item>
+          <item n="1941" xml:id="SaoPaulo_1951_e19_i1941">
+            <num>1941</num>
+            <title>aquarela s/papel. 39x55,5. The Whitney Museum of American Art, New York</title>
+            <desc>. The Whitney Museum of American Art, New York</desc>
+          </item>
+          <item n="45" xml:id="SaoPaulo_1951_e19_i45">
+            <num>45</num>
+            <title>Adirondacks no baixo lago Ausable — 1947. aqua¬ rela. 37x51. The Phillips Gallery, Washington D.C.</title>
+            <desc>— 1947. aquarela. 37x51. The Phillips Gallery, Washington D.C.</desc>
+          </item>
+          <item n="46" xml:id="SaoPaulo_1951_e19_i46">
+            <num>46</num>
+            <title>Movimento em cinza, verde, vermelho n.° 2 —</title>
+            <desc>verde, vermelho n.° 2 —</desc>
+          </item>
+          <item n="1949" xml:id="SaoPaulo_1951_e19_i1949">
+            <num>1949</num>
+            <title>56x71. The Downtown Gallery, New York</title>
+            <desc>New York</desc>
+          </item>
+        </entry>
+        <entry n="20" xml:id="SaoPaulo_1951_e20" source="Cat_SaoPaulo_1951_0006.jpg">
+          <desc>
+            <name>Reginald MARSH </name>
+            <trait>
+              <p>(França, 1898 —)</p>
+            </trait>
+          </desc>
+          <item n="47" xml:id="SaoPaulo_1951_e20_i47">
+            <num>47</num>
+            <title>Nadando para além do mercado ocidental de Washington — 1940. aquarela. 68x102. Albright Art Gallery, Buffalo</title>
+            <desc>— 1940. aquarela. 68x102. Albright Art Gallery, Buffalo</desc>
+          </item>
+          <item n="48" xml:id="SaoPaulo_1951_e20_i48">
+            <num>48</num>
+            <title>Experimentada pelos olhos — 1944. aguada s/papel.</title>
+            <desc>— 1944. aguada s/papel.</desc>
+          </item>
+          <item n="49" xml:id="SaoPaulo_1951_e20_i49">
+            <num>49</num>
+            <title>Esportes aquáticos — 148. aguada s/papel. 42x76. Frank K.M. Rehn Galleries, New York</title>
+            <desc>— 148. aguada s/papel. 42x76. Frank K.M. Rehn Galleries, New York</desc>
+          </item>
+        </entry>
+        <entry n="21" xml:id="SaoPaulo_1951_e21" source="Cat_SaoPaulo_1951_0007.jpg">
+          <desc>
+            <name>Georgia O’KEEFE </name>
+            <trait>
+              <p>(EE. UU. 1887 —)</p>
+            </trait>
+          </desc>
+          <item n="50" xml:id="SaoPaulo_1951_e21_i50">
+            <num>50</num>
+            <title>Penhascos além do Abiquiu — 1943 . 76x61. Walter H. Lurie, New York</title>
+            <desc>— 1943 . 76x61. Walter H. Lurie, New York</desc>
+          </item>
+          <item n="51" xml:id="SaoPaulo_1951_e21_i51">
+            <num>51</num>
+            <title>Papoulas — 1950. 91x76. The Downtown Gallery, New York</title>
+            <desc>— 1950. 91x76. The Downtown Gallery, New York</desc>
+          </item>
+        </entry>
+        <entry n="22" xml:id="SaoPaulo_1951_e22" source="Cat_SaoPaulo_1951_0007.jpg">
+          <desc>
+            <name>Irene Rice Pereira </name>
+            <trait>
+              <p>(EE. UU. 1907 —)</p>
+            </trait>
+          </desc>
+          <item n="52" xml:id="SaoPaulo_1951_e22_i52">
+            <num>52</num>
+            <title>“Two up' — 1946. 86x107. Durlacher Brothers, New York</title>
+            <desc>— 1946. 86x107. Durlacher Brothers, New York</desc>
+          </item>
+          <item n="53" xml:id="SaoPaulo_1951_e22_i53">
+            <num>53</num>
+            <title>“ Transflux' — 1948 “Mixed media’ s/dois pianos de vidro. 27x57. Durlacher Brothers, New York.</title>
+            <desc>— 1948 “Mixed media’ s/dois pianos de vidro. 27x57. Durlacher Brothers, New York.</desc>
+          </item>
+          <item n="54" xml:id="SaoPaulo_1951_e22_i54">
+            <num>54</num>
+            <title>Progressões em vermelho — 1950. 91x107. Dur¬ lacher Brothers, New York</title>
+            <desc>— 1950. 91x107. Durlacher Brothers, New York</desc>
+          </item>
+        </entry>
+        <entry n="23" xml:id="SaoPaulo_1951_e23" source="Cat_SaoPaulo_1951_0007.jpg">
+          <desc>
+            <name>Alton PICKENS </name>
+            <trait>
+              <p>(EE. UU. 1917 —)</p>
+            </trait>
+          </desc>
+          <item n="55" xml:id="SaoPaulo_1951_e23_i55">
+            <num>55</num>
+            <title>A boneca azul — 1942. 109x89. Museum of Mo¬ dern Art, New York</title>
+            <desc>— 1942. 109x89. Museum of Modern Art, New York</desc>
+          </item>
+          <item n="56" xml:id="SaoPaulo_1951_e23_i56">
+            <num>56</num>
+            <title>O ator e sua familia. 109x89. The Burchholz Gallery, New York</title>
+            <desc>New York</desc>
+          </item>
+          <item n="57" xml:id="SaoPaulo_1951_e23_i57">
+            <num>57</num>
+            <title>Carnaval — 1949. 137x101. Lincoln Kirstein, New York</title>
+            <desc>— 1949. 137x101. Lincoln Kirstein, New York</desc>
+          </item>
+        </entry>
+        <entry n="24" xml:id="SaoPaulo_1951_e24" source="Cat_SaoPaulo_1951_0007.jpg">
+          <desc>
+            <name>Jackson POLLOCK </name>
+            <trait>
+              <p>(EE. UU. 1912 —)</p>
+            </trait>
+          </desc>
+          <item n="58" xml:id="SaoPaulo_1951_e24_i58">
+            <num>58</num>
+            <title>Lucifer — 1947. 102x267. Betty Parson Gallery New York</title>
+            <desc>— 1947. 102x267. Betty Parson Gallery New York</desc>
+          </item>
+        </entry>
+        <entry n="25" xml:id="SaoPaulo_1951_e25" source="Cat_SaoPaulo_1951_0007.jpg">
+          <desc>
+            <name>Mark ROTHKO </name>
+            <trait>
+              <p>(Russia, 1903 —)</p>
+            </trait>
+          </desc>
+          <item n="59" xml:id="SaoPaulo_1951_e25_i59">
+            <num>59</num>
+            <title>Número 6 — 1951. 239x137 Betty Parsons Gal¬ lery, New York</title>
+            <desc>New York</desc>
+          </item>
+        </entry>
+        <entry n="26" xml:id="SaoPaulo_1951_e26" source="Cat_SaoPaulo_1951_0007.jpg">
+          <desc>
+            <name>Ben SHAHN </name>
+            <trait>
+              <p>(Russia, 1898 —)</p>
+            </trait>
+          </desc>
+          <item n="60" xml:id="SaoPaulo_1951_e26_i60">
+            <num>60</num>
+            <title>O cego tocador de acórdeão — 1945. têmpera.</title>
+            <desc>— 1945. têmpera.</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/IMAGO-Catalogues-Jjanes/extractionCatalogs/main/extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="extractionCatalogs/static/css/affichage_TEI.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SaoPaulo_1972">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <editor role="metadata">
+          <persName/>
+        </editor>
+        <editor role="data">
+          <persName/>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <!-- === Nom du projet, directeur/directrice, organisme et adresse === -->
+          <name>VISUAL CONTAGIONS</name>
+          <persName type="director">Béatrice Joyeux-Prunel</persName>
+          <orgName>UNIGE</orgName>
+          <address>
+            <addrLine>5 rue des Battoirs 7</addrLine>
+            <postCode>1205</postCode>
+            <settlement>Genève</settlement>
+          </address>
+        </publisher>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="exhibition_catalog">
+          <title/>
+          <author/>
+          <publisher/>
+          <pubPlace/>
+          <date/>
+          <relatedItem>
+            <msDesc>
+              <!-- === organisme conservant l'objet numérisé === -->
+              <msIdentifier>
+                <repository>Bibliothèque nationale de France</repository>
+              </msIdentifier>
+              <additional>
+                <surrogates>
+                  <ref/>
+                  <name role="digitisation"/>
+                </surrogates>
+              </additional>
+            </msDesc>
+          </relatedItem>
+          <extent/>
+        </bibl>
+        <listEvent>
+          <!-- === informations sur l'événement référé par le catalogue. Attributs obligatoires === -->
+          <event type="exhibition" subtype="fixed" from="1863" to="1863">
+            <head type="salon"/>
+            <p/>
+          </event>
+        </listEvent>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+    <encodingDesc>
+      <samplingDecl>
+        <p>This electronic version of the catalog only reproduces the entries that
+                            correspond to exhibited works. All text preceding or succeeding the list
+                            of documents is not reproduced below.</p>
+      </samplingDecl>
+      <appInfo>
+        <!-- === logiciel utilisé pour la transcription. Attributs obligatoires === -->
+        <application version="3.1" ident="kraken">
+          <label>kraken</label>
+          <ptr target="https://github.com/mittagessen/kraken"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text>
+    <body>
+      <list>
+        <entry n="1" xml:id="SaoPaulo_1972_e1" source="Cat_SaoPaulo_1972_typo_0001.jpg">
+          <desc>
+            <name>NUNES, Cassiano Pereira </name>
+            <trait>
+              <p>(1947 — São Paulo) bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e1_i1">
+            <title>Em Busca do Tempo Perdido XIX, 1972, técnica mista,</title>
+            <desc>1972, técnica mista,</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e1_i2">
+            <title>x 80 800,00</title>
+            <desc>0</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e1_i3">
+            <title>Em Busca do Tempo Perdido XXIV, 1972, técnica mista,</title>
+            <desc>1972, técnica mista,</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e1_i4">
+            <title>x 80 800,00</title>
+            <desc>0</desc>
+          </item>
+          <item n="5" xml:id="SaoPaulo_1972_e1_i5">
+            <title>Em Busca do Tempo Perdido XXV, técnica mista, 1972.</title>
+            <desc>técnica mista, 1972.</desc>
+          </item>
+          <item n="6" xml:id="SaoPaulo_1972_e1_i6">
+            <title>x 80 800,00</title>
+            <desc>0</desc>
+          </item>
+          <item n="7" xml:id="SaoPaulo_1972_e1_i7">
+            <title>Em Busca do Tempo Perdido XXVII, 1972, técnica mista,</title>
+            <desc>1972, técnica mista,</desc>
+          </item>
+          <item n="8" xml:id="SaoPaulo_1972_e1_i8">
+            <title>x 80 800,00</title>
+            <desc>0</desc>
+          </item>
+          <item n="9" xml:id="SaoPaulo_1972_e1_i9">
+            <title>Em Busca do Tempo Perdido XXIX, 1972, técnica mista,</title>
+            <desc>1972, técnica mista,</desc>
+          </item>
+          <item n="10" xml:id="SaoPaulo_1972_e1_i10">
+            <title>x 80 800,00</title>
+            <desc>0</desc>
+          </item>
+        </entry>
+        <entry n="2" xml:id="SaoPaulo_1972_e2" source="Cat_SaoPaulo_1972_typo_0001.jpg">
+          <desc>
+            <name>OGASAWARA, Masayosi </name>
+            <trait>
+              <p>(1912 — Japão) bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e2_i1">
+            <title>Na Luz Eterna — I, 1972, aquarela, pastel,</title>
+            <desc>— I, 1972, aquarela, pastel,</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e2_i2">
+            <title>x 91 2.000,00</title>
+            <desc>0</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e2_i3">
+            <title>Na Luz Eterna — III, 1972, aquarela, pastel,</title>
+            <desc>— III, 1972, aquarela, pastel,</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e2_i4">
+            <title>x 91 2.000,00</title>
+            <desc>0</desc>
+          </item>
+          <item n="5" xml:id="SaoPaulo_1972_e2_i5">
+            <title>Na Luz Eterna — IV, 1972, aquarela pastel,</title>
+            <desc>— IV, 1972, aquarela pastel,</desc>
+          </item>
+          <item n="6" xml:id="SaoPaulo_1972_e2_i6">
+            <title>x 91 2.000,00</title>
+            <desc>0</desc>
+          </item>
+          <item n="7" xml:id="SaoPaulo_1972_e2_i7">
+            <title>Na Luz Eterna — VII, 1972, aquarela pastel,</title>
+            <desc>— VII, 1972, aquarela pastel,</desc>
+          </item>
+          <item n="8" xml:id="SaoPaulo_1972_e2_i8">
+            <title>x 91 2.000,00</title>
+            <desc>0</desc>
+          </item>
+        </entry>
+        <entry n="3" xml:id="SaoPaulo_1972_e3" source="Cat_SaoPaulo_1972_typo_0001.jpg">
+          <desc>
+            <name>OGGI, Eros (Bologna-Italia) São Paulo bp-</name>
+            <trait>
+              <p>72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e3_i1">
+            <title>Vendedor de Bilhete, 1972, óleo, 090 x 72,5 1.800,00</title>
+            <desc>1972, óleo, 090 x 72,5 1.800,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e3_i2">
+            <title>Cosinha, 1972, óleo, 1,03 x 1,22 2.500,00</title>
+            <desc>1972, óleo, 1,03 x 1,22 2.500,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e3_i3">
+            <title>Buffet Frio, 1972, óleo, 0,98 x 0,80 1.800,00</title>
+            <desc>1972, óleo, 0,98 x 0,80 1.800,00</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e3_i4">
+            <title>Na óbra, 1972, óleo, 0,98 x 0,80 1.800,00</title>
+            <desc>1972, óleo, 0,98 x 0,80 1.800,00</desc>
+          </item>
+        </entry>
+        <entry n="4" xml:id="SaoPaulo_1972_e4" source="Cat_SaoPaulo_1972_typo_0001.jpg">
+          <desc>
+            <name>PAULA, Noélia de (São Paulo) masi</name>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e4_i1">
+            <title>Geocosmogônico 1, mista, 98 x 68 2.000,00</title>
+            <desc>mista, 98 x 68 2.000,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e4_i2">
+            <title>Geocosmogônico 2, mista, 98 x 68 2.000,00</title>
+            <desc>mista, 98 x 68 2.000,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e4_i3">
+            <title>Geocosmogônico 3, mista, 98 x 68 2.000,00</title>
+            <desc>mista, 98 x 68 2.000,00</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e4_i4">
+            <title>Geocosmogônico 5, mista, 98 x 68 2.000,00</title>
+            <desc>mista, 98 x 68 2.000,00</desc>
+          </item>
+        </entry>
+        <entry n="5" xml:id="SaoPaulo_1972_e5" source="Cat_SaoPaulo_1972_typo_0002.jpg">
+          <desc>
+            <name>PAULO PENNA </name>
+            <trait>
+              <p>(1949 — Rio Grande) — bp 72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e5_i1">
+            <title>Pintura I, 72, 70 x 70 1.500,00</title>
+            <desc>72, 70 x 70 1.500,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e5_i2">
+            <title>Pintura II, 72, 70 x 70 1.500,00</title>
+            <desc>72, 70 x 70 1.500,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e5_i3">
+            <title>Pintura III, 72, 70 x 70 1.500,00</title>
+            <desc>72, 70 x 70 1.500,00</desc>
+          </item>
+        </entry>
+        <entry n="6" xml:id="SaoPaulo_1972_e6" source="Cat_SaoPaulo_1972_typo_0002.jpg">
+          <desc>
+            <name>PEREIRA, Eduardo Carlos </name>
+            <trait>
+              <p>(1951 — Jundiaí) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e6_i1">
+            <title>Desominização IV, 72, 70 x 50, papel. 500,00</title>
+            <desc>72, 70 x 50, papel. 500,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e6_i2">
+            <title>Desominização V, 72, 70 x 50, papel. 500,00</title>
+            <desc>72, 70 x 50, papel. 500,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e6_i3">
+            <title>Ominização 72, 50 x 70, papel.</title>
+            <desc>50 x 70, papel.</desc>
+          </item>
+        </entry>
+        <entry n="7" xml:id="SaoPaulo_1972_e7" source="Cat_SaoPaulo_1972_typo_0002.jpg">
+          <desc>
+            <name>PEREIRA, Vania </name>
+            <trait>
+              <p>(1940 — Aquidavana) — masi/bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e7_i1">
+            <title>Clarões IV, 72, 40 x 53, papel. 300,00</title>
+            <desc>72, 40 x 53, papel. 300,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e7_i2">
+            <title>Clarões VI, 72, 66 x 45,5, papel. 500,00</title>
+            <desc>72, 66 x 45,5, papel. 500,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e7_i3">
+            <title>Clarão Onze, 72, 46,5 x 56,5, papel. 800,00</title>
+            <desc>72, 46,5 x 56,5, papel. 800,00</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e7_i4">
+            <title>Clarão Doze, 72, 62 x 46,5, papel. 800,00</title>
+            <desc>72, 62 x 46,5, papel. 800,00</desc>
+          </item>
+          <item n="5" xml:id="SaoPaulo_1972_e7_i5">
+            <title>Clarão Treze, 72, 100 x 60, papel. 1.000,00</title>
+            <desc>72, 100 x 60, papel. 1.000,00</desc>
+          </item>
+        </entry>
+        <entry n="8" xml:id="SaoPaulo_1972_e8" source="Cat_SaoPaulo_1972_typo_0002.jpg">
+          <desc>
+            <name>PINTO, Léa </name>
+            <trait>
+              <p>(1945 — S. Paulo) bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e8_i1">
+            <title>Phekelo Lonka parte I, 72, 70 x 90, mixta 5.000,00</title>
+            <desc>72, 70 x 90, mixta 5.000,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e8_i2">
+            <title>Phekelo Lonka parte II, 72, 70 x 90, mixta 5.000,00</title>
+            <desc>72, 70 x 90, mixta 5.000,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e8_i3">
+            <title>Phekelo Lonka parte III, 72, 70 x 90, mixta 5.000,00</title>
+            <desc>72, 70 x 90, mixta 5.000,00</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e8_i4">
+            <title>Phekelo Lonka parte IV, 72, 70 x 90, mixta 5.000,00</title>
+            <desc>72, 70 x 90, mixta 5.000,00</desc>
+          </item>
+        </entry>
+        <entry n="9" xml:id="SaoPaulo_1972_e9" source="Cat_SaoPaulo_1972_typo_0002.jpg">
+          <desc>
+            <name>PIRAHY, João </name>
+            <trait>
+              <p>(1947 — Goiânia) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e9_i1">
+            <title>Desenho 1, 72, 69,5 x 50, papel. 1.000,00</title>
+            <desc>72, 69,5 x 50, papel. 1.000,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e9_i2">
+            <title>Desenho 2, 72, 69,5 x 50, papel. 1.000,00</title>
+            <desc>72, 69,5 x 50, papel. 1.000,00</desc>
+          </item>
+          <item n="14" xml:id="SaoPaulo_1972_e9_i14">
+            <num>14</num>
+            <title>Dias de Fevereiro, 72, 69,5 x 50, papel</title>
+            <desc>72, 69,5 x 50, papel</desc>
+          </item>
+        </entry>
+        <entry n="10" xml:id="SaoPaulo_1972_e10" source="Cat_SaoPaulo_1972_typo_0003.jpg">
+          <desc>
+            <name>PIZA FILHO,</name>
+            <trait>
+              <p> (1949 — S. Paulo) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e10_i1">
+            <title>Com Lápis de Côr, 71, 100 x 80 1.500,00</title>
+            <desc>71, 100 x 80 1.500,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e10_i2">
+            <title>Da Janela, 71, 100 x 80. 1.500,00</title>
+            <desc>71, 100 x 80. 1.500,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e10_i3">
+            <title>Vila dos Remédios, 72, 100 x 80 1.500,00</title>
+            <desc>72, 100 x 80 1.500,00</desc>
+          </item>
+        </entry>
+        <entry n="11" xml:id="SaoPaulo_1972_e11" source="Cat_SaoPaulo_1972_typo_0003.jpg">
+          <desc>
+            <name>PRADO, Marcos da Silva </name>
+            <trait>
+              <p>(1950 — S. Paulo) bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e11_i1">
+            <title>Cirçulo I, 72, 1,50 x 40, papel. 500,00</title>
+            <desc>72, 1,50 x 40, papel. 500,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e11_i2">
+            <title>Arcos, 72, 1,50 x 40, papel. 500,00</title>
+            <desc>72, 1,50 x 40, papel. 500,00</desc>
+          </item>
+        </entry>
+        <entry n="12" xml:id="SaoPaulo_1972_e12" source="Cat_SaoPaulo_1972_typo_0003.jpg">
+          <desc>
+            <name>QUEIRÓZ, José Carlos (S.</name>
+            <trait>
+              <p> José dos Campos) — masi</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e12_i1">
+            <title>Encontro Cósmico, 37 x 58. 500,00</title>
+            <desc>37 x 58. 500,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e12_i2">
+            <title>Paisagem Cósmica, 58 x 37. 500,00</title>
+            <desc>58 x 37. 500,00</desc>
+          </item>
+        </entry>
+        <entry n="13" xml:id="SaoPaulo_1972_e13" source="Cat_SaoPaulo_1972_typo_0003.jpg">
+          <desc>
+            <name>REIF, Mariana </name>
+            <trait>
+              <p>(8. Paulo) — masi/bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e13_i1">
+            <title>Pintura 1,72, 80 x 90. 1.600,00</title>
+            <desc>2, 80 x 90. 1.600,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e13_i2">
+            <title>Pintura 3, 72, 80 x 80. 1.600,00</title>
+            <desc>72, 80 x 80. 1.600,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e13_i3">
+            <title>Pintura 4, 72, 60 x 90. 2.000,00</title>
+            <desc>72, 60 x 90. 2.000,00</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e13_i4">
+            <title>Pintura 5, 72, 60 x 90 2.000,00</title>
+            <desc>72, 60 x 90 2.000,00</desc>
+          </item>
+        </entry>
+        <entry n="14" xml:id="SaoPaulo_1972_e14" source="Cat_SaoPaulo_1972_typo_0003.jpg">
+          <desc>
+            <name>RETROZ,</name>
+            <trait>
+              <p> — S. Paulo) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e14_i1">
+            <title>Monocromático 3. 2.000,00</title>
+            <desc>0</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e14_i2">
+            <title>Monocromático 4. 2.000,00</title>
+            <desc>0</desc>
+          </item>
+        </entry>
+        <entry n="15" xml:id="SaoPaulo_1972_e15" source="Cat_SaoPaulo_1972_typo_0004.jpg">
+          <desc>
+            <name>RICCETTI, Habuba Farah </name>
+            <trait>
+              <p>(1931 — Getulina) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e15_i1">
+            <title>Abstracionismo Geométrico-Lírico, n.° 100, 72, 1,30x90. 15.000,00</title>
+            <desc>n.° 100, 72, 1,30x90. 15.000,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e15_i2">
+            <title>Abstracionismo Geométrico-Lírico, n.° 103, 72, 1,30x90 15.000,00</title>
+            <desc>n.° 103, 72, 1,30x90 15.000,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e15_i3">
+            <title>Abstracionismo Geométrico-Lírico, n.° 104, 72, 1,30x90 15.000,00</title>
+            <desc>n.° 104, 72, 1,30x90 15.000,00</desc>
+          </item>
+        </entry>
+        <entry n="16" xml:id="SaoPaulo_1972_e16" source="Cat_SaoPaulo_1972_typo_0004.jpg">
+          <desc>
+            <name>RIMOLI </name>
+            <trait>
+              <p>(1941 — S. Paulo) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e16_i1">
+            <title>N.° 1, 72, papel. 2.000,00</title>
+            <desc>72, papel. 2.000,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e16_i2">
+            <title>N.° 2, 72, papel. 2.000,00</title>
+            <desc>72, papel. 2.000,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e16_i3">
+            <title>N.° 3, 72, papel. 1.000,00</title>
+            <desc>72, papel. 1.000,00</desc>
+          </item>
+        </entry>
+        <entry n="17" xml:id="SaoPaulo_1972_e17" source="Cat_SaoPaulo_1972_typo_0004.jpg">
+          <desc>
+            <name>RUDY </name>
+            <trait>
+              <p>(1906 — Viena — São Paulo) bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e17_i1">
+            <title>Mobile giratória — 4 cubos, 1972, montagem, 90x90x75 3.500,00</title>
+            <desc>— 4 cubos, 1972, montagem, 90x90x75 3.500,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e17_i2">
+            <title>Composição — Cubos e Esferas — 1972, montagem,</title>
+            <desc>— Cubos e Esferas — 1972, montagem,</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e17_i3">
+            <title>x75 6.000,00</title>
+            <desc>0</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e17_i4">
+            <title>Quadro com Movimento 1, 1972, 78x90 2.000,00</title>
+            <desc>1972, 78x90 2.000,00</desc>
+          </item>
+          <item n="5" xml:id="SaoPaulo_1972_e17_i5">
+            <title>Quadro com Movimento 2, 1972, 80x100 2.000,00</title>
+            <desc>1972, 80x100 2.000,00</desc>
+          </item>
+          <item n="6" xml:id="SaoPaulo_1972_e17_i6">
+            <title>Quadro com Movimento 3, 1972, 128x75 2.000,00</title>
+            <desc>1972, 128x75 2.000,00</desc>
+          </item>
+          <item n="7" xml:id="SaoPaulo_1972_e17_i7">
+            <title>Quadro com Movimento 4, 1972, 128x75 2.500,00</title>
+            <desc>1972, 128x75 2.500,00</desc>
+          </item>
+        </entry>
+        <entry n="18" xml:id="SaoPaulo_1972_e18" source="Cat_SaoPaulo_1972_typo_0004.jpg">
+          <desc>
+            <name>SANTOS, Geraldo José dos (GÉU) </name>
+            <trait>
+              <p>— (1945 —</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e18_i1">
+            <title>Presidente Prudente) — bp-72</title>
+            <desc>— bp-72</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e18_i2">
+            <title>Megalo Mercouri I, 72, 102x73, cartão. 2.000,00</title>
+            <desc>72, 102x73, cartão. 2.000,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e18_i3">
+            <title>Megalo Mercouri II, 72, 102x73, cartão. 2.000,00</title>
+            <desc>72, 102x73, cartão. 2.000,00</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e18_i4">
+            <title>Megalo Mercouri III, 72, 102x73, cartão. 2.000,00</title>
+            <desc>72, 102x73, cartão. 2.000,00</desc>
+          </item>
+          <item n="5" xml:id="SaoPaulo_1972_e18_i5">
+            <title>Megalo Mercouri IV, 72, 102x73, cartão. 2.000,00</title>
+            <desc>72, 102x73, cartão. 2.000,00</desc>
+          </item>
+          <item n="6" xml:id="SaoPaulo_1972_e18_i6">
+            <title>Megalo Mercouri V, 72, 102x73, cartão. 2.000,00</title>
+            <desc>72, 102x73, cartão. 2.000,00</desc>
+          </item>
+        </entry>
+        <entry n="19" xml:id="SaoPaulo_1972_e19" source="Cat_SaoPaulo_1972_typo_0004.jpg">
+          <desc>
+            <name>SCHMIDT, Marcos Rodolfo </name>
+            <trait>
+              <p>(1943 — S. Paulo) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e19_i1">
+            <title>Rítimos 1, 72, 70x50. 680,00</title>
+            <desc>72, 70x50. 680,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e19_i2">
+            <title>Rítimos 2, 72, 70x50. 680,00</title>
+            <desc>72, 70x50. 680,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e19_i3">
+            <title>Rítimos 5, 72, 70x50. 680,00</title>
+            <desc>72, 70x50. 680,00</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e19_i4">
+            <title>Rítimos 7, 72, 70x50. 680,00</title>
+            <desc>72, 70x50. 680,00</desc>
+          </item>
+        </entry>
+        <entry n="20" xml:id="SaoPaulo_1972_e20" source="Cat_SaoPaulo_1972_typo_0005.jpg">
+          <desc>
+            <name>SILVA, Regis Machado </name>
+            <trait>
+              <p>(1944 — Paraibuna) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e20_i1">
+            <title>Construção I, 72 objeto, montagem 2.000,00</title>
+            <desc>72 objeto, montagem 2.000,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e20_i2">
+            <title>Construção II, 72, objeto, montagem 2.000,00</title>
+            <desc>72, objeto, montagem 2.000,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e20_i3">
+            <title>Construção III, 72, objeto, montagem 2.000,00</title>
+            <desc>72, objeto, montagem 2.000,00</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e20_i4">
+            <title>Construção IV ,72, objeto, montagem 2.000,00</title>
+            <desc>2, objeto, montagem 2.000,00</desc>
+          </item>
+          <item n="5" xml:id="SaoPaulo_1972_e20_i5">
+            <title>Construção V, 72, objeto, montagem 2.000,00</title>
+            <desc>72, objeto, montagem 2.000,00</desc>
+          </item>
+        </entry>
+        <entry n="21" xml:id="SaoPaulo_1972_e21" source="Cat_SaoPaulo_1972_typo_0005.jpg">
+          <desc>
+            <name>SMITH, Ricardo Luiz </name>
+            <trait>
+              <p>(1945 — S. Paulo) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e21_i1">
+            <title>Série “Gênese Formal” — Diferenciação I, 72 60x1,40 1.000,00</title>
+            <desc>— Diferenciação I, 72 60x1,40 1.000,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e21_i2">
+            <title>Série “Gênese Formal” — Diferenciação II, 72, 80x120 1.000,00</title>
+            <desc>— Diferenciação II, 72, 80x120 1.000,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e21_i3">
+            <title>Série “Gênese Formal” — Diferenciação III, 72, 60x1,20 1.000,00</title>
+            <desc>— Diferenciação III, 72, 60x1,20 1.000,00</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e21_i4">
+            <title>Série “Gênese Formal” — Diferenciação IV, 72, 1,60x40 1.000,00</title>
+            <desc>— Diferenciação IV, 72, 1,60x40 1.000,00</desc>
+          </item>
+          <item n="5" xml:id="SaoPaulo_1972_e21_i5">
+            <title>Série “Gênese Formal” — Diferenciação V, 72, 80x60. 1.000,00</title>
+            <desc>— Diferenciação V, 72, 80x60. 1.000,00</desc>
+          </item>
+          <item n="6" xml:id="SaoPaulo_1972_e21_i6">
+            <title>Série “Gênese Formal” — Diferenciação VI, 72, 70x1,40 1.000,00</title>
+            <desc>— Diferenciação VI, 72, 70x1,40 1.000,00</desc>
+          </item>
+        </entry>
+        <entry n="22" xml:id="SaoPaulo_1972_e22" source="Cat_SaoPaulo_1972_typo_0005.jpg">
+          <desc>
+            <name>SPARAPAN </name>
+            <trait>
+              <p>(1950 — Jaú) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e22_i1">
+            <title>Subúrbio nas Linhas Paralelas — Proposta 1.</title>
+            <desc>— Proposta 1.</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e22_i2">
+            <title>Arquivo de Sentimentos — Proposta 2. </title>
+            <desc>— Proposta 2. </desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e22_i3">
+            <title>Coloquemo-nos no Mesmo Pé de Igualdade — Proposta 3.</title>
+            <desc>— Proposta 3.</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e22_i4">
+            <title>Olhe para Ele — Proposta 4. </title>
+            <desc>— Proposta 4. </desc>
+          </item>
+          <item n="5" xml:id="SaoPaulo_1972_e22_i5">
+            <title>Na Presença do Corpo nem Tudo se Mostra - Proposta 5. </title>
+          </item>
+          <item n="6" xml:id="SaoPaulo_1972_e22_i6">
+            <title>O Espaço do Corpo e a Vontade — Proposta 6. </title>
+            <desc>— Proposta 6. </desc>
+          </item>
+          <item n="7" xml:id="SaoPaulo_1972_e22_i7">
+            <title>Estas Cenas e Minhas Cadeiras não Entendidas </title>
+          </item>
+          <item n="8" xml:id="SaoPaulo_1972_e22_i8">
+            <title>Proposta 7. </title>
+          </item>
+        </entry>
+        <entry n="23" xml:id="SaoPaulo_1972_e23" source="Cat_SaoPaulo_1972_typo_0005.jpg">
+          <desc>
+            <name>STEPANENKO, Bobby </name>
+            <trait>
+              <p>(1940 S. Paulo) — bp-72</p>
+            </trait>
+          </desc>
+          <item n="1" xml:id="SaoPaulo_1972_e23_i1">
+            <title>I, 72, 1,80, chapas. 4.000,00</title>
+            <desc>72, 1,80, chapas. 4.000,00</desc>
+          </item>
+          <item n="2" xml:id="SaoPaulo_1972_e23_i2">
+            <title>II, 72, 35x35, chapas. 3.500,00</title>
+            <desc>72, 35x35, chapas. 3.500,00</desc>
+          </item>
+          <item n="3" xml:id="SaoPaulo_1972_e23_i3">
+            <title>III, 72, 40, chapas. 2.300,00</title>
+            <desc>72, 40, chapas. 2.300,00</desc>
+          </item>
+          <item n="4" xml:id="SaoPaulo_1972_e23_i4">
+            <title>IV, 72, 40, chapas 2.300,00</title>
+            <desc>72, 40, chapas 2.300,00</desc>
+          </item>
+        </entry>
+      </list>
+    </body>
+  </text>
+</TEI>

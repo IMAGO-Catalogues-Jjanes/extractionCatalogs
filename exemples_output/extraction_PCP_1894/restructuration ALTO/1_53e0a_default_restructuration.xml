@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>1_53e0a_default.jpg</fileName>
+      <fileIdentifier>https://cdm16028.contentdm.oclc.org/iiif/2/p15324coll19:2979/full/full/0/default.jpg</fileIdentifier>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT166" LABEL="MainZone" DESCRIPTION="block type MainZone"/><OtherTag ID="BT167" LABEL="CustomZone" DESCRIPTION="block type CustomZone"/><OtherTag ID="BT168" LABEL="CustomZone:entry" DESCRIPTION="block type CustomZone:entry"/><OtherTag ID="BT169" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT170" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT171" LABEL="GraphicZone:ornamentation" DESCRIPTION="block type GraphicZone:ornamentation"/><OtherTag ID="BT172" LABEL="GraphicZone:illustration" DESCRIPTION="block type GraphicZone:illustration"/><OtherTag ID="BT173" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT174" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT175" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT176" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT177" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT178" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT179" LABEL="CustomZone:entryEnd" DESCRIPTION="block type CustomZone:entryEnd"/><OtherTag ID="BT213" LABEL="CustomZone:advert" DESCRIPTION="block type CustomZone:advert"/>
+          <OtherTag ID="LT57" LABEL="CustomLine" DESCRIPTION="line type CustomLine"/><OtherTag ID="LT58" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT59" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT60" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/><OtherTag ID="LT61" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/>
+  </Tags>
+  <Layout>
+    <Page WIDTH="956" HEIGHT="1514" PHYSICAL_IMG_NR="1" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="956" HEIGHT="1514">
+        <TextBlock HPOS="166" VPOS="325" WIDTH="598" HEIGHT="710" ID="eSc_textblock_8509f529" TAGREFS="BT166">
+          <Shape>
+            <Polygon POINTS="166 325 168 1035 764 1026 764 780 764 615 764 325"/>
+          </Shape>
+          <TextLine ID="eSc_line_8f396d6d" TAGREFS="LT58" BASELINE="692 363 743 367" HPOS="689" VPOS="325" WIDTH="56" HEIGHT="52">
+            <Shape><Polygon POINTS="692 363 692 325 745 325 743 367 741 377 689 372"/></Shape>
+	    <String CONTENT="P21" HPOS="689" VPOS="325" WIDTH="56" HEIGHT="52"/>
+          </TextLine>
+          <TextLine ID="eSc_line_04c8895e" TAGREFS="LT58" BASELINE="181 370 273 373" HPOS="179" VPOS="329" WIDTH="93" HEIGHT="49">
+            <Shape><Polygon POINTS="180 369 180 329 272 338 272 372 271 375 179 378"/></Shape>
+	    <String CONTENT="213.7" HPOS="179" VPOS="329" WIDTH="93" HEIGHT="49"/>
+          </TextLine>
+          <TextLine ID="eSc_line_ddaa22fe" TAGREFS="LT58" BASELINE="680 412 753 412" HPOS="679" VPOS="379" WIDTH="74" HEIGHT="58">
+            <Shape><Polygon POINTS="680 412 679 386 752 379 753 412 752 430 719 426 709 434 708 435 708 436 707 436 705 436 705 437 680 437"/></Shape>
+	    <String CONTENT="1894" HPOS="679" VPOS="379" WIDTH="74" HEIGHT="58"/>
+          </TextLine>
+          <TextLine ID="eSc_line_916d46f3" TAGREFS="LT58" BASELINE="366 508 544 508" HPOS="363" VPOS="474" WIDTH="180" HEIGHT="47">
+            <Shape><Polygon POINTS="364 507 363 478 541 474 543 507 541 521 363 517"/></Shape>
+	    <String CONTENT="LIBRARY" HPOS="363" VPOS="474" WIDTH="180" HEIGHT="47"/>
+          </TextLine>
+          <TextLine ID="eSc_line_626958a9" TAGREFS="LT58" BASELINE="412 541 508 539" HPOS="410" VPOS="519" WIDTH="97" HEIGHT="27">
+            <Shape><Polygon POINTS="411 539 410 519 505 519 507 538 507 546 411 546"/></Shape>
+	    <String CONTENT="OF THE" HPOS="410" VPOS="519" WIDTH="97" HEIGHT="27"/>
+          </TextLine>
+          <TextLine ID="eSc_line_cc5d2020" TAGREFS="LT58" BASELINE="223 620 303 620 366 590 433 582 488 578 627 612 681 619" HPOS="221" VPOS="538" WIDTH="460" HEIGHT="107">
+            <Shape><Polygon POINTS="222 619 224 551 311 561 318 557 349 538 351 538 352 538 353 538 354 538 376 550 406 539 407 539 409 539 524 546 525 546 526 546 534 552 541 547 543 547 544 547 545 547 546 547 548 547 584 572 652 570 654 570 655 570 681 584 680 618 676 645 637 640 636 640 635 640 635 639 615 618 583 622 582 622 580 622 548 609 537 613 536 613 535 613 534 613 532 613 532 611 517 598 416 592 344 627 343 627 342 627 221 620"/></Shape>
+	    <String CONTENT="METROPOLITAN MUSEUM OF ART" HPOS="221" VPOS="538" WIDTH="460" HEIGHT="107"/>
+          </TextLine>
+          <TextLine ID="eSc_line_3a03bc35" TAGREFS="LT58" BASELINE="351 628 575 630" HPOS="348" VPOS="606" WIDTH="227" HEIGHT="37">
+            <Shape><Polygon POINTS="351 628 351 606 575 606 575 630 573 643 348 639"/></Shape>
+	    <String CONTENT="NEW YORK CITY." HPOS="348" VPOS="606" WIDTH="227" HEIGHT="37"/>
+          </TextLine>
+          <TextLine ID="eSc_line_18ac598c" TAGREFS="LT58" BASELINE="405 890 523 890" HPOS="402" VPOS="870" WIDTH="120" HEIGHT="28">
+            <Shape><Polygon POINTS="404 889 402 871 521 870 522 889 522 898 404 898"/></Shape>
+	    <String CONTENT="PRESENTED BY" HPOS="402" VPOS="870" WIDTH="120" HEIGHT="28"/>
+          </TextLine>
+          <TextLine ID="eSc_line_0a3dcd8a" TAGREFS="LT58" BASELINE="389 907 538 905" HPOS="385" VPOS="884" WIDTH="152" HEIGHT="35">
+            <Shape><Polygon POINTS="388 905 385 885 534 884 537 904 535 919 387 917"/></Shape>
+	    <String CONTENT="ALFRED STIEGLITZ" HPOS="385" VPOS="884" WIDTH="152" HEIGHT="35"/>
+          </TextLine>
+          <TextLine ID="eSc_line_33ac1fcd" TAGREFS="LT58" BASELINE="444 923 479 923" HPOS="442" VPOS="904" WIDTH="36" HEIGHT="29">
+            <Shape><Polygon POINTS="443 922 442 905 477 904 478 922 478 931 443 933"/></Shape>
+	    <String CONTENT="1922" HPOS="442" VPOS="904" WIDTH="36" HEIGHT="29"/>
+          </TextLine>
+          <TextLine ID="eSc_line_433310b1" TAGREFS="LT58" BASELINE="425 987 511 986" HPOS="423" VPOS="956" WIDTH="87" HEIGHT="43">
+            <Shape><Polygon POINTS="424 986 423 956 507 958 510 985 508 996 424 999"/></Shape>
+	    <String CONTENT="44670" HPOS="423" VPOS="956" WIDTH="87" HEIGHT="43"/>
+          </TextLine>
+          <TextLine ID="eSc_line_ec7514af" TAGREFS="LT58" BASELINE="243 1005 287 1005" HPOS="242" VPOS="980" WIDTH="45" HEIGHT="40">
+            <Shape><Polygon POINTS="243 1005 242 982 286 980 287 1005 287 1020 243 1020"/></Shape>
+	    <String CONTENT="CASE" HPOS="242" VPOS="980" WIDTH="45" HEIGHT="40"/>
+          </TextLine>
+          <TextLine ID="eSc_line_33fa23dd" TAGREFS="LT58" BASELINE="559 1004 623 1006" HPOS="558" VPOS="984" WIDTH="65" HEIGHT="39">
+            <Shape><Polygon POINTS="559 1004 559 984 623 984 623 1006 622 1020 558 1023"/></Shape>
+	    <String CONTENT="SHELF" HPOS="558" VPOS="984" WIDTH="65" HEIGHT="39"/>
+          </TextLine>
+        </TextBlock>
+        <TextBlock HPOS="218" VPOS="410" WIDTH="470" HEIGHT="611" ID="eSc_textblock_61b2365e" TAGREFS="BT172">
+          <Shape>
+            <Polygon POINTS="218 410 218 981 361 981 402 1018 501 1021 564 983 688 981 688 410"/>
+          </Shape>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
