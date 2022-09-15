@@ -28,8 +28,9 @@ ligne_description_regex = re.compile(r'^[A-ZÀ-Üa-zà-ü-–"&\[{]')
 # on préfère donc faire une extraction minimale, les descriptions d'oeuvres étant de manière générale rare, elles devront être extraites manuellement
 info_comp_regex = re.compile(r'\(.*|,.*|[^0-9.] —.*')
 
-# Regex : utilisée par le script pour voir si entre parenthèses un trouve un chiffre, dans ce cas on sait que c'est des informations complémentaires
+# Regex  utilisée par le script pour voir si entre parenthèses un trouve un chiffre, dans ce cas on sait que c'est des informations complémentaires
 verification_parentheses_regex = re.compile(r'^.*\)')
+
 regex_adresse = re.compile(r'^[*]*\d{1,4}[ bisBIS]*,')
 regex_mesures = re.compile(r'^[*]*\d{1,4}[ ]*x')
 regex_prix = re.compile(r'^[*]*[0-9]+[\.]*[0-9]* fr[ancs]*[.]*')
