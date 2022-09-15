@@ -1,10 +1,21 @@
 # extractionCatalogs : data extractor for 19th and 20th centuries art exhibition catalogs 
+      
+   
+   <p class="float" align="center">
+      <img src="extractionCatalogs/static/images/entree_nulle.png" height="150"/>
+      <img src="extractionCatalogs/static/images/Exemple_Entree_Simple.png" height="150"/>
+      <img src="extractionCatalogs/static/images/Exemple_Entree_Double.png" height="150" width="400"/>
+   </p>
 
 This two step pipeline (eScriptorium + python script) aims to create TEI encoded art exhibition catalogs and CSV tables containing their data.
 
 After an automatic/manual transcription with eScriptorium OCR (optical carachter recognition), the user will use the python script contained in this repository. It contains a Jupyter notebook file which serves as an interface for executing it. 
 
-You may find complete and detailed instructions in the ```Guide - extraction de catalogues.ipynb``` file
+You may find complete and detailed instructions in the ```Guide - extraction de catalogues.ipynb``` file :
+
+<p class="float" align="center">
+   <img src="extractionCatalogs/static/images/menu_guide.png" height=""/>
+</p>
 
 ## inputs/outputs
 <br>eScriptorium</br> 
@@ -23,11 +34,6 @@ The script output is an XML-TEI file which combines all the ALTO transcriptions 
 
 The ```/exemples_output``` directory contains examples of data produced by this pipeline.
    
-   <p class="float" align="center">
-      <img src="extractionCatalogs/static/images/entree_nulle.png" height="150"/>
-      <img src="extractionCatalogs/static/images/Exemple_Entree_Simple.png" height="150"/>
-      <img src="extractionCatalogs/static/images/Exemple_Entree_Double.png" height="150" width="400"/>
-   </p>
    
 ## Instructions 
 
@@ -57,7 +63,7 @@ For complete instructions, use the Jupyter notebook integrated guide. This pipel
 This repository was first developed as a prototype by Juliette Janes in 2021. The project was further augmented by Esteban Sánchez Oeconomo in 2022.
 
 Both former students in Digital Humanities at Paris Science-Lettres University and interns of the [Artl@s](https://artlas.huma-num.fr/fr/) 
-project worked under the direction of Simon Gabay and Béatrice Joyeux-Prunel.
+project worked under the direction of Béatrice Joyeux-Prunel and Simon Gabay.
 
 
 ## Licence
