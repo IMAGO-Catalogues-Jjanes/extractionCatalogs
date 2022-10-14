@@ -17,6 +17,7 @@ Esteban Sánchez Oeconomo, 2022
 from lxml import etree as ET
 import os
 import click
+from pathlib import Path
 # modules du script
 from extractionCatalogs.fonctions.extractionCatEntrees import extInfo_Cat
 from extractionCatalogs.fonctions.creationTEI import creation_header
@@ -58,10 +59,10 @@ def extraction(directory, output, titlecat, segmentationtranscription):
 
     # si les chemins input ou output ne terminent pas par "/", le script ne tourne pas.
     # si ces "/" ne sont pas indiqués par l'utilisateur, on les ajoute pour éviter tout problème :
-    if directory[-1] != "/":
-        directory = directory + "/"
-    if output[-1] != "/":
-        output = output + "/"
+    #if directory[-1] != "/":
+    #    directory = directory + "/"
+    #if output[-1] != "/":
+    #    output = output + "/"
 
     # on créé un switch pour vérifier si l'utilisateur souhaite uniquement produire un csv, sa valeur est "False" car normalement ce n'est pas le cas
     csv_direct = False
@@ -78,13 +79,15 @@ def extraction(directory, output, titlecat, segmentationtranscription):
 
     # On créé un dossier pour les output (TEI, fichier de problèmes, dossier restructuration) :
     # on construit un chemin vers le dossier d'extraction en récupérant le chemin output :
-    extraction_directory = output + "extraction_" + titlecat
+    extraction_directory = os.path.join(output, "extraction_" + titlecat)
+
     # Si le chemin n'existe pas, on créé le dossier (s'il existait, on aurait une erreur) :
     if not os.path.exists(extraction_directory):
         #  la méthode makedirs permet de créer tous les dossiers du chemin (mkdir est limité à un seul dossier)
         os.makedirs(extraction_directory)
     # on assigne à une variable le chemin vers le fichier
-    output_file = extraction_directory + "/" + titlecat
+    output_file = os.path.join(extraction_directory, titlecat)
+
 
     # === 2.2 Création directe d'un fichier csv, si la chaine "csv" est contenue dans le titre du catalogue  ====
     # si le titre du catalogue contient "csv", cela veut dire que l'utilisateur souhaite uniquement produire un fichier
@@ -103,7 +106,8 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     # === 2.3 création du fichier problèmes et traitement de l'option -st  ====
     # On vérifie si un fichier correspondant "_problems.txt" existe déjà. Cela voudrait dire que la commande a déjà été
     # lancée auparavant, et on élimine ce fichier pour qu'un nouveau soit creé sans accumuler les informations en boucle
-    problems = extraction_directory + "/" + titlecat + "_problems.txt"
+    problems = os.path.join(extraction_directory, titlecat + "_problems.txt")
+
     if os.path.exists(problems):
         os.remove(problems)
 
@@ -114,7 +118,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
         # on appelle le module transcription (fichier kraken_automatic.py) :
         transcription(directory)
         # on réactualise le chemin de traitement vers le dossier contenant les nouveaux ALTO4 :
-        directory = "./temp_alto/"
+        directory = os.path.join(".", "temp_alto")
     else:
         pass
 
@@ -205,7 +209,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             if problemes_Segmonto:
                 problemes_Segmonto_total.append(problemes_Segmonto)
             else:
-                print("\t   ✓ le fichier issu d'eScriptorium est conforme à l'ontologie Segmonto")
+                print("\t   OK: le fichier issu d'eScriptorium est conforme à l'ontologie Segmonto")
 
             # on rajoute ces chiffres produits à chaque itération à des listes définies préalablement :
             textline_dans_main_total += textline_dans_main
@@ -242,7 +246,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
                 else:
                     pass
             if chemin_restructuration:
-                print("\t   ✓ fichier '{}_restructuration.xml' créé".format(fichier))
+                print("\t   OK: fichier '{}_restructuration.xml' créé".format(fichier))
 
             # === 4.4 restructuration eventuelle de la segmentation des ALTO en input ====
             # On appelle une fonction qui vérifie que l'imbrication des éléments du fichier ALTO est correcte.
@@ -430,7 +434,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     for fichier in problemes_Segmonto_total:
         n_fichiers_problemes_alto +=1
     if n_fichiers_problemes_alto == 0 :
-        print("\t✓ La segmentation des pages est conforme à l'ontologie Segmonto")
+        print("\tOK: La segmentation des pages est conforme à l'ontologie Segmonto")
     elif n_fichiers_problemes_alto == 1:
         print("\t[!] {} fichier non conforme à l'ontologie Segmonto. Consulter le fichier {}_problemes.text.".format(
                 len(problemes_Segmonto_total), titlecat))
@@ -464,7 +468,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
 
     print("    Création d'un tableur csv :")
     if csv_produit == True:
-        print("\t ✓ Le fichier csv a été produit")
+        print("\t OK: Le fichier csv a été produit")
     elif csv_produit == False:
         print("\t[!] Le fichier csv n'a pas été produit. Vérifiez la conformité du fichier TEI.")
 
@@ -473,8 +477,10 @@ def extraction(directory, output, titlecat, segmentationtranscription):
     print("\n    Chemin du dossier d'extraction : {}\n".format(chemin_absolu))
 
     # === 5. Informations à mettre sur le fichier problemes.txt ====
+    dir_output = os.path.dirname(output_file)
+    chemin_problems = os.path.join(dir_output, titlecat + "_problems.txt")
     if str_vides:
-        with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
+        with open(chemin_problems, mode="a") as f:
             f.write("\n")
             f.write("––––––––––––––––––––––––––––––––––––––––––––")
             f.write("\nexposants non signalés : ")
@@ -483,7 +489,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             f.write("\n")
 
     if entries_non_integrees_liste:
-        with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
+        with open(chemin_problems, mode="a") as f:
             f.write("\n")
             f.write("––––––––––––––––––––––––––––––––––––––––––––")
             f.write("\nObjets 'entry' avec items non ajoutés au fichier TEI : ")
@@ -492,7 +498,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             f.write("\n")
 
     if entryends_non_integrees_liste:
-        with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
+        with open(chemin_problems, mode="a") as f:
             f.write("\n")
             f.write("––––––––––––––––––––––––––––––––––––––––––––––")
             f.write("\nObjets 'entryEnd' non ajoutés au fichier TEI : ")
@@ -501,7 +507,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             f.write("\n")
 
     if TextLine_dans_Mainzone_liste_total:
-        with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
+        with open(chemin_problems, mode="a") as f:
             f.write("\n")
             f.write("––––––––––––––––––––––––––––––––––––––––––––––")
             f.write("\nObjets 'TextLine' pouvant constituer des lignes de catalogue non ajoutées au fichier TEI ")
@@ -512,7 +518,7 @@ def extraction(directory, output, titlecat, segmentationtranscription):
             f.write("\n")
 
     if problemes_Segmonto_total:
-        with open(os.path.dirname(output_file) + "/" + titlecat + "_problems.txt", mode="a") as f:
+        with open(chemin_problems, mode="a") as f:
             f.write("\n")
             f.write("––––––––––––––––––––––––––––––––––––––––––––––")
             f.write("\nFichiers ALTO en input :")

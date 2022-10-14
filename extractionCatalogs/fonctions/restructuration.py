@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import click
 import re
 from lxml import etree as ET
@@ -19,10 +20,12 @@ def restructuration_automatique(directory, fichier, extraction_directory):
 
     # on applique la feuille de transformation de correction
     original = ET.parse(directory + fichier)
-    transformation_xslt = ET.XSLT(ET.parse("./extractionCatalogs/fonctions/Restructuration_alto.xsl"))
+    chemin_XSLT = Path("./extractionCatalogs/fonctions/Restructuration_alto.xsl")
+    transformation_xslt = ET.XSLT(ET.parse(chemin_XSLT))
     propre = transformation_xslt(original)
     # on créé un nouveau fichier dans le dossier résultat
     chemin_restructuration = extraction_directory + "/restructuration ALTO/" + fichier[:-4] + "_restructuration.xml"
+    chemin_restructuration = Path(chemin_restructuration)
     os.makedirs(os.path.dirname(chemin_restructuration), exist_ok=True)
     with open(chemin_restructuration, mode='wb') as f:
         f.write(propre)
@@ -196,7 +199,7 @@ def correction_imbrication_segmentation(chemin_restructuration):
         TextBlocks_corriges = len(TextBlocks_vides) - len(TextBlocks_vides_restant)
         # on affiche les résultats sur le terminal :
         if TextLines_corriges >= 1:
-            print("\t   ✓ Correction automatique : {} lignes correspondant à {} zones vides ont été déplacées vers ces zones".format(TextLines_corriges, TextBlocks_corriges))
+            print("\t   OK: Correction automatique : {} lignes correspondant à {} zones vides ont été déplacées vers ces zones".format(TextLines_corriges, TextBlocks_corriges))
         else:
             print("\t  [!] Correction automatique : aucune ligne n'a été déplacées vers les zones [TextBlock] vides. Il est possible que ces zones vides soient des erreurs de saisie sur eScriptorium")
 
@@ -233,11 +236,12 @@ def correction_imbrication_segmentation(chemin_restructuration):
         # on veut créér un document uniquement si des changements ont eu lieu ; le compteur TextLines_corriges indique cela :
         if TextLines_corriges >= 1:
             # Le document "resegmentation" sera placé cote à cote avec le document "restructuration"
+            chemin_restructuration = str(chemin_restructuration)
             chemin_resegmentation = chemin_restructuration.replace("restructuration.xml", "resegmentation.xml")
             Alto.write(chemin_resegmentation, pretty_print=True, encoding="UTF-8", xml_declaration=True)
         else:
             chemin_resegmentation = None
     else:
         chemin_resegmentation = None
-        print("\t   ✓ les lignes et les zones ont été correctement saisies par l'utilisateur/utilisatrice ")
+        print("\t   OK: les lignes et les zones ont été correctement saisies par l'utilisateur/utilisatrice ")
     return chemin_resegmentation, lignes_MainZone

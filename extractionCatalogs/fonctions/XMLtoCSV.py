@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import click
 import re
 from lxml import etree as ET
@@ -22,8 +23,8 @@ def XML_to_CSV(output_file, extraction_directory, titlecat):
         csv = transformation_xslt(tei)
         csv_simple = transformation_xslt_simple(tei)
 
-        chemin_csv = extraction_directory + "/CSV/" + titlecat + "_tableau.csv"
-        chemin_csv_simple = extraction_directory + "/CSV/" + titlecat + "_tableau_simple.csv"
+        chemin_csv = Path(extraction_directory + "/CSV/" + titlecat + "_tableau.csv")
+        chemin_csv_simple = Path(extraction_directory + "/CSV/" + titlecat + "_tableau_simple.csv")
 
         os.makedirs(os.path.dirname(chemin_csv), exist_ok=True)
         os.makedirs(os.path.dirname(chemin_csv_simple), exist_ok=True)
@@ -45,7 +46,7 @@ def csv_immediat(titlecat, output_file, extraction_directory):
     # on appelle la fonction qui produit un fichier csv :
     csv_produit = XML_to_CSV(output_file, extraction_directory, titlecat)
     # on construit le chemin qui doit mener vers ce fichier csv :
-    chemin_csv = extraction_directory + "/CSV/" + titlecat + "_tableau.csv"
+    chemin_csv = Path(extraction_directory + "/CSV/" + titlecat + "_tableau.csv")
 
     print("\n    Création d'un tableur csv :")
 
@@ -63,7 +64,7 @@ def csv_immediat(titlecat, output_file, extraction_directory):
             print("\t[!] Le fichier csv n'a pas été produit. Vérifiez la conformité du fichier TEI.\n")
 
     if csv_produit == True:
-        print("\t ✓ Le fichier csv a été produit"
+        print("\t OK: Le fichier csv a été produit"
               "\n\t   Chemin du fichier : {} \n".format(chemin_csv))
 
 

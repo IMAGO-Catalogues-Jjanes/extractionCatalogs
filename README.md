@@ -22,15 +22,15 @@ You may find complete and detailed instructions in the ```Guide - extraction de 
 
 - input : iiif manifest or pdf, jpeg, png, etc. 
 
-- output : XML ALTO files
+- output : XML-ALTO files
 
 <br> python script : </br> 
 
-- input : XML ALTO files produced by eScriptorium
+- input : XML-ALTO files produced by eScriptorium
 
-- output : XML TEI and CSV files
+- output : XML-TEI and CSV files
 
-The script output is an XML-TEI file which combines all the ALTO transcriptions and sticks to the [ODD](https://github.com/carolinecorbieres/ArtlasCatalogues/blob/master/5_ImproveGROBIDoutput/ODD/ODD_VisualContagions.xml) done by Caroline Corbières. 
+The script output is an XML-TEI file which combines all the ALTO transcriptions and sticks to the [ODD](https://github.com/carolinecorbieres/ArtlasCatalogues/blob/master/5_ImproveGROBIDoutput/ODD/ODD_VisualContagions.xml) created by Caroline Corbières. 
 
 The ```/exemples_output``` directory contains examples of data produced by this pipeline.
    

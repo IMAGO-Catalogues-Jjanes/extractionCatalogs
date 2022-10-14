@@ -42,7 +42,7 @@ def association_xml_rng(document_xml):
             schema = urlopen(lien_schema)
         # si non, on utilise le schéma intégré en local (schema du projet IMAGO, il peut être remplacé par un autre) :
         else:
-            schema = "extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng"
+            schema = Path("extractionCatalogs/variables/validation_alto/out/ODD_VisualContagions.rng")
         relaxng_fichier = ET.parse(schema)
         # Si l'on préfère utiliser le document en local :
         # relaxng_fichier = ET.parse("extractionCatalogs/fonctions/validation_alto/out/ODD_VisualContagions.rng")
@@ -51,7 +51,7 @@ def association_xml_rng(document_xml):
         if relaxng(fichier_xml):
             # s'il est conforme, la terminal l'indique. Cela n'arrivera que dans les cas où les ALTO en input ont été
             # parfaitement encodés / préalablement corrigés
-            print("\t✓ Le document XML produit est conforme au schéma TEI et à l'ODD du projet.")
+            print("\tOK: Le document XML produit est conforme au schéma TEI et à l'ODD du projet.")
         else:
             # on signale que le document n'est pas valide. Ce sera le cas dans la très grande majorité des cas,
             # et il est normal de devoir faire des corrections manuelles pour compléter l'extraction automatique
