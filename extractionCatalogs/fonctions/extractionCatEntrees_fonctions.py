@@ -127,6 +127,7 @@ def get_texte_alto(alto):
                 iiif_regions += entree.xpath("@ID", namespaces=NS)
                 # on augmente l'index n, pour que la clé du dictionnaire change à l'itération suivante :
                 n += 1
+
     return dict_entrees_texte, iiif_regions
 
 

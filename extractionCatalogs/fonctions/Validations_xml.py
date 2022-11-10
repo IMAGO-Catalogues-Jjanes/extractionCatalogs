@@ -96,7 +96,10 @@ def conformite_Segmonto(chemin_document):
     # liste de éléments TextLine :
     textline_list = document.xpath("//alto:TextLine", namespaces=NS)
     # on selectionne le troisième ensemble de balises du fichier, appelé "layout", et on va boucler sur chaque niveau
-    layout = root[2]
+    if tagrefs_list:
+        layout = root[2]
+    else:
+        layout = root[1]
 
     # === 2. On récupère les ID des noms des zones de l'ontologie Segmonto, s'ils existent ===
     # === 2.1 ID des types de zone Segmonto ===

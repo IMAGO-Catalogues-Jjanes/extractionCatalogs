@@ -42,7 +42,7 @@ def extInfo_Cat(document, title, list_xml, n_entree, n_oeuvre):
     # un dictionnaire en return pour signaler des oeuvres
     dict_oeuvres_terminal = {}
 
-    # === 2.1. On extrait le texte de Entry des ALTO ===
+    # === 2.1. On extrait le texte des Entry des ALTO ===
     # On récupère un dictionnaire avec pour valeurs les entrées, et une liste d'ID pour couper les images :
     # ( === fonction secondaire appelée dans extractionCatEntrees_fonctions.py === )
     dict_entrees_texte, iiif_regions = get_texte_alto(document)
